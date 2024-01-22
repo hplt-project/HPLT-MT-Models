@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "files": [
+    "ELRC-Courts_Norway-v1.en-nn.en.gz",
+    "ELRC-Courts_Norway-v1.en-nn.nn.gz"
+  ],
+  "filters": [
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "en"
+    },
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "nn"
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "max_length",
+      "parameters": {
+        "MAXLENGTH": 150,
+        "MINLENGTH": 1
+      },
+      "language": null
+    },
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": "1.0",
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}

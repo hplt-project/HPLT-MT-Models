@@ -1,0 +1,27 @@
+{
+  "mapping": {
+    "clean": [
+      "NeuLab-TedTalks-v1.en-gl",
+      "TED2020-v1.en-gl",
+      "ELRC-wikipedia_health-v1.en-gl",
+      "CCMatrix-v1.en-gl",
+      "NLLB-v1.en-gl",
+      "Tatoeba-v2023-04-12.en-gl",
+      "XLEnt-v1.2.en-gl",
+      "Ubuntu-v14.10.en-gl",
+      "GNOME-v1.en-gl",
+      "QED-v2.0a.en-gl",
+      "ELRC_2922-v1.en-gl",
+      "KDE4-v2.en-gl",
+      "ELRC-3053-wikipedia_health-v1.en-gl",
+      "OpenSubtitles-v2018.en-gl",
+      "WikiMatrix-v1.en-gl",
+      "wikimedia-v20230407.en-gl"
+    ]
+  },
+  "categories": [
+    {
+      "name": "clean"
+    }
+  ]
+}

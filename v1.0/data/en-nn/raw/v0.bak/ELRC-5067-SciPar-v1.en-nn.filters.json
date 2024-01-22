@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "files": [
+    "ELRC-5067-SciPar-v1.en-nn.en.gz",
+    "ELRC-5067-SciPar-v1.en-nn.nn.gz"
+  ],
+  "filters": [
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "en"
+    },
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "nn"
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "max_length",
+      "parameters": {
+        "MAXLENGTH": 150,
+        "MINLENGTH": 1
+      },
+      "language": null
+    },
+    {
+      "filter": "bifixer",
+      "parameters": {
+        "SRCLANG": "en",
+        "TRGLANG": "nn",
+        "IGNORE_CHARACTERS": false,
+        "IGNORE_NORMALIZATION": false,
+        "IGNORE_HTML": false,
+        "IGNORE_EMPTY": false,
+        "IGNORE_LONG": false,
+        "IGNORE_ORTHOGRAPHY": false,
+        "IGNORE_DETOKENIZATION": false,
+        "IGNORE_DUPLICATES": false,
+        "AGGRESSIVE_DEDUP": false,
+        "IGNORE_SEGMENTATION": false,
+        "WORDS_BEFORE_SEGMENTING": 15,
+        "SEGMENTER": "nltk",
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}

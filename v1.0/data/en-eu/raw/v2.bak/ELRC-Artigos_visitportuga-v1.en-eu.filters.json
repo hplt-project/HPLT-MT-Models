@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "files": [
+    "ELRC-Artigos_visitportuga-v1.en-eu.en.gz",
+    "ELRC-Artigos_visitportuga-v1.en-eu.eu.gz"
+  ],
+  "filters": [
+    {
+      "filter": "fasttext_filter",
+      "parameters": {
+        "FASTTEXT_MODEL_TYPE": "small",
+        "LANG1": "en",
+        "LANG2": "eu"
+      },
+      "language": null
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    }
+  ]
+}

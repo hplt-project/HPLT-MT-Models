@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "files": [
+    "HPLT-v1.1.en-eu.en.gz",
+    "HPLT-v1.1.en-eu.eu.gz"
+  ],
+  "filters": [
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "en"
+    },
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "eu"
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "bifixer",
+      "parameters": {
+        "SRCLANG": "en",
+        "TRGLANG": "eu",
+        "IGNORE_CHARACTERS": false,
+        "IGNORE_NORMALIZATION": false,
+        "IGNORE_HTML": false,
+        "IGNORE_EMPTY": false,
+        "IGNORE_LONG": false,
+        "IGNORE_ORTHOGRAPHY": false,
+        "IGNORE_DETOKENIZATION": false,
+        "IGNORE_DUPLICATES": false,
+        "AGGRESSIVE_DEDUP": false,
+        "IGNORE_SEGMENTATION": false,
+        "WORDS_BEFORE_SEGMENTING": 15,
+        "SEGMENTER": "nltk",
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}

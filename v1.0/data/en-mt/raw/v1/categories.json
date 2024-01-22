@@ -1,0 +1,57 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "CCAligned-v1.en-mt",
+      "DGT-v4.en-mt",
+      "ECB-v1.en-mt",
+      "ECDC-v2016-03-16.en-mt",
+      "ELITR-ECA-v1.en-mt",
+      "wikimedia-v20230407.en-mt",
+      "Ubuntu-v14.10.en-mt",
+      "TildeMODEL-v2018.en-mt",
+      "Tatoeba-v2023-04-12.en-mt",
+      "TED2020-v1.en-mt",
+      "QED-v2.0a.en-mt",
+      "ParaCrawl-v9.en-mt",
+      "NLLB-v1.en-mt",
+      "MultiParaCrawl-v7.1.en-mt",
+      "MultiMaCoCu-v2.en-mt",
+      "ELRC_2923-v1.en-mt",
+      "EMEA-v3.en-mt",
+      "EUbookshop-v2.en-mt",
+      "ELRC_3382-v1.en-mt",
+      "EUconst-v1.en-mt",
+      "GNOME-v1.en-mt",
+      "JRC-Acquis-v3.0.en-mt",
+      "KDE4-v2.en-mt",
+      "MaCoCu-v2.en-mt",
+      "MultiCCAligned-v1.en-mt",
+      "ELRC-EMEA-v1.en-mt",
+      "ELRC-EUIPO_2017-v1.en-mt",
+      "ELRC-EUROPARL_covid-v1.en-mt",
+      "ELRC-EUR_LEX-v1.en-mt",
+      "ELRC-EU_publications-v1.en-mt",
+      "ELRC-antibiotic-v1.en-mt",
+      "ELRC-vaccination-v1.en-mt",
+      "ELRC-presscorner_covid-v1.en-mt",
+      "ELRC-2023-EUIPO_2017-v1.en-mt",
+      "ELRC-2709-EMEA-v1.en-mt",
+      "ELRC-2746-vaccination-v1.en-mt",
+      "ELRC-2870-EU_publications_medi-v1.en-mt",
+      "ELRC-3197-antibiotic-v1.en-mt",
+      "ELRC-3288-EUROPARL_covid-v1.en-mt",
+      "ELRC-3560-EUR_LEX_covid-v1.en-mt",
+      "ELRC-3601-presscorner_covid-v1.en-mt",
+      "ELRC-807-Malta_Government_Gaz-v1.en-mt",
+      "ELRC-EC_EUROPA-v1.en-mt",
+      "ELRA-W0232-v1.en-mt",
+      "ELRA-W0233-v1.en-mt",
+      "ELRA-W0234-v1.en-mt"
+    ]
+  }
+}

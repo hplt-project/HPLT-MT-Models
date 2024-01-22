@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "CCAligned-v1.en-sw",
+      "CCMatrix-v1.en-sw",
+      "ELRC-3073-wikipedia_health-v1.en-sw",
+      "ELRC-wikipedia_health-v1.en-sw",
+      "ELRC_2922-v1.en-sw",
+      "EUbookshop-v2.en-sw",
+      "wikimedia-v20230407.en-sw",
+      "tico-19-v2020-10-28.en-sw",
+      "XLEnt-v1.2.en-sw",
+      "WikiMatrix-v1.en-sw",
+      "Ubuntu-v14.10.en-sw",
+      "Tanzil-v1.en-sw",
+      "TED2020-v1.en-sw",
+      "ParaCrawl-v9.en-sw",
+      "MultiParaCrawl-v7.1.en-sw",
+      "MultiCCAligned-v1.en-sw",
+      "GoURMET-v2.en-sw",
+      "GlobalVoices-v2018q4.en-sw",
+      "GNOME-v1.en-sw"
+    ]
+  }
+}

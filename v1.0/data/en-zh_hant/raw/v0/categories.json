@@ -1,0 +1,18 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    },
+    {
+      "name": "medium"
+    },
+    {
+      "name": "dirty"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "HPLT-v1.1.en-zh_hant",
+    ]
+  }
+}

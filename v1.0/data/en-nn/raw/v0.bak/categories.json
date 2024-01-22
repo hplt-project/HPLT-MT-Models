@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    },
+    {
+      "name": "medium"
+    },
+    {
+      "name": "dirty"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "ELRC-5067-SciPar-v1.en-nn",
+      "ELRC-614-Norwegian_Industrial-v1.en-nn",
+      "ELRC-Courts_Norway-v1.en-nn",
+      "GNOME-v1.en-nn",
+      "KDE4-v2.en-nn",
+      "Ubuntu-v14.10.en-nn",
+      "Tatoeba-v2023-04-12.en-nn",
+      "TED2020-v1.en-nn",
+      "QED-v2.0a.en-nn",
+      "HPLT-v1.1.en-nn"
+    ],
+    "medium": [
+      "ELRC-610-Norwegian_Directorat-v1.en-nn",
+      "ELRC-612-Courts_Norway-v1.en-nn",
+      "ELRC-Norwegian_Directorat-v1.en-nn",
+      "wikimedia-v20230407.en-nn",
+      "MultiHPLT-v1.1.en-nn",
+      "MultiParaCrawl-v7.1.en-nn",
+      "ParaCrawl-v9.en-nn"
+    ]
+  }
+}

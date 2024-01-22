@@ -1,0 +1,31 @@
+{
+  "mapping": {
+    "clean": [
+      "QED-v2.0a.bs-en",
+      "ELRC-wikipedia_health-v1.bs-en",
+      "Tatoeba-v2023-04-12.bs-en",
+      "WikiMatrix-v1.bs-en",
+      "MultiCCAligned-v1.bs-en",
+      "wikimedia-v20230407.bs-en",
+      "tldr-pages-v2023-08-29.bs-en",
+      "Ubuntu-v14.10.bs-en",
+      "ELRC_2922-v1.bs-en",
+      "SETIMES-v2.bs-en",
+      "NeuLab-TedTalks-v1.bs-en",
+      "OpenSubtitles-v2018.bs-en",
+      "TED2020-v1.bs-en",
+      "EUbookshop-v2.bs-en",
+      "NLLB-v1.bs-en",
+      "XLEnt-v1.2.bs-en",
+      "CCAligned-v1.bs-en",
+      "GNOME-v1.bs-en",
+      "ELRC-3047-wikipedia_health-v1.bs-en",
+      "Tanzil-v1.bs-en"
+    ]
+  },
+  "categories": [
+    {
+      "name": "clean"
+    }
+  ]
+}

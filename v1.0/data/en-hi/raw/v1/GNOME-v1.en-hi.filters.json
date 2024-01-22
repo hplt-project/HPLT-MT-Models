@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "files": [
+    "GNOME-v1.en-hi.en.gz",
+    "GNOME-v1.en-hi.hi.gz"
+  ],
+  "filters": [
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": "1",
+        "DEBUG": true
+      },
+      "language": null
+    },
+    {
+      "filter": "fasttext_filter",
+      "parameters": {
+        "FASTTEXT_MODEL_TYPE": "small",
+        "LANG1": "en",
+        "LANG2": "hi"
+      },
+      "language": null
+    },
+    {
+      "filter": "fix_quotes",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "alpha_ratio",
+      "parameters": {
+        "LANG1": "en",
+        "LANG2": "hi",
+        "SRCWORDRAT": "0.4",
+        "TRGWORDRAT": "0.4",
+        "SRCALPHARAT": "0.5",
+        "TRGALPHARAT": "0.5",
+        "DEBUG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "fix_wiki",
+      "parameters": {
+        "ALWAYS": false,
+        "FOOTNOTES": true,
+        "URLS": true,
+        "WIKILINKS": true,
+        "CODE": true,
+        "HEADINGS": true,
+        "REMOVEEMPTYLINES": true
+      },
+      "language": null
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "opus.RegExpSub",
+      "parameters": {
+        "patterns": [
+          [
+            "^\u090f\u0915:",
+            "\u0909\u0924\u094d\u0924\u0930:",
+            "0",
+            ""
+          ]
+        ]
+      },
+      "language": null
+    },
+    {
+      "filter": "max_length",
+      "parameters": {
+        "MAXLENGTH": 150,
+        "MINLENGTH": 1
+      },
+      "language": null
+    },
+    {
+      "filter": "src_trg_ratio",
+      "parameters": {
+        "RATIO": 0.6,
+        "LOG": false
+      },
+      "language": null
+    }
+  ]
+}

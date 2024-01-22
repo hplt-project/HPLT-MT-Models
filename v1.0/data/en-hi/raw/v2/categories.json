@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "Anuvaad-v1.en-hi",
+      "CCAligned-v1.en-hi",
+      "CCMatrix-v1.en-hi",
+      "ELRC-3061-wikipedia_health-v1.en-hi",
+      "Tanzil-v1.en-hi",
+      "Ubuntu-v14.10.en-hi",
+      "WMT-News-v2019.en-hi",
+      "WikiMatrix-v1.en-hi",
+      "bible-uedin-v1.en-hi",
+      "tico-19-v2020-10-28.en-hi",
+      "tldr-pages-v2023-08-29.en-hi",
+      "wikimedia-v20230407.en-hi",
+      "pmindia-v1.en-hi",
+      "XLEnt-v1.2.en-hi",
+      "Tatoeba-v2023-04-12.en-hi",
+      "Samanantar-v0.2.en-hi",
+      "TED2020-v1.en-hi",
+      "News-Commentary-v16.en-hi",
+      "OpenSubtitles-v2018.en-hi",
+      "QED-v2.0a.en-hi",
+      "GlobalVoices-v2018q4.en-hi",
+      "IITB-v2.0.en-hi",
+      "Joshua-IPC-v1.en-hi",
+      "KDE4-v2.en-hi",
+      "MultiCCAligned-v1.en-hi",
+      "NLLB-v1.en-hi",
+      "NeuLab-TedTalks-v1.en-hi",
+      "ELRC-wikipedia_health-v1.en-hi",
+      "ELRC_2922-v1.en-hi",
+      "GNOME-v1.en-hi",
+      "HPLT-v1.1.en-hi"
+    ]
+  }
+}

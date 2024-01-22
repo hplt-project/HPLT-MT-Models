@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "CCAligned-v1.en-sq",
+      "CCMatrix-v1.en-sq",
+      "ELRC-3052-wikipedia_health-v1.en-sq",
+      "ELRC-5067-SciPar-v1.en-sq",
+      "ELRC-wikipedia_health-v1.en-sq",
+      "ELRC_2922-v1.en-sq",
+      "EUbookshop-v2.en-sq",
+      "GNOME-v1.en-sq",
+      "GlobalVoices-v2018q4.en-sq",
+      "MaCoCu-v2.en-sq",
+      "TildeMODEL-v2018.en-sq",
+      "Ubuntu-v14.10.en-sq",
+      "WikiMatrix-v1.en-sq",
+      "XLEnt-v1.2.en-sq",
+      "bible-uedin-v1.en-sq",
+      "wikimedia-v20230407.en-sq",
+      "Tatoeba-v2023-04-12.en-sq",
+      "Tanzil-v1.en-sq",
+      "TED2020-v1.en-sq",
+      "SETIMES-v2.en-sq",
+      "QED-v2.0a.en-sq",
+      "OpenSubtitles-v2018.en-sq",
+      "NeuLab-TedTalks-v1.en-sq",
+      "MultiCCAligned-v1.en-sq",
+      "MultiMaCoCu-v2.en-sq",
+      "NLLB-v1.en-sq"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "HPLT-v1.1.en-sw"
+    ]
+  }
+}
