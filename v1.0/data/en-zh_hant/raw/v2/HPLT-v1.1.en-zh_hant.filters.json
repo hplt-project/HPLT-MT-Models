@@ -55,7 +55,7 @@
     {
       "filter": "fasttext_filter",
       "parameters": {
-        "FASTTEXT_MODEL_TYPE": "small",
+        "FASTTEXT_MODEL_TYPE": "large",
         "LANG1": "en",
         "LANG2": "zh"
       },

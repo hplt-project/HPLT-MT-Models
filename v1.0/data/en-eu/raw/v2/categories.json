@@ -12,8 +12,27 @@
   ],
   "mapping": {
     "clean": [
-      "HPLT-v1.1.en-eu",
-      "OPUS.en-eu"
+      "CCMatrix-v1.en-eu",
+      "ELRC-2612-Artigos_visitportuga-v1.en-eu",
+      "ELRC-3042-wikipedia_health-v1.en-eu",
+      "ELRC-4993-Basque_Wikinews_MT-v1.en-eu",
+      "ELRC-Artigos_visitportuga-v1.en-eu",
+      "ELRC-wikipedia_health-v1.en-eu",
+      "ELRC_2922-v1.en-eu",
+      "EhuHac-v1.en-eu",
+      "GNOME-v1.en-eu",
+      "KDE4-v2.en-eu",
+      "NeuLab-TedTalks-v1.en-eu",
+      "OpenSubtitles-v2018.en-eu",
+      "QED-v2.0a.en-eu",
+      "TED2020-v1.en-eu",
+      "Tatoeba-v2023-04-12.en-eu",
+      "Ubuntu-v14.10.en-eu",
+      "WikiMatrix-v1.en-eu",
+      "XLEnt-v1.2.en-eu",
+      "bible-uedin-v1.en-eu",
+      "wikimedia-v20230407.en-eu",
+      "HPLT-v1.1.en-eu"
     ]
   }
 }

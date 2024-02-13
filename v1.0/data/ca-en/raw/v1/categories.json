@@ -12,7 +12,38 @@
   ],
   "mapping": {
     "clean": [
-      "OPUS.ca-en"
+      "Books-v1.ca-en",
+      "CCAligned-v1.ca-en",
+      "ELRC-2480-Estatuto_dos_Deputad-v1.ca-en",
+      "ELRC-2481-Constituio_da_Repbli-v1.ca-en",
+      "ELRC-2612-Artigos_visitportuga-v1.ca-en",
+      "ELRC-2614-Localidades_2007-v1.ca-en",
+      "ELRC-2616-Museus_2007-v1.ca-en",
+      "ELRC-2638-monumentos_2007-v1.ca-en",
+      "ELRC-3040-wikipedia_health-v1.ca-en",
+      "ELRC-5129-GEnCaTA_a-v1.ca-en",
+      "ELRC-5189-Catalan_WMT2013_Mach-v1.ca-en",
+      "ELRC-5190-Cyber_MT_Test-v1.ca-en",
+      "ELRC-Artigos_visitportuga-v1.ca-en",
+      "ELRC-Localidades_2007-v1.ca-en",
+      "ELRC-Museus_2007-v1.ca-en",
+      "ELRC-wikipedia_health-v1.ca-en",
+      "ELRC_2922-v1.ca-en",
+      "EUbookshop-v2.ca-en",
+      "GNOME-v1.ca-en",
+      "GlobalVoices-v2018q4.ca-en",
+      "KDE4-v2.ca-en",
+      "MaCoCu-v2.ca-en",
+      "NLLB-v1.ca-en",
+      "OpenSubtitles-v2018.ca-en",
+      "QED-v2.0a.ca-en",
+      "TED2020-v1.ca-en",
+      "Tatoeba-v2023-04-12.ca-en",
+      "Ubuntu-v14.10.ca-en",
+      "WikiMatrix-v1.ca-en",
+      "XLEnt-v1.2.ca-en",
+      "tldr-pages-v2023-08-29.ca-en",
+      "wikimedia-v20230407.ca-en"
     ]
   }
 }

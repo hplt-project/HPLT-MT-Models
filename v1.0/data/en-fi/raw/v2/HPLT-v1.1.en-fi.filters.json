@@ -11,9 +11,9 @@
         "LANG1": "en",
         "LANG2": "fi",
         "SRCWORDRAT": 0.4,
-        "TRGWORDRAT": 0.4,
+        "TRGWORDRAT": "0.4",
         "SRCALPHARAT": 0.5,
-        "TRGALPHARAT": 0.5,
+        "TRGALPHARAT": "0.5",
         "DEBUG": false
       },
       "language": null

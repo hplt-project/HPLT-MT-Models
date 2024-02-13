@@ -9,7 +9,7 @@
       "filter": "alpha_ratio",
       "parameters": {
         "LANG1": "en",
-        "LANG2": "et",
+        "LANG2": "ga",
         "SRCWORDRAT": 0.4,
         "TRGWORDRAT": 0.4,
         "SRCALPHARAT": 0.5,

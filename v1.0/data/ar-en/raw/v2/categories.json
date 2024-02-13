@@ -12,8 +12,35 @@
   ],
   "mapping": {
     "clean": [
-      "HPLT-v1.1.ar-en",
-      "OPUS.ar-en"
+      "CCAligned-v1.ar-en",
+      "ELRC-3083-wikipedia_health-v1.ar-en",
+      "ELRC-wikipedia_health-v1.ar-en",
+      "ELRC_2922-v1.ar-en",
+      "EUbookshop-v2.ar-en",
+      "GNOME-v1.ar-en",
+      "GlobalVoices-v2018q4.ar-en",
+      "KDE4-v2.ar-en",
+      "LinguaTools-WikiTitles-v2014.ar-en",
+      "NLLB-v1.ar-en",
+      "NeuLab-TedTalks-v1.ar-en",
+      "News-Commentary-v9.1.ar-en",
+      "OpenSubtitles-v2018.ar-en",
+      "QED-v2.0a.ar-en",
+      "TED2013-v1.1.ar-en",
+      "TED2020-v1.ar-en",
+      "Tanzil-v1.ar-en",
+      "Tatoeba-v2023-04-12.ar-en",
+      "UNPC-v20090831.ar-en",
+      "Ubuntu-v14.10.ar-en",
+      "WikiMatrix-v1.ar-en",
+      "Wikipedia-v1.0.ar-en",
+      "XLEnt-v1.2.ar-en",
+      "bible-uedin-v1.ar-en",
+      "infopankki-v1.ar-en",
+      "tico-19-v2020-10-28.ar-en",
+      "tldr-pages-v2023-08-29.ar-en",
+      "wikimedia-v20230407.ar-en",
+      "HPLT-v1.1.ar-en"
     ]
   }
 }
