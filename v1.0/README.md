@@ -14,7 +14,7 @@ The directory `data` contains the configuration for downloading the datasets use
 
 To download the data, first make sure that [OpusCleaner](https://github.com/hplt-project/OpusCleaner) is installed (currently you need to install from 
 source to use the download script), then install the Python requirements in `data/requirements.txt`. To 
-download data from selected languages, use
+download data from selected languages, run the following from the `data` directory:
 ```
 ./get_data.py -l LANG1 LANG2 ...
 ```
