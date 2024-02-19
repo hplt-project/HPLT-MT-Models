@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "files": [
+    "TED2020-v1.en-mk.en.gz",
+    "TED2020-v1.en-mk.mk.gz"
+  ],
+  "filters": [
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "en,mk"
+    },
+    {
+      "filter": "max_length",
+      "parameters": {
+        "MAXLENGTH": "250",
+        "MINLENGTH": "2"
+      },
+      "language": null
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "fix_wiki",
+      "parameters": {
+        "ALWAYS": false,
+        "FOOTNOTES": true,
+        "URLS": true,
+        "WIKILINKS": true,
+        "CODE": true,
+        "HEADINGS": true,
+        "REMOVEEMPTYLINES": true
+      },
+      "language": null
+    },
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "en"
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": 1,
+        "DEBUG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "fasttext_filter",
+      "parameters": {
+        "FASTTEXT_MODEL_TYPE": "small",
+        "LANG1": "en",
+        "LANG2": "mk"
+      },
+      "language": null
+    }
+  ]
+}
