@@ -1,1 +1,28 @@
 ## First release of HPLT models
+
+This directory contains scripts and configuration for downloading and running the models, as well
+as for downloading the training and development data, and for training the models. 
+
+### Model Download
+
+### Model Usage
+
+### Downloading Training, Development and Test data
+
+The directory `data` contains the configuration for downloading the datasets used to train and evaluate the models. We use data from the [Opus](https://opus.nlpl.eu/) and build models with and without the 
+[HPLT](https://hplt-project.org/) data release. For dev and test we use the [Flores200](https://github.com/facebookresearch/flores/blob/main/flores200/README.md) and [NTREX](https://github.com/MicrosoftTranslator/NTREX) datasets.
+
+To download the data, first make sure that [OpusCleaner](https://github.com/hplt-project/OpusCleaner) is installed (currently you need to install from 
+source to use the download script), then install the Python requirements in `data/requirements.txt`. To 
+download data from selected languages, use
+```
+./get_data.py -l LANG1 LANG2 ...
+```
+providing the 2-letter language codes.
+To download all data, use
+```
+./get_data.py -l all
+```
+Since the data download does not currently parallelise or cache, this will be slow.
+
+### Training Models
