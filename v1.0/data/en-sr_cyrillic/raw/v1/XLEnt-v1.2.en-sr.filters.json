@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "files": [
+    "XLEnt-v1.2.en-sr.en.gz",
+    "XLEnt-v1.2.en-sr.sr.gz"
+  ],
+  "filters": [
+    {
+      "filter": "normalize_whitespace",
+      "parameters": {
+        "COLLAPSE": true
+      },
+      "language": "en,sr"
+    },
+    {
+      "filter": "remove_empty_lines",
+      "parameters": {},
+      "language": null
+    },
+    {
+      "filter": "max_length",
+      "parameters": {
+        "MAXLENGTH": "250",
+        "MINLENGTH": "2"
+      },
+      "language": null
+    },
+    {
+      "filter": "fix_wiki",
+      "parameters": {
+        "ALWAYS": false,
+        "FOOTNOTES": true,
+        "URLS": true,
+        "WIKILINKS": true,
+        "CODE": true,
+        "HEADINGS": true,
+        "REMOVEEMPTYLINES": true
+      },
+      "language": null
+    },
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": 1,
+        "DEBUG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "opus.RegExpFilter",
+      "parameters": {
+        "regexps": [
+          "",
+          "[\u0410-\u042f\u0430-\u044f\u0408\u0458\u0409\u0459\u040a\u045a\u040b\u045b\u0402\u0452\u040f\u045f\u0416\u0436\u0428\u0448\u0427\u0447]{4}"
+        ],
+        "accept_match": true
+      },
+      "language": null
+    }
+  ]
+}

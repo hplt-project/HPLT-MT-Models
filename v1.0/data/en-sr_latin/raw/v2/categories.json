@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "name": "clean"
+    },
+    {
+      "name": "medium"
+    },
+    {
+      "name": "dirty"
+    }
+  ],
+  "mapping": {
+    "clean": [
+      "CCAligned-v1.en-sr",
+      "CCMatrix-v1.en-sr",
+      "ELRC-3041-wikipedia_health-v1.en-sr",
+      "ELRC-wikipedia_health-v1.en-sr",
+      "ELRC_2922-v1.en-sr",
+      "EUbookshop-v2.en-sr",
+      "GNOME-v1.en-sr",
+      "GlobalVoices-v2018q4.en-sr",
+      "GoURMET-v2.en-sr",
+      "HPLT-v1.1.en-sr",
+      "KDE4-v2.en-sr",
+      "MultiCCAligned-v1.en-sr",
+      "NLLB-v1.en-sr",
+      "NeuLab-TedTalks-v1.en-sr",
+      "OpenSubtitles-v2018.en-sr",
+      "QED-v2.0a.en-sr",
+      "SETIMES-v2.en-sr",
+      "TED2020-v1.en-sr",
+      "Tatoeba-v2023-04-12.en-sr",
+      "TildeMODEL-v2018.en-sr",
+      "Ubuntu-v14.10.en-sr",
+      "WikiMatrix-v1.en-sr",
+      "XLEnt-v1.2.en-sr",
+      "bible-uedin-v1.en-sr",
+      "tldr-pages-v2023-08-29.en-sr",
+      "wikimedia-v20230407.en-sr"
+    ]
+  }
+}
