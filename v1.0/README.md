@@ -1,9 +1,10 @@
 ## First release of HPLT models
 
-This directory contains scripts and configuration for downloading and running the models, as well
-as for downloading the training and development data, and for training the models. 
+This directory contains scripts, configuration and logs for model training.  
 
 ### Model Download
+
+Download the models from [HuggingFace](TBD), or following the links in (download.md)
 
 ### Model Usage
 
