@@ -55,9 +55,20 @@ def get_test_data(data_dir, other_lang):
   get_flores_data(other_lang, lang3[0], "devtest", data_dir.name, test_dir)
   get_ntrex_data(other_lang, lang3[1], "devtest", data_dir.name, test_dir)
   
-  dev_dir = data_dir / "dev"
+  dev_dir = data_dir / "valid"
   dev_dir.mkdir(exist_ok=True)
   get_flores_data(other_lang, lang3[0], "dev", data_dir.name, dev_dir)
+  
+def add_reverse_link(path):
+  name = path.name
+  components = name.split(".")
+  pair = components[-2]
+  rev_pair = "-".join(reversed(pair.split("-")))
+  components[-2] = rev_pair
+  rev_name = ".".join(components)
+  rev_path = path.parent / rev_name
+  if not rev_path.exists():
+    rev_path.symlink_to(path)
   
 def get_flores_data(lang2, lang3, segment, pair, dest_dir):
   flores_path = get_cache_dir() / "flores200_dataset.tar.gz"
@@ -70,6 +81,7 @@ def get_flores_data(lang2, lang3, segment, pair, dest_dir):
       with open(my_path, "w") as ofh:
         for line in flores_tar.extractfile(flores_path):
           print(line.decode('utf-8'), file=ofh, end="")
+      add_reverse_link(my_path)
           
 def get_ntrex_data(lang2, lang3, segment, pair, dest_dir):
   ntrex_path = get_cache_dir() / "ntrex"
@@ -79,8 +91,10 @@ def get_ntrex_data(lang2, lang3, segment, pair, dest_dir):
   ntrex_path = ntrex_path /  "NTREX-128"
   ntrex_eng = dest_dir / f"ntrex.{pair}.en"
   shutil.copy(ntrex_path / "newstest2019-src.eng.txt", ntrex_eng)
+  add_reverse_link(ntrex_eng)
   ntrex_for = dest_dir / f"ntrex.{pair}.{lang2}"
   shutil.copy(ntrex_path / f"newstest2019-ref.{lang3}.txt", ntrex_for)
+  add_reverse_link(ntrex_for)
     
     
   
