@@ -2,13 +2,11 @@
 
 This directory contains scripts, configuration and logs for model training.  
 
-### Model Download
+### Model Download and Usage
 
-Download the models from [HuggingFace](TBD), or following the links in (download.md)
+Download the models from [HuggingFace](TBD), or following the links in the [download page](download.md)
 
-### Model Usage
-
-### Downloading Training, Development and Test data
+### Training, Development and Test data
 
 The directory `data` contains the configuration for downloading the datasets used to train and evaluate the models. We use data from [Opus](https://opus.nlpl.eu/) and build models with and without the 
 [HPLT](https://hplt-project.org/) data release (V1.1). For dev and test we use  [Flores200](https://github.com/facebookresearch/flores/blob/main/flores200/README.md) and [NTREX](https://github.com/MicrosoftTranslator/NTREX) datasets.
@@ -26,4 +24,4 @@ To download all data, use
 ```
 Since the data download does not currently parallelise or cache, this will be slow.
 
-### Training Models
+### Training Details
