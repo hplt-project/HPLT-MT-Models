@@ -1,4 +1,4 @@
-# Models
+# Training
 
 For each language pair, we need to record:
 - model config files (marian.teacher.yml)
