@@ -1,0 +1,10 @@
+beam-size: 6
+max-length: 512
+max-length-factor: 3
+max-length-crop: true
+quiet: true
+quiet-translation: true
+mini-batch: 128
+maxi-batch: 5
+maxi-batch-sort: "src"
+log: "translation.log"

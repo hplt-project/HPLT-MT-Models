@@ -1,8 +1,6 @@
 import os
 import json
 
-import pathlib
-
 CATEGORIES = {
   "categories": [
     {
@@ -21,9 +19,10 @@ CATEGORIES = {
   }
 }
 
-lang_pairs = ["ar-en", "ca-en", "en-et", "en-eu", "en-fi", "en-ga", "en-zh_TW"]
+LANG_PAIRS = ["ar-en", "ca-en", "en-et", "en-eu", "en-fi", "en-ga", "en-zh_TW"]
 
-for lang_pair in lang_pairs:
+
+for lang_pair in LANG_PAIRS:
     lang1, lang2 = lang_pair.split("-")
     if lang_pair == "en-zh_TW":
         read_path = "../data_filtering/data/train-parts/en-zh_hant/"
@@ -49,19 +48,18 @@ for lang_pair in lang_pairs:
             category_data["mapping"]["clean"].append("HPLT-v1.1.{}".format(lang_pair))
         with open(write_path + "categories.json", "w") as f:
             json.dump(category_data, f, indent=2)
-        
-        for lang1_prefix in lang1_prefixes:
-            with open(write_path + "OPUS.{}.filters.json".format(lang_pair)) as f:
-                filter_data = json.load(f)
-                filter_data["files"] = ["{}.{}.gz".format(lang1_prefix, lang1),
-                                        "{}.{}.gz".format(lang1_prefix, lang2)]
-            with open(write_path + "{}.filters.json".format(lang1_prefix), "w") as f:
-                json.dump(filter_data, f, indent=2)
 
-            
         opus_name = write_path + "OPUS.{}.filters.json".format(lang_pair)
         if os.path.exists(opus_name):
-            os.remove(opus_name)
+          for lang1_prefix in lang1_prefixes:
+              with open(opus_name) as f:
+                  filter_data = json.load(f)
+                  filter_data["files"] = ["{}.{}.gz".format(lang1_prefix, lang1),
+                                          "{}.{}.gz".format(lang1_prefix, lang2)]
+              with open(write_path + "{}.filters.json".format(lang1_prefix), "w") as f:
+                  json.dump(filter_data, f, indent=2)
+
+          os.remove(opus_name)
         else:
             pass
         

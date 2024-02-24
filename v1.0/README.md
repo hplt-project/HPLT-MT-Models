@@ -24,7 +24,38 @@ To download all data, use
 ```
 Since the data download does not currently parallelise or cache, this will be slow.
 
-### Training Details
+### Training
 
+### Inference/Decoding/Translation
 
-### Evaliation Results
+We provide below an instruction on running translation with the [MarianNMT](https://github.com/marian-nmt/marian) toolkit. However, it is also possible to use other toolkits if you convert the model weights to compatible formats, for example, Hugging Face.
+
+Clone MarianNMT and compile the toolkit. Note that you will need to compile with `-DUSE_SENTENCEPIECE=on` because our models use a SentencePiece vocabulary. If you intend to run inference on CPU, please pass the `-DCOMPILE_CPU=on` flag as well.
+
+```
+git clone https://github.com/marian-nmt/marian.git
+mkdir -p marian/build
+cd marian/build
+cmake .. -DUSE_SENTENCEPIECE=on
+make -j8
+```
+
+Specify a path to the Marian decoder you just built, which should look like `your_path_to_marian/marian/build/marian-decoder`, and a path to the Marian configuration file that we supply in this repository `HPLT-MT-Models/v1.0/inference/inference_config.yml`. Feel free to modify the configurations to suit your needs. You should set the environment variable `CUDA_VISIBLE_DEVICES` to the GPU device(s) you want to use, e.g. `1,2,3,4`. If you want to use CPU, please change the `--devices` option to `--cpu-threads` and pass a integer that is larger than `0`.
+
+Please download the model and vocabulary files from [HPLT's Hugging Face page](https://huggingface.co/HPLT), or check the model weight table below for details. Pass the model checkpoint and vocabulary files to the decoder. Finally, specify a path to the input file and the output (hypothesis) file, and run the following command:
+
+```
+marian_decoder=/fs/lofn0/patrickchen/marian/build/marian-decoder
+marian_config=/fs/lofn0/patrickchen/HPLT/evaluation/marian_config.yml
+gpu_devices=$(echo -ne "$CUDA_VISIBLE_DEVICES" | tr "," " ")
+
+${marian_decoder} \
+    --config ${marian_config} \
+    --models ${model_checkpoint} \
+    --vocabs ${vocab_file} ${vocab_file} \
+    --devices ${gpu_devices} \
+    --input ${input_source_filename} \
+    --output ${output_hypothesis_filename}
+```
+
+### Evaluation
