@@ -59,3 +59,29 @@ ${marian_decoder} \
 ```
 
 ### Evaluation
+
+We provide example scripts to compute BLEU, chrF++, and COMET. We recommend that you use [sacrebleu](https://github.com/mjpost/sacrebleu) to compute BLEU scores. Specifically, you need to set a tokenization method: For the languages in our release, please use `13a`, except for Traditional Chinese, for which you should use `zh`.
+```
+pip install sacrebleu
+
+tokenizer=13a # or replace with "zh"
+sacrebleu --tokenize ${tokenizer} -m bleu -b ${output_hypothesis_filename} <${reference_filename}
+```
+
+Similarly, chrF++ scores can be computed as:
+```
+sacrebleu -m chrf --chrf-word-order 2 -b ${output_hypothesis_filename} <${reference_filename}
+```
+
+COMET scores can be obtained using with the following command. You need to specify a path to the COMET checkpoint you wish to use. For details please refer to the documentation of [COMET](https://github.com/Unbabel/COMET).
+
+```
+pip install unbabel-comet
+
+comet-score \
+    -s ${input_source_filename} \
+    -t ${output_hypothesis_filename} \
+    -r ${reference_filename} \
+    --model some/path/wmt22-comet-da/checkpoints/model.ckpt \
+    --quiet
+```
