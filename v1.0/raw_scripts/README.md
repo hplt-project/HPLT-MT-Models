@@ -1,0 +1,1 @@
+This folder contains the auxiliary scripts we used for inferencing, evaluation, etc in release v1.0.
