@@ -34,6 +34,7 @@ LANG_MAP = {
     "mt" : ("mlt_Latn", "mlt"),
     "nn" : ("nno_Latn", "nob"), # This is Bokmal, not Nynorsk
     "sq" : ("als_Latn","sqi"),
+    "sr_cyrillic" : ("srp_Cyrl", "srp-Cyrl"),
     "sw" : ("swh_Latn","swa"),
     "zh_hant" : ("zho_Hant","zho-TW"),
 }
