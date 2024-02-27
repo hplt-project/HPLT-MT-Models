@@ -68,7 +68,7 @@ for LANG1 in ar bs ca et eu fi ga gl hi hr is mk mt nn sq sr sw zh_hant; do
         if [ -d ${MODEL_DIR}/${LANG2}-${LANG1} ] || [ -d ${MODEL_DIR}/${LANG1}-${LANG2} ]; then
             for VERSION in v0 v1 v2; do
                 for TEST_SET in ntrex flores200; do
-                    echo -ne "${LANG2}-${LANG1}\t" >>${TSV_FILE}
+                    echo -ne "${LANG2}-${LANG1}" >>${TSV_FILE}
                     echo -ne "\t${TRAIN_SETS[${VERSION}]}" >>${TSV_FILE}
                     echo -ne "\t${TEST_SETS[${TEST_SET}]}" >>${TSV_FILE}
                     for FUNC in get_bleu get_chrF get_comet; do
