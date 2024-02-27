@@ -23,7 +23,7 @@ Please download the model and vocabulary files from [HPLT's Hugging Face page](h
 
 ```
 marian_decoder=# Path to marian-decoder executable
-marian_config= # Path to inference_config.yml/mnt/dagr0/bhaddow/data/HPLT-MT-Models/github/v1.0/data/en-zh_hant/test/flores200.devtest.zh_hant-en.zh_hant
+marian_config= # Path to inference_config.yml
 gpu_devices=$(echo -ne "$CUDA_VISIBLE_DEVICES" | tr "," " ")
 model_dir= # path where you checked out the model
 model_checkpoint=${model_dir}/model.npz.best-chrf.npz
@@ -43,7 +43,7 @@ ${marian_decoder} \
 
 We provide example scripts to compute BLEU, chrF++, and COMET. We recommend that you use [sacrebleu](https://github.com/mjpost/sacrebleu) to compute BLEU scores. Specifically, you need to set a tokenization method: For the languages in our release, please use `13a`, except for Traditional Chinese, for which you should use `zh`.
 ```
-pip install sacrebleu
+pip install --upgrade sacrebleu
 
 tokenizer=13a # or replace with "zh"
 sacrebleu --tokenize ${tokenizer} -m bleu -b ${output_hypothesis_filename} <${reference_filename}
@@ -54,10 +54,10 @@ Similarly, chrF++ scores can be computed as:
 sacrebleu -m chrf --chrf-word-order 2 -b ${output_hypothesis_filename} <${reference_filename}
 ```
 
-COMET scores can be obtained using with the following command. You need to specify a path to the COMET checkpoint you wish to use. For details please refer to the documentation of [COMET](https://github.com/Unbabel/COMET).
+COMET scores can be obtained using with the following command. You need to specify a path to the COMET checkpoint you wish to use. For details please refer to the documentation of [COMET](https://github.com/Unbabel/COMET). Also, you might to have python3.9 to [get the right scores](https://github.com/Unbabel/COMET/issues/203).
 
 ```
-pip install unbabel-comet
+pip install --upgrade unbabel-comet
 
 comet-score \
     -s ${input_source_filename} \
