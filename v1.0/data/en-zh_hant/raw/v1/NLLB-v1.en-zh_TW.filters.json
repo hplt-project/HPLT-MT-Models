@@ -1,8 +1,8 @@
 {
   "version": 1,
   "files": [
-    "KDE4-v2.en-zh_hant.en.gz",
-    "KDE4-v2.en-zh_hant.zh_hant.gz"
+    "NLLB-v1.en-zh_TW.en.gz",
+    "NLLB-v1.en-zh_TW.zh_TW.gz"
   ],
   "filters": [
     {
