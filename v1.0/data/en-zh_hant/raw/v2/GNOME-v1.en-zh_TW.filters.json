@@ -1,8 +1,8 @@
 {
   "version": 1,
   "files": [
-    "CCAligned-v1.en-zh_hant.en.gz",
-    "CCAligned-v1.en-zh_hant.zh_hant.gz"
+    "GNOME-v1.en-zh_TW.en.gz",
+    "GNOME-v1.en-zh_TW.zh_TW.gz"
   ],
   "filters": [
     {
