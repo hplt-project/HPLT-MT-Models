@@ -23,7 +23,7 @@ Please download the model and vocabulary files from [HPLT's Hugging Face page](h
 
 ```
 marian_decoder=# Path to marian-decoder executable
-marian_config= # Path to inference_config.yml/mnt/dagr0/bhaddow/data/HPLT-MT-Models/github/v1.0/data/en-zh_hant/test/flores200.devtest.zh_hant-en.zh_hant
+marian_config= # Path to inference_config.yml
 gpu_devices=$(echo -ne "$CUDA_VISIBLE_DEVICES" | tr "," " ")
 model_dir= # path where you checked out the model
 model_checkpoint=${model_dir}/model.npz.best-chrf.npz
