@@ -28,7 +28,7 @@ get_chrF() {
 }
 
 get_comet() {
-    COMET_SCORE=$(comet-score -s $3 -t $2 -r $1 --model /some/dir/to/wmt22-comet-da/checkpoints/model.ckpt --batch_size 128 --quiet)
+    COMET_SCORE=$(comet-score -s $3 -t $2 -r $1 --model /some/dir/to/wmt22-comet-da/checkpoints/model.ckpt --batch_size 128 --quiet --only_system)
     echo ${COMET_SCORE##*:} | awk '{$1=$1};1'
 }
 

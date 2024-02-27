@@ -54,7 +54,7 @@ Similarly, chrF++ scores can be computed as:
 sacrebleu -m chrf --chrf-word-order 2 -b ${output_hypothesis_filename} <${reference_filename}
 ```
 
-COMET scores can be obtained using with the following command. You need to specify a path to the COMET checkpoint you wish to use. For details please refer to the documentation of [COMET](https://github.com/Unbabel/COMET). Also, you might to have python3.9 to [get the right scores](https://github.com/Unbabel/COMET/issues/203).
+COMET scores can be obtained using with the following command. You need to specify a path to the COMET checkpoint you wish to use. For details please refer to the documentation of [COMET](https://github.com/Unbabel/COMET). You might need to have python3.9 to [get the right scores](https://github.com/Unbabel/COMET/issues/203).
 
 ```
 pip install --upgrade unbabel-comet
@@ -64,7 +64,8 @@ comet-score \
     -t ${output_hypothesis_filename} \
     -r ${reference_filename} \
     --model some/path/wmt22-comet-da/checkpoints/model.ckpt \
-    --quiet
+    --quiet \
+    --only_system
 ```
 
 ### Data for Training, Validation and Test
