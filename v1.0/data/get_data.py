@@ -67,7 +67,8 @@ def add_reverse_link(path):
   components[-2] = rev_pair
   rev_name = ".".join(components)
   rev_path = path.parent / rev_name
-  if not rev_path.exists():
+  if not rev_path.is_symlink():
+    print(rev_path)
     rev_path.symlink_to(path)
   
 def get_flores_data(lang2, lang3, segment, pair, dest_dir):

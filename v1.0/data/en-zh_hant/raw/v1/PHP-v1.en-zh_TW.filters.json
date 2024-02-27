@@ -1,8 +1,8 @@
 {
   "version": 1,
   "files": [
-    "Ubuntu-v14.10.en-zh_hant.en.gz",
-    "Ubuntu-v14.10.en-zh_hant.zh_hant.gz"
+    "PHP-v1.en-zh_TW.en.gz",
+    "PHP-v1.en-zh_TW.zh_TW.gz"
   ],
   "filters": [
     {

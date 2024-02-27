@@ -12,13 +12,13 @@
   ],
   "mapping": {
     "clean": [
-      "CCAligned-v1.en-zh_hant",
-      "GNOME-v1.en-zh_hant",
-      "KDE4-v2.en-zh_hant",
-      "MDN_Web_Docs-v2023-09-25.en-zh_hant",
-      "NLLB-v1.en-zh_hant",
-      "PHP-v1.en-zh_hant",
-      "Ubuntu-v14.10.en-zh_hant"
+      "CCAligned-v1.en-zh_TW",
+      "GNOME-v1.en-zh_TW",
+      "KDE4-v2.en-zh_TW",
+      "MDN_Web_Docs-v2023-09-25.en-zh_TW",
+      "NLLB-v1.en-zh_TW",
+      "PHP-v1.en-zh_TW",
+      "Ubuntu-v14.10.en-zh_TW"
     ]
   }
 }
