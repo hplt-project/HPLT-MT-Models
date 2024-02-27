@@ -1,32 +1,9 @@
 ## First release of HPLT models
 
-This directory contains scripts, configuration and logs for model training.  
+This directory contains scripts, configuration and logs for model inference and training.  
 
-### Model Download and Usage
 
-Download the models from [HuggingFace](TBD), or following the links in the [download page](download.md)
-
-### Training, Development and Test data
-
-The directory `data` contains the configuration for downloading the datasets used to train and evaluate the models. We use data from [Opus](https://opus.nlpl.eu/) and build models with and without the 
-[HPLT](https://hplt-project.org/) data release (V1.1). For dev and test we use  [Flores200](https://github.com/facebookresearch/flores/blob/main/flores200/README.md) and [NTREX](https://github.com/MicrosoftTranslator/NTREX) datasets.
-
-To download the data, first make sure that [OpusCleaner](https://github.com/hplt-project/OpusCleaner) is installed, 
-then install the Python requirements in `data/requirements.txt`. To 
-download data from selected languages, run the following from the `data` directory:
-```
-./get_data.py -l LANG1 LANG2 ...
-```
-providing the 2-letter language codes.
-To download all data, use
-```
-./get_data.py -l all
-```
-Since the data download does not currently parallelise or cache, this will be slow.
-
-### Training
-
-### Inference/Decoding/Translation
+### Using the Models: Inference/Decoding/Translation
 
 We provide below an instruction on running translation with the [MarianNMT](https://github.com/marian-nmt/marian) toolkit. However, it is also possible to use other toolkits if you convert the model weights to compatible formats, for example, Hugging Face.
 
@@ -46,7 +23,7 @@ Please download the model and vocabulary files from [HPLT's Hugging Face page](h
 
 ```
 marian_decoder=# Path to marian-decoder executable
-marian_config= # Path to inference_config.yml
+marian_config= # Path to inference_config.yml/mnt/dagr0/bhaddow/data/HPLT-MT-Models/github/v1.0/data/en-zh_hant/test/flores200.devtest.zh_hant-en.zh_hant
 gpu_devices=$(echo -ne "$CUDA_VISIBLE_DEVICES" | tr "," " ")
 model_dir= # path where you checked out the model
 model_checkpoint=${model_dir}/model.npz.best-chrf.npz
@@ -89,3 +66,25 @@ comet-score \
     --model some/path/wmt22-comet-da/checkpoints/model.ckpt \
     --quiet
 ```
+
+### Data for Training, Validation and Test
+
+The directory `data` contains the configuration for downloading the datasets used to train and evaluate the models. We use data from [Opus](https://opus.nlpl.eu/) and build models with and without the 
+[HPLT](https://hplt-project.org/) data release (V1.1). For dev and test we use  [Flores200](https://github.com/facebookresearch/flores/blob/main/flores200/README.md) and [NTREX](https://github.com/MicrosoftTranslator/NTREX) datasets.
+
+To download the data, first make sure that [OpusCleaner](https://github.com/hplt-project/OpusCleaner) is installed, 
+then install the Python requirements in `data/requirements.txt`. To 
+download data from selected languages, run the following from the `data` directory:
+```
+./get_data.py -l LANG1 LANG2 ...
+```
+providing the 2-letter language codes.
+To download all data, use
+```
+./get_data.py -l all
+```
+Since the data download does not currently parallelise or cache, this will be slow.
+
+### Training
+
+TBD
