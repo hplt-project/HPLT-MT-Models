@@ -40,23 +40,27 @@ cmake .. -DUSE_SENTENCEPIECE=on
 make -j8
 ```
 
-Specify a path to the Marian decoder you just built, which should look like `your_path_to_marian/marian/build/marian-decoder`, and a path to the Marian configuration file that we supply in this repository `HPLT-MT-Models/v1.0/inference/inference_config.yml`. Feel free to modify the configurations to suit your needs. You should set the environment variable `CUDA_VISIBLE_DEVICES` to the GPU device(s) you want to use, e.g. `1,2,3,4`. If you want to use CPU, please change the `--devices` option to `--cpu-threads` and pass a integer that is larger than `0`.
+To run translation, you should specify a path to the Marian decoder you just built, which should look like `your_path_to_marian/marian/build/marian-decoder`, and a path to the Marian configuration file that we supply in this repository `HPLT-MT-Models/v1.0/inference/inference_config.yml`. Feel free to modify the configurations to suit your needs. You should set the environment variable `CUDA_VISIBLE_DEVICES` to the GPU device(s) you want to use, e.g. `1,2,3,4`. If you want to use CPU, please change the `--devices` option to `--cpu-threads` and pass a integer that is larger than `0`.
 
-Please download the model and vocabulary files from [HPLT's Hugging Face page](https://huggingface.co/HPLT), or check the model weight table below for details. Pass the model checkpoint and vocabulary files to the decoder. Finally, specify a path to the input file and the output (hypothesis) file, and run the following command:
+Please download the model and vocabulary files from [HPLT's Hugging Face page](https://huggingface.co/HPLT), or check the model weight table below for details. Pass the model checkpoint and vocabulary files to the decoder. Finally, specify a path to the input file and the output (hypothesis) file (or omit for translation from `stdin` to `stdout`). Putting it all together gives:
 
 ```
-marian_decoder=/fs/lofn0/patrickchen/marian/build/marian-decoder
-marian_config=/fs/lofn0/patrickchen/HPLT/evaluation/marian_config.yml
+marian_decoder=# Path to marian-decoder executable
+marian_config= # Path to inference_config.yml
 gpu_devices=$(echo -ne "$CUDA_VISIBLE_DEVICES" | tr "," " ")
+model_dir= # path where you checked out the model
+model_checkpoint=${model_dir}/model.npz.best-chrf.npz
+vocab_file=${model_dir}/model.mt-en.spm # Insert correct language pair
 
 ${marian_decoder} \
     --config ${marian_config} \
     --models ${model_checkpoint} \
     --vocabs ${vocab_file} ${vocab_file} \
     --devices ${gpu_devices} \
-    --input ${input_source_filename} \
+    --input ${input_source_filename} \ 
     --output ${output_hypothesis_filename}
 ```
+
 
 ### Evaluation
 
