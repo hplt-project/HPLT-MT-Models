@@ -19,7 +19,7 @@ make -j8
 
 To run translation, you should specify a path to the Marian decoder you just built, which should look like `your_path_to_marian/marian/build/marian-decoder`, and a path to the Marian configuration file that we supply in this repository `HPLT-MT-Models/v1.0/inference/inference_config.yml`. Feel free to modify the configurations to suit your needs. You should set the environment variable `CUDA_VISIBLE_DEVICES` to the GPU device(s) you want to use, e.g. `1,2,3,4`. If you want to use CPU, please change the `--devices` option to `--cpu-threads` and pass a integer that is larger than `0`.
 
-Please download the model and vocabulary files from [HPLT's MT model collection on Hugging Face](https://huggingface.co/collections/HPLT/machine-translation-models-65dba9a92f6d2dfc2755cd52). Pass the model checkpoint and vocabulary files to the decoder. Finally, specify a path to the input file and the output (hypothesis) file (or omit for translation from `stdin` to `stdout`). Putting it all together gives:
+Please download the model and vocabulary files from [HPLT's MT model collection on Hugging Face](https://huggingface.co/collections/HPLT/machine-translation-models-65dba9a92f6d2dfc2755cd52) or https://data.statmt.org/hplt-models/translate/v1.0/ . Pass the model checkpoint and vocabulary files to the decoder. Finally, specify a path to the input file and the output (hypothesis) file (or omit for translation from `stdin` to `stdout`). Putting it all together gives:
 
 ```
 marian_decoder=# Path to marian-decoder executable
