@@ -1,0 +1,1199 @@
+[2024-02-14 22:20:06] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-14 22:20:06] [marian] Running on nid007917 as process 18109 with command line:
+[2024-02-14 22:20:06] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.generate_vocab.en-et/output/model.en-et.spm /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.generate_vocab.en-et/output/model.en-et.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/tmp.d/6050226 --train-sets /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/tmp.d/6050226/train.en.gz /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/tmp.d/6050226/train.et.gz --valid-sets /scratch/project_465000574/data/en-et/valid/flores200.dev.en-et.en /scratch/project_465000574/data/en-et/valid/flores200.dev.en-et.et --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-14 22:20:06] [config] after: 0e
+[2024-02-14 22:20:06] [config] after-batches: 0
+[2024-02-14 22:20:06] [config] after-epochs: 0
+[2024-02-14 22:20:06] [config] all-caps-every: 0
+[2024-02-14 22:20:06] [config] allow-unk: false
+[2024-02-14 22:20:06] [config] authors: false
+[2024-02-14 22:20:06] [config] beam-size: 4
+[2024-02-14 22:20:06] [config] bert-class-symbol: "[CLS]"
+[2024-02-14 22:20:06] [config] bert-mask-symbol: "[MASK]"
+[2024-02-14 22:20:06] [config] bert-masking-fraction: 0.15
+[2024-02-14 22:20:06] [config] bert-sep-symbol: "[SEP]"
+[2024-02-14 22:20:06] [config] bert-train-type-embeddings: true
+[2024-02-14 22:20:06] [config] bert-type-vocab-size: 2
+[2024-02-14 22:20:06] [config] build-info: ""
+[2024-02-14 22:20:06] [config] char-conv-filters-num:
+[2024-02-14 22:20:06] [config]   - 200
+[2024-02-14 22:20:06] [config]   - 200
+[2024-02-14 22:20:06] [config]   - 250
+[2024-02-14 22:20:06] [config]   - 250
+[2024-02-14 22:20:06] [config]   - 300
+[2024-02-14 22:20:06] [config]   - 300
+[2024-02-14 22:20:06] [config]   - 300
+[2024-02-14 22:20:06] [config]   - 300
+[2024-02-14 22:20:06] [config] char-conv-filters-widths:
+[2024-02-14 22:20:06] [config]   - 1
+[2024-02-14 22:20:06] [config]   - 2
+[2024-02-14 22:20:06] [config]   - 3
+[2024-02-14 22:20:06] [config]   - 4
+[2024-02-14 22:20:06] [config]   - 5
+[2024-02-14 22:20:06] [config]   - 6
+[2024-02-14 22:20:06] [config]   - 7
+[2024-02-14 22:20:06] [config]   - 8
+[2024-02-14 22:20:06] [config] char-highway: 4
+[2024-02-14 22:20:06] [config] char-stride: 5
+[2024-02-14 22:20:06] [config] check-gradient-nan: true
+[2024-02-14 22:20:06] [config] check-nan: false
+[2024-02-14 22:20:06] [config] cite: false
+[2024-02-14 22:20:06] [config] clip-norm: 0
+[2024-02-14 22:20:06] [config] cost-scaling:
+[2024-02-14 22:20:06] [config]   []
+[2024-02-14 22:20:06] [config] cost-type: ce-mean-words
+[2024-02-14 22:20:06] [config] cpu-threads: 0
+[2024-02-14 22:20:06] [config] data-threads: 8
+[2024-02-14 22:20:06] [config] data-weighting: ""
+[2024-02-14 22:20:06] [config] data-weighting-type: sentence
+[2024-02-14 22:20:06] [config] dec-cell: gru
+[2024-02-14 22:20:06] [config] dec-cell-base-depth: 2
+[2024-02-14 22:20:06] [config] dec-cell-high-depth: 1
+[2024-02-14 22:20:06] [config] dec-depth: 6
+[2024-02-14 22:20:06] [config] devices:
+[2024-02-14 22:20:06] [config]   - 0
+[2024-02-14 22:20:06] [config]   - 1
+[2024-02-14 22:20:06] [config]   - 2
+[2024-02-14 22:20:06] [config]   - 3
+[2024-02-14 22:20:06] [config]   - 4
+[2024-02-14 22:20:06] [config]   - 5
+[2024-02-14 22:20:06] [config]   - 6
+[2024-02-14 22:20:06] [config]   - 7
+[2024-02-14 22:20:06] [config] dim-emb: 512
+[2024-02-14 22:20:06] [config] dim-rnn: 1024
+[2024-02-14 22:20:06] [config] dim-vocabs:
+[2024-02-14 22:20:06] [config]   - 64000
+[2024-02-14 22:20:06] [config] disp-first: 0
+[2024-02-14 22:20:06] [config] disp-freq: 1000u
+[2024-02-14 22:20:06] [config] disp-label-counts: true
+[2024-02-14 22:20:06] [config] dropout-rnn: 0
+[2024-02-14 22:20:06] [config] dropout-src: 0
+[2024-02-14 22:20:06] [config] dropout-trg: 0
+[2024-02-14 22:20:06] [config] dump-config: ""
+[2024-02-14 22:20:06] [config] dynamic-gradient-scaling:
+[2024-02-14 22:20:06] [config]   []
+[2024-02-14 22:20:06] [config] early-stopping: 5
+[2024-02-14 22:20:06] [config] early-stopping-on: first
+[2024-02-14 22:20:06] [config] embedding-fix-src: false
+[2024-02-14 22:20:06] [config] embedding-fix-trg: false
+[2024-02-14 22:20:06] [config] embedding-normalization: false
+[2024-02-14 22:20:06] [config] embedding-vectors:
+[2024-02-14 22:20:06] [config]   []
+[2024-02-14 22:20:06] [config] enc-cell: gru
+[2024-02-14 22:20:06] [config] enc-cell-depth: 1
+[2024-02-14 22:20:06] [config] enc-depth: 6
+[2024-02-14 22:20:06] [config] enc-type: bidirectional
+[2024-02-14 22:20:06] [config] english-title-case-every: 0
+[2024-02-14 22:20:06] [config] exponential-smoothing: 0.0001
+[2024-02-14 22:20:06] [config] factor-weight: 1
+[2024-02-14 22:20:06] [config] factors-combine: sum
+[2024-02-14 22:20:06] [config] factors-dim-emb: 0
+[2024-02-14 22:20:06] [config] gradient-checkpointing: false
+[2024-02-14 22:20:06] [config] gradient-norm-average-window: 100
+[2024-02-14 22:20:06] [config] guided-alignment: none
+[2024-02-14 22:20:06] [config] guided-alignment-cost: ce
+[2024-02-14 22:20:06] [config] guided-alignment-weight: 0.1
+[2024-02-14 22:20:06] [config] ignore-model-config: false
+[2024-02-14 22:20:06] [config] input-types:
+[2024-02-14 22:20:06] [config]   []
+[2024-02-14 22:20:06] [config] interpolate-env-vars: false
+[2024-02-14 22:20:06] [config] keep-best: true
+[2024-02-14 22:20:06] [config] label-smoothing: 0.1
+[2024-02-14 22:20:06] [config] layer-normalization: false
+[2024-02-14 22:20:06] [config] learn-rate: 0.0003
+[2024-02-14 22:20:06] [config] lemma-dependency: ""
+[2024-02-14 22:20:06] [config] lemma-dim-emb: 0
+[2024-02-14 22:20:06] [config] log: /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/logs/model.train.log
+[2024-02-14 22:20:06] [config] log-level: info
+[2024-02-14 22:20:06] [config] log-time-zone: ""
+[2024-02-14 22:20:06] [config] logical-epoch:
+[2024-02-14 22:20:06] [config]   - 1e
+[2024-02-14 22:20:06] [config]   - 0
+[2024-02-14 22:20:06] [config] lr-decay: 0
+[2024-02-14 22:20:06] [config] lr-decay-freq: 50000
+[2024-02-14 22:20:06] [config] lr-decay-inv-sqrt:
+[2024-02-14 22:20:06] [config]   - 16000
+[2024-02-14 22:20:06] [config] lr-decay-repeat-warmup: false
+[2024-02-14 22:20:06] [config] lr-decay-reset-optimizer: false
+[2024-02-14 22:20:06] [config] lr-decay-start:
+[2024-02-14 22:20:06] [config]   - 10
+[2024-02-14 22:20:06] [config]   - 1
+[2024-02-14 22:20:06] [config] lr-decay-strategy: epoch+stalled
+[2024-02-14 22:20:06] [config] lr-report: false
+[2024-02-14 22:20:06] [config] lr-warmup: 16000
+[2024-02-14 22:20:06] [config] lr-warmup-at-reload: false
+[2024-02-14 22:20:06] [config] lr-warmup-cycle: false
+[2024-02-14 22:20:06] [config] lr-warmup-start-rate: 0
+[2024-02-14 22:20:06] [config] max-length: 250
+[2024-02-14 22:20:06] [config] max-length-crop: false
+[2024-02-14 22:20:06] [config] max-length-factor: 3
+[2024-02-14 22:20:06] [config] maxi-batch: 1000
+[2024-02-14 22:20:06] [config] maxi-batch-sort: trg
+[2024-02-14 22:20:06] [config] mini-batch: 4096
+[2024-02-14 22:20:06] [config] mini-batch-fit: true
+[2024-02-14 22:20:06] [config] mini-batch-fit-step: 10
+[2024-02-14 22:20:06] [config] mini-batch-round-up: true
+[2024-02-14 22:20:06] [config] mini-batch-track-lr: false
+[2024-02-14 22:20:06] [config] mini-batch-warmup: 0
+[2024-02-14 22:20:06] [config] mini-batch-words: 0
+[2024-02-14 22:20:06] [config] mini-batch-words-ref: 0
+[2024-02-14 22:20:06] [config] model: /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-14 22:20:06] [config] multi-loss-type: sum
+[2024-02-14 22:20:06] [config] n-best: false
+[2024-02-14 22:20:06] [config] no-nccl: false
+[2024-02-14 22:20:06] [config] no-reload: false
+[2024-02-14 22:20:06] [config] no-restore-corpus: false
+[2024-02-14 22:20:06] [config] normalize: 1
+[2024-02-14 22:20:06] [config] normalize-gradient: false
+[2024-02-14 22:20:06] [config] num-devices: 0
+[2024-02-14 22:20:06] [config] optimizer: adam
+[2024-02-14 22:20:06] [config] optimizer-delay: 2
+[2024-02-14 22:20:06] [config] optimizer-params:
+[2024-02-14 22:20:06] [config]   - 0.9
+[2024-02-14 22:20:06] [config]   - 0.98
+[2024-02-14 22:20:06] [config]   - 1e-09
+[2024-02-14 22:20:06] [config] output-omit-bias: false
+[2024-02-14 22:20:06] [config] overwrite: true
+[2024-02-14 22:20:06] [config] precision:
+[2024-02-14 22:20:06] [config]   - float32
+[2024-02-14 22:20:06] [config]   - float32
+[2024-02-14 22:20:06] [config] pretrained-model: ""
+[2024-02-14 22:20:06] [config] quantize-biases: false
+[2024-02-14 22:20:06] [config] quantize-bits: 0
+[2024-02-14 22:20:06] [config] quantize-log-based: false
+[2024-02-14 22:20:06] [config] quantize-optimization-steps: 0
+[2024-02-14 22:20:06] [config] quiet: false
+[2024-02-14 22:20:06] [config] quiet-translation: false
+[2024-02-14 22:20:06] [config] relative-paths: false
+[2024-02-14 22:20:06] [config] right-left: false
+[2024-02-14 22:20:06] [config] save-freq: 5000u
+[2024-02-14 22:20:06] [config] seed: 42
+[2024-02-14 22:20:06] [config] sentencepiece-alphas:
+[2024-02-14 22:20:06] [config]   - 0.1
+[2024-02-14 22:20:06] [config] sentencepiece-max-lines: 2000000
+[2024-02-14 22:20:06] [config] sentencepiece-options: ""
+[2024-02-14 22:20:06] [config] sharding: global
+[2024-02-14 22:20:06] [config] shuffle: batches
+[2024-02-14 22:20:06] [config] shuffle-in-ram: false
+[2024-02-14 22:20:06] [config] sigterm: save-and-exit
+[2024-02-14 22:20:06] [config] skip: false
+[2024-02-14 22:20:06] [config] sqlite: ""
+[2024-02-14 22:20:06] [config] sqlite-drop: false
+[2024-02-14 22:20:06] [config] sync-freq: 200u
+[2024-02-14 22:20:06] [config] sync-sgd: true
+[2024-02-14 22:20:06] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/tmp.d/6050226
+[2024-02-14 22:20:06] [config] tied-embeddings: false
+[2024-02-14 22:20:06] [config] tied-embeddings-all: true
+[2024-02-14 22:20:06] [config] tied-embeddings-src: false
+[2024-02-14 22:20:06] [config] train-embedder-rank:
+[2024-02-14 22:20:06] [config]   []
+[2024-02-14 22:20:06] [config] train-sets:
+[2024-02-14 22:20:06] [config]   - /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/tmp.d/6050226/train.en.gz
+[2024-02-14 22:20:06] [config]   - /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/tmp.d/6050226/train.et.gz
+[2024-02-14 22:20:06] [config] transformer-aan-activation: swish
+[2024-02-14 22:20:06] [config] transformer-aan-depth: 2
+[2024-02-14 22:20:06] [config] transformer-aan-nogate: false
+[2024-02-14 22:20:06] [config] transformer-decoder-autoreg: self-attention
+[2024-02-14 22:20:06] [config] transformer-decoder-dim-ffn: 0
+[2024-02-14 22:20:06] [config] transformer-decoder-ffn-depth: 0
+[2024-02-14 22:20:06] [config] transformer-depth-scaling: false
+[2024-02-14 22:20:06] [config] transformer-dim-aan: 2048
+[2024-02-14 22:20:06] [config] transformer-dim-ffn: 2048
+[2024-02-14 22:20:06] [config] transformer-dropout: 0.1
+[2024-02-14 22:20:06] [config] transformer-dropout-attention: 0
+[2024-02-14 22:20:06] [config] transformer-dropout-ffn: 0
+[2024-02-14 22:20:06] [config] transformer-ffn-activation: relu
+[2024-02-14 22:20:06] [config] transformer-ffn-depth: 2
+[2024-02-14 22:20:06] [config] transformer-guided-alignment-layer: last
+[2024-02-14 22:20:06] [config] transformer-heads: 8
+[2024-02-14 22:20:06] [config] transformer-no-projection: false
+[2024-02-14 22:20:06] [config] transformer-pool: false
+[2024-02-14 22:20:06] [config] transformer-postprocess: dan
+[2024-02-14 22:20:06] [config] transformer-postprocess-emb: d
+[2024-02-14 22:20:06] [config] transformer-postprocess-top: ""
+[2024-02-14 22:20:06] [config] transformer-preprocess: ""
+[2024-02-14 22:20:06] [config] transformer-rnn-projection: false
+[2024-02-14 22:20:06] [config] transformer-tied-layers:
+[2024-02-14 22:20:06] [config]   []
+[2024-02-14 22:20:06] [config] transformer-train-position-embeddings: false
+[2024-02-14 22:20:06] [config] tsv: false
+[2024-02-14 22:20:06] [config] tsv-fields: 0
+[2024-02-14 22:20:06] [config] type: transformer
+[2024-02-14 22:20:06] [config] ulr: false
+[2024-02-14 22:20:06] [config] ulr-dim-emb: 0
+[2024-02-14 22:20:06] [config] ulr-dropout: 0
+[2024-02-14 22:20:06] [config] ulr-keys-vectors: ""
+[2024-02-14 22:20:06] [config] ulr-query-vectors: ""
+[2024-02-14 22:20:06] [config] ulr-softmax-temperature: 1
+[2024-02-14 22:20:06] [config] ulr-trainable-transformation: false
+[2024-02-14 22:20:06] [config] unlikelihood-loss: false
+[2024-02-14 22:20:06] [config] valid-freq: 5000u
+[2024-02-14 22:20:06] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/logs/model.valid.log
+[2024-02-14 22:20:06] [config] valid-max-length: 1000
+[2024-02-14 22:20:06] [config] valid-metrics:
+[2024-02-14 22:20:06] [config]   - chrf
+[2024-02-14 22:20:06] [config]   - bleu
+[2024-02-14 22:20:06] [config]   - ce-mean-words
+[2024-02-14 22:20:06] [config] valid-mini-batch: 64
+[2024-02-14 22:20:06] [config] valid-reset-stalled: true
+[2024-02-14 22:20:06] [config] valid-script-args:
+[2024-02-14 22:20:06] [config]   []
+[2024-02-14 22:20:06] [config] valid-script-path: ""
+[2024-02-14 22:20:06] [config] valid-sets:
+[2024-02-14 22:20:06] [config]   - /scratch/project_465000574/data/en-et/valid/flores200.dev.en-et.en
+[2024-02-14 22:20:06] [config]   - /scratch/project_465000574/data/en-et/valid/flores200.dev.en-et.et
+[2024-02-14 22:20:06] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/logs/model.valid.out
+[2024-02-14 22:20:06] [config] vocabs:
+[2024-02-14 22:20:06] [config]   - /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.generate_vocab.en-et/output/model.en-et.spm
+[2024-02-14 22:20:06] [config]   - /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.generate_vocab.en-et/output/model.en-et.spm
+[2024-02-14 22:20:06] [config] word-penalty: 0
+[2024-02-14 22:20:06] [config] word-scores: false
+[2024-02-14 22:20:06] [config] workspace: 20000
+[2024-02-14 22:20:06] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-14 22:20:06] Using synchronous SGD
+[2024-02-14 22:20:06] [comm] Compiled without MPI support. Running as a single process on nid007917
+[2024-02-14 22:20:06] Synced seed 42
+[2024-02-14 22:20:06] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.generate_vocab.en-et/output/model.en-et.spm
+[2024-02-14 22:20:06] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-14 22:20:06] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.generate_vocab.en-et/output/model.en-et.spm
+[2024-02-14 22:20:06] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-14 22:20:06] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-14 22:20:06] Checking gradient for NaN
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-14 22:20:07] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-14 22:20:07] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-14 22:20:09] [comm] Using global sharding
+[2024-02-14 22:20:10] [comm] NCCLCommunicators constructed successfully
+[2024-02-14 22:20:10] [training] Using 8 GPUs
+[2024-02-14 22:20:10] [logits] Applying loss function for 1 factor(s)
+[2024-02-14 22:20:10] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 22:20:15] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 22:21:11] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-14 22:21:11] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-14 22:21:11] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-14 22:21:11] [comm] Using global sharding
+[2024-02-14 22:21:16] [comm] NCCLCommunicators constructed successfully
+[2024-02-14 22:21:16] [training] Using 8 GPUs
+[2024-02-14 22:21:16] Training started
+[2024-02-14 22:22:24] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu6
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu1
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu2
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu4
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu5
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu3
+[2024-02-14 22:22:24] [memory] Reserving 293 MB, device gpu7
+[2024-02-14 22:22:35] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 22:22:56] [memory] Reserving 293 MB, device gpu6
+[2024-02-14 22:22:56] [memory] Reserving 293 MB, device gpu7
+[2024-02-14 22:22:56] [memory] Reserving 293 MB, device gpu1
+[2024-02-14 22:22:56] [memory] Reserving 293 MB, device gpu4
+[2024-02-14 22:22:56] [memory] Reserving 293 MB, device gpu3
+[2024-02-14 22:22:56] [memory] Reserving 293 MB, device gpu2
+[2024-02-14 22:22:56] [memory] Reserving 293 MB, device gpu5
+[2024-02-14 22:22:57] Allocating memory for general optimizer shards
+[2024-02-14 22:22:57] Parameter type float32, optimization type float32, casting types false
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu5
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu2
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu6
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu7
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu3
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu4
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu1
+[2024-02-14 22:22:57] [memory] Reserving 36 MB, device gpu0
+[2024-02-14 22:22:57] Allocating memory for Adam-specific shards
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu5
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu4
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu3
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu1
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu0
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu2
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu6
+[2024-02-14 22:22:57] [memory] Reserving 73 MB, device gpu7
+[2024-02-14 22:31:32] Ep. 1 : Up. 1000 : Sen. 3,067,903 : Cost 9.61559772 : Time 620.60s : 113161.99 words/s : gNorm 2.0064
+[2024-02-14 22:40:22] Ep. 1 : Up. 2000 : Sen. 5,914,367 : Cost 8.29753017 : Time 530.70s : 129674.06 words/s : gNorm 1.5734
+[2024-02-14 22:49:05] Ep. 1 : Up. 3000 : Sen. 8,498,373 : Cost 7.49218845 : Time 522.25s : 128791.63 words/s : gNorm 1.7409
+[2024-02-14 22:57:24] Ep. 1 : Up. 4000 : Sen. 11,025,148 : Cost 6.91957569 : Time 499.20s : 132435.59 words/s : gNorm 1.7062
+[2024-02-14 23:05:52] Ep. 1 : Up. 5000 : Sen. 13,992,352 : Cost 6.48411798 : Time 508.28s : 131295.75 words/s : gNorm 1.7275
+[2024-02-14 23:05:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-14 23:05:54] Saving Adam parameters
+[2024-02-14 23:05:57] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-14 23:06:00] Translating validation set...
+[2024-02-14 23:06:01] [valid] First sentence's tokens as scored:
+[2024-02-14 23:06:01] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-14 23:06:01] [valid]   Hyp: S e e o n ü k s k a k s a a s t a t , m i s o n ü k s k o r d a a s t a s .
+[2024-02-14 23:06:01] [valid]   Ref: J a s i i s t a g a s i p õ h j a p o o l e l ä ä n e k a u d u , ü l e t a d e s t a a s M a r a j õ e p ä r a s t a p r i l l i k u u v i h m a s i d .
+[2024-02-14 23:06:02] Best translation 0 : See tähendab, et see on väga oluline, et:
+[2024-02-14 23:06:02] Best translation 1 : See on väga oluline, et see on väga oluline, et see on suurem, mis võib olla suurem kui see on suurem.
+[2024-02-14 23:06:02] Best translation 2 : Alates 1. jaanuarist 2005 on ette nähtud, et Ühendkuningriigis on välja töötatud, mis on seotud Ühendkuningriigis ja Ühendkuningriigis.
+[2024-02-14 23:06:02] Best translation 3 : In vitro uuringud on näidanud, et farmakokineetikat ei ole uuritud.
+[2024-02-14 23:06:02] Best translation 4 : See tähendab, et see ei ole võimalik.
+[2024-02-14 23:06:02] Best translation 5 : President Ilves, kes oli Ühendkuningriigis, oli Ühendkuningriigis.
+[2024-02-14 23:06:02] Best translation 10 : Lisaks sellele on Eesti ja Leedu Vabariigi Vabariigil, mis on seotud Eesti ja Leeduga, on seotud Eesti ja Leeduga.
+[2024-02-14 23:06:02] Best translation 20 : See on väga oluline, et me ei ole võimalik teha.
+[2024-02-14 23:06:02] Best translation 40 : kirjalikult. - (FR) Härra juhataja, daamid ja härrad!
+[2024-02-14 23:06:02] Best translation 80 : See on hea meel, et see on väga oluline.
+[2024-02-14 23:06:02] Best translation 160 : See on väga oluline, et see on väga oluline, et see on suur.
+[2024-02-14 23:06:02] Best translation 320 : See on väga oluline, et see on suur.
+[2024-02-14 23:06:02] Best translation 640 : See tähendab, et see on oluline, et see on oluline, et see on vaja teha.
+[2024-02-14 23:06:03] Total translation time: 2.90695s
+[2024-02-14 23:06:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-14 23:06:04] [valid] Ep. 1 : Up. 5000 : chrf : 11.2933 : new best
+[2024-02-14 23:06:04] Translating validation set...
+[2024-02-14 23:06:07] Best translation 0 : See tähendab, et see on väga oluline, et:
+[2024-02-14 23:06:07] Best translation 1 : See on väga oluline, et see on väga oluline, et see on suurem, mis võib olla suurem kui see on suurem.
+[2024-02-14 23:06:07] Best translation 2 : Alates 1. jaanuarist 2005 on ette nähtud, et Ühendkuningriigis on välja töötatud, mis on seotud Ühendkuningriigis ja Ühendkuningriigis.
+[2024-02-14 23:06:07] Best translation 3 : In vitro uuringud on näidanud, et farmakokineetikat ei ole uuritud.
+[2024-02-14 23:06:07] Best translation 4 : See tähendab, et see ei ole võimalik.
+[2024-02-14 23:06:07] Best translation 5 : President Ilves, kes oli Ühendkuningriigis, oli Ühendkuningriigis.
+[2024-02-14 23:06:07] Best translation 10 : Lisaks sellele on Eesti ja Leedu Vabariigi Vabariigil, mis on seotud Eesti ja Leeduga, on seotud Eesti ja Leeduga.
+[2024-02-14 23:06:07] Best translation 20 : See on väga oluline, et me ei ole võimalik teha.
+[2024-02-14 23:06:07] Best translation 40 : kirjalikult. - (FR) Härra juhataja, daamid ja härrad!
+[2024-02-14 23:06:07] Best translation 80 : See on hea meel, et see on väga oluline.
+[2024-02-14 23:06:07] Best translation 160 : See on väga oluline, et see on väga oluline, et see on suur.
+[2024-02-14 23:06:07] Best translation 320 : See on väga oluline, et see on suur.
+[2024-02-14 23:06:07] Best translation 640 : See tähendab, et see on oluline, et see on oluline, et see on vaja teha.
+[2024-02-14 23:06:07] Total translation time: 2.77518s
+[2024-02-14 23:06:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-14 23:06:08] [valid] Ep. 1 : Up. 5000 : bleu : 0.563719 : new best
+[2024-02-14 23:06:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-14 23:06:09] [valid] Ep. 1 : Up. 5000 : ce-mean-words : 6.56837 : new best
+[2024-02-14 23:14:55] Ep. 1 : Up. 6000 : Sen. 18,435,119 : Cost 5.96128464 : Time 542.96s : 133752.29 words/s : gNorm 1.5503
+[2024-02-14 23:23:51] Ep. 1 : Up. 7000 : Sen. 23,892,956 : Cost 5.95718145 : Time 535.67s : 144500.89 words/s : gNorm 1.3085
+[2024-02-14 23:32:52] Ep. 1 : Up. 8000 : Sen. 27,580,060 : Cost 5.87891197 : Time 541.22s : 139121.92 words/s : gNorm 1.1385
+[2024-02-14 23:41:41] Ep. 1 : Up. 9000 : Sen. 30,980,768 : Cost 5.66861105 : Time 528.88s : 136626.07 words/s : gNorm 1.2673
+[2024-02-14 23:50:38] Ep. 1 : Up. 10000 : Sen. 34,525,849 : Cost 5.14145851 : Time 537.23s : 139532.46 words/s : gNorm 1.1092
+[2024-02-14 23:50:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-14 23:50:39] Saving Adam parameters
+[2024-02-14 23:50:42] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-14 23:50:44] Translating validation set...
+[2024-02-14 23:50:47] Best translation 0 : Näiteks on üks paljudest, mida saab kasutada, et valida, mis on spetsiaalselt spetsiaalselt loodud, kasutades erinevaid meetodeid, mida saab kasutada ainult ühe arvutiga.
+[2024-02-14 23:50:47] Best translation 1 : Paljud inimesed, kes saavad kasu, võivad olla HIV-i, HIV-i, HIV-i ja HIV-nakkusega seotud haigustest.
+[2024-02-14 23:50:47] Best translation 2 : Ööpäeval oli Šveitsi Šveitsi ja Šveitsi Šveitsi Šveitsi Šveitsi Šveitsi Šotimaal.
+[2024-02-14 23:50:47] Best translation 3 : See oli sertifitseeritud D.D.D.
+[2024-02-14 23:50:47] Best translation 4 : Raudteetranspordil on raudteetransport.
+[2024-02-14 23:50:47] Best translation 5 : 28-aastane Šotimaal oli kaks aastat tagasi.
+[2024-02-14 23:50:47] Best translation 10 : 1,1km kaugusel linnast, kus ta oli, oli Šveitsi Šveitsi Šveitsist pärit, kes on sõlminud oma Šveitsi Šveitsi Šveitsiga.
+[2024-02-14 23:50:47] Best translation 20 : Ta leidis, et pärast seda, kui Nõukogude Liidu valitsus on otsustanud.
+[2024-02-14 23:50:47] Best translation 40 : John, John, John, John (Jõlles) on hea meel, et lapsed, lapsed ja lapsed, kes tahavad õppida... Loe edasi
+[2024-02-14 23:50:47] Best translation 80 : Pärast seda, kui žürii võttis tagasi.
+[2024-02-14 23:50:47] Best translation 160 : John, John, John ja tema sõbrad olid kaks aastat tagasi.
+[2024-02-14 23:50:47] Best translation 320 : Kui Hiina on üle 20 aasta, on ta kasvanud üle 20 aasta.
+[2024-02-14 23:50:47] Best translation 640 : See võimaldab teil jälgida oma teadmisi ja oskusi.
+[2024-02-14 23:50:47] Total translation time: 2.69820s
+[2024-02-14 23:50:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-14 23:50:48] [valid] Ep. 1 : Up. 10000 : chrf : 16.7061 : new best
+[2024-02-14 23:50:48] Translating validation set...
+[2024-02-14 23:50:50] Best translation 0 : Näiteks on üks paljudest, mida saab kasutada, et valida, mis on spetsiaalselt spetsiaalselt loodud, kasutades erinevaid meetodeid, mida saab kasutada ainult ühe arvutiga.
+[2024-02-14 23:50:50] Best translation 1 : Paljud inimesed, kes saavad kasu, võivad olla HIV-i, HIV-i, HIV-i ja HIV-nakkusega seotud haigustest.
+[2024-02-14 23:50:50] Best translation 2 : Ööpäeval oli Šveitsi Šveitsi ja Šveitsi Šveitsi Šveitsi Šveitsi Šveitsi Šotimaal.
+[2024-02-14 23:50:50] Best translation 3 : See oli sertifitseeritud D.D.D.
+[2024-02-14 23:50:50] Best translation 4 : Raudteetranspordil on raudteetransport.
+[2024-02-14 23:50:50] Best translation 5 : 28-aastane Šotimaal oli kaks aastat tagasi.
+[2024-02-14 23:50:50] Best translation 10 : 1,1km kaugusel linnast, kus ta oli, oli Šveitsi Šveitsi Šveitsist pärit, kes on sõlminud oma Šveitsi Šveitsi Šveitsiga.
+[2024-02-14 23:50:50] Best translation 20 : Ta leidis, et pärast seda, kui Nõukogude Liidu valitsus on otsustanud.
+[2024-02-14 23:50:50] Best translation 40 : John, John, John, John (Jõlles) on hea meel, et lapsed, lapsed ja lapsed, kes tahavad õppida... Loe edasi
+[2024-02-14 23:50:50] Best translation 80 : Pärast seda, kui žürii võttis tagasi.
+[2024-02-14 23:50:50] Best translation 160 : John, John, John ja tema sõbrad olid kaks aastat tagasi.
+[2024-02-14 23:50:50] Best translation 320 : Kui Hiina on üle 20 aasta, on ta kasvanud üle 20 aasta.
+[2024-02-14 23:50:50] Best translation 640 : See võimaldab teil jälgida oma teadmisi ja oskusi.
+[2024-02-14 23:50:50] Total translation time: 2.46997s
+[2024-02-14 23:50:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-14 23:50:51] [valid] Ep. 1 : Up. 10000 : bleu : 1.46923 : new best
+[2024-02-14 23:50:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-14 23:50:52] [valid] Ep. 1 : Up. 10000 : ce-mean-words : 5.01856 : new best
+[2024-02-15 00:00:00] Ep. 1 : Up. 11000 : Sen. 38,308,105 : Cost 4.57088470 : Time 561.61s : 140078.50 words/s : gNorm 1.2644
+[2024-02-15 00:09:06] Ep. 1 : Up. 12000 : Sen. 41,835,792 : Cost 4.49344540 : Time 545.79s : 140390.05 words/s : gNorm 1.4568
+[2024-02-15 00:17:48] Ep. 1 : Up. 13000 : Sen. 44,905,144 : Cost 4.49943352 : Time 522.30s : 135743.21 words/s : gNorm 1.0110
+[2024-02-15 00:26:19] Ep. 1 : Up. 14000 : Sen. 47,637,304 : Cost 3.69791603 : Time 511.16s : 132296.51 words/s : gNorm 0.7441
+[2024-02-15 00:35:00] Ep. 1 : Up. 15000 : Sen. 50,238,782 : Cost 3.47879672 : Time 521.29s : 127896.39 words/s : gNorm 0.6443
+[2024-02-15 00:35:00] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 00:35:02] Saving Adam parameters
+[2024-02-15 00:35:04] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 00:35:06] Translating validation set...
+[2024-02-15 00:35:07] Best translation 0 : Esmaspäeval, teadlased teatas Ülikooli Tehnikaülikoolist uue diagnostikavahendi kasutuselevõtust, mis võib hõlmata: väike trükipaber, mida saab kasutada ainult ühe USA keskpaigaks.
+[2024-02-15 00:35:07] Best translation 1 : Leaderi teadlased ütlevad, et see võib põhjustada vähi, tuberkuloosi, HIV-i ja malaaria teket madala sissetulekuga riikides, kus haigus on tingitud ajuvähist.
+[2024-02-15 00:35:07] Best translation 2 : JAS 39C Gripi läbisõit toimub umbes 9:30-l kohaliku aja jooksul (230 UTC) ja sealt väljus lennujaama lennulende.
+[2024-02-15 00:35:07] Best translation 3 : Katse on määratletud kui Squadron Leader Distribuit Pattavee.
+[2024-02-15 00:35:07] Best translation 4 : Kohalikud meediaaruanded lennuväljal, mis on seotud sellega, kui need on täidetud.
+[2024-02-15 00:35:07] Best translation 5 : 28-aastane Vidal ühines Barça kolme hooajaga, alates Sevillast.
+[2024-02-15 00:35:08] Best translation 10 : Umbes 11:29. aastal viis ta tagasi valgele kohale, viimane Trafalga väljakule, seejärel Alwychnile ja Stockholmile, kus Riigikogu esimees oli oma kevadisel foorumil Grand Condungi hotellil.
+[2024-02-15 00:35:08] Best translation 20 : Ta kritiseeris valimiste ajal, mille ajal võib see riik jääda püsima kriisi ajal.
+[2024-02-15 00:35:08] Best translation 40 : John Grant, alates WENED Buffeau'st (Reading Rainbow'i kodujaam) ütles: „Raudlane lapsed, kes loevad lugemiseks, ... näitab, et lapsed on valmis raamatu ja lugemiseks."
+[2024-02-15 00:35:08] Best translation 80 : Seejärel pööras ta tähelepanu esialgsele plaanile.
+[2024-02-15 00:35:08] Best translation 160 : Robert, Gordon, Kenseth, ja Harick ümardab oma esiservad neljale võidule, mis on möödunud hooajast.
+[2024-02-15 00:35:08] Best translation 320 : Seega on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 00:35:08] Best translation 640 : See võimaldab üliõpilastel töötada oma tempos ja kontrollida juhiseid.
+[2024-02-15 00:35:08] Total translation time: 1.70853s
+[2024-02-15 00:35:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 00:35:09] [valid] Ep. 1 : Up. 15000 : chrf : 39.7727 : new best
+[2024-02-15 00:35:09] Translating validation set...
+[2024-02-15 00:35:10] Best translation 0 : Esmaspäeval, teadlased teatas Ülikooli Tehnikaülikoolist uue diagnostikavahendi kasutuselevõtust, mis võib hõlmata: väike trükipaber, mida saab kasutada ainult ühe USA keskpaigaks.
+[2024-02-15 00:35:10] Best translation 1 : Leaderi teadlased ütlevad, et see võib põhjustada vähi, tuberkuloosi, HIV-i ja malaaria teket madala sissetulekuga riikides, kus haigus on tingitud ajuvähist.
+[2024-02-15 00:35:10] Best translation 2 : JAS 39C Gripi läbisõit toimub umbes 9:30-l kohaliku aja jooksul (230 UTC) ja sealt väljus lennujaama lennulende.
+[2024-02-15 00:35:10] Best translation 3 : Katse on määratletud kui Squadron Leader Distribuit Pattavee.
+[2024-02-15 00:35:10] Best translation 4 : Kohalikud meediaaruanded lennuväljal, mis on seotud sellega, kui need on täidetud.
+[2024-02-15 00:35:10] Best translation 5 : 28-aastane Vidal ühines Barça kolme hooajaga, alates Sevillast.
+[2024-02-15 00:35:10] Best translation 10 : Umbes 11:29. aastal viis ta tagasi valgele kohale, viimane Trafalga väljakule, seejärel Alwychnile ja Stockholmile, kus Riigikogu esimees oli oma kevadisel foorumil Grand Condungi hotellil.
+[2024-02-15 00:35:10] Best translation 20 : Ta kritiseeris valimiste ajal, mille ajal võib see riik jääda püsima kriisi ajal.
+[2024-02-15 00:35:10] Best translation 40 : John Grant, alates WENED Buffeau'st (Reading Rainbow'i kodujaam) ütles: „Raudlane lapsed, kes loevad lugemiseks, ... näitab, et lapsed on valmis raamatu ja lugemiseks."
+[2024-02-15 00:35:10] Best translation 80 : Seejärel pööras ta tähelepanu esialgsele plaanile.
+[2024-02-15 00:35:10] Best translation 160 : Robert, Gordon, Kenseth, ja Harick ümardab oma esiservad neljale võidule, mis on möödunud hooajast.
+[2024-02-15 00:35:10] Best translation 320 : Seega on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 00:35:10] Best translation 640 : See võimaldab üliõpilastel töötada oma tempos ja kontrollida juhiseid.
+[2024-02-15 00:35:10] Total translation time: 1.37700s
+[2024-02-15 00:35:10] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 00:35:11] [valid] Ep. 1 : Up. 15000 : bleu : 11.6871 : new best
+[2024-02-15 00:35:11] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 00:35:12] [valid] Ep. 1 : Up. 15000 : ce-mean-words : 3.18068 : new best
+[2024-02-15 00:43:29] Ep. 1 : Up. 16000 : Sen. 52,782,026 : Cost 3.33550072 : Time 508.90s : 129584.24 words/s : gNorm 0.6729
+[2024-02-15 00:51:57] Ep. 1 : Up. 17000 : Sen. 55,730,718 : Cost 3.39520240 : Time 507.50s : 132376.73 words/s : gNorm 0.6065
+[2024-02-15 01:01:02] Ep. 1 : Up. 18000 : Sen. 61,436,132 : Cost 3.49211550 : Time 544.86s : 141682.30 words/s : gNorm 0.6390
+[2024-02-15 01:09:47] Ep. 1 : Up. 19000 : Sen. 65,957,917 : Cost 3.47784877 : Time 525.86s : 142374.57 words/s : gNorm 0.4986
+[2024-02-15 01:18:24] Ep. 1 : Up. 20000 : Sen. 69,574,820 : Cost 3.25437117 : Time 516.12s : 145370.50 words/s : gNorm 0.7032
+[2024-02-15 01:18:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 01:18:25] Saving Adam parameters
+[2024-02-15 01:18:27] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 01:18:30] Translating validation set...
+[2024-02-15 01:18:31] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli teadlased välja uue diagnostilise tööriista, mis võib sorteerida rakutüüpe: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, et iga USA senti oleks võimalik kasutada.
+[2024-02-15 01:18:31] Best translation 1 : Juhtivad teadlased ütlevad, et see võib kaasa tuua vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamise madala sissetulekuga riikidele, kus haiguste, näiteks rinnavähi ellujäämismäärad võivad olla pooled rikkamatest riikidest.
+[2024-02-15 01:18:31] Best translation 2 : JAS 39C Gripen sõits lennurajale umbes 9:30 ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 01:18:31] Best translation 3 : Piloot määrati Squadron Leader Dilorit Pattaveeks.
+[2024-02-15 01:18:31] Best translation 4 : Kohalik meedia teatab lennuvälja tuletõrjesõidukist, mis on ümber paigutatud, vastates samal ajal.
+[2024-02-15 01:18:31] Best translation 5 : 28-aastane Vidal oli liitunud Barça kolme hooaja eest Sevillast.
+[2024-02-15 01:18:31] Best translation 10 : Umbes 1129. aastal kolis protest Whitehalli, mööda Stralti, mille andis Aldwych ja kuningas Holbornile, kus Konservatiivne Partei hoidis oma kevadfoorumit Grand Connaughti tubades.
+[2024-02-15 01:18:31] Best translation 20 : Hesish viitas valimiste ajal, et Ma võib kriisi ajal riigist lahkuda.
+[2024-02-15 01:18:31] Best translation 40 : John Grant, alates WENED Buffy (Reading Rainbow'i kodujaam) ütles: "Reading Rainbow õpetas lastele, miks lugeda, ... lugemise armastust — [show] julgustas lapsi raamatu järele võtma ja lugema."
+[2024-02-15 01:18:31] Best translation 80 : Seejärel alistas Markosón Colooture esialgses finaalis.
+[2024-02-15 01:18:31] Best translation 160 : Stewart, Gordon, Kenstein ja Harick pööravad üle kümne positsiooni juhtide meistrivõistlustele, kus on neli sõitu, mis jäid hooajale.
+[2024-02-15 01:18:31] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 01:18:32] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 01:18:32] Total translation time: 1.74675s
+[2024-02-15 01:18:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 01:18:33] [valid] Ep. 1 : Up. 20000 : chrf : 52.2385 : new best
+[2024-02-15 01:18:33] Translating validation set...
+[2024-02-15 01:18:34] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli teadlased välja uue diagnostilise tööriista, mis võib sorteerida rakutüüpe: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, et iga USA senti oleks võimalik kasutada.
+[2024-02-15 01:18:34] Best translation 1 : Juhtivad teadlased ütlevad, et see võib kaasa tuua vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamise madala sissetulekuga riikidele, kus haiguste, näiteks rinnavähi ellujäämismäärad võivad olla pooled rikkamatest riikidest.
+[2024-02-15 01:18:34] Best translation 2 : JAS 39C Gripen sõits lennurajale umbes 9:30 ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 01:18:34] Best translation 3 : Piloot määrati Squadron Leader Dilorit Pattaveeks.
+[2024-02-15 01:18:34] Best translation 4 : Kohalik meedia teatab lennuvälja tuletõrjesõidukist, mis on ümber paigutatud, vastates samal ajal.
+[2024-02-15 01:18:34] Best translation 5 : 28-aastane Vidal oli liitunud Barça kolme hooaja eest Sevillast.
+[2024-02-15 01:18:34] Best translation 10 : Umbes 1129. aastal kolis protest Whitehalli, mööda Stralti, mille andis Aldwych ja kuningas Holbornile, kus Konservatiivne Partei hoidis oma kevadfoorumit Grand Connaughti tubades.
+[2024-02-15 01:18:34] Best translation 20 : Hesish viitas valimiste ajal, et Ma võib kriisi ajal riigist lahkuda.
+[2024-02-15 01:18:34] Best translation 40 : John Grant, alates WENED Buffy (Reading Rainbow'i kodujaam) ütles: "Reading Rainbow õpetas lastele, miks lugeda, ... lugemise armastust — [show] julgustas lapsi raamatu järele võtma ja lugema."
+[2024-02-15 01:18:34] Best translation 80 : Seejärel alistas Markosón Colooture esialgses finaalis.
+[2024-02-15 01:18:34] Best translation 160 : Stewart, Gordon, Kenstein ja Harick pööravad üle kümne positsiooni juhtide meistrivõistlustele, kus on neli sõitu, mis jäid hooajale.
+[2024-02-15 01:18:34] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 01:18:34] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 01:18:34] Total translation time: 1.24653s
+[2024-02-15 01:18:34] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 01:18:35] [valid] Ep. 1 : Up. 20000 : bleu : 19.4692 : new best
+[2024-02-15 01:18:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 01:18:36] [valid] Ep. 1 : Up. 20000 : ce-mean-words : 2.08887 : new best
+[2024-02-15 01:25:32] Seen 72,249,337 samples
+[2024-02-15 01:25:32] Starting data epoch 2 in logical epoch 2
+[2024-02-15 01:28:30] Ep. 2 : Up. 21000 : Sen. 551,373 : Cost 3.21226931 : Time 606.05s : 112497.38 words/s : gNorm 0.7751
+[2024-02-15 01:36:53] Ep. 2 : Up. 22000 : Sen. 3,588,432 : Cost 3.08161592 : Time 503.63s : 141067.30 words/s : gNorm 0.5380
+[2024-02-15 01:45:40] Ep. 2 : Up. 23000 : Sen. 6,275,438 : Cost 2.80653954 : Time 526.32s : 129352.84 words/s : gNorm 0.4813
+[2024-02-15 01:54:21] Ep. 2 : Up. 24000 : Sen. 8,915,038 : Cost 2.81100798 : Time 521.50s : 128759.84 words/s : gNorm 0.4649
+[2024-02-15 02:02:38] Ep. 2 : Up. 25000 : Sen. 11,489,442 : Cost 2.95007753 : Time 496.86s : 132794.73 words/s : gNorm 0.4136
+[2024-02-15 02:02:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 02:02:39] Saving Adam parameters
+[2024-02-15 02:02:42] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 02:02:44] Translating validation set...
+[2024-02-15 02:02:45] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostilise vahendi leiutise, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla umbes ühe USA sendi jaoks.
+[2024-02-15 02:02:45] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämismäärad võivad olla pool rikkamatest riikidest.
+[2024-02-15 02:02:45] Best translation 2 : JAS 39C Gripen kukkus lennurajale umbes 9:30 on kohalik aeg (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 02:02:45] Best translation 3 : Katse tehti Squadron Leader Dilorrit Pattaveeks.
+[2024-02-15 02:02:45] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjesõiduk on vastuses üle võetud.
+[2024-02-15 02:02:45] Best translation 5 : 28-aastane Vidal oli liitunud Barça kolme hooaja eest Sevillast.
+[2024-02-15 02:02:45] Best translation 10 : Ligikaudu 11:29, protestid liikusid üles Whitehalli, Trafalgar Square'i, piki Strandi, mööda Aldwychi ja Kingsway poolt Holborni, kus Konservatiivsel Parteil oli oma kevadfoorum Grand Connaughti hotellis.
+[2024-02-15 02:02:46] Best translation 20 : Hesieh viitas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 02:02:46] Best translation 40 : John Grant, WEND Buffay (WENED Rainbow' kodujaamast) ütles: "Reading Rainbow õpetab lastele, miks lugeda, ... lugemisoskust - [show] julgustas lapsi raamatu võtma ja lugema."
+[2024-02-15 02:02:46] Best translation 80 : Seejärel peksis ta esimesel finaalil kanüüli.
+[2024-02-15 02:02:46] Best translation 160 : Stetter, Gordon, Kenstein ja Harick pööravad ümber juhtide meistrivõistluste kümme peamist positsiooni, kusjuures neli võidujooksu jäid hooajasse.
+[2024-02-15 02:02:46] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 02:02:46] Best translation 640 : See võimaldab üliõpilastel töötada oma tempos ja kontrollida juhendamisteabe kiirust.
+[2024-02-15 02:02:46] Total translation time: 1.84203s
+[2024-02-15 02:02:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 02:02:47] [valid] Ep. 2 : Up. 25000 : chrf : 53.9905 : new best
+[2024-02-15 02:02:47] Translating validation set...
+[2024-02-15 02:02:48] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostilise vahendi leiutise, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla umbes ühe USA sendi jaoks.
+[2024-02-15 02:02:48] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämismäärad võivad olla pool rikkamatest riikidest.
+[2024-02-15 02:02:48] Best translation 2 : JAS 39C Gripen kukkus lennurajale umbes 9:30 on kohalik aeg (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 02:02:48] Best translation 3 : Katse tehti Squadron Leader Dilorrit Pattaveeks.
+[2024-02-15 02:02:48] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjesõiduk on vastuses üle võetud.
+[2024-02-15 02:02:48] Best translation 5 : 28-aastane Vidal oli liitunud Barça kolme hooaja eest Sevillast.
+[2024-02-15 02:02:48] Best translation 10 : Ligikaudu 11:29, protestid liikusid üles Whitehalli, Trafalgar Square'i, piki Strandi, mööda Aldwychi ja Kingsway poolt Holborni, kus Konservatiivsel Parteil oli oma kevadfoorum Grand Connaughti hotellis.
+[2024-02-15 02:02:48] Best translation 20 : Hesieh viitas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 02:02:48] Best translation 40 : John Grant, WEND Buffay (WENED Rainbow' kodujaamast) ütles: "Reading Rainbow õpetab lastele, miks lugeda, ... lugemisoskust - [show] julgustas lapsi raamatu võtma ja lugema."
+[2024-02-15 02:02:48] Best translation 80 : Seejärel peksis ta esimesel finaalil kanüüli.
+[2024-02-15 02:02:48] Best translation 160 : Stetter, Gordon, Kenstein ja Harick pööravad ümber juhtide meistrivõistluste kümme peamist positsiooni, kusjuures neli võidujooksu jäid hooajasse.
+[2024-02-15 02:02:48] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 02:02:48] Best translation 640 : See võimaldab üliõpilastel töötada oma tempos ja kontrollida juhendamisteabe kiirust.
+[2024-02-15 02:02:48] Total translation time: 1.47694s
+[2024-02-15 02:02:48] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 02:02:49] [valid] Ep. 2 : Up. 25000 : bleu : 21.0897 : new best
+[2024-02-15 02:02:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 02:02:50] [valid] Ep. 2 : Up. 25000 : ce-mean-words : 1.947 : new best
+[2024-02-15 02:11:17] Ep. 2 : Up. 26000 : Sen. 14,518,991 : Cost 2.93201232 : Time 518.94s : 129674.39 words/s : gNorm 0.4622
+[2024-02-15 02:19:59] Ep. 2 : Up. 27000 : Sen. 19,742,578 : Cost 3.07843041 : Time 522.55s : 143756.52 words/s : gNorm 0.6033
+[2024-02-15 02:29:02] Ep. 2 : Up. 28000 : Sen. 24,578,596 : Cost 3.21201062 : Time 542.32s : 140083.91 words/s : gNorm 0.4776
+[2024-02-15 02:37:49] Ep. 2 : Up. 29000 : Sen. 28,171,650 : Cost 3.01169467 : Time 527.57s : 143418.86 words/s : gNorm 0.3925
+[2024-02-15 02:46:39] Ep. 2 : Up. 30000 : Sen. 31,598,388 : Cost 2.89122009 : Time 529.62s : 137193.83 words/s : gNorm 0.4411
+[2024-02-15 02:46:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 02:46:40] Saving Adam parameters
+[2024-02-15 02:46:42] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 02:46:45] Translating validation set...
+[2024-02-15 02:46:46] Best translation 0 : Esmaspäeval teatasid Stanfordi Ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga umbes ühe USA sendi jaoks.
+[2024-02-15 02:46:46] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamatest riikidest.
+[2024-02-15 02:46:46] Best translation 2 : JAS 39C Gripen kukkus umbes 9:30-se rajale kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 02:46:46] Best translation 3 : Piloot nimetati Squadron Leader Dilokrit Pattaveeks.
+[2024-02-15 02:46:46] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjesõiduk on vastates üle veetud.
+[2024-02-15 02:46:46] Best translation 5 : 28-aastane Vidal liitus Barça kolme aasta eest Sevillast.
+[2024-02-15 02:46:46] Best translation 10 : Umbes 11:29. aasta paiku kolis protest Whitehalli, Trafalgar Square'i, mööda Strandi, mööda Aldwychi ja Kingsway poolt Holborni, kus Konservatiivne Partei korraldas oma kevadfoorumi Grand Connaughti tubades.
+[2024-02-15 02:46:46] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 02:46:46] Best translation 40 : John Grant, WNED Buffalost (Rakendi kodujaama lugemine) ütles: "Lugemine Rainbow õpetas lastele, miks lugeda,... lugemisarmastust — [show] julgustas lapsi raamatu järele võtma ja lugema."
+[2024-02-15 02:46:46] Best translation 80 : Seejärel võitis Maroáro esimese finaali kanüüli.
+[2024-02-15 02:46:46] Best translation 160 : Stetter, Gordon, Kenseth ja Harick pööravad kokku juhtide meistrivõistluste kümne parima koha, kusjuures hooaja jooksul on jäänud neli võistlust.
+[2024-02-15 02:46:46] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 02:46:47] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 02:46:47] Total translation time: 1.76418s
+[2024-02-15 02:46:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 02:46:48] [valid] Ep. 2 : Up. 30000 : chrf : 56.4795 : new best
+[2024-02-15 02:46:48] Translating validation set...
+[2024-02-15 02:46:49] Best translation 0 : Esmaspäeval teatasid Stanfordi Ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga umbes ühe USA sendi jaoks.
+[2024-02-15 02:46:49] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamatest riikidest.
+[2024-02-15 02:46:49] Best translation 2 : JAS 39C Gripen kukkus umbes 9:30-se rajale kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 02:46:49] Best translation 3 : Piloot nimetati Squadron Leader Dilokrit Pattaveeks.
+[2024-02-15 02:46:49] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjesõiduk on vastates üle veetud.
+[2024-02-15 02:46:49] Best translation 5 : 28-aastane Vidal liitus Barça kolme aasta eest Sevillast.
+[2024-02-15 02:46:49] Best translation 10 : Umbes 11:29. aasta paiku kolis protest Whitehalli, Trafalgar Square'i, mööda Strandi, mööda Aldwychi ja Kingsway poolt Holborni, kus Konservatiivne Partei korraldas oma kevadfoorumi Grand Connaughti tubades.
+[2024-02-15 02:46:49] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 02:46:49] Best translation 40 : John Grant, WNED Buffalost (Rakendi kodujaama lugemine) ütles: "Lugemine Rainbow õpetas lastele, miks lugeda,... lugemisarmastust — [show] julgustas lapsi raamatu järele võtma ja lugema."
+[2024-02-15 02:46:49] Best translation 80 : Seejärel võitis Maroáro esimese finaali kanüüli.
+[2024-02-15 02:46:49] Best translation 160 : Stetter, Gordon, Kenseth ja Harick pööravad kokku juhtide meistrivõistluste kümne parima koha, kusjuures hooaja jooksul on jäänud neli võistlust.
+[2024-02-15 02:46:49] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 02:46:49] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 02:46:49] Total translation time: 1.25215s
+[2024-02-15 02:46:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 02:46:50] [valid] Ep. 2 : Up. 30000 : bleu : 23.1805 : new best
+[2024-02-15 02:46:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 02:46:51] [valid] Ep. 2 : Up. 30000 : ce-mean-words : 1.71683 : new best
+[2024-02-15 02:55:47] Ep. 2 : Up. 31000 : Sen. 35,240,965 : Cost 2.59234548 : Time 547.88s : 138260.70 words/s : gNorm 0.3285
+[2024-02-15 03:04:57] Ep. 2 : Up. 32000 : Sen. 38,950,212 : Cost 2.45775366 : Time 549.79s : 143504.88 words/s : gNorm 0.3399
+[2024-02-15 03:13:55] Ep. 2 : Up. 33000 : Sen. 42,391,807 : Cost 2.68622875 : Time 538.09s : 138276.51 words/s : gNorm 0.6092
+[2024-02-15 03:22:45] Ep. 2 : Up. 34000 : Sen. 45,432,755 : Cost 2.79115939 : Time 530.33s : 132613.30 words/s : gNorm 0.4741
+[2024-02-15 03:31:06] Ep. 2 : Up. 35000 : Sen. 48,162,574 : Cost 2.58567452 : Time 501.18s : 136328.57 words/s : gNorm 0.3756
+[2024-02-15 03:31:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 03:31:08] Saving Adam parameters
+[2024-02-15 03:31:10] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 03:31:13] Translating validation set...
+[2024-02-15 03:31:14] Best translation 0 : Esmaspäeval teatasid Stanfordi Ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke liigi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil umbes ühe USA sendi jaoks.
+[2024-02-15 03:31:14] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämismäärad võivad olla pool rikkamatest riikidest.
+[2024-02-15 03:31:14] Best translation 2 : JAS 39C Gripen kukkus umbes 9:30 kohaliku aja järgi rajal (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 03:31:14] Best translation 3 : Pilooti nimetati Squadron Leader Dilokrit Pattaveeks.
+[2024-02-15 03:31:14] Best translation 4 : Kohalik meedia annab aru lennujaama tuletõrjesõidukist, mis on vastates üle veetud.
+[2024-02-15 03:31:14] Best translation 5 : 28-aastane Vidal oli liitunud Barça kolme aasta eest Sevillast.
+[2024-02-15 03:31:14] Best translation 10 : Umbes 11:29 kolis protest Whitehalli, Trafalgari väljakust mööda Strandi, mööda Aldwychi ja Kingsway poolt Holborni poole, kus konservatiivne partei pidas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 03:31:14] Best translation 20 : Hsieh viitas valimiste ajal sellele, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 03:31:14] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemise armastus - [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 03:31:14] Best translation 80 : Seejärel võitis Marecouture'i esialgses finaalis.
+[2024-02-15 03:31:14] Best translation 160 : Stetter, Gordon, Kenseth ja Harkik ümardavad juhtide meistrivõistluste kümmet kohta, kusjuures hooajaks on jäänud neli võistlust.
+[2024-02-15 03:31:14] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 03:31:14] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 03:31:14] Total translation time: 1.78124s
+[2024-02-15 03:31:14] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 03:31:15] [valid] Ep. 2 : Up. 35000 : chrf : 57.5454 : new best
+[2024-02-15 03:31:15] Translating validation set...
+[2024-02-15 03:31:16] Best translation 0 : Esmaspäeval teatasid Stanfordi Ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke liigi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil umbes ühe USA sendi jaoks.
+[2024-02-15 03:31:16] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämismäärad võivad olla pool rikkamatest riikidest.
+[2024-02-15 03:31:16] Best translation 2 : JAS 39C Gripen kukkus umbes 9:30 kohaliku aja järgi rajal (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 03:31:16] Best translation 3 : Pilooti nimetati Squadron Leader Dilokrit Pattaveeks.
+[2024-02-15 03:31:16] Best translation 4 : Kohalik meedia annab aru lennujaama tuletõrjesõidukist, mis on vastates üle veetud.
+[2024-02-15 03:31:16] Best translation 5 : 28-aastane Vidal oli liitunud Barça kolme aasta eest Sevillast.
+[2024-02-15 03:31:16] Best translation 10 : Umbes 11:29 kolis protest Whitehalli, Trafalgari väljakust mööda Strandi, mööda Aldwychi ja Kingsway poolt Holborni poole, kus konservatiivne partei pidas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 03:31:16] Best translation 20 : Hsieh viitas valimiste ajal sellele, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 03:31:16] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemise armastus - [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 03:31:16] Best translation 80 : Seejärel võitis Marecouture'i esialgses finaalis.
+[2024-02-15 03:31:16] Best translation 160 : Stetter, Gordon, Kenseth ja Harkik ümardavad juhtide meistrivõistluste kümmet kohta, kusjuures hooajaks on jäänud neli võistlust.
+[2024-02-15 03:31:16] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 03:31:16] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 03:31:16] Total translation time: 1.25465s
+[2024-02-15 03:31:16] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 03:31:17] [valid] Ep. 2 : Up. 35000 : bleu : 24.201 : new best
+[2024-02-15 03:31:17] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 03:31:18] [valid] Ep. 2 : Up. 35000 : ce-mean-words : 1.65606 : new best
+[2024-02-15 03:39:59] Ep. 2 : Up. 36000 : Sen. 50,697,378 : Cost 2.71942067 : Time 532.83s : 124640.30 words/s : gNorm 0.3777
+[2024-02-15 03:48:23] Ep. 2 : Up. 37000 : Sen. 53,338,139 : Cost 2.74139261 : Time 504.21s : 130573.27 words/s : gNorm 0.5863
+[2024-02-15 03:56:39] Ep. 2 : Up. 38000 : Sen. 56,298,608 : Cost 2.84042883 : Time 496.10s : 135983.92 words/s : gNorm 0.4018
+[2024-02-15 04:05:46] Ep. 2 : Up. 39000 : Sen. 62,280,125 : Cost 3.12165642 : Time 546.63s : 143101.31 words/s : gNorm 0.5184
+[2024-02-15 04:14:33] Ep. 2 : Up. 40000 : Sen. 66,612,323 : Cost 2.99922562 : Time 526.99s : 143204.77 words/s : gNorm 0.4040
+[2024-02-15 04:14:33] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 04:14:34] Saving Adam parameters
+[2024-02-15 04:14:37] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 04:14:39] Translating validation set...
+[2024-02-15 04:14:40] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla umbes ühe USA sendi jaoks.
+[2024-02-15 04:14:40] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämise määr võib olla pool rikkamatest riikidest.
+[2024-02-15 04:14:40] Best translation 2 : JAS 39C Gripen kukkus mööda rada umbes 9:30 on kohalik aeg (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 04:14:40] Best translation 3 : Piloot nimetati Squadron Leader Dilokrit Pattaveeks.
+[2024-02-15 04:14:40] Best translation 4 : Kohalik meedia annab aru lennujaama tuletõrjesõidukist, mis reageerides üle veereb.
+[2024-02-15 04:14:40] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm aastat tagasi Sevillast.
+[2024-02-15 04:14:40] Best translation 10 : Umbes 11:29 kolis protest Whitehalli, Trafalgar Square'i, mööda Strandi, mööda Aldwychi ja Kingsway poolt Holborni suunas, kus konservatiivide partei korraldas oma kevadfoorumi Grand Connaughti tubades.
+[2024-02-15 04:14:41] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 04:14:41] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 04:14:41] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 04:14:41] Best translation 160 : Stetter, Gordon, Kenseth ja Harvick ümardavad juhtide meistrivõistluste kümmet punkti nelja võidujooksuga hooaja lõpuni.
+[2024-02-15 04:14:41] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 04:14:41] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 04:14:41] Total translation time: 1.78976s
+[2024-02-15 04:14:41] [valid] Ep. 2 : Up. 40000 : chrf : 57.1291 : stalled 1 times (last best: 57.5454)
+[2024-02-15 04:14:41] Translating validation set...
+[2024-02-15 04:14:42] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla umbes ühe USA sendi jaoks.
+[2024-02-15 04:14:42] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämise määr võib olla pool rikkamatest riikidest.
+[2024-02-15 04:14:42] Best translation 2 : JAS 39C Gripen kukkus mööda rada umbes 9:30 on kohalik aeg (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 04:14:42] Best translation 3 : Piloot nimetati Squadron Leader Dilokrit Pattaveeks.
+[2024-02-15 04:14:42] Best translation 4 : Kohalik meedia annab aru lennujaama tuletõrjesõidukist, mis reageerides üle veereb.
+[2024-02-15 04:14:42] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm aastat tagasi Sevillast.
+[2024-02-15 04:14:42] Best translation 10 : Umbes 11:29 kolis protest Whitehalli, Trafalgar Square'i, mööda Strandi, mööda Aldwychi ja Kingsway poolt Holborni suunas, kus konservatiivide partei korraldas oma kevadfoorumi Grand Connaughti tubades.
+[2024-02-15 04:14:42] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 04:14:42] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 04:14:42] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 04:14:42] Best translation 160 : Stetter, Gordon, Kenseth ja Harvick ümardavad juhtide meistrivõistluste kümmet punkti nelja võidujooksuga hooaja lõpuni.
+[2024-02-15 04:14:42] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 04:14:42] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 04:14:42] Total translation time: 1.22916s
+[2024-02-15 04:14:42] [valid] Ep. 2 : Up. 40000 : bleu : 23.8187 : stalled 1 times (last best: 24.201)
+[2024-02-15 04:14:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 04:14:43] [valid] Ep. 2 : Up. 40000 : ce-mean-words : 1.63816 : new best
+[2024-02-15 04:23:12] Ep. 2 : Up. 41000 : Sen. 70,034,784 : Cost 2.89297199 : Time 518.96s : 140179.55 words/s : gNorm 0.6313
+[2024-02-15 04:28:45] Seen 72,248,838 samples
+[2024-02-15 04:28:45] Starting data epoch 3 in logical epoch 3
+[2024-02-15 04:33:06] Ep. 3 : Up. 42000 : Sen. 937,410 : Cost 2.86520839 : Time 593.66s : 114335.55 words/s : gNorm 0.9066
+[2024-02-15 04:41:35] Ep. 3 : Up. 43000 : Sen. 4,052,645 : Cost 2.76228595 : Time 509.44s : 140831.55 words/s : gNorm 0.4534
+[2024-02-15 04:50:18] Ep. 3 : Up. 44000 : Sen. 6,721,038 : Cost 2.52230787 : Time 523.43s : 129331.12 words/s : gNorm 0.3553
+[2024-02-15 04:58:58] Ep. 3 : Up. 45000 : Sen. 9,295,211 : Cost 2.64792538 : Time 519.24s : 128786.54 words/s : gNorm 0.3750
+[2024-02-15 04:58:58] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 04:58:59] Saving Adam parameters
+[2024-02-15 04:59:01] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 04:59:04] Translating validation set...
+[2024-02-15 04:59:05] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla umbes ühe USA sendi jaoks.
+[2024-02-15 04:59:05] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämise määr võib olla pool rikkamatest riikidest.
+[2024-02-15 04:59:05] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 04:59:05] Best translation 3 : Piloot on määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 04:59:05] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjesõiduk on vastamise ajal üle veetud.
+[2024-02-15 04:59:05] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm aastat tagasi Sevillast.
+[2024-02-15 04:59:05] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingswayd Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 04:59:05] Best translation 20 : Hsieh viitas valimiste ajal sellele, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 04:59:05] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow kodujaamast) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemishuvi - [show] julgustas lapsi raamatu järele tulema ja lugema."
+[2024-02-15 04:59:05] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 04:59:05] Best translation 160 : Stewart, Gordon, Kenseth ja Harick ümardavad juhtide meistrivõistluste kümmet punkti nelja hooaja lõpuni.
+[2024-02-15 04:59:05] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 04:59:05] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo kiirust.
+[2024-02-15 04:59:05] Total translation time: 1.68941s
+[2024-02-15 04:59:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 04:59:06] [valid] Ep. 3 : Up. 45000 : chrf : 57.6585 : new best
+[2024-02-15 04:59:06] Translating validation set...
+[2024-02-15 04:59:07] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla umbes ühe USA sendi jaoks.
+[2024-02-15 04:59:07] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämise määr võib olla pool rikkamatest riikidest.
+[2024-02-15 04:59:07] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 04:59:07] Best translation 3 : Piloot on määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 04:59:07] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjesõiduk on vastamise ajal üle veetud.
+[2024-02-15 04:59:07] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm aastat tagasi Sevillast.
+[2024-02-15 04:59:07] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingswayd Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 04:59:07] Best translation 20 : Hsieh viitas valimiste ajal sellele, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 04:59:07] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow kodujaamast) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemishuvi - [show] julgustas lapsi raamatu järele tulema ja lugema."
+[2024-02-15 04:59:07] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 04:59:07] Best translation 160 : Stewart, Gordon, Kenseth ja Harick ümardavad juhtide meistrivõistluste kümmet punkti nelja hooaja lõpuni.
+[2024-02-15 04:59:07] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 04:59:07] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo kiirust.
+[2024-02-15 04:59:08] Total translation time: 1.25503s
+[2024-02-15 04:59:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 04:59:08] [valid] Ep. 3 : Up. 45000 : bleu : 24.4571 : new best
+[2024-02-15 04:59:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 04:59:09] [valid] Ep. 3 : Up. 45000 : ce-mean-words : 1.60413 : new best
+[2024-02-15 05:07:26] Ep. 3 : Up. 46000 : Sen. 11,874,202 : Cost 2.74816155 : Time 508.70s : 129675.97 words/s : gNorm 0.4047
+[2024-02-15 05:15:54] Ep. 3 : Up. 47000 : Sen. 14,994,467 : Cost 2.73665810 : Time 507.61s : 134080.33 words/s : gNorm 0.4105
+[2024-02-15 05:24:59] Ep. 3 : Up. 48000 : Sen. 20,737,743 : Cost 2.98487329 : Time 545.03s : 141018.10 words/s : gNorm 0.5180
+[2024-02-15 05:33:50] Ep. 3 : Up. 49000 : Sen. 25,156,496 : Cost 2.98270249 : Time 530.53s : 141964.13 words/s : gNorm 0.3930
+[2024-02-15 05:42:46] Ep. 3 : Up. 50000 : Sen. 28,774,082 : Cost 2.84179497 : Time 536.14s : 139873.92 words/s : gNorm 0.4846
+[2024-02-15 05:42:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 05:42:47] Saving Adam parameters
+[2024-02-15 05:42:49] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 05:42:52] Translating validation set...
+[2024-02-15 05:42:53] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla umbes ühe USA sendi jaoks.
+[2024-02-15 05:42:53] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämise määr võib olla pool rikkamatest riikidest.
+[2024-02-15 05:42:53] Best translation 2 : JAS 39C Gripen kukkus lennurajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 05:42:53] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 05:42:53] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjeauto on reaktsiooni ajal üle veetud.
+[2024-02-15 05:42:53] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 05:42:53] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingswayd Holborni suunas, kus konservatiivide partei korraldas oma kevadfoorumi Grand Connaughti tubades.
+[2024-02-15 05:42:53] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 05:42:53] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 05:42:53] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 05:42:53] Best translation 160 : Stetter, Gordon, Kenseth ja Harvick avasid juhtide meistrivõistluste kümme parimat kohta, kusjuures hooaja jooksul jäi neli võistlust.
+[2024-02-15 05:42:53] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 05:42:54] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 05:42:54] Total translation time: 1.84952s
+[2024-02-15 05:42:54] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 05:42:55] [valid] Ep. 3 : Up. 50000 : chrf : 57.7524 : new best
+[2024-02-15 05:42:55] Translating validation set...
+[2024-02-15 05:42:55] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla umbes ühe USA sendi jaoks.
+[2024-02-15 05:42:55] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähk ellujäämise määr võib olla pool rikkamatest riikidest.
+[2024-02-15 05:42:55] Best translation 2 : JAS 39C Gripen kukkus lennurajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 05:42:55] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 05:42:55] Best translation 4 : Kohalik meedia teatab, et lennujaama tuletõrjeauto on reaktsiooni ajal üle veetud.
+[2024-02-15 05:42:55] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 05:42:55] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingswayd Holborni suunas, kus konservatiivide partei korraldas oma kevadfoorumi Grand Connaughti tubades.
+[2024-02-15 05:42:56] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 05:42:56] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 05:42:56] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 05:42:56] Best translation 160 : Stetter, Gordon, Kenseth ja Harvick avasid juhtide meistrivõistluste kümme parimat kohta, kusjuures hooaja jooksul jäi neli võistlust.
+[2024-02-15 05:42:56] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 05:42:56] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 05:42:56] Total translation time: 1.29925s
+[2024-02-15 05:42:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 05:42:57] [valid] Ep. 3 : Up. 50000 : bleu : 24.5971 : new best
+[2024-02-15 05:42:57] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 05:42:58] [valid] Ep. 3 : Up. 50000 : ce-mean-words : 1.57107 : new best
+[2024-02-15 05:51:25] Ep. 3 : Up. 51000 : Sen. 32,136,006 : Cost 2.71939683 : Time 518.98s : 138440.63 words/s : gNorm 0.4773
+[2024-02-15 06:00:26] Ep. 3 : Up. 52000 : Sen. 35,806,288 : Cost 2.42880225 : Time 541.31s : 143199.78 words/s : gNorm 0.3287
+[2024-02-15 06:09:33] Ep. 3 : Up. 53000 : Sen. 39,555,038 : Cost 2.35815120 : Time 546.95s : 143046.92 words/s : gNorm 0.3229
+[2024-02-15 06:18:33] Ep. 3 : Up. 54000 : Sen. 42,955,039 : Cost 2.62962484 : Time 539.93s : 138048.87 words/s : gNorm 0.5371
+[2024-02-15 06:27:20] Ep. 3 : Up. 55000 : Sen. 45,851,549 : Cost 2.63286257 : Time 526.95s : 131315.43 words/s : gNorm 0.4000
+[2024-02-15 06:27:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 06:27:21] Saving Adam parameters
+[2024-02-15 06:27:23] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 06:27:26] Translating validation set...
+[2024-02-15 06:27:27] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla umbes ühe USA sendi jaoks.
+[2024-02-15 06:27:27] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämise määr võib olla pool rikkamate riikide omast.
+[2024-02-15 06:27:27] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 06:27:27] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 06:27:27] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 06:27:27] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 06:27:27] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingswayd Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 06:27:27] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 06:27:27] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemisarmastus - [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 06:27:27] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 06:27:27] Best translation 160 : Stetter, Gordon, Kenseth ja Harick läbivad tippkümme juhivõistluste kohta, kus hooaja jooksul on jäänud neli võistlust.
+[2024-02-15 06:27:27] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 06:27:28] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 06:27:28] Total translation time: 1.77800s
+[2024-02-15 06:27:28] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 06:27:28] [valid] Ep. 3 : Up. 55000 : chrf : 58.7425 : new best
+[2024-02-15 06:27:29] Translating validation set...
+[2024-02-15 06:27:29] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla umbes ühe USA sendi jaoks.
+[2024-02-15 06:27:29] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämise määr võib olla pool rikkamate riikide omast.
+[2024-02-15 06:27:29] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 06:27:29] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 06:27:29] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 06:27:29] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 06:27:29] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingswayd Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 06:27:29] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 06:27:29] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Reading Rainbow õpetas lastele, miks lugeda,... lugemisarmastus - [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 06:27:29] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 06:27:29] Best translation 160 : Stetter, Gordon, Kenseth ja Harick läbivad tippkümme juhivõistluste kohta, kus hooaja jooksul on jäänud neli võistlust.
+[2024-02-15 06:27:29] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 06:27:29] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 06:27:30] Total translation time: 1.18642s
+[2024-02-15 06:27:30] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 06:27:31] [valid] Ep. 3 : Up. 55000 : bleu : 25.4074 : new best
+[2024-02-15 06:27:31] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 06:27:31] [valid] Ep. 3 : Up. 55000 : ce-mean-words : 1.52287 : new best
+[2024-02-15 06:35:51] Ep. 3 : Up. 56000 : Sen. 48,527,535 : Cost 2.47232580 : Time 511.62s : 133246.39 words/s : gNorm 0.3848
+[2024-02-15 06:44:29] Ep. 3 : Up. 57000 : Sen. 51,063,877 : Cost 2.64903736 : Time 517.09s : 126546.91 words/s : gNorm 0.5371
+[2024-02-15 06:52:53] Ep. 3 : Up. 58000 : Sen. 53,729,501 : Cost 2.68584991 : Time 504.58s : 130881.27 words/s : gNorm 0.4643
+[2024-02-15 07:01:15] Ep. 3 : Up. 59000 : Sen. 56,780,792 : Cost 2.72713304 : Time 501.72s : 136706.51 words/s : gNorm 0.3839
+[2024-02-15 07:10:20] Ep. 3 : Up. 60000 : Sen. 63,058,045 : Cost 3.07625246 : Time 545.52s : 144552.52 words/s : gNorm 0.5634
+[2024-02-15 07:10:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 07:10:22] Saving Adam parameters
+[2024-02-15 07:10:24] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 07:10:26] Translating validation set...
+[2024-02-15 07:10:28] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla umbes ühe USA sendi jaoks.
+[2024-02-15 07:10:28] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 07:10:28] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 07:10:28] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 07:10:28] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 07:10:28] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 07:10:28] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 07:10:28] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 07:10:28] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Raudtee lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 07:10:28] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 07:10:28] Best translation 160 : Stewart, Gordon, Kenseth ja Harick avasid tippkümme juhivõistluste kohta, samal ajal kui hooaja jooksul jäi neli võistlust.
+[2024-02-15 07:10:28] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 07:10:28] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 07:10:28] Total translation time: 1.75999s
+[2024-02-15 07:10:28] [valid] Ep. 3 : Up. 60000 : chrf : 57.9437 : stalled 1 times (last best: 58.7425)
+[2024-02-15 07:10:28] Translating validation set...
+[2024-02-15 07:10:29] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla umbes ühe USA sendi jaoks.
+[2024-02-15 07:10:29] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 07:10:29] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 07:10:29] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 07:10:29] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 07:10:29] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 07:10:29] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 07:10:29] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 07:10:29] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Raudtee lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 07:10:29] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 07:10:29] Best translation 160 : Stewart, Gordon, Kenseth ja Harick avasid tippkümme juhivõistluste kohta, samal ajal kui hooaja jooksul jäi neli võistlust.
+[2024-02-15 07:10:29] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 07:10:29] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 07:10:29] Total translation time: 1.29021s
+[2024-02-15 07:10:29] [valid] Ep. 3 : Up. 60000 : bleu : 24.6684 : stalled 1 times (last best: 25.4074)
+[2024-02-15 07:10:30] [valid] Ep. 3 : Up. 60000 : ce-mean-words : 1.54918 : stalled 1 times (last best: 1.52287)
+[2024-02-15 07:19:18] Ep. 3 : Up. 61000 : Sen. 67,225,550 : Cost 2.87566566 : Time 538.15s : 139672.24 words/s : gNorm 0.4083
+[2024-02-15 07:27:46] Ep. 3 : Up. 62000 : Sen. 70,616,453 : Cost 2.82369971 : Time 507.68s : 141802.16 words/s : gNorm 0.7247
+[2024-02-15 07:31:58] Seen 72,248,820 samples
+[2024-02-15 07:31:58] Starting data epoch 4 in logical epoch 4
+[2024-02-15 07:37:40] Ep. 4 : Up. 63000 : Sen. 1,634,635 : Cost 2.75865698 : Time 593.86s : 116834.78 words/s : gNorm 0.4974
+[2024-02-15 07:46:28] Ep. 4 : Up. 64000 : Sen. 4,442,969 : Cost 2.64557052 : Time 528.29s : 132801.46 words/s : gNorm 0.3919
+[2024-02-15 07:54:50] Ep. 4 : Up. 65000 : Sen. 7,175,823 : Cost 2.44028616 : Time 501.64s : 135749.73 words/s : gNorm 0.3592
+[2024-02-15 07:54:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 07:54:51] Saving Adam parameters
+[2024-02-15 07:54:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 07:54:56] Translating validation set...
+[2024-02-15 07:54:58] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla ühe USA sendi eest.
+[2024-02-15 07:54:58] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämise määr võib olla pool rikkamate riikide omast.
+[2024-02-15 07:54:58] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 07:54:58] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 07:54:58] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 07:54:58] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 07:54:58] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 07:54:58] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 07:54:58] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Raudtee lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 07:54:58] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 07:54:58] Best translation 160 : Stetter, Gordon, Kenseth ja Hardick läbivad tippkümme juhivõistluste kohta, kus hooaja jooksul on jäänud neli võistlust.
+[2024-02-15 07:54:58] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 07:54:58] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 07:54:58] Total translation time: 1.72375s
+[2024-02-15 07:54:58] [valid] Ep. 4 : Up. 65000 : chrf : 58.5637 : stalled 2 times (last best: 58.7425)
+[2024-02-15 07:54:58] Translating validation set...
+[2024-02-15 07:54:59] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla ühe USA sendi eest.
+[2024-02-15 07:54:59] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämise määr võib olla pool rikkamate riikide omast.
+[2024-02-15 07:54:59] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 07:54:59] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 07:54:59] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 07:54:59] Best translation 5 : 28-aastane Vidal liitus Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 07:54:59] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus konservatiivne partei korraldas oma kevadfoorumi Grand Connaughti tubades hotellis.
+[2024-02-15 07:54:59] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 07:54:59] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow's home station) ütles: "Raudtee lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 07:54:59] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 07:54:59] Best translation 160 : Stetter, Gordon, Kenseth ja Hardick läbivad tippkümme juhivõistluste kohta, kus hooaja jooksul on jäänud neli võistlust.
+[2024-02-15 07:54:59] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 07:54:59] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 07:54:59] Total translation time: 1.22760s
+[2024-02-15 07:54:59] [valid] Ep. 4 : Up. 65000 : bleu : 25.3632 : stalled 2 times (last best: 25.4074)
+[2024-02-15 07:54:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 07:55:00] [valid] Ep. 4 : Up. 65000 : ce-mean-words : 1.51177 : new best
+[2024-02-15 08:03:37] Ep. 4 : Up. 66000 : Sen. 9,726,197 : Cost 2.61598587 : Time 527.32s : 125176.10 words/s : gNorm 0.4102
+[2024-02-15 08:12:04] Ep. 4 : Up. 67000 : Sen. 12,318,085 : Cost 2.70394731 : Time 507.12s : 131230.69 words/s : gNorm 0.4913
+[2024-02-15 08:20:21] Ep. 4 : Up. 68000 : Sen. 15,568,153 : Cost 2.66512895 : Time 496.53s : 136925.51 words/s : gNorm 0.4373
+[2024-02-15 08:29:30] Ep. 4 : Up. 69000 : Sen. 21,568,274 : Cost 2.98665810 : Time 548.62s : 142341.87 words/s : gNorm 0.5105
+[2024-02-15 08:38:20] Ep. 4 : Up. 70000 : Sen. 25,728,630 : Cost 2.88262844 : Time 530.93s : 140731.40 words/s : gNorm 0.4198
+[2024-02-15 08:38:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 08:38:22] Saving Adam parameters
+[2024-02-15 08:38:24] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 08:38:27] Translating validation set...
+[2024-02-15 08:38:28] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis suudab sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindi
+[2024-02-15 08:38:28] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 08:38:28] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 08:38:28] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 08:38:28] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 08:38:28] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 08:38:28] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborn ́i suunas, kus Konservatiivne Partei pidas oma kevadfoorumit Grand Connaughti tubades hotellis.
+[2024-02-15 08:38:29] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 08:38:29] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Raudtee lugemine õpetas lastele, miks lugeda,... lugemisarmastus − [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 08:38:29] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 08:38:29] Best translation 160 : Stewart, Gordon, Kenseth ja Harwick avasid tippkümme kohta, kus hooaja jooksul jäi neli võistlust.
+[2024-02-15 08:38:29] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 08:38:29] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 08:38:29] Total translation time: 1.83999s
+[2024-02-15 08:38:29] [valid] Ep. 4 : Up. 70000 : chrf : 57.9389 : stalled 3 times (last best: 58.7425)
+[2024-02-15 08:38:29] Translating validation set...
+[2024-02-15 08:38:30] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis suudab sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla ühe USA sendi eest.
+[2024-02-15 08:38:30] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 08:38:30] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 08:38:30] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 08:38:30] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 08:38:30] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 08:38:30] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, mööda Aldwychi ja mööda Kingswayd Holborni suunas, kus Konservatiivne Partei pidas oma kevadfoorumit Grand Connaughti tubades.
+[2024-02-15 08:38:30] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 08:38:30] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Raudtee lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 08:38:30] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 08:38:30] Best translation 160 : Stewart, Gordon, Kenseth ja Harwick avasid tippkümme kohta, kus hooaja jooksul jäi neli võistlust.
+[2024-02-15 08:38:30] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 08:38:30] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida õppeinfo tempot.
+[2024-02-15 08:38:31] Total translation time: 1.68482s
+[2024-02-15 08:38:31] [valid] Ep. 4 : Up. 70000 : bleu : 25.171 : stalled 3 times (last best: 25.4074)
+[2024-02-15 08:38:31] [valid] Ep. 4 : Up. 70000 : ce-mean-words : 1.51781 : stalled 1 times (last best: 1.51177)
+[2024-02-15 08:47:22] Ep. 4 : Up. 71000 : Sen. 29,326,563 : Cost 2.76623034 : Time 541.91s : 136820.99 words/s : gNorm 0.5026
+[2024-02-15 08:56:02] Ep. 4 : Up. 72000 : Sen. 32,705,235 : Cost 2.64579487 : Time 519.17s : 140064.46 words/s : gNorm 0.3770
+[2024-02-15 09:04:57] Ep. 4 : Up. 73000 : Sen. 36,456,929 : Cost 2.34913492 : Time 535.51s : 147139.73 words/s : gNorm 0.3089
+[2024-02-15 09:14:03] Ep. 4 : Up. 74000 : Sen. 40,245,262 : Cost 2.31116080 : Time 546.27s : 143629.17 words/s : gNorm 0.3392
+[2024-02-15 09:22:56] Ep. 4 : Up. 75000 : Sen. 43,451,457 : Cost 2.64598322 : Time 533.09s : 136457.24 words/s : gNorm 0.5869
+[2024-02-15 09:22:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 09:22:58] Saving Adam parameters
+[2024-02-15 09:23:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 09:23:03] Translating validation set...
+[2024-02-15 09:23:04] Best translation 0 : Esmaspäeval teatasid Stanfordi ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, nii et igaüks neist võib olla umbes üks USA sent.
+[2024-02-15 09:23:04] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 09:23:04] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 09:23:04] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattave.
+[2024-02-15 09:23:04] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 09:23:04] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi, Sevillast.
+[2024-02-15 09:23:04] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas oma kevadfoorumit Grand Connaughti tubades hotellis.
+[2024-02-15 09:23:04] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 09:23:04] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Raiisi lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 09:23:04] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 09:23:04] Best translation 160 : Stetter, Gordon, Kenseth ja Harwick avasid juhtide meistrivõistluste kümne parima koha, samal ajal kui hooaja jooksul jäi neli võistlust.
+[2024-02-15 09:23:04] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 09:23:05] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe kiirust.
+[2024-02-15 09:23:05] Total translation time: 1.77592s
+[2024-02-15 09:23:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-chrf.npz
+[2024-02-15 09:23:06] [valid] Ep. 4 : Up. 75000 : chrf : 59.284 : new best
+[2024-02-15 09:23:06] Translating validation set...
+[2024-02-15 09:23:07] Best translation 0 : Esmaspäeval teatasid Stanfordi ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, nii et igaüks neist võib olla umbes üks USA sent.
+[2024-02-15 09:23:07] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV-i ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 09:23:07] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 09:23:07] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattave.
+[2024-02-15 09:23:07] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 09:23:07] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi, Sevillast.
+[2024-02-15 09:23:07] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas oma kevadfoorumit Grand Connaughti tubades hotellis.
+[2024-02-15 09:23:07] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 09:23:07] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Raiisi lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 09:23:07] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 09:23:07] Best translation 160 : Stetter, Gordon, Kenseth ja Harwick avasid juhtide meistrivõistluste kümne parima koha, samal ajal kui hooaja jooksul jäi neli võistlust.
+[2024-02-15 09:23:07] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 09:23:07] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe kiirust.
+[2024-02-15 09:23:07] Total translation time: 1.23392s
+[2024-02-15 09:23:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-bleu.npz
+[2024-02-15 09:23:08] [valid] Ep. 4 : Up. 75000 : bleu : 26.09 : new best
+[2024-02-15 09:23:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 09:23:09] [valid] Ep. 4 : Up. 75000 : ce-mean-words : 1.47464 : new best
+[2024-02-15 09:31:56] Ep. 4 : Up. 76000 : Sen. 46,264,393 : Cost 2.54779720 : Time 539.90s : 128429.68 words/s : gNorm 0.3829
+[2024-02-15 09:40:31] Ep. 4 : Up. 77000 : Sen. 48,986,833 : Cost 2.43510771 : Time 514.52s : 130769.62 words/s : gNorm 0.3900
+[2024-02-15 09:48:52] Ep. 4 : Up. 78000 : Sen. 51,562,234 : Cost 2.62005138 : Time 501.16s : 131144.51 words/s : gNorm 0.3773
+[2024-02-15 09:57:18] Ep. 4 : Up. 79000 : Sen. 54,187,395 : Cost 2.65015316 : Time 505.72s : 130926.47 words/s : gNorm 0.3953
+[2024-02-15 10:05:53] Ep. 4 : Up. 80000 : Sen. 57,795,430 : Cost 2.76310539 : Time 515.22s : 135897.89 words/s : gNorm 0.7896
+[2024-02-15 10:05:53] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 10:05:55] Saving Adam parameters
+[2024-02-15 10:05:57] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 10:05:59] Translating validation set...
+[2024-02-15 10:06:01] Best translation 0 : Esmaspäeval kuulutasid Stanfordi ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis suudab sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla ühe USA sendi kohta.
+[2024-02-15 10:06:01] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 10:06:01] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 10:06:01] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattave.
+[2024-02-15 10:06:01] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 10:06:01] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 10:06:01] Best translation 10 : Umbes 11:29 kolis protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas oma kevadfoorumit Grand Connaughti tubades.
+[2024-02-15 10:06:01] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 10:06:01] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Rawir'i lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 10:06:01] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 10:06:01] Best translation 160 : Stewart, Gordon, Kenseth ja Harick avasid juhtide meistrivõistluste kümme parimat kohta, hooajaks jäi neli võistlust.
+[2024-02-15 10:06:01] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 10:06:01] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe kiirust.
+[2024-02-15 10:06:01] Total translation time: 1.86648s
+[2024-02-15 10:06:01] [valid] Ep. 4 : Up. 80000 : chrf : 58.5985 : stalled 1 times (last best: 59.284)
+[2024-02-15 10:06:01] Translating validation set...
+[2024-02-15 10:06:02] Best translation 0 : Esmaspäeval kuulutasid Stanfordi ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis suudab sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla ühe USA sendi kohta.
+[2024-02-15 10:06:02] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIV ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 10:06:02] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 10:06:02] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattave.
+[2024-02-15 10:06:02] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reaktsiooni ajal üle veetud.
+[2024-02-15 10:06:02] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 10:06:02] Best translation 10 : Umbes 11:29 kolis protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas oma kevadfoorumit Grand Connaughti tubades.
+[2024-02-15 10:06:02] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 10:06:02] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Rawir'i lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 10:06:02] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 10:06:02] Best translation 160 : Stewart, Gordon, Kenseth ja Harick avasid juhtide meistrivõistluste kümme parimat kohta, hooajaks jäi neli võistlust.
+[2024-02-15 10:06:02] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 10:06:03] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe kiirust.
+[2024-02-15 10:06:03] Total translation time: 1.36419s
+[2024-02-15 10:06:03] [valid] Ep. 4 : Up. 80000 : bleu : 25.3839 : stalled 1 times (last best: 26.09)
+[2024-02-15 10:06:03] [valid] Ep. 4 : Up. 80000 : ce-mean-words : 1.50145 : stalled 1 times (last best: 1.47464)
+[2024-02-15 10:14:55] Ep. 4 : Up. 81000 : Sen. 63,927,593 : Cost 3.01015043 : Time 542.18s : 145680.34 words/s : gNorm 0.5131
+[2024-02-15 10:23:46] Ep. 4 : Up. 82000 : Sen. 67,844,752 : Cost 2.80623722 : Time 531.02s : 141981.99 words/s : gNorm 0.3981
+[2024-02-15 10:32:07] Ep. 4 : Up. 83000 : Sen. 71,207,707 : Cost 2.78577423 : Time 501.27s : 140929.61 words/s : gNorm 0.7391
+[2024-02-15 10:34:54] Seen 72,248,992 samples
+[2024-02-15 10:34:54] Starting data epoch 5 in logical epoch 5
+[2024-02-15 10:42:03] Ep. 5 : Up. 84000 : Sen. 2,063,287 : Cost 2.69304299 : Time 595.22s : 116956.46 words/s : gNorm 0.4439
+[2024-02-15 10:50:52] Ep. 5 : Up. 85000 : Sen. 5,009,273 : Cost 2.56798029 : Time 529.86s : 132352.05 words/s : gNorm 0.4767
+[2024-02-15 10:50:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 10:50:54] Saving Adam parameters
+[2024-02-15 10:50:56] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 10:50:59] Translating validation set...
+[2024-02-15 10:51:00] Best translation 0 : Esmaspäeval teatasid Stanfordi ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, võimalik, et umbes ühe USA sendi kohta.
+[2024-02-15 10:51:00] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 10:51:00] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 10:51:00] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 10:51:00] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 10:51:00] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 10:51:00] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 10:51:00] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 10:51:00] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow kodujaamast) ütles: "Kirjaka lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 10:51:00] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 10:51:00] Best translation 160 : Stetter, Gordon, Kenseth ja Hardick avasid juhtide meistrivõistluste kümme parimat kohta, hooaja lõpuni jäi neli võistlust.
+[2024-02-15 10:51:00] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 10:51:00] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe kiirust.
+[2024-02-15 10:51:01] Total translation time: 1.70879s
+[2024-02-15 10:51:01] [valid] Ep. 5 : Up. 85000 : chrf : 59.1265 : stalled 2 times (last best: 59.284)
+[2024-02-15 10:51:01] Translating validation set...
+[2024-02-15 10:51:01] Best translation 0 : Esmaspäeval teatasid Stanfordi ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, võimalik, et umbes ühe USA sendi kohta.
+[2024-02-15 10:51:01] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 10:51:01] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 10:51:01] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 10:51:01] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 10:51:01] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 10:51:01] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 10:51:02] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 10:51:02] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow kodujaamast) ütles: "Kirjaka lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 10:51:02] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 10:51:02] Best translation 160 : Stetter, Gordon, Kenseth ja Hardick avasid juhtide meistrivõistluste kümme parimat kohta, hooaja lõpuni jäi neli võistlust.
+[2024-02-15 10:51:02] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 10:51:02] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe kiirust.
+[2024-02-15 10:51:02] Total translation time: 1.29494s
+[2024-02-15 10:51:02] [valid] Ep. 5 : Up. 85000 : bleu : 25.8093 : stalled 2 times (last best: 26.09)
+[2024-02-15 10:51:02] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 10:51:03] [valid] Ep. 5 : Up. 85000 : ce-mean-words : 1.46999 : new best
+[2024-02-15 10:59:24] Ep. 5 : Up. 86000 : Sen. 7,657,451 : Cost 2.39951873 : Time 511.10s : 132158.23 words/s : gNorm 0.3827
+[2024-02-15 11:08:01] Ep. 5 : Up. 87000 : Sen. 10,194,713 : Cost 2.63669491 : Time 517.06s : 127739.69 words/s : gNorm 0.4099
+[2024-02-15 11:16:28] Ep. 5 : Up. 88000 : Sen. 12,933,219 : Cost 2.65612197 : Time 507.12s : 131342.30 words/s : gNorm 0.4750
+[2024-02-15 11:24:46] Ep. 5 : Up. 89000 : Sen. 16,123,740 : Cost 2.62698579 : Time 498.34s : 136874.43 words/s : gNorm 0.5551
+[2024-02-15 11:33:52] Ep. 5 : Up. 90000 : Sen. 22,291,246 : Cost 3.00476336 : Time 546.28s : 144158.28 words/s : gNorm 0.5008
+[2024-02-15 11:33:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 11:33:54] Saving Adam parameters
+[2024-02-15 11:33:56] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 11:33:58] Translating validation set...
+[2024-02-15 11:34:00] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis suudab sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, millest igaüks võib olla umbes üks USA sent.
+[2024-02-15 11:34:00] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 11:34:00] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 11:34:00] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattave.
+[2024-02-15 11:34:00] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 11:34:00] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 11:34:00] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 11:34:00] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 11:34:00] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Vaidlase lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 11:34:00] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 11:34:00] Best translation 160 : Stetter, Gordon, Kenseth, ja Harick ümardavad välja juhtide meistrivõistluste kümme parimat kohta, kusjuures hooaja lõpuni on jäänud neli sõitu.
+[2024-02-15 11:34:00] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 11:34:00] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe tempot.
+[2024-02-15 11:34:00] Total translation time: 1.78421s
+[2024-02-15 11:34:00] [valid] Ep. 5 : Up. 90000 : chrf : 58.5674 : stalled 3 times (last best: 59.284)
+[2024-02-15 11:34:00] Translating validation set...
+[2024-02-15 11:34:01] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis suudab sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, millest igaüks võib olla umbes üks USA sent.
+[2024-02-15 11:34:01] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste nagu rinnavähi ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 11:34:01] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 11:34:01] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattave.
+[2024-02-15 11:34:01] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 11:34:01] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 11:34:01] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, mööda Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 11:34:01] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 11:34:01] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Vaidlase lugemine õpetas lastele, miks lugeda,... lugemisarmastust - [show] julgustas lapsi raamatut üles võtma ja lugema."
+[2024-02-15 11:34:01] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 11:34:01] Best translation 160 : Stetter, Gordon, Kenseth, ja Harick ümardavad välja juhtide meistrivõistluste kümme parimat kohta, kusjuures hooaja lõpuni on jäänud neli sõitu.
+[2024-02-15 11:34:01] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 11:34:01] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe tempot.
+[2024-02-15 11:34:01] Total translation time: 1.27709s
+[2024-02-15 11:34:01] [valid] Ep. 5 : Up. 90000 : bleu : 25.4497 : stalled 3 times (last best: 26.09)
+[2024-02-15 11:34:02] [valid] Ep. 5 : Up. 90000 : ce-mean-words : 1.48857 : stalled 1 times (last best: 1.46999)
+[2024-02-15 11:42:58] Ep. 5 : Up. 91000 : Sen. 26,369,659 : Cost 2.82339668 : Time 545.16s : 139381.18 words/s : gNorm 0.4323
+[2024-02-15 11:51:50] Ep. 5 : Up. 92000 : Sen. 29,903,108 : Cost 2.70603704 : Time 532.63s : 139370.77 words/s : gNorm 0.4359
+[2024-02-15 12:00:38] Ep. 5 : Up. 93000 : Sen. 33,314,883 : Cost 2.56622052 : Time 527.59s : 137064.98 words/s : gNorm 0.3501
+[2024-02-15 12:09:45] Ep. 5 : Up. 94000 : Sen. 37,122,976 : Cost 2.31490088 : Time 547.43s : 144421.16 words/s : gNorm 0.3347
+[2024-02-15 12:18:37] Ep. 5 : Up. 95000 : Sen. 40,816,614 : Cost 2.30979323 : Time 531.58s : 146887.60 words/s : gNorm 0.5857
+[2024-02-15 12:18:37] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 12:18:38] Saving Adam parameters
+[2024-02-15 12:18:41] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 12:18:44] Translating validation set...
+[2024-02-15 12:18:46] Best translation 0 : Esmaspäeval teatasid Stanfordi ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike prinditav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla iga USA sent.
+[2024-02-15 12:18:46] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 12:18:46] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 12:18:46] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 12:18:46] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 12:18:46] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 12:18:46] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 12:18:46] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 12:18:46] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Vaidlase lugemine õpetas lastele, miks lugeda,... lugemisarmastust — [show] julgustas lapsi raamatut võtma ja lugema."
+[2024-02-15 12:18:46] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 12:18:46] Best translation 160 : Stetter, Gordon, Kenseth ja Harwick avasid juhtide meistrivõistluste kümme parimat kohta, hooajaks jäi neli sõitu.
+[2024-02-15 12:18:46] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 12:18:47] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe tempot.
+[2024-02-15 12:18:47] Total translation time: 2.78029s
+[2024-02-15 12:18:47] [valid] Ep. 5 : Up. 95000 : chrf : 57.7579 : stalled 4 times (last best: 59.284)
+[2024-02-15 12:18:47] Translating validation set...
+[2024-02-15 12:18:48] Best translation 0 : Esmaspäeval teatasid Stanfordi ülikooli meditsiinikooli teadlased uue diagnostikavahendi leiutamisest, mis võib sorteerida rakke tüübi järgi: väike prinditav kiip, mida saab valmistada standardse tindiprinteriga, mis võib olla iga USA sent.
+[2024-02-15 12:18:48] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, ellujäämismäär võib olla pool rikkamate riikide omast.
+[2024-02-15 12:18:48] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 12:18:48] Best translation 3 : Piloot tuvastati kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 12:18:48] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 12:18:48] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi Sevillast.
+[2024-02-15 12:18:48] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 12:18:48] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 12:18:48] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Vaidlase lugemine õpetas lastele, miks lugeda,... lugemisarmastust — [show] julgustas lapsi raamatut võtma ja lugema."
+[2024-02-15 12:18:48] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 12:18:48] Best translation 160 : Stetter, Gordon, Kenseth ja Harwick avasid juhtide meistrivõistluste kümme parimat kohta, hooajaks jäi neli sõitu.
+[2024-02-15 12:18:48] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 12:18:49] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe tempot.
+[2024-02-15 12:18:49] Total translation time: 1.89413s
+[2024-02-15 12:18:49] [valid] Ep. 5 : Up. 95000 : bleu : 25.521 : stalled 4 times (last best: 26.09)
+[2024-02-15 12:18:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 12:18:50] [valid] Ep. 5 : Up. 95000 : ce-mean-words : 1.45257 : new best
+[2024-02-15 12:27:28] Ep. 5 : Up. 96000 : Sen. 43,974,082 : Cost 2.65695119 : Time 530.93s : 135542.60 words/s : gNorm 0.4513
+[2024-02-15 12:36:14] Ep. 5 : Up. 97000 : Sen. 46,747,758 : Cost 2.47859478 : Time 526.50s : 129098.40 words/s : gNorm 0.3819
+[2024-02-15 12:44:55] Ep. 5 : Up. 98000 : Sen. 49,411,380 : Cost 2.44727635 : Time 520.62s : 129648.59 words/s : gNorm 0.5137
+[2024-02-15 12:53:06] Ep. 5 : Up. 99000 : Sen. 51,977,796 : Cost 2.58745122 : Time 491.67s : 132133.26 words/s : gNorm 0.3782
+[2024-02-15 13:01:37] Ep. 5 : Up. 100000 : Sen. 54,770,033 : Cost 2.64452147 : Time 510.82s : 132815.92 words/s : gNorm 0.4509
+[2024-02-15 13:01:37] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 13:01:39] Saving Adam parameters
+[2024-02-15 13:01:41] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz
+[2024-02-15 13:01:44] Translating validation set...
+[2024-02-15 13:01:45] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla ühe USA sendi kohta.
+[2024-02-15 13:01:45] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, elulemus võib olla pool rikkamate riikide omast.
+[2024-02-15 13:01:45] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 13:01:45] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 13:01:45] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 13:01:45] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi, Sevillast.
+[2024-02-15 13:01:45] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 13:01:45] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 13:01:45] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Vaidlase lugemine õpetas lastele, miks lugeda,... lugemisarmastust — [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 13:01:45] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 13:01:45] Best translation 160 : Stestret, Gordon, Kenseth ja Harwick avasid juhtide meistrivõistluste kümme parimat kohta, hooajaks jäi nelja võidujooksuga.
+[2024-02-15 13:01:45] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 13:01:46] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe tempot.
+[2024-02-15 13:01:46] Total translation time: 1.82161s
+[2024-02-15 13:01:46] [valid] Ep. 5 : Up. 100000 : chrf : 58.7717 : stalled 5 times (last best: 59.284)
+[2024-02-15 13:01:46] Translating validation set...
+[2024-02-15 13:01:46] Best translation 0 : Esmaspäeval kuulutasid Stanfordi Ülikooli meditsiinikooli teadlased välja uue diagnostikavahendi, mis võib sorteerida rakke tüübi järgi: väike trükitav kiip, mida saab valmistada standardsete tindiprinterite abil, mis võivad olla ühe USA sendi kohta.
+[2024-02-15 13:01:46] Best translation 1 : Juhtivad teadlased ütlevad, et see võib viia vähi, tuberkuloosi, HIVi ja malaaria varajase avastamiseni madala sissetulekuga riikides, kus selliste haiguste, nagu rinnavähk, elulemus võib olla pool rikkamate riikide omast.
+[2024-02-15 13:01:46] Best translation 2 : JAS 39C Gripen kukkus rajale umbes kell 9:30 kohaliku aja järgi (0230 UTC) ja plahvatas, sulgedes lennujaama kommertslendudele.
+[2024-02-15 13:01:46] Best translation 3 : Piloot oli määratletud kui Squadron Leader Dilokrit Pattavee.
+[2024-02-15 13:01:46] Best translation 4 : Kohalik meedia teatab lennujaama tuletõrjeautost, mis on reageerides ümber veerenud.
+[2024-02-15 13:01:46] Best translation 5 : 28-aastane Vidal oli liitunud Barçaga kolm hooaega tagasi, Sevillast.
+[2024-02-15 13:01:46] Best translation 10 : Umbes 11:29 liikus protest mööda Trafalgari väljakut mööda Whitehalli, mööda Strandi, Aldwychi ja üles Kingsway suunas Holborni suunas, kus Konservatiivne Partei pidas Grand Connaughti tubades oma kevadfoorumit.
+[2024-02-15 13:01:46] Best translation 20 : Hsieh vihjas valimiste ajal, et Ma võib kriisi ajal riigist põgeneda.
+[2024-02-15 13:01:46] Best translation 40 : John Grant, WNED Buffalost (Reading Rainbow' kodujaamast) ütles: "Vaidlase lugemine õpetas lastele, miks lugeda,... lugemisarmastust — [show] julgustas lapsi raamatule järele tulema ja lugema."
+[2024-02-15 13:01:46] Best translation 80 : Seejärel võitis ta esialgses finaalis Caboolture'i.
+[2024-02-15 13:01:47] Best translation 160 : Stestret, Gordon, Kenseth ja Harwick avasid juhtide meistrivõistluste kümme parimat kohta, hooajaks jäi neli sõitu.
+[2024-02-15 13:01:47] Best translation 320 : Sellest ajast alates on Hiina majanduslik suurus kasvanud 90 korda.
+[2024-02-15 13:01:47] Best translation 640 : See võimaldab õpilastel töötada oma tempos ja kontrollida juhendava teabe tempot.
+[2024-02-15 13:01:47] Total translation time: 1.24136s
+[2024-02-15 13:01:47] [valid] Ep. 5 : Up. 100000 : bleu : 25.6552 : stalled 5 times (last best: 26.09)
+[2024-02-15 13:01:47] [valid] Ep. 5 : Up. 100000 : ce-mean-words : 1.46752 : stalled 1 times (last best: 1.45257)
+[2024-02-15 13:01:47] Training finished
+[2024-02-15 13:01:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz
+[2024-02-15 13:01:48] Saving Adam parameters
+[2024-02-15 13:01:50] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-et/simple/v2/s.train_model.en-et/output/model.npz.optimizer.npz

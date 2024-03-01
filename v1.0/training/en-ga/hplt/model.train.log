@@ -1,0 +1,1096 @@
+[2024-02-14 18:26:34] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-14 18:26:34] [marian] Running on nid005033 as process 43299 with command line:
+[2024-02-14 18:26:34] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.generate_vocab.en-ga/output/model.en-ga.spm /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.generate_vocab.en-ga/output/model.en-ga.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/tmp.d/6049978 --train-sets /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/tmp.d/6049978/train.en.gz /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/tmp.d/6049978/train.ga.gz --valid-sets /scratch/project_465000574/data/en-ga/valid/flores200.dev.en-ga.en /scratch/project_465000574/data/en-ga/valid/flores200.dev.en-ga.ga --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-14 18:26:34] [config] after: 0e
+[2024-02-14 18:26:34] [config] after-batches: 0
+[2024-02-14 18:26:34] [config] after-epochs: 0
+[2024-02-14 18:26:34] [config] all-caps-every: 0
+[2024-02-14 18:26:34] [config] allow-unk: false
+[2024-02-14 18:26:34] [config] authors: false
+[2024-02-14 18:26:34] [config] beam-size: 4
+[2024-02-14 18:26:34] [config] bert-class-symbol: "[CLS]"
+[2024-02-14 18:26:34] [config] bert-mask-symbol: "[MASK]"
+[2024-02-14 18:26:34] [config] bert-masking-fraction: 0.15
+[2024-02-14 18:26:34] [config] bert-sep-symbol: "[SEP]"
+[2024-02-14 18:26:34] [config] bert-train-type-embeddings: true
+[2024-02-14 18:26:34] [config] bert-type-vocab-size: 2
+[2024-02-14 18:26:34] [config] build-info: ""
+[2024-02-14 18:26:34] [config] char-conv-filters-num:
+[2024-02-14 18:26:34] [config]   - 200
+[2024-02-14 18:26:34] [config]   - 200
+[2024-02-14 18:26:34] [config]   - 250
+[2024-02-14 18:26:34] [config]   - 250
+[2024-02-14 18:26:34] [config]   - 300
+[2024-02-14 18:26:34] [config]   - 300
+[2024-02-14 18:26:34] [config]   - 300
+[2024-02-14 18:26:34] [config]   - 300
+[2024-02-14 18:26:34] [config] char-conv-filters-widths:
+[2024-02-14 18:26:34] [config]   - 1
+[2024-02-14 18:26:34] [config]   - 2
+[2024-02-14 18:26:34] [config]   - 3
+[2024-02-14 18:26:34] [config]   - 4
+[2024-02-14 18:26:34] [config]   - 5
+[2024-02-14 18:26:34] [config]   - 6
+[2024-02-14 18:26:34] [config]   - 7
+[2024-02-14 18:26:34] [config]   - 8
+[2024-02-14 18:26:34] [config] char-highway: 4
+[2024-02-14 18:26:34] [config] char-stride: 5
+[2024-02-14 18:26:34] [config] check-gradient-nan: true
+[2024-02-14 18:26:34] [config] check-nan: false
+[2024-02-14 18:26:34] [config] cite: false
+[2024-02-14 18:26:34] [config] clip-norm: 0
+[2024-02-14 18:26:34] [config] cost-scaling:
+[2024-02-14 18:26:34] [config]   []
+[2024-02-14 18:26:34] [config] cost-type: ce-mean-words
+[2024-02-14 18:26:34] [config] cpu-threads: 0
+[2024-02-14 18:26:34] [config] data-threads: 8
+[2024-02-14 18:26:34] [config] data-weighting: ""
+[2024-02-14 18:26:34] [config] data-weighting-type: sentence
+[2024-02-14 18:26:34] [config] dec-cell: gru
+[2024-02-14 18:26:34] [config] dec-cell-base-depth: 2
+[2024-02-14 18:26:34] [config] dec-cell-high-depth: 1
+[2024-02-14 18:26:34] [config] dec-depth: 6
+[2024-02-14 18:26:34] [config] devices:
+[2024-02-14 18:26:34] [config]   - 0
+[2024-02-14 18:26:34] [config]   - 1
+[2024-02-14 18:26:34] [config]   - 2
+[2024-02-14 18:26:34] [config]   - 3
+[2024-02-14 18:26:34] [config]   - 4
+[2024-02-14 18:26:34] [config]   - 5
+[2024-02-14 18:26:34] [config]   - 6
+[2024-02-14 18:26:34] [config]   - 7
+[2024-02-14 18:26:34] [config] dim-emb: 512
+[2024-02-14 18:26:34] [config] dim-rnn: 1024
+[2024-02-14 18:26:34] [config] dim-vocabs:
+[2024-02-14 18:26:34] [config]   - 64000
+[2024-02-14 18:26:34] [config] disp-first: 0
+[2024-02-14 18:26:34] [config] disp-freq: 1000u
+[2024-02-14 18:26:34] [config] disp-label-counts: true
+[2024-02-14 18:26:34] [config] dropout-rnn: 0
+[2024-02-14 18:26:34] [config] dropout-src: 0
+[2024-02-14 18:26:34] [config] dropout-trg: 0
+[2024-02-14 18:26:34] [config] dump-config: ""
+[2024-02-14 18:26:34] [config] dynamic-gradient-scaling:
+[2024-02-14 18:26:34] [config]   []
+[2024-02-14 18:26:34] [config] early-stopping: 5
+[2024-02-14 18:26:34] [config] early-stopping-on: first
+[2024-02-14 18:26:34] [config] embedding-fix-src: false
+[2024-02-14 18:26:34] [config] embedding-fix-trg: false
+[2024-02-14 18:26:34] [config] embedding-normalization: false
+[2024-02-14 18:26:34] [config] embedding-vectors:
+[2024-02-14 18:26:34] [config]   []
+[2024-02-14 18:26:34] [config] enc-cell: gru
+[2024-02-14 18:26:34] [config] enc-cell-depth: 1
+[2024-02-14 18:26:34] [config] enc-depth: 6
+[2024-02-14 18:26:34] [config] enc-type: bidirectional
+[2024-02-14 18:26:34] [config] english-title-case-every: 0
+[2024-02-14 18:26:34] [config] exponential-smoothing: 0.0001
+[2024-02-14 18:26:34] [config] factor-weight: 1
+[2024-02-14 18:26:34] [config] factors-combine: sum
+[2024-02-14 18:26:34] [config] factors-dim-emb: 0
+[2024-02-14 18:26:34] [config] gradient-checkpointing: false
+[2024-02-14 18:26:34] [config] gradient-norm-average-window: 100
+[2024-02-14 18:26:34] [config] guided-alignment: none
+[2024-02-14 18:26:34] [config] guided-alignment-cost: ce
+[2024-02-14 18:26:34] [config] guided-alignment-weight: 0.1
+[2024-02-14 18:26:34] [config] ignore-model-config: false
+[2024-02-14 18:26:34] [config] input-types:
+[2024-02-14 18:26:34] [config]   []
+[2024-02-14 18:26:34] [config] interpolate-env-vars: false
+[2024-02-14 18:26:34] [config] keep-best: true
+[2024-02-14 18:26:34] [config] label-smoothing: 0.1
+[2024-02-14 18:26:34] [config] layer-normalization: false
+[2024-02-14 18:26:34] [config] learn-rate: 0.0003
+[2024-02-14 18:26:34] [config] lemma-dependency: ""
+[2024-02-14 18:26:34] [config] lemma-dim-emb: 0
+[2024-02-14 18:26:34] [config] log: /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/logs/model.train.log
+[2024-02-14 18:26:34] [config] log-level: info
+[2024-02-14 18:26:34] [config] log-time-zone: ""
+[2024-02-14 18:26:34] [config] logical-epoch:
+[2024-02-14 18:26:34] [config]   - 1e
+[2024-02-14 18:26:34] [config]   - 0
+[2024-02-14 18:26:34] [config] lr-decay: 0
+[2024-02-14 18:26:34] [config] lr-decay-freq: 50000
+[2024-02-14 18:26:34] [config] lr-decay-inv-sqrt:
+[2024-02-14 18:26:34] [config]   - 16000
+[2024-02-14 18:26:34] [config] lr-decay-repeat-warmup: false
+[2024-02-14 18:26:34] [config] lr-decay-reset-optimizer: false
+[2024-02-14 18:26:34] [config] lr-decay-start:
+[2024-02-14 18:26:34] [config]   - 10
+[2024-02-14 18:26:34] [config]   - 1
+[2024-02-14 18:26:34] [config] lr-decay-strategy: epoch+stalled
+[2024-02-14 18:26:34] [config] lr-report: false
+[2024-02-14 18:26:34] [config] lr-warmup: 16000
+[2024-02-14 18:26:34] [config] lr-warmup-at-reload: false
+[2024-02-14 18:26:34] [config] lr-warmup-cycle: false
+[2024-02-14 18:26:34] [config] lr-warmup-start-rate: 0
+[2024-02-14 18:26:34] [config] max-length: 250
+[2024-02-14 18:26:34] [config] max-length-crop: false
+[2024-02-14 18:26:34] [config] max-length-factor: 3
+[2024-02-14 18:26:34] [config] maxi-batch: 1000
+[2024-02-14 18:26:34] [config] maxi-batch-sort: trg
+[2024-02-14 18:26:34] [config] mini-batch: 4096
+[2024-02-14 18:26:34] [config] mini-batch-fit: true
+[2024-02-14 18:26:34] [config] mini-batch-fit-step: 10
+[2024-02-14 18:26:34] [config] mini-batch-round-up: true
+[2024-02-14 18:26:34] [config] mini-batch-track-lr: false
+[2024-02-14 18:26:34] [config] mini-batch-warmup: 0
+[2024-02-14 18:26:34] [config] mini-batch-words: 0
+[2024-02-14 18:26:34] [config] mini-batch-words-ref: 0
+[2024-02-14 18:26:34] [config] model: /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-14 18:26:34] [config] multi-loss-type: sum
+[2024-02-14 18:26:34] [config] n-best: false
+[2024-02-14 18:26:34] [config] no-nccl: false
+[2024-02-14 18:26:34] [config] no-reload: false
+[2024-02-14 18:26:34] [config] no-restore-corpus: false
+[2024-02-14 18:26:34] [config] normalize: 1
+[2024-02-14 18:26:34] [config] normalize-gradient: false
+[2024-02-14 18:26:34] [config] num-devices: 0
+[2024-02-14 18:26:34] [config] optimizer: adam
+[2024-02-14 18:26:34] [config] optimizer-delay: 2
+[2024-02-14 18:26:34] [config] optimizer-params:
+[2024-02-14 18:26:34] [config]   - 0.9
+[2024-02-14 18:26:34] [config]   - 0.98
+[2024-02-14 18:26:34] [config]   - 1e-09
+[2024-02-14 18:26:34] [config] output-omit-bias: false
+[2024-02-14 18:26:34] [config] overwrite: true
+[2024-02-14 18:26:34] [config] precision:
+[2024-02-14 18:26:34] [config]   - float32
+[2024-02-14 18:26:34] [config]   - float32
+[2024-02-14 18:26:34] [config] pretrained-model: ""
+[2024-02-14 18:26:34] [config] quantize-biases: false
+[2024-02-14 18:26:34] [config] quantize-bits: 0
+[2024-02-14 18:26:34] [config] quantize-log-based: false
+[2024-02-14 18:26:34] [config] quantize-optimization-steps: 0
+[2024-02-14 18:26:34] [config] quiet: false
+[2024-02-14 18:26:34] [config] quiet-translation: false
+[2024-02-14 18:26:34] [config] relative-paths: false
+[2024-02-14 18:26:34] [config] right-left: false
+[2024-02-14 18:26:34] [config] save-freq: 5000u
+[2024-02-14 18:26:34] [config] seed: 42
+[2024-02-14 18:26:34] [config] sentencepiece-alphas:
+[2024-02-14 18:26:34] [config]   - 0.1
+[2024-02-14 18:26:34] [config] sentencepiece-max-lines: 2000000
+[2024-02-14 18:26:34] [config] sentencepiece-options: ""
+[2024-02-14 18:26:34] [config] sharding: global
+[2024-02-14 18:26:34] [config] shuffle: batches
+[2024-02-14 18:26:34] [config] shuffle-in-ram: false
+[2024-02-14 18:26:34] [config] sigterm: save-and-exit
+[2024-02-14 18:26:34] [config] skip: false
+[2024-02-14 18:26:34] [config] sqlite: ""
+[2024-02-14 18:26:34] [config] sqlite-drop: false
+[2024-02-14 18:26:34] [config] sync-freq: 200u
+[2024-02-14 18:26:34] [config] sync-sgd: true
+[2024-02-14 18:26:34] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/tmp.d/6049978
+[2024-02-14 18:26:34] [config] tied-embeddings: false
+[2024-02-14 18:26:34] [config] tied-embeddings-all: true
+[2024-02-14 18:26:34] [config] tied-embeddings-src: false
+[2024-02-14 18:26:34] [config] train-embedder-rank:
+[2024-02-14 18:26:34] [config]   []
+[2024-02-14 18:26:34] [config] train-sets:
+[2024-02-14 18:26:34] [config]   - /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/tmp.d/6049978/train.en.gz
+[2024-02-14 18:26:34] [config]   - /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/tmp.d/6049978/train.ga.gz
+[2024-02-14 18:26:34] [config] transformer-aan-activation: swish
+[2024-02-14 18:26:34] [config] transformer-aan-depth: 2
+[2024-02-14 18:26:34] [config] transformer-aan-nogate: false
+[2024-02-14 18:26:34] [config] transformer-decoder-autoreg: self-attention
+[2024-02-14 18:26:34] [config] transformer-decoder-dim-ffn: 0
+[2024-02-14 18:26:34] [config] transformer-decoder-ffn-depth: 0
+[2024-02-14 18:26:34] [config] transformer-depth-scaling: false
+[2024-02-14 18:26:34] [config] transformer-dim-aan: 2048
+[2024-02-14 18:26:34] [config] transformer-dim-ffn: 2048
+[2024-02-14 18:26:34] [config] transformer-dropout: 0.1
+[2024-02-14 18:26:34] [config] transformer-dropout-attention: 0
+[2024-02-14 18:26:34] [config] transformer-dropout-ffn: 0
+[2024-02-14 18:26:34] [config] transformer-ffn-activation: relu
+[2024-02-14 18:26:34] [config] transformer-ffn-depth: 2
+[2024-02-14 18:26:34] [config] transformer-guided-alignment-layer: last
+[2024-02-14 18:26:34] [config] transformer-heads: 8
+[2024-02-14 18:26:34] [config] transformer-no-projection: false
+[2024-02-14 18:26:34] [config] transformer-pool: false
+[2024-02-14 18:26:34] [config] transformer-postprocess: dan
+[2024-02-14 18:26:34] [config] transformer-postprocess-emb: d
+[2024-02-14 18:26:34] [config] transformer-postprocess-top: ""
+[2024-02-14 18:26:34] [config] transformer-preprocess: ""
+[2024-02-14 18:26:34] [config] transformer-rnn-projection: false
+[2024-02-14 18:26:34] [config] transformer-tied-layers:
+[2024-02-14 18:26:34] [config]   []
+[2024-02-14 18:26:34] [config] transformer-train-position-embeddings: false
+[2024-02-14 18:26:34] [config] tsv: false
+[2024-02-14 18:26:34] [config] tsv-fields: 0
+[2024-02-14 18:26:34] [config] type: transformer
+[2024-02-14 18:26:34] [config] ulr: false
+[2024-02-14 18:26:34] [config] ulr-dim-emb: 0
+[2024-02-14 18:26:34] [config] ulr-dropout: 0
+[2024-02-14 18:26:34] [config] ulr-keys-vectors: ""
+[2024-02-14 18:26:34] [config] ulr-query-vectors: ""
+[2024-02-14 18:26:34] [config] ulr-softmax-temperature: 1
+[2024-02-14 18:26:34] [config] ulr-trainable-transformation: false
+[2024-02-14 18:26:34] [config] unlikelihood-loss: false
+[2024-02-14 18:26:34] [config] valid-freq: 5000u
+[2024-02-14 18:26:34] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/logs/model.valid.log
+[2024-02-14 18:26:34] [config] valid-max-length: 1000
+[2024-02-14 18:26:34] [config] valid-metrics:
+[2024-02-14 18:26:34] [config]   - chrf
+[2024-02-14 18:26:34] [config]   - bleu
+[2024-02-14 18:26:34] [config]   - ce-mean-words
+[2024-02-14 18:26:34] [config] valid-mini-batch: 64
+[2024-02-14 18:26:34] [config] valid-reset-stalled: true
+[2024-02-14 18:26:34] [config] valid-script-args:
+[2024-02-14 18:26:34] [config]   []
+[2024-02-14 18:26:34] [config] valid-script-path: ""
+[2024-02-14 18:26:34] [config] valid-sets:
+[2024-02-14 18:26:34] [config]   - /scratch/project_465000574/data/en-ga/valid/flores200.dev.en-ga.en
+[2024-02-14 18:26:34] [config]   - /scratch/project_465000574/data/en-ga/valid/flores200.dev.en-ga.ga
+[2024-02-14 18:26:34] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/logs/model.valid.out
+[2024-02-14 18:26:34] [config] vocabs:
+[2024-02-14 18:26:34] [config]   - /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.generate_vocab.en-ga/output/model.en-ga.spm
+[2024-02-14 18:26:34] [config]   - /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.generate_vocab.en-ga/output/model.en-ga.spm
+[2024-02-14 18:26:34] [config] word-penalty: 0
+[2024-02-14 18:26:34] [config] word-scores: false
+[2024-02-14 18:26:34] [config] workspace: 20000
+[2024-02-14 18:26:34] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-14 18:26:34] Using synchronous SGD
+[2024-02-14 18:26:34] [comm] Compiled without MPI support. Running as a single process on nid005033
+[2024-02-14 18:26:34] Synced seed 42
+[2024-02-14 18:26:34] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.generate_vocab.en-ga/output/model.en-ga.spm
+[2024-02-14 18:26:34] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-14 18:26:34] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.generate_vocab.en-ga/output/model.en-ga.spm
+[2024-02-14 18:26:34] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-14 18:26:34] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-14 18:26:34] Checking gradient for NaN
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-14 18:26:36] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-14 18:26:36] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-14 18:26:38] [comm] Using global sharding
+[2024-02-14 18:26:39] [comm] NCCLCommunicators constructed successfully
+[2024-02-14 18:26:39] [training] Using 8 GPUs
+[2024-02-14 18:26:39] [logits] Applying loss function for 1 factor(s)
+[2024-02-14 18:26:39] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 18:26:44] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 18:27:39] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-14 18:27:39] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-14 18:27:39] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-14 18:27:40] [comm] Using global sharding
+[2024-02-14 18:27:40] [comm] NCCLCommunicators constructed successfully
+[2024-02-14 18:27:40] [training] Using 8 GPUs
+[2024-02-14 18:27:40] Training started
+[2024-02-14 18:28:03] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu6
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu2
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu5
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu7
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu4
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu1
+[2024-02-14 18:28:03] [memory] Reserving 293 MB, device gpu3
+[2024-02-14 18:28:14] [memory] Reserving 293 MB, device gpu0
+[2024-02-14 18:28:28] [memory] Reserving 293 MB, device gpu7
+[2024-02-14 18:28:28] [memory] Reserving 293 MB, device gpu4
+[2024-02-14 18:28:28] [memory] Reserving 293 MB, device gpu6
+[2024-02-14 18:28:28] [memory] Reserving 293 MB, device gpu3
+[2024-02-14 18:28:28] [memory] Reserving 293 MB, device gpu2
+[2024-02-14 18:28:28] [memory] Reserving 293 MB, device gpu5
+[2024-02-14 18:28:28] [memory] Reserving 293 MB, device gpu1
+[2024-02-14 18:28:29] Allocating memory for general optimizer shards
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu6
+[2024-02-14 18:28:29] Parameter type float32, optimization type float32, casting types false
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu3
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu7
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu1
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu4
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu5
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu0
+[2024-02-14 18:28:29] [memory] Reserving 36 MB, device gpu2
+[2024-02-14 18:28:29] Allocating memory for Adam-specific shards
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu6
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu5
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu7
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu3
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu1
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu2
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu0
+[2024-02-14 18:28:29] [memory] Reserving 73 MB, device gpu4
+[2024-02-14 18:32:42] Seen 1,725,916 samples
+[2024-02-14 18:32:42] Starting data epoch 2 in logical epoch 2
+[2024-02-14 18:37:18] Seen 1,725,929 samples
+[2024-02-14 18:37:18] Starting data epoch 3 in logical epoch 3
+[2024-02-14 18:38:10] Ep. 3 : Up. 1000 : Sen. 200,534 : Cost 8.91087914 : Time 630.76s : 140355.75 words/s : gNorm 3.0142
+[2024-02-14 18:41:55] Seen 1,725,904 samples
+[2024-02-14 18:41:55] Starting data epoch 4 in logical epoch 4
+[2024-02-14 18:46:31] Seen 1,725,945 samples
+[2024-02-14 18:46:31] Starting data epoch 5 in logical epoch 5
+[2024-02-14 18:47:49] Ep. 5 : Up. 2000 : Sen. 349,555 : Cost 6.62707710 : Time 578.73s : 151758.52 words/s : gNorm 2.2977
+[2024-02-14 18:51:07] Seen 1,725,853 samples
+[2024-02-14 18:51:07] Starting data epoch 6 in logical epoch 6
+[2024-02-14 18:55:44] Seen 1,725,933 samples
+[2024-02-14 18:55:44] Starting data epoch 7 in logical epoch 7
+[2024-02-14 18:57:37] Ep. 7 : Up. 3000 : Sen. 611,465 : Cost 5.64838266 : Time 588.16s : 152159.94 words/s : gNorm 1.7781
+[2024-02-14 19:00:22] Seen 1,725,913 samples
+[2024-02-14 19:00:22] Starting data epoch 8 in logical epoch 8
+[2024-02-14 19:04:59] Seen 1,725,935 samples
+[2024-02-14 19:04:59] Starting data epoch 9 in logical epoch 9
+[2024-02-14 19:07:20] Ep. 9 : Up. 4000 : Sen. 765,631 : Cost 5.19586706 : Time 583.17s : 151199.05 words/s : gNorm 1.5880
+[2024-02-14 19:09:37] Seen 1,725,929 samples
+[2024-02-14 19:09:37] Starting data epoch 10 in logical epoch 10
+[2024-02-14 19:14:16] Seen 1,725,949 samples
+[2024-02-14 19:14:16] Starting data epoch 11 in logical epoch 11
+[2024-02-14 19:17:06] Ep. 11 : Up. 5000 : Sen. 977,807 : Cost 4.86365509 : Time 585.35s : 150364.46 words/s : gNorm 1.3431
+[2024-02-14 19:17:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-14 19:17:08] Saving Adam parameters
+[2024-02-14 19:17:10] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-14 19:17:13] Translating validation set...
+[2024-02-14 19:17:14] [valid] First sentence's tokens as scored:
+[2024-02-14 19:17:14] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-14 19:17:14] [valid]   Hyp: T á a n t - a m a r c h e a n n d e n a S t á i t A o n t a i t h e i m í D h e i r e a d h F ó m h a i r 2 0 1 6 .
+[2024-02-14 19:17:14] [valid]   Ref: B h a i n c o d a n n a d e n B h e i l g m a r a t á s í i n n i u l e L u x e m b o u r g , t r á t h , a c h t h á i n i g s i a d c h u n b h e i t h m a r c h u i d d e n B h e i l g t a r é i s R é a b h l ó i d n a B e i l g e s n a 1 8 3 0 í .
+[2024-02-14 19:17:15] Best translation 0 : Úsáidtear an t-ardán seo a leanas: Is féidir linn a bheith ag baint úsáide as ár n-úsáid ag baint úsáide as an am céanna, agus is féidir linn a bheith níos mó de réir mar is féidir linn a bheith níos mó ná an t-am.
+[2024-02-14 19:17:15] Best translation 1 : Is é an t-aon cheann de na príomh-ábhar is mó a bhí i gceist, mar gheall ar an t-am, an t-am, an t-am, an t-am, an t-am, an t-am, an t-am, agus an t-am.
+[2024-02-14 19:17:15] Best translation 2 : Is é an t-ábhar is mó ná Údarás na hÉireann a bhí ag an am céanna, agus tá an t-ábhar ar fáil ag an am céanna ag an am céanna.
+[2024-02-14 19:17:15] Best translation 3 : Tá an t-ardán seo ar fáil ag obair na hÉireann.
+[2024-02-14 19:17:15] Best translation 4 : Úsáideann an t-eolas seo a chur chun cinn agus a chur ar fáil.
+[2024-02-14 19:17:15] Best translation 5 : Rinneadh nuashonrú ar an t-athbhreithniú bliain ó shin, ó shin, ó shin, ó shin.
+[2024-02-14 19:17:15] Best translation 10 : I measc na n-ábhar a bhí i láthair ag an am céanna, bhí an t-ainm ar siúl ag an am céanna, a bhí ag an am céanna, agus a bhí ag an am céanna ag an am céanna.
+[2024-02-14 19:17:15] Best translation 20 : Is é an t-aon uair an chloig a bhí ag an am céanna ag an am céanna.
+[2024-02-14 19:17:15] Best translation 40 : Mar sin féin, ní mór dúinn a rá go bhfuil muid ag dul go dtí an Íosa go dtí an Íosa go dtí an Íosa, agus go dtí an Íosa go dtí go dtí an Íosa...
+[2024-02-14 19:17:15] Best translation 80 : Tá an mhír seo ar fáil le tras-scríobh ag duine ar bith atá sásta an obair a dhéanamh.
+[2024-02-14 19:17:15] Best translation 160 : Ag an am céanna, tá an t-ainm ar an taobh istigh de, agus an t-am ar an taobh istigh.
+[2024-02-14 19:17:15] Best translation 320 : Mar sin féin, tá an chuid is mó de na blianta beaga anuas.
+[2024-02-14 19:17:15] Best translation 640 : Tá sé mar aidhm ag an obair a chur chun cinn agus a chur chun cinn agus a chur chun cinn.
+[2024-02-14 19:17:16] Total translation time: 2.47427s
+[2024-02-14 19:17:16] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-chrf.npz
+[2024-02-14 19:17:17] [valid] Ep. 11 : Up. 5000 : chrf : 15.8175 : new best
+[2024-02-14 19:17:17] Translating validation set...
+[2024-02-14 19:17:19] Best translation 0 : Úsáidtear an t-ardán seo a leanas: Is féidir linn a bheith ag baint úsáide as ár n-úsáid ag baint úsáide as an am céanna, agus is féidir linn a bheith níos mó de réir mar is féidir linn a bheith níos mó ná an t-am.
+[2024-02-14 19:17:19] Best translation 1 : Is é an t-aon cheann de na príomh-ábhar is mó a bhí i gceist, mar gheall ar an t-am, an t-am, an t-am, an t-am, an t-am, an t-am, an t-am, agus an t-am.
+[2024-02-14 19:17:19] Best translation 2 : Is é an t-ábhar is mó ná Údarás na hÉireann a bhí ag an am céanna, agus tá an t-ábhar ar fáil ag an am céanna ag an am céanna.
+[2024-02-14 19:17:19] Best translation 3 : Tá an t-ardán seo ar fáil ag obair na hÉireann.
+[2024-02-14 19:17:19] Best translation 4 : Úsáideann an t-eolas seo a chur chun cinn agus a chur ar fáil.
+[2024-02-14 19:17:19] Best translation 5 : Rinneadh nuashonrú ar an t-athbhreithniú bliain ó shin, ó shin, ó shin, ó shin.
+[2024-02-14 19:17:19] Best translation 10 : I measc na n-ábhar a bhí i láthair ag an am céanna, bhí an t-ainm ar siúl ag an am céanna, a bhí ag an am céanna, agus a bhí ag an am céanna ag an am céanna.
+[2024-02-14 19:17:19] Best translation 20 : Is é an t-aon uair an chloig a bhí ag an am céanna ag an am céanna.
+[2024-02-14 19:17:19] Best translation 40 : Mar sin féin, ní mór dúinn a rá go bhfuil muid ag dul go dtí an Íosa go dtí an Íosa go dtí an Íosa, agus go dtí an Íosa go dtí go dtí an Íosa...
+[2024-02-14 19:17:19] Best translation 80 : Tá an mhír seo ar fáil le tras-scríobh ag duine ar bith atá sásta an obair a dhéanamh.
+[2024-02-14 19:17:19] Best translation 160 : Ag an am céanna, tá an t-ainm ar an taobh istigh de, agus an t-am ar an taobh istigh.
+[2024-02-14 19:17:19] Best translation 320 : Mar sin féin, tá an chuid is mó de na blianta beaga anuas.
+[2024-02-14 19:17:19] Best translation 640 : Tá sé mar aidhm ag an obair a chur chun cinn agus a chur chun cinn agus a chur chun cinn.
+[2024-02-14 19:17:20] Total translation time: 2.39542s
+[2024-02-14 19:17:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-bleu.npz
+[2024-02-14 19:17:21] [valid] Ep. 11 : Up. 5000 : bleu : 1.29025 : new best
+[2024-02-14 19:17:21] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-ce-mean-words.npz
+[2024-02-14 19:17:22] [valid] Ep. 11 : Up. 5000 : ce-mean-words : 5.34892 : new best
+[2024-02-14 19:19:12] Seen 1,725,935 samples
+[2024-02-14 19:19:12] Starting data epoch 12 in logical epoch 12
+[2024-02-14 19:23:52] Seen 1,725,927 samples
+[2024-02-14 19:23:52] Starting data epoch 13 in logical epoch 13
+[2024-02-14 19:27:09] Ep. 13 : Up. 6000 : Sen. 1,145,343 : Cost 4.61697674 : Time 603.75s : 145877.48 words/s : gNorm 1.2452
+[2024-02-14 19:28:31] Seen 1,725,921 samples
+[2024-02-14 19:28:31] Starting data epoch 14 in logical epoch 14
+[2024-02-14 19:33:10] Seen 1,725,910 samples
+[2024-02-14 19:33:10] Starting data epoch 15 in logical epoch 15
+[2024-02-14 19:36:58] Ep. 15 : Up. 7000 : Sen. 1,379,461 : Cost 4.38814783 : Time 588.33s : 151308.45 words/s : gNorm 1.2156
+[2024-02-14 19:37:49] Seen 1,725,970 samples
+[2024-02-14 19:37:49] Starting data epoch 16 in logical epoch 16
+[2024-02-14 19:42:28] Seen 1,725,901 samples
+[2024-02-14 19:42:28] Starting data epoch 17 in logical epoch 17
+[2024-02-14 19:46:44] Ep. 17 : Up. 8000 : Sen. 1,560,141 : Cost 4.18764496 : Time 586.18s : 150709.88 words/s : gNorm 1.1916
+[2024-02-14 19:47:07] Seen 1,725,919 samples
+[2024-02-14 19:47:07] Starting data epoch 18 in logical epoch 18
+[2024-02-14 19:51:45] Seen 1,725,941 samples
+[2024-02-14 19:51:45] Starting data epoch 19 in logical epoch 19
+[2024-02-14 19:56:22] Seen 1,725,880 samples
+[2024-02-14 19:56:22] Starting data epoch 20 in logical epoch 20
+[2024-02-14 19:56:54] Ep. 20 : Up. 9000 : Sen. 42,356 : Cost 3.93230748 : Time 609.95s : 145124.25 words/s : gNorm 1.2798
+[2024-02-14 20:01:00] Seen 1,725,907 samples
+[2024-02-14 20:01:00] Starting data epoch 21 in logical epoch 21
+[2024-02-14 20:05:38] Seen 1,725,926 samples
+[2024-02-14 20:05:38] Starting data epoch 22 in logical epoch 22
+[2024-02-14 20:06:40] Ep. 22 : Up. 10000 : Sen. 230,251 : Cost 3.66174817 : Time 585.87s : 151475.46 words/s : gNorm 1.1761
+[2024-02-14 20:06:40] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-14 20:06:41] Saving Adam parameters
+[2024-02-14 20:06:43] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-14 20:06:46] Translating validation set...
+[2024-02-14 20:06:48] Best translation 0 : Ar an Luan, bhí an chuid is mó de na ‘Mótáil’ ag baint úsáide as uirlisí nua-aimseartha a úsáidtear go forleathan ag baint úsáide as gach ceann de na hábhair is féidir a úsáid.
+[2024-02-14 20:06:48] Best translation 1 : D’fhéadfadh sé seo a bheith mar thoradh ar an tionchar a d’fhéadfadh a bheith ann, agus d’fhéadfadh sé go mbeadh tionchar mór ag roinnt fachtóirí éagsúla ar an méid sin.
+[2024-02-14 20:06:48] Best translation 2 : Úsáideann an tÚdarás Craolacháin na hEorpa ar ais go dtí an Luan go dtí an 30 Lúnasa, agus ar ais go dtí an aerfort áitiúil.
+[2024-02-14 20:06:48] Best translation 3 : Bhí an t-ealaíontóir a bhí ar siúl i gColáiste na Tríonóide.
+[2024-02-14 20:06:48] Best translation 4 : Tá Údaráis Áitiúla ar fáil ag údaráis áitiúla ar fud an domhain.
+[2024-02-14 20:06:48] Best translation 5 : 28 bliain d’aois bhí dhá bhliain ó shin i leith, ó shin, ó shin.
+[2024-02-14 20:06:48] Best translation 10 : D’éirigh leis an Íosa, an t-uisce, an t-am, an t-imreoir a bhí ag an am céanna, agus an t-imreoir a bhí i gceannas ar Chaisleán Chill Dara i mBaile Átha Cliath.
+[2024-02-14 20:06:48] Best translation 20 : Bhí sé i gceist ag an gcruinniú seo le linn na tréimhse ama a bhí i gceist le linn an chruinnithe.
+[2024-02-14 20:06:48] Best translation 40 : Dúirt Íosa go raibh Íosa ag Íosa, ‘LÍosa’ a scríobh go dtí an scoil, agus an leabhar seo a scríobh chuig an scoil... Léigh níos mó
+[2024-02-14 20:06:48] Best translation 80 : Tugadh faoi deara an Cogadh Domhanda i mí an Mheithimh.
+[2024-02-14 20:06:48] Best translation 160 : Mar shampla, d'fhéadfadh an t-ealaíontóir, an t-ealaíontóir, agus an t-am ar an taobh istigh den tsraith le linn na bliana.
+[2024-02-14 20:06:48] Best translation 320 : Ó shin i leith, tá an tSín níos mó ná 90 bliain.
+[2024-02-14 20:06:48] Best translation 640 : Ceadaíonn sé an cumas a bheith ag obair ar a luas agus a chur ar an eolas faoi na treoracha.
+[2024-02-14 20:06:48] Total translation time: 2.27119s
+[2024-02-14 20:06:48] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-chrf.npz
+[2024-02-14 20:06:49] [valid] Ep. 22 : Up. 10000 : chrf : 24.2953 : new best
+[2024-02-14 20:06:49] Translating validation set...
+[2024-02-14 20:06:51] Best translation 0 : Ar an Luan, bhí an chuid is mó de na ‘Mótáil’ ag baint úsáide as uirlisí nua-aimseartha a úsáidtear go forleathan ag baint úsáide as gach ceann de na hábhair is féidir a úsáid.
+[2024-02-14 20:06:51] Best translation 1 : D’fhéadfadh sé seo a bheith mar thoradh ar an tionchar a d’fhéadfadh a bheith ann, agus d’fhéadfadh sé go mbeadh tionchar mór ag roinnt fachtóirí éagsúla ar an méid sin.
+[2024-02-14 20:06:51] Best translation 2 : Úsáideann an tÚdarás Craolacháin na hEorpa ar ais go dtí an Luan go dtí an 30 Lúnasa, agus ar ais go dtí an aerfort áitiúil.
+[2024-02-14 20:06:51] Best translation 3 : Bhí an t-ealaíontóir a bhí ar siúl i gColáiste na Tríonóide.
+[2024-02-14 20:06:51] Best translation 4 : Tá Údaráis Áitiúla ar fáil ag údaráis áitiúla ar fud an domhain.
+[2024-02-14 20:06:51] Best translation 5 : 28 bliain d’aois bhí dhá bhliain ó shin i leith, ó shin, ó shin.
+[2024-02-14 20:06:51] Best translation 10 : D’éirigh leis an Íosa, an t-uisce, an t-am, an t-imreoir a bhí ag an am céanna, agus an t-imreoir a bhí i gceannas ar Chaisleán Chill Dara i mBaile Átha Cliath.
+[2024-02-14 20:06:51] Best translation 20 : Bhí sé i gceist ag an gcruinniú seo le linn na tréimhse ama a bhí i gceist le linn an chruinnithe.
+[2024-02-14 20:06:51] Best translation 40 : Dúirt Íosa go raibh Íosa ag Íosa, ‘LÍosa’ a scríobh go dtí an scoil, agus an leabhar seo a scríobh chuig an scoil... Léigh níos mó
+[2024-02-14 20:06:51] Best translation 80 : Tugadh faoi deara an Cogadh Domhanda i mí an Mheithimh.
+[2024-02-14 20:06:51] Best translation 160 : Mar shampla, d'fhéadfadh an t-ealaíontóir, an t-ealaíontóir, agus an t-am ar an taobh istigh den tsraith le linn na bliana.
+[2024-02-14 20:06:51] Best translation 320 : Ó shin i leith, tá an tSín níos mó ná 90 bliain.
+[2024-02-14 20:06:51] Best translation 640 : Ceadaíonn sé an cumas a bheith ag obair ar a luas agus a chur ar an eolas faoi na treoracha.
+[2024-02-14 20:06:51] Total translation time: 2.14918s
+[2024-02-14 20:06:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-bleu.npz
+[2024-02-14 20:06:52] [valid] Ep. 22 : Up. 10000 : bleu : 5.32689 : new best
+[2024-02-14 20:06:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-ce-mean-words.npz
+[2024-02-14 20:06:52] [valid] Ep. 22 : Up. 10000 : ce-mean-words : 4.21089 : new best
+[2024-02-14 20:10:29] Seen 1,725,912 samples
+[2024-02-14 20:10:29] Starting data epoch 23 in logical epoch 23
+[2024-02-14 20:15:07] Seen 1,725,895 samples
+[2024-02-14 20:15:07] Starting data epoch 24 in logical epoch 24
+[2024-02-14 20:16:37] Ep. 24 : Up. 11000 : Sen. 461,649 : Cost 3.35729480 : Time 597.05s : 147588.62 words/s : gNorm 1.0062
+[2024-02-14 20:19:46] Seen 1,725,916 samples
+[2024-02-14 20:19:46] Starting data epoch 25 in logical epoch 25
+[2024-02-14 20:24:24] Seen 1,725,879 samples
+[2024-02-14 20:24:24] Starting data epoch 26 in logical epoch 26
+[2024-02-14 20:26:23] Ep. 26 : Up. 12000 : Sen. 624,855 : Cost 3.01576090 : Time 586.11s : 150775.30 words/s : gNorm 0.8684
+[2024-02-14 20:29:03] Seen 1,725,935 samples
+[2024-02-14 20:29:03] Starting data epoch 27 in logical epoch 27
+[2024-02-14 20:33:40] Seen 1,725,879 samples
+[2024-02-14 20:33:40] Starting data epoch 28 in logical epoch 28
+[2024-02-14 20:36:08] Ep. 28 : Up. 13000 : Sen. 824,792 : Cost 2.72800946 : Time 585.10s : 151565.59 words/s : gNorm 0.6180
+[2024-02-14 20:38:18] Seen 1,725,917 samples
+[2024-02-14 20:38:18] Starting data epoch 29 in logical epoch 29
+[2024-02-14 20:42:56] Seen 1,725,941 samples
+[2024-02-14 20:42:56] Starting data epoch 30 in logical epoch 30
+[2024-02-14 20:45:50] Ep. 30 : Up. 14000 : Sen. 1,007,515 : Cost 2.54362917 : Time 582.32s : 151164.01 words/s : gNorm 0.5998
+[2024-02-14 20:47:33] Seen 1,725,921 samples
+[2024-02-14 20:47:33] Starting data epoch 31 in logical epoch 31
+[2024-02-14 20:52:10] Seen 1,725,918 samples
+[2024-02-14 20:52:10] Starting data epoch 32 in logical epoch 32
+[2024-02-14 20:55:35] Ep. 32 : Up. 15000 : Sen. 1,270,647 : Cost 2.38917470 : Time 584.37s : 152033.64 words/s : gNorm 0.5679
+[2024-02-14 20:55:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-14 20:55:36] Saving Adam parameters
+[2024-02-14 20:55:38] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-14 20:55:41] Translating validation set...
+[2024-02-14 20:55:42] Best translation 0 : Ar an Luan, d’fhógair eolaithe ó Scoil Leighis Ollscoil Stanford gur féidir le cealla nua a shórtáil de réir cineáil: sliseanna clóscríofa beag bídeach is féidir a mhonaraítear ag baint úsáide as printéirí inkjet caighdeánach do cheann amháin de na Stáit Aontaithe.
+[2024-02-14 20:55:42] Best translation 1 : D’fhéadfadh sé seo a bheith mar thoradh ar thaighde luath a dhéanamh ar ailse, phentermine, VEID agus cógaslanna do othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do chúiseanna cosúil le ailse chíche a bheith leath de na tíortha saibhre.
+[2024-02-14 20:55:42] Best translation 2 : Cuireadh ‘SAS 39C’ ar siúl ag 9:30 am áitiúil (30 UTC) agus cuireadh deireadh leis, dúnadh an aerfort chuig eitiltí tráchtála.
+[2024-02-14 20:55:42] Best translation 3 : Aithníodh an píolótach mar Cheannaire Diúscartha Buamaí an Gharda Síochána.
+[2024-02-14 20:55:42] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-14 20:55:42] Best translation 5 : Bhí 28 bliain d’aois tar éis dul isteach i Barça trí shéasúr ó shin, ó Svalilla.
+[2024-02-14 20:55:42] Best translation 10 : Timpeall 11:9, bhog an agóid suas go dtí an Bán, Cearnóg an Trá, ag dul ar aghaidh ag Alwyway agus Rís i dtreo an áit a raibh an Páirtí Daonlathach ag reáchtáil a Fóram Earraigh sa Óstán Grand Hotel.
+[2024-02-14 20:55:42] Best translation 20 : Shínigh sí go follasach le linn an toghcháin a d’fhéadfadh a bheith ag teitheadh ón tír le linn na géarchéime.
+[2024-02-14 20:55:42] Best translation 40 : Dúirt John Grant, ó WEDB (stáisiún baile léitheoireachta an lae inniu) "Ag léamh na páistí a léamh,... an grá a spreag na páistí chun leabhar a phiocadh agus a léamh."
+[2024-02-14 20:55:42] Best translation 80 : Mar sin, d’éirigh leis an gCiocróbach sa Dáil.
+[2024-02-14 20:55:42] Best translation 160 : Déan faire, Gordon, Kensthe, agus Harick amach na poist is fearr le haghaidh Craobh na Tiománaithe le ceithre rásaí atá fágtha sa séasúr.
+[2024-02-14 20:55:42] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás faoi 90 uair an chloig.
+[2024-02-14 20:55:42] Best translation 640 : Ligeann sé do mhic léinn an cumas a bheith ag obair ar a luas féin agus an luas faisnéise teagaisc a rialú.
+[2024-02-14 20:55:42] Total translation time: 1.96267s
+[2024-02-14 20:55:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-chrf.npz
+[2024-02-14 20:55:43] [valid] Ep. 32 : Up. 15000 : chrf : 51.0433 : new best
+[2024-02-14 20:55:43] Translating validation set...
+[2024-02-14 20:55:44] Best translation 0 : Ar an Luan, d’fhógair eolaithe ó Scoil Leighis Ollscoil Stanford gur féidir le cealla nua a shórtáil de réir cineáil: sliseanna clóscríofa beag bídeach is féidir a mhonaraítear ag baint úsáide as printéirí inkjet caighdeánach do cheann amháin de na Stáit Aontaithe.
+[2024-02-14 20:55:44] Best translation 1 : D’fhéadfadh sé seo a bheith mar thoradh ar thaighde luath a dhéanamh ar ailse, phentermine, VEID agus cógaslanna do othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do chúiseanna cosúil le ailse chíche a bheith leath de na tíortha saibhre.
+[2024-02-14 20:55:44] Best translation 2 : Cuireadh ‘SAS 39C’ ar siúl ag 9:30 am áitiúil (30 UTC) agus cuireadh deireadh leis, dúnadh an aerfort chuig eitiltí tráchtála.
+[2024-02-14 20:55:44] Best translation 3 : Aithníodh an píolótach mar Cheannaire Diúscartha Buamaí an Gharda Síochána.
+[2024-02-14 20:55:44] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-14 20:55:44] Best translation 5 : Bhí 28 bliain d’aois tar éis dul isteach i Barça trí shéasúr ó shin, ó Svalilla.
+[2024-02-14 20:55:44] Best translation 10 : Timpeall 11:9, bhog an agóid suas go dtí an Bán, Cearnóg an Trá, ag dul ar aghaidh ag Alwyway agus Rís i dtreo an áit a raibh an Páirtí Daonlathach ag reáchtáil a Fóram Earraigh sa Óstán Grand Hotel.
+[2024-02-14 20:55:44] Best translation 20 : Shínigh sí go follasach le linn an toghcháin a d’fhéadfadh a bheith ag teitheadh ón tír le linn na géarchéime.
+[2024-02-14 20:55:44] Best translation 40 : Dúirt John Grant, ó WEDB (stáisiún baile léitheoireachta an lae inniu) "Ag léamh na páistí a léamh,... an grá a spreag na páistí chun leabhar a phiocadh agus a léamh."
+[2024-02-14 20:55:44] Best translation 80 : Mar sin, d’éirigh leis an gCiocróbach sa Dáil.
+[2024-02-14 20:55:44] Best translation 160 : Déan faire, Gordon, Kensthe, agus Harick amach na poist is fearr le haghaidh Craobh na Tiománaithe le ceithre rásaí atá fágtha sa séasúr.
+[2024-02-14 20:55:44] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás faoi 90 uair an chloig.
+[2024-02-14 20:55:45] Best translation 640 : Ligeann sé do mhic léinn an cumas a bheith ag obair ar a luas féin agus an luas faisnéise teagaisc a rialú.
+[2024-02-14 20:55:45] Total translation time: 1.43176s
+[2024-02-14 20:55:45] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-bleu.npz
+[2024-02-14 20:55:46] [valid] Ep. 32 : Up. 15000 : bleu : 23.6154 : new best
+[2024-02-14 20:55:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-ce-mean-words.npz
+[2024-02-14 20:55:46] [valid] Ep. 32 : Up. 15000 : ce-mean-words : 2.46353 : new best
+[2024-02-14 20:57:00] Seen 1,725,960 samples
+[2024-02-14 20:57:00] Starting data epoch 33 in logical epoch 33
+[2024-02-14 21:01:37] Seen 1,725,899 samples
+[2024-02-14 21:01:37] Starting data epoch 34 in logical epoch 34
+[2024-02-14 21:05:31] Ep. 34 : Up. 16000 : Sen. 1,442,225 : Cost 2.31033397 : Time 595.91s : 148515.22 words/s : gNorm 0.4857
+[2024-02-14 21:06:15] Seen 1,725,919 samples
+[2024-02-14 21:06:15] Starting data epoch 35 in logical epoch 35
+[2024-02-14 21:10:53] Seen 1,725,985 samples
+[2024-02-14 21:10:53] Starting data epoch 36 in logical epoch 36
+[2024-02-14 21:15:14] Ep. 36 : Up. 17000 : Sen. 1,608,592 : Cost 2.22784352 : Time 583.56s : 150847.57 words/s : gNorm 0.3973
+[2024-02-14 21:15:31] Seen 1,725,930 samples
+[2024-02-14 21:15:31] Starting data epoch 37 in logical epoch 37
+[2024-02-14 21:20:09] Seen 1,725,887 samples
+[2024-02-14 21:20:09] Starting data epoch 38 in logical epoch 38
+[2024-02-14 21:24:47] Seen 1,725,927 samples
+[2024-02-14 21:24:47] Starting data epoch 39 in logical epoch 39
+[2024-02-14 21:25:25] Ep. 39 : Up. 18000 : Sen. 72,866 : Cost 2.15817046 : Time 611.15s : 144918.61 words/s : gNorm 0.3645
+[2024-02-14 21:29:26] Seen 1,725,958 samples
+[2024-02-14 21:29:26] Starting data epoch 40 in logical epoch 40
+[2024-02-14 21:34:04] Seen 1,725,897 samples
+[2024-02-14 21:34:04] Starting data epoch 41 in logical epoch 41
+[2024-02-14 21:35:10] Ep. 41 : Up. 19000 : Sen. 236,898 : Cost 2.10744548 : Time 585.25s : 150773.40 words/s : gNorm 0.4069
+[2024-02-14 21:38:42] Seen 1,725,912 samples
+[2024-02-14 21:38:42] Starting data epoch 42 in logical epoch 42
+[2024-02-14 21:43:20] Seen 1,725,908 samples
+[2024-02-14 21:43:20] Starting data epoch 43 in logical epoch 43
+[2024-02-14 21:44:55] Ep. 43 : Up. 20000 : Sen. 470,205 : Cost 2.05445337 : Time 584.19s : 151514.04 words/s : gNorm 0.3713
+[2024-02-14 21:44:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-14 21:44:56] Saving Adam parameters
+[2024-02-14 21:44:58] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-14 21:45:01] Translating validation set...
+[2024-02-14 21:45:02] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Stanford ar an aireagán uirlis dhiagnóiseach nua ar féidir leo cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach ar féidir iad a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do gach ceann de na Stáit Aontaithe.
+[2024-02-14 21:45:02] Best translation 1 : Deir taighdeoirí Luaidhe go bhféadfadh sé seo bhrath luath ailse, eitinn, VEID agus maláire a thabhairt d'othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath na dtíortha níos saibhre.
+[2024-02-14 21:45:02] Best translation 2 : Cuireadh an Greipín JAS 39C ar siúl ag thart ar 9:30 am áitiúil (30 UTC) agus phléasc é, ag dúnadh an aerfoirt chuig eitiltí tráchtála.
+[2024-02-14 21:45:02] Best translation 3 : Aithníodh an phíolóta mar Cheannaire Squadron Dikorit Patateve.
+[2024-02-14 21:45:02] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt atá rollaithe agus iad ag freagairt.
+[2024-02-14 21:45:02] Best translation 5 : Chuaigh David 28 bliain d’aois isteach i Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-14 21:45:02] Best translation 10 : Timpeall 11:29, bhog an agóid suas Whitehall, Cearnóg Tarfagar, ar feadh an Trá, ag dul thar Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an gComhaontas Cosair sna Seomraí Móire.
+[2024-02-14 21:45:02] Best translation 20 : Chuir sí in iúl le linn an toghcháin go bhféadfadh Maoil teitheadh ón tír le linn tréimhse géarchéime.
+[2024-02-14 21:45:02] Best translation 40 : Dúirt John Grant, ó WENED Buffalo (ag léamh stáisiún baile Rainbow) "Ag léamh páistí conas léamh,... an grá atá ag an léitheoireacht — [an seó] spreag na páistí leabhar a phiocadh suas agus a léamh."
+[2024-02-14 21:45:02] Best translation 80 : D’éirigh le Marochydore an Comh-Aireachta a bhaint amach ansin sa Chraobh Réamhthréimhseach.
+[2024-02-14 21:45:02] Best translation 160 : Déan faire, Gordon, Kenseth, agus Harick thart ar na suíomhanna is fearr do Craobh na Tiománaithe le ceithre rásaí atá fágtha sa séasúr.
+[2024-02-14 21:45:02] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-14 21:45:03] Best translation 640 : Ligeann sé do mhic léinn an cumas a bheith ag obair ar a luas féin agus an luas faisnéise teagaisc a rialú.
+[2024-02-14 21:45:03] Total translation time: 2.10068s
+[2024-02-14 21:45:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-chrf.npz
+[2024-02-14 21:45:04] [valid] Ep. 43 : Up. 20000 : chrf : 55.9671 : new best
+[2024-02-14 21:45:04] Translating validation set...
+[2024-02-14 21:45:05] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Stanford ar an aireagán uirlis dhiagnóiseach nua ar féidir leo cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach ar féidir iad a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do gach ceann de na Stáit Aontaithe.
+[2024-02-14 21:45:05] Best translation 1 : Deir taighdeoirí Luaidhe go bhféadfadh sé seo bhrath luath ailse, eitinn, VEID agus maláire a thabhairt d'othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath na dtíortha níos saibhre.
+[2024-02-14 21:45:05] Best translation 2 : Cuireadh an Greipín JAS 39C ar siúl ag thart ar 9:30 am áitiúil (30 UTC) agus phléasc é, ag dúnadh an aerfoirt chuig eitiltí tráchtála.
+[2024-02-14 21:45:05] Best translation 3 : Aithníodh an phíolóta mar Cheannaire Squadron Dikorit Patateve.
+[2024-02-14 21:45:05] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt atá rollaithe agus iad ag freagairt.
+[2024-02-14 21:45:05] Best translation 5 : Chuaigh David 28 bliain d’aois isteach i Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-14 21:45:05] Best translation 10 : Timpeall 11:29, bhog an agóid suas Whitehall, Cearnóg Tarfagar, ar feadh an Trá, ag dul thar Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an gComhaontas Cosair sna Seomraí Móire.
+[2024-02-14 21:45:05] Best translation 20 : Chuir sí in iúl le linn an toghcháin go bhféadfadh Maoil teitheadh ón tír le linn tréimhse géarchéime.
+[2024-02-14 21:45:05] Best translation 40 : Dúirt John Grant, ó WENED Buffalo (ag léamh stáisiún baile Rainbow) "Ag léamh páistí conas léamh,... an grá atá ag an léitheoireacht — [an seó] spreag na páistí leabhar a phiocadh suas agus a léamh."
+[2024-02-14 21:45:05] Best translation 80 : D’éirigh le Marochydore an Comh-Aireachta a bhaint amach ansin sa Chraobh Réamhthréimhseach.
+[2024-02-14 21:45:05] Best translation 160 : Déan faire, Gordon, Kenseth, agus Harick thart ar na suíomhanna is fearr do Craobh na Tiománaithe le ceithre rásaí atá fágtha sa séasúr.
+[2024-02-14 21:45:05] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-14 21:45:05] Best translation 640 : Ligeann sé do mhic léinn an cumas a bheith ag obair ar a luas féin agus an luas faisnéise teagaisc a rialú.
+[2024-02-14 21:45:05] Total translation time: 1.51374s
+[2024-02-14 21:45:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-bleu.npz
+[2024-02-14 21:45:06] [valid] Ep. 43 : Up. 20000 : bleu : 28.5611 : new best
+[2024-02-14 21:45:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-ce-mean-words.npz
+[2024-02-14 21:45:07] [valid] Ep. 43 : Up. 20000 : ce-mean-words : 2.10034 : new best
+[2024-02-14 21:48:10] Seen 1,725,885 samples
+[2024-02-14 21:48:10] Starting data epoch 44 in logical epoch 44
+[2024-02-14 21:52:49] Seen 1,725,938 samples
+[2024-02-14 21:52:49] Starting data epoch 45 in logical epoch 45
+[2024-02-14 21:54:50] Ep. 45 : Up. 21000 : Sen. 661,988 : Cost 2.02047634 : Time 595.11s : 148208.00 words/s : gNorm 0.3767
+[2024-02-14 21:57:26] Seen 1,725,898 samples
+[2024-02-14 21:57:26] Starting data epoch 46 in logical epoch 46
+[2024-02-14 22:02:04] Seen 1,725,925 samples
+[2024-02-14 22:02:04] Starting data epoch 47 in logical epoch 47
+[2024-02-14 22:04:35] Ep. 47 : Up. 22000 : Sen. 868,458 : Cost 1.99253988 : Time 585.55s : 151590.65 words/s : gNorm 0.3459
+[2024-02-14 22:06:41] Seen 1,725,973 samples
+[2024-02-14 22:06:41] Starting data epoch 48 in logical epoch 48
+[2024-02-14 22:11:19] Seen 1,725,981 samples
+[2024-02-14 22:11:19] Starting data epoch 49 in logical epoch 49
+[2024-02-14 22:14:18] Ep. 49 : Up. 23000 : Sen. 1,043,045 : Cost 1.96063578 : Time 582.94s : 151714.24 words/s : gNorm 0.3264
+[2024-02-14 22:15:56] Seen 1,725,930 samples
+[2024-02-14 22:15:56] Starting data epoch 50 in logical epoch 50
+[2024-02-14 22:20:33] Seen 1,725,904 samples
+[2024-02-14 22:20:33] Starting data epoch 51 in logical epoch 51
+[2024-02-14 22:24:00] Ep. 51 : Up. 24000 : Sen. 1,212,556 : Cost 1.93533647 : Time 582.20s : 151353.85 words/s : gNorm 0.3405
+[2024-02-14 22:25:10] Seen 1,725,928 samples
+[2024-02-14 22:25:10] Starting data epoch 52 in logical epoch 52
+[2024-02-14 22:29:48] Seen 1,725,940 samples
+[2024-02-14 22:29:48] Starting data epoch 53 in logical epoch 53
+[2024-02-14 22:33:43] Ep. 53 : Up. 25000 : Sen. 1,447,903 : Cost 1.91166842 : Time 582.64s : 151847.28 words/s : gNorm 0.3364
+[2024-02-14 22:33:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-14 22:33:44] Saving Adam parameters
+[2024-02-14 22:33:46] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-14 22:33:49] Translating validation set...
+[2024-02-14 22:33:50] Best translation 0 : Ar an Luan, d’fhógair eolaithe ó Scoil Leighis Ollscoil Stanford go ndéanfaí uirlis dhiagnóiseach nua a chumadh ar féidir cealla a shórtáil de réir cineáil: sliseanna beag bídeach inphriontáilte is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do dhuine ar bith de na Stáit Aontaithe gach ceann acu.
+[2024-02-14 22:33:50] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh ailse, eitinn, VEID agus maláire a bhrath go luath i dtíortha ísealioncaim, áit ar féidir le rátaí marthanais do bhreoiteachta ar nós ailse chíche a bheith leath na dtíortha níos saibhre.
+[2024-02-14 22:33:50] Best translation 2 : Chuaigh Greanach JAS 39C ar rúidbhealach timpeall 9:30 am áitiúil (230 UTC) agus phléasc, ag dúnadh an aerfoirt chuig eitiltí tráchtála.
+[2024-02-14 22:33:50] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dikorit Patavee.
+[2024-02-14 22:33:50] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-14 22:33:50] Best translation 5 : Chuaigh David 28 bliain d'aois isteach i Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-14 22:33:50] Best translation 10 : Thart ar 1129, d’aistrigh an agóid suas Whitehall, Cearnóg Trafalgar san am atá thart, ar feadh na Trá, ag dul thar Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an Páirtí Choimeádach in óstán na Seomraí Móire.
+[2024-02-14 22:33:50] Best translation 20 : Thug sé le fios le linn an toghcháin go bhféadfadh Maoil teitheadh ón tír le linn tréimhse géarchéime.
+[2024-02-14 22:33:50] Best translation 40 : Dúirt John Grant, ó WLED Buffalo (ag léamh stáisiún baile Rainbow) "Ag léamh páistí Rainbow cén fáth a léamh,... an grá atá ag an léitheoireacht — [an seó] páistí a spreagadh chun leabhar a phiocadh suas agus léamh."
+[2024-02-14 22:33:51] Best translation 80 : Rinne Maroochydore briseadh ar Cabiloture sa Réamhchríoch roimh ré.
+[2024-02-14 22:33:51] Best translation 160 : Tarraingt siar, Gordon, Kenseth, agus Harick thart ar na deich suíomh is fearr le haghaidh Craobh na Tiománaithe le ceithre rásaí atá fágtha sa séasúr.
+[2024-02-14 22:33:51] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-14 22:33:51] Best translation 640 : Ligeann sé do mhic léinn an cumas a bheith ag obair ar a luas féin agus an luas faisnéise teagaisc a rialú.
+[2024-02-14 22:33:51] Total translation time: 1.99222s
+[2024-02-14 22:33:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-chrf.npz
+[2024-02-14 22:33:52] [valid] Ep. 53 : Up. 25000 : chrf : 56.7996 : new best
+[2024-02-14 22:33:52] Translating validation set...
+[2024-02-14 22:33:53] Best translation 0 : Ar an Luan, d’fhógair eolaithe ó Scoil Leighis Ollscoil Stanford go ndéanfaí uirlis dhiagnóiseach nua a chumadh ar féidir cealla a shórtáil de réir cineáil: sliseanna beag bídeach inphriontáilte is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do dhuine ar bith de na Stáit Aontaithe gach ceann acu.
+[2024-02-14 22:33:53] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh ailse, eitinn, VEID agus maláire a bhrath go luath i dtíortha ísealioncaim, áit ar féidir le rátaí marthanais do bhreoiteachta ar nós ailse chíche a bheith leath na dtíortha níos saibhre.
+[2024-02-14 22:33:53] Best translation 2 : Chuaigh Greanach JAS 39C ar rúidbhealach timpeall 9:30 am áitiúil (230 UTC) agus phléasc, ag dúnadh an aerfoirt chuig eitiltí tráchtála.
+[2024-02-14 22:33:53] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dikorit Patavee.
+[2024-02-14 22:33:53] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-14 22:33:53] Best translation 5 : Chuaigh David 28 bliain d'aois isteach i Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-14 22:33:53] Best translation 10 : Thart ar 1129, d’aistrigh an agóid suas Whitehall, Cearnóg Trafalgar san am atá thart, ar feadh na Trá, ag dul thar Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an Páirtí Choimeádach in óstán na Seomraí Móire.
+[2024-02-14 22:33:53] Best translation 20 : Thug sé le fios le linn an toghcháin go bhféadfadh Maoil teitheadh ón tír le linn tréimhse géarchéime.
+[2024-02-14 22:33:53] Best translation 40 : Dúirt John Grant, ó WLED Buffalo (ag léamh stáisiún baile Rainbow) "Ag léamh páistí Rainbow cén fáth a léamh,... an grá atá ag an léitheoireacht — [an seó] páistí a spreagadh chun leabhar a phiocadh suas agus léamh."
+[2024-02-14 22:33:53] Best translation 80 : Rinne Maroochydore briseadh ar Cabiloture sa Réamhchríoch roimh ré.
+[2024-02-14 22:33:53] Best translation 160 : Tarraingt siar, Gordon, Kenseth, agus Harick thart ar na deich suíomh is fearr le haghaidh Craobh na Tiománaithe le ceithre rásaí atá fágtha sa séasúr.
+[2024-02-14 22:33:53] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-14 22:33:53] Best translation 640 : Ligeann sé do mhic léinn an cumas a bheith ag obair ar a luas féin agus an luas faisnéise teagaisc a rialú.
+[2024-02-14 22:33:53] Total translation time: 1.49838s
+[2024-02-14 22:33:53] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-bleu.npz
+[2024-02-14 22:33:54] [valid] Ep. 53 : Up. 25000 : bleu : 29.2145 : new best
+[2024-02-14 22:33:54] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-ce-mean-words.npz
+[2024-02-14 22:33:55] [valid] Ep. 53 : Up. 25000 : ce-mean-words : 2.09927 : new best
+[2024-02-14 22:34:37] Seen 1,725,911 samples
+[2024-02-14 22:34:37] Starting data epoch 54 in logical epoch 54
+[2024-02-14 22:39:14] Seen 1,725,937 samples
+[2024-02-14 22:39:14] Starting data epoch 55 in logical epoch 55
+[2024-02-14 22:43:38] Ep. 55 : Up. 26000 : Sen. 1,658,210 : Cost 1.89596665 : Time 595.36s : 148643.24 words/s : gNorm 0.3170
+[2024-02-14 22:43:52] Seen 1,725,920 samples
+[2024-02-14 22:43:52] Starting data epoch 56 in logical epoch 56
+[2024-02-14 22:48:29] Seen 1,725,942 samples
+[2024-02-14 22:48:29] Starting data epoch 57 in logical epoch 57
+[2024-02-14 22:53:07] Seen 1,725,920 samples
+[2024-02-14 22:53:07] Starting data epoch 58 in logical epoch 58
+[2024-02-14 22:53:48] Ep. 58 : Up. 27000 : Sen. 83,520 : Cost 1.87946534 : Time 609.14s : 145216.56 words/s : gNorm 0.3343
+[2024-02-14 22:57:44] Seen 1,725,912 samples
+[2024-02-14 22:57:44] Starting data epoch 59 in logical epoch 59
+[2024-02-14 23:02:22] Seen 1,725,932 samples
+[2024-02-14 23:02:22] Starting data epoch 60 in logical epoch 60
+[2024-02-14 23:03:28] Ep. 60 : Up. 28000 : Sen. 299,670 : Cost 1.85844159 : Time 580.78s : 150856.22 words/s : gNorm 0.3347
+[2024-02-14 23:07:00] Seen 1,725,908 samples
+[2024-02-14 23:07:00] Starting data epoch 61 in logical epoch 61
+[2024-02-14 23:11:37] Seen 1,725,980 samples
+[2024-02-14 23:11:37] Starting data epoch 62 in logical epoch 62
+[2024-02-14 23:13:13] Ep. 62 : Up. 29000 : Sen. 509,145 : Cost 1.84647441 : Time 584.94s : 152011.69 words/s : gNorm 0.3281
+[2024-02-14 23:16:14] Seen 1,725,847 samples
+[2024-02-14 23:16:14] Starting data epoch 63 in logical epoch 63
+[2024-02-14 23:20:52] Seen 1,725,897 samples
+[2024-02-14 23:20:52] Starting data epoch 64 in logical epoch 64
+[2024-02-14 23:22:56] Ep. 64 : Up. 30000 : Sen. 654,572 : Cost 1.83456540 : Time 582.48s : 151372.81 words/s : gNorm 0.3307
+[2024-02-14 23:22:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-14 23:22:57] Saving Adam parameters
+[2024-02-14 23:22:59] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-14 23:23:02] Translating validation set...
+[2024-02-14 23:23:03] Best translation 0 : Dé Luain, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua is féidir a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent amháin.
+[2024-02-14 23:23:03] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh ailse, eitinn, VEID agus maláire a bhrath go luath i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do thinneas mar ailse chíche a bheith leath na dtíortha saibhre.
+[2024-02-14 23:23:03] Best translation 2 : Shroich an t-aerfort isteach ar rúidbhealach thart ar 9:30 am áitiúil (230 UTC) agus phléasc é, ag dúnadh an aerfoirt go dtí eitiltí tráchtála.
+[2024-02-14 23:23:03] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dikorit Patavee.
+[2024-02-14 23:23:03] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-14 23:23:03] Best translation 5 : Bhí David 28 bliain d'aois in éineacht le Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-14 23:23:03] Best translation 10 : Timpeall 1129, bhog an agóid suas Whitehall, am atá thart Cearnóg Trafalgar, ar feadh na Trá, ag dul thar Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an Páirtí Choimeádaigh in óstán na Seomraí Móire.
+[2024-02-14 23:23:03] Best translation 20 : Thug sé le fios le linn an toghcháin go bhféadfadh Ma teitheadh ón tír le linn tréimhse géarchéime.
+[2024-02-14 23:23:03] Best translation 40 : Dúirt John Deontas, ó WNED Buffalo (stáisiún baile Readings Rainbow) "Ag léamh páistí Rainbow cén fáth a léamh,... an grá atá ag léamh - [an seó] páistí a spreagadh chun leabhar a phiocadh suas agus a léamh."
+[2024-02-14 23:23:03] Best translation 80 : Rinne Marochydore briseadh ar Caboolure sa Réamh-chríoch.
+[2024-02-14 23:23:03] Best translation 160 : Thug Gordon, Kenseth, agus Harick na deich suíomh is fearr do Craobh na dTiománaithe amach agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-14 23:23:03] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-14 23:23:04] Best translation 640 : Cuireann sé ar chumas an scoláire obair a dhéanamh ar a luas féin agus luas na faisnéise teagaisc a rialú.
+[2024-02-14 23:23:04] Total translation time: 1.91676s
+[2024-02-14 23:23:04] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-chrf.npz
+[2024-02-14 23:23:04] [valid] Ep. 64 : Up. 30000 : chrf : 56.9383 : new best
+[2024-02-14 23:23:04] Translating validation set...
+[2024-02-14 23:23:06] Best translation 0 : Dé Luain, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua is féidir a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent amháin.
+[2024-02-14 23:23:06] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh ailse, eitinn, VEID agus maláire a bhrath go luath i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do thinneas mar ailse chíche a bheith leath na dtíortha saibhre.
+[2024-02-14 23:23:06] Best translation 2 : Shroich an t-aerfort isteach ar rúidbhealach thart ar 9:30 am áitiúil (230 UTC) agus phléasc é, ag dúnadh an aerfoirt go dtí eitiltí tráchtála.
+[2024-02-14 23:23:06] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dikorit Patavee.
+[2024-02-14 23:23:06] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-14 23:23:06] Best translation 5 : Bhí David 28 bliain d'aois in éineacht le Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-14 23:23:06] Best translation 10 : Timpeall 1129, bhog an agóid suas Whitehall, am atá thart Cearnóg Trafalgar, ar feadh na Trá, ag dul thar Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an Páirtí Choimeádaigh in óstán na Seomraí Móire.
+[2024-02-14 23:23:06] Best translation 20 : Thug sé le fios le linn an toghcháin go bhféadfadh Ma teitheadh ón tír le linn tréimhse géarchéime.
+[2024-02-14 23:23:06] Best translation 40 : Dúirt John Deontas, ó WNED Buffalo (stáisiún baile Readings Rainbow) "Ag léamh páistí Rainbow cén fáth a léamh,... an grá atá ag léamh - [an seó] páistí a spreagadh chun leabhar a phiocadh suas agus a léamh."
+[2024-02-14 23:23:06] Best translation 80 : Rinne Marochydore briseadh ar Caboolure sa Réamh-chríoch.
+[2024-02-14 23:23:06] Best translation 160 : Thug Gordon, Kenseth, agus Harick na deich suíomh is fearr do Craobh na dTiománaithe amach agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-14 23:23:06] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-14 23:23:06] Best translation 640 : Cuireann sé ar chumas an scoláire obair a dhéanamh ar a luas féin agus luas na faisnéise teagaisc a rialú.
+[2024-02-14 23:23:06] Total translation time: 1.57738s
+[2024-02-14 23:23:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-bleu.npz
+[2024-02-14 23:23:07] [valid] Ep. 64 : Up. 30000 : bleu : 29.2685 : new best
+[2024-02-14 23:23:07] [valid] Ep. 64 : Up. 30000 : ce-mean-words : 2.1686 : stalled 1 times (last best: 2.09927)
+[2024-02-14 23:25:40] Seen 1,725,879 samples
+[2024-02-14 23:25:40] Starting data epoch 65 in logical epoch 65
+[2024-02-14 23:30:18] Seen 1,725,953 samples
+[2024-02-14 23:30:18] Starting data epoch 66 in logical epoch 66
+[2024-02-14 23:32:50] Ep. 66 : Up. 31000 : Sen. 913,858 : Cost 1.81771338 : Time 594.14s : 148516.54 words/s : gNorm 0.3579
+[2024-02-14 23:34:56] Seen 1,725,863 samples
+[2024-02-14 23:34:56] Starting data epoch 67 in logical epoch 67
+[2024-02-14 23:39:34] Seen 1,725,944 samples
+[2024-02-14 23:39:34] Starting data epoch 68 in logical epoch 68
+[2024-02-14 23:42:33] Ep. 68 : Up. 32000 : Sen. 1,044,199 : Cost 1.81001723 : Time 583.34s : 151322.79 words/s : gNorm 0.3465
+[2024-02-14 23:44:12] Seen 1,725,958 samples
+[2024-02-14 23:44:12] Starting data epoch 69 in logical epoch 69
+[2024-02-14 23:48:49] Seen 1,725,900 samples
+[2024-02-14 23:48:49] Starting data epoch 70 in logical epoch 70
+[2024-02-14 23:52:15] Ep. 70 : Up. 33000 : Sen. 1,276,867 : Cost 1.80100596 : Time 582.10s : 151972.03 words/s : gNorm 0.3687
+[2024-02-14 23:53:26] Seen 1,725,899 samples
+[2024-02-14 23:53:26] Starting data epoch 71 in logical epoch 71
+[2024-02-14 23:58:03] Seen 1,725,874 samples
+[2024-02-14 23:58:03] Starting data epoch 72 in logical epoch 72
+[2024-02-15 00:01:59] Ep. 72 : Up. 34000 : Sen. 1,460,397 : Cost 1.78905785 : Time 583.70s : 151612.51 words/s : gNorm 0.3534
+[2024-02-15 00:02:40] Seen 1,725,904 samples
+[2024-02-15 00:02:40] Starting data epoch 73 in logical epoch 73
+[2024-02-15 00:07:17] Seen 1,725,934 samples
+[2024-02-15 00:07:17] Starting data epoch 74 in logical epoch 74
+[2024-02-15 00:11:44] Ep. 74 : Up. 35000 : Sen. 1,630,448 : Cost 1.78170061 : Time 584.42s : 150970.23 words/s : gNorm 0.3486
+[2024-02-15 00:11:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-15 00:11:45] Saving Adam parameters
+[2024-02-15 00:11:47] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-15 00:11:49] Translating validation set...
+[2024-02-15 00:11:51] Best translation 0 : Dé Luain, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua is féidir a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 00:11:51] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh sé seo luath-bhrath ailse, eitinn, VEID agus maláire a thabhairt d'othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath iad siúd de thíortha níos saibhre.
+[2024-02-15 00:11:51] Best translation 2 : Chuaigh Greigne JAS 39C ar rúidbhealach timpeall 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 00:11:51] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dikorit Patavee.
+[2024-02-15 00:11:51] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-15 00:11:51] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach le Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 00:11:51] Best translation 10 : Thart ar 11:29, bhog an t-agóid go Whitehall, anuas ar Chearnóg Trafalgar, ar feadh na Trá, ag dul thart le Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an gCroílach i óstán na Seomraí Ard-Ronna.
+[2024-02-15 00:11:51] Best translation 20 : Thug sé le fios le linn an toghcháin go bhféadfadh Maoil teitheadh ón tír le linn géarchéime.
+[2024-02-15 00:11:51] Best translation 40 : Dúirt John Grant, ó WED Buffalo (stáisiún baile Reading Rainbow) "Ag léamh páistí Rainbow cén fáth a bhfuil sé le léamh,... an grá atá ag léamh - [an seó] a spreag páistí chun leabhar a phiocadh agus a léamh."
+[2024-02-15 00:11:51] Best translation 80 : Rinne Marochydorre briseadh ar Cabotrolure sa Phríomh-Chríochnaigh.
+[2024-02-15 00:11:51] Best translation 160 : Thug Gordon, Kensh, agus Harick na deich suíomh is fearr do Craobh na dTiománaithe amach agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-15 00:11:51] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-15 00:11:52] Best translation 640 : Cuireann sé ar chumas an scoláire obair a dhéanamh ar a luas féin agus luas na faisnéise teagaisc a rialú.
+[2024-02-15 00:11:52] Total translation time: 2.09872s
+[2024-02-15 00:11:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.best-chrf.npz
+[2024-02-15 00:11:52] [valid] Ep. 74 : Up. 35000 : chrf : 56.9808 : new best
+[2024-02-15 00:11:52] Translating validation set...
+[2024-02-15 00:11:54] Best translation 0 : Dé Luain, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua is féidir a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 00:11:54] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh sé seo luath-bhrath ailse, eitinn, VEID agus maláire a thabhairt d'othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath iad siúd de thíortha níos saibhre.
+[2024-02-15 00:11:54] Best translation 2 : Chuaigh Greigne JAS 39C ar rúidbhealach timpeall 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 00:11:54] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dikorit Patavee.
+[2024-02-15 00:11:54] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar agus iad ag freagairt.
+[2024-02-15 00:11:54] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach le Barça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 00:11:54] Best translation 10 : Thart ar 11:29, bhog an t-agóid go Whitehall, anuas ar Chearnóg Trafalgar, ar feadh na Trá, ag dul thart le Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh ag an gCroílach i óstán na Seomraí Ard-Ronna.
+[2024-02-15 00:11:54] Best translation 20 : Thug sé le fios le linn an toghcháin go bhféadfadh Maoil teitheadh ón tír le linn géarchéime.
+[2024-02-15 00:11:54] Best translation 40 : Dúirt John Grant, ó WED Buffalo (stáisiún baile Reading Rainbow) "Ag léamh páistí Rainbow cén fáth a bhfuil sé le léamh,... an grá atá ag léamh - [an seó] a spreag páistí chun leabhar a phiocadh agus a léamh."
+[2024-02-15 00:11:54] Best translation 80 : Rinne Marochydorre briseadh ar Cabotrolure sa Phríomh-Chríochnaigh.
+[2024-02-15 00:11:54] Best translation 160 : Thug Gordon, Kensh, agus Harick na deich suíomh is fearr do Craobh na dTiománaithe amach agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-15 00:11:54] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-15 00:11:54] Best translation 640 : Cuireann sé ar chumas an scoláire obair a dhéanamh ar a luas féin agus luas na faisnéise teagaisc a rialú.
+[2024-02-15 00:11:54] Total translation time: 1.47731s
+[2024-02-15 00:11:54] [valid] Ep. 74 : Up. 35000 : bleu : 29.2228 : stalled 1 times (last best: 29.2685)
+[2024-02-15 00:11:54] [valid] Ep. 74 : Up. 35000 : ce-mean-words : 2.24519 : stalled 2 times (last best: 2.09927)
+[2024-02-15 00:12:07] Seen 1,725,898 samples
+[2024-02-15 00:12:07] Starting data epoch 75 in logical epoch 75
+[2024-02-15 00:16:47] Seen 1,725,933 samples
+[2024-02-15 00:16:47] Starting data epoch 76 in logical epoch 76
+[2024-02-15 00:21:25] Seen 1,725,942 samples
+[2024-02-15 00:21:25] Starting data epoch 77 in logical epoch 77
+[2024-02-15 00:22:05] Ep. 77 : Up. 36000 : Sen. 94,016 : Cost 1.77264702 : Time 621.33s : 142045.50 words/s : gNorm 0.3890
+[2024-02-15 00:26:02] Seen 1,725,961 samples
+[2024-02-15 00:26:02] Starting data epoch 78 in logical epoch 78
+[2024-02-15 00:30:39] Seen 1,725,941 samples
+[2024-02-15 00:30:39] Starting data epoch 79 in logical epoch 79
+[2024-02-15 00:31:47] Ep. 79 : Up. 37000 : Sen. 259,862 : Cost 1.76471210 : Time 582.45s : 151826.97 words/s : gNorm 0.3324
+[2024-02-15 00:35:16] Seen 1,725,903 samples
+[2024-02-15 00:35:16] Starting data epoch 80 in logical epoch 80
+[2024-02-15 00:39:54] Seen 1,725,941 samples
+[2024-02-15 00:39:54] Starting data epoch 81 in logical epoch 81
+[2024-02-15 00:41:30] Ep. 81 : Up. 38000 : Sen. 488,000 : Cost 1.75541592 : Time 582.97s : 151462.24 words/s : gNorm 0.3146
+[2024-02-15 00:44:31] Seen 1,725,945 samples
+[2024-02-15 00:44:31] Starting data epoch 82 in logical epoch 82
+[2024-02-15 00:49:08] Seen 1,725,887 samples
+[2024-02-15 00:49:08] Starting data epoch 83 in logical epoch 83
+[2024-02-15 00:51:14] Ep. 83 : Up. 39000 : Sen. 674,978 : Cost 1.75150383 : Time 583.40s : 151564.50 words/s : gNorm 0.3543
+[2024-02-15 00:53:46] Seen 1,725,913 samples
+[2024-02-15 00:53:46] Starting data epoch 84 in logical epoch 84
+[2024-02-15 00:58:24] Seen 1,725,890 samples
+[2024-02-15 00:58:24] Starting data epoch 85 in logical epoch 85
+[2024-02-15 01:00:56] Ep. 85 : Up. 40000 : Sen. 844,658 : Cost 1.74456167 : Time 582.48s : 151412.74 words/s : gNorm 0.3446
+[2024-02-15 01:00:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-15 01:00:58] Saving Adam parameters
+[2024-02-15 01:01:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-15 01:01:02] Translating validation set...
+[2024-02-15 01:01:04] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach ar féidir iad a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent..
+[2024-02-15 01:01:04] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh sé seo luathbhrath ailse, eitinn, VEID agus maláire a thabhairt d’othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha saibhre.
+[2024-02-15 01:01:04] Best translation 2 : Chloígh JAS 39C ar rúidbhealach thart ar 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 01:01:04] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkirot Patavee.
+[2024-02-15 01:01:04] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladhtear agus iad ag freagairt.
+[2024-02-15 01:01:04] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 01:01:04] Best translation 10 : Timpeall 11:29, bhog an t-agóid suas Whitehall, anuas ar Chearnóg Trafalgar, ar feadh na Trá, ag dul thart ag Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Seomraí Grand Connacht.
+[2024-02-15 01:01:04] Best translation 20 : Thug sé le tuiscint le linn an toghcháin gur féidir le Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 01:01:04] Best translation 40 : Dúirt John Grant, ó Bhéaloideas Éireann (ag léamh stáisiún baile Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh... an grá atá ag léamh — [an seó] a spreag páistí chun leabhar a phiocadh agus a léamh."
+[2024-02-15 01:01:04] Best translation 80 : Maroocydore defeated ansin Caboolure sa Réamh-chríocha.
+[2024-02-15 01:01:04] Best translation 160 : Rinne Stewart, Gordon, Kenseth, agus Harick babhta amach na poist is fearr do Chraobhchomórtas na dTiománaithe agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-15 01:01:04] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-15 01:01:04] Best translation 640 : Tugann sé an cumas don scoláire a bheith ag obair ar a luas féin agus luas na faisnéise teagaisc a rialú.
+[2024-02-15 01:01:04] Total translation time: 2.06179s
+[2024-02-15 01:01:04] [valid] Ep. 85 : Up. 40000 : chrf : 56.8964 : stalled 1 times (last best: 56.9808)
+[2024-02-15 01:01:04] Translating validation set...
+[2024-02-15 01:01:06] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach ar féidir iad a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent..
+[2024-02-15 01:01:06] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh sé seo luathbhrath ailse, eitinn, VEID agus maláire a thabhairt d’othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha saibhre.
+[2024-02-15 01:01:06] Best translation 2 : Chloígh JAS 39C ar rúidbhealach thart ar 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 01:01:06] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkirot Patavee.
+[2024-02-15 01:01:06] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladhtear agus iad ag freagairt.
+[2024-02-15 01:01:06] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 01:01:06] Best translation 10 : Timpeall 11:29, bhog an t-agóid suas Whitehall, anuas ar Chearnóg Trafalgar, ar feadh na Trá, ag dul thart ag Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Seomraí Grand Connacht.
+[2024-02-15 01:01:06] Best translation 20 : Thug sé le tuiscint le linn an toghcháin gur féidir le Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 01:01:06] Best translation 40 : Dúirt John Grant, ó Bhéaloideas Éireann (ag léamh stáisiún baile Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh... an grá atá ag léamh — [an seó] a spreag páistí chun leabhar a phiocadh agus a léamh."
+[2024-02-15 01:01:06] Best translation 80 : Maroocydore defeated ansin Caboolure sa Réamh-chríocha.
+[2024-02-15 01:01:06] Best translation 160 : Rinne Stewart, Gordon, Kenseth, agus Harick babhta amach na poist is fearr do Chraobhchomórtas na dTiománaithe agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-15 01:01:06] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne tar éis fás 90 uair.
+[2024-02-15 01:01:06] Best translation 640 : Tugann sé an cumas don scoláire a bheith ag obair ar a luas féin agus luas na faisnéise teagaisc a rialú.
+[2024-02-15 01:01:06] Total translation time: 1.46513s
+[2024-02-15 01:01:06] [valid] Ep. 85 : Up. 40000 : bleu : 29.0037 : stalled 2 times (last best: 29.2685)
+[2024-02-15 01:01:06] [valid] Ep. 85 : Up. 40000 : ce-mean-words : 2.32129 : stalled 3 times (last best: 2.09927)
+[2024-02-15 01:03:11] Seen 1,725,960 samples
+[2024-02-15 01:03:11] Starting data epoch 86 in logical epoch 86
+[2024-02-15 01:07:48] Seen 1,725,868 samples
+[2024-02-15 01:07:48] Starting data epoch 87 in logical epoch 87
+[2024-02-15 01:10:49] Ep. 87 : Up. 41000 : Sen. 1,044,481 : Cost 1.73768544 : Time 592.78s : 148833.44 words/s : gNorm 0.3564
+[2024-02-15 01:12:26] Seen 1,725,963 samples
+[2024-02-15 01:12:26] Starting data epoch 88 in logical epoch 88
+[2024-02-15 01:17:02] Seen 1,725,910 samples
+[2024-02-15 01:17:02] Starting data epoch 89 in logical epoch 89
+[2024-02-15 01:20:36] Ep. 89 : Up. 42000 : Sen. 1,314,754 : Cost 1.72911561 : Time 587.31s : 152975.52 words/s : gNorm 0.3477
+[2024-02-15 01:21:39] Seen 1,725,939 samples
+[2024-02-15 01:21:39] Starting data epoch 90 in logical epoch 90
+[2024-02-15 01:26:17] Seen 1,725,900 samples
+[2024-02-15 01:26:17] Starting data epoch 91 in logical epoch 91
+[2024-02-15 01:30:16] Ep. 91 : Up. 43000 : Sen. 1,488,634 : Cost 1.72771883 : Time 580.21s : 150702.37 words/s : gNorm 0.3655
+[2024-02-15 01:30:55] Seen 1,725,924 samples
+[2024-02-15 01:30:55] Starting data epoch 92 in logical epoch 92
+[2024-02-15 01:35:32] Seen 1,725,919 samples
+[2024-02-15 01:35:32] Starting data epoch 93 in logical epoch 93
+[2024-02-15 01:40:00] Ep. 93 : Up. 44000 : Sen. 1,658,370 : Cost 1.72078419 : Time 583.75s : 151565.55 words/s : gNorm 0.3422
+[2024-02-15 01:40:10] Seen 1,725,926 samples
+[2024-02-15 01:40:10] Starting data epoch 94 in logical epoch 94
+[2024-02-15 01:44:47] Seen 1,725,911 samples
+[2024-02-15 01:44:47] Starting data epoch 95 in logical epoch 95
+[2024-02-15 01:49:24] Seen 1,725,912 samples
+[2024-02-15 01:49:24] Starting data epoch 96 in logical epoch 96
+[2024-02-15 01:50:10] Ep. 96 : Up. 45000 : Sen. 133,172 : Cost 1.71524739 : Time 609.91s : 145315.62 words/s : gNorm 0.3288
+[2024-02-15 01:50:10] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-15 01:50:11] Saving Adam parameters
+[2024-02-15 01:50:13] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-15 01:50:16] Translating validation set...
+[2024-02-15 01:50:18] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 01:50:18] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh sé seo luathbhrath ailse, eitinn, VEID agus maláire a thabhairt d’othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha níos saibhre.
+[2024-02-15 01:50:18] Best translation 2 : Chloígh JAS 39C ar rúidbhealach timpeall 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 01:50:18] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkirot Patavee.
+[2024-02-15 01:50:18] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar an am céanna ag freagairt.
+[2024-02-15 01:50:18] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 01:50:18] Best translation 10 : Timpeall 11:29, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul ag Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Seomraí Mór-Chontáin.
+[2024-02-15 01:50:18] Best translation 20 : Thug Dia le tuiscint le linn an toghcháin gur féidir le Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 01:50:18] Best translation 40 : Dúirt John Grant, ó B Buffalo (stáisiún baile Reading Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh,... an grá don léitheoireacht a spreagadh - [an seó] páistí a phiocadh suas leabhar agus a léamh."
+[2024-02-15 01:50:18] Best translation 80 : Ansin thug Marochydore faoiseamh ar an gCaba-Thruailliú i bPríomh-Fheisire.
+[2024-02-15 01:50:18] Best translation 160 : Rinne Stewart, Gordon, Kenseth, agus Harick babhta amach na poist is fearr do Chraobhchomórtas na dTiománaithe agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-15 01:50:18] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne méadaithe 90 uair.
+[2024-02-15 01:50:18] Best translation 640 : Tugann sé an cumas don scoláire oibriú ar a luas féin agus luas na faisnéise treorach a rialú.
+[2024-02-15 01:50:18] Total translation time: 2.11224s
+[2024-02-15 01:50:18] [valid] Ep. 96 : Up. 45000 : chrf : 56.8383 : stalled 2 times (last best: 56.9808)
+[2024-02-15 01:50:18] Translating validation set...
+[2024-02-15 01:50:19] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 01:50:19] Best translation 1 : Deir taighdeoirí ceannais go bhféadfadh sé seo luathbhrath ailse, eitinn, VEID agus maláire a thabhairt d’othair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha níos saibhre.
+[2024-02-15 01:50:19] Best translation 2 : Chloígh JAS 39C ar rúidbhealach timpeall 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 01:50:19] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkirot Patavee.
+[2024-02-15 01:50:19] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar an am céanna ag freagairt.
+[2024-02-15 01:50:19] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 01:50:19] Best translation 10 : Timpeall 11:29, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul ag Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Seomraí Mór-Chontáin.
+[2024-02-15 01:50:19] Best translation 20 : Thug Dia le tuiscint le linn an toghcháin gur féidir le Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 01:50:19] Best translation 40 : Dúirt John Grant, ó B Buffalo (stáisiún baile Reading Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh,... an grá don léitheoireacht a spreagadh - [an seó] páistí a phiocadh suas leabhar agus a léamh."
+[2024-02-15 01:50:19] Best translation 80 : Ansin thug Marochydore faoiseamh ar an gCaba-Thruailliú i bPríomh-Fheisire.
+[2024-02-15 01:50:19] Best translation 160 : Rinne Stewart, Gordon, Kenseth, agus Harick babhta amach na poist is fearr do Chraobhchomórtas na dTiománaithe agus tá ceithre rásaí fágtha sa séasúr.
+[2024-02-15 01:50:19] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne méadaithe 90 uair.
+[2024-02-15 01:50:20] Best translation 640 : Tugann sé an cumas don scoláire oibriú ar a luas féin agus luas na faisnéise treorach a rialú.
+[2024-02-15 01:50:20] Total translation time: 1.47272s
+[2024-02-15 01:50:20] [valid] Ep. 96 : Up. 45000 : bleu : 28.9478 : stalled 3 times (last best: 29.2685)
+[2024-02-15 01:50:20] [valid] Ep. 96 : Up. 45000 : ce-mean-words : 2.38804 : stalled 4 times (last best: 2.09927)
+[2024-02-15 01:54:11] Seen 1,725,925 samples
+[2024-02-15 01:54:11] Starting data epoch 97 in logical epoch 97
+[2024-02-15 01:58:49] Seen 1,725,965 samples
+[2024-02-15 01:58:49] Starting data epoch 98 in logical epoch 98
+[2024-02-15 02:00:03] Ep. 98 : Up. 46000 : Sen. 315,931 : Cost 1.71171522 : Time 593.02s : 148193.17 words/s : gNorm 0.3400
+[2024-02-15 02:03:29] Seen 1,725,954 samples
+[2024-02-15 02:03:29] Starting data epoch 99 in logical epoch 99
+[2024-02-15 02:08:09] Seen 1,725,954 samples
+[2024-02-15 02:08:09] Starting data epoch 100 in logical epoch 100
+[2024-02-15 02:09:52] Ep. 100 : Up. 47000 : Sen. 519,804 : Cost 1.70643759 : Time 588.40s : 150267.44 words/s : gNorm 0.3701
+[2024-02-15 02:12:48] Seen 1,725,947 samples
+[2024-02-15 02:12:48] Starting data epoch 101 in logical epoch 101
+[2024-02-15 02:17:28] Seen 1,725,884 samples
+[2024-02-15 02:17:28] Starting data epoch 102 in logical epoch 102
+[2024-02-15 02:19:40] Ep. 102 : Up. 48000 : Sen. 707,673 : Cost 1.70164621 : Time 588.66s : 151115.72 words/s : gNorm 0.3214
+[2024-02-15 02:22:07] Seen 1,725,885 samples
+[2024-02-15 02:22:07] Starting data epoch 103 in logical epoch 103
+[2024-02-15 02:26:46] Seen 1,725,911 samples
+[2024-02-15 02:26:46] Starting data epoch 104 in logical epoch 104
+[2024-02-15 02:29:29] Ep. 104 : Up. 49000 : Sen. 946,421 : Cost 1.69760895 : Time 588.52s : 150931.58 words/s : gNorm 0.3071
+[2024-02-15 02:31:25] Seen 1,725,867 samples
+[2024-02-15 02:31:25] Starting data epoch 105 in logical epoch 105
+[2024-02-15 02:36:04] Seen 1,725,915 samples
+[2024-02-15 02:36:04] Starting data epoch 106 in logical epoch 106
+[2024-02-15 02:39:11] Ep. 106 : Up. 50000 : Sen. 1,089,168 : Cost 1.69511640 : Time 582.42s : 150268.45 words/s : gNorm 0.3398
+[2024-02-15 02:39:11] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-15 02:39:12] Saving Adam parameters
+[2024-02-15 02:39:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-15 02:39:17] Translating validation set...
+[2024-02-15 02:39:19] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach ar féidir iad a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 02:39:19] Best translation 1 : Deir taighdeoirí luaidhe go bhféadfadh sé seo go dtiocfadh ailse, tiúbair, VEID agus maláire go luath le hothair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha níos saibhre.
+[2024-02-15 02:39:19] Best translation 2 : Chloígh JAS 39C isteach ar rúidbhealach ag 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 02:39:19] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkirot Patvee.
+[2024-02-15 02:39:19] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladhtear agus iad ag freagairt.
+[2024-02-15 02:39:19] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 02:39:19] Best translation 10 : Timpeall 11:29, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul thar an Aldwych agus ag dul suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Seomraí Cótaí Móire ag reáchtáil.
+[2024-02-15 02:39:19] Best translation 20 : Thug Dia le tuiscint le linn an toghcháin go bhféadfadh Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 02:39:19] Best translation 40 : Dúirt John Grant, ó Bhéaloideas Éireann (ag léamh stáisiún baile Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh... an grá atá ag léamh — [an seó] spreag na páistí leabhar a phiocadh suas agus a léamh."
+[2024-02-15 02:39:19] Best translation 80 : Ansin thug Marochydore faoiseamh ar an gCabúl san Phríomhoide.
+[2024-02-15 02:39:19] Best translation 160 : Thart ar na deich post le haghaidh Craobh na dTiománaithe agus na ceithre rásaí atá fágtha sa séasúr, chuir Gordon, Kenshet, agus Harick na poist is fearr ar fáil.
+[2024-02-15 02:39:19] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne méadaithe 90 uair.
+[2024-02-15 02:39:19] Best translation 640 : Ligeann sé do scoláirí oibriú ar a luas féin agus luas na faisnéise treorach a rialú.
+[2024-02-15 02:39:19] Total translation time: 2.02354s
+[2024-02-15 02:39:19] [valid] Ep. 106 : Up. 50000 : chrf : 56.5419 : stalled 3 times (last best: 56.9808)
+[2024-02-15 02:39:19] Translating validation set...
+[2024-02-15 02:39:20] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach ar féidir iad a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 02:39:20] Best translation 1 : Deir taighdeoirí luaidhe go bhféadfadh sé seo go dtiocfadh ailse, tiúbair, VEID agus maláire go luath le hothair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha níos saibhre.
+[2024-02-15 02:39:20] Best translation 2 : Chloígh JAS 39C isteach ar rúidbhealach ag 9:30 am áitiúil (0230 UTC) agus phléasc, dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 02:39:20] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkirot Patvee.
+[2024-02-15 02:39:20] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladhtear agus iad ag freagairt.
+[2024-02-15 02:39:20] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 02:39:20] Best translation 10 : Timpeall 11:29, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul thar an Aldwych agus ag dul suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Seomraí Cótaí Móire ag reáchtáil.
+[2024-02-15 02:39:20] Best translation 20 : Thug Dia le tuiscint le linn an toghcháin go bhféadfadh Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 02:39:20] Best translation 40 : Dúirt John Grant, ó Bhéaloideas Éireann (ag léamh stáisiún baile Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh... an grá atá ag léamh — [an seó] spreag na páistí leabhar a phiocadh suas agus a léamh."
+[2024-02-15 02:39:20] Best translation 80 : Ansin thug Marochydore faoiseamh ar an gCabúl san Phríomhoide.
+[2024-02-15 02:39:20] Best translation 160 : Thart ar na deich post le haghaidh Craobh na dTiománaithe agus na ceithre rásaí atá fágtha sa séasúr, chuir Gordon, Kenshet, agus Harick na poist is fearr ar fáil.
+[2024-02-15 02:39:20] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne méadaithe 90 uair.
+[2024-02-15 02:39:21] Best translation 640 : Ligeann sé do scoláirí oibriú ar a luas féin agus luas na faisnéise treorach a rialú.
+[2024-02-15 02:39:21] Total translation time: 1.51358s
+[2024-02-15 02:39:21] [valid] Ep. 106 : Up. 50000 : bleu : 28.6099 : stalled 4 times (last best: 29.2685)
+[2024-02-15 02:39:21] [valid] Ep. 106 : Up. 50000 : ce-mean-words : 2.44708 : stalled 5 times (last best: 2.09927)
+[2024-02-15 02:40:52] Seen 1,725,921 samples
+[2024-02-15 02:40:52] Starting data epoch 107 in logical epoch 107
+[2024-02-15 02:45:31] Seen 1,725,941 samples
+[2024-02-15 02:45:31] Starting data epoch 108 in logical epoch 108
+[2024-02-15 02:49:08] Ep. 108 : Up. 51000 : Sen. 1,313,371 : Cost 1.69167447 : Time 596.37s : 148694.07 words/s : gNorm 0.3092
+[2024-02-15 02:50:10] Seen 1,725,929 samples
+[2024-02-15 02:50:10] Starting data epoch 109 in logical epoch 109
+[2024-02-15 02:54:49] Seen 1,725,932 samples
+[2024-02-15 02:54:49] Starting data epoch 110 in logical epoch 110
+[2024-02-15 02:58:53] Ep. 110 : Up. 52000 : Sen. 1,472,389 : Cost 1.68796134 : Time 585.91s : 150353.65 words/s : gNorm 0.3335
+[2024-02-15 02:59:29] Seen 1,725,948 samples
+[2024-02-15 02:59:29] Starting data epoch 111 in logical epoch 111
+[2024-02-15 03:04:08] Seen 1,725,923 samples
+[2024-02-15 03:04:08] Starting data epoch 112 in logical epoch 112
+[2024-02-15 03:08:42] Ep. 112 : Up. 53000 : Sen. 1,698,579 : Cost 1.68396461 : Time 588.11s : 150692.29 words/s : gNorm 0.3598
+[2024-02-15 03:08:47] Seen 1,725,911 samples
+[2024-02-15 03:08:47] Starting data epoch 113 in logical epoch 113
+[2024-02-15 03:13:26] Seen 1,725,946 samples
+[2024-02-15 03:13:26] Starting data epoch 114 in logical epoch 114
+[2024-02-15 03:18:06] Seen 1,725,890 samples
+[2024-02-15 03:18:06] Starting data epoch 115 in logical epoch 115
+[2024-02-15 03:18:57] Ep. 115 : Up. 54000 : Sen. 162,132 : Cost 1.68057692 : Time 615.00s : 143714.37 words/s : gNorm 0.3545
+[2024-02-15 03:22:45] Seen 1,725,964 samples
+[2024-02-15 03:22:45] Starting data epoch 116 in logical epoch 116
+[2024-02-15 03:27:25] Seen 1,725,952 samples
+[2024-02-15 03:27:25] Starting data epoch 117 in logical epoch 117
+[2024-02-15 03:28:44] Ep. 117 : Up. 55000 : Sen. 367,360 : Cost 1.67708945 : Time 587.19s : 150738.65 words/s : gNorm 0.3220
+[2024-02-15 03:28:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-15 03:28:45] Saving Adam parameters
+[2024-02-15 03:28:47] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-15 03:28:50] Translating validation set...
+[2024-02-15 03:28:51] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 03:28:51] Best translation 1 : Deir taighdeoirí luaidhe go bhféadfadh sé seo go dtiocfadh ailse, tiúbair, VEID agus maláire go luath le hothair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha níos saibhre.
+[2024-02-15 03:28:51] Best translation 2 : Chloígh Greille JAS 39C ar rúidbhealach ag am áitiúil timpeall 9:30 am áitiúil (230 UTC) agus phléasc, ag dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 03:28:51] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkitriit Patavee.
+[2024-02-15 03:28:51] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar an am céanna ag freagairt.
+[2024-02-15 03:28:51] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 03:28:51] Best translation 10 : Timpeall 11:49, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul thar an Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Grand Connacht.
+[2024-02-15 03:28:51] Best translation 20 : Bhéarfaidh sí le linn an toghcháin, go bhféadfadh Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 03:28:51] Best translation 40 : Dúirt John Grant, ó Bhéaloideas Éireann (stáisiún baile Reading Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh... an grá atá ag léamh — [an seó] spreag na páistí leabhar a phiocadh suas agus a léamh."
+[2024-02-15 03:28:51] Best translation 80 : Ansin thug Marochydore faoiseamh ar an gCabúl san Phríomhoide.
+[2024-02-15 03:28:51] Best translation 160 : Thart ar na deich post le haghaidh Craobh na dTiománaithe agus na ceithre rásaí atá fágtha sa séasúr, bhuail Gordon, Kenseth, agus Harvick.
+[2024-02-15 03:28:51] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne ag fás le 90 uair.
+[2024-02-15 03:28:52] Best translation 640 : Ligeann sé do scoláirí oibriú ar a luas féin agus luas na faisnéise treorach a rialú.
+[2024-02-15 03:28:52] Total translation time: 2.04835s
+[2024-02-15 03:28:52] [valid] Ep. 117 : Up. 55000 : chrf : 56.439 : stalled 4 times (last best: 56.9808)
+[2024-02-15 03:28:52] Translating validation set...
+[2024-02-15 03:28:53] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent.
+[2024-02-15 03:28:53] Best translation 1 : Deir taighdeoirí luaidhe go bhféadfadh sé seo go dtiocfadh ailse, tiúbair, VEID agus maláire go luath le hothair i dtíortha ísealioncaim, áit ar féidir leis na rátaí marthanais do tinnis mar ailse chíche a bheith leath tíortha níos saibhre.
+[2024-02-15 03:28:53] Best translation 2 : Chloígh Greille JAS 39C ar rúidbhealach ag am áitiúil timpeall 9:30 am áitiúil (230 UTC) agus phléasc, ag dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 03:28:53] Best translation 3 : Aithníodh an píolóta mar Cheannaire Squadron Dilkitriit Patavee.
+[2024-02-15 03:28:53] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar an am céanna ag freagairt.
+[2024-02-15 03:28:53] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 03:28:53] Best translation 10 : Timpeall 11:49, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul thar an Aldwych agus suas Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Grand Connacht.
+[2024-02-15 03:28:53] Best translation 20 : Bhéarfaidh sí le linn an toghcháin, go bhféadfadh Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 03:28:53] Best translation 40 : Dúirt John Grant, ó Bhéaloideas Éireann (stáisiún baile Reading Rainbow) "Ag léamh páistí Rainbow cén fáth le léamh... an grá atá ag léamh — [an seó] spreag na páistí leabhar a phiocadh suas agus a léamh."
+[2024-02-15 03:28:53] Best translation 80 : Ansin thug Marochydore faoiseamh ar an gCabúl san Phríomhoide.
+[2024-02-15 03:28:53] Best translation 160 : Thart ar na deich post le haghaidh Craobh na dTiománaithe agus na ceithre rásaí atá fágtha sa séasúr, bhuail Gordon, Kenseth, agus Harvick.
+[2024-02-15 03:28:53] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne ag fás le 90 uair.
+[2024-02-15 03:28:53] Best translation 640 : Ligeann sé do scoláirí oibriú ar a luas féin agus luas na faisnéise treorach a rialú.
+[2024-02-15 03:28:53] Total translation time: 1.48107s
+[2024-02-15 03:28:53] [valid] Ep. 117 : Up. 55000 : bleu : 28.7278 : stalled 5 times (last best: 29.2685)
+[2024-02-15 03:28:53] [valid] Ep. 117 : Up. 55000 : ce-mean-words : 2.49512 : stalled 6 times (last best: 2.09927)
+[2024-02-15 03:32:13] Seen 1,725,920 samples
+[2024-02-15 03:32:13] Starting data epoch 118 in logical epoch 118
+[2024-02-15 03:36:53] Seen 1,725,910 samples
+[2024-02-15 03:36:53] Starting data epoch 119 in logical epoch 119
+[2024-02-15 03:38:41] Ep. 119 : Up. 56000 : Sen. 564,428 : Cost 1.67542613 : Time 597.68s : 148331.23 words/s : gNorm 0.3619
+[2024-02-15 03:41:32] Seen 1,725,945 samples
+[2024-02-15 03:41:32] Starting data epoch 120 in logical epoch 120
+[2024-02-15 03:46:12] Seen 1,725,914 samples
+[2024-02-15 03:46:12] Starting data epoch 121 in logical epoch 121
+[2024-02-15 03:48:29] Ep. 121 : Up. 57000 : Sen. 766,125 : Cost 1.67084491 : Time 587.98s : 150093.61 words/s : gNorm 0.3238
+[2024-02-15 03:50:52] Seen 1,725,935 samples
+[2024-02-15 03:50:52] Starting data epoch 122 in logical epoch 122
+[2024-02-15 03:55:30] Seen 1,725,874 samples
+[2024-02-15 03:55:30] Starting data epoch 123 in logical epoch 123
+[2024-02-15 03:58:15] Ep. 123 : Up. 58000 : Sen. 908,725 : Cost 1.66966987 : Time 585.85s : 150942.56 words/s : gNorm 0.3180
+[2024-02-15 04:00:10] Seen 1,725,928 samples
+[2024-02-15 04:00:10] Starting data epoch 124 in logical epoch 124
+[2024-02-15 04:04:48] Seen 1,725,957 samples
+[2024-02-15 04:04:48] Starting data epoch 125 in logical epoch 125
+[2024-02-15 04:08:02] Ep. 125 : Up. 59000 : Sen. 1,131,371 : Cost 1.66643941 : Time 586.67s : 150787.11 words/s : gNorm 0.3304
+[2024-02-15 04:09:28] Seen 1,725,906 samples
+[2024-02-15 04:09:28] Starting data epoch 126 in logical epoch 126
+[2024-02-15 04:14:07] Seen 1,725,931 samples
+[2024-02-15 04:14:07] Starting data epoch 127 in logical epoch 127
+[2024-02-15 04:17:49] Ep. 127 : Up. 60000 : Sen. 1,315,852 : Cost 1.66571975 : Time 586.90s : 150263.15 words/s : gNorm 0.3748
+[2024-02-15 04:17:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-15 04:17:50] Saving Adam parameters
+[2024-02-15 04:17:53] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz
+[2024-02-15 04:17:56] Translating validation set...
+[2024-02-15 04:17:57] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent US amháin gach ceann acu.
+[2024-02-15 04:17:57] Best translation 1 : De réir a dtaighdeoirí, d’fhéadfadh sé seo go dtiocfadh ailse, eitinn, VEID agus maláire go luath le hothair i dtíortha ísealioncaim, áit ar féidir le rátaí marthanais do bhreoiteachtaí cosúil le hailse chíche a bheith leath iad de thíortha níos saibhre.
+[2024-02-15 04:17:57] Best translation 2 : Chloigh greim Greille JAS 39C ar rúidbhealach ag am áitiúil timpeall 9:30 am áitiúil (230 UTC) agus phléasc, ag dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 04:17:57] Best translation 3 : Aithníodh an píolótach mar Squadron Leader Dilkitrittave.
+[2024-02-15 04:17:57] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar an am céanna ag freagairt.
+[2024-02-15 04:17:57] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 04:17:57] Best translation 10 : Timpeall 1149, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul thar an Aldwych agus Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Grand Connacht.
+[2024-02-15 04:17:57] Best translation 20 : Thug Dia le tuiscint le linn an toghcháin go bhféadfadh Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 04:17:57] Best translation 40 : Dúirt John Grant, ó WND Buffalo (stáisiún Baile Rainbow a léamh) "Ag léamh páistí Rainbow cén fáth le léamh,... an grá a bhí ag an léitheoireacht – [an seó] spreag páistí chun leabhar a phiocadh suas agus a léamh."
+[2024-02-15 04:17:57] Best translation 80 : Chroochydore agus ansin defeated Caboolture sa Phríomh-Chríochnaigh.
+[2024-02-15 04:17:57] Best translation 160 : Thart ar na deich post le haghaidh Craobh na dTiománaithe agus na ceithre rásaí atá fágtha sa séasúr, bhuail Gordon, Kenseth, agus Harvick.
+[2024-02-15 04:17:57] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne ag fás le 90 uair.
+[2024-02-15 04:17:58] Best translation 640 : Ligeann sé do scoláirí oibriú ar a luas féin agus luas na treorach a rialú.
+[2024-02-15 04:17:58] Total translation time: 2.11657s
+[2024-02-15 04:17:58] [valid] Ep. 127 : Up. 60000 : chrf : 56.4369 : stalled 5 times (last best: 56.9808)
+[2024-02-15 04:17:58] Translating validation set...
+[2024-02-15 04:17:59] Best translation 0 : Ar an Luan, d'fhógair eolaithe ó Scoil Leighis Ollscoil Stanford aireagán uirlis dhiagnóiseach nua a d’fhéadfadh cealla a shórtáil de réir cineáil: sliseanna inphriontáilte beag bídeach is féidir a mhonarú ag baint úsáide as printéirí inkjet caighdeánach do cent US amháin gach ceann acu.
+[2024-02-15 04:17:59] Best translation 1 : De réir a dtaighdeoirí, d’fhéadfadh sé seo go dtiocfadh ailse, eitinn, VEID agus maláire go luath le hothair i dtíortha ísealioncaim, áit ar féidir le rátaí marthanais do bhreoiteachtaí cosúil le hailse chíche a bheith leath iad de thíortha níos saibhre.
+[2024-02-15 04:17:59] Best translation 2 : Chloigh greim Greille JAS 39C ar rúidbhealach ag am áitiúil timpeall 9:30 am áitiúil (230 UTC) agus phléasc, ag dúnadh an t-aerfort chuig eitiltí tráchtála.
+[2024-02-15 04:17:59] Best translation 3 : Aithníodh an píolótach mar Squadron Leader Dilkitrittave.
+[2024-02-15 04:17:59] Best translation 4 : Tuairiscíonn na meáin áitiúla feithicil dóiteáin aerfoirt a rolladh thar an am céanna ag freagairt.
+[2024-02-15 04:17:59] Best translation 5 : Bhí Vidal 28 bliain d’aois tar éis dul isteach i mBarraça trí shéasúr ó shin, ó Sevilla.
+[2024-02-15 04:17:59] Best translation 10 : Timpeall 1149, bhog an t-agóid suas Whitehall, thart ar Cearnóg Trafalgar, feadh na Trá, ag dul thar an Aldwych agus Kingway i dtreo Holborn áit a raibh a bhFóram Earraigh in óstán an Grand Connacht.
+[2024-02-15 04:17:59] Best translation 20 : Thug Dia le tuiscint le linn an toghcháin go bhféadfadh Ma teitheadh ón tír le linn géarchéime.
+[2024-02-15 04:17:59] Best translation 40 : Dúirt John Grant, ó WND Buffalo (stáisiún Baile Rainbow a léamh) "Ag léamh páistí Rainbow cén fáth le léamh,... an grá a bhí ag an léitheoireacht – [an seó] spreag páistí chun leabhar a phiocadh suas agus a léamh."
+[2024-02-15 04:17:59] Best translation 80 : Chroochydore agus ansin defeated Caboolture sa Phríomh-Chríochnaigh.
+[2024-02-15 04:17:59] Best translation 160 : Thart ar na deich post le haghaidh Craobh na dTiománaithe agus na ceithre rásaí atá fágtha sa séasúr, bhuail Gordon, Kenseth, agus Harvick.
+[2024-02-15 04:17:59] Best translation 320 : Ó shin i leith, tá méid eacnamaíoch na Síne ag fás le 90 uair.
+[2024-02-15 04:17:59] Best translation 640 : Ligeann sé do scoláirí oibriú ar a luas féin agus luas na treorach a rialú.
+[2024-02-15 04:17:59] Total translation time: 1.45463s
+[2024-02-15 04:17:59] [valid] Ep. 127 : Up. 60000 : bleu : 28.6011 : stalled 6 times (last best: 29.2685)
+[2024-02-15 04:17:59] [valid] Ep. 127 : Up. 60000 : ce-mean-words : 2.53644 : stalled 7 times (last best: 2.09927)
+[2024-02-15 04:17:59] Training finished
+[2024-02-15 04:17:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz
+[2024-02-15 04:18:01] Saving Adam parameters
+[2024-02-15 04:18:03] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-ga/simple/v0/s.train_model.en-ga/output/model.npz.optimizer.npz

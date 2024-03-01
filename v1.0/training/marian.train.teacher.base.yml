@@ -1,0 +1,41 @@
+workspace: 20000
+optimizer-delay: 2
+keep-best: true
+overwrite: true
+#no-restore-corpus: true
+sigterm: save-and-exit
+
+# Model
+type: transformer
+task: transformer-base
+
+# Training
+disp-freq: 1000u
+save-freq: 5000u
+max-length: 250
+max-length-crop: false
+shuffle: batches
+sharding: global
+sync-freq: 200u
+cpu-threads: 0
+mini-batch: 4096
+mini-batch-words: 0
+mini-batch-fit: true
+mini-batch-fit-step: 10
+sentencepiece-alphas: 0.1
+sync-sgd: true
+check-gradient-nan: true
+
+# Validation
+valid-freq: 5000u
+valid-metrics:
+  - chrf
+  - bleu
+  - ce-mean-words
+valid-reset-stalled: true
+early-stopping: 5
+early-stopping-on: first
+beam-size: 4
+normalize: 1
+valid-mini-batch: 64
+valid-max-length: 1000

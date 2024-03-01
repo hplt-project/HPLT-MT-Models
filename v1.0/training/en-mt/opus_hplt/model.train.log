@@ -1,0 +1,1301 @@
+[2024-02-12 17:49:07] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-12 17:49:07] [marian] Running on nid007906 as process 41924 with command line:
+[2024-02-12 17:49:07] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.generate_vocab.en-mt/output/model.en-mt.spm /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.generate_vocab.en-mt/output/model.en-mt.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/tmp.d/6031045 --train-sets /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/tmp.d/6031045/train.en.gz /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/tmp.d/6031045/train.mt.gz --valid-sets /scratch/project_465000574/data/en-mt/valid/flores200.dev.en-mt.en /scratch/project_465000574/data/en-mt/valid/flores200.dev.en-mt.mt --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-12 17:49:07] [config] after: 0e
+[2024-02-12 17:49:07] [config] after-batches: 0
+[2024-02-12 17:49:07] [config] after-epochs: 0
+[2024-02-12 17:49:07] [config] all-caps-every: 0
+[2024-02-12 17:49:07] [config] allow-unk: false
+[2024-02-12 17:49:07] [config] authors: false
+[2024-02-12 17:49:07] [config] beam-size: 4
+[2024-02-12 17:49:07] [config] bert-class-symbol: "[CLS]"
+[2024-02-12 17:49:07] [config] bert-mask-symbol: "[MASK]"
+[2024-02-12 17:49:07] [config] bert-masking-fraction: 0.15
+[2024-02-12 17:49:07] [config] bert-sep-symbol: "[SEP]"
+[2024-02-12 17:49:07] [config] bert-train-type-embeddings: true
+[2024-02-12 17:49:07] [config] bert-type-vocab-size: 2
+[2024-02-12 17:49:07] [config] build-info: ""
+[2024-02-12 17:49:07] [config] char-conv-filters-num:
+[2024-02-12 17:49:07] [config]   - 200
+[2024-02-12 17:49:07] [config]   - 200
+[2024-02-12 17:49:07] [config]   - 250
+[2024-02-12 17:49:07] [config]   - 250
+[2024-02-12 17:49:07] [config]   - 300
+[2024-02-12 17:49:07] [config]   - 300
+[2024-02-12 17:49:07] [config]   - 300
+[2024-02-12 17:49:07] [config]   - 300
+[2024-02-12 17:49:07] [config] char-conv-filters-widths:
+[2024-02-12 17:49:07] [config]   - 1
+[2024-02-12 17:49:07] [config]   - 2
+[2024-02-12 17:49:07] [config]   - 3
+[2024-02-12 17:49:07] [config]   - 4
+[2024-02-12 17:49:07] [config]   - 5
+[2024-02-12 17:49:07] [config]   - 6
+[2024-02-12 17:49:07] [config]   - 7
+[2024-02-12 17:49:07] [config]   - 8
+[2024-02-12 17:49:07] [config] char-highway: 4
+[2024-02-12 17:49:07] [config] char-stride: 5
+[2024-02-12 17:49:07] [config] check-gradient-nan: true
+[2024-02-12 17:49:07] [config] check-nan: false
+[2024-02-12 17:49:07] [config] cite: false
+[2024-02-12 17:49:07] [config] clip-norm: 0
+[2024-02-12 17:49:07] [config] cost-scaling:
+[2024-02-12 17:49:07] [config]   []
+[2024-02-12 17:49:07] [config] cost-type: ce-mean-words
+[2024-02-12 17:49:07] [config] cpu-threads: 0
+[2024-02-12 17:49:07] [config] data-threads: 8
+[2024-02-12 17:49:07] [config] data-weighting: ""
+[2024-02-12 17:49:07] [config] data-weighting-type: sentence
+[2024-02-12 17:49:07] [config] dec-cell: gru
+[2024-02-12 17:49:07] [config] dec-cell-base-depth: 2
+[2024-02-12 17:49:07] [config] dec-cell-high-depth: 1
+[2024-02-12 17:49:07] [config] dec-depth: 6
+[2024-02-12 17:49:07] [config] devices:
+[2024-02-12 17:49:07] [config]   - 0
+[2024-02-12 17:49:07] [config]   - 1
+[2024-02-12 17:49:07] [config]   - 2
+[2024-02-12 17:49:07] [config]   - 3
+[2024-02-12 17:49:07] [config]   - 4
+[2024-02-12 17:49:07] [config]   - 5
+[2024-02-12 17:49:07] [config]   - 6
+[2024-02-12 17:49:07] [config]   - 7
+[2024-02-12 17:49:07] [config] dim-emb: 512
+[2024-02-12 17:49:07] [config] dim-rnn: 1024
+[2024-02-12 17:49:07] [config] dim-vocabs:
+[2024-02-12 17:49:07] [config]   - 64000
+[2024-02-12 17:49:07] [config] disp-first: 0
+[2024-02-12 17:49:07] [config] disp-freq: 1000u
+[2024-02-12 17:49:07] [config] disp-label-counts: true
+[2024-02-12 17:49:07] [config] dropout-rnn: 0
+[2024-02-12 17:49:07] [config] dropout-src: 0
+[2024-02-12 17:49:07] [config] dropout-trg: 0
+[2024-02-12 17:49:07] [config] dump-config: ""
+[2024-02-12 17:49:07] [config] dynamic-gradient-scaling:
+[2024-02-12 17:49:07] [config]   []
+[2024-02-12 17:49:07] [config] early-stopping: 5
+[2024-02-12 17:49:07] [config] early-stopping-on: first
+[2024-02-12 17:49:07] [config] embedding-fix-src: false
+[2024-02-12 17:49:07] [config] embedding-fix-trg: false
+[2024-02-12 17:49:07] [config] embedding-normalization: false
+[2024-02-12 17:49:07] [config] embedding-vectors:
+[2024-02-12 17:49:07] [config]   []
+[2024-02-12 17:49:07] [config] enc-cell: gru
+[2024-02-12 17:49:07] [config] enc-cell-depth: 1
+[2024-02-12 17:49:07] [config] enc-depth: 6
+[2024-02-12 17:49:07] [config] enc-type: bidirectional
+[2024-02-12 17:49:07] [config] english-title-case-every: 0
+[2024-02-12 17:49:07] [config] exponential-smoothing: 0.0001
+[2024-02-12 17:49:07] [config] factor-weight: 1
+[2024-02-12 17:49:07] [config] factors-combine: sum
+[2024-02-12 17:49:07] [config] factors-dim-emb: 0
+[2024-02-12 17:49:07] [config] gradient-checkpointing: false
+[2024-02-12 17:49:07] [config] gradient-norm-average-window: 100
+[2024-02-12 17:49:07] [config] guided-alignment: none
+[2024-02-12 17:49:07] [config] guided-alignment-cost: ce
+[2024-02-12 17:49:07] [config] guided-alignment-weight: 0.1
+[2024-02-12 17:49:07] [config] ignore-model-config: false
+[2024-02-12 17:49:07] [config] input-types:
+[2024-02-12 17:49:07] [config]   []
+[2024-02-12 17:49:07] [config] interpolate-env-vars: false
+[2024-02-12 17:49:07] [config] keep-best: true
+[2024-02-12 17:49:07] [config] label-smoothing: 0.1
+[2024-02-12 17:49:07] [config] layer-normalization: false
+[2024-02-12 17:49:07] [config] learn-rate: 0.0003
+[2024-02-12 17:49:07] [config] lemma-dependency: ""
+[2024-02-12 17:49:07] [config] lemma-dim-emb: 0
+[2024-02-12 17:49:07] [config] log: /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/logs/model.train.log
+[2024-02-12 17:49:07] [config] log-level: info
+[2024-02-12 17:49:07] [config] log-time-zone: ""
+[2024-02-12 17:49:07] [config] logical-epoch:
+[2024-02-12 17:49:07] [config]   - 1e
+[2024-02-12 17:49:07] [config]   - 0
+[2024-02-12 17:49:07] [config] lr-decay: 0
+[2024-02-12 17:49:07] [config] lr-decay-freq: 50000
+[2024-02-12 17:49:07] [config] lr-decay-inv-sqrt:
+[2024-02-12 17:49:07] [config]   - 16000
+[2024-02-12 17:49:07] [config] lr-decay-repeat-warmup: false
+[2024-02-12 17:49:07] [config] lr-decay-reset-optimizer: false
+[2024-02-12 17:49:07] [config] lr-decay-start:
+[2024-02-12 17:49:07] [config]   - 10
+[2024-02-12 17:49:07] [config]   - 1
+[2024-02-12 17:49:07] [config] lr-decay-strategy: epoch+stalled
+[2024-02-12 17:49:07] [config] lr-report: false
+[2024-02-12 17:49:07] [config] lr-warmup: 16000
+[2024-02-12 17:49:07] [config] lr-warmup-at-reload: false
+[2024-02-12 17:49:07] [config] lr-warmup-cycle: false
+[2024-02-12 17:49:07] [config] lr-warmup-start-rate: 0
+[2024-02-12 17:49:07] [config] max-length: 250
+[2024-02-12 17:49:07] [config] max-length-crop: false
+[2024-02-12 17:49:07] [config] max-length-factor: 3
+[2024-02-12 17:49:07] [config] maxi-batch: 1000
+[2024-02-12 17:49:07] [config] maxi-batch-sort: trg
+[2024-02-12 17:49:07] [config] mini-batch: 4096
+[2024-02-12 17:49:07] [config] mini-batch-fit: true
+[2024-02-12 17:49:07] [config] mini-batch-fit-step: 10
+[2024-02-12 17:49:07] [config] mini-batch-round-up: true
+[2024-02-12 17:49:07] [config] mini-batch-track-lr: false
+[2024-02-12 17:49:07] [config] mini-batch-warmup: 0
+[2024-02-12 17:49:07] [config] mini-batch-words: 0
+[2024-02-12 17:49:07] [config] mini-batch-words-ref: 0
+[2024-02-12 17:49:07] [config] model: /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 17:49:07] [config] multi-loss-type: sum
+[2024-02-12 17:49:07] [config] n-best: false
+[2024-02-12 17:49:07] [config] no-nccl: false
+[2024-02-12 17:49:07] [config] no-reload: false
+[2024-02-12 17:49:07] [config] no-restore-corpus: false
+[2024-02-12 17:49:07] [config] normalize: 1
+[2024-02-12 17:49:07] [config] normalize-gradient: false
+[2024-02-12 17:49:07] [config] num-devices: 0
+[2024-02-12 17:49:07] [config] optimizer: adam
+[2024-02-12 17:49:07] [config] optimizer-delay: 2
+[2024-02-12 17:49:07] [config] optimizer-params:
+[2024-02-12 17:49:07] [config]   - 0.9
+[2024-02-12 17:49:07] [config]   - 0.98
+[2024-02-12 17:49:07] [config]   - 1e-09
+[2024-02-12 17:49:07] [config] output-omit-bias: false
+[2024-02-12 17:49:07] [config] overwrite: true
+[2024-02-12 17:49:07] [config] precision:
+[2024-02-12 17:49:07] [config]   - float32
+[2024-02-12 17:49:07] [config]   - float32
+[2024-02-12 17:49:07] [config] pretrained-model: ""
+[2024-02-12 17:49:07] [config] quantize-biases: false
+[2024-02-12 17:49:07] [config] quantize-bits: 0
+[2024-02-12 17:49:07] [config] quantize-log-based: false
+[2024-02-12 17:49:07] [config] quantize-optimization-steps: 0
+[2024-02-12 17:49:07] [config] quiet: false
+[2024-02-12 17:49:07] [config] quiet-translation: false
+[2024-02-12 17:49:07] [config] relative-paths: false
+[2024-02-12 17:49:07] [config] right-left: false
+[2024-02-12 17:49:07] [config] save-freq: 5000u
+[2024-02-12 17:49:07] [config] seed: 42
+[2024-02-12 17:49:07] [config] sentencepiece-alphas:
+[2024-02-12 17:49:07] [config]   - 0.1
+[2024-02-12 17:49:07] [config] sentencepiece-max-lines: 2000000
+[2024-02-12 17:49:07] [config] sentencepiece-options: ""
+[2024-02-12 17:49:07] [config] sharding: global
+[2024-02-12 17:49:07] [config] shuffle: batches
+[2024-02-12 17:49:07] [config] shuffle-in-ram: false
+[2024-02-12 17:49:07] [config] sigterm: save-and-exit
+[2024-02-12 17:49:07] [config] skip: false
+[2024-02-12 17:49:07] [config] sqlite: ""
+[2024-02-12 17:49:07] [config] sqlite-drop: false
+[2024-02-12 17:49:07] [config] sync-freq: 200u
+[2024-02-12 17:49:07] [config] sync-sgd: true
+[2024-02-12 17:49:07] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/tmp.d/6031045
+[2024-02-12 17:49:07] [config] tied-embeddings: false
+[2024-02-12 17:49:07] [config] tied-embeddings-all: true
+[2024-02-12 17:49:07] [config] tied-embeddings-src: false
+[2024-02-12 17:49:07] [config] train-embedder-rank:
+[2024-02-12 17:49:07] [config]   []
+[2024-02-12 17:49:07] [config] train-sets:
+[2024-02-12 17:49:07] [config]   - /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/tmp.d/6031045/train.en.gz
+[2024-02-12 17:49:07] [config]   - /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/tmp.d/6031045/train.mt.gz
+[2024-02-12 17:49:07] [config] transformer-aan-activation: swish
+[2024-02-12 17:49:07] [config] transformer-aan-depth: 2
+[2024-02-12 17:49:07] [config] transformer-aan-nogate: false
+[2024-02-12 17:49:07] [config] transformer-decoder-autoreg: self-attention
+[2024-02-12 17:49:07] [config] transformer-decoder-dim-ffn: 0
+[2024-02-12 17:49:07] [config] transformer-decoder-ffn-depth: 0
+[2024-02-12 17:49:07] [config] transformer-depth-scaling: false
+[2024-02-12 17:49:07] [config] transformer-dim-aan: 2048
+[2024-02-12 17:49:07] [config] transformer-dim-ffn: 2048
+[2024-02-12 17:49:07] [config] transformer-dropout: 0.1
+[2024-02-12 17:49:07] [config] transformer-dropout-attention: 0
+[2024-02-12 17:49:07] [config] transformer-dropout-ffn: 0
+[2024-02-12 17:49:07] [config] transformer-ffn-activation: relu
+[2024-02-12 17:49:07] [config] transformer-ffn-depth: 2
+[2024-02-12 17:49:07] [config] transformer-guided-alignment-layer: last
+[2024-02-12 17:49:07] [config] transformer-heads: 8
+[2024-02-12 17:49:07] [config] transformer-no-projection: false
+[2024-02-12 17:49:07] [config] transformer-pool: false
+[2024-02-12 17:49:07] [config] transformer-postprocess: dan
+[2024-02-12 17:49:07] [config] transformer-postprocess-emb: d
+[2024-02-12 17:49:07] [config] transformer-postprocess-top: ""
+[2024-02-12 17:49:07] [config] transformer-preprocess: ""
+[2024-02-12 17:49:07] [config] transformer-rnn-projection: false
+[2024-02-12 17:49:07] [config] transformer-tied-layers:
+[2024-02-12 17:49:07] [config]   []
+[2024-02-12 17:49:07] [config] transformer-train-position-embeddings: false
+[2024-02-12 17:49:07] [config] tsv: false
+[2024-02-12 17:49:07] [config] tsv-fields: 0
+[2024-02-12 17:49:07] [config] type: transformer
+[2024-02-12 17:49:07] [config] ulr: false
+[2024-02-12 17:49:07] [config] ulr-dim-emb: 0
+[2024-02-12 17:49:07] [config] ulr-dropout: 0
+[2024-02-12 17:49:07] [config] ulr-keys-vectors: ""
+[2024-02-12 17:49:07] [config] ulr-query-vectors: ""
+[2024-02-12 17:49:07] [config] ulr-softmax-temperature: 1
+[2024-02-12 17:49:07] [config] ulr-trainable-transformation: false
+[2024-02-12 17:49:07] [config] unlikelihood-loss: false
+[2024-02-12 17:49:07] [config] valid-freq: 5000u
+[2024-02-12 17:49:07] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/logs/model.valid.log
+[2024-02-12 17:49:07] [config] valid-max-length: 1000
+[2024-02-12 17:49:07] [config] valid-metrics:
+[2024-02-12 17:49:07] [config]   - chrf
+[2024-02-12 17:49:07] [config]   - bleu
+[2024-02-12 17:49:07] [config]   - ce-mean-words
+[2024-02-12 17:49:07] [config] valid-mini-batch: 64
+[2024-02-12 17:49:07] [config] valid-reset-stalled: true
+[2024-02-12 17:49:07] [config] valid-script-args:
+[2024-02-12 17:49:07] [config]   []
+[2024-02-12 17:49:07] [config] valid-script-path: ""
+[2024-02-12 17:49:07] [config] valid-sets:
+[2024-02-12 17:49:07] [config]   - /scratch/project_465000574/data/en-mt/valid/flores200.dev.en-mt.en
+[2024-02-12 17:49:07] [config]   - /scratch/project_465000574/data/en-mt/valid/flores200.dev.en-mt.mt
+[2024-02-12 17:49:07] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/logs/model.valid.out
+[2024-02-12 17:49:07] [config] vocabs:
+[2024-02-12 17:49:07] [config]   - /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.generate_vocab.en-mt/output/model.en-mt.spm
+[2024-02-12 17:49:07] [config]   - /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.generate_vocab.en-mt/output/model.en-mt.spm
+[2024-02-12 17:49:07] [config] word-penalty: 0
+[2024-02-12 17:49:07] [config] word-scores: false
+[2024-02-12 17:49:07] [config] workspace: 20000
+[2024-02-12 17:49:07] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-12 17:49:07] Using synchronous SGD
+[2024-02-12 17:49:07] [comm] Compiled without MPI support. Running as a single process on nid007906
+[2024-02-12 17:49:07] Synced seed 42
+[2024-02-12 17:49:07] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.generate_vocab.en-mt/output/model.en-mt.spm
+[2024-02-12 17:49:08] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-12 17:49:08] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.generate_vocab.en-mt/output/model.en-mt.spm
+[2024-02-12 17:49:08] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-12 17:49:08] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-12 17:49:08] Checking gradient for NaN
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-12 17:49:09] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-12 17:49:09] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-12 17:49:11] [comm] Using global sharding
+[2024-02-12 17:49:13] [comm] NCCLCommunicators constructed successfully
+[2024-02-12 17:49:13] [training] Using 8 GPUs
+[2024-02-12 17:49:13] [logits] Applying loss function for 1 factor(s)
+[2024-02-12 17:49:13] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 17:49:18] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 17:50:13] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-12 17:50:13] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-12 17:50:13] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-12 17:50:13] [comm] Using global sharding
+[2024-02-12 17:50:14] [comm] NCCLCommunicators constructed successfully
+[2024-02-12 17:50:14] [training] Using 8 GPUs
+[2024-02-12 17:50:14] Training started
+[2024-02-12 17:51:46] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu6
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu7
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu4
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu1
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu5
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu3
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu2
+[2024-02-12 17:51:46] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 17:52:00] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 17:52:16] [memory] Reserving 293 MB, device gpu7
+[2024-02-12 17:52:17] [memory] Reserving 293 MB, device gpu4
+[2024-02-12 17:52:17] [memory] Reserving 293 MB, device gpu6
+[2024-02-12 17:52:17] [memory] Reserving 293 MB, device gpu5
+[2024-02-12 17:52:17] [memory] Reserving 293 MB, device gpu3
+[2024-02-12 17:52:17] [memory] Reserving 293 MB, device gpu2
+[2024-02-12 17:52:17] [memory] Reserving 293 MB, device gpu1
+[2024-02-12 17:52:18] Allocating memory for general optimizer shards
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu4
+[2024-02-12 17:52:18] Parameter type float32, optimization type float32, casting types false
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu6
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu1
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu7
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu5
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu3
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu2
+[2024-02-12 17:52:18] [memory] Reserving 36 MB, device gpu0
+[2024-02-12 17:52:18] Allocating memory for Adam-specific shards
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu4
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu6
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu0
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu3
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu7
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu5
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu1
+[2024-02-12 17:52:18] [memory] Reserving 73 MB, device gpu2
+[2024-02-12 18:02:24] Ep. 1 : Up. 1000 : Sen. 2,541,126 : Cost 8.18371391 : Time 730.84s : 141192.31 words/s : gNorm 1.4952
+[2024-02-12 18:12:37] Ep. 1 : Up. 2000 : Sen. 5,228,211 : Cost 6.32093573 : Time 613.46s : 167604.94 words/s : gNorm 1.3660
+[2024-02-12 18:22:38] Ep. 1 : Up. 3000 : Sen. 8,246,540 : Cost 5.90439606 : Time 600.27s : 170366.20 words/s : gNorm 1.6938
+[2024-02-12 18:32:27] Ep. 1 : Up. 4000 : Sen. 11,914,718 : Cost 5.44703817 : Time 589.58s : 170373.18 words/s : gNorm 1.4887
+[2024-02-12 18:42:36] Ep. 1 : Up. 5000 : Sen. 15,717,380 : Cost 5.16258049 : Time 608.63s : 166246.35 words/s : gNorm 1.0883
+[2024-02-12 18:42:36] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 18:42:38] Saving Adam parameters
+[2024-02-12 18:42:41] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-12 18:42:44] Translating validation set...
+[2024-02-12 18:42:44] [valid] First sentence's tokens as scored:
+[2024-02-12 18:42:44] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-12 18:42:44] [valid]   Hyp: L - A r t i k l u t a ' Q a b e l I l - P r e s i d e n t t a ' M a l t a q a l l i l - I s t a t i U n i t i s e j k u n h e m m l - e w w e l d a r b a .
+[2024-02-12 18:42:44] [valid]   Ref: I t - t b a s s i r t a x - x j e n t i s t i f i ċ - Ċ e n t r u N a z z j o n a l i t a l - U r a g a n i h u w a l i D a n i e l l e s e t i t q a w w a u s s i r u r a g a n s a n h a r l - E r b g ħ a .
+[2024-02-12 18:42:46] Best translation 0 : F'dan il-każ, it-tip ta 'l-użu ta' l-użu ta 'l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-ilma.
+[2024-02-12 18:42:46] Best translation 1 : F'pazjenti b'saħħithom, il-pazjenti għandhom jiġu kkurati b'mod sinifikanti f'pazjenti b'pazjenti b'saħħithom, b'mod partikolari f'pazjenti b'pazjenti b'saħħithom, b'mod partikolari f'pazjenti b'pazjenti b'saħħithom.
+[2024-02-12 18:42:46] Best translation 2 : L-Istati Uniti u l-Istati Uniti, l-Istati Uniti u l-Istati Uniti, l-Istati Uniti u l-Istati Uniti.
+[2024-02-12 18:42:46] Best translation 3 : Il-President tal-Prim Ministru qal li l-Partit Nazzjonalista kien hemm ukoll.
+[2024-02-12 18:42:46] Best translation 4 : Il-produzzjoni tal-gass tal-gass tal-gass tal-gass tal-gass tal-gass.
+[2024-02-12 18:42:46] Best translation 5 : L-Artiklu ta' Qabelil sena ta' l-Italja, il-Ġermanja, il-Ġimgħa ta' l-Italja, l-Italja, l-Italja, l-Italja u l-ewwel sena.
+[2024-02-12 18:42:46] Best translation 10 : Fl-aħħar nett, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja u l-Ġermanja.
+[2024-02-12 18:42:46] Best translation 20 : Il-President tal-Ġustizzja kienet l-ewwel darba li l-ewwel darba li l-ewwel darba kien hemm il-laqgħa tal-Gvern.
+[2024-02-12 18:42:46] Best translation 40 : Il-Papa Franġisku qal: "Il-Mulej, "Il-Mulej, u l-Mulej, u l-Ispirtu s-Santu, u l-Ispirtu s-Santu."
+[2024-02-12 18:42:46] Best translation 80 : L-Artiklu ta' Qabell-ewwel darba kien hemm l-ewwel darba f'dan il-qasam.
+[2024-02-12 18:42:46] Best translation 160 : F'dan il-każ, l-ewwel darba, l-ewwel u l-ewwel darba, l-ewwel darba, l-ewwel u l-ewwel darba l-ewwel darba.
+[2024-02-12 18:42:46] Best translation 320 : Fl-aħħar nett, l-aħħar nett, l-aktar popolari.
+[2024-02-12 18:42:46] Best translation 640 : L-Istati Membri għandhom jiżguraw li l-informazzjoni u l-ħiliet tagħhom.
+[2024-02-12 18:42:47] Total translation time: 3.01690s
+[2024-02-12 18:42:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-12 18:42:48] [valid] Ep. 1 : Up. 5000 : chrf : 14.1944 : new best
+[2024-02-12 18:42:48] Translating validation set...
+[2024-02-12 18:42:51] Best translation 0 : F'dan il-każ, it-tip ta 'l-użu ta' l-użu ta 'l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-użu ta ' l-ilma.
+[2024-02-12 18:42:51] Best translation 1 : F'pazjenti b'saħħithom, il-pazjenti għandhom jiġu kkurati b'mod sinifikanti f'pazjenti b'pazjenti b'saħħithom, b'mod partikolari f'pazjenti b'pazjenti b'saħħithom, b'mod partikolari f'pazjenti b'pazjenti b'saħħithom.
+[2024-02-12 18:42:51] Best translation 2 : L-Istati Uniti u l-Istati Uniti, l-Istati Uniti u l-Istati Uniti, l-Istati Uniti u l-Istati Uniti.
+[2024-02-12 18:42:51] Best translation 3 : Il-President tal-Prim Ministru qal li l-Partit Nazzjonalista kien hemm ukoll.
+[2024-02-12 18:42:51] Best translation 4 : Il-produzzjoni tal-gass tal-gass tal-gass tal-gass tal-gass tal-gass.
+[2024-02-12 18:42:51] Best translation 5 : L-Artiklu ta' Qabelil sena ta' l-Italja, il-Ġermanja, il-Ġimgħa ta' l-Italja, l-Italja, l-Italja, l-Italja u l-ewwel sena.
+[2024-02-12 18:42:51] Best translation 10 : Fl-aħħar nett, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja, il-Ġermanja u l-Ġermanja.
+[2024-02-12 18:42:51] Best translation 20 : Il-President tal-Ġustizzja kienet l-ewwel darba li l-ewwel darba li l-ewwel darba kien hemm il-laqgħa tal-Gvern.
+[2024-02-12 18:42:51] Best translation 40 : Il-Papa Franġisku qal: "Il-Mulej, "Il-Mulej, u l-Mulej, u l-Ispirtu s-Santu, u l-Ispirtu s-Santu."
+[2024-02-12 18:42:51] Best translation 80 : L-Artiklu ta' Qabell-ewwel darba kien hemm l-ewwel darba f'dan il-qasam.
+[2024-02-12 18:42:51] Best translation 160 : F'dan il-każ, l-ewwel darba, l-ewwel u l-ewwel darba, l-ewwel darba, l-ewwel u l-ewwel darba l-ewwel darba.
+[2024-02-12 18:42:51] Best translation 320 : Fl-aħħar nett, l-aħħar nett, l-aktar popolari.
+[2024-02-12 18:42:51] Best translation 640 : L-Istati Membri għandhom jiżguraw li l-informazzjoni u l-ħiliet tagħhom.
+[2024-02-12 18:42:51] Total translation time: 2.92777s
+[2024-02-12 18:42:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-12 18:42:52] [valid] Ep. 1 : Up. 5000 : bleu : 0.24566 : new best
+[2024-02-12 18:42:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 18:42:53] [valid] Ep. 1 : Up. 5000 : ce-mean-words : 4.80288 : new best
+[2024-02-12 18:53:12] Ep. 1 : Up. 6000 : Sen. 18,476,397 : Cost 4.83402681 : Time 635.86s : 161691.68 words/s : gNorm 0.9798
+[2024-02-12 19:03:22] Ep. 1 : Up. 7000 : Sen. 21,196,536 : Cost 4.59922266 : Time 610.64s : 168196.30 words/s : gNorm 1.1538
+[2024-02-12 19:13:11] Ep. 1 : Up. 8000 : Sen. 24,179,043 : Cost 4.49467611 : Time 588.81s : 173050.58 words/s : gNorm 1.1359
+[2024-02-12 19:22:54] Ep. 1 : Up. 9000 : Sen. 28,015,366 : Cost 4.47764492 : Time 583.05s : 170718.22 words/s : gNorm 0.9952
+[2024-02-12 19:29:26] Seen 30,884,782 samples
+[2024-02-12 19:29:26] Starting data epoch 2 in logical epoch 2
+[2024-02-12 19:34:28] Ep. 2 : Up. 10000 : Sen. 731,120 : Cost 4.25606441 : Time 694.09s : 141301.65 words/s : gNorm 1.0304
+[2024-02-12 19:34:28] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 19:34:30] Saving Adam parameters
+[2024-02-12 19:34:32] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-12 19:34:34] Translating validation set...
+[2024-02-12 19:34:36] Best translation 0 : Nhar l-Erbgħa, l-Università ta' l-Iskola ta' l-Iskola ta' l-Iskola ta' l-Iskola ta' l-Iskola ta' l-Edukazzjoni ta' l-Università ta' Fuq tista' tintuża għal kull tip ta' apparat li jista' jintuża fuq l-internet.
+[2024-02-12 19:34:36] Best translation 1 : Ir-riċerka tissuġġerixxi li dan jista' jwassal għal mard tal-qalb, mard tal-kanċer, mard tal-kanċer u mard tal-kanċer, li jista' jkun hemm riskju akbar ta' kanċer tal-pulmun.
+[2024-02-12 19:34:36] Best translation 2 : Il-G2G kien f'nofs il-lejl f'nofs il-lejl ta' nofsillejl, u l-passiġġieri tal-ferrovija bdew jivvjaġġaw lejn l-ajruport.
+[2024-02-12 19:34:36] Best translation 3 : L-istudju kien magħruf bħala l-Kap tal-Partit Nazzjonalista.
+[2024-02-12 19:34:36] Best translation 4 : Is-sewwieqa tal-karozzi tal-passiġġieri tal-passiġġieri tal-ajru qed jaħdmu waqt li jkunu qed jaħdmu.
+[2024-02-12 19:34:36] Best translation 5 : Raġel ta' 19-il sena kien ta' 19-il sena.
+[2024-02-12 19:34:36] Best translation 10 : [Atti:20:19] U l-belt ta' l-Eġittu, il-belt ta' l-Ingilterra, il-Belt Valletta, il-Belt Valletta, il-Belt Valletta, il-Belt Valletta, il-Belt Valletta u l-Belt Valletta.
+[2024-02-12 19:34:36] Best translation 20 : Il-Prim Ministru qal li l-pajjiż jista' jieħu sehem f'dan il-perjodu ta' kriżi.
+[2024-02-12 19:34:36] Best translation 40 : L-Artiklu ta' QabelFilmat: "L-imħabba ta' Ġesù" (ara l-ktieb ta' l-iskola) u t-tagħlim ta' l-iskola, kif ukoll il-kliem ta' l-imħabba u t-tagħlim.
+[2024-02-12 19:34:36] Best translation 80 : Il-Prim Ministru qal li l-Prim Ministru kien qed imexxi l-elezzjoni.
+[2024-02-12 19:34:36] Best translation 160 : Il-Prinċep, il-Prinċep, il-Kbir u l-Kap Eżekuttiv ta' l-istaġun li għadda matul l-istaġun li għadda.
+[2024-02-12 19:34:36] Best translation 320 : Fl-aħħar mill-aħħar, l-ekonomija tal-pajjiż kienet ta' 90 sena.
+[2024-02-12 19:34:36] Best translation 640 : Dan jippermetti lill-istudenti jiżviluppaw il-ħiliet tagħhom u jtejbu l-prestazzjoni tagħhom.
+[2024-02-12 19:34:36] Total translation time: 2.15318s
+[2024-02-12 19:34:36] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-12 19:34:37] [valid] Ep. 2 : Up. 10000 : chrf : 23.4753 : new best
+[2024-02-12 19:34:37] Translating validation set...
+[2024-02-12 19:34:39] Best translation 0 : Nhar l-Erbgħa, l-Università ta' l-Iskola ta' l-Iskola ta' l-Iskola ta' l-Iskola ta' l-Iskola ta' l-Edukazzjoni ta' l-Università ta' Fuq tista' tintuża għal kull tip ta' apparat li jista' jintuża fuq l-internet.
+[2024-02-12 19:34:39] Best translation 1 : Ir-riċerka tissuġġerixxi li dan jista' jwassal għal mard tal-qalb, mard tal-kanċer, mard tal-kanċer u mard tal-kanċer, li jista' jkun hemm riskju akbar ta' kanċer tal-pulmun.
+[2024-02-12 19:34:39] Best translation 2 : Il-G2G kien f'nofs il-lejl f'nofs il-lejl ta' nofsillejl, u l-passiġġieri tal-ferrovija bdew jivvjaġġaw lejn l-ajruport.
+[2024-02-12 19:34:39] Best translation 3 : L-istudju kien magħruf bħala l-Kap tal-Partit Nazzjonalista.
+[2024-02-12 19:34:39] Best translation 4 : Is-sewwieqa tal-karozzi tal-passiġġieri tal-passiġġieri tal-ajru qed jaħdmu waqt li jkunu qed jaħdmu.
+[2024-02-12 19:34:39] Best translation 5 : Raġel ta' 19-il sena kien ta' 19-il sena.
+[2024-02-12 19:34:39] Best translation 10 : [Atti:20:19] U l-belt ta' l-Eġittu, il-belt ta' l-Ingilterra, il-Belt Valletta, il-Belt Valletta, il-Belt Valletta, il-Belt Valletta, il-Belt Valletta u l-Belt Valletta.
+[2024-02-12 19:34:39] Best translation 20 : Il-Prim Ministru qal li l-pajjiż jista' jieħu sehem f'dan il-perjodu ta' kriżi.
+[2024-02-12 19:34:39] Best translation 40 : L-Artiklu ta' QabelFilmat: "L-imħabba ta' Ġesù" (ara l-ktieb ta' l-iskola) u t-tagħlim ta' l-iskola, kif ukoll il-kliem ta' l-imħabba u t-tagħlim.
+[2024-02-12 19:34:39] Best translation 80 : Il-Prim Ministru qal li l-Prim Ministru kien qed imexxi l-elezzjoni.
+[2024-02-12 19:34:39] Best translation 160 : Il-Prinċep, il-Prinċep, il-Kbir u l-Kap Eżekuttiv ta' l-istaġun li għadda matul l-istaġun li għadda.
+[2024-02-12 19:34:39] Best translation 320 : Fl-aħħar mill-aħħar, l-ekonomija tal-pajjiż kienet ta' 90 sena.
+[2024-02-12 19:34:39] Best translation 640 : Dan jippermetti lill-istudenti jiżviluppaw il-ħiliet tagħhom u jtejbu l-prestazzjoni tagħhom.
+[2024-02-12 19:34:39] Total translation time: 1.98304s
+[2024-02-12 19:34:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-12 19:34:40] [valid] Ep. 2 : Up. 10000 : bleu : 2.78121 : new best
+[2024-02-12 19:34:40] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 19:34:41] [valid] Ep. 2 : Up. 10000 : ce-mean-words : 3.63575 : new best
+[2024-02-12 19:44:32] Ep. 2 : Up. 11000 : Sen. 3,244,495 : Cost 3.27340794 : Time 603.37s : 169132.01 words/s : gNorm 0.8190
+[2024-02-12 19:54:46] Ep. 2 : Up. 12000 : Sen. 6,193,823 : Cost 2.98308086 : Time 614.44s : 169331.87 words/s : gNorm 0.6558
+[2024-02-12 20:04:51] Ep. 2 : Up. 13000 : Sen. 9,352,536 : Cost 2.94001818 : Time 604.98s : 168783.06 words/s : gNorm 0.5704
+[2024-02-12 20:14:56] Ep. 2 : Up. 14000 : Sen. 12,963,606 : Cost 3.17274356 : Time 604.68s : 165781.04 words/s : gNorm 0.5172
+[2024-02-12 20:24:58] Ep. 2 : Up. 15000 : Sen. 16,617,329 : Cost 3.21728754 : Time 601.96s : 167237.64 words/s : gNorm 0.3853
+[2024-02-12 20:24:58] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 20:24:59] Saving Adam parameters
+[2024-02-12 20:25:01] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-12 20:25:04] Translating validation set...
+[2024-02-12 20:25:06] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola ta 'l-Università ta' l-Istati Uniti tal-Mediċina ħabbru l-invenzjoni ta 'għodda dijanjostika ġdida li tista' tiptipa minn tip: ċippa żgħira li tista 'tiġi manifatturata bl-użu ta' printers standard tal-linka għal possibbilment madwar l-Istati Uniti kull wieħed.
+[2024-02-12 20:25:06] Best translation 1 : Ir-riċerkaturi taċ-ċomb jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi b'introjtu baxx, fejn ir-rati ta' sopravivenza għal mard bħal kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi sinjuri.
+[2024-02-12 20:25:06] Best translation 2 : Il-JAS 39C Grepen inqabad f'runway ta' madwar 9:30 am lokali (230 UTC) u splodew, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 20:25:06] Best translation 3 : Il-bdot ġie identifikat bħala l-Patt ta' Livell Għoli.
+[2024-02-12 20:25:06] Best translation 4 : Il-midja lokali tirrapporta vettura tat-tifi tan-nar tal-ajruport waqt li tkun qed tirrispondi.
+[2024-02-12 20:25:06] Best translation 5 : Ta' 28 sena, il-Kardinal kien ingħaqad ma' Barça tliet staġuni ilu, mis-Sevilla.
+[2024-02-12 20:25:06] Best translation 10 : Madwar 11:29, il-protesti marru fuq Whitehal, il-pjazza tal-passat ta 'Traflagar, flimkien mal-ferrovija, li tgħaddi mill-Aldby u l-Singway lejn Hoborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda tal-Grand Channel.
+[2024-02-12 20:25:06] Best translation 20 : Il-Prim Ministru qal li l-Gvern jista' jaħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 20:25:06] Best translation 40 : John Għotja, mill-istazzjon tad-dar ta 'Rasna, qal: "Tgħallmu lit-tfal għaliex jaqraw, l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 20:25:06] Best translation 80 : Il-Marokk imbagħad għelbu l-kolonja fil-finali tal-finali.
+[2024-02-12 20:25:06] Best translation 160 : L-Arċisqof, il-Gvernatur, il-Kenja, u l-Harvick madwar l-aqwa pożizzjonijiet għall-Kampjonat tas-sewwieqa b'erba' tiġrijiet li jibqgħu fl-istaġun.
+[2024-02-12 20:25:06] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 20:25:06] Best translation 640 : Dan jippermetti lill-istudenti jaħdmu fil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni teknika.
+[2024-02-12 20:25:06] Total translation time: 2.25032s
+[2024-02-12 20:25:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-12 20:25:07] [valid] Ep. 2 : Up. 15000 : chrf : 60.6322 : new best
+[2024-02-12 20:25:07] Translating validation set...
+[2024-02-12 20:25:08] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola ta 'l-Università ta' l-Istati Uniti tal-Mediċina ħabbru l-invenzjoni ta 'għodda dijanjostika ġdida li tista' tiptipa minn tip: ċippa żgħira li tista 'tiġi manifatturata bl-użu ta' printers standard tal-linka għal possibbilment madwar l-Istati Uniti kull wieħed.
+[2024-02-12 20:25:08] Best translation 1 : Ir-riċerkaturi taċ-ċomb jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi b'introjtu baxx, fejn ir-rati ta' sopravivenza għal mard bħal kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi sinjuri.
+[2024-02-12 20:25:08] Best translation 2 : Il-JAS 39C Grepen inqabad f'runway ta' madwar 9:30 am lokali (230 UTC) u splodew, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 20:25:08] Best translation 3 : Il-bdot ġie identifikat bħala l-Patt ta' Livell Għoli.
+[2024-02-12 20:25:08] Best translation 4 : Il-midja lokali tirrapporta vettura tat-tifi tan-nar tal-ajruport waqt li tkun qed tirrispondi.
+[2024-02-12 20:25:08] Best translation 5 : Ta' 28 sena, il-Kardinal kien ingħaqad ma' Barça tliet staġuni ilu, mis-Sevilla.
+[2024-02-12 20:25:08] Best translation 10 : Madwar 11:29, il-protesti marru fuq Whitehal, il-pjazza tal-passat ta 'Traflagar, flimkien mal-ferrovija, li tgħaddi mill-Aldby u l-Singway lejn Hoborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda tal-Grand Channel.
+[2024-02-12 20:25:08] Best translation 20 : Il-Prim Ministru qal li l-Gvern jista' jaħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 20:25:08] Best translation 40 : John Għotja, mill-istazzjon tad-dar ta 'Rasna, qal: "Tgħallmu lit-tfal għaliex jaqraw, l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 20:25:08] Best translation 80 : Il-Marokk imbagħad għelbu l-kolonja fil-finali tal-finali.
+[2024-02-12 20:25:08] Best translation 160 : L-Arċisqof, il-Gvernatur, il-Kenja, u l-Harvick madwar l-aqwa pożizzjonijiet għall-Kampjonat tas-sewwieqa b'erba' tiġrijiet li jibqgħu fl-istaġun.
+[2024-02-12 20:25:08] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 20:25:08] Best translation 640 : Dan jippermetti lill-istudenti jaħdmu fil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni teknika.
+[2024-02-12 20:25:08] Total translation time: 1.49215s
+[2024-02-12 20:25:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-12 20:25:09] [valid] Ep. 2 : Up. 15000 : bleu : 26.9826 : new best
+[2024-02-12 20:25:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 20:25:10] [valid] Ep. 2 : Up. 15000 : ce-mean-words : 1.58887 : new best
+[2024-02-12 20:35:01] Ep. 2 : Up. 16000 : Sen. 19,260,972 : Cost 2.39770341 : Time 602.76s : 171026.73 words/s : gNorm 0.3270
+[2024-02-12 20:45:08] Ep. 2 : Up. 17000 : Sen. 22,038,248 : Cost 2.39620852 : Time 607.02s : 169053.58 words/s : gNorm 0.3482
+[2024-02-12 20:54:56] Ep. 2 : Up. 18000 : Sen. 25,182,286 : Cost 2.53201222 : Time 588.62s : 171352.22 words/s : gNorm 0.4034
+[2024-02-12 21:04:30] Ep. 2 : Up. 19000 : Sen. 29,241,432 : Cost 3.15376925 : Time 573.38s : 174554.11 words/s : gNorm 0.5040
+[2024-02-12 21:08:12] Seen 30,884,797 samples
+[2024-02-12 21:08:12] Starting data epoch 3 in logical epoch 3
+[2024-02-12 21:16:14] Ep. 3 : Up. 20000 : Sen. 1,493,575 : Cost 2.76220989 : Time 704.26s : 140272.58 words/s : gNorm 0.2439
+[2024-02-12 21:16:14] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 21:16:15] Saving Adam parameters
+[2024-02-12 21:16:17] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-12 21:16:20] Translating validation set...
+[2024-02-12 21:16:21] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-12 21:16:21] Best translation 1 : Ir-riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 21:16:21] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 21:16:21] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap ta' Squadron DilokritPattavee.
+[2024-02-12 21:16:21] Best translation 4 : Il-midja lokali tirrapporta vettura tan-nar tal-ajruport li tkun għaddiet waqt li tkun qed tirrispondi.
+[2024-02-12 21:16:21] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 21:16:21] Best translation 10 : Madwar 11:29, il-protesta marret fuq Whitehall, il-Pjazza tat-Trafalgar tal-passat, tul il-medda, li tgħaddi minn Aldwych u Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 21:16:21] Best translation 20 : Huwa implikat fl-elezzjoni li Ma jista' jaħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 21:16:21] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WED Buffalo (Reading Rainbow's station) qal: "Il-qari tat-tfal tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġet lit-tfal biex jiġbru ktieb u jaqraw."
+[2024-02-12 21:16:22] Best translation 80 : Maroochidore mbagħad għelbu l-Coboloture fil-finali preliminari.
+[2024-02-12 21:16:22] Best translation 160 : Stewart, Gordon, Kenset, u Harvick madwar l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-12 21:16:22] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 21:16:22] Best translation 640 : Dan jippermetti lill-istudenti jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni istruzzjoni.
+[2024-02-12 21:16:22] Total translation time: 2.14699s
+[2024-02-12 21:16:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-12 21:16:23] [valid] Ep. 3 : Up. 20000 : chrf : 67.8116 : new best
+[2024-02-12 21:16:23] Translating validation set...
+[2024-02-12 21:16:24] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-12 21:16:24] Best translation 1 : Ir-riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 21:16:24] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 21:16:24] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap ta' Squadron DilokritPattavee.
+[2024-02-12 21:16:24] Best translation 4 : Il-midja lokali tirrapporta vettura tan-nar tal-ajruport li tkun għaddiet waqt li tkun qed tirrispondi.
+[2024-02-12 21:16:24] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 21:16:24] Best translation 10 : Madwar 11:29, il-protesta marret fuq Whitehall, il-Pjazza tat-Trafalgar tal-passat, tul il-medda, li tgħaddi minn Aldwych u Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 21:16:24] Best translation 20 : Huwa implikat fl-elezzjoni li Ma jista' jaħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 21:16:24] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WED Buffalo (Reading Rainbow's station) qal: "Il-qari tat-tfal tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġet lit-tfal biex jiġbru ktieb u jaqraw."
+[2024-02-12 21:16:24] Best translation 80 : Maroochidore mbagħad għelbu l-Coboloture fil-finali preliminari.
+[2024-02-12 21:16:24] Best translation 160 : Stewart, Gordon, Kenset, u Harvick madwar l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-12 21:16:24] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 21:16:24] Best translation 640 : Dan jippermetti lill-istudenti jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni istruzzjoni.
+[2024-02-12 21:16:24] Total translation time: 1.55456s
+[2024-02-12 21:16:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-12 21:16:25] [valid] Ep. 3 : Up. 20000 : bleu : 35.4528 : new best
+[2024-02-12 21:16:25] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 21:16:26] [valid] Ep. 3 : Up. 20000 : ce-mean-words : 1.20422 : new best
+[2024-02-12 21:26:18] Ep. 3 : Up. 21000 : Sen. 4,021,371 : Cost 2.19802570 : Time 604.56s : 170615.76 words/s : gNorm 0.2251
+[2024-02-12 21:36:27] Ep. 3 : Up. 22000 : Sen. 7,021,628 : Cost 2.27030635 : Time 608.77s : 169121.13 words/s : gNorm 0.2571
+[2024-02-12 21:46:25] Ep. 3 : Up. 23000 : Sen. 10,443,744 : Cost 2.58486605 : Time 597.56s : 168896.75 words/s : gNorm 0.3308
+[2024-02-12 21:56:26] Ep. 3 : Up. 24000 : Sen. 14,057,983 : Cost 2.89073181 : Time 600.82s : 166036.04 words/s : gNorm 0.3774
+[2024-02-12 22:06:32] Ep. 3 : Up. 25000 : Sen. 17,363,497 : Cost 2.67816329 : Time 606.83s : 167770.53 words/s : gNorm 0.2399
+[2024-02-12 22:06:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 22:06:34] Saving Adam parameters
+[2024-02-12 22:06:36] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-12 22:06:38] Translating validation set...
+[2024-02-12 22:06:40] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi pprintjata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed tal-Istati Uniti.
+[2024-02-12 22:06:40] Best translation 1 : Ir-riċerkaturi ewlenin jgħidu li dan jista' jwassal għal detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 22:06:40] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 22:06:40] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dillokrit Patvee.
+[2024-02-12 22:06:40] Best translation 4 : Il-midja lokali tirrapporta li vettura tan-nar tal-ajruport spiċċat waqt li kienet qed tirrispondi.
+[2024-02-12 22:06:40] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 22:06:40] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-medda, li tgħaddi minn Aldwych u Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 22:06:40] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma jista' jaħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 22:06:40] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 22:06:40] Best translation 80 : Imbagħad, Maroochydore għeleb lil Cabooloture fil-finali preliminari.
+[2024-02-12 22:06:40] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet li baqgħu fl-istaġun.
+[2024-02-12 22:06:40] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 22:06:40] Best translation 640 : Dan jippermetti lill-istudenti li jaħdmu bil-pass tagħhom stess u jikkontrollaw ir-ritmu tal-informazzjoni tal-istruzzjoni.
+[2024-02-12 22:06:40] Total translation time: 1.98237s
+[2024-02-12 22:06:40] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-12 22:06:41] [valid] Ep. 3 : Up. 25000 : chrf : 69.3692 : new best
+[2024-02-12 22:06:41] Translating validation set...
+[2024-02-12 22:06:43] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi pprintjata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed tal-Istati Uniti.
+[2024-02-12 22:06:43] Best translation 1 : Ir-riċerkaturi ewlenin jgħidu li dan jista' jwassal għal detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 22:06:43] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 22:06:43] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dillokrit Patvee.
+[2024-02-12 22:06:43] Best translation 4 : Il-midja lokali tirrapporta li vettura tan-nar tal-ajruport spiċċat waqt li kienet qed tirrispondi.
+[2024-02-12 22:06:43] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 22:06:43] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-medda, li tgħaddi minn Aldwych u Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 22:06:43] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma jista' jaħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 22:06:43] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 22:06:43] Best translation 80 : Imbagħad, Maroochydore għeleb lil Cabooloture fil-finali preliminari.
+[2024-02-12 22:06:43] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet li baqgħu fl-istaġun.
+[2024-02-12 22:06:43] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 22:06:43] Best translation 640 : Dan jippermetti lill-istudenti li jaħdmu bil-pass tagħhom stess u jikkontrollaw ir-ritmu tal-informazzjoni tal-istruzzjoni.
+[2024-02-12 22:06:43] Total translation time: 1.59002s
+[2024-02-12 22:06:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-12 22:06:44] [valid] Ep. 3 : Up. 25000 : bleu : 37.2791 : new best
+[2024-02-12 22:06:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 22:06:45] [valid] Ep. 3 : Up. 25000 : ce-mean-words : 1.09183 : new best
+[2024-02-12 22:16:36] Ep. 3 : Up. 26000 : Sen. 19,948,887 : Cost 2.15156221 : Time 603.92s : 171219.60 words/s : gNorm 0.2944
+[2024-02-12 22:26:41] Ep. 3 : Up. 27000 : Sen. 22,956,659 : Cost 2.22972822 : Time 604.68s : 169307.83 words/s : gNorm 0.2430
+[2024-02-12 22:36:31] Ep. 3 : Up. 28000 : Sen. 26,404,431 : Cost 2.56579590 : Time 590.43s : 172002.00 words/s : gNorm 0.3935
+[2024-02-12 22:45:52] Ep. 3 : Up. 29000 : Sen. 30,378,316 : Cost 3.12337685 : Time 560.25s : 172848.71 words/s : gNorm 0.4079
+[2024-02-12 22:46:55] Seen 30,885,044 samples
+[2024-02-12 22:46:55] Starting data epoch 4 in logical epoch 4
+[2024-02-12 22:57:43] Ep. 4 : Up. 30000 : Sen. 2,229,626 : Cost 2.27901697 : Time 711.07s : 144385.33 words/s : gNorm 0.2205
+[2024-02-12 22:57:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 22:57:44] Saving Adam parameters
+[2024-02-12 22:57:46] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-12 22:57:49] Translating validation set...
+[2024-02-12 22:57:51] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-12 22:57:52] Best translation 1 : Ir-riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 22:57:52] Best translation 2 : Il-JAS 39C Gripe ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 22:57:52] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Patvee.
+[2024-02-12 22:57:52] Best translation 4 : Il-midja lokali tirrapporta li vettura tan-nar tal-ajruport kellha tgħaddi waqt li kienet qed tirrispondi.
+[2024-02-12 22:57:52] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 22:57:52] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 22:57:52] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 22:57:52] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 22:57:52] Best translation 80 : Il-Marokk imbagħad għelbu lil Cabooloture fil-finali preliminari.
+[2024-02-12 22:57:52] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-12 22:57:52] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 22:57:52] Best translation 640 : Dan jippermetti lill-istudenti li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-12 22:57:52] Total translation time: 3.22017s
+[2024-02-12 22:57:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-12 22:57:53] [valid] Ep. 4 : Up. 30000 : chrf : 70.2576 : new best
+[2024-02-12 22:57:53] Translating validation set...
+[2024-02-12 22:57:54] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-12 22:57:54] Best translation 1 : Ir-riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lill-pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 22:57:54] Best translation 2 : Il-JAS 39C Gripe ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 22:57:54] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Patvee.
+[2024-02-12 22:57:54] Best translation 4 : Il-midja lokali tirrapporta li vettura tan-nar tal-ajruport kellha tgħaddi waqt li kienet qed tirrispondi.
+[2024-02-12 22:57:54] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 22:57:54] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 22:57:54] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-12 22:57:54] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 22:57:54] Best translation 80 : Il-Marokk imbagħad għelbu lil Cabooloture fil-finali preliminari.
+[2024-02-12 22:57:54] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-12 22:57:54] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 22:57:54] Best translation 640 : Dan jippermetti lill-istudenti li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-12 22:57:55] Total translation time: 1.57833s
+[2024-02-12 22:57:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-12 22:57:55] [valid] Ep. 4 : Up. 30000 : bleu : 38.5845 : new best
+[2024-02-12 22:57:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 22:57:56] [valid] Ep. 4 : Up. 30000 : ce-mean-words : 1.03788 : new best
+[2024-02-12 23:08:05] Ep. 4 : Up. 31000 : Sen. 4,917,621 : Cost 2.13913226 : Time 622.03s : 165496.00 words/s : gNorm 0.2365
+[2024-02-12 23:17:50] Ep. 4 : Up. 32000 : Sen. 7,943,481 : Cost 2.15791464 : Time 585.31s : 175111.66 words/s : gNorm 0.2186
+[2024-02-12 23:27:45] Ep. 4 : Up. 33000 : Sen. 11,469,696 : Cost 2.63340259 : Time 594.82s : 168668.18 words/s : gNorm 0.3525
+[2024-02-12 23:37:53] Ep. 4 : Up. 34000 : Sen. 15,285,124 : Cost 2.91902137 : Time 608.17s : 165858.78 words/s : gNorm 0.3788
+[2024-02-12 23:48:03] Ep. 4 : Up. 35000 : Sen. 18,169,356 : Cost 2.33249140 : Time 609.77s : 167872.83 words/s : gNorm 0.2042
+[2024-02-12 23:48:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-12 23:48:04] Saving Adam parameters
+[2024-02-12 23:48:06] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-12 23:48:09] Translating validation set...
+[2024-02-12 23:48:11] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal kważi ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-12 23:48:11] Best translation 1 : Ir-riċerkaturi taċ-ċomb jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 23:48:11] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 23:48:11] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-12 23:48:11] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport tat-tifi tan-nar ġiet irromblata waqt li kienet qed tirrispondi.
+[2024-02-12 23:48:11] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 23:48:11] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u sa Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 23:48:11] Best translation 20 : Hseh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż matul żmien ta' kriżi.
+[2024-02-12 23:48:11] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 23:48:11] Best translation 80 : Il-Manochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-12 23:48:11] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-12 23:48:11] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 23:48:11] Best translation 640 : Dan jippermetti lill-istudenti li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni tal-istruzzjoni.
+[2024-02-12 23:48:12] Total translation time: 2.06720s
+[2024-02-12 23:48:12] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-12 23:48:12] [valid] Ep. 4 : Up. 35000 : chrf : 70.5991 : new best
+[2024-02-12 23:48:12] Translating validation set...
+[2024-02-12 23:48:14] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal kważi ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-12 23:48:14] Best translation 1 : Ir-riċerkaturi taċ-ċomb jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-12 23:48:14] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-12 23:48:14] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-12 23:48:14] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport tat-tifi tan-nar ġiet irromblata waqt li kienet qed tirrispondi.
+[2024-02-12 23:48:14] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-12 23:48:14] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u sa Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-12 23:48:14] Best translation 20 : Hseh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż matul żmien ta' kriżi.
+[2024-02-12 23:48:14] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-12 23:48:14] Best translation 80 : Il-Manochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-12 23:48:14] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-12 23:48:14] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-12 23:48:14] Best translation 640 : Dan jippermetti lill-istudenti li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni tal-istruzzjoni.
+[2024-02-12 23:48:14] Total translation time: 1.67145s
+[2024-02-12 23:48:14] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-12 23:48:15] [valid] Ep. 4 : Up. 35000 : bleu : 38.9052 : new best
+[2024-02-12 23:48:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 23:48:16] [valid] Ep. 4 : Up. 35000 : ce-mean-words : 1.00645 : new best
+[2024-02-12 23:58:23] Ep. 4 : Up. 36000 : Sen. 20,784,332 : Cost 2.09952044 : Time 620.02s : 165981.55 words/s : gNorm 0.2476
+[2024-02-13 00:08:07] Ep. 4 : Up. 37000 : Sen. 23,851,571 : Cost 2.17962360 : Time 584.41s : 174478.38 words/s : gNorm 0.2229
+[2024-02-13 00:17:50] Ep. 4 : Up. 38000 : Sen. 27,542,757 : Cost 2.70599055 : Time 582.32s : 172171.60 words/s : gNorm 0.3270
+[2024-02-13 00:25:25] Seen 30,884,692 samples
+[2024-02-13 00:25:25] Starting data epoch 5 in logical epoch 5
+[2024-02-13 00:29:21] Ep. 5 : Up. 39000 : Sen. 460,812 : Cost 2.99165392 : Time 691.15s : 140525.19 words/s : gNorm 0.2178
+[2024-02-13 00:39:10] Ep. 5 : Up. 40000 : Sen. 2,970,630 : Cost 2.08572507 : Time 589.44s : 174480.77 words/s : gNorm 0.2103
+[2024-02-13 00:39:10] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 00:39:11] Saving Adam parameters
+[2024-02-13 00:39:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 00:39:16] Translating validation set...
+[2024-02-13 00:39:18] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 00:39:18] Best translation 1 : Ir-riċerkaturi taċ-ċomb jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 00:39:18] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 00:39:18] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Patvee.
+[2024-02-13 00:39:18] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport tat-tifi tan-nar ġiet irromblata waqt li kienet qed tirrispondi.
+[2024-02-13 00:39:18] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 00:39:18] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li għaddiet minn Aldwych u minn Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 00:39:18] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 00:39:18] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 00:39:18] Best translation 80 : Maroochydore mbagħad għeleb lil Caboolture fil-finali preliminari.
+[2024-02-13 00:39:18] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 00:39:18] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 00:39:18] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 00:39:18] Total translation time: 2.03797s
+[2024-02-13 00:39:18] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-13 00:39:19] [valid] Ep. 5 : Up. 40000 : chrf : 71.1347 : new best
+[2024-02-13 00:39:19] Translating validation set...
+[2024-02-13 00:39:21] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 00:39:21] Best translation 1 : Ir-riċerkaturi taċ-ċomb jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 00:39:21] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 00:39:21] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Patvee.
+[2024-02-13 00:39:21] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport tat-tifi tan-nar ġiet irromblata waqt li kienet qed tirrispondi.
+[2024-02-13 00:39:21] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 00:39:21] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li għaddiet minn Aldwych u minn Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 00:39:21] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 00:39:21] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 00:39:21] Best translation 80 : Maroochydore mbagħad għeleb lil Caboolture fil-finali preliminari.
+[2024-02-13 00:39:21] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 00:39:21] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 00:39:21] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 00:39:21] Total translation time: 1.74414s
+[2024-02-13 00:39:21] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-13 00:39:22] [valid] Ep. 5 : Up. 40000 : bleu : 40.0693 : new best
+[2024-02-13 00:39:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 00:39:23] [valid] Ep. 5 : Up. 40000 : ce-mean-words : 0.986391 : new best
+[2024-02-13 00:49:30] Ep. 5 : Up. 41000 : Sen. 5,806,152 : Cost 2.11652541 : Time 619.65s : 166429.62 words/s : gNorm 0.2444
+[2024-02-13 00:59:33] Ep. 5 : Up. 42000 : Sen. 8,916,670 : Cost 2.22547221 : Time 603.40s : 169119.73 words/s : gNorm 0.3471
+[2024-02-13 01:09:28] Ep. 5 : Up. 43000 : Sen. 12,583,177 : Cost 2.65526271 : Time 595.24s : 168341.38 words/s : gNorm 0.3868
+[2024-02-13 01:19:16] Ep. 5 : Up. 44000 : Sen. 16,312,974 : Cost 2.89924765 : Time 587.17s : 171446.55 words/s : gNorm 0.3212
+[2024-02-13 01:29:27] Ep. 5 : Up. 45000 : Sen. 18,913,704 : Cost 2.08101296 : Time 611.65s : 168411.34 words/s : gNorm 0.2147
+[2024-02-13 01:29:27] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 01:29:29] Saving Adam parameters
+[2024-02-13 01:29:31] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 01:29:33] Translating validation set...
+[2024-02-13 01:29:35] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 01:29:35] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija ta' kanċer, tuberkulożi, HIV u malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 01:29:35] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 01:29:35] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 01:29:35] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport inqalbet waqt li kienet qed tirrispondi.
+[2024-02-13 01:29:35] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 01:29:35] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li għaddiet minn Aldwych u minn Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 01:29:35] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 01:29:35] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 01:29:35] Best translation 80 : Maroochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-13 01:29:35] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet li baqa' fl-istaġun.
+[2024-02-13 01:29:35] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 01:29:35] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 01:29:35] Total translation time: 2.00765s
+[2024-02-13 01:29:35] [valid] Ep. 5 : Up. 45000 : chrf : 71.1076 : stalled 1 times (last best: 71.1347)
+[2024-02-13 01:29:35] Translating validation set...
+[2024-02-13 01:29:37] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 01:29:37] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija ta' kanċer, tuberkulożi, HIV u malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 01:29:37] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 01:29:37] Best translation 3 : Il-bdot ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 01:29:37] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport inqalbet waqt li kienet qed tirrispondi.
+[2024-02-13 01:29:37] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 01:29:37] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li għaddiet minn Aldwych u minn Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 01:29:37] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 01:29:37] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 01:29:37] Best translation 80 : Maroochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-13 01:29:37] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet li baqa' fl-istaġun.
+[2024-02-13 01:29:37] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 01:29:37] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 01:29:37] Total translation time: 1.49090s
+[2024-02-13 01:29:37] [valid] Ep. 5 : Up. 45000 : bleu : 39.5822 : stalled 1 times (last best: 40.0693)
+[2024-02-13 01:29:37] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 01:29:38] [valid] Ep. 5 : Up. 45000 : ce-mean-words : 0.972329 : new best
+[2024-02-13 01:39:46] Ep. 5 : Up. 46000 : Sen. 21,732,493 : Cost 2.09726048 : Time 619.11s : 166294.61 words/s : gNorm 0.2430
+[2024-02-13 01:49:37] Ep. 5 : Up. 47000 : Sen. 24,779,165 : Cost 2.20911598 : Time 591.08s : 172069.33 words/s : gNorm 0.3750
+[2024-02-13 01:59:08] Ep. 5 : Up. 48000 : Sen. 28,696,539 : Cost 2.82098246 : Time 570.32s : 174545.07 words/s : gNorm 0.4532
+[2024-02-13 02:03:55] Seen 30,884,626 samples
+[2024-02-13 02:03:55] Starting data epoch 6 in logical epoch 6
+[2024-02-13 02:10:30] Ep. 6 : Up. 49000 : Sen. 1,181,453 : Cost 2.71371770 : Time 682.16s : 143898.25 words/s : gNorm 0.2035
+[2024-02-13 02:20:22] Ep. 6 : Up. 50000 : Sen. 3,742,738 : Cost 2.05640101 : Time 591.90s : 175174.35 words/s : gNorm 0.2021
+[2024-02-13 02:20:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 02:20:23] Saving Adam parameters
+[2024-02-13 02:20:25] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 02:20:28] Translating validation set...
+[2024-02-13 02:20:29] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 02:20:29] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 02:20:29] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 02:20:29] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 02:20:29] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport inqalbet waqt li kienet qed tirrispondi.
+[2024-02-13 02:20:29] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 02:20:29] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 02:20:29] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 02:20:29] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 02:20:29] Best translation 80 : Maroochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-13 02:20:29] Best translation 160 : Stewart, Gordon, Kenset, u Harvick għalqu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 02:20:29] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 02:20:30] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 02:20:30] Total translation time: 2.01039s
+[2024-02-13 02:20:30] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-13 02:20:31] [valid] Ep. 6 : Up. 50000 : chrf : 71.2479 : new best
+[2024-02-13 02:20:31] Translating validation set...
+[2024-02-13 02:20:32] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 02:20:32] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 02:20:32] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 02:20:32] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 02:20:32] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport inqalbet waqt li kienet qed tirrispondi.
+[2024-02-13 02:20:32] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 02:20:32] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 02:20:32] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 02:20:32] Best translation 40 : John Grant, mill-istazzjon tad-dar ta' WNED Buffalo (Reading Rainbow's home station) qal: "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 02:20:32] Best translation 80 : Maroochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-13 02:20:32] Best translation 160 : Stewart, Gordon, Kenset, u Harvick għalqu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 02:20:32] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 02:20:32] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 02:20:32] Total translation time: 1.54762s
+[2024-02-13 02:20:32] [valid] Ep. 6 : Up. 50000 : bleu : 40.0015 : stalled 2 times (last best: 40.0693)
+[2024-02-13 02:20:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 02:20:33] [valid] Ep. 6 : Up. 50000 : ce-mean-words : 0.958752 : new best
+[2024-02-13 02:30:38] Ep. 6 : Up. 51000 : Sen. 6,659,486 : Cost 2.10261607 : Time 616.05s : 166662.47 words/s : gNorm 0.2714
+[2024-02-13 02:40:39] Ep. 6 : Up. 52000 : Sen. 9,968,203 : Cost 2.34857845 : Time 601.09s : 167948.31 words/s : gNorm 0.3075
+[2024-02-13 02:50:44] Ep. 6 : Up. 53000 : Sen. 13,633,128 : Cost 2.69830227 : Time 605.40s : 166126.66 words/s : gNorm 0.3907
+[2024-02-13 03:00:51] Ep. 6 : Up. 54000 : Sen. 17,104,186 : Cost 2.64780879 : Time 606.50s : 168161.44 words/s : gNorm 0.2209
+[2024-02-13 03:10:42] Ep. 6 : Up. 55000 : Sen. 19,682,905 : Cost 2.04382586 : Time 591.09s : 175069.05 words/s : gNorm 0.2384
+[2024-02-13 03:10:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 03:10:43] Saving Adam parameters
+[2024-02-13 03:10:45] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 03:10:48] Translating validation set...
+[2024-02-13 03:10:50] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 03:10:50] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 03:10:50] Best translation 2 : Il Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 03:10:50] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 03:10:50] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport ħadet in-nar waqt li kienet qed tirrispondi.
+[2024-02-13 03:10:50] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 03:10:50] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 03:10:50] Best translation 20 : Is-Sur Hsieh kien involut fl-elezzjoni li l-Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 03:10:50] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 03:10:50] Best translation 80 : Maroochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-13 03:10:50] Best translation 160 : Stewart, Gordon, Kenset, u Harvick għalqu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 03:10:50] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 03:10:50] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 03:10:50] Total translation time: 2.20760s
+[2024-02-13 03:10:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-13 03:10:51] [valid] Ep. 6 : Up. 55000 : chrf : 71.3128 : new best
+[2024-02-13 03:10:51] Translating validation set...
+[2024-02-13 03:10:53] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 03:10:53] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 03:10:53] Best translation 2 : Il Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 03:10:53] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 03:10:53] Best translation 4 : Il-midja lokali tirrapporta li vettura tal-ajruport ħadet in-nar waqt li kienet qed tirrispondi.
+[2024-02-13 03:10:53] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 03:10:53] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 03:10:53] Best translation 20 : Is-Sur Hsieh kien involut fl-elezzjoni li l-Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 03:10:53] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 03:10:53] Best translation 80 : Maroochydore mbagħad għeleb lill-Caolture fil-finali preliminari.
+[2024-02-13 03:10:53] Best translation 160 : Stewart, Gordon, Kenset, u Harvick għalqu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 03:10:53] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 03:10:53] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 03:10:53] Total translation time: 1.67863s
+[2024-02-13 03:10:53] [valid] Ep. 6 : Up. 55000 : bleu : 40.0344 : stalled 3 times (last best: 40.0693)
+[2024-02-13 03:10:53] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 03:10:54] [valid] Ep. 6 : Up. 55000 : ce-mean-words : 0.951699 : new best
+[2024-02-13 03:20:58] Ep. 6 : Up. 56000 : Sen. 22,622,091 : Cost 2.10920334 : Time 615.79s : 165220.39 words/s : gNorm 0.2422
+[2024-02-13 03:30:49] Ep. 6 : Up. 57000 : Sen. 25,922,656 : Cost 2.37257648 : Time 591.36s : 172091.69 words/s : gNorm 0.3449
+[2024-02-13 03:40:13] Ep. 6 : Up. 58000 : Sen. 29,936,273 : Cost 2.95124769 : Time 564.26s : 173997.85 words/s : gNorm 0.4466
+[2024-02-13 03:42:15] Seen 30,884,640 samples
+[2024-02-13 03:42:15] Starting data epoch 7 in logical epoch 7
+[2024-02-13 03:51:58] Ep. 7 : Up. 59000 : Sen. 2,042,598 : Cost 2.32779956 : Time 704.68s : 143728.07 words/s : gNorm 0.2138
+[2024-02-13 04:02:10] Ep. 7 : Up. 60000 : Sen. 4,561,101 : Cost 2.05162883 : Time 612.09s : 168940.48 words/s : gNorm 0.2471
+[2024-02-13 04:02:10] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 04:02:11] Saving Adam parameters
+[2024-02-13 04:02:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 04:02:16] Translating validation set...
+[2024-02-13 04:02:18] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 04:02:18] Best translation 1 : Riċerkaturi ewlenin qalu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 04:02:18] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 04:02:18] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 04:02:18] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 04:02:18] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 04:02:18] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 04:02:18] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 04:02:18] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 04:02:18] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 04:02:18] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 04:02:18] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 04:02:18] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 04:02:18] Total translation time: 2.04967s
+[2024-02-13 04:02:18] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-13 04:02:19] [valid] Ep. 7 : Up. 60000 : chrf : 71.38 : new best
+[2024-02-13 04:02:19] Translating validation set...
+[2024-02-13 04:02:20] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 04:02:20] Best translation 1 : Riċerkaturi ewlenin qalu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 04:02:20] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 04:02:20] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 04:02:20] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 04:02:20] Best translation 5 : Vidal ta' 28 sena kien ingħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 04:02:20] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, Pjazza Trafalgar tal-passat, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 04:02:20] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 04:02:20] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 04:02:20] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 04:02:20] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 04:02:20] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 04:02:20] Best translation 640 : Dan jippermetti lill-istudenti l-kapaċità li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 04:02:21] Total translation time: 1.52761s
+[2024-02-13 04:02:21] [valid] Ep. 7 : Up. 60000 : bleu : 40.0196 : stalled 4 times (last best: 40.0693)
+[2024-02-13 04:02:21] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 04:02:22] [valid] Ep. 7 : Up. 60000 : ce-mean-words : 0.946029 : new best
+[2024-02-13 04:12:06] Ep. 7 : Up. 61000 : Sen. 7,575,880 : Cost 2.08071804 : Time 596.30s : 171320.62 words/s : gNorm 0.2351
+[2024-02-13 04:22:00] Ep. 7 : Up. 62000 : Sen. 11,045,288 : Cost 2.48392916 : Time 593.60s : 168213.02 words/s : gNorm 0.3870
+[2024-02-13 04:32:09] Ep. 7 : Up. 63000 : Sen. 14,847,494 : Cost 2.77700424 : Time 608.50s : 166678.29 words/s : gNorm 0.3934
+[2024-02-13 04:42:18] Ep. 7 : Up. 64000 : Sen. 17,871,069 : Cost 2.36285996 : Time 609.58s : 168496.08 words/s : gNorm 0.2230
+[2024-02-13 04:52:17] Ep. 7 : Up. 65000 : Sen. 20,524,630 : Cost 2.03854370 : Time 599.13s : 171338.78 words/s : gNorm 0.2536
+[2024-02-13 04:52:17] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 04:52:19] Saving Adam parameters
+[2024-02-13 04:52:21] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 04:52:25] Translating validation set...
+[2024-02-13 04:52:27] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 04:52:27] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 04:52:27] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 04:52:27] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 04:52:27] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 04:52:27] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 04:52:27] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Square, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 04:52:27] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 04:52:27] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 04:52:27] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 04:52:27] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 04:52:27] Best translation 320 : t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t
+[2024-02-13 04:52:28] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 04:52:28] Total translation time: 3.13380s
+[2024-02-13 04:52:28] [valid] Ep. 7 : Up. 65000 : chrf : 69.3912 : stalled 1 times (last best: 71.38)
+[2024-02-13 04:52:28] Translating validation set...
+[2024-02-13 04:52:30] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 04:52:30] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 04:52:30] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 04:52:30] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 04:52:30] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 04:52:30] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 04:52:30] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Square, tul il-fergħa, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kien qed iżomm il-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 04:52:30] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma tista' taħrab mill-pajjiż fi żmien ta' kriżi.
+[2024-02-13 04:52:30] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 04:52:30] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 04:52:30] Best translation 160 : Stewart, Gordon, Kenset, u Harvick ħarġu l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 04:52:30] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 04:52:30] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 04:52:31] Total translation time: 2.75455s
+[2024-02-13 04:52:31] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-13 04:52:32] [valid] Ep. 7 : Up. 65000 : bleu : 40.3555 : new best
+[2024-02-13 04:52:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 04:52:33] [valid] Ep. 7 : Up. 65000 : ce-mean-words : 0.941338 : new best
+[2024-02-13 05:02:19] Ep. 7 : Up. 66000 : Sen. 23,507,582 : Cost 2.11330843 : Time 602.18s : 169708.11 words/s : gNorm 0.2435
+[2024-02-13 05:12:03] Ep. 7 : Up. 67000 : Sen. 27,137,403 : Cost 2.55293751 : Time 583.33s : 171468.47 words/s : gNorm 0.3546
+[2024-02-13 05:20:38] Seen 30,884,714 samples
+[2024-02-13 05:20:38] Starting data epoch 8 in logical epoch 8
+[2024-02-13 05:23:19] Ep. 8 : Up. 68000 : Sen. 199,738 : Cost 3.00567365 : Time 675.80s : 143658.39 words/s : gNorm 0.3120
+[2024-02-13 05:33:20] Ep. 8 : Up. 69000 : Sen. 2,767,871 : Cost 2.04213405 : Time 601.42s : 173107.56 words/s : gNorm 0.1925
+[2024-02-13 05:43:28] Ep. 8 : Up. 70000 : Sen. 5,513,003 : Cost 2.05269480 : Time 608.19s : 168983.54 words/s : gNorm 0.2307
+[2024-02-13 05:43:28] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 05:43:29] Saving Adam parameters
+[2024-02-13 05:43:32] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 05:43:34] Translating validation set...
+[2024-02-13 05:43:36] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 05:43:36] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 05:43:36] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 05:43:36] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 05:43:36] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 05:43:36] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 05:43:36] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-fergħa, li tgħaddi minn Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-Grand Connaught Rooms lukanda.
+[2024-02-13 05:43:36] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 05:43:36] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 05:43:36] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 05:43:36] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick għalqu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 05:43:36] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 05:43:36] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 05:43:36] Total translation time: 1.97561s
+[2024-02-13 05:43:36] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-13 05:43:37] [valid] Ep. 8 : Up. 70000 : chrf : 71.5041 : new best
+[2024-02-13 05:43:37] Translating validation set...
+[2024-02-13 05:43:38] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 05:43:38] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 05:43:38] Best translation 2 : Il-Gripen ta 'JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda,, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 05:43:38] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattave.
+[2024-02-13 05:43:38] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 05:43:38] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 05:43:38] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-fergħa, li tgħaddi minn Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-Grand Connaught Rooms lukanda.
+[2024-02-13 05:43:38] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 05:43:38] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 05:43:38] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 05:43:38] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick għalqu l-ogħla għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 05:43:38] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 05:43:38] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 05:43:39] Total translation time: 1.51524s
+[2024-02-13 05:43:39] [valid] Ep. 8 : Up. 70000 : bleu : 39.9249 : stalled 1 times (last best: 40.3555)
+[2024-02-13 05:43:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 05:43:39] [valid] Ep. 8 : Up. 70000 : ce-mean-words : 0.937115 : new best
+[2024-02-13 05:53:42] Ep. 8 : Up. 71000 : Sen. 8,578,328 : Cost 2.13534880 : Time 613.88s : 165476.68 words/s : gNorm 0.3678
+[2024-02-13 06:03:18] Ep. 8 : Up. 72000 : Sen. 12,171,034 : Cost 2.55137825 : Time 576.09s : 174088.29 words/s : gNorm 0.3460
+[2024-02-13 06:13:25] Ep. 8 : Up. 73000 : Sen. 15,958,796 : Cost 2.85441422 : Time 606.69s : 166767.61 words/s : gNorm 0.3834
+[2024-02-13 06:23:36] Ep. 8 : Up. 74000 : Sen. 18,566,461 : Cost 2.10579848 : Time 611.39s : 167478.48 words/s : gNorm 0.2173
+[2024-02-13 06:33:42] Ep. 8 : Up. 75000 : Sen. 21,395,341 : Cost 2.05548811 : Time 605.80s : 169556.69 words/s : gNorm 0.2663
+[2024-02-13 06:33:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 06:33:43] Saving Adam parameters
+[2024-02-13 06:33:45] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 06:33:48] Translating validation set...
+[2024-02-13 06:33:49] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 06:33:50] Best translation 1 : Riċerkaturi ewlenin qalu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 06:33:50] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 06:33:50] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 06:33:50] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 06:33:50] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 06:33:50] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-fergħa, li tgħaddi minn Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-Grand Connaught Rooms lukanda.
+[2024-02-13 06:33:50] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 06:33:50] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 06:33:50] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 06:33:50] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 06:33:50] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 06:33:50] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 06:33:50] Total translation time: 2.00681s
+[2024-02-13 06:33:50] [valid] Ep. 8 : Up. 75000 : chrf : 71.4511 : stalled 1 times (last best: 71.5041)
+[2024-02-13 06:33:50] Translating validation set...
+[2024-02-13 06:33:51] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 06:33:51] Best translation 1 : Riċerkaturi ewlenin qalu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 06:33:51] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 06:33:51] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 06:33:51] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 06:33:51] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 06:33:51] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-fergħa, li tgħaddi minn Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-Grand Connaught Rooms lukanda.
+[2024-02-13 06:33:51] Best translation 20 : Hsieh implikat waqt l-elezzjoni li Ma tista' taħrab mill-pajjiż waqt żmien ta' kriżi.
+[2024-02-13 06:33:51] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari tal-qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 06:33:51] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 06:33:51] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 06:33:51] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 06:33:52] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 06:33:52] Total translation time: 1.56111s
+[2024-02-13 06:33:52] [valid] Ep. 8 : Up. 75000 : bleu : 40.031 : stalled 2 times (last best: 40.3555)
+[2024-02-13 06:33:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 06:33:53] [valid] Ep. 8 : Up. 75000 : ce-mean-words : 0.934313 : new best
+[2024-02-13 06:43:37] Ep. 8 : Up. 76000 : Sen. 24,386,615 : Cost 2.09693265 : Time 595.36s : 171511.60 words/s : gNorm 0.2334
+[2024-02-13 06:53:20] Ep. 8 : Up. 77000 : Sen. 28,267,569 : Cost 2.73222828 : Time 582.61s : 171905.10 words/s : gNorm 0.3737
+[2024-02-13 06:59:04] Seen 30,884,970 samples
+[2024-02-13 06:59:04] Starting data epoch 9 in logical epoch 9
+[2024-02-13 07:04:48] Ep. 9 : Up. 78000 : Sen. 915,604 : Cost 2.77453423 : Time 687.99s : 142141.52 words/s : gNorm 0.2245
+[2024-02-13 07:14:41] Ep. 9 : Up. 79000 : Sen. 3,476,359 : Cost 2.02386904 : Time 592.65s : 174489.61 words/s : gNorm 0.2289
+[2024-02-13 07:24:46] Ep. 9 : Up. 80000 : Sen. 6,389,937 : Cost 2.05726910 : Time 605.29s : 169492.43 words/s : gNorm 0.2415
+[2024-02-13 07:24:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 07:24:47] Saving Adam parameters
+[2024-02-13 07:24:49] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 07:24:52] Translating validation set...
+[2024-02-13 07:24:53] Best translation 0 : Nhar it-Tnejn, xjenzati mill-Iskola tal-Mediċina tal-Università ta' Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista' tissortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista' tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed kull wieħed mill-Istati Uniti.
+[2024-02-13 07:24:53] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja f'pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 07:24:53] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 07:24:53] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 07:24:53] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 07:24:53] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 07:24:53] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-fergħa, li tgħaddi minn Aldw-ch u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-Grand Connaught Rooms lukanda.
+[2024-02-13 07:24:53] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 07:24:53] Best translation 40 : John Grant, minn WNED Buffalo (L-istazzjon tad-dar ta' Reading Rainbow) qal: "Il-qari ta' qawsalla għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 07:24:53] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 07:24:53] Best translation 160 : Stewart, Gordon, Kenset, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 07:24:53] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 07:24:54] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 07:24:54] Total translation time: 1.95168s
+[2024-02-13 07:24:54] [valid] Ep. 9 : Up. 80000 : chrf : 71.3223 : stalled 2 times (last best: 71.5041)
+[2024-02-13 07:24:54] Translating validation set...
+[2024-02-13 07:24:55] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 07:24:55] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal skoperta bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 07:24:55] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 07:24:55] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 07:24:55] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 07:24:55] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 07:24:55] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-fergħa, li tgħaddi minn Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-Grand Connaught Rooms lukanda.
+[2024-02-13 07:24:55] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 07:24:55] Best translation 40 : John Grant, minn WNED Buffalo (L-istazzjon tad-dar ta' Reading Rainbow) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 07:24:55] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 07:24:55] Best translation 160 : Stewart, Gordon, Kenset, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 07:24:55] Best translation 320 : Minn dakinhar, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 07:24:55] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 07:24:55] Total translation time: 1.57004s
+[2024-02-13 07:24:55] [valid] Ep. 9 : Up. 80000 : bleu : 40.3329 : stalled 3 times (last best: 40.3555)
+[2024-02-13 07:24:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 07:24:56] [valid] Ep. 9 : Up. 80000 : ce-mean-words : 0.930489 : new best
+[2024-02-13 07:35:01] Ep. 9 : Up. 81000 : Sen. 9,724,200 : Cost 2.28267479 : Time 614.84s : 167117.30 words/s : gNorm 0.3544
+[2024-02-13 07:45:01] Ep. 9 : Up. 82000 : Sen. 13,269,351 : Cost 2.62371802 : Time 600.21s : 164545.69 words/s : gNorm 0.4039
+[2024-02-13 07:55:03] Ep. 9 : Up. 83000 : Sen. 16,843,159 : Cost 2.67540216 : Time 601.89s : 168321.59 words/s : gNorm 0.3196
+[2024-02-13 08:04:52] Ep. 9 : Up. 84000 : Sen. 19,394,413 : Cost 2.01533747 : Time 588.75s : 174855.48 words/s : gNorm 0.2211
+[2024-02-13 08:14:56] Ep. 9 : Up. 85000 : Sen. 22,213,276 : Cost 2.06461954 : Time 604.11s : 169568.61 words/s : gNorm 0.2327
+[2024-02-13 08:14:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 08:14:57] Saving Adam parameters
+[2024-02-13 08:14:59] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 08:15:02] Translating validation set...
+[2024-02-13 08:15:03] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 08:15:03] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 08:15:03] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 08:15:03] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 08:15:03] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 08:15:03] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 08:15:03] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 08:15:03] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 08:15:03] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 08:15:03] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 08:15:03] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 08:15:03] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 08:15:04] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 08:15:04] Total translation time: 1.93635s
+[2024-02-13 08:15:04] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-chrf.npz
+[2024-02-13 08:15:04] [valid] Ep. 9 : Up. 85000 : chrf : 71.5387 : new best
+[2024-02-13 08:15:04] Translating validation set...
+[2024-02-13 08:15:06] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 08:15:06] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 08:15:06] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 08:15:06] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 08:15:06] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 08:15:06] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 08:15:06] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 08:15:06] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 08:15:06] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 08:15:06] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 08:15:06] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 08:15:06] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 08:15:06] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 08:15:06] Total translation time: 1.48938s
+[2024-02-13 08:15:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-bleu.npz
+[2024-02-13 08:15:07] [valid] Ep. 9 : Up. 85000 : bleu : 40.469 : new best
+[2024-02-13 08:15:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 08:15:08] [valid] Ep. 9 : Up. 85000 : ce-mean-words : 0.929921 : new best
+[2024-02-13 08:25:00] Ep. 9 : Up. 86000 : Sen. 25,531,408 : Cost 2.27217746 : Time 604.04s : 168548.87 words/s : gNorm 0.4142
+[2024-02-13 08:34:21] Ep. 9 : Up. 87000 : Sen. 29,457,068 : Cost 2.84436250 : Time 561.19s : 174290.56 words/s : gNorm 0.4408
+[2024-02-13 08:37:27] Seen 30,884,660 samples
+[2024-02-13 08:37:27] Starting data epoch 10 in logical epoch 10
+[2024-02-13 08:46:09] Ep. 10 : Up. 88000 : Sen. 1,747,363 : Cost 2.43277645 : Time 707.66s : 143883.65 words/s : gNorm 0.2129
+[2024-02-13 08:56:10] Ep. 10 : Up. 89000 : Sen. 4,231,289 : Cost 2.02162957 : Time 601.16s : 169584.81 words/s : gNorm 0.2596
+[2024-02-13 09:06:01] Ep. 10 : Up. 90000 : Sen. 7,185,201 : Cost 2.05233264 : Time 591.27s : 173990.85 words/s : gNorm 0.2469
+[2024-02-13 09:06:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 09:06:02] Saving Adam parameters
+[2024-02-13 09:06:04] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 09:06:07] Translating validation set...
+[2024-02-13 09:06:08] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 09:06:09] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib sejbien bikri tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 09:06:09] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 09:06:09] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 09:06:09] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 09:06:09] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 09:06:09] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 09:06:09] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 09:06:09] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 09:06:09] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-finali preliminari.
+[2024-02-13 09:06:09] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 09:06:09] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 09:06:09] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 09:06:09] Total translation time: 1.99259s
+[2024-02-13 09:06:09] [valid] Ep. 10 : Up. 90000 : chrf : 71.4647 : stalled 1 times (last best: 71.5387)
+[2024-02-13 09:06:09] Translating validation set...
+[2024-02-13 09:06:10] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 09:06:10] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib sejbien bikri tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 09:06:10] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 09:06:10] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 09:06:10] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 09:06:10] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 09:06:10] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 09:06:10] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 09:06:10] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 09:06:10] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-finali preliminari.
+[2024-02-13 09:06:10] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 09:06:10] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 09:06:10] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 09:06:11] Total translation time: 1.47777s
+[2024-02-13 09:06:11] [valid] Ep. 10 : Up. 90000 : bleu : 40.2026 : stalled 1 times (last best: 40.469)
+[2024-02-13 09:06:11] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 09:06:11] [valid] Ep. 10 : Up. 90000 : ce-mean-words : 0.927671 : new best
+[2024-02-13 09:16:11] Ep. 10 : Up. 91000 : Sen. 10,689,673 : Cost 2.39938021 : Time 609.59s : 165364.22 words/s : gNorm 0.3685
+[2024-02-13 09:26:14] Ep. 10 : Up. 92000 : Sen. 14,426,054 : Cost 2.72126079 : Time 603.65s : 166307.32 words/s : gNorm 0.4188
+[2024-02-13 09:36:21] Ep. 10 : Up. 93000 : Sen. 17,553,413 : Cost 2.41964507 : Time 606.93s : 167858.30 words/s : gNorm 0.2818
+[2024-02-13 09:46:11] Ep. 10 : Up. 94000 : Sen. 20,157,491 : Cost 2.00227618 : Time 589.79s : 175019.97 words/s : gNorm 0.2430
+[2024-02-13 09:56:15] Ep. 10 : Up. 95000 : Sen. 23,140,328 : Cost 2.08918643 : Time 603.67s : 169694.87 words/s : gNorm 0.2539
+[2024-02-13 09:56:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 09:56:16] Saving Adam parameters
+[2024-02-13 09:56:18] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 09:56:21] Translating validation set...
+[2024-02-13 09:56:22] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 09:56:22] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 09:56:22] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 09:56:22] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 09:56:22] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 09:56:22] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 09:56:22] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 09:56:22] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 09:56:22] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 09:56:22] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-finali preliminari.
+[2024-02-13 09:56:22] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 09:56:22] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 09:56:23] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 09:56:23] Total translation time: 2.04332s
+[2024-02-13 09:56:23] [valid] Ep. 10 : Up. 95000 : chrf : 71.509 : stalled 2 times (last best: 71.5387)
+[2024-02-13 09:56:23] Translating validation set...
+[2024-02-13 09:56:24] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 09:56:24] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 09:56:24] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 09:56:24] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 09:56:24] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 09:56:24] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 09:56:24] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 09:56:24] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 09:56:24] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 09:56:24] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-finali preliminari.
+[2024-02-13 09:56:24] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 09:56:24] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 09:56:24] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 09:56:24] Total translation time: 1.56502s
+[2024-02-13 09:56:24] [valid] Ep. 10 : Up. 95000 : bleu : 40.2307 : stalled 2 times (last best: 40.469)
+[2024-02-13 09:56:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 09:56:26] [valid] Ep. 10 : Up. 95000 : ce-mean-words : 0.927071 : new best
+[2024-02-13 10:06:11] Ep. 10 : Up. 96000 : Sen. 26,707,140 : Cost 2.46166587 : Time 596.61s : 168223.24 words/s : gNorm 0.3751
+[2024-02-13 10:15:32] Ep. 10 : Up. 97000 : Sen. 30,738,028 : Cost 2.98525572 : Time 560.45s : 173703.74 words/s : gNorm 0.4348
+[2024-02-13 10:15:53] Seen 30,884,621 samples
+[2024-02-13 10:15:53] Starting data epoch 11 in logical epoch 11
+[2024-02-13 10:27:17] Ep. 11 : Up. 98000 : Sen. 2,417,419 : Cost 2.07167912 : Time 704.89s : 145472.62 words/s : gNorm 0.2319
+[2024-02-13 10:37:28] Ep. 11 : Up. 99000 : Sen. 5,114,254 : Cost 2.02452469 : Time 611.66s : 169006.14 words/s : gNorm 0.2572
+[2024-02-13 10:47:14] Ep. 11 : Up. 100000 : Sen. 8,121,518 : Cost 2.04691243 : Time 585.64s : 174661.01 words/s : gNorm 0.2632
+[2024-02-13 10:47:14] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 10:47:16] Saving Adam parameters
+[2024-02-13 10:47:18] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 10:47:21] Translating validation set...
+[2024-02-13 10:47:24] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 10:47:24] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib sejbien bikri tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 10:47:24] Best translation 2 : Il Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 10:47:24] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 10:47:24] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 10:47:24] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 10:47:24] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 10:47:24] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 10:47:24] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 10:47:24] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-finali preliminari.
+[2024-02-13 10:47:24] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 10:47:24] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 10:47:24] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 10:47:24] Total translation time: 3.01999s
+[2024-02-13 10:47:24] [valid] Ep. 11 : Up. 100000 : chrf : 71.4737 : stalled 3 times (last best: 71.5387)
+[2024-02-13 10:47:24] Translating validation set...
+[2024-02-13 10:47:26] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 10:47:26] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib sejbien bikri tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 10:47:26] Best translation 2 : Il Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 10:47:26] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 10:47:26] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 10:47:26] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 10:47:26] Best translation 10 : Madwar 11:29, il-protesta tela Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi mill Aldwych u up Kingsway lejn Holborn fejn il-Partit Konservattiv kienu azjenda Forum Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 10:47:26] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 10:47:26] Best translation 40 : John Grant, minn WNED Buffalo (Reading Rainbow's home station) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 10:47:26] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-finali preliminari.
+[2024-02-13 10:47:26] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 10:47:26] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 10:47:27] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 10:47:27] Total translation time: 2.32847s
+[2024-02-13 10:47:27] [valid] Ep. 11 : Up. 100000 : bleu : 40.1298 : stalled 3 times (last best: 40.469)
+[2024-02-13 10:47:27] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 10:47:28] [valid] Ep. 11 : Up. 100000 : ce-mean-words : 0.924392 : new best
+[2024-02-13 10:57:15] Ep. 11 : Up. 101000 : Sen. 11,725,974 : Cost 2.53186464 : Time 600.54s : 166001.42 words/s : gNorm 0.3602
+[2024-02-13 11:07:21] Ep. 11 : Up. 102000 : Sen. 15,540,856 : Cost 2.79834366 : Time 606.84s : 166456.09 words/s : gNorm 0.3829
+[2024-02-13 11:17:34] Ep. 11 : Up. 103000 : Sen. 18,385,196 : Cost 2.17724109 : Time 612.22s : 168805.53 words/s : gNorm 0.2217
+[2024-02-13 11:27:38] Ep. 11 : Up. 104000 : Sen. 21,062,359 : Cost 2.01871252 : Time 604.86s : 168761.43 words/s : gNorm 0.2914
+[2024-02-13 11:37:23] Ep. 11 : Up. 105000 : Sen. 24,042,300 : Cost 2.08174086 : Time 584.50s : 174537.34 words/s : gNorm 0.2634
+[2024-02-13 11:37:23] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 11:37:24] Saving Adam parameters
+[2024-02-13 11:37:26] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 11:37:29] Translating validation set...
+[2024-02-13 11:37:30] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 11:37:30] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib sejbien bikri tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 11:37:30] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 11:37:30] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 11:37:30] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 11:37:30] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 11:37:30] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kienu qed iżommu l-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 11:37:30] Best translation 20 : Hsieh impliċita matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 11:37:30] Best translation 40 : John Grant, minn WNED Buffalo (L-istazzjon tad-dar ta' Reading Rainbow) qal: "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 11:37:31] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 11:37:31] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 11:37:31] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 11:37:31] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 11:37:31] Total translation time: 2.08569s
+[2024-02-13 11:37:31] [valid] Ep. 11 : Up. 105000 : chrf : 71.2222 : stalled 4 times (last best: 71.5387)
+[2024-02-13 11:37:31] Translating validation set...
+[2024-02-13 11:37:32] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 11:37:32] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista 'jġib sejbien bikri tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għal mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta 'pajjiżi aktar sinjuri.
+[2024-02-13 11:37:32] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 11:37:32] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 11:37:32] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 11:37:32] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 11:37:32] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kienu qed iżommu l-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 11:37:32] Best translation 20 : Hsieh impliċita matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 11:37:32] Best translation 40 : John Grant, minn WNED Buffalo (L-istazzjon tad-dar ta' Reading Rainbow) qal: "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 11:37:32] Best translation 80 : Maroochydore mbagħad għeleb il-Caolture fil-Finali Preliminari.
+[2024-02-13 11:37:32] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 11:37:32] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 11:37:32] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' tagħlim.
+[2024-02-13 11:37:33] Total translation time: 1.47313s
+[2024-02-13 11:37:33] [valid] Ep. 11 : Up. 105000 : bleu : 39.9192 : stalled 4 times (last best: 40.469)
+[2024-02-13 11:37:33] [valid] Ep. 11 : Up. 105000 : ce-mean-words : 0.924954 : stalled 1 times (last best: 0.924392)
+[2024-02-13 11:47:15] Ep. 11 : Up. 106000 : Sen. 27,832,464 : Cost 2.63219953 : Time 591.57s : 168686.44 words/s : gNorm 0.3842
+[2024-02-13 11:54:10] Seen 30,884,704 samples
+[2024-02-13 11:54:10] Starting data epoch 12 in logical epoch 12
+[2024-02-13 11:58:40] Ep. 12 : Up. 107000 : Sen. 628,193 : Cost 2.82633018 : Time 685.23s : 143475.68 words/s : gNorm 0.2112
+[2024-02-13 12:08:29] Ep. 12 : Up. 108000 : Sen. 3,172,810 : Cost 2.01285791 : Time 588.78s : 174085.82 words/s : gNorm 0.2267
+[2024-02-13 12:18:36] Ep. 12 : Up. 109000 : Sen. 5,959,658 : Cost 2.03157640 : Time 607.54s : 169375.86 words/s : gNorm 0.2619
+[2024-02-13 12:28:37] Ep. 12 : Up. 110000 : Sen. 9,215,390 : Cost 2.19166040 : Time 600.89s : 168981.81 words/s : gNorm 0.3728
+[2024-02-13 12:28:37] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 12:28:38] Saving Adam parameters
+[2024-02-13 12:28:40] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz
+[2024-02-13 12:28:43] Translating validation set...
+[2024-02-13 12:28:44] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 12:28:44] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 12:28:44] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 12:28:44] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 12:28:44] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 12:28:44] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 12:28:44] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kienu qed iżommu l-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 12:28:44] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 12:28:44] Best translation 40 : John Grant, minn WNED Buffalo (L-istazzjon tad-dar ta' Reading Rainbow) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 12:28:44] Best translation 80 : Maroochydore mbagħad għeleb il-Cabolture fil-finali preliminari.
+[2024-02-13 12:28:44] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 12:28:44] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 12:28:45] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' struzzjoni.
+[2024-02-13 12:28:45] Total translation time: 1.93173s
+[2024-02-13 12:28:45] [valid] Ep. 12 : Up. 110000 : chrf : 71.2664 : stalled 5 times (last best: 71.5387)
+[2024-02-13 12:28:45] Translating validation set...
+[2024-02-13 12:28:46] Best translation 0 : Nhar it-Tnejn, ix-xjentisti mill-Iskola tal-Mediċina tal-Università ta 'Stanford ħabbru l-invenzjoni ta' għodda dijanjostika ġdida li tista 'ssortja ċelloli skont it-tip: ċippa żgħira li tista' tiġi stampata li tista 'tiġi manifatturata bl-użu ta' printers inkjet standard għal possibilment madwar ċenteżmu wieħed ta 'l-Istati Uniti kull wieħed.
+[2024-02-13 12:28:46] Best translation 1 : Riċerkaturi ewlenin jgħidu li dan jista' jwassal għal detezzjoni bikrija tal-kanċer, it-tuberkulożi, l-HIV u l-malarja lil pazjenti f'pajjiżi bi dħul baxx, fejn ir-rati ta' sopravivenza għall-mard bħall-kanċer tas-sider jistgħu jkunu nofs dawk ta' pajjiżi aktar sinjuri.
+[2024-02-13 12:28:46] Best translation 2 : Il-Gripen JAS 39C ġġarraf fuq runway f'madwar 9:30 am ħin lokali (0230 UTC) u sploda, u għalaq l-ajruport għal titjiriet kummerċjali.
+[2024-02-13 12:28:46] Best translation 3 : Il-pilota ġie identifikat bħala l-Kap tal-Iskwadra Dilokrit Pattavee.
+[2024-02-13 12:28:46] Best translation 4 : Il-midja lokali tirrapporta li vettura tat-tifi tan-nar tal-ajruport tinqaleb waqt li tkun qed tirrispondi.
+[2024-02-13 12:28:46] Best translation 5 : Vidal ta' 28 sena ngħaqad ma' Barça tliet staġuni ilu, minn Sevilla.
+[2024-02-13 12:28:46] Best translation 10 : Madwar 11:29, il-protesta telgħet Whitehall, fil-passat Trafalgar Pjazza, tul il-linja, li tgħaddi minn Aldwych u 'l fuq Kingsway lejn Holborn fejn il-Partit Konservattiv kienu qed iżommu l-Forum tar-Rebbiegħa tagħhom fil-lukanda Grand Connaught Rooms.
+[2024-02-13 12:28:46] Best translation 20 : Hsieh implikat matul l-elezzjoni li Ma jistgħu jaħarbu mill-pajjiż matul żmien ta 'kriżi.
+[2024-02-13 12:28:46] Best translation 40 : John Grant, minn WNED Buffalo (L-istazzjon tad-dar ta' Reading Rainbow) qal "Il-qari ta' Rainbow għallem lit-tfal għaliex jaqraw,... l-imħabba tal-qari - [l-ispettaklu] ħeġġeġ lit-tfal biex itellgħu ktieb u jaqraw."
+[2024-02-13 12:28:46] Best translation 80 : Maroochydore mbagħad għeleb il-Cabolture fil-finali preliminari.
+[2024-02-13 12:28:46] Best translation 160 : Stewart, Gordon, Kenseth, u Harvick idawru l-aqwa għaxar pożizzjonijiet għall-Kampjonat tas-Sewwieqa b'erba' tiġrijiet jibqgħu fl-istaġun.
+[2024-02-13 12:28:46] Best translation 320 : Minn dak iż-żmien, id-daqs ekonomiku taċ-Ċina kiber b'90 darba.
+[2024-02-13 12:28:46] Best translation 640 : Dan jippermetti lill-istudenti l-abbiltà li jaħdmu bil-pass tagħhom stess u jikkontrollaw il-pass tal-informazzjoni ta' struzzjoni.
+[2024-02-13 12:28:46] Total translation time: 1.51888s
+[2024-02-13 12:28:46] [valid] Ep. 12 : Up. 110000 : bleu : 39.7086 : stalled 5 times (last best: 40.469)
+[2024-02-13 12:28:47] [valid] Ep. 12 : Up. 110000 : ce-mean-words : 0.925307 : stalled 2 times (last best: 0.924392)
+[2024-02-13 12:28:47] Training finished
+[2024-02-13 12:28:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz
+[2024-02-13 12:28:48] Saving Adam parameters
+[2024-02-13 12:28:50] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-mt/simple/v2/s.train_model.en-mt/output/model.npz.optimizer.npz

@@ -1,0 +1,1023 @@
+[2024-02-12 17:58:57] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-12 17:58:57] [marian] Running on nid007863 as process 47696 with command line:
+[2024-02-12 17:58:57] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.generate_vocab.en-sw/output/model.en-sw.spm /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.generate_vocab.en-sw/output/model.en-sw.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/tmp.d/6031079 --train-sets /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/tmp.d/6031079/train.en.gz /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/tmp.d/6031079/train.sw.gz --valid-sets /scratch/project_465000574/data/en-sw/valid/flores200.dev.en-sw.en /scratch/project_465000574/data/en-sw/valid/flores200.dev.en-sw.sw --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-12 17:58:57] [config] after: 0e
+[2024-02-12 17:58:57] [config] after-batches: 0
+[2024-02-12 17:58:57] [config] after-epochs: 0
+[2024-02-12 17:58:57] [config] all-caps-every: 0
+[2024-02-12 17:58:57] [config] allow-unk: false
+[2024-02-12 17:58:57] [config] authors: false
+[2024-02-12 17:58:57] [config] beam-size: 4
+[2024-02-12 17:58:57] [config] bert-class-symbol: "[CLS]"
+[2024-02-12 17:58:57] [config] bert-mask-symbol: "[MASK]"
+[2024-02-12 17:58:57] [config] bert-masking-fraction: 0.15
+[2024-02-12 17:58:57] [config] bert-sep-symbol: "[SEP]"
+[2024-02-12 17:58:57] [config] bert-train-type-embeddings: true
+[2024-02-12 17:58:57] [config] bert-type-vocab-size: 2
+[2024-02-12 17:58:57] [config] build-info: ""
+[2024-02-12 17:58:57] [config] char-conv-filters-num:
+[2024-02-12 17:58:57] [config]   - 200
+[2024-02-12 17:58:57] [config]   - 200
+[2024-02-12 17:58:57] [config]   - 250
+[2024-02-12 17:58:57] [config]   - 250
+[2024-02-12 17:58:57] [config]   - 300
+[2024-02-12 17:58:57] [config]   - 300
+[2024-02-12 17:58:57] [config]   - 300
+[2024-02-12 17:58:57] [config]   - 300
+[2024-02-12 17:58:57] [config] char-conv-filters-widths:
+[2024-02-12 17:58:57] [config]   - 1
+[2024-02-12 17:58:57] [config]   - 2
+[2024-02-12 17:58:57] [config]   - 3
+[2024-02-12 17:58:57] [config]   - 4
+[2024-02-12 17:58:57] [config]   - 5
+[2024-02-12 17:58:57] [config]   - 6
+[2024-02-12 17:58:57] [config]   - 7
+[2024-02-12 17:58:57] [config]   - 8
+[2024-02-12 17:58:57] [config] char-highway: 4
+[2024-02-12 17:58:57] [config] char-stride: 5
+[2024-02-12 17:58:57] [config] check-gradient-nan: true
+[2024-02-12 17:58:57] [config] check-nan: false
+[2024-02-12 17:58:57] [config] cite: false
+[2024-02-12 17:58:57] [config] clip-norm: 0
+[2024-02-12 17:58:57] [config] cost-scaling:
+[2024-02-12 17:58:57] [config]   []
+[2024-02-12 17:58:57] [config] cost-type: ce-mean-words
+[2024-02-12 17:58:57] [config] cpu-threads: 0
+[2024-02-12 17:58:57] [config] data-threads: 8
+[2024-02-12 17:58:57] [config] data-weighting: ""
+[2024-02-12 17:58:57] [config] data-weighting-type: sentence
+[2024-02-12 17:58:57] [config] dec-cell: gru
+[2024-02-12 17:58:57] [config] dec-cell-base-depth: 2
+[2024-02-12 17:58:57] [config] dec-cell-high-depth: 1
+[2024-02-12 17:58:57] [config] dec-depth: 6
+[2024-02-12 17:58:57] [config] devices:
+[2024-02-12 17:58:57] [config]   - 0
+[2024-02-12 17:58:57] [config]   - 1
+[2024-02-12 17:58:57] [config]   - 2
+[2024-02-12 17:58:57] [config]   - 3
+[2024-02-12 17:58:57] [config]   - 4
+[2024-02-12 17:58:57] [config]   - 5
+[2024-02-12 17:58:57] [config]   - 6
+[2024-02-12 17:58:57] [config]   - 7
+[2024-02-12 17:58:57] [config] dim-emb: 512
+[2024-02-12 17:58:57] [config] dim-rnn: 1024
+[2024-02-12 17:58:57] [config] dim-vocabs:
+[2024-02-12 17:58:57] [config]   - 64000
+[2024-02-12 17:58:57] [config] disp-first: 0
+[2024-02-12 17:58:57] [config] disp-freq: 1000u
+[2024-02-12 17:58:57] [config] disp-label-counts: true
+[2024-02-12 17:58:57] [config] dropout-rnn: 0
+[2024-02-12 17:58:57] [config] dropout-src: 0
+[2024-02-12 17:58:57] [config] dropout-trg: 0
+[2024-02-12 17:58:57] [config] dump-config: ""
+[2024-02-12 17:58:57] [config] dynamic-gradient-scaling:
+[2024-02-12 17:58:57] [config]   []
+[2024-02-12 17:58:57] [config] early-stopping: 5
+[2024-02-12 17:58:57] [config] early-stopping-on: first
+[2024-02-12 17:58:57] [config] embedding-fix-src: false
+[2024-02-12 17:58:57] [config] embedding-fix-trg: false
+[2024-02-12 17:58:57] [config] embedding-normalization: false
+[2024-02-12 17:58:57] [config] embedding-vectors:
+[2024-02-12 17:58:57] [config]   []
+[2024-02-12 17:58:57] [config] enc-cell: gru
+[2024-02-12 17:58:57] [config] enc-cell-depth: 1
+[2024-02-12 17:58:57] [config] enc-depth: 6
+[2024-02-12 17:58:57] [config] enc-type: bidirectional
+[2024-02-12 17:58:57] [config] english-title-case-every: 0
+[2024-02-12 17:58:57] [config] exponential-smoothing: 0.0001
+[2024-02-12 17:58:57] [config] factor-weight: 1
+[2024-02-12 17:58:57] [config] factors-combine: sum
+[2024-02-12 17:58:57] [config] factors-dim-emb: 0
+[2024-02-12 17:58:57] [config] gradient-checkpointing: false
+[2024-02-12 17:58:57] [config] gradient-norm-average-window: 100
+[2024-02-12 17:58:57] [config] guided-alignment: none
+[2024-02-12 17:58:57] [config] guided-alignment-cost: ce
+[2024-02-12 17:58:57] [config] guided-alignment-weight: 0.1
+[2024-02-12 17:58:57] [config] ignore-model-config: false
+[2024-02-12 17:58:57] [config] input-types:
+[2024-02-12 17:58:57] [config]   []
+[2024-02-12 17:58:57] [config] interpolate-env-vars: false
+[2024-02-12 17:58:57] [config] keep-best: true
+[2024-02-12 17:58:57] [config] label-smoothing: 0.1
+[2024-02-12 17:58:57] [config] layer-normalization: false
+[2024-02-12 17:58:57] [config] learn-rate: 0.0003
+[2024-02-12 17:58:57] [config] lemma-dependency: ""
+[2024-02-12 17:58:57] [config] lemma-dim-emb: 0
+[2024-02-12 17:58:57] [config] log: /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/logs/model.train.log
+[2024-02-12 17:58:57] [config] log-level: info
+[2024-02-12 17:58:57] [config] log-time-zone: ""
+[2024-02-12 17:58:57] [config] logical-epoch:
+[2024-02-12 17:58:57] [config]   - 1e
+[2024-02-12 17:58:57] [config]   - 0
+[2024-02-12 17:58:57] [config] lr-decay: 0
+[2024-02-12 17:58:57] [config] lr-decay-freq: 50000
+[2024-02-12 17:58:57] [config] lr-decay-inv-sqrt:
+[2024-02-12 17:58:57] [config]   - 16000
+[2024-02-12 17:58:57] [config] lr-decay-repeat-warmup: false
+[2024-02-12 17:58:57] [config] lr-decay-reset-optimizer: false
+[2024-02-12 17:58:57] [config] lr-decay-start:
+[2024-02-12 17:58:57] [config]   - 10
+[2024-02-12 17:58:57] [config]   - 1
+[2024-02-12 17:58:57] [config] lr-decay-strategy: epoch+stalled
+[2024-02-12 17:58:57] [config] lr-report: false
+[2024-02-12 17:58:57] [config] lr-warmup: 16000
+[2024-02-12 17:58:57] [config] lr-warmup-at-reload: false
+[2024-02-12 17:58:57] [config] lr-warmup-cycle: false
+[2024-02-12 17:58:57] [config] lr-warmup-start-rate: 0
+[2024-02-12 17:58:57] [config] max-length: 250
+[2024-02-12 17:58:57] [config] max-length-crop: false
+[2024-02-12 17:58:57] [config] max-length-factor: 3
+[2024-02-12 17:58:57] [config] maxi-batch: 1000
+[2024-02-12 17:58:57] [config] maxi-batch-sort: trg
+[2024-02-12 17:58:57] [config] mini-batch: 4096
+[2024-02-12 17:58:57] [config] mini-batch-fit: true
+[2024-02-12 17:58:57] [config] mini-batch-fit-step: 10
+[2024-02-12 17:58:57] [config] mini-batch-round-up: true
+[2024-02-12 17:58:57] [config] mini-batch-track-lr: false
+[2024-02-12 17:58:57] [config] mini-batch-warmup: 0
+[2024-02-12 17:58:57] [config] mini-batch-words: 0
+[2024-02-12 17:58:57] [config] mini-batch-words-ref: 0
+[2024-02-12 17:58:57] [config] model: /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 17:58:57] [config] multi-loss-type: sum
+[2024-02-12 17:58:57] [config] n-best: false
+[2024-02-12 17:58:57] [config] no-nccl: false
+[2024-02-12 17:58:57] [config] no-reload: false
+[2024-02-12 17:58:57] [config] no-restore-corpus: false
+[2024-02-12 17:58:57] [config] normalize: 1
+[2024-02-12 17:58:57] [config] normalize-gradient: false
+[2024-02-12 17:58:57] [config] num-devices: 0
+[2024-02-12 17:58:57] [config] optimizer: adam
+[2024-02-12 17:58:57] [config] optimizer-delay: 2
+[2024-02-12 17:58:57] [config] optimizer-params:
+[2024-02-12 17:58:57] [config]   - 0.9
+[2024-02-12 17:58:57] [config]   - 0.98
+[2024-02-12 17:58:57] [config]   - 1e-09
+[2024-02-12 17:58:57] [config] output-omit-bias: false
+[2024-02-12 17:58:57] [config] overwrite: true
+[2024-02-12 17:58:57] [config] precision:
+[2024-02-12 17:58:57] [config]   - float32
+[2024-02-12 17:58:57] [config]   - float32
+[2024-02-12 17:58:57] [config] pretrained-model: ""
+[2024-02-12 17:58:57] [config] quantize-biases: false
+[2024-02-12 17:58:57] [config] quantize-bits: 0
+[2024-02-12 17:58:57] [config] quantize-log-based: false
+[2024-02-12 17:58:57] [config] quantize-optimization-steps: 0
+[2024-02-12 17:58:57] [config] quiet: false
+[2024-02-12 17:58:57] [config] quiet-translation: false
+[2024-02-12 17:58:57] [config] relative-paths: false
+[2024-02-12 17:58:57] [config] right-left: false
+[2024-02-12 17:58:57] [config] save-freq: 5000u
+[2024-02-12 17:58:57] [config] seed: 42
+[2024-02-12 17:58:57] [config] sentencepiece-alphas:
+[2024-02-12 17:58:57] [config]   - 0.1
+[2024-02-12 17:58:57] [config] sentencepiece-max-lines: 2000000
+[2024-02-12 17:58:57] [config] sentencepiece-options: ""
+[2024-02-12 17:58:57] [config] sharding: global
+[2024-02-12 17:58:57] [config] shuffle: batches
+[2024-02-12 17:58:57] [config] shuffle-in-ram: false
+[2024-02-12 17:58:57] [config] sigterm: save-and-exit
+[2024-02-12 17:58:57] [config] skip: false
+[2024-02-12 17:58:57] [config] sqlite: ""
+[2024-02-12 17:58:57] [config] sqlite-drop: false
+[2024-02-12 17:58:57] [config] sync-freq: 200u
+[2024-02-12 17:58:57] [config] sync-sgd: true
+[2024-02-12 17:58:57] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/tmp.d/6031079
+[2024-02-12 17:58:57] [config] tied-embeddings: false
+[2024-02-12 17:58:57] [config] tied-embeddings-all: true
+[2024-02-12 17:58:57] [config] tied-embeddings-src: false
+[2024-02-12 17:58:57] [config] train-embedder-rank:
+[2024-02-12 17:58:57] [config]   []
+[2024-02-12 17:58:57] [config] train-sets:
+[2024-02-12 17:58:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/tmp.d/6031079/train.en.gz
+[2024-02-12 17:58:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/tmp.d/6031079/train.sw.gz
+[2024-02-12 17:58:57] [config] transformer-aan-activation: swish
+[2024-02-12 17:58:57] [config] transformer-aan-depth: 2
+[2024-02-12 17:58:57] [config] transformer-aan-nogate: false
+[2024-02-12 17:58:57] [config] transformer-decoder-autoreg: self-attention
+[2024-02-12 17:58:57] [config] transformer-decoder-dim-ffn: 0
+[2024-02-12 17:58:57] [config] transformer-decoder-ffn-depth: 0
+[2024-02-12 17:58:57] [config] transformer-depth-scaling: false
+[2024-02-12 17:58:57] [config] transformer-dim-aan: 2048
+[2024-02-12 17:58:57] [config] transformer-dim-ffn: 2048
+[2024-02-12 17:58:57] [config] transformer-dropout: 0.1
+[2024-02-12 17:58:57] [config] transformer-dropout-attention: 0
+[2024-02-12 17:58:57] [config] transformer-dropout-ffn: 0
+[2024-02-12 17:58:57] [config] transformer-ffn-activation: relu
+[2024-02-12 17:58:57] [config] transformer-ffn-depth: 2
+[2024-02-12 17:58:57] [config] transformer-guided-alignment-layer: last
+[2024-02-12 17:58:57] [config] transformer-heads: 8
+[2024-02-12 17:58:57] [config] transformer-no-projection: false
+[2024-02-12 17:58:57] [config] transformer-pool: false
+[2024-02-12 17:58:57] [config] transformer-postprocess: dan
+[2024-02-12 17:58:57] [config] transformer-postprocess-emb: d
+[2024-02-12 17:58:57] [config] transformer-postprocess-top: ""
+[2024-02-12 17:58:57] [config] transformer-preprocess: ""
+[2024-02-12 17:58:57] [config] transformer-rnn-projection: false
+[2024-02-12 17:58:57] [config] transformer-tied-layers:
+[2024-02-12 17:58:57] [config]   []
+[2024-02-12 17:58:57] [config] transformer-train-position-embeddings: false
+[2024-02-12 17:58:57] [config] tsv: false
+[2024-02-12 17:58:57] [config] tsv-fields: 0
+[2024-02-12 17:58:57] [config] type: transformer
+[2024-02-12 17:58:57] [config] ulr: false
+[2024-02-12 17:58:57] [config] ulr-dim-emb: 0
+[2024-02-12 17:58:57] [config] ulr-dropout: 0
+[2024-02-12 17:58:57] [config] ulr-keys-vectors: ""
+[2024-02-12 17:58:57] [config] ulr-query-vectors: ""
+[2024-02-12 17:58:57] [config] ulr-softmax-temperature: 1
+[2024-02-12 17:58:57] [config] ulr-trainable-transformation: false
+[2024-02-12 17:58:57] [config] unlikelihood-loss: false
+[2024-02-12 17:58:57] [config] valid-freq: 5000u
+[2024-02-12 17:58:57] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/logs/model.valid.log
+[2024-02-12 17:58:57] [config] valid-max-length: 1000
+[2024-02-12 17:58:57] [config] valid-metrics:
+[2024-02-12 17:58:57] [config]   - chrf
+[2024-02-12 17:58:57] [config]   - bleu
+[2024-02-12 17:58:57] [config]   - ce-mean-words
+[2024-02-12 17:58:57] [config] valid-mini-batch: 64
+[2024-02-12 17:58:57] [config] valid-reset-stalled: true
+[2024-02-12 17:58:57] [config] valid-script-args:
+[2024-02-12 17:58:57] [config]   []
+[2024-02-12 17:58:57] [config] valid-script-path: ""
+[2024-02-12 17:58:57] [config] valid-sets:
+[2024-02-12 17:58:57] [config]   - /scratch/project_465000574/data/en-sw/valid/flores200.dev.en-sw.en
+[2024-02-12 17:58:57] [config]   - /scratch/project_465000574/data/en-sw/valid/flores200.dev.en-sw.sw
+[2024-02-12 17:58:57] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/logs/model.valid.out
+[2024-02-12 17:58:57] [config] vocabs:
+[2024-02-12 17:58:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.generate_vocab.en-sw/output/model.en-sw.spm
+[2024-02-12 17:58:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.generate_vocab.en-sw/output/model.en-sw.spm
+[2024-02-12 17:58:57] [config] word-penalty: 0
+[2024-02-12 17:58:57] [config] word-scores: false
+[2024-02-12 17:58:57] [config] workspace: 20000
+[2024-02-12 17:58:57] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-12 17:58:57] Using synchronous SGD
+[2024-02-12 17:58:57] [comm] Compiled without MPI support. Running as a single process on nid007863
+[2024-02-12 17:58:57] Synced seed 42
+[2024-02-12 17:58:57] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.generate_vocab.en-sw/output/model.en-sw.spm
+[2024-02-12 17:58:57] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-12 17:58:57] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.generate_vocab.en-sw/output/model.en-sw.spm
+[2024-02-12 17:58:57] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-12 17:58:57] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-12 17:58:57] Checking gradient for NaN
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-12 17:58:59] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-12 17:58:59] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-12 17:59:01] [comm] Using global sharding
+[2024-02-12 17:59:01] [comm] NCCLCommunicators constructed successfully
+[2024-02-12 17:59:01] [training] Using 8 GPUs
+[2024-02-12 17:59:02] [logits] Applying loss function for 1 factor(s)
+[2024-02-12 17:59:02] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 17:59:06] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 18:00:02] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-12 18:00:02] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-12 18:00:02] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-12 18:00:02] [comm] Using global sharding
+[2024-02-12 18:00:03] [comm] NCCLCommunicators constructed successfully
+[2024-02-12 18:00:03] [training] Using 8 GPUs
+[2024-02-12 18:00:03] Training started
+[2024-02-12 18:00:33] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu1
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu5
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu7
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu6
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu2
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu4
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu3
+[2024-02-12 18:00:33] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 18:00:57] [memory] Reserving 293 MB, device gpu1
+[2024-02-12 18:00:57] [memory] Reserving 293 MB, device gpu5
+[2024-02-12 18:00:57] [memory] Reserving 293 MB, device gpu4
+[2024-02-12 18:00:58] [memory] Reserving 293 MB, device gpu7
+[2024-02-12 18:00:58] [memory] Reserving 293 MB, device gpu6
+[2024-02-12 18:00:58] [memory] Reserving 293 MB, device gpu2
+[2024-02-12 18:00:58] [memory] Reserving 293 MB, device gpu3
+[2024-02-12 18:00:58] Allocating memory for general optimizer shards
+[2024-02-12 18:00:58] Allocating memory for general optimizer shards
+[2024-02-12 18:00:58] Parameter type float32, optimization type float32, casting types false
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu3
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu4
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu7
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu6
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu5
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu2
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu1
+[2024-02-12 18:00:58] [memory] Reserving 36 MB, device gpu0
+[2024-02-12 18:00:58] Allocating memory for Adam-specific shards
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu5
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu1
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu7
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu3
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu2
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu6
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu4
+[2024-02-12 18:00:58] [memory] Reserving 73 MB, device gpu0
+[2024-02-12 18:05:31] Seen 2,632,783 samples
+[2024-02-12 18:05:31] Starting data epoch 2 in logical epoch 2
+[2024-02-12 18:10:34] Seen 2,632,780 samples
+[2024-02-12 18:10:34] Starting data epoch 3 in logical epoch 3
+[2024-02-12 18:11:11] Ep. 3 : Up. 1000 : Sen. 65,964 : Cost 8.05019379 : Time 668.68s : 138552.35 words/s : gNorm 3.4327
+[2024-02-12 18:15:37] Seen 2,632,781 samples
+[2024-02-12 18:15:37] Starting data epoch 4 in logical epoch 4
+[2024-02-12 18:20:41] Seen 2,632,767 samples
+[2024-02-12 18:20:41] Starting data epoch 5 in logical epoch 5
+[2024-02-12 18:21:25] Ep. 5 : Up. 2000 : Sen. 124,374 : Cost 5.69935369 : Time 614.42s : 150734.44 words/s : gNorm 1.9786
+[2024-02-12 18:25:45] Seen 2,632,788 samples
+[2024-02-12 18:25:45] Starting data epoch 6 in logical epoch 6
+[2024-02-12 18:30:48] Seen 2,632,776 samples
+[2024-02-12 18:30:48] Starting data epoch 7 in logical epoch 7
+[2024-02-12 18:31:42] Ep. 7 : Up. 3000 : Sen. 230,164 : Cost 5.03415155 : Time 616.72s : 151042.53 words/s : gNorm 1.6333
+[2024-02-12 18:35:52] Seen 2,632,797 samples
+[2024-02-12 18:35:52] Starting data epoch 8 in logical epoch 8
+[2024-02-12 18:40:56] Seen 2,632,773 samples
+[2024-02-12 18:40:56] Starting data epoch 9 in logical epoch 9
+[2024-02-12 18:41:56] Ep. 9 : Up. 4000 : Sen. 299,248 : Cost 4.64389229 : Time 613.90s : 150744.01 words/s : gNorm 1.4270
+[2024-02-12 18:45:59] Seen 2,632,776 samples
+[2024-02-12 18:45:59] Starting data epoch 10 in logical epoch 10
+[2024-02-12 18:51:02] Seen 2,632,775 samples
+[2024-02-12 18:51:02] Starting data epoch 11 in logical epoch 11
+[2024-02-12 18:52:09] Ep. 11 : Up. 5000 : Sen. 347,790 : Cost 4.37282038 : Time 613.20s : 151295.60 words/s : gNorm 1.1545
+[2024-02-12 18:52:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 18:52:11] Saving Adam parameters
+[2024-02-12 18:52:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-12 18:52:16] Translating validation set...
+[2024-02-12 18:52:17] [valid] First sentence's tokens as scored:
+[2024-02-12 18:52:17] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-12 18:52:17] [valid]   Hyp: M a a n a y a j i n a l a k w a n z a , a s i l i , u t a n g a m a n o w a j i n a n a j i n a l a k e . H u d u m a z o t e z a m t a n d a o n i .
+[2024-02-12 18:52:17] [valid]   Ref: J i n a l a k e b a d o h a l i j u l i k a n i k w a m a m l a k a , i n g a w a w a n a j u a y e y e n i m e m b a w a k i k u n d i c h a k i k a b i l a c h a U i g h u r .
+[2024-02-12 18:52:19] Best translation 0 : Kwa mfano, mfano, ambayo inaweza kutumika kwa ajili ya matumizi ya matumizi ya mfumo wa mfumo wa mfumo wa bidhaa.
+[2024-02-12 18:52:19] Best translation 1 : Hata hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS.
+[2024-02-12 18:52:19] Best translation 2 : Kwa hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS.
+[2024-02-12 18:52:19] Best translation 3 : Ajiri Wafanyakazi Huru Wakuu wa Amazon.
+[2024-02-12 18:52:19] Best translation 4 : Maelezo ya bei nafuu.co.co.com
+[2024-02-12 18:52:19] Best translation 5 : Inapatikana nadra vitabu, vitabu kutumika na mkono wa pili vitabu vya kichwa "La-La-La-La-La-La-La-e-La-La-La-e-La-La-La-La.
+[2024-02-12 18:52:19] Best translation 10 : Hata hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS, maabara yataonyeshwa kwa ajili ya ILS.
+[2024-02-12 18:52:19] Best translation 20 : Hii ndio sababu ya watu wa kwanza wa Mataifa.
+[2024-02-12 18:52:19] Best translation 40 : Inapatikana nadra vitabu, vitabu kutumika na mkono wa pili vitabu vya kichwa "A's (Paperback)" kutoka Michael zimeorodheshwa kabisa.
+[2024-02-12 18:52:19] Best translation 80 : Kamilisha mipango yako katika lugha ya Kiingereza.
+[2024-02-12 18:52:19] Best translation 160 : , katika lugha ya Kiingereza, University of Wisconsin Press, hardcover, Kutumika
+[2024-02-12 18:52:19] Best translation 320 : Hata hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS.
+[2024-02-12 18:52:19] Best translation 640 : Ni muhimu kwa ajili ya kufanya kazi na mahitaji ya biashara ya biashara.
+[2024-02-12 18:52:19] Total translation time: 2.36145s
+[2024-02-12 18:52:19] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-chrf.npz
+[2024-02-12 18:52:20] [valid] Ep. 11 : Up. 5000 : chrf : 15.493 : new best
+[2024-02-12 18:52:20] Translating validation set...
+[2024-02-12 18:52:22] Best translation 0 : Kwa mfano, mfano, ambayo inaweza kutumika kwa ajili ya matumizi ya matumizi ya mfumo wa mfumo wa mfumo wa bidhaa.
+[2024-02-12 18:52:22] Best translation 1 : Hata hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS.
+[2024-02-12 18:52:22] Best translation 2 : Kwa hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS.
+[2024-02-12 18:52:22] Best translation 3 : Ajiri Wafanyakazi Huru Wakuu wa Amazon.
+[2024-02-12 18:52:22] Best translation 4 : Maelezo ya bei nafuu.co.co.com
+[2024-02-12 18:52:22] Best translation 5 : Inapatikana nadra vitabu, vitabu kutumika na mkono wa pili vitabu vya kichwa "La-La-La-La-La-La-La-e-La-La-La-e-La-La-La-La.
+[2024-02-12 18:52:22] Best translation 10 : Hata hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS, maabara yataonyeshwa kwa ajili ya ILS.
+[2024-02-12 18:52:22] Best translation 20 : Hii ndio sababu ya watu wa kwanza wa Mataifa.
+[2024-02-12 18:52:22] Best translation 40 : Inapatikana nadra vitabu, vitabu kutumika na mkono wa pili vitabu vya kichwa "A's (Paperback)" kutoka Michael zimeorodheshwa kabisa.
+[2024-02-12 18:52:22] Best translation 80 : Kamilisha mipango yako katika lugha ya Kiingereza.
+[2024-02-12 18:52:22] Best translation 160 : , katika lugha ya Kiingereza, University of Wisconsin Press, hardcover, Kutumika
+[2024-02-12 18:52:22] Best translation 320 : Hata hivyo, wakati utajumuisha maabara katika ILS na kubadilisha mpangizo wa lugha wa ILS.
+[2024-02-12 18:52:22] Best translation 640 : Ni muhimu kwa ajili ya kufanya kazi na mahitaji ya biashara ya biashara.
+[2024-02-12 18:52:22] Total translation time: 2.31389s
+[2024-02-12 18:52:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-bleu.npz
+[2024-02-12 18:52:24] [valid] Ep. 11 : Up. 5000 : bleu : 0.357142 : new best
+[2024-02-12 18:52:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 18:52:25] [valid] Ep. 11 : Up. 5000 : ce-mean-words : 5.92242 : new best
+[2024-02-12 18:56:22] Seen 2,632,797 samples
+[2024-02-12 18:56:22] Starting data epoch 12 in logical epoch 12
+[2024-02-12 19:01:26] Seen 2,632,808 samples
+[2024-02-12 19:01:26] Starting data epoch 13 in logical epoch 13
+[2024-02-12 19:02:39] Ep. 13 : Up. 6000 : Sen. 457,442 : Cost 4.14916468 : Time 630.03s : 146890.96 words/s : gNorm 1.1426
+[2024-02-12 19:06:30] Seen 2,632,807 samples
+[2024-02-12 19:06:30] Starting data epoch 14 in logical epoch 14
+[2024-02-12 19:11:33] Seen 2,632,789 samples
+[2024-02-12 19:11:33] Starting data epoch 15 in logical epoch 15
+[2024-02-12 19:12:53] Ep. 15 : Up. 7000 : Sen. 480,650 : Cost 3.98450136 : Time 614.06s : 150602.42 words/s : gNorm 1.0415
+[2024-02-12 19:16:36] Seen 2,632,769 samples
+[2024-02-12 19:16:36] Starting data epoch 16 in logical epoch 16
+[2024-02-12 19:21:39] Seen 2,632,794 samples
+[2024-02-12 19:21:39] Starting data epoch 17 in logical epoch 17
+[2024-02-12 19:23:07] Ep. 17 : Up. 8000 : Sen. 579,714 : Cost 3.78034425 : Time 613.70s : 151527.48 words/s : gNorm 1.0681
+[2024-02-12 19:26:42] Seen 2,632,771 samples
+[2024-02-12 19:26:42] Starting data epoch 18 in logical epoch 18
+[2024-02-12 19:31:44] Seen 2,632,798 samples
+[2024-02-12 19:31:44] Starting data epoch 19 in logical epoch 19
+[2024-02-12 19:33:20] Ep. 19 : Up. 9000 : Sen. 620,618 : Cost 3.56466961 : Time 613.49s : 151545.95 words/s : gNorm 1.0060
+[2024-02-12 19:36:46] Seen 2,632,801 samples
+[2024-02-12 19:36:46] Starting data epoch 20 in logical epoch 20
+[2024-02-12 19:41:48] Seen 2,632,797 samples
+[2024-02-12 19:41:48] Starting data epoch 21 in logical epoch 21
+[2024-02-12 19:43:32] Ep. 21 : Up. 10000 : Sen. 734,098 : Cost 3.28465366 : Time 611.70s : 151607.12 words/s : gNorm 0.9906
+[2024-02-12 19:43:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 19:43:34] Saving Adam parameters
+[2024-02-12 19:43:37] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-12 19:43:40] Translating validation set...
+[2024-02-12 19:43:42] Best translation 0 : Mnamo Jumatatu, kutoka Chuo Kikuu cha Chuo Kikuu cha Stanford cha Teknolojia cha Chuo cha Teknolojia cha Chuo cha Teknolojia cha Teknolojia cha Taifa cha Teknolojia cha Kimataifa cha Chuo Kikuu cha Teknolojia cha Teknolojia cha Kimataifa cha Teknolojia cha Teknolojia cha Stanford cha Stanford cha Stanford kinaashiria kwamba inaweza kuwa na uwezo wa kutumia.
+[2024-02-12 19:43:42] Best translation 1 : Mashirika haya yanaweza kusababisha ugonjwa wa ugonjwa wa figo, ugonjwa wa figo, ugonjwa wa figo wa figo, na ugonjwa wa figo wa figo unasababishwa na ugonjwa wa figo kwa miaka mitano.
+[2024-02-12 19:43:42] Best translation 2 : J3G3 A3C A3C A3C A2CC A2C A2CC A2CC A2C A0 A0CCCCC A0CCCCCCCCCCCCV ya kuendesha gari wakati wa kuendesha gari na bei ya juu ya chini ya gari.
+[2024-02-12 19:43:42] Best translation 3 : Kamati ya Umoja wa Mataifa ya Umoja wa Mataifa ya Haki za Binadamu.
+[2024-02-12 19:43:42] Best translation 4 : Ripoti ya vyombo vya habari vya habari vya ndege wakati wa jioni.
+[2024-02-12 19:43:42] Best translation 5 : 28-28-Wala-la-alikuwa na umri wa miaka mitatu, kutoka kaskazini.
+[2024-02-12 19:43:42] Best translation 10 : Mnamo Septemba 29, 2022, Baraza la Umoja wa Mataifa la Umoja wa Mataifa la kuhudumia watoto waliounganishwa mitaani na watoto waliounganishwa mitaani.
+[2024-02-12 19:43:42] Best translation 20 : Wakati huo huo, wakati huo huo huo huo, wakati wa kipindi cha muda wa wakati wa kipindi cha muda.
+[2024-02-12 19:43:42] Best translation 40 : John John, kutoka Dunia ya Dunia ya Dunia (Kujifunza jinsi ya kusoma kusoma kusoma, kusoma kusoma kusoma na kusoma kusoma kusoma kwa kusoma) kusoma kusoma kusoma kusoma kuhusu kusoma kusoma kusoma kusoma na kusoma kwa kusoma kusoma kusoma kusoma.
+[2024-02-12 19:43:42] Best translation 80 : Baada ya uchaguzi wa urais wa UDA.
+[2024-02-12 19:43:42] Best translation 160 : Gordon, Gordon, and Thomas, na juu ya kona ya juu ya ardhi kwa ajili ya vita dhidi ya vita dhidi ya vita.
+[2024-02-12 19:43:42] Best translation 320 : Kwa hiyo, uchumi wa China ni 90% kwa siku 90.
+[2024-02-12 19:43:42] Best translation 640 : Ni inaruhusu uwezo wa kufanya kazi zao na uwezo wa kupata maelezo ya kina.
+[2024-02-12 19:43:42] Total translation time: 2.36137s
+[2024-02-12 19:43:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-chrf.npz
+[2024-02-12 19:43:43] [valid] Ep. 21 : Up. 10000 : chrf : 24.6602 : new best
+[2024-02-12 19:43:43] Translating validation set...
+[2024-02-12 19:43:46] Best translation 0 : Mnamo Jumatatu, kutoka Chuo Kikuu cha Chuo Kikuu cha Stanford cha Teknolojia cha Chuo cha Teknolojia cha Chuo cha Teknolojia cha Teknolojia cha Taifa cha Teknolojia cha Kimataifa cha Chuo Kikuu cha Teknolojia cha Teknolojia cha Kimataifa cha Teknolojia cha Teknolojia cha Stanford cha Stanford cha Stanford kinaashiria kwamba inaweza kuwa na uwezo wa kutumia.
+[2024-02-12 19:43:46] Best translation 1 : Mashirika haya yanaweza kusababisha ugonjwa wa ugonjwa wa figo, ugonjwa wa figo, ugonjwa wa figo wa figo, na ugonjwa wa figo wa figo unasababishwa na ugonjwa wa figo kwa miaka mitano.
+[2024-02-12 19:43:46] Best translation 2 : J3G3 A3C A3C A3C A2CC A2C A2CC A2CC A2C A0 A0CCCCC A0CCCCCCCCCCCCV ya kuendesha gari wakati wa kuendesha gari na bei ya juu ya chini ya gari.
+[2024-02-12 19:43:46] Best translation 3 : Kamati ya Umoja wa Mataifa ya Umoja wa Mataifa ya Haki za Binadamu.
+[2024-02-12 19:43:46] Best translation 4 : Ripoti ya vyombo vya habari vya habari vya ndege wakati wa jioni.
+[2024-02-12 19:43:46] Best translation 5 : 28-28-Wala-la-alikuwa na umri wa miaka mitatu, kutoka kaskazini.
+[2024-02-12 19:43:46] Best translation 10 : Mnamo Septemba 29, 2022, Baraza la Umoja wa Mataifa la Umoja wa Mataifa la kuhudumia watoto waliounganishwa mitaani na watoto waliounganishwa mitaani.
+[2024-02-12 19:43:46] Best translation 20 : Wakati huo huo, wakati huo huo huo huo, wakati wa kipindi cha muda wa wakati wa kipindi cha muda.
+[2024-02-12 19:43:46] Best translation 40 : John John, kutoka Dunia ya Dunia ya Dunia (Kujifunza jinsi ya kusoma kusoma kusoma, kusoma kusoma kusoma na kusoma kusoma kusoma kwa kusoma) kusoma kusoma kusoma kusoma kuhusu kusoma kusoma kusoma kusoma na kusoma kwa kusoma kusoma kusoma kusoma.
+[2024-02-12 19:43:46] Best translation 80 : Baada ya uchaguzi wa urais wa UDA.
+[2024-02-12 19:43:46] Best translation 160 : Gordon, Gordon, and Thomas, na juu ya kona ya juu ya ardhi kwa ajili ya vita dhidi ya vita dhidi ya vita.
+[2024-02-12 19:43:46] Best translation 320 : Kwa hiyo, uchumi wa China ni 90% kwa siku 90.
+[2024-02-12 19:43:46] Best translation 640 : Ni inaruhusu uwezo wa kufanya kazi zao na uwezo wa kupata maelezo ya kina.
+[2024-02-12 19:43:46] Total translation time: 2.30366s
+[2024-02-12 19:43:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-bleu.npz
+[2024-02-12 19:43:47] [valid] Ep. 21 : Up. 10000 : bleu : 4.08095 : new best
+[2024-02-12 19:43:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 19:43:49] [valid] Ep. 21 : Up. 10000 : ce-mean-words : 4.50443 : new best
+[2024-02-12 19:47:06] Seen 2,632,794 samples
+[2024-02-12 19:47:06] Starting data epoch 22 in logical epoch 22
+[2024-02-12 19:52:09] Seen 2,632,778 samples
+[2024-02-12 19:52:09] Starting data epoch 23 in logical epoch 23
+[2024-02-12 19:54:00] Ep. 23 : Up. 11000 : Sen. 786,224 : Cost 3.00475264 : Time 627.54s : 147555.41 words/s : gNorm 0.8581
+[2024-02-12 19:57:10] Seen 2,632,780 samples
+[2024-02-12 19:57:10] Starting data epoch 24 in logical epoch 24
+[2024-02-12 20:02:13] Seen 2,632,790 samples
+[2024-02-12 20:02:13] Starting data epoch 25 in logical epoch 25
+[2024-02-12 20:04:12] Ep. 25 : Up. 12000 : Sen. 858,418 : Cost 2.73300481 : Time 612.77s : 151969.91 words/s : gNorm 0.6957
+[2024-02-12 20:07:15] Seen 2,632,790 samples
+[2024-02-12 20:07:15] Starting data epoch 26 in logical epoch 26
+[2024-02-12 20:12:18] Seen 2,632,798 samples
+[2024-02-12 20:12:18] Starting data epoch 27 in logical epoch 27
+[2024-02-12 20:14:24] Ep. 27 : Up. 13000 : Sen. 908,107 : Cost 2.54832315 : Time 611.56s : 150867.69 words/s : gNorm 0.5565
+[2024-02-12 20:17:21] Seen 2,632,783 samples
+[2024-02-12 20:17:21] Starting data epoch 28 in logical epoch 28
+[2024-02-12 20:22:25] Seen 2,632,782 samples
+[2024-02-12 20:22:25] Starting data epoch 29 in logical epoch 29
+[2024-02-12 20:24:39] Ep. 29 : Up. 14000 : Sen. 970,148 : Cost 2.41544652 : Time 615.14s : 150903.90 words/s : gNorm 0.5418
+[2024-02-12 20:27:29] Seen 2,632,778 samples
+[2024-02-12 20:27:29] Starting data epoch 30 in logical epoch 30
+[2024-02-12 20:32:33] Seen 2,632,792 samples
+[2024-02-12 20:32:33] Starting data epoch 31 in logical epoch 31
+[2024-02-12 20:34:57] Ep. 31 : Up. 15000 : Sen. 1,086,798 : Cost 2.31087208 : Time 618.01s : 150733.15 words/s : gNorm 0.4243
+[2024-02-12 20:34:57] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 20:34:59] Saving Adam parameters
+[2024-02-12 20:35:02] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-12 20:35:05] Translating validation set...
+[2024-02-12 20:35:06] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford kilitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ambayo inaweza kutengenezwa kwa kutumia printa za inkjet kwa uwezekano wa takriban asilimia moja ya Marekani.
+[2024-02-12 20:35:06] Best translation 1 : Viongozi wa kuongoza wanasema hii inaweza kuleta uchunguzi wa mapema wa saratani, virusi vya HIV na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 20:35:06] Best translation 2 : JAS 39C Gripen alinaswa kwenye njia karibu 9:30 am ndani ya muda (230 UTC) na kulipuka, kufunga uwanja wa ndege wa kibiashara.
+[2024-02-12 20:35:06] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Diokrit Patvee.
+[2024-02-12 20:35:06] Best translation 4 : Vyombo vya habari vya ndani vya uwanja wa ndege vilifungwa kwa muda wa kujibu.
+[2024-02-12 20:35:06] Best translation 5 : Vita vya umri wa miaka 28 vilikuwa vimejiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 20:35:06] Best translation 10 : Zaidi ya 11:29, maandamano yalisonga Whitehall, baada ya Trafalgar Square, pamoja na Strand, kupita kwa Aldwych na Kingsway kuelekea Holborn ambapo chama cha Chama kilishikilia Forum yao katika hoteli ya Grand Conaughty.
+[2024-02-12 20:35:06] Best translation 20 : Alionyesha wakati wa uchaguzi kwamba Muhammad anaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 20:35:06] Best translation 40 : John Grant, kutoka WEND Buffalo (Reading nyumbani) alisema "Reading Rainbow inafundisha watoto kwa nini kusoma,... upendo wa kusoma,... [show] wa watoto wachanga waliotia moyo kuchukua kitabu na kusoma."
+[2024-02-12 20:35:06] Best translation 80 : Maroochydore kisha kushindwa Cabot katika awali Mwisho.
+[2024-02-12 20:35:06] Best translation 160 : Stewart, Gordon, Keneth, na Harvi kuzunguka nafasi ya juu kwa ajili ya michuano ya madereva na jamii nne iliyobaki katika msimu.
+[2024-02-12 20:35:06] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umekua na mara 90.
+[2024-02-12 20:35:07] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 20:35:07] Total translation time: 1.95712s
+[2024-02-12 20:35:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-chrf.npz
+[2024-02-12 20:35:08] [valid] Ep. 31 : Up. 15000 : chrf : 53.4781 : new best
+[2024-02-12 20:35:08] Translating validation set...
+[2024-02-12 20:35:09] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford kilitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ambayo inaweza kutengenezwa kwa kutumia printa za inkjet kwa uwezekano wa takriban asilimia moja ya Marekani.
+[2024-02-12 20:35:09] Best translation 1 : Viongozi wa kuongoza wanasema hii inaweza kuleta uchunguzi wa mapema wa saratani, virusi vya HIV na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 20:35:09] Best translation 2 : JAS 39C Gripen alinaswa kwenye njia karibu 9:30 am ndani ya muda (230 UTC) na kulipuka, kufunga uwanja wa ndege wa kibiashara.
+[2024-02-12 20:35:09] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Diokrit Patvee.
+[2024-02-12 20:35:09] Best translation 4 : Vyombo vya habari vya ndani vya uwanja wa ndege vilifungwa kwa muda wa kujibu.
+[2024-02-12 20:35:09] Best translation 5 : Vita vya umri wa miaka 28 vilikuwa vimejiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 20:35:09] Best translation 10 : Zaidi ya 11:29, maandamano yalisonga Whitehall, baada ya Trafalgar Square, pamoja na Strand, kupita kwa Aldwych na Kingsway kuelekea Holborn ambapo chama cha Chama kilishikilia Forum yao katika hoteli ya Grand Conaughty.
+[2024-02-12 20:35:09] Best translation 20 : Alionyesha wakati wa uchaguzi kwamba Muhammad anaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 20:35:09] Best translation 40 : John Grant, kutoka WEND Buffalo (Reading nyumbani) alisema "Reading Rainbow inafundisha watoto kwa nini kusoma,... upendo wa kusoma,... [show] wa watoto wachanga waliotia moyo kuchukua kitabu na kusoma."
+[2024-02-12 20:35:09] Best translation 80 : Maroochydore kisha kushindwa Cabot katika awali Mwisho.
+[2024-02-12 20:35:09] Best translation 160 : Stewart, Gordon, Keneth, na Harvi kuzunguka nafasi ya juu kwa ajili ya michuano ya madereva na jamii nne iliyobaki katika msimu.
+[2024-02-12 20:35:09] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umekua na mara 90.
+[2024-02-12 20:35:09] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 20:35:09] Total translation time: 1.18689s
+[2024-02-12 20:35:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-bleu.npz
+[2024-02-12 20:35:10] [valid] Ep. 31 : Up. 15000 : bleu : 24.464 : new best
+[2024-02-12 20:35:10] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 20:35:11] [valid] Ep. 31 : Up. 15000 : ce-mean-words : 2.50095 : new best
+[2024-02-12 20:37:51] Seen 2,632,778 samples
+[2024-02-12 20:37:51] Starting data epoch 32 in logical epoch 32
+[2024-02-12 20:42:55] Seen 2,632,770 samples
+[2024-02-12 20:42:55] Starting data epoch 33 in logical epoch 33
+[2024-02-12 20:45:23] Ep. 33 : Up. 16000 : Sen. 1,083,734 : Cost 2.25202203 : Time 625.76s : 147057.23 words/s : gNorm 0.4568
+[2024-02-12 20:47:59] Seen 2,632,783 samples
+[2024-02-12 20:47:59] Starting data epoch 34 in logical epoch 34
+[2024-02-12 20:53:02] Seen 2,632,783 samples
+[2024-02-12 20:53:02] Starting data epoch 35 in logical epoch 35
+[2024-02-12 20:55:37] Ep. 35 : Up. 17000 : Sen. 1,214,273 : Cost 2.16728997 : Time 614.26s : 150970.29 words/s : gNorm 0.3764
+[2024-02-12 20:58:06] Seen 2,632,781 samples
+[2024-02-12 20:58:06] Starting data epoch 36 in logical epoch 36
+[2024-02-12 21:03:09] Seen 2,632,777 samples
+[2024-02-12 21:03:10] Starting data epoch 37 in logical epoch 37
+[2024-02-12 21:05:53] Ep. 37 : Up. 18000 : Sen. 1,307,568 : Cost 2.11932826 : Time 616.29s : 151426.18 words/s : gNorm 0.3309
+[2024-02-12 21:08:13] Seen 2,632,767 samples
+[2024-02-12 21:08:13] Starting data epoch 38 in logical epoch 38
+[2024-02-12 21:13:16] Seen 2,632,788 samples
+[2024-02-12 21:13:16] Starting data epoch 39 in logical epoch 39
+[2024-02-12 21:16:07] Ep. 39 : Up. 19000 : Sen. 1,402,080 : Cost 2.07709122 : Time 613.75s : 151177.31 words/s : gNorm 0.3803
+[2024-02-12 21:18:19] Seen 2,632,784 samples
+[2024-02-12 21:18:19] Starting data epoch 40 in logical epoch 40
+[2024-02-12 21:23:23] Seen 2,632,793 samples
+[2024-02-12 21:23:23] Starting data epoch 41 in logical epoch 41
+[2024-02-12 21:26:19] Ep. 41 : Up. 20000 : Sen. 1,368,602 : Cost 2.04455042 : Time 612.27s : 150439.40 words/s : gNorm 0.3129
+[2024-02-12 21:26:19] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 21:26:21] Saving Adam parameters
+[2024-02-12 21:26:23] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-12 21:26:25] Translating validation set...
+[2024-02-12 21:26:27] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford walitangaza uvumbuzi wa chombo kipya cha uchunguzi ambacho kinaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za kawaida za inkjet kwa asilimia moja ya Marekani kila mmoja.
+[2024-02-12 21:26:27] Best translation 1 : Watafiti wa kuongoza wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 21:26:27] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia karibu 9:30 am wakati wa ndani (230 UTC) na kulipua, kufunga uwanja wa ndege wa kibiashara.
+[2024-02-12 21:26:27] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Dilokrit Patavee.
+[2024-02-12 21:26:27] Best translation 4 : Ripoti za vyombo vya habari vya ndani ya uwanja wa ndege zilipangwa wakati wa kujibu.
+[2024-02-12 21:26:27] Best translation 5 : Vila ya miaka 28 ilikuwa ilijiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 21:26:27] Best translation 10 : Takribani 11:29, maandamano yalisonga Whitehall, baada ya Trafalgar Square, pamoja na Trafalgar Square, yanayopita na Aldwych na kuelekea kwenye mji wa Aldwych ambapo chama cha Conservative kilikuwa kinashikilia Forum yao ya Spring katika hoteli ya Grand Conaught.
+[2024-02-12 21:26:27] Best translation 20 : Alidokeza wakati wa uchaguzi kwamba Ma inaweza kukimbia nchi wakati wa shida.
+[2024-02-12 21:26:27] Best translation 40 : John Grant, kutoka WEND Buffalo (Reading Rainbow's nyumbani kituo) alisema "Reading Rainbow inafundisha watoto kwa nini kusoma,... upendo wa kusoma - [show] watoto kutia moyo kuchukua kitabu na kusoma."
+[2024-02-12 21:26:27] Best translation 80 : Maroochydore kisha kushindwa Cabotture katika Awali ya mwisho.
+[2024-02-12 21:26:27] Best translation 160 : Stewart, Gordon, Kenseth, na Harvick pande zote juu-ten nafasi kwa ajili ya michuano ya madereva na jamii nne iliyobaki katika msimu.
+[2024-02-12 21:26:27] Best translation 320 : Tangu wakati huo, ukubwa wa kiuchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 21:26:27] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 21:26:27] Total translation time: 1.84854s
+[2024-02-12 21:26:27] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-chrf.npz
+[2024-02-12 21:26:28] [valid] Ep. 41 : Up. 20000 : chrf : 57.4517 : new best
+[2024-02-12 21:26:28] Translating validation set...
+[2024-02-12 21:26:29] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford walitangaza uvumbuzi wa chombo kipya cha uchunguzi ambacho kinaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za kawaida za inkjet kwa asilimia moja ya Marekani kila mmoja.
+[2024-02-12 21:26:29] Best translation 1 : Watafiti wa kuongoza wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 21:26:29] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia karibu 9:30 am wakati wa ndani (230 UTC) na kulipua, kufunga uwanja wa ndege wa kibiashara.
+[2024-02-12 21:26:29] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Dilokrit Patavee.
+[2024-02-12 21:26:29] Best translation 4 : Ripoti za vyombo vya habari vya ndani ya uwanja wa ndege zilipangwa wakati wa kujibu.
+[2024-02-12 21:26:29] Best translation 5 : Vila ya miaka 28 ilikuwa ilijiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 21:26:29] Best translation 10 : Takribani 11:29, maandamano yalisonga Whitehall, baada ya Trafalgar Square, pamoja na Trafalgar Square, yanayopita na Aldwych na kuelekea kwenye mji wa Aldwych ambapo chama cha Conservative kilikuwa kinashikilia Forum yao ya Spring katika hoteli ya Grand Conaught.
+[2024-02-12 21:26:29] Best translation 20 : Alidokeza wakati wa uchaguzi kwamba Ma inaweza kukimbia nchi wakati wa shida.
+[2024-02-12 21:26:29] Best translation 40 : John Grant, kutoka WEND Buffalo (Reading Rainbow's nyumbani kituo) alisema "Reading Rainbow inafundisha watoto kwa nini kusoma,... upendo wa kusoma - [show] watoto kutia moyo kuchukua kitabu na kusoma."
+[2024-02-12 21:26:29] Best translation 80 : Maroochydore kisha kushindwa Cabotture katika Awali ya mwisho.
+[2024-02-12 21:26:29] Best translation 160 : Stewart, Gordon, Kenseth, na Harvick pande zote juu-ten nafasi kwa ajili ya michuano ya madereva na jamii nne iliyobaki katika msimu.
+[2024-02-12 21:26:29] Best translation 320 : Tangu wakati huo, ukubwa wa kiuchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 21:26:29] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 21:26:29] Total translation time: 1.20554s
+[2024-02-12 21:26:29] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-bleu.npz
+[2024-02-12 21:26:30] [valid] Ep. 41 : Up. 20000 : bleu : 28.6021 : new best
+[2024-02-12 21:26:30] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 21:26:31] [valid] Ep. 41 : Up. 20000 : ce-mean-words : 2.1774 : new best
+[2024-02-12 21:28:37] Seen 2,632,770 samples
+[2024-02-12 21:28:37] Starting data epoch 42 in logical epoch 42
+[2024-02-12 21:33:40] Seen 2,632,777 samples
+[2024-02-12 21:33:40] Starting data epoch 43 in logical epoch 43
+[2024-02-12 21:36:47] Ep. 43 : Up. 21000 : Sen. 1,525,820 : Cost 1.99833143 : Time 627.65s : 148923.03 words/s : gNorm 0.3566
+[2024-02-12 21:38:44] Seen 2,632,786 samples
+[2024-02-12 21:38:44] Starting data epoch 44 in logical epoch 44
+[2024-02-12 21:43:47] Seen 2,632,782 samples
+[2024-02-12 21:43:47] Starting data epoch 45 in logical epoch 45
+[2024-02-12 21:46:59] Ep. 45 : Up. 22000 : Sen. 1,537,592 : Cost 1.97942340 : Time 611.99s : 150561.20 words/s : gNorm 0.3694
+[2024-02-12 21:48:50] Seen 2,632,804 samples
+[2024-02-12 21:48:50] Starting data epoch 46 in logical epoch 46
+[2024-02-12 21:53:54] Seen 2,632,765 samples
+[2024-02-12 21:53:54] Starting data epoch 47 in logical epoch 47
+[2024-02-12 21:57:15] Ep. 47 : Up. 23000 : Sen. 1,644,704 : Cost 1.95081091 : Time 615.54s : 151479.97 words/s : gNorm 0.3163
+[2024-02-12 21:58:57] Seen 2,632,784 samples
+[2024-02-12 21:58:57] Starting data epoch 48 in logical epoch 48
+[2024-02-12 22:04:01] Seen 2,632,775 samples
+[2024-02-12 22:04:01] Starting data epoch 49 in logical epoch 49
+[2024-02-12 22:07:28] Ep. 49 : Up. 24000 : Sen. 1,675,010 : Cost 1.92975795 : Time 613.31s : 150725.07 words/s : gNorm 0.3689
+[2024-02-12 22:09:04] Seen 2,632,788 samples
+[2024-02-12 22:09:04] Starting data epoch 50 in logical epoch 50
+[2024-02-12 22:14:08] Seen 2,632,800 samples
+[2024-02-12 22:14:08] Starting data epoch 51 in logical epoch 51
+[2024-02-12 22:17:43] Ep. 51 : Up. 25000 : Sen. 1,714,434 : Cost 1.91095734 : Time 614.72s : 150788.79 words/s : gNorm 0.3285
+[2024-02-12 22:17:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 22:17:44] Saving Adam parameters
+[2024-02-12 22:17:46] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-12 22:17:49] Translating validation set...
+[2024-02-12 22:17:50] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo inayoweza kutengenezwa kwa kutumia printa za kawaida za inkjet kwa uwezekano wa juu ya asilimia moja ya Marekani kila mmoja.
+[2024-02-12 22:17:50] Best translation 1 : Watafiti wa kuongoza wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa ajili ya magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 22:17:50] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kuzunguka 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-12 22:17:50] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Dilokrit Patavee.
+[2024-02-12 22:17:50] Best translation 4 : Ripoti za vyombo vya habari vya ndani gari la moto la uwanja wa ndege lililovingirishwa wakati wa kujibu.
+[2024-02-12 22:17:50] Best translation 5 : Vita vya miaka 28 vilikuwa vimeungana na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 22:17:50] Best translation 10 : Karibu 11:29, maandamano yalihamia Whitehall, huko Trafalgar Square, pamoja na ‘Aldwych’ na safari kuelekea Holborn ambapo Chama cha Uvamizi kilikuwa kinashikilia Forum yao ya Spring katika hoteli ya Grand Conaughty.
+[2024-02-12 22:17:50] Best translation 20 : Sikia wake ulisema wakati wa uchaguzi kwamba Ma inaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 22:17:50] Best translation 40 : John Grant, kutoka WIND Buffalo (Reading Rainbow's nyumbani kituo) alisema "Kusoma upinde wa mvua kufundisha watoto kwa nini kusoma,... upendo wa kusoma - show's kuhimiza watoto kuchukua kitabu na kusoma."
+[2024-02-12 22:17:50] Best translation 80 : Maroochydore kisha kushindwa Cabool, katika Awali ya mwisho.
+[2024-02-12 22:17:50] Best translation 160 : Stewart, Gordon, Kenseth, na Harvick pande zote juu-ten nafasi kwa ajili ya michuano Madereva na jamii nne iliyobaki katika msimu.
+[2024-02-12 22:17:50] Best translation 320 : Tangu wakati huo, ukubwa, ukubwa wa kiuchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 22:17:50] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 22:17:50] Total translation time: 1.70215s
+[2024-02-12 22:17:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-chrf.npz
+[2024-02-12 22:17:51] [valid] Ep. 51 : Up. 25000 : chrf : 58.1259 : new best
+[2024-02-12 22:17:51] Translating validation set...
+[2024-02-12 22:17:52] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Shule ya Chuo Kikuu cha Stanford ya Tiba ilitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: Chip ndogo inayoweza kutengenezwa kwa kutumia printa za kawaida za inkjet kwa asilimia moja ya Marekani kila mmoja.
+[2024-02-12 22:17:52] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 22:17:52] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kuzunguka 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-12 22:17:52] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Dilokrit Patavee.
+[2024-02-12 22:17:52] Best translation 4 : Ripoti za vyombo vya habari vya ndani gari la moto la uwanja wa ndege lililovingirishwa wakati wa kujibu.
+[2024-02-12 22:17:52] Best translation 5 : Vita vya miaka 28 vilikuwa vimeungana na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 22:17:52] Best translation 10 : Karibu 11:29, maandamano yalihamia Whitehall, huko Trafalgar Square, pamoja na ‘Aldwych’ na safari kuelekea Holborn ambapo Chama cha Conservative kilikuwa kinashikilia Mkutano wao wa Spring katika hoteli ya Grand Conaughty.
+[2024-02-12 22:17:52] Best translation 20 : Sikia wake ulisema wakati wa uchaguzi kwamba Ma inaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 22:17:52] Best translation 40 : John Grant, kutoka WNED Buffalo (Reading Rainbow's nyumbani kituo) alisema "Kusoma upinde wa mvua kufundisha watoto kwa nini kusoma,... upendo wa kusoma - show] kuhimiza watoto kuchukua kitabu na kusoma."
+[2024-02-12 22:17:52] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika Awali ya mwisho.
+[2024-02-12 22:17:52] Best translation 160 : Stewart, Gordon, Kenseth, na Harvick pande zote juu-ten nafasi kwa ajili ya michuano Madereva na jamii nne iliyobaki katika msimu.
+[2024-02-12 22:17:52] Best translation 320 : Tangu wakati huo, ukubwa wa kiuchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 22:17:52] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 22:17:52] Total translation time: 1.26031s
+[2024-02-12 22:17:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-bleu.npz
+[2024-02-12 22:17:53] [valid] Ep. 51 : Up. 25000 : bleu : 29.3933 : new best
+[2024-02-12 22:17:53] [valid] Ep. 51 : Up. 25000 : ce-mean-words : 2.17773 : stalled 1 times (last best: 2.1774)
+[2024-02-12 22:19:22] Seen 2,632,784 samples
+[2024-02-12 22:19:22] Starting data epoch 52 in logical epoch 52
+[2024-02-12 22:24:26] Seen 2,632,790 samples
+[2024-02-12 22:24:26] Starting data epoch 53 in logical epoch 53
+[2024-02-12 22:28:07] Ep. 53 : Up. 26000 : Sen. 1,833,186 : Cost 1.89069724 : Time 624.60s : 148359.32 words/s : gNorm 0.3204
+[2024-02-12 22:29:29] Seen 2,632,772 samples
+[2024-02-12 22:29:29] Starting data epoch 54 in logical epoch 54
+[2024-02-12 22:34:33] Seen 2,632,783 samples
+[2024-02-12 22:34:33] Starting data epoch 55 in logical epoch 55
+[2024-02-12 22:38:22] Ep. 55 : Up. 27000 : Sen. 1,933,933 : Cost 1.87571323 : Time 615.25s : 151150.24 words/s : gNorm 0.3117
+[2024-02-12 22:39:36] Seen 2,632,789 samples
+[2024-02-12 22:39:36] Starting data epoch 56 in logical epoch 56
+[2024-02-12 22:44:39] Seen 2,632,795 samples
+[2024-02-12 22:44:39] Starting data epoch 57 in logical epoch 57
+[2024-02-12 22:48:33] Ep. 57 : Up. 28000 : Sen. 2,047,193 : Cost 1.86429954 : Time 610.49s : 151916.58 words/s : gNorm 0.3128
+[2024-02-12 22:49:40] Seen 2,632,793 samples
+[2024-02-12 22:49:40] Starting data epoch 58 in logical epoch 58
+[2024-02-12 22:54:41] Seen 2,632,795 samples
+[2024-02-12 22:54:41] Starting data epoch 59 in logical epoch 59
+[2024-02-12 22:58:43] Ep. 59 : Up. 29000 : Sen. 2,095,550 : Cost 1.85323143 : Time 610.16s : 152300.32 words/s : gNorm 0.3384
+[2024-02-12 22:59:41] Seen 2,632,772 samples
+[2024-02-12 22:59:41] Starting data epoch 60 in logical epoch 60
+[2024-02-12 23:04:42] Seen 2,632,779 samples
+[2024-02-12 23:04:42] Starting data epoch 61 in logical epoch 61
+[2024-02-12 23:08:51] Ep. 61 : Up. 30000 : Sen. 2,104,920 : Cost 1.83972454 : Time 608.42s : 151877.00 words/s : gNorm 0.3263
+[2024-02-12 23:08:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 23:08:53] Saving Adam parameters
+[2024-02-12 23:08:55] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-12 23:08:57] Translating validation set...
+[2024-02-12 23:08:59] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Shule ya Tiba ya Stanford walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za inkjet za kawaida kwa uwezekano juu ya asilimia moja ya Marekani kila moja.
+[2024-02-12 23:08:59] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 23:08:59] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia karibu 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-12 23:08:59] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Dilokrit Patvee.
+[2024-02-12 23:08:59] Best translation 4 : Ripoti za vyombo vya habari vya mitaa kwenye uwanja wa ndege zilizoviringishwa wakati wa kujibu.
+[2024-02-12 23:08:59] Best translation 5 : Vila iliyo na umri wa miaka 28 ilikuwa ilijiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 23:08:59] Best translation 10 : Karibu 11:29, maandamano yalichochea Whitehall, eneo la zamani la Trafalgar Square, kando ya Strand, lililopita na kuruka kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Mkutano wao wa Spring katika hoteli ya Grand Conaught.
+[2024-02-12 23:08:59] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 23:08:59] Best translation 40 : John Grant, kutoka WNED Buffalo (kisoma katika kituo cha nyumbani cha Rainbow) alisema "Soma upinde wa mvua uliwafundisha watoto kwa nini kusoma,... upendo wa kusoma - show] kuhimiza watoto kuchukua kitabu na kusoma."
+[2024-02-12 23:08:59] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika Awali ya mwisho.
+[2024-02-12 23:08:59] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick zinazunguka kwenye nafasi kumi za juu kwa michuano ya madereva na jamii nne zilizobakia msimu huo.
+[2024-02-12 23:08:59] Best translation 320 : Tangu wakati huo, ukubwa wa kiuchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 23:08:59] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 23:08:59] Total translation time: 1.88665s
+[2024-02-12 23:08:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.best-chrf.npz
+[2024-02-12 23:09:00] [valid] Ep. 61 : Up. 30000 : chrf : 58.3128 : new best
+[2024-02-12 23:09:00] Translating validation set...
+[2024-02-12 23:09:01] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Shule ya Tiba ya Stanford walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za inkjet za kawaida kwa uwezekano juu ya asilimia moja ya Marekani kila moja.
+[2024-02-12 23:09:01] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 23:09:01] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia karibu 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-12 23:09:01] Best translation 3 : majaribio ilikuwa kutambuliwa kama Squadron Kiongozi Dilokrit Patvee.
+[2024-02-12 23:09:01] Best translation 4 : Ripoti za vyombo vya habari vya mitaa kwenye uwanja wa ndege zilizoviringishwa wakati wa kujibu.
+[2024-02-12 23:09:01] Best translation 5 : Vila iliyo na umri wa miaka 28 ilikuwa ilijiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 23:09:01] Best translation 10 : Karibu 11:29, maandamano yalichochea Whitehall, eneo la zamani la Trafalgar Square, kando ya Strand, lililopita na kuruka kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Mkutano wao wa Spring katika hoteli ya Grand Conaught.
+[2024-02-12 23:09:01] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 23:09:01] Best translation 40 : John Grant, kutoka WNED Buffalo (kisoma katika kituo cha nyumbani cha Rainbow) alisema "Soma upinde wa mvua uliwafundisha watoto kwa nini kusoma,... upendo wa kusoma - show] kuhimiza watoto kuchukua kitabu na kusoma."
+[2024-02-12 23:09:01] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika Awali ya mwisho.
+[2024-02-12 23:09:01] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick zinazunguka kwenye nafasi kumi za juu kwa michuano ya madereva na jamii nne zilizobakia msimu huo.
+[2024-02-12 23:09:01] Best translation 320 : Tangu wakati huo, ukubwa wa kiuchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 23:09:01] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 23:09:01] Total translation time: 1.24645s
+[2024-02-12 23:09:01] [valid] Ep. 61 : Up. 30000 : bleu : 29.2529 : stalled 1 times (last best: 29.3933)
+[2024-02-12 23:09:02] [valid] Ep. 61 : Up. 30000 : ce-mean-words : 2.23801 : stalled 2 times (last best: 2.1774)
+[2024-02-12 23:09:53] Seen 2,632,792 samples
+[2024-02-12 23:09:53] Starting data epoch 62 in logical epoch 62
+[2024-02-12 23:14:55] Seen 2,632,762 samples
+[2024-02-12 23:14:55] Starting data epoch 63 in logical epoch 63
+[2024-02-12 23:19:11] Ep. 63 : Up. 31000 : Sen. 2,199,708 : Cost 1.82741940 : Time 619.78s : 149786.82 words/s : gNorm 0.3357
+[2024-02-12 23:19:56] Seen 2,632,782 samples
+[2024-02-12 23:19:56] Starting data epoch 64 in logical epoch 64
+[2024-02-12 23:24:57] Seen 2,632,767 samples
+[2024-02-12 23:24:57] Starting data epoch 65 in logical epoch 65
+[2024-02-12 23:29:21] Ep. 65 : Up. 32000 : Sen. 2,244,869 : Cost 1.81833792 : Time 609.62s : 152151.34 words/s : gNorm 0.3313
+[2024-02-12 23:29:57] Seen 2,632,785 samples
+[2024-02-12 23:29:57] Starting data epoch 66 in logical epoch 66
+[2024-02-12 23:34:58] Seen 2,632,782 samples
+[2024-02-12 23:34:58] Starting data epoch 67 in logical epoch 67
+[2024-02-12 23:39:28] Ep. 67 : Up. 33000 : Sen. 2,309,990 : Cost 1.80855894 : Time 606.88s : 152371.99 words/s : gNorm 0.3119
+[2024-02-12 23:39:59] Seen 2,632,762 samples
+[2024-02-12 23:39:59] Starting data epoch 68 in logical epoch 68
+[2024-02-12 23:44:59] Seen 2,632,783 samples
+[2024-02-12 23:44:59] Starting data epoch 69 in logical epoch 69
+[2024-02-12 23:49:36] Ep. 69 : Up. 34000 : Sen. 2,395,054 : Cost 1.79758871 : Time 608.32s : 152622.16 words/s : gNorm 0.3226
+[2024-02-12 23:50:00] Seen 2,632,784 samples
+[2024-02-12 23:50:00] Starting data epoch 70 in logical epoch 70
+[2024-02-12 23:55:01] Seen 2,632,760 samples
+[2024-02-12 23:55:01] Starting data epoch 71 in logical epoch 71
+[2024-02-12 23:59:46] Ep. 71 : Up. 35000 : Sen. 2,475,211 : Cost 1.79145968 : Time 609.79s : 152230.90 words/s : gNorm 0.3308
+[2024-02-12 23:59:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-12 23:59:47] Saving Adam parameters
+[2024-02-12 23:59:49] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-12 23:59:52] Translating validation set...
+[2024-02-12 23:59:53] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Shule ya Tiba ya Stanford walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za inkjet za kawaida kwa uwezekano wa kila moja.
+[2024-02-12 23:59:53] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 23:59:53] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia karibu 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-12 23:59:53] Best translation 3 : majaribio ilikuwa kutambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-12 23:59:53] Best translation 4 : Ripoti za mitaa kwenye gari la moto la uwanja wa ndege zilizoviringishwa wakati wa kujibu.
+[2024-02-12 23:59:53] Best translation 5 : Vila iliyokuwa na umri wa miaka 28 ilikuwa imeungana na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 23:59:53] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, eneo la zamani la Trafalgar, kando ya Strand, linalopita na Aldwych na kufikia Kingsway kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Kongamano lao katika hoteli ya Grandnaught.
+[2024-02-12 23:59:53] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 23:59:53] Best translation 40 : John Grant, kutoka katika kituo cha nyumbani cha WNED (Soma Rainbow's) alisema "Kusoma upinde wa mvua kufundisha watoto kwa nini kusoma,... upendo wa kusoma - [show] kuhimiza watoto kuchukua kitabu na kusoma."
+[2024-02-12 23:59:53] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika Awali ya mwisho.
+[2024-02-12 23:59:53] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick huzunguka nafasi kumi za juu kwa Mashindano ya Madereva na jamii nne zilizobakia katika msimu huo.
+[2024-02-12 23:59:53] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 23:59:54] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 23:59:54] Total translation time: 1.85186s
+[2024-02-12 23:59:54] [valid] Ep. 71 : Up. 35000 : chrf : 58.2939 : stalled 1 times (last best: 58.3128)
+[2024-02-12 23:59:54] Translating validation set...
+[2024-02-12 23:59:55] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Shule ya Tiba ya Stanford walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za inkjet za kawaida kwa uwezekano wa kila moja.
+[2024-02-12 23:59:55] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-12 23:59:55] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia karibu 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-12 23:59:55] Best translation 3 : majaribio ilikuwa kutambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-12 23:59:55] Best translation 4 : Ripoti za mitaa kwenye gari la moto la uwanja wa ndege zilizoviringishwa wakati wa kujibu.
+[2024-02-12 23:59:55] Best translation 5 : Vila iliyokuwa na umri wa miaka 28 ilikuwa imeungana na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-12 23:59:55] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, eneo la zamani la Trafalgar, kando ya Strand, linalopita na Aldwych na kufikia Kingsway kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Kongamano lao katika hoteli ya Grandnaught.
+[2024-02-12 23:59:55] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa mgogoro.
+[2024-02-12 23:59:55] Best translation 40 : John Grant, kutoka katika kituo cha nyumbani cha WNED (Soma Rainbow's) alisema "Kusoma upinde wa mvua kufundisha watoto kwa nini kusoma,... upendo wa kusoma - [show] kuhimiza watoto kuchukua kitabu na kusoma."
+[2024-02-12 23:59:55] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika Awali ya mwisho.
+[2024-02-12 23:59:55] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick huzunguka nafasi kumi za juu kwa Mashindano ya Madereva na jamii nne zilizobakia katika msimu huo.
+[2024-02-12 23:59:55] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-12 23:59:55] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-12 23:59:55] Total translation time: 1.29100s
+[2024-02-12 23:59:55] [valid] Ep. 71 : Up. 35000 : bleu : 29.0079 : stalled 2 times (last best: 29.3933)
+[2024-02-12 23:59:55] [valid] Ep. 71 : Up. 35000 : ce-mean-words : 2.30573 : stalled 3 times (last best: 2.1774)
+[2024-02-13 00:00:11] Seen 2,632,781 samples
+[2024-02-13 00:00:11] Starting data epoch 72 in logical epoch 72
+[2024-02-13 00:05:11] Seen 2,632,809 samples
+[2024-02-13 00:05:11] Starting data epoch 73 in logical epoch 73
+[2024-02-13 00:10:05] Ep. 73 : Up. 36000 : Sen. 2,564,913 : Cost 1.78399587 : Time 619.14s : 150100.81 words/s : gNorm 0.3332
+[2024-02-13 00:10:12] Seen 2,632,773 samples
+[2024-02-13 00:10:12] Starting data epoch 74 in logical epoch 74
+[2024-02-13 00:15:15] Seen 2,632,789 samples
+[2024-02-13 00:15:15] Starting data epoch 75 in logical epoch 75
+[2024-02-13 00:20:19] Seen 2,632,789 samples
+[2024-02-13 00:20:19] Starting data epoch 76 in logical epoch 76
+[2024-02-13 00:20:51] Ep. 76 : Up. 37000 : Sen. 752 : Cost 1.77771890 : Time 645.93s : 143575.91 words/s : gNorm 0.3286
+[2024-02-13 00:25:22] Seen 2,632,795 samples
+[2024-02-13 00:25:22] Starting data epoch 77 in logical epoch 77
+[2024-02-13 00:30:26] Seen 2,632,780 samples
+[2024-02-13 00:30:26] Starting data epoch 78 in logical epoch 78
+[2024-02-13 00:31:06] Ep. 78 : Up. 38000 : Sen. 79,408 : Cost 1.76890028 : Time 614.94s : 150759.00 words/s : gNorm 0.3041
+[2024-02-13 00:35:29] Seen 2,632,780 samples
+[2024-02-13 00:35:29] Starting data epoch 79 in logical epoch 79
+[2024-02-13 00:40:32] Seen 2,632,791 samples
+[2024-02-13 00:40:32] Starting data epoch 80 in logical epoch 80
+[2024-02-13 00:41:17] Ep. 80 : Up. 39000 : Sen. 147,236 : Cost 1.76349175 : Time 611.59s : 151567.55 words/s : gNorm 0.3416
+[2024-02-13 00:45:33] Seen 2,632,783 samples
+[2024-02-13 00:45:33] Starting data epoch 81 in logical epoch 81
+[2024-02-13 00:50:36] Seen 2,632,782 samples
+[2024-02-13 00:50:36] Starting data epoch 82 in logical epoch 82
+[2024-02-13 00:51:31] Ep. 82 : Up. 40000 : Sen. 192,170 : Cost 1.75806689 : Time 613.94s : 151142.30 words/s : gNorm 0.3351
+[2024-02-13 00:51:31] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-13 00:51:33] Saving Adam parameters
+[2024-02-13 00:51:35] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-13 00:51:37] Translating validation set...
+[2024-02-13 00:51:39] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Shule ya Tiba ya Stanford walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za inkjet ya kawaida kwa asilimia moja ya Marekani kila moja.
+[2024-02-13 00:51:39] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 00:51:39] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kwenda kwenye njia karibu 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 00:51:39] Best translation 3 : Majaribio hayo yalitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 00:51:39] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililoviringana huku likijibu.
+[2024-02-13 00:51:39] Best translation 5 : Vila iliyokuwa na umri wa miaka 28 ilikuwa imeungana na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 00:51:39] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, eneo la zamani la Trafalgar Square, kando ya Strand, kupita kwa Aldwych na juu ya Kingsway kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Kongamano lao katika hoteli ya Grandnaught.
+[2024-02-13 00:51:39] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 00:51:39] Best translation 40 : John Grant, kutoka katika kituo cha nyumbani cha WNED (Soma Rainbow's) alisema "Kusoma upinde wa mvua kufundisha watoto kwa nini kusoma,... upendo wa kusoma - [kuonyesha] Wana moyo kuchukua kitabu na kusoma."
+[2024-02-13 00:51:39] Best translation 80 : Maroochydore kisha kuwashinda Caboolture katika fainali ya awali.
+[2024-02-13 00:51:39] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 00:51:39] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 00:51:39] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 00:51:39] Total translation time: 1.84229s
+[2024-02-13 00:51:39] [valid] Ep. 82 : Up. 40000 : chrf : 58.2 : stalled 2 times (last best: 58.3128)
+[2024-02-13 00:51:39] Translating validation set...
+[2024-02-13 00:51:40] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Shule ya Tiba ya Stanford walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya kuchapishwa ambayo inaweza kutengenezwa kwa kutumia printa za inkjet ya kawaida kwa asilimia moja ya Marekani kila moja.
+[2024-02-13 00:51:40] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti vinaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 00:51:40] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kwenda kwenye njia karibu 9:30 ni wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 00:51:40] Best translation 3 : Majaribio hayo yalitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 00:51:40] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililoviringana huku likijibu.
+[2024-02-13 00:51:40] Best translation 5 : Vila iliyokuwa na umri wa miaka 28 ilikuwa imeungana na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 00:51:40] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, eneo la zamani la Trafalgar Square, kando ya Strand, kupita kwa Aldwych na juu ya Kingsway kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Kongamano lao katika hoteli ya Grandnaught.
+[2024-02-13 00:51:40] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 00:51:40] Best translation 40 : John Grant, kutoka katika kituo cha nyumbani cha WNED (Soma Rainbow's) alisema "Kusoma upinde wa mvua kufundisha watoto kwa nini kusoma,... upendo wa kusoma - [kuonyesha] Wana moyo kuchukua kitabu na kusoma."
+[2024-02-13 00:51:40] Best translation 80 : Maroochydore kisha kuwashinda Caboolture katika fainali ya awali.
+[2024-02-13 00:51:40] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 00:51:40] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 00:51:40] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 00:51:40] Total translation time: 1.23086s
+[2024-02-13 00:51:40] [valid] Ep. 82 : Up. 40000 : bleu : 28.8053 : stalled 3 times (last best: 29.3933)
+[2024-02-13 00:51:41] [valid] Ep. 82 : Up. 40000 : ce-mean-words : 2.37454 : stalled 4 times (last best: 2.1774)
+[2024-02-13 00:55:49] Seen 2,632,788 samples
+[2024-02-13 00:55:49] Starting data epoch 83 in logical epoch 83
+[2024-02-13 01:00:52] Seen 2,632,778 samples
+[2024-02-13 01:00:52] Starting data epoch 84 in logical epoch 84
+[2024-02-13 01:01:54] Ep. 84 : Up. 41000 : Sen. 250,278 : Cost 1.75289726 : Time 623.04s : 148845.45 words/s : gNorm 0.3238
+[2024-02-13 01:05:56] Seen 2,632,806 samples
+[2024-02-13 01:05:56] Starting data epoch 85 in logical epoch 85
+[2024-02-13 01:10:59] Seen 2,632,786 samples
+[2024-02-13 01:10:59] Starting data epoch 86 in logical epoch 86
+[2024-02-13 01:12:10] Ep. 86 : Up. 42000 : Sen. 321,200 : Cost 1.74603641 : Time 615.32s : 150632.16 words/s : gNorm 0.3116
+[2024-02-13 01:16:03] Seen 2,632,774 samples
+[2024-02-13 01:16:03] Starting data epoch 87 in logical epoch 87
+[2024-02-13 01:21:06] Seen 2,632,778 samples
+[2024-02-13 01:21:06] Starting data epoch 88 in logical epoch 88
+[2024-02-13 01:22:26] Ep. 88 : Up. 43000 : Sen. 469,912 : Cost 1.74095678 : Time 615.73s : 151269.41 words/s : gNorm 0.3368
+[2024-02-13 01:26:09] Seen 2,632,790 samples
+[2024-02-13 01:26:09] Starting data epoch 89 in logical epoch 89
+[2024-02-13 01:31:13] Seen 2,632,800 samples
+[2024-02-13 01:31:13] Starting data epoch 90 in logical epoch 90
+[2024-02-13 01:32:41] Ep. 90 : Up. 44000 : Sen. 534,122 : Cost 1.73731828 : Time 615.22s : 151126.34 words/s : gNorm 0.3261
+[2024-02-13 01:36:16] Seen 2,632,790 samples
+[2024-02-13 01:36:16] Starting data epoch 91 in logical epoch 91
+[2024-02-13 01:41:20] Seen 2,632,771 samples
+[2024-02-13 01:41:20] Starting data epoch 92 in logical epoch 92
+[2024-02-13 01:42:55] Ep. 92 : Up. 45000 : Sen. 618,394 : Cost 1.73304653 : Time 614.59s : 150876.66 words/s : gNorm 0.3174
+[2024-02-13 01:42:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-13 01:42:57] Saving Adam parameters
+[2024-02-13 01:42:59] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-13 01:43:01] Translating validation set...
+[2024-02-13 01:43:03] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford wa Tiba walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya uchapishaji ambayo inaweza kutengenezwa kwa kutumia printa za inkjet ya kawaida kwa uwezekano wa asilimia moja ya Marekani kila moja.
+[2024-02-13 01:43:03] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti inaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 01:43:03] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kwenda kwenye njia karibu 9:30 am wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 01:43:03] Best translation 3 : Msimamo huo ulitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 01:43:03] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililoviringishwa huku likijibu.
+[2024-02-13 01:43:03] Best translation 5 : Vila mwenye umri wa miaka 28 ilikuwa imejiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 01:43:03] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, mwaka wa nyuma wa Trafalgar Square, pamoja na Strand, kupita kwa Aldwych na up Kingsway kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Kongamano lao katika hoteli ya Grandnaught.
+[2024-02-13 01:43:03] Best translation 20 : Hsieh alidokeza katika uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 01:43:03] Best translation 40 : John Grant, kutoka kwenye kituo cha nyumbani cha WNED (Soma Rainbow's kituo cha nyumbani) alisema "Maoni yaliyofundishwa watoto kwa nini kusoma,... upendo wa kusoma - [kuonyesha] Watoto waliohamasishwa kuchukua kitabu na kusoma."
+[2024-02-13 01:43:03] Best translation 80 : Maroochydore kisha kuwashinda Caboolture katika fainali ya awali.
+[2024-02-13 01:43:03] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 01:43:03] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 01:43:03] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 01:43:03] Total translation time: 1.81578s
+[2024-02-13 01:43:03] [valid] Ep. 92 : Up. 45000 : chrf : 57.9548 : stalled 3 times (last best: 58.3128)
+[2024-02-13 01:43:03] Translating validation set...
+[2024-02-13 01:43:04] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford wa Tiba walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya uchapishaji ambayo inaweza kutengenezwa kwa kutumia printa za inkjet ya kawaida kwa uwezekano wa asilimia moja ya Marekani kila moja.
+[2024-02-13 01:43:04] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti inaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 01:43:04] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kwenda kwenye njia karibu 9:30 am wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 01:43:04] Best translation 3 : Msimamo huo ulitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 01:43:04] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililoviringishwa huku likijibu.
+[2024-02-13 01:43:04] Best translation 5 : Vila mwenye umri wa miaka 28 ilikuwa imejiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 01:43:04] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, mwaka wa nyuma wa Trafalgar Square, pamoja na Strand, kupita kwa Aldwych na up Kingsway kuelekea Holborn ambapo Chama cha Conservative walikuwa wakishikilia Kongamano lao katika hoteli ya Grandnaught.
+[2024-02-13 01:43:04] Best translation 20 : Hsieh alidokeza katika uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 01:43:04] Best translation 40 : John Grant, kutoka kwenye kituo cha nyumbani cha WNED (Soma Rainbow's kituo cha nyumbani) alisema "Maoni yaliyofundishwa watoto kwa nini kusoma,... upendo wa kusoma - [kuonyesha] Watoto waliohamasishwa kuchukua kitabu na kusoma."
+[2024-02-13 01:43:04] Best translation 80 : Maroochydore kisha kuwashinda Caboolture katika fainali ya awali.
+[2024-02-13 01:43:04] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 01:43:04] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 01:43:04] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 01:43:04] Total translation time: 1.26670s
+[2024-02-13 01:43:04] [valid] Ep. 92 : Up. 45000 : bleu : 28.6707 : stalled 4 times (last best: 29.3933)
+[2024-02-13 01:43:04] [valid] Ep. 92 : Up. 45000 : ce-mean-words : 2.44206 : stalled 5 times (last best: 2.1774)
+[2024-02-13 01:46:33] Seen 2,632,791 samples
+[2024-02-13 01:46:33] Starting data epoch 93 in logical epoch 93
+[2024-02-13 01:51:36] Seen 2,632,765 samples
+[2024-02-13 01:51:36] Starting data epoch 94 in logical epoch 94
+[2024-02-13 01:53:17] Ep. 94 : Up. 46000 : Sen. 639,502 : Cost 1.72934532 : Time 621.91s : 148919.60 words/s : gNorm 0.3112
+[2024-02-13 01:56:39] Seen 2,632,788 samples
+[2024-02-13 01:56:39] Starting data epoch 95 in logical epoch 95
+[2024-02-13 02:01:42] Seen 2,632,768 samples
+[2024-02-13 02:01:42] Starting data epoch 96 in logical epoch 96
+[2024-02-13 02:03:33] Ep. 96 : Up. 47000 : Sen. 749,752 : Cost 1.72492218 : Time 615.77s : 151377.71 words/s : gNorm 0.3149
+[2024-02-13 02:06:45] Seen 2,632,789 samples
+[2024-02-13 02:06:45] Starting data epoch 97 in logical epoch 97
+[2024-02-13 02:11:48] Seen 2,632,776 samples
+[2024-02-13 02:11:48] Starting data epoch 98 in logical epoch 98
+[2024-02-13 02:13:43] Ep. 98 : Up. 48000 : Sen. 763,816 : Cost 1.72417462 : Time 610.41s : 150822.69 words/s : gNorm 0.3205
+[2024-02-13 02:16:52] Seen 2,632,801 samples
+[2024-02-13 02:16:52] Starting data epoch 99 in logical epoch 99
+[2024-02-13 02:21:55] Seen 2,632,789 samples
+[2024-02-13 02:21:55] Starting data epoch 100 in logical epoch 100
+[2024-02-13 02:23:56] Ep. 100 : Up. 49000 : Sen. 808,162 : Cost 1.71720433 : Time 612.78s : 150833.20 words/s : gNorm 0.3184
+[2024-02-13 02:26:59] Seen 2,632,780 samples
+[2024-02-13 02:26:59] Starting data epoch 101 in logical epoch 101
+[2024-02-13 02:32:02] Seen 2,632,788 samples
+[2024-02-13 02:32:02] Starting data epoch 102 in logical epoch 102
+[2024-02-13 02:34:14] Ep. 102 : Up. 50000 : Sen. 932,180 : Cost 1.71357679 : Time 617.37s : 151102.85 words/s : gNorm 0.3513
+[2024-02-13 02:34:14] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-13 02:34:15] Saving Adam parameters
+[2024-02-13 02:34:17] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-13 02:34:20] Translating validation set...
+[2024-02-13 02:34:21] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford wa Tiba walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya uchapishaji ambayo inaweza kutengenezwa kwa kutumia printa za inkjet za kawaida kwa uwezekano wa kila moja.
+[2024-02-13 02:34:21] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti inaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 02:34:21] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kuzunguka 9:30 asubuhi wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 02:34:21] Best translation 3 : marubani hao walitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 02:34:21] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililoviringishwa huku likijibu.
+[2024-02-13 02:34:21] Best translation 5 : Hadi kipindi cha miaka 28 Sultani alikuwa amejiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 02:34:21] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, mwaka wa nyuma wa Trafalgar Square, sambamba na Strand, kupita kwa Aldwych na up Kingsway kuelekea Horn ambapo Chama cha Conservative walikuwa wakishikilia Spring Forum katika hoteli ya Grandnought Rooms.
+[2024-02-13 02:34:21] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 02:34:21] Best translation 40 : John Grant, kutoka katika kituo cha nyumbani cha WNED (Soma Rainbow iliyofundishwa watoto kwa nini kusoma,... upendo wa kusoma – [kuonyesha] Watoto waliotia moyo kuchukua kitabu na kusoma."
+[2024-02-13 02:34:21] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika fainali ya awali.
+[2024-02-13 02:34:21] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 02:34:21] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 02:34:21] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 02:34:21] Total translation time: 1.86670s
+[2024-02-13 02:34:21] [valid] Ep. 102 : Up. 50000 : chrf : 57.8029 : stalled 4 times (last best: 58.3128)
+[2024-02-13 02:34:21] Translating validation set...
+[2024-02-13 02:34:22] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford wa Tiba walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya uchapishaji ambayo inaweza kutengenezwa kwa kutumia printa za inkjet za kawaida kwa uwezekano wa kila moja.
+[2024-02-13 02:34:22] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti inaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 02:34:22] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kuzunguka 9:30 asubuhi wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 02:34:22] Best translation 3 : marubani hao walitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 02:34:22] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililoviringishwa huku likijibu.
+[2024-02-13 02:34:22] Best translation 5 : Hadi kipindi cha miaka 28 Sultani alikuwa amejiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 02:34:22] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, mwaka wa nyuma wa Trafalgar Square, sambamba na Strand, kupita kwa Aldwych na up Kingsway kuelekea Horn ambapo Chama cha Conservative walikuwa wakishikilia Spring Forum katika hoteli ya Grandnought Rooms.
+[2024-02-13 02:34:22] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 02:34:22] Best translation 40 : John Grant, kutoka katika kituo cha nyumbani cha WNED (Soma Rainbow iliyofundishwa watoto kwa nini kusoma,... upendo wa kusoma – [kuonyesha] Watoto waliotia moyo kuchukua kitabu na kusoma."
+[2024-02-13 02:34:22] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika fainali ya awali.
+[2024-02-13 02:34:22] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 02:34:22] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 02:34:23] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 02:34:23] Total translation time: 1.27619s
+[2024-02-13 02:34:23] [valid] Ep. 102 : Up. 50000 : bleu : 28.4628 : stalled 5 times (last best: 29.3933)
+[2024-02-13 02:34:23] [valid] Ep. 102 : Up. 50000 : ce-mean-words : 2.49325 : stalled 6 times (last best: 2.1774)
+[2024-02-13 02:37:15] Seen 2,632,775 samples
+[2024-02-13 02:37:15] Starting data epoch 103 in logical epoch 103
+[2024-02-13 02:42:19] Seen 2,632,782 samples
+[2024-02-13 02:42:19] Starting data epoch 104 in logical epoch 104
+[2024-02-13 02:44:36] Ep. 104 : Up. 51000 : Sen. 1,015,738 : Cost 1.71191382 : Time 622.91s : 148901.43 words/s : gNorm 0.3266
+[2024-02-13 02:47:23] Seen 2,632,778 samples
+[2024-02-13 02:47:23] Starting data epoch 105 in logical epoch 105
+[2024-02-13 02:52:26] Seen 2,632,777 samples
+[2024-02-13 02:52:26] Starting data epoch 106 in logical epoch 106
+[2024-02-13 02:54:52] Ep. 106 : Up. 52000 : Sen. 1,121,052 : Cost 1.70795441 : Time 615.48s : 151154.46 words/s : gNorm 0.3097
+[2024-02-13 02:57:29] Seen 2,632,790 samples
+[2024-02-13 02:57:29] Starting data epoch 107 in logical epoch 107
+[2024-02-13 03:02:33] Seen 2,632,784 samples
+[2024-02-13 03:02:33] Starting data epoch 108 in logical epoch 108
+[2024-02-13 03:05:05] Ep. 108 : Up. 53000 : Sen. 1,113,658 : Cost 1.70588911 : Time 612.83s : 150410.58 words/s : gNorm 0.3159
+[2024-02-13 03:07:36] Seen 2,632,778 samples
+[2024-02-13 03:07:36] Starting data epoch 109 in logical epoch 109
+[2024-02-13 03:12:40] Seen 2,632,771 samples
+[2024-02-13 03:12:40] Starting data epoch 110 in logical epoch 110
+[2024-02-13 03:15:20] Ep. 110 : Up. 54000 : Sen. 1,188,574 : Cost 1.70200598 : Time 615.41s : 150732.75 words/s : gNorm 0.2948
+[2024-02-13 03:17:44] Seen 2,632,795 samples
+[2024-02-13 03:17:44] Starting data epoch 111 in logical epoch 111
+[2024-02-13 03:22:45] Seen 2,632,785 samples
+[2024-02-13 03:22:45] Starting data epoch 112 in logical epoch 112
+[2024-02-13 03:25:29] Ep. 112 : Up. 55000 : Sen. 1,234,329 : Cost 1.70028114 : Time 608.77s : 152150.20 words/s : gNorm 0.3191
+[2024-02-13 03:25:29] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-13 03:25:30] Saving Adam parameters
+[2024-02-13 03:25:32] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz
+[2024-02-13 03:25:35] Translating validation set...
+[2024-02-13 03:25:36] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford wa Tiba walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya printa inkjet ambayo inaweza kutengenezwa kwa kutumia Printers za kawaida kwa uwezekano juu ya asilimia moja ya Marekani kila moja.
+[2024-02-13 03:25:36] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti inaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 03:25:36] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kuzunguka 9:30 asubuhi wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 03:25:36] Best translation 3 : marubani hao walitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 03:25:36] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililovingirishwa huku likijibu.
+[2024-02-13 03:25:36] Best translation 5 : Val alikuwa amepata umri wa miaka 28 na alijiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 03:25:36] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, mwaka wa nyuma wa Trafalgar Square, kando ya Strand, kupita kwa Aldwych na up Kingsway kuelekea Horn ambapo Chama cha Conservative walikuwa wakishikilia Spring Forum katika hoteli ya Grandnought Rooms.
+[2024-02-13 03:25:36] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 03:25:36] Best translation 40 : John Grant, kutoka kwenye kituo cha nyumbani cha WNED Buffalo, alisema "Masoma upinde wa mvua uliwafundisha watoto kwa nini kusoma,... upendo wa kusoma [kuonyesha] Watoto wenye kutia moyo kuchukua kitabu na kusoma."
+[2024-02-13 03:25:36] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika fainali ya awali.
+[2024-02-13 03:25:36] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 03:25:36] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 03:25:37] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 03:25:37] Total translation time: 1.82871s
+[2024-02-13 03:25:37] [valid] Ep. 112 : Up. 55000 : chrf : 57.9613 : stalled 5 times (last best: 58.3128)
+[2024-02-13 03:25:37] Translating validation set...
+[2024-02-13 03:25:38] Best translation 0 : Mnamo Jumatatu, wanasayansi kutoka Chuo Kikuu cha Stanford wa Tiba walitangaza uvumbuzi wa zana mpya ya uchunguzi ambayo inaweza kutatua seli kwa aina: chip ndogo ya printa inkjet ambayo inaweza kutengenezwa kwa kutumia Printers za kawaida kwa uwezekano juu ya asilimia moja ya Marekani kila moja.
+[2024-02-13 03:25:38] Best translation 1 : Watafiti wa risasi wanasema hii inaweza kuleta utambuzi wa mapema wa saratani, kifua kikuu, VVU na malaria kwa wagonjwa katika nchi za kipato cha chini, ambapo viwango vya kuishi kwa magonjwa kama vile saratani ya matiti inaweza kuwa nusu ya nchi tajiri.
+[2024-02-13 03:25:38] Best translation 2 : JAS 39C Gripen ilianguka kwenye njia ya kuzunguka 9:30 asubuhi wakati wa ndani (230 UTC) na kulipuka, kufunga uwanja wa ndege kwa ndege wa kibiashara.
+[2024-02-13 03:25:38] Best translation 3 : marubani hao walitambuliwa kama Kiongozi wa Squadron Dilokrit Pattavee.
+[2024-02-13 03:25:38] Best translation 4 : Mitandao ya ndani inaripoti gari la moto la uwanja wa ndege lililovingirishwa huku likijibu.
+[2024-02-13 03:25:38] Best translation 5 : Val alikuwa amepata umri wa miaka 28 na alijiunga na Barça misimu mitatu iliyopita, kutoka Sevilla.
+[2024-02-13 03:25:38] Best translation 10 : Kuzunguka 11:29, maandamano yalichochea Whitehall, mwaka wa nyuma wa Trafalgar Square, kando ya Strand, kupita kwa Aldwych na up Kingsway kuelekea Horn ambapo Chama cha Conservative walikuwa wakishikilia Spring Forum katika hoteli ya Grandnought Rooms.
+[2024-02-13 03:25:38] Best translation 20 : Hsieh alidokeza wakati wa uchaguzi kwamba Ma anaweza kukimbia nchi wakati wa shida.
+[2024-02-13 03:25:38] Best translation 40 : John Grant, kutoka kwenye kituo cha nyumbani cha WNED Buffalo, alisema "Masoma upinde wa mvua uliwafundisha watoto kwa nini kusoma,... upendo wa kusoma [kuonyesha] Watoto wenye kutia moyo kuchukua kitabu na kusoma."
+[2024-02-13 03:25:38] Best translation 80 : Maroochydore kisha kushindwa Caboolture katika fainali ya awali.
+[2024-02-13 03:25:38] Best translation 160 : Stewart, Gordon, Kenneth, na Harvick wanazunguka Mashindano ya Madereva yaliyobaki katika msimu huu.
+[2024-02-13 03:25:38] Best translation 320 : Tangu wakati huo, ukubwa wa uchumi wa China umeongezeka kwa mara 90.
+[2024-02-13 03:25:38] Best translation 640 : Ni inaruhusu wanafunzi uwezo wa kufanya kazi kwa kasi yao wenyewe na kudhibiti kasi ya habari za kufundishia.
+[2024-02-13 03:25:38] Total translation time: 1.28045s
+[2024-02-13 03:25:38] [valid] Ep. 112 : Up. 55000 : bleu : 28.5553 : stalled 6 times (last best: 29.3933)
+[2024-02-13 03:25:38] [valid] Ep. 112 : Up. 55000 : ce-mean-words : 2.53459 : stalled 7 times (last best: 2.1774)
+[2024-02-13 03:25:38] Training finished
+[2024-02-13 03:25:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz
+[2024-02-13 03:25:39] Saving Adam parameters
+[2024-02-13 03:25:42] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-sw/simple/v0/s.train_model.en-sw/output/model.npz.optimizer.npz

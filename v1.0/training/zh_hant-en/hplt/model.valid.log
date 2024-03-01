@@ -1,0 +1,67 @@
+[2024-02-13 07:57:41] [valid] First sentence's tokens as scored:
+[2024-02-13 07:57:41] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-13 07:57:41] [valid]   Hyp: F o r e x a m p l e , y o u c a n u s e t h e f o l l o w i n g w a y s :
+[2024-02-13 07:57:41] [valid]   Ref: I t c a n b e c u s t o m i z e d t o m a k e i t e a s y t o r e a d a n d a l s o w i t h a s m u c h o r l i t t l e c o l o r a s d e s i r e d .
+[2024-02-13 07:57:46] [valid] Ep. 4 : Up. 5000 : chrf : 13.9027 : new best
+[2024-02-13 07:57:51] [valid] Ep. 4 : Up. 5000 : bleu : 0.889961 : new best
+[2024-02-13 07:57:53] [valid] Ep. 4 : Up. 5000 : ce-mean-words : 5.58003 : new best
+[2024-02-13 08:52:28] [valid] Ep. 7 : Up. 10000 : chrf : 19.8053 : new best
+[2024-02-13 08:52:32] [valid] Ep. 7 : Up. 10000 : bleu : 2.00156 : new best
+[2024-02-13 08:52:33] [valid] Ep. 7 : Up. 10000 : ce-mean-words : 4.51439 : new best
+[2024-02-13 09:47:16] [valid] Ep. 10 : Up. 15000 : chrf : 40.7159 : new best
+[2024-02-13 09:47:20] [valid] Ep. 10 : Up. 15000 : bleu : 12.9931 : new best
+[2024-02-13 09:47:21] [valid] Ep. 10 : Up. 15000 : ce-mean-words : 2.9587 : new best
+[2024-02-13 10:41:58] [valid] Ep. 13 : Up. 20000 : chrf : 47.3802 : new best
+[2024-02-13 10:42:01] [valid] Ep. 13 : Up. 20000 : bleu : 17.7584 : new best
+[2024-02-13 10:42:02] [valid] Ep. 13 : Up. 20000 : ce-mean-words : 2.38461 : new best
+[2024-02-13 11:36:22] [valid] Ep. 16 : Up. 25000 : chrf : 49.2187 : new best
+[2024-02-13 11:36:25] [valid] Ep. 16 : Up. 25000 : bleu : 19.4038 : new best
+[2024-02-13 11:36:26] [valid] Ep. 16 : Up. 25000 : ce-mean-words : 2.19524 : new best
+[2024-02-13 12:30:27] [valid] Ep. 19 : Up. 30000 : chrf : 50.097 : new best
+[2024-02-13 12:30:30] [valid] Ep. 19 : Up. 30000 : bleu : 19.9768 : new best
+[2024-02-13 12:30:31] [valid] Ep. 19 : Up. 30000 : ce-mean-words : 2.10501 : new best
+[2024-02-13 13:25:51] [valid] Ep. 23 : Up. 35000 : chrf : 50.6616 : new best
+[2024-02-13 13:25:54] [valid] Ep. 23 : Up. 35000 : bleu : 20.4379 : new best
+[2024-02-13 13:25:56] [valid] Ep. 23 : Up. 35000 : ce-mean-words : 2.05456 : new best
+[2024-02-13 14:20:26] [valid] Ep. 26 : Up. 40000 : chrf : 50.8358 : new best
+[2024-02-13 14:20:29] [valid] Ep. 26 : Up. 40000 : bleu : 20.6232 : new best
+[2024-02-13 14:20:30] [valid] Ep. 26 : Up. 40000 : ce-mean-words : 2.02625 : new best
+[2024-02-13 15:15:02] [valid] Ep. 29 : Up. 45000 : chrf : 51.0434 : new best
+[2024-02-13 15:15:05] [valid] Ep. 29 : Up. 45000 : bleu : 20.9789 : new best
+[2024-02-13 15:15:07] [valid] Ep. 29 : Up. 45000 : ce-mean-words : 2.00827 : new best
+[2024-02-13 16:09:25] [valid] Ep. 32 : Up. 50000 : chrf : 51.1337 : new best
+[2024-02-13 16:09:28] [valid] Ep. 32 : Up. 50000 : bleu : 21.018 : new best
+[2024-02-13 16:09:29] [valid] Ep. 32 : Up. 50000 : ce-mean-words : 1.9982 : new best
+[2024-02-13 17:03:58] [valid] Ep. 35 : Up. 55000 : chrf : 51.3218 : new best
+[2024-02-13 17:04:01] [valid] Ep. 35 : Up. 55000 : bleu : 21.2204 : new best
+[2024-02-13 17:04:02] [valid] Ep. 35 : Up. 55000 : ce-mean-words : 1.98928 : new best
+[2024-02-13 17:57:52] [valid] Ep. 38 : Up. 60000 : chrf : 51.348 : new best
+[2024-02-13 17:57:53] [valid] Ep. 38 : Up. 60000 : bleu : 21.1996 : stalled 1 times (last best: 21.2204)
+[2024-02-13 17:57:55] [valid] Ep. 38 : Up. 60000 : ce-mean-words : 1.9843 : new best
+[2024-02-13 18:53:08] [valid] Ep. 42 : Up. 65000 : chrf : 51.478 : new best
+[2024-02-13 18:53:11] [valid] Ep. 42 : Up. 65000 : bleu : 21.2514 : new best
+[2024-02-13 18:53:13] [valid] Ep. 42 : Up. 65000 : ce-mean-words : 1.97985 : new best
+[2024-02-13 19:47:34] [valid] Ep. 45 : Up. 70000 : chrf : 51.5496 : new best
+[2024-02-13 19:47:37] [valid] Ep. 45 : Up. 70000 : bleu : 21.4405 : new best
+[2024-02-13 19:47:38] [valid] Ep. 45 : Up. 70000 : ce-mean-words : 1.97636 : new best
+[2024-02-13 20:42:04] [valid] Ep. 48 : Up. 75000 : chrf : 51.651 : new best
+[2024-02-13 20:42:06] [valid] Ep. 48 : Up. 75000 : bleu : 21.4092 : stalled 1 times (last best: 21.4405)
+[2024-02-13 20:42:07] [valid] Ep. 48 : Up. 75000 : ce-mean-words : 1.97624 : new best
+[2024-02-13 21:36:17] [valid] Ep. 51 : Up. 80000 : chrf : 51.751 : new best
+[2024-02-13 21:36:20] [valid] Ep. 51 : Up. 80000 : bleu : 21.4835 : new best
+[2024-02-13 21:36:21] [valid] Ep. 51 : Up. 80000 : ce-mean-words : 1.97613 : new best
+[2024-02-13 22:30:37] [valid] Ep. 54 : Up. 85000 : chrf : 51.6911 : stalled 1 times (last best: 51.751)
+[2024-02-13 22:30:40] [valid] Ep. 54 : Up. 85000 : bleu : 21.4996 : new best
+[2024-02-13 22:30:42] [valid] Ep. 54 : Up. 85000 : ce-mean-words : 1.97591 : new best
+[2024-02-13 23:24:31] [valid] Ep. 57 : Up. 90000 : chrf : 51.6141 : stalled 2 times (last best: 51.751)
+[2024-02-13 23:24:34] [valid] Ep. 57 : Up. 90000 : bleu : 21.6313 : new best
+[2024-02-13 23:24:36] [valid] Ep. 57 : Up. 90000 : ce-mean-words : 1.97505 : new best
+[2024-02-14 00:19:53] [valid] Ep. 61 : Up. 95000 : chrf : 51.6683 : stalled 3 times (last best: 51.751)
+[2024-02-14 00:19:55] [valid] Ep. 61 : Up. 95000 : bleu : 21.5527 : stalled 1 times (last best: 21.6313)
+[2024-02-14 00:19:55] [valid] Ep. 61 : Up. 95000 : ce-mean-words : 1.97525 : stalled 1 times (last best: 1.97505)
+[2024-02-14 01:14:06] [valid] Ep. 64 : Up. 100000 : chrf : 51.6661 : stalled 4 times (last best: 51.751)
+[2024-02-14 01:14:08] [valid] Ep. 64 : Up. 100000 : bleu : 21.6313 : new best
+[2024-02-14 01:14:09] [valid] Ep. 64 : Up. 100000 : ce-mean-words : 1.97528 : stalled 2 times (last best: 1.97505)
+[2024-02-14 02:08:33] [valid] Ep. 67 : Up. 105000 : chrf : 51.6317 : stalled 5 times (last best: 51.751)
+[2024-02-14 02:08:34] [valid] Ep. 67 : Up. 105000 : bleu : 21.4805 : stalled 1 times (last best: 21.6313)
+[2024-02-14 02:08:34] [valid] Ep. 67 : Up. 105000 : ce-mean-words : 1.97523 : stalled 3 times (last best: 1.97505)

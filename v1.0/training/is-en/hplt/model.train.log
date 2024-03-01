@@ -1,0 +1,1000 @@
+[2024-02-13 05:00:42] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 05:00:42] [marian] Running on nid005096 as process 22127 with command line:
+[2024-02-13 05:00:42] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.is-en.spm /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.is-en.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/tmp.d/6038552 --train-sets /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/tmp.d/6038552/train.is.gz /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/tmp.d/6038552/train.en.gz --valid-sets /scratch/project_465000574/data/en-is/valid/flores200.dev.is-en.is /scratch/project_465000574/data/en-is/valid/flores200.dev.is-en.en --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-13 05:00:42] [config] after: 0e
+[2024-02-13 05:00:42] [config] after-batches: 0
+[2024-02-13 05:00:42] [config] after-epochs: 0
+[2024-02-13 05:00:42] [config] all-caps-every: 0
+[2024-02-13 05:00:42] [config] allow-unk: false
+[2024-02-13 05:00:42] [config] authors: false
+[2024-02-13 05:00:42] [config] beam-size: 4
+[2024-02-13 05:00:42] [config] bert-class-symbol: "[CLS]"
+[2024-02-13 05:00:42] [config] bert-mask-symbol: "[MASK]"
+[2024-02-13 05:00:42] [config] bert-masking-fraction: 0.15
+[2024-02-13 05:00:42] [config] bert-sep-symbol: "[SEP]"
+[2024-02-13 05:00:42] [config] bert-train-type-embeddings: true
+[2024-02-13 05:00:42] [config] bert-type-vocab-size: 2
+[2024-02-13 05:00:42] [config] build-info: ""
+[2024-02-13 05:00:42] [config] char-conv-filters-num:
+[2024-02-13 05:00:42] [config]   - 200
+[2024-02-13 05:00:42] [config]   - 200
+[2024-02-13 05:00:42] [config]   - 250
+[2024-02-13 05:00:42] [config]   - 250
+[2024-02-13 05:00:42] [config]   - 300
+[2024-02-13 05:00:42] [config]   - 300
+[2024-02-13 05:00:42] [config]   - 300
+[2024-02-13 05:00:42] [config]   - 300
+[2024-02-13 05:00:42] [config] char-conv-filters-widths:
+[2024-02-13 05:00:42] [config]   - 1
+[2024-02-13 05:00:42] [config]   - 2
+[2024-02-13 05:00:42] [config]   - 3
+[2024-02-13 05:00:42] [config]   - 4
+[2024-02-13 05:00:42] [config]   - 5
+[2024-02-13 05:00:42] [config]   - 6
+[2024-02-13 05:00:42] [config]   - 7
+[2024-02-13 05:00:42] [config]   - 8
+[2024-02-13 05:00:42] [config] char-highway: 4
+[2024-02-13 05:00:42] [config] char-stride: 5
+[2024-02-13 05:00:42] [config] check-gradient-nan: true
+[2024-02-13 05:00:42] [config] check-nan: false
+[2024-02-13 05:00:42] [config] cite: false
+[2024-02-13 05:00:42] [config] clip-norm: 0
+[2024-02-13 05:00:42] [config] cost-scaling:
+[2024-02-13 05:00:42] [config]   []
+[2024-02-13 05:00:42] [config] cost-type: ce-mean-words
+[2024-02-13 05:00:42] [config] cpu-threads: 0
+[2024-02-13 05:00:42] [config] data-threads: 8
+[2024-02-13 05:00:42] [config] data-weighting: ""
+[2024-02-13 05:00:42] [config] data-weighting-type: sentence
+[2024-02-13 05:00:42] [config] dec-cell: gru
+[2024-02-13 05:00:42] [config] dec-cell-base-depth: 2
+[2024-02-13 05:00:42] [config] dec-cell-high-depth: 1
+[2024-02-13 05:00:42] [config] dec-depth: 6
+[2024-02-13 05:00:42] [config] devices:
+[2024-02-13 05:00:42] [config]   - 0
+[2024-02-13 05:00:42] [config]   - 1
+[2024-02-13 05:00:42] [config]   - 2
+[2024-02-13 05:00:42] [config]   - 3
+[2024-02-13 05:00:42] [config]   - 4
+[2024-02-13 05:00:42] [config]   - 5
+[2024-02-13 05:00:42] [config]   - 6
+[2024-02-13 05:00:42] [config]   - 7
+[2024-02-13 05:00:42] [config] dim-emb: 512
+[2024-02-13 05:00:42] [config] dim-rnn: 1024
+[2024-02-13 05:00:42] [config] dim-vocabs:
+[2024-02-13 05:00:42] [config]   - 64000
+[2024-02-13 05:00:42] [config] disp-first: 0
+[2024-02-13 05:00:42] [config] disp-freq: 1000u
+[2024-02-13 05:00:42] [config] disp-label-counts: true
+[2024-02-13 05:00:42] [config] dropout-rnn: 0
+[2024-02-13 05:00:42] [config] dropout-src: 0
+[2024-02-13 05:00:42] [config] dropout-trg: 0
+[2024-02-13 05:00:42] [config] dump-config: ""
+[2024-02-13 05:00:42] [config] dynamic-gradient-scaling:
+[2024-02-13 05:00:42] [config]   []
+[2024-02-13 05:00:42] [config] early-stopping: 5
+[2024-02-13 05:00:42] [config] early-stopping-on: first
+[2024-02-13 05:00:42] [config] embedding-fix-src: false
+[2024-02-13 05:00:42] [config] embedding-fix-trg: false
+[2024-02-13 05:00:42] [config] embedding-normalization: false
+[2024-02-13 05:00:42] [config] embedding-vectors:
+[2024-02-13 05:00:42] [config]   []
+[2024-02-13 05:00:42] [config] enc-cell: gru
+[2024-02-13 05:00:42] [config] enc-cell-depth: 1
+[2024-02-13 05:00:42] [config] enc-depth: 6
+[2024-02-13 05:00:42] [config] enc-type: bidirectional
+[2024-02-13 05:00:42] [config] english-title-case-every: 0
+[2024-02-13 05:00:42] [config] exponential-smoothing: 0.0001
+[2024-02-13 05:00:42] [config] factor-weight: 1
+[2024-02-13 05:00:42] [config] factors-combine: sum
+[2024-02-13 05:00:42] [config] factors-dim-emb: 0
+[2024-02-13 05:00:42] [config] gradient-checkpointing: false
+[2024-02-13 05:00:42] [config] gradient-norm-average-window: 100
+[2024-02-13 05:00:42] [config] guided-alignment: none
+[2024-02-13 05:00:42] [config] guided-alignment-cost: ce
+[2024-02-13 05:00:42] [config] guided-alignment-weight: 0.1
+[2024-02-13 05:00:42] [config] ignore-model-config: false
+[2024-02-13 05:00:42] [config] input-types:
+[2024-02-13 05:00:42] [config]   []
+[2024-02-13 05:00:42] [config] interpolate-env-vars: false
+[2024-02-13 05:00:42] [config] keep-best: true
+[2024-02-13 05:00:42] [config] label-smoothing: 0.1
+[2024-02-13 05:00:42] [config] layer-normalization: false
+[2024-02-13 05:00:42] [config] learn-rate: 0.0003
+[2024-02-13 05:00:42] [config] lemma-dependency: ""
+[2024-02-13 05:00:42] [config] lemma-dim-emb: 0
+[2024-02-13 05:00:42] [config] log: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/logs/model.train.log
+[2024-02-13 05:00:42] [config] log-level: info
+[2024-02-13 05:00:42] [config] log-time-zone: ""
+[2024-02-13 05:00:42] [config] logical-epoch:
+[2024-02-13 05:00:42] [config]   - 1e
+[2024-02-13 05:00:42] [config]   - 0
+[2024-02-13 05:00:42] [config] lr-decay: 0
+[2024-02-13 05:00:42] [config] lr-decay-freq: 50000
+[2024-02-13 05:00:42] [config] lr-decay-inv-sqrt:
+[2024-02-13 05:00:42] [config]   - 16000
+[2024-02-13 05:00:42] [config] lr-decay-repeat-warmup: false
+[2024-02-13 05:00:42] [config] lr-decay-reset-optimizer: false
+[2024-02-13 05:00:42] [config] lr-decay-start:
+[2024-02-13 05:00:42] [config]   - 10
+[2024-02-13 05:00:42] [config]   - 1
+[2024-02-13 05:00:42] [config] lr-decay-strategy: epoch+stalled
+[2024-02-13 05:00:42] [config] lr-report: false
+[2024-02-13 05:00:42] [config] lr-warmup: 16000
+[2024-02-13 05:00:42] [config] lr-warmup-at-reload: false
+[2024-02-13 05:00:42] [config] lr-warmup-cycle: false
+[2024-02-13 05:00:42] [config] lr-warmup-start-rate: 0
+[2024-02-13 05:00:42] [config] max-length: 250
+[2024-02-13 05:00:42] [config] max-length-crop: false
+[2024-02-13 05:00:42] [config] max-length-factor: 3
+[2024-02-13 05:00:42] [config] maxi-batch: 1000
+[2024-02-13 05:00:42] [config] maxi-batch-sort: trg
+[2024-02-13 05:00:42] [config] mini-batch: 4096
+[2024-02-13 05:00:42] [config] mini-batch-fit: true
+[2024-02-13 05:00:42] [config] mini-batch-fit-step: 10
+[2024-02-13 05:00:42] [config] mini-batch-round-up: true
+[2024-02-13 05:00:42] [config] mini-batch-track-lr: false
+[2024-02-13 05:00:42] [config] mini-batch-warmup: 0
+[2024-02-13 05:00:42] [config] mini-batch-words: 0
+[2024-02-13 05:00:42] [config] mini-batch-words-ref: 0
+[2024-02-13 05:00:42] [config] model: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 05:00:42] [config] multi-loss-type: sum
+[2024-02-13 05:00:42] [config] n-best: false
+[2024-02-13 05:00:42] [config] no-nccl: false
+[2024-02-13 05:00:42] [config] no-reload: false
+[2024-02-13 05:00:42] [config] no-restore-corpus: false
+[2024-02-13 05:00:42] [config] normalize: 1
+[2024-02-13 05:00:42] [config] normalize-gradient: false
+[2024-02-13 05:00:42] [config] num-devices: 0
+[2024-02-13 05:00:42] [config] optimizer: adam
+[2024-02-13 05:00:42] [config] optimizer-delay: 2
+[2024-02-13 05:00:42] [config] optimizer-params:
+[2024-02-13 05:00:42] [config]   - 0.9
+[2024-02-13 05:00:42] [config]   - 0.98
+[2024-02-13 05:00:42] [config]   - 1e-09
+[2024-02-13 05:00:42] [config] output-omit-bias: false
+[2024-02-13 05:00:42] [config] overwrite: true
+[2024-02-13 05:00:42] [config] precision:
+[2024-02-13 05:00:42] [config]   - float32
+[2024-02-13 05:00:42] [config]   - float32
+[2024-02-13 05:00:42] [config] pretrained-model: ""
+[2024-02-13 05:00:42] [config] quantize-biases: false
+[2024-02-13 05:00:42] [config] quantize-bits: 0
+[2024-02-13 05:00:42] [config] quantize-log-based: false
+[2024-02-13 05:00:42] [config] quantize-optimization-steps: 0
+[2024-02-13 05:00:42] [config] quiet: false
+[2024-02-13 05:00:42] [config] quiet-translation: false
+[2024-02-13 05:00:42] [config] relative-paths: false
+[2024-02-13 05:00:42] [config] right-left: false
+[2024-02-13 05:00:42] [config] save-freq: 5000u
+[2024-02-13 05:00:42] [config] seed: 42
+[2024-02-13 05:00:42] [config] sentencepiece-alphas:
+[2024-02-13 05:00:42] [config]   - 0.1
+[2024-02-13 05:00:42] [config] sentencepiece-max-lines: 2000000
+[2024-02-13 05:00:42] [config] sentencepiece-options: ""
+[2024-02-13 05:00:42] [config] sharding: global
+[2024-02-13 05:00:42] [config] shuffle: batches
+[2024-02-13 05:00:42] [config] shuffle-in-ram: false
+[2024-02-13 05:00:42] [config] sigterm: save-and-exit
+[2024-02-13 05:00:42] [config] skip: false
+[2024-02-13 05:00:42] [config] sqlite: ""
+[2024-02-13 05:00:42] [config] sqlite-drop: false
+[2024-02-13 05:00:42] [config] sync-freq: 200u
+[2024-02-13 05:00:42] [config] sync-sgd: true
+[2024-02-13 05:00:42] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/tmp.d/6038552
+[2024-02-13 05:00:42] [config] tied-embeddings: false
+[2024-02-13 05:00:42] [config] tied-embeddings-all: true
+[2024-02-13 05:00:42] [config] tied-embeddings-src: false
+[2024-02-13 05:00:42] [config] train-embedder-rank:
+[2024-02-13 05:00:42] [config]   []
+[2024-02-13 05:00:42] [config] train-sets:
+[2024-02-13 05:00:42] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/tmp.d/6038552/train.is.gz
+[2024-02-13 05:00:42] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/tmp.d/6038552/train.en.gz
+[2024-02-13 05:00:42] [config] transformer-aan-activation: swish
+[2024-02-13 05:00:42] [config] transformer-aan-depth: 2
+[2024-02-13 05:00:42] [config] transformer-aan-nogate: false
+[2024-02-13 05:00:42] [config] transformer-decoder-autoreg: self-attention
+[2024-02-13 05:00:42] [config] transformer-decoder-dim-ffn: 0
+[2024-02-13 05:00:42] [config] transformer-decoder-ffn-depth: 0
+[2024-02-13 05:00:42] [config] transformer-depth-scaling: false
+[2024-02-13 05:00:42] [config] transformer-dim-aan: 2048
+[2024-02-13 05:00:42] [config] transformer-dim-ffn: 2048
+[2024-02-13 05:00:42] [config] transformer-dropout: 0.1
+[2024-02-13 05:00:42] [config] transformer-dropout-attention: 0
+[2024-02-13 05:00:42] [config] transformer-dropout-ffn: 0
+[2024-02-13 05:00:42] [config] transformer-ffn-activation: relu
+[2024-02-13 05:00:42] [config] transformer-ffn-depth: 2
+[2024-02-13 05:00:42] [config] transformer-guided-alignment-layer: last
+[2024-02-13 05:00:42] [config] transformer-heads: 8
+[2024-02-13 05:00:42] [config] transformer-no-projection: false
+[2024-02-13 05:00:42] [config] transformer-pool: false
+[2024-02-13 05:00:42] [config] transformer-postprocess: dan
+[2024-02-13 05:00:42] [config] transformer-postprocess-emb: d
+[2024-02-13 05:00:42] [config] transformer-postprocess-top: ""
+[2024-02-13 05:00:42] [config] transformer-preprocess: ""
+[2024-02-13 05:00:42] [config] transformer-rnn-projection: false
+[2024-02-13 05:00:42] [config] transformer-tied-layers:
+[2024-02-13 05:00:42] [config]   []
+[2024-02-13 05:00:42] [config] transformer-train-position-embeddings: false
+[2024-02-13 05:00:42] [config] tsv: false
+[2024-02-13 05:00:42] [config] tsv-fields: 0
+[2024-02-13 05:00:42] [config] type: transformer
+[2024-02-13 05:00:42] [config] ulr: false
+[2024-02-13 05:00:42] [config] ulr-dim-emb: 0
+[2024-02-13 05:00:42] [config] ulr-dropout: 0
+[2024-02-13 05:00:42] [config] ulr-keys-vectors: ""
+[2024-02-13 05:00:42] [config] ulr-query-vectors: ""
+[2024-02-13 05:00:42] [config] ulr-softmax-temperature: 1
+[2024-02-13 05:00:42] [config] ulr-trainable-transformation: false
+[2024-02-13 05:00:42] [config] unlikelihood-loss: false
+[2024-02-13 05:00:42] [config] valid-freq: 5000u
+[2024-02-13 05:00:42] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/logs/model.valid.log
+[2024-02-13 05:00:42] [config] valid-max-length: 1000
+[2024-02-13 05:00:42] [config] valid-metrics:
+[2024-02-13 05:00:42] [config]   - chrf
+[2024-02-13 05:00:42] [config]   - bleu
+[2024-02-13 05:00:42] [config]   - ce-mean-words
+[2024-02-13 05:00:42] [config] valid-mini-batch: 64
+[2024-02-13 05:00:42] [config] valid-reset-stalled: true
+[2024-02-13 05:00:42] [config] valid-script-args:
+[2024-02-13 05:00:42] [config]   []
+[2024-02-13 05:00:42] [config] valid-script-path: ""
+[2024-02-13 05:00:42] [config] valid-sets:
+[2024-02-13 05:00:42] [config]   - /scratch/project_465000574/data/en-is/valid/flores200.dev.is-en.is
+[2024-02-13 05:00:42] [config]   - /scratch/project_465000574/data/en-is/valid/flores200.dev.is-en.en
+[2024-02-13 05:00:42] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/logs/model.valid.out
+[2024-02-13 05:00:42] [config] vocabs:
+[2024-02-13 05:00:42] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.is-en.spm
+[2024-02-13 05:00:42] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.is-en.spm
+[2024-02-13 05:00:42] [config] word-penalty: 0
+[2024-02-13 05:00:42] [config] word-scores: false
+[2024-02-13 05:00:42] [config] workspace: 20000
+[2024-02-13 05:00:42] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 05:00:42] Using synchronous SGD
+[2024-02-13 05:00:42] [comm] Compiled without MPI support. Running as a single process on nid005096
+[2024-02-13 05:00:42] Synced seed 42
+[2024-02-13 05:00:42] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.is-en.spm
+[2024-02-13 05:00:42] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-13 05:00:42] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.is-en.spm
+[2024-02-13 05:00:42] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-13 05:00:42] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-13 05:00:42] Checking gradient for NaN
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 05:00:44] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 05:00:44] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 05:00:46] [comm] Using global sharding
+[2024-02-13 05:00:47] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 05:00:47] [training] Using 8 GPUs
+[2024-02-13 05:00:47] [logits] Applying loss function for 1 factor(s)
+[2024-02-13 05:00:47] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 05:00:52] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 05:01:47] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 05:01:47] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 05:01:47] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 05:01:47] [comm] Using global sharding
+[2024-02-13 05:01:48] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 05:01:48] [training] Using 8 GPUs
+[2024-02-13 05:01:48] Training started
+[2024-02-13 05:02:32] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 05:02:32] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 05:02:46] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 05:02:57] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 05:02:57] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 05:02:57] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 05:02:57] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 05:02:57] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 05:02:57] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 05:02:57] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 05:02:58] Allocating memory for general optimizer shards
+[2024-02-13 05:02:58] Parameter type float32, optimization type float32, casting types false
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu2
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu6
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu4
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu7
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu5
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu3
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu0
+[2024-02-13 05:02:58] [memory] Reserving 36 MB, device gpu1
+[2024-02-13 05:02:58] Allocating memory for Adam-specific shards
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu5
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu7
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu2
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu1
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu6
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu0
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu4
+[2024-02-13 05:02:58] [memory] Reserving 73 MB, device gpu3
+[2024-02-13 05:09:51] Seen 3,479,600 samples
+[2024-02-13 05:09:51] Starting data epoch 2 in logical epoch 2
+[2024-02-13 05:12:37] Ep. 2 : Up. 1000 : Sen. 1,036,896 : Cost 8.97220516 : Time 649.46s : 128780.33 words/s : gNorm 5.5826
+[2024-02-13 05:17:31] Seen 3,479,656 samples
+[2024-02-13 05:17:31] Starting data epoch 3 in logical epoch 3
+[2024-02-13 05:22:19] Ep. 3 : Up. 2000 : Sen. 2,018,296 : Cost 6.38339901 : Time 582.63s : 144938.98 words/s : gNorm 3.2583
+[2024-02-13 05:25:10] Seen 3,479,663 samples
+[2024-02-13 05:25:10] Starting data epoch 4 in logical epoch 4
+[2024-02-13 05:31:58] Ep. 4 : Up. 3000 : Sen. 3,039,731 : Cost 5.27203035 : Time 578.89s : 144168.11 words/s : gNorm 2.0825
+[2024-02-13 05:32:50] Seen 3,479,655 samples
+[2024-02-13 05:32:50] Starting data epoch 5 in logical epoch 5
+[2024-02-13 05:40:30] Seen 3,479,665 samples
+[2024-02-13 05:40:30] Starting data epoch 6 in logical epoch 6
+[2024-02-13 05:42:25] Ep. 6 : Up. 4000 : Sen. 559,388 : Cost 4.67830658 : Time 626.91s : 134041.53 words/s : gNorm 1.7771
+[2024-02-13 05:48:10] Seen 3,479,654 samples
+[2024-02-13 05:48:10] Starting data epoch 7 in logical epoch 7
+[2024-02-13 05:52:04] Ep. 7 : Up. 5000 : Sen. 1,561,692 : Cost 4.34440136 : Time 579.42s : 144484.45 words/s : gNorm 1.4577
+[2024-02-13 05:52:04] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 05:52:06] Saving Adam parameters
+[2024-02-13 05:52:09] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 05:52:12] Translating validation set...
+[2024-02-13 05:52:12] [valid] First sentence's tokens as scored:
+[2024-02-13 05:52:12] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-13 05:52:12] [valid]   Hyp: I t i s i m p o r t a n t t o m a k e t h e b e s t w a y t o m a k e t h e b e s t w a y o f t h e s a m e t i m e .
+[2024-02-13 05:52:12] [valid]   Ref: H o p e f u l l y , m o s t p e o p l e w i l l r e a l i s e t h a t t h e i r l o n g t e r m b e s t o p t i o n i s t o w o r k t o g e t h e r w i t h o t h e r s .
+[2024-02-13 05:52:15] Best translation 0 : In addition to the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council.
+[2024-02-13 05:52:15] Best translation 1 : In addition, it has been a lot of people, but it has been made in the world, and the world’s first time.
+[2024-02-13 05:52:15] Best translation 2 : In addition to the University of Iceland, the University of the University of Iceland and the University of Iceland.
+[2024-02-13 05:52:15] Best translation 3 : I want to receive emails, updates, and newsletters from B&B.
+[2024-02-13 05:52:15] Best translation 4 : In addition, you can see the first time of the first time.
+[2024-02-13 05:52:15] Best translation 5 : The first time was made from the first time of the first time.
+[2024-02-13 05:52:15] Best translation 10 : The most recent booking for this hotel is located in the heart of the heart of the United States, and the United States of Israel.
+[2024-02-13 05:52:15] Best translation 20 : And he went to him, and went to his father.
+[2024-02-13 05:52:15] Best translation 40 : And he said to the Lord, and said, and said, and said, and said, and said, and said, I will be able to see the first time of the world.
+[2024-02-13 05:52:15] Best translation 80 : Please note that the first time in the world.
+[2024-02-13 05:52:15] Best translation 160 : In addition, the world’s first time in the world’s first time, the world’s — the world’s first time in the world’s first time.
+[2024-02-13 05:52:15] Best translation 320 : The Nordic Council of the Nordic Council of Iceland.
+[2024-02-13 05:52:15] Best translation 640 : The software allows you to provide the information and use of your personal data.
+[2024-02-13 05:52:15] Total translation time: 3.32852s
+[2024-02-13 05:52:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-chrf.npz
+[2024-02-13 05:52:16] [valid] Ep. 7 : Up. 5000 : chrf : 13.7602 : new best
+[2024-02-13 05:52:16] Translating validation set...
+[2024-02-13 05:52:20] Best translation 0 : In addition to the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council of the Nordic Council.
+[2024-02-13 05:52:20] Best translation 1 : In addition, it has been a lot of people, but it has been made in the world, and the world’s first time.
+[2024-02-13 05:52:20] Best translation 2 : In addition to the University of Iceland, the University of the University of Iceland and the University of Iceland.
+[2024-02-13 05:52:20] Best translation 3 : I want to receive emails, updates, and newsletters from B&B.
+[2024-02-13 05:52:20] Best translation 4 : In addition, you can see the first time of the first time.
+[2024-02-13 05:52:20] Best translation 5 : The first time was made from the first time of the first time.
+[2024-02-13 05:52:20] Best translation 10 : The most recent booking for this hotel is located in the heart of the heart of the United States, and the United States of Israel.
+[2024-02-13 05:52:20] Best translation 20 : And he went to him, and went to his father.
+[2024-02-13 05:52:20] Best translation 40 : And he said to the Lord, and said, and said, and said, and said, and said, and said, I will be able to see the first time of the world.
+[2024-02-13 05:52:20] Best translation 80 : Please note that the first time in the world.
+[2024-02-13 05:52:20] Best translation 160 : In addition, the world’s first time in the world’s first time, the world’s — the world’s first time in the world’s first time.
+[2024-02-13 05:52:20] Best translation 320 : The Nordic Council of the Nordic Council of Iceland.
+[2024-02-13 05:52:20] Best translation 640 : The software allows you to provide the information and use of your personal data.
+[2024-02-13 05:52:20] Total translation time: 3.44435s
+[2024-02-13 05:52:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-bleu.npz
+[2024-02-13 05:52:21] [valid] Ep. 7 : Up. 5000 : bleu : 0.735148 : new best
+[2024-02-13 05:52:21] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 05:52:23] [valid] Ep. 7 : Up. 5000 : ce-mean-words : 5.77672 : new best
+[2024-02-13 05:56:08] Seen 3,479,651 samples
+[2024-02-13 05:56:08] Starting data epoch 8 in logical epoch 8
+[2024-02-13 06:02:03] Ep. 8 : Up. 6000 : Sen. 2,544,658 : Cost 4.13136387 : Time 598.93s : 140083.30 words/s : gNorm 0.9552
+[2024-02-13 06:03:49] Seen 3,479,674 samples
+[2024-02-13 06:03:49] Starting data epoch 9 in logical epoch 9
+[2024-02-13 06:11:29] Seen 3,479,665 samples
+[2024-02-13 06:11:29] Starting data epoch 10 in logical epoch 10
+[2024-02-13 06:12:33] Ep. 10 : Up. 7000 : Sen. 126,946 : Cost 3.95526552 : Time 629.24s : 133547.29 words/s : gNorm 0.8889
+[2024-02-13 06:19:08] Seen 3,479,634 samples
+[2024-02-13 06:19:08] Starting data epoch 11 in logical epoch 11
+[2024-02-13 06:22:11] Ep. 11 : Up. 8000 : Sen. 1,181,070 : Cost 3.75806904 : Time 578.64s : 144864.94 words/s : gNorm 0.8479
+[2024-02-13 06:26:47] Seen 3,479,648 samples
+[2024-02-13 06:26:47] Starting data epoch 12 in logical epoch 12
+[2024-02-13 06:31:49] Ep. 12 : Up. 9000 : Sen. 2,188,856 : Cost 3.56156826 : Time 577.72s : 144955.86 words/s : gNorm 1.2269
+[2024-02-13 06:34:26] Seen 3,479,633 samples
+[2024-02-13 06:34:26] Starting data epoch 13 in logical epoch 13
+[2024-02-13 06:41:28] Ep. 13 : Up. 10000 : Sen. 3,155,982 : Cost 3.36216998 : Time 579.09s : 145146.86 words/s : gNorm 0.9434
+[2024-02-13 06:41:28] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 06:41:30] Saving Adam parameters
+[2024-02-13 06:41:33] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 06:41:36] Translating validation set...
+[2024-02-13 06:41:38] Best translation 0 : During the year, the University of the University of Akureyri can be used as a result of a new model that can be found in the form.
+[2024-02-13 06:41:38] Best translation 1 : In fact, it is important that the economic growth of the disease can be reduced in the past years, and the growth of the disease can be reduced by the disease.
+[2024-02-13 06:41:38] Best translation 2 : J3939 – The 39-minute drive from the airport and the airport can be found at the airport at the airport at the airport.
+[2024-02-13 06:41:38] Best translation 3 : The first time was the first President of the United States, the President of the United States.
+[2024-02-13 06:41:38] Best translation 4 : In the event of the aircraft, the aircraft will be sent to the aircraft.
+[2024-02-13 06:41:38] Best translation 5 : 28 In the beginning of the year of the year of the year of the year.
+[2024-02-13 06:41:38] Best translation 10 : Preview 11:11 From the 19th century, the Royal Palace of London, the City Hall of London, the Royal Palace of London, and the Royal Palace of London, will be held in the heart of London.
+[2024-02-13 06:41:38] Best translation 20 : He went into the land of the land, and went to the land of the land.
+[2024-02-13 06:41:38] Best translation 40 : John W.W.W.N.N.N.N.N.N.N. W.O.N.N.N.N.N.N.N.N.N.N.N., to help the children of the children and the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the
+[2024-02-13 06:41:39] Best translation 80 : Maroochydore was played in the game of the game of the game.
+[2024-02-13 06:41:39] Best translation 160 : St Andrews, James, and William, are the first four-year-old women who are at the end of the year.
+[2024-02-13 06:41:39] Best translation 320 : From China, China has been a high-quality product.
+[2024-02-13 06:41:39] Best translation 640 : This allows students to manage their skills and manage their skills.
+[2024-02-13 06:41:39] Total translation time: 2.84634s
+[2024-02-13 06:41:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-chrf.npz
+[2024-02-13 06:41:40] [valid] Ep. 13 : Up. 10000 : chrf : 19.787 : new best
+[2024-02-13 06:41:40] Translating validation set...
+[2024-02-13 06:41:42] Best translation 0 : During the year, the University of the University of Akureyri can be used as a result of a new model that can be found in the form.
+[2024-02-13 06:41:42] Best translation 1 : In fact, it is important that the economic growth of the disease can be reduced in the past years, and the growth of the disease can be reduced by the disease.
+[2024-02-13 06:41:42] Best translation 2 : J3939 – The 39-minute drive from the airport and the airport can be found at the airport at the airport at the airport.
+[2024-02-13 06:41:42] Best translation 3 : The first time was the first President of the United States, the President of the United States.
+[2024-02-13 06:41:42] Best translation 4 : In the event of the aircraft, the aircraft will be sent to the aircraft.
+[2024-02-13 06:41:42] Best translation 5 : 28 In the beginning of the year of the year of the year of the year.
+[2024-02-13 06:41:42] Best translation 10 : Preview 11:11 From the 19th century, the Royal Palace of London, the City Hall of London, the Royal Palace of London, and the Royal Palace of London, will be held in the heart of London.
+[2024-02-13 06:41:42] Best translation 20 : He went into the land of the land, and went to the land of the land.
+[2024-02-13 06:41:42] Best translation 40 : John W.W.W.N.N.N.N.N.N.N. W.O.N.N.N.N.N.N.N.N.N.N.N., to help the children of the children and the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the children of the
+[2024-02-13 06:41:42] Best translation 80 : Maroochydore was played in the game of the game of the game.
+[2024-02-13 06:41:42] Best translation 160 : St Andrews, James, and William, are the first four-year-old women who are at the end of the year.
+[2024-02-13 06:41:42] Best translation 320 : From China, China has been a high-quality product.
+[2024-02-13 06:41:42] Best translation 640 : This allows students to manage their skills and manage their skills.
+[2024-02-13 06:41:42] Total translation time: 2.48942s
+[2024-02-13 06:41:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-bleu.npz
+[2024-02-13 06:41:44] [valid] Ep. 13 : Up. 10000 : bleu : 2.72372 : new best
+[2024-02-13 06:41:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 06:41:45] [valid] Ep. 13 : Up. 10000 : ce-mean-words : 4.63918 : new best
+[2024-02-13 06:42:21] Seen 3,479,644 samples
+[2024-02-13 06:42:21] Starting data epoch 14 in logical epoch 14
+[2024-02-13 06:49:59] Seen 3,479,655 samples
+[2024-02-13 06:49:59] Starting data epoch 15 in logical epoch 15
+[2024-02-13 06:52:09] Ep. 15 : Up. 11000 : Sen. 669,045 : Cost 3.10056257 : Time 640.96s : 130586.48 words/s : gNorm 0.8758
+[2024-02-13 06:57:37] Seen 3,479,638 samples
+[2024-02-13 06:57:37] Starting data epoch 16 in logical epoch 16
+[2024-02-13 07:01:49] Ep. 16 : Up. 12000 : Sen. 1,699,992 : Cost 2.85087800 : Time 579.88s : 145727.85 words/s : gNorm 0.6817
+[2024-02-13 07:05:15] Seen 3,479,623 samples
+[2024-02-13 07:05:15] Starting data epoch 17 in logical epoch 17
+[2024-02-13 07:11:25] Ep. 17 : Up. 13000 : Sen. 2,714,450 : Cost 2.64370060 : Time 575.65s : 145258.49 words/s : gNorm 0.5552
+[2024-02-13 07:12:52] Seen 3,479,635 samples
+[2024-02-13 07:12:52] Starting data epoch 18 in logical epoch 18
+[2024-02-13 07:20:29] Seen 3,479,646 samples
+[2024-02-13 07:20:29] Starting data epoch 19 in logical epoch 19
+[2024-02-13 07:21:48] Ep. 19 : Up. 14000 : Sen. 255,078 : Cost 2.47252893 : Time 623.25s : 134131.29 words/s : gNorm 0.4571
+[2024-02-13 07:28:07] Seen 3,479,641 samples
+[2024-02-13 07:28:07] Starting data epoch 20 in logical epoch 20
+[2024-02-13 07:31:28] Ep. 20 : Up. 15000 : Sen. 1,306,495 : Cost 2.38020015 : Time 579.85s : 145526.67 words/s : gNorm 0.4594
+[2024-02-13 07:31:28] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 07:31:29] Saving Adam parameters
+[2024-02-13 07:31:31] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 07:31:34] Translating validation set...
+[2024-02-13 07:31:35] Best translation 0 : On Monday, researchers from the University of Stanford University announced a new analyzer that can be classified by a type: a small print flag that can be produced by a regular Inkjet printer for potentially available for one American piece.
+[2024-02-13 07:31:35] Best translation 1 : The leading scientists say that this can become an early-term analysis of cancer, cancer, and malnutrition in low-income countries, where the biomass ratio for disease can be lower than in rich countries.
+[2024-02-13 07:31:35] Best translation 2 : JAS 39C Gripen aircraft crashes at the runway at 19:00 at the time of the hour (2:30 UTC). It was opened and closed at all airports at the airport.
+[2024-02-13 07:31:35] Best translation 3 : It was confirmed that the pilot was the leader of the Communist Party, Dikilt Patveve.
+[2024-02-13 07:31:35] Best translation 4 : According to the media on the map of the airport after entering the card.
+[2024-02-13 07:31:35] Best translation 5 : The 28-year-old Vidal joined Barcelona from the three competition period.
+[2024-02-13 07:31:35] Best translation 10 : K. 11:29, the protests of the Whitehall, along with the Trafalgar Square, by The Strand, and the Kingsway are taking place at the University of London’s Grand Palace.
+[2024-02-13 07:31:35] Best translation 20 : Hesieh gave a sense when the elections began to escape the land and the situation would be.
+[2024-02-13 07:31:35] Best translation 40 : John Grant, on WED Buffalo (the attack of Rainbow Reading) said that “Read Rainbow” teaches the reasonless reading,... to appreciate reading - the children to take a book on hand and read.”
+[2024-02-13 07:31:35] Best translation 80 : Maroochydore won the Caboolture in the leadership of the game.
+[2024-02-13 07:31:35] Best translation 160 : Stewart, Gordon, Kenseth and Harck are in the ten seats of each driver’s driver’s driver.
+[2024-02-13 07:31:35] Best translation 320 : Since the economy has grown 90-fold.
+[2024-02-13 07:31:35] Best translation 640 : Such allows students to work on their own speed and manage information with teaching.
+[2024-02-13 07:31:35] Total translation time: 1.76761s
+[2024-02-13 07:31:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-chrf.npz
+[2024-02-13 07:31:36] [valid] Ep. 20 : Up. 15000 : chrf : 45.0278 : new best
+[2024-02-13 07:31:36] Translating validation set...
+[2024-02-13 07:31:37] Best translation 0 : On Monday, researchers from the University of Stanford University announced a new analyzer that can be classified by a type: a small print flag that can be produced by a regular Inkjet printer for potentially available for one American piece.
+[2024-02-13 07:31:37] Best translation 1 : The leading scientists say that this can become an early-term analysis of cancer, cancer, and malnutrition in low-income countries, where the biomass ratio for disease can be lower than in rich countries.
+[2024-02-13 07:31:37] Best translation 2 : JAS 39C Gripen aircraft crashes at the runway at 19:00 at the time of the hour (2:30 UTC). It was opened and closed at all airports at the airport.
+[2024-02-13 07:31:37] Best translation 3 : It was confirmed that the pilot was the leader of the Communist Party, Dikilt Patveve.
+[2024-02-13 07:31:37] Best translation 4 : According to the media on the map of the airport after entering the card.
+[2024-02-13 07:31:37] Best translation 5 : The 28-year-old Vidal joined Barcelona from the three competition period.
+[2024-02-13 07:31:37] Best translation 10 : K. 11:29, the protests of the Whitehall, along with the Trafalgar Square, by The Strand, and the Kingsway are taking place at the University of London’s Grand Palace.
+[2024-02-13 07:31:37] Best translation 20 : Hesieh gave a sense when the elections began to escape the land and the situation would be.
+[2024-02-13 07:31:37] Best translation 40 : John Grant, on WED Buffalo (the attack of Rainbow Reading) said that “Read Rainbow” teaches the reasonless reading,... to appreciate reading - the children to take a book on hand and read.”
+[2024-02-13 07:31:37] Best translation 80 : Maroochydore won the Caboolture in the leadership of the game.
+[2024-02-13 07:31:37] Best translation 160 : Stewart, Gordon, Kenseth and Harck are in the ten seats of each driver’s driver’s driver.
+[2024-02-13 07:31:37] Best translation 320 : Since the economy has grown 90-fold.
+[2024-02-13 07:31:37] Best translation 640 : Such allows students to work on their own speed and manage information with teaching.
+[2024-02-13 07:31:38] Total translation time: 1.30758s
+[2024-02-13 07:31:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-bleu.npz
+[2024-02-13 07:31:38] [valid] Ep. 20 : Up. 15000 : bleu : 18.8715 : new best
+[2024-02-13 07:31:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 07:31:39] [valid] Ep. 20 : Up. 15000 : ce-mean-words : 2.89123 : new best
+[2024-02-13 07:35:56] Seen 3,479,632 samples
+[2024-02-13 07:35:56] Starting data epoch 21 in logical epoch 21
+[2024-02-13 07:41:15] Ep. 21 : Up. 16000 : Sen. 2,310,694 : Cost 2.30764699 : Time 587.74s : 141873.26 words/s : gNorm 0.3629
+[2024-02-13 07:43:35] Seen 3,479,641 samples
+[2024-02-13 07:43:35] Starting data epoch 22 in logical epoch 22
+[2024-02-13 07:50:57] Ep. 22 : Up. 17000 : Sen. 3,305,873 : Cost 2.25147295 : Time 581.62s : 144824.88 words/s : gNorm 0.3407
+[2024-02-13 07:51:16] Seen 3,479,635 samples
+[2024-02-13 07:51:16] Starting data epoch 23 in logical epoch 23
+[2024-02-13 07:58:56] Seen 3,479,669 samples
+[2024-02-13 07:58:56] Starting data epoch 24 in logical epoch 24
+[2024-02-13 08:01:28] Ep. 24 : Up. 18000 : Sen. 871,654 : Cost 2.18099642 : Time 630.84s : 133243.75 words/s : gNorm 0.3087
+[2024-02-13 08:06:36] Seen 3,479,645 samples
+[2024-02-13 08:06:36] Starting data epoch 25 in logical epoch 25
+[2024-02-13 08:11:06] Ep. 25 : Up. 19000 : Sen. 1,847,016 : Cost 2.15118933 : Time 578.62s : 144771.50 words/s : gNorm 0.3127
+[2024-02-13 08:14:17] Seen 3,479,639 samples
+[2024-02-13 08:14:17] Starting data epoch 26 in logical epoch 26
+[2024-02-13 08:20:47] Ep. 26 : Up. 20000 : Sen. 2,916,566 : Cost 2.10700941 : Time 580.64s : 144683.80 words/s : gNorm 0.2945
+[2024-02-13 08:20:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 08:20:48] Saving Adam parameters
+[2024-02-13 08:20:50] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 08:20:53] Translating validation set...
+[2024-02-13 08:20:54] Best translation 0 : On Monday, scientists from the University of Stanford reported a new article that can class cells after type: a tiny printable flag that can be produced with a standard inkjet for possible about one U.S. sent the piece.
+[2024-02-13 08:20:54] Best translation 1 : Leading researchers say that this can be used for early analysis of cancer, bacteria, humiliation and malaria in patients in low-income countries, where the live rate for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 08:20:54] Best translation 2 : The JAS 39C Gripen aircraft broke on runways at 9:30 hours (02:30 UTC). It explodes and shuts off all scheduled flights at the airport.
+[2024-02-13 08:20:54] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Pattavee.
+[2024-02-13 08:20:54] Best translation 4 : According to the media on-site, a fire extinguisher on the airport after having gone to the call.
+[2024-02-13 08:20:54] Best translation 5 : The 28th-year-old Vidal joined Barcelona from Seville for three season.
+[2024-02-13 08:20:54] Best translation 10 : At 11:29, the protests moved to Whitehall, by Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of the Holborn, where the Icelandic National Party was holding its spring conference at the Grand Connaught Rooms hotel.
+[2024-02-13 08:20:54] Best translation 20 : Hsieh gave a sense when the elections began to flee a country as soon as an emergency would be.
+[2024-02-13 08:20:54] Best translation 40 : John Grant, on WED Buffalo (world channel Reading Rainbow) said that “Reading Rainbow taught the kids of reading, ... to appreciate reading - [the show] urged the children to take a book on hand and read.”
+[2024-02-13 08:20:54] Best translation 80 : Maroochydore then defeated Caboolture in the final game.
+[2024-02-13 08:20:54] Best translation 160 : Stewart, Gordon, Kenseth and Harwick are the top ten seats in terms of the driver’s menu when four competitions are left during the period.
+[2024-02-13 08:20:54] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 08:20:55] Best translation 640 : This enables students to work at their own speed and manage the evaluation of the teaching.
+[2024-02-13 08:20:55] Total translation time: 1.72317s
+[2024-02-13 08:20:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-chrf.npz
+[2024-02-13 08:20:56] [valid] Ep. 26 : Up. 20000 : chrf : 51.3366 : new best
+[2024-02-13 08:20:56] Translating validation set...
+[2024-02-13 08:20:56] Best translation 0 : On Monday, scientists from the University of Stanford reported a new article that can class cells after type: a tiny printable flag that can be produced with a standard inkjet for possible about one U.S. sent the piece.
+[2024-02-13 08:20:56] Best translation 1 : Leading researchers say that this can be used for early analysis of cancer, bacteria, humiliation and malaria in patients in low-income countries, where the live rate for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 08:20:56] Best translation 2 : The JAS 39C Gripen aircraft broke on runways at 9:30 hours (02:30 UTC). It explodes and shuts off all scheduled flights at the airport.
+[2024-02-13 08:20:56] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Pattavee.
+[2024-02-13 08:20:56] Best translation 4 : According to the media on-site, a fire extinguisher on the airport after having gone to the call.
+[2024-02-13 08:20:56] Best translation 5 : The 28th-year-old Vidal joined Barcelona from Seville for three season.
+[2024-02-13 08:20:56] Best translation 10 : At 11:29, the protests moved to Whitehall, by Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of the Holborn, where the Icelandic National Party was holding its spring conference at the Grand Connaught Rooms hotel.
+[2024-02-13 08:20:56] Best translation 20 : Hsieh gave a sense when the elections began to flee a country as soon as an emergency would be.
+[2024-02-13 08:20:56] Best translation 40 : John Grant, on WED Buffalo (world channel Reading Rainbow) said that “Reading Rainbow taught the kids of reading, ... to appreciate reading - [the show] urged the children to take a book on hand and read.”
+[2024-02-13 08:20:56] Best translation 80 : Maroochydore then defeated Caboolture in the final game.
+[2024-02-13 08:20:56] Best translation 160 : Stewart, Gordon, Kenseth and Harwick are the top ten seats in terms of the driver’s menu when four competitions are left during the period.
+[2024-02-13 08:20:56] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 08:20:57] Best translation 640 : This enables students to work at their own speed and manage the evaluation of the teaching.
+[2024-02-13 08:20:57] Total translation time: 1.26102s
+[2024-02-13 08:20:57] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-bleu.npz
+[2024-02-13 08:20:58] [valid] Ep. 26 : Up. 20000 : bleu : 24.6763 : new best
+[2024-02-13 08:20:58] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 08:20:58] [valid] Ep. 26 : Up. 20000 : ce-mean-words : 2.41066 : new best
+[2024-02-13 08:22:09] Seen 3,479,698 samples
+[2024-02-13 08:22:09] Starting data epoch 27 in logical epoch 27
+[2024-02-13 08:29:49] Seen 3,479,676 samples
+[2024-02-13 08:29:49] Starting data epoch 28 in logical epoch 28
+[2024-02-13 08:31:30] Ep. 28 : Up. 21000 : Sen. 419,396 : Cost 2.07492185 : Time 642.89s : 130865.34 words/s : gNorm 0.2866
+[2024-02-13 08:37:29] Seen 3,479,661 samples
+[2024-02-13 08:37:29] Starting data epoch 29 in logical epoch 29
+[2024-02-13 08:41:09] Ep. 29 : Up. 22000 : Sen. 1,424,418 : Cost 2.04502606 : Time 579.47s : 144588.33 words/s : gNorm 0.3008
+[2024-02-13 08:45:10] Seen 3,479,615 samples
+[2024-02-13 08:45:10] Starting data epoch 30 in logical epoch 30
+[2024-02-13 08:50:50] Ep. 30 : Up. 23000 : Sen. 2,441,494 : Cost 2.03766346 : Time 580.18s : 144746.20 words/s : gNorm 0.2984
+[2024-02-13 08:52:50] Seen 3,479,626 samples
+[2024-02-13 08:52:50] Starting data epoch 31 in logical epoch 31
+[2024-02-13 09:00:29] Seen 3,479,613 samples
+[2024-02-13 09:00:29] Starting data epoch 32 in logical epoch 32
+[2024-02-13 09:01:21] Ep. 32 : Up. 24000 : Sen. 9,840 : Cost 2.00905490 : Time 631.50s : 133230.81 words/s : gNorm 0.3093
+[2024-02-13 09:08:09] Seen 3,479,646 samples
+[2024-02-13 09:08:09] Starting data epoch 33 in logical epoch 33
+[2024-02-13 09:11:01] Ep. 33 : Up. 25000 : Sen. 992,988 : Cost 1.99150634 : Time 579.53s : 144234.31 words/s : gNorm 0.2642
+[2024-02-13 09:11:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 09:11:02] Saving Adam parameters
+[2024-02-13 09:11:04] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 09:11:07] Translating validation set...
+[2024-02-13 09:11:09] Best translation 0 : On Monday, scientists from the University of Stanford University announced the invention of new papers that can class up cells by type: a small print of flags that can be produced with a standard inkjet for potentially one US centenary.
+[2024-02-13 09:11:09] Best translation 1 : Leading researchers say that this can be used for early cancer, tubers, immune and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 09:11:09] Best translation 2 : The JAS 39C Gripen aircraft broke on runway at 9:30 am at 2:30 UTC and closed at all scheduled times at the airport.
+[2024-02-13 09:11:09] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 09:11:09] Best translation 4 : According to the media on-site, a fire extinguisher at the airport after entering the call.
+[2024-02-13 09:11:09] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 09:11:09] Best translation 10 : At 11:29, the protests moved to Whitehall, past Trafalgar Square, by The Strand, past Aldwych, and up Kingsway in the direction of the University of Iceland, where the Parliament was held at the Grand Connaught Rooms hotel.
+[2024-02-13 09:11:09] Best translation 20 : Hsieh indicated when the election took place that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 09:11:09] Best translation 40 : John Grant, on WNED Buffalo (world channel Reading Rainbow) said that “Reading Rainbow taught the kids reason reading, ... to appreciate reading - [the show] meant the children to take a book in hand and read.”
+[2024-02-13 09:11:09] Best translation 80 : Maroochydore then defeated Caboolture in the Supervision.
+[2024-02-13 09:11:09] Best translation 160 : Stewart, Gordon, Kenseth and Harwick are in the top ten seats in terms of the driver’s title when four competitions are left during the period.
+[2024-02-13 09:11:09] Best translation 320 : Since that, China’s economy has grown 90-fold.
+[2024-02-13 09:11:09] Best translation 640 : This allows students to work at their own speed and manage the rhythm of information in the teaching.
+[2024-02-13 09:11:09] Total translation time: 2.21725s
+[2024-02-13 09:11:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-chrf.npz
+[2024-02-13 09:11:10] [valid] Ep. 33 : Up. 25000 : chrf : 52.6741 : new best
+[2024-02-13 09:11:10] Translating validation set...
+[2024-02-13 09:11:12] Best translation 0 : On Monday, scientists from the University of Stanford University announced the invention of new papers that can class up cells by type: a small print of flags that can be produced with a standard inkjet for potentially one US centenary.
+[2024-02-13 09:11:12] Best translation 1 : Leading researchers say that this can be used for early cancer, tubers, immune and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 09:11:12] Best translation 2 : The JAS 39C Gripen aircraft broke on runway at 9:30 am at 2:30 UTC and closed at all scheduled times at the airport.
+[2024-02-13 09:11:12] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 09:11:12] Best translation 4 : According to the media on-site, a fire extinguisher at the airport after entering the call.
+[2024-02-13 09:11:12] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 09:11:12] Best translation 10 : At 11:29, the protests moved to Whitehall, past Trafalgar Square, by The Strand, past Aldwych, and up Kingsway in the direction of the University of Iceland, where the Parliament was held at the Grand Connaught Rooms hotel.
+[2024-02-13 09:11:12] Best translation 20 : Hsieh indicated when the election took place that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 09:11:12] Best translation 40 : John Grant, on WNED Buffalo (world channel Reading Rainbow) said that “Reading Rainbow taught the kids reason reading, ... to appreciate reading - [the show] meant the children to take a book in hand and read.”
+[2024-02-13 09:11:12] Best translation 80 : Maroochydore then defeated Caboolture in the Supervision.
+[2024-02-13 09:11:12] Best translation 160 : Stewart, Gordon, Kenseth and Harwick are in the top ten seats in terms of the driver’s title when four competitions are left during the period.
+[2024-02-13 09:11:12] Best translation 320 : Since that, China’s economy has grown 90-fold.
+[2024-02-13 09:11:12] Best translation 640 : This allows students to work at their own speed and manage the rhythm of information in the teaching.
+[2024-02-13 09:11:12] Total translation time: 2.13850s
+[2024-02-13 09:11:12] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-bleu.npz
+[2024-02-13 09:11:13] [valid] Ep. 33 : Up. 25000 : bleu : 26.1518 : new best
+[2024-02-13 09:11:13] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 09:11:13] [valid] Ep. 33 : Up. 25000 : ce-mean-words : 2.30305 : new best
+[2024-02-13 09:16:03] Seen 3,479,627 samples
+[2024-02-13 09:16:03] Starting data epoch 34 in logical epoch 34
+[2024-02-13 09:20:53] Ep. 34 : Up. 26000 : Sen. 1,940,320 : Cost 1.97255051 : Time 592.54s : 141552.09 words/s : gNorm 0.2748
+[2024-02-13 09:23:44] Seen 3,479,634 samples
+[2024-02-13 09:23:44] Starting data epoch 35 in logical epoch 35
+[2024-02-13 09:30:34] Ep. 35 : Up. 27000 : Sen. 3,032,566 : Cost 1.96594298 : Time 581.23s : 145068.47 words/s : gNorm 0.2591
+[2024-02-13 09:31:24] Seen 3,479,652 samples
+[2024-02-13 09:31:24] Starting data epoch 36 in logical epoch 36
+[2024-02-13 09:39:05] Seen 3,479,651 samples
+[2024-02-13 09:39:05] Starting data epoch 37 in logical epoch 37
+[2024-02-13 09:41:06] Ep. 37 : Up. 28000 : Sen. 578,434 : Cost 1.94600308 : Time 631.52s : 133180.40 words/s : gNorm 0.2827
+[2024-02-13 09:46:45] Seen 3,479,656 samples
+[2024-02-13 09:46:45] Starting data epoch 38 in logical epoch 38
+[2024-02-13 09:50:43] Ep. 38 : Up. 29000 : Sen. 1,582,355 : Cost 1.93271410 : Time 577.15s : 144374.09 words/s : gNorm 0.2798
+[2024-02-13 09:54:25] Seen 3,479,641 samples
+[2024-02-13 09:54:25] Starting data epoch 39 in logical epoch 39
+[2024-02-13 10:00:25] Ep. 39 : Up. 30000 : Sen. 2,618,367 : Cost 1.91930199 : Time 582.20s : 145799.80 words/s : gNorm 0.2726
+[2024-02-13 10:00:25] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 10:00:26] Saving Adam parameters
+[2024-02-13 10:00:29] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 10:00:31] Translating validation set...
+[2024-02-13 10:00:32] Best translation 0 : On Monday, scientists from the University of Stanford University announced the invention of new papers that can classify cells by genre: a small print of flags that can be produced with ordinary inkjet printers for potentially one U.S. sent the piece.
+[2024-02-13 10:00:32] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tubers, immune and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 10:00:32] Best translation 2 : The JAS 39C Gripen aircraft broke on the runway at 9:30 am at the time (02:30 UTC), which exploded and closed at all scheduled times at the airport.
+[2024-02-13 10:00:32] Best translation 3 : It was confirmed that the pilot was the leader of the Party, Dilokrit Pattavee.
+[2024-02-13 10:00:32] Best translation 4 : According to local media selected fire car at the airport after entering the call.
+[2024-02-13 10:00:32] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 10:00:32] Best translation 10 : At 11:29, the protests moved to Whitehall, past Trafalgar Square, by The Strand, past Aldwych, and up Kingsway in the direction of Holborn, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms.
+[2024-02-13 10:00:32] Best translation 20 : Hsieh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 10:00:32] Best translation 40 : John Grant, on WNED Buffalo (home channel Reading Rainbow) said that “Reading Rainbow taught kids the reason of reading, ... to appreciate reading - [the show] urged the children to take a book in hand and read.”
+[2024-02-13 10:00:33] Best translation 80 : Maroochydore then defeated Caboolture in the pre-end game.
+[2024-02-13 10:00:33] Best translation 160 : Stewart, Gordon, Kenseth, and Harwick are in the top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 10:00:33] Best translation 320 : Since then, China’s economy has grown 90 times.
+[2024-02-13 10:00:33] Best translation 640 : This allows students to work at their own speed and manage the rhythm of information in the teaching.
+[2024-02-13 10:00:33] Total translation time: 1.76378s
+[2024-02-13 10:00:33] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-chrf.npz
+[2024-02-13 10:00:34] [valid] Ep. 39 : Up. 30000 : chrf : 53.075 : new best
+[2024-02-13 10:00:34] Translating validation set...
+[2024-02-13 10:00:35] Best translation 0 : On Monday, scientists from the University of Stanford University announced the invention of new papers that can classify cells by genre: a small print of flags that can be produced with ordinary inkjet printers for potentially one U.S. sent the piece.
+[2024-02-13 10:00:35] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tubers, immune and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 10:00:35] Best translation 2 : The JAS 39C Gripen aircraft broke on the runway at 9:30 am at the time (02:30 UTC), which exploded and closed at all scheduled times at the airport.
+[2024-02-13 10:00:35] Best translation 3 : It was confirmed that the pilot was the leader of the Party, Dilokrit Pattavee.
+[2024-02-13 10:00:35] Best translation 4 : According to local media selected fire car at the airport after entering the call.
+[2024-02-13 10:00:35] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 10:00:35] Best translation 10 : At 11:29, the protests moved to Whitehall, past Trafalgar Square, by The Strand, past Aldwych, and up Kingsway in the direction of Holborn, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms.
+[2024-02-13 10:00:35] Best translation 20 : Hsieh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 10:00:35] Best translation 40 : John Grant, on WNED Buffalo (home channel Reading Rainbow) said that “Reading Rainbow taught kids the reason of reading, ... to appreciate reading - [the show] urged the children to take a book in hand and read.”
+[2024-02-13 10:00:35] Best translation 80 : Maroochydore then defeated Caboolture in the pre-end game.
+[2024-02-13 10:00:35] Best translation 160 : Stewart, Gordon, Kenseth, and Harwick are in the top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 10:00:35] Best translation 320 : Since then, China’s economy has grown 90 times.
+[2024-02-13 10:00:35] Best translation 640 : This allows students to work at their own speed and manage the rhythm of information in the teaching.
+[2024-02-13 10:00:35] Total translation time: 1.33104s
+[2024-02-13 10:00:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-bleu.npz
+[2024-02-13 10:00:36] [valid] Ep. 39 : Up. 30000 : bleu : 26.43 : new best
+[2024-02-13 10:00:36] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 10:00:37] [valid] Ep. 39 : Up. 30000 : ce-mean-words : 2.29504 : new best
+[2024-02-13 10:02:15] Seen 3,479,647 samples
+[2024-02-13 10:02:15] Starting data epoch 40 in logical epoch 40
+[2024-02-13 10:09:52] Seen 3,479,632 samples
+[2024-02-13 10:09:52] Starting data epoch 41 in logical epoch 41
+[2024-02-13 10:10:57] Ep. 41 : Up. 31000 : Sen. 160,860 : Cost 1.91915560 : Time 632.12s : 131869.52 words/s : gNorm 0.2821
+[2024-02-13 10:17:28] Seen 3,479,658 samples
+[2024-02-13 10:17:28] Starting data epoch 42 in logical epoch 42
+[2024-02-13 10:20:35] Ep. 42 : Up. 32000 : Sen. 1,172,467 : Cost 1.89889419 : Time 577.68s : 145805.69 words/s : gNorm 0.2640
+[2024-02-13 10:25:06] Seen 3,479,668 samples
+[2024-02-13 10:25:06] Starting data epoch 43 in logical epoch 43
+[2024-02-13 10:30:08] Ep. 43 : Up. 33000 : Sen. 2,079,603 : Cost 1.90633976 : Time 572.74s : 144925.24 words/s : gNorm 0.2819
+[2024-02-13 10:32:42] Seen 3,479,654 samples
+[2024-02-13 10:32:42] Starting data epoch 44 in logical epoch 44
+[2024-02-13 10:39:46] Ep. 44 : Up. 34000 : Sen. 3,191,062 : Cost 1.88173556 : Time 578.57s : 146330.27 words/s : gNorm 0.2689
+[2024-02-13 10:40:19] Seen 3,479,638 samples
+[2024-02-13 10:40:19] Starting data epoch 45 in logical epoch 45
+[2024-02-13 10:47:55] Seen 3,479,642 samples
+[2024-02-13 10:47:55] Starting data epoch 46 in logical epoch 46
+[2024-02-13 10:50:09] Ep. 46 : Up. 35000 : Sen. 770,900 : Cost 1.87431252 : Time 622.68s : 134600.73 words/s : gNorm 0.5971
+[2024-02-13 10:50:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 10:50:10] Saving Adam parameters
+[2024-02-13 10:50:13] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 10:50:15] Translating validation set...
+[2024-02-13 10:50:16] Best translation 0 : On Monday, scientists from Stanford University announced the invention of new developers who can sort cells by type: a small printable chip that can be produced with ordinary inkjet printer for potentially one US centenary.
+[2024-02-13 10:50:16] Best translation 1 : Leading scientists say this can be used to provide early analysis of cancer, tubers, AIDS and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half as in more rich countries.
+[2024-02-13 10:50:16] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC) and it exploded and closed all scheduled flights at the airport.
+[2024-02-13 10:50:16] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Pattavee.
+[2024-02-13 10:50:16] Best translation 4 : According to local media, a fire extinguisher at the airport after entering the call.
+[2024-02-13 10:50:16] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 10:50:16] Best translation 10 : At 11:29, the protest was raised at Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party had its spring conference at the Grand Connaught Rooms.
+[2024-02-13 10:50:16] Best translation 20 : Hiseh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 10:50:16] Best translation 40 : John Grant, on WNED Buffalo (home channel Reading Rainbow) said that "Reading Rainbow taught kids reason reading, ... to appreciate reading - [the show] urged the children to take a book in hand and read."
+[2024-02-13 10:50:17] Best translation 80 : Maroochydore then defeated Caboolture in the pre-final game.
+[2024-02-13 10:50:17] Best translation 160 : Stewart, Gordon, Kenseth, and Harwick are in the top ten seats in terms of the driver’s title when four competitions are left during the season.
+[2024-02-13 10:50:17] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 10:50:17] Best translation 640 : This enables students to work at their own speed and manage the rhythm of information disclosure at the teaching.
+[2024-02-13 10:50:17] Total translation time: 1.76995s
+[2024-02-13 10:50:17] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-chrf.npz
+[2024-02-13 10:50:18] [valid] Ep. 46 : Up. 35000 : chrf : 53.3898 : new best
+[2024-02-13 10:50:18] Translating validation set...
+[2024-02-13 10:50:19] Best translation 0 : On Monday, scientists from Stanford University announced the invention of new developers who can sort cells by type: a small printable chip that can be produced with ordinary inkjet printer for potentially one US centenary.
+[2024-02-13 10:50:19] Best translation 1 : Leading scientists say this can be used to provide early analysis of cancer, tubers, AIDS and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half as in more rich countries.
+[2024-02-13 10:50:19] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC) and it exploded and closed all scheduled flights at the airport.
+[2024-02-13 10:50:19] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Pattavee.
+[2024-02-13 10:50:19] Best translation 4 : According to local media, a fire extinguisher at the airport after entering the call.
+[2024-02-13 10:50:19] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 10:50:19] Best translation 10 : At 11:29, the protest was raised at Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party had its spring conference at the Grand Connaught Rooms.
+[2024-02-13 10:50:19] Best translation 20 : Hiseh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 10:50:19] Best translation 40 : John Grant, on WNED Buffalo (home channel Reading Rainbow) said that "Reading Rainbow taught kids reason reading, ... to appreciate reading - [the show] urged the children to take a book in hand and read."
+[2024-02-13 10:50:19] Best translation 80 : Maroochydore then defeated Caboolture in the pre-final game.
+[2024-02-13 10:50:19] Best translation 160 : Stewart, Gordon, Kenseth, and Harwick are in the top ten seats in terms of the driver’s title when four competitions are left during the season.
+[2024-02-13 10:50:19] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 10:50:19] Best translation 640 : This enables students to work at their own speed and manage the rhythm of information disclosure at the teaching.
+[2024-02-13 10:50:19] Total translation time: 1.28858s
+[2024-02-13 10:50:19] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.best-bleu.npz
+[2024-02-13 10:50:20] [valid] Ep. 46 : Up. 35000 : bleu : 26.4926 : new best
+[2024-02-13 10:50:20] [valid] Ep. 46 : Up. 35000 : ce-mean-words : 2.32543 : stalled 1 times (last best: 2.29504)
+[2024-02-13 10:55:43] Seen 3,479,631 samples
+[2024-02-13 10:55:43] Starting data epoch 47 in logical epoch 47
+[2024-02-13 10:59:56] Ep. 47 : Up. 36000 : Sen. 1,743,976 : Cost 1.86887300 : Time 586.91s : 142578.76 words/s : gNorm 0.2748
+[2024-02-13 11:03:20] Seen 3,479,614 samples
+[2024-02-13 11:03:20] Starting data epoch 48 in logical epoch 48
+[2024-02-13 11:09:34] Ep. 48 : Up. 37000 : Sen. 2,765,442 : Cost 1.86711180 : Time 578.37s : 145852.51 words/s : gNorm 0.2979
+[2024-02-13 11:10:57] Seen 3,479,644 samples
+[2024-02-13 11:10:57] Starting data epoch 49 in logical epoch 49
+[2024-02-13 11:18:33] Seen 3,479,636 samples
+[2024-02-13 11:18:33] Starting data epoch 50 in logical epoch 50
+[2024-02-13 11:19:54] Ep. 50 : Up. 38000 : Sen. 278,217 : Cost 1.86223412 : Time 619.25s : 134868.16 words/s : gNorm 0.4699
+[2024-02-13 11:26:08] Seen 3,479,636 samples
+[2024-02-13 11:26:08] Starting data epoch 51 in logical epoch 51
+[2024-02-13 11:29:33] Ep. 51 : Up. 39000 : Sen. 1,343,735 : Cost 1.84737384 : Time 579.75s : 146147.00 words/s : gNorm 0.5307
+[2024-02-13 11:33:46] Seen 3,479,663 samples
+[2024-02-13 11:33:46] Starting data epoch 52 in logical epoch 52
+[2024-02-13 11:39:09] Ep. 52 : Up. 40000 : Sen. 2,347,069 : Cost 1.84615445 : Time 575.74s : 145166.29 words/s : gNorm 0.2617
+[2024-02-13 11:39:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 11:39:10] Saving Adam parameters
+[2024-02-13 11:39:12] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 11:39:15] Translating validation set...
+[2024-02-13 11:39:16] Best translation 0 : On Monday, scientists from Stanford University’s Medical Department announced the invention of a new entrepreneur that can sort cells by genre: a small printable chip that can be produced with ordinary inkjet for potentially one US centimeter.
+[2024-02-13 11:39:16] Best translation 1 : Leading scientists say this can be used to create early detection of cancer, tubers, allergies and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 11:39:16] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC) and it exploded and closed all scheduled routes at the airport.
+[2024-02-13 11:39:16] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Pattavee.
+[2024-02-13 11:39:16] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 11:39:16] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 11:39:16] Best translation 10 : At 11:29, the protest was raised at Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party had its spring conference held at the Grand Connaught Rooms Hotel.
+[2024-02-13 11:39:16] Best translation 20 : Hiseh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 11:39:16] Best translation 40 : John Grant, at WNED Buffalo (home channel Reading Rainbow), said that "Reading Rainbow taught the kids reason for reading, ...to appreciate reading - [the episode] urged the children to take a book in hand and read."
+[2024-02-13 11:39:16] Best translation 80 : Maroochydore then defeated Caboolture in the pre-final game.
+[2024-02-13 11:39:16] Best translation 160 : Stewart, Gordon, Kenseth, and Harvick are top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 11:39:16] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 11:39:17] Best translation 640 : This allows students to work at their own pace and manage the rhythm of information disclosure with the teaching.
+[2024-02-13 11:39:17] Total translation time: 1.81359s
+[2024-02-13 11:39:17] [valid] Ep. 52 : Up. 40000 : chrf : 53.1852 : stalled 1 times (last best: 53.3898)
+[2024-02-13 11:39:17] Translating validation set...
+[2024-02-13 11:39:18] Best translation 0 : On Monday, scientists from Stanford University’s Medical Department announced the invention of a new entrepreneur that can sort cells by genre: a small printable chip that can be produced with ordinary inkjet for potentially one US centimeter.
+[2024-02-13 11:39:18] Best translation 1 : Leading scientists say this can be used to create early detection of cancer, tubers, allergies and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in rich countries.
+[2024-02-13 11:39:18] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC) and it exploded and closed all scheduled routes at the airport.
+[2024-02-13 11:39:18] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Pattavee.
+[2024-02-13 11:39:18] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 11:39:18] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 11:39:18] Best translation 10 : At 11:29, the protest was raised at Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party had its spring conference held at the Grand Connaught Rooms Hotel.
+[2024-02-13 11:39:18] Best translation 20 : Hiseh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 11:39:18] Best translation 40 : John Grant, at WNED Buffalo (home channel Reading Rainbow), said that "Reading Rainbow taught the kids reason for reading, ...to appreciate reading - [the episode] urged the children to take a book in hand and read."
+[2024-02-13 11:39:18] Best translation 80 : Maroochydore then defeated Caboolture in the pre-final game.
+[2024-02-13 11:39:18] Best translation 160 : Stewart, Gordon, Kenseth, and Harvick are top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 11:39:18] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 11:39:18] Best translation 640 : This allows students to work at their own pace and manage the rhythm of information disclosure with the teaching.
+[2024-02-13 11:39:18] Total translation time: 1.34063s
+[2024-02-13 11:39:18] [valid] Ep. 52 : Up. 40000 : bleu : 26.0682 : stalled 1 times (last best: 26.4926)
+[2024-02-13 11:39:18] [valid] Ep. 52 : Up. 40000 : ce-mean-words : 2.36966 : stalled 2 times (last best: 2.29504)
+[2024-02-13 11:41:32] Seen 3,479,656 samples
+[2024-02-13 11:41:32] Starting data epoch 53 in logical epoch 53
+[2024-02-13 11:48:54] Ep. 53 : Up. 41000 : Sen. 3,356,682 : Cost 1.84286988 : Time 585.07s : 143166.06 words/s : gNorm 0.2981
+[2024-02-13 11:49:09] Seen 3,479,614 samples
+[2024-02-13 11:49:09] Starting data epoch 54 in logical epoch 54
+[2024-02-13 11:56:49] Seen 3,479,668 samples
+[2024-02-13 11:56:49] Starting data epoch 55 in logical epoch 55
+[2024-02-13 11:59:23] Ep. 55 : Up. 42000 : Sen. 857,750 : Cost 1.83537507 : Time 628.74s : 133314.56 words/s : gNorm 0.2738
+[2024-02-13 12:04:29] Seen 3,479,636 samples
+[2024-02-13 12:04:29] Starting data epoch 56 in logical epoch 56
+[2024-02-13 12:09:01] Ep. 56 : Up. 43000 : Sen. 1,891,278 : Cost 1.82212973 : Time 577.99s : 143990.98 words/s : gNorm 0.9161
+[2024-02-13 12:12:09] Seen 3,479,636 samples
+[2024-02-13 12:12:09] Starting data epoch 57 in logical epoch 57
+[2024-02-13 12:18:40] Ep. 57 : Up. 44000 : Sen. 2,924,868 : Cost 1.82966793 : Time 579.48s : 146091.88 words/s : gNorm 0.2480
+[2024-02-13 12:19:47] Seen 3,479,637 samples
+[2024-02-13 12:19:47] Starting data epoch 58 in logical epoch 58
+[2024-02-13 12:27:23] Seen 3,479,632 samples
+[2024-02-13 12:27:23] Starting data epoch 59 in logical epoch 59
+[2024-02-13 12:29:03] Ep. 59 : Up. 45000 : Sen. 394,987 : Cost 1.82237256 : Time 622.38s : 134694.74 words/s : gNorm 0.2809
+[2024-02-13 12:29:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 12:29:04] Saving Adam parameters
+[2024-02-13 12:29:06] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 12:29:09] Translating validation set...
+[2024-02-13 12:29:10] Best translation 0 : On Monday, scientists from Stanford University’s Medical Department announced the invention of a new analyzer that can sort cells by type: a small print-able chip that can be produced by a standard inkjet printer for potentially one US centerated piece.
+[2024-02-13 12:29:10] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tubers, allergies and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in more rich countries.
+[2024-02-13 12:29:10] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 local time (02:30 UTC) and closed all scheduled routes at the airport.
+[2024-02-13 12:29:10] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 12:29:10] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 12:29:10] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 12:29:10] Best translation 10 : At 11:29, the protest moved to Whitehall, past Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms Hotel.
+[2024-02-13 12:29:10] Best translation 20 : Hisienh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 12:29:10] Best translation 40 : John Grant, at WNED Buffalo (home channel Reading Rainbow), said that ‘Reading Rainbow taught kids the cause of reading, ...to appreciate reading— [the episode] urged the children to take a book in hand and read.’
+[2024-02-13 12:29:10] Best translation 80 : Maroochydore then defeated Caboolture in the final game.
+[2024-02-13 12:29:10] Best translation 160 : Stewart, Gordon, Kenseth, and Harvick are in the top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 12:29:10] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 12:29:11] Best translation 640 : This allows students to work at their own pace and to manage the rhythm of information disclosure with the teaching.
+[2024-02-13 12:29:11] Total translation time: 1.86800s
+[2024-02-13 12:29:11] [valid] Ep. 59 : Up. 45000 : chrf : 53.1145 : stalled 2 times (last best: 53.3898)
+[2024-02-13 12:29:11] Translating validation set...
+[2024-02-13 12:29:12] Best translation 0 : On Monday, scientists from Stanford University’s Medical Department announced the invention of a new analyzer that can sort cells by type: a small print-able chip that can be produced by a standard inkjet printer for potentially one US centerated piece.
+[2024-02-13 12:29:12] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tubers, allergies and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in more rich countries.
+[2024-02-13 12:29:12] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 local time (02:30 UTC) and closed all scheduled routes at the airport.
+[2024-02-13 12:29:12] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 12:29:12] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 12:29:12] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 12:29:12] Best translation 10 : At 11:29, the protest moved to Whitehall, past Trafalgar Square, by The Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms Hotel.
+[2024-02-13 12:29:12] Best translation 20 : Hisienh indicated that Ma would flee a country as soon as an emergency would be.
+[2024-02-13 12:29:12] Best translation 40 : John Grant, at WNED Buffalo (home channel Reading Rainbow), said that ‘Reading Rainbow taught kids the cause of reading, ...to appreciate reading— [the episode] urged the children to take a book in hand and read.’
+[2024-02-13 12:29:12] Best translation 80 : Maroochydore then defeated Caboolture in the final game.
+[2024-02-13 12:29:12] Best translation 160 : Stewart, Gordon, Kenseth, and Harvick are in the top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 12:29:12] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 12:29:12] Best translation 640 : This allows students to work at their own pace and to manage the rhythm of information disclosure with the teaching.
+[2024-02-13 12:29:12] Total translation time: 1.34158s
+[2024-02-13 12:29:12] [valid] Ep. 59 : Up. 45000 : bleu : 25.8238 : stalled 2 times (last best: 26.4926)
+[2024-02-13 12:29:12] [valid] Ep. 59 : Up. 45000 : ce-mean-words : 2.41312 : stalled 3 times (last best: 2.29504)
+[2024-02-13 12:35:08] Seen 3,479,642 samples
+[2024-02-13 12:35:08] Starting data epoch 60 in logical epoch 60
+[2024-02-13 12:38:47] Ep. 60 : Up. 46000 : Sen. 1,441,068 : Cost 1.80949163 : Time 584.51s : 143542.55 words/s : gNorm 0.2948
+[2024-02-13 12:42:45] Seen 3,479,640 samples
+[2024-02-13 12:42:45] Starting data epoch 61 in logical epoch 61
+[2024-02-13 12:48:22] Ep. 61 : Up. 47000 : Sen. 2,472,532 : Cost 1.81511283 : Time 574.43s : 145701.05 words/s : gNorm 0.3333
+[2024-02-13 12:50:21] Seen 3,479,617 samples
+[2024-02-13 12:50:21] Starting data epoch 62 in logical epoch 62
+[2024-02-13 12:57:57] Seen 3,479,630 samples
+[2024-02-13 12:57:57] Starting data epoch 63 in logical epoch 63
+[2024-02-13 12:58:45] Ep. 63 : Up. 48000 : Sen. 15,520 : Cost 1.80834293 : Time 623.29s : 134769.63 words/s : gNorm 0.2917
+[2024-02-13 13:05:33] Seen 3,479,616 samples
+[2024-02-13 13:05:33] Starting data epoch 64 in logical epoch 64
+[2024-02-13 13:08:22] Ep. 64 : Up. 49000 : Sen. 1,021,487 : Cost 1.80077100 : Time 577.05s : 145869.94 words/s : gNorm 0.3198
+[2024-02-13 13:13:10] Seen 3,479,648 samples
+[2024-02-13 13:13:10] Starting data epoch 65 in logical epoch 65
+[2024-02-13 13:17:58] Ep. 65 : Up. 50000 : Sen. 2,031,296 : Cost 1.80043995 : Time 575.67s : 145604.64 words/s : gNorm 0.2827
+[2024-02-13 13:17:58] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 13:17:59] Saving Adam parameters
+[2024-02-13 13:18:01] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 13:18:04] Translating validation set...
+[2024-02-13 13:18:05] Best translation 0 : On Monday, scientists from Stanford University’s Medical Department announced the invention of a new analyzer that can sort cells by type: a small printable chip that can be produced by a standard inkjet printer in potentially about one U.S. sent the piece.
+[2024-02-13 13:18:05] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tubers, allergies and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in the more rich countries.
+[2024-02-13 13:18:05] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC) and closed all scheduled routes at the airport.
+[2024-02-13 13:18:05] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 13:18:05] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 13:18:05] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 13:18:05] Best translation 10 : At 11:29, the protest was raised by the Trafalgar Square, by the Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms hotel.
+[2024-02-13 13:18:05] Best translation 20 : Hisienh indicated that Ma was flying a country as soon as an emergency could be found.
+[2024-02-13 13:18:05] Best translation 40 : John Grant, at WNED Buffalo (home channel Reading Rainbow), said that ‘Reading Rainbow taught kids the cause of reading, ...to appreciate reading— [the show] urged the children to take a book on hand and read.’
+[2024-02-13 13:18:05] Best translation 80 : Maroochydore then defeated Caboolture in the final game.
+[2024-02-13 13:18:05] Best translation 160 : Stewart, Gordon, Kenseth, and Harvick are in the top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 13:18:05] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 13:18:06] Best translation 640 : This allows students to work at their own pace and to manage the rhythm of information disclosure with the teaching.
+[2024-02-13 13:18:06] Total translation time: 1.89527s
+[2024-02-13 13:18:06] [valid] Ep. 65 : Up. 50000 : chrf : 52.9023 : stalled 3 times (last best: 53.3898)
+[2024-02-13 13:18:06] Translating validation set...
+[2024-02-13 13:18:07] Best translation 0 : On Monday, scientists from Stanford University’s Medical Department announced the invention of a new analyzer that can sort cells by type: a small printable chip that can be produced by a standard inkjet printer in potentially about one U.S. sent the piece.
+[2024-02-13 13:18:07] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tubers, allergies and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in the more rich countries.
+[2024-02-13 13:18:07] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC) and closed all scheduled routes at the airport.
+[2024-02-13 13:18:07] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 13:18:07] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 13:18:07] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 13:18:07] Best translation 10 : At 11:29, the protest was raised by the Trafalgar Square, by the Strand, past Aldwych and up Kingsway in the direction of Holborn, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms hotel.
+[2024-02-13 13:18:07] Best translation 20 : Hisienh indicated that Ma was flying a country as soon as an emergency could be found.
+[2024-02-13 13:18:07] Best translation 40 : John Grant, at WNED Buffalo (home channel Reading Rainbow), said that ‘Reading Rainbow taught kids the cause of reading, ...to appreciate reading— [the show] urged the children to take a book on hand and read.’
+[2024-02-13 13:18:07] Best translation 80 : Maroochydore then defeated Caboolture in the final game.
+[2024-02-13 13:18:07] Best translation 160 : Stewart, Gordon, Kenseth, and Harvick are in the top ten seats in terms of driver’s title when four competitions are left during the season.
+[2024-02-13 13:18:07] Best translation 320 : Since then, China’s economy has grown 90-fold.
+[2024-02-13 13:18:07] Best translation 640 : This allows students to work at their own pace and to manage the rhythm of information disclosure with the teaching.
+[2024-02-13 13:18:07] Total translation time: 1.34190s
+[2024-02-13 13:18:07] [valid] Ep. 65 : Up. 50000 : bleu : 25.6578 : stalled 3 times (last best: 26.4926)
+[2024-02-13 13:18:07] [valid] Ep. 65 : Up. 50000 : ce-mean-words : 2.45637 : stalled 4 times (last best: 2.29504)
+[2024-02-13 13:20:56] Seen 3,479,633 samples
+[2024-02-13 13:20:56] Starting data epoch 66 in logical epoch 66
+[2024-02-13 13:27:43] Ep. 66 : Up. 51000 : Sen. 3,099,800 : Cost 1.79654145 : Time 585.11s : 143272.77 words/s : gNorm 0.2704
+[2024-02-13 13:28:33] Seen 3,479,624 samples
+[2024-02-13 13:28:33] Starting data epoch 67 in logical epoch 67
+[2024-02-13 13:36:10] Seen 3,479,620 samples
+[2024-02-13 13:36:10] Starting data epoch 68 in logical epoch 68
+[2024-02-13 13:38:07] Ep. 68 : Up. 52000 : Sen. 632,145 : Cost 1.79287207 : Time 623.86s : 134546.76 words/s : gNorm 0.2706
+[2024-02-13 13:43:46] Seen 3,479,627 samples
+[2024-02-13 13:43:46] Starting data epoch 69 in logical epoch 69
+[2024-02-13 13:47:39] Ep. 69 : Up. 53000 : Sen. 1,544,456 : Cost 1.78632176 : Time 572.59s : 145484.62 words/s : gNorm 0.3021
+[2024-02-13 13:51:23] Seen 3,479,652 samples
+[2024-02-13 13:51:23] Starting data epoch 70 in logical epoch 70
+[2024-02-13 13:57:18] Ep. 70 : Up. 54000 : Sen. 2,596,758 : Cost 1.78716111 : Time 578.41s : 146102.96 words/s : gNorm 0.2820
+[2024-02-13 13:58:59] Seen 3,479,673 samples
+[2024-02-13 13:58:59] Starting data epoch 71 in logical epoch 71
+[2024-02-13 14:06:35] Seen 3,479,593 samples
+[2024-02-13 14:06:35] Starting data epoch 72 in logical epoch 72
+[2024-02-13 14:07:42] Ep. 72 : Up. 55000 : Sen. 173,912 : Cost 1.78287792 : Time 624.09s : 134767.30 words/s : gNorm 0.2908
+[2024-02-13 14:07:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 14:07:43] Saving Adam parameters
+[2024-02-13 14:07:45] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 14:07:48] Translating validation set...
+[2024-02-13 14:07:49] Best translation 0 : On Monday, researchers from Stanford University’s Medical Department announced the invention of a new entrepreneur that can sort cells by genre: a small printable chip produced by a standard inkjet printer for potentially about one U.S. sent the piece.
+[2024-02-13 14:07:49] Best translation 1 : Leading scientists say that this can be used for early analysis of cancer, tuberculosis, sensitivities, and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in the more rich countries.
+[2024-02-13 14:07:49] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC), which exploded and closed all scheduled routes at the airport.
+[2024-02-13 14:07:49] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 14:07:49] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 14:07:49] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 14:07:49] Best translation 10 : At 11:29, the protest was brought up Whitehall, past Trafalgar Square, by Aldwych and up Kingsway in the direction of Harbourfront, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms hotel.
+[2024-02-13 14:07:49] Best translation 20 : Hisih made sense when the elections took place that Ma would flee a country as soon as an emergency could be found.
+[2024-02-13 14:07:49] Best translation 40 : John Grant, of WNED Buffalo (home channel Reading Rainbow) said that "Reading Rainbow taught kids the cause of reading, ...to appreciate reading - [the show] urged the children to take a book on hand and read."
+[2024-02-13 14:07:49] Best translation 80 : Maroochydore then defeated Cabolture at the final game.
+[2024-02-13 14:07:49] Best translation 160 : Stewart, Gordon, Kenseth and Harvick are in the top ten seats in the driver's title when four competitions are left during the season.
+[2024-02-13 14:07:49] Best translation 320 : Since then, China’s economy has grown by 90-fold.
+[2024-02-13 14:07:50] Best translation 640 : This allows students to work at their own speed and to manage the input of information disclosure at the teaching.
+[2024-02-13 14:07:50] Total translation time: 1.83923s
+[2024-02-13 14:07:50] [valid] Ep. 72 : Up. 55000 : chrf : 52.951 : stalled 4 times (last best: 53.3898)
+[2024-02-13 14:07:50] Translating validation set...
+[2024-02-13 14:07:51] Best translation 0 : On Monday, researchers from Stanford University’s Medical Department announced the invention of a new entrepreneur that can sort cells by genre: a small printable chip produced by a standard inkjet printer for potentially about one U.S. sent the piece.
+[2024-02-13 14:07:51] Best translation 1 : Leading scientists say that this can be used for early analysis of cancer, tuberculosis, sensitivities, and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in the more rich countries.
+[2024-02-13 14:07:51] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC), which exploded and closed all scheduled routes at the airport.
+[2024-02-13 14:07:51] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 14:07:51] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 14:07:51] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 14:07:51] Best translation 10 : At 11:29, the protest was brought up Whitehall, past Trafalgar Square, by Aldwych and up Kingsway in the direction of Harbourfront, where the Conservative Party was celebrating its spring conference at the Grand Connaught Rooms hotel.
+[2024-02-13 14:07:51] Best translation 20 : Hisih made sense when the elections took place that Ma would flee a country as soon as an emergency could be found.
+[2024-02-13 14:07:51] Best translation 40 : John Grant, of WNED Buffalo (home channel Reading Rainbow) said that "Reading Rainbow taught kids the cause of reading, ...to appreciate reading - [the show] urged the children to take a book on hand and read."
+[2024-02-13 14:07:51] Best translation 80 : Maroochydore then defeated Cabolture at the final game.
+[2024-02-13 14:07:51] Best translation 160 : Stewart, Gordon, Kenseth and Harvick are in the top ten seats in the driver's title when four competitions are left during the season.
+[2024-02-13 14:07:51] Best translation 320 : Since then, China’s economy has grown by 90-fold.
+[2024-02-13 14:07:51] Best translation 640 : This allows students to work at their own speed and to manage the input of information disclosure at the teaching.
+[2024-02-13 14:07:51] Total translation time: 1.31212s
+[2024-02-13 14:07:51] [valid] Ep. 72 : Up. 55000 : bleu : 25.8488 : stalled 4 times (last best: 26.4926)
+[2024-02-13 14:07:51] [valid] Ep. 72 : Up. 55000 : ce-mean-words : 2.49629 : stalled 5 times (last best: 2.29504)
+[2024-02-13 14:14:22] Seen 3,479,657 samples
+[2024-02-13 14:14:22] Starting data epoch 73 in logical epoch 73
+[2024-02-13 14:17:26] Ep. 73 : Up. 56000 : Sen. 1,256,529 : Cost 1.77591884 : Time 584.58s : 143149.07 words/s : gNorm 0.2846
+[2024-02-13 14:21:58] Seen 3,479,659 samples
+[2024-02-13 14:21:58] Starting data epoch 74 in logical epoch 74
+[2024-02-13 14:27:04] Ep. 74 : Up. 57000 : Sen. 2,187,736 : Cost 1.77820110 : Time 577.32s : 145856.54 words/s : gNorm 0.2723
+[2024-02-13 14:29:34] Seen 3,479,660 samples
+[2024-02-13 14:29:34] Starting data epoch 75 in logical epoch 75
+[2024-02-13 14:36:38] Ep. 75 : Up. 58000 : Sen. 3,163,214 : Cost 1.77490842 : Time 574.27s : 145576.20 words/s : gNorm 0.4112
+[2024-02-13 14:37:11] Seen 3,479,649 samples
+[2024-02-13 14:37:11] Starting data epoch 76 in logical epoch 76
+[2024-02-13 14:44:47] Seen 3,479,628 samples
+[2024-02-13 14:44:47] Starting data epoch 77 in logical epoch 77
+[2024-02-13 14:47:01] Ep. 77 : Up. 59000 : Sen. 755,786 : Cost 1.76970840 : Time 623.00s : 135065.11 words/s : gNorm 0.2705
+[2024-02-13 14:52:23] Seen 3,479,621 samples
+[2024-02-13 14:52:23] Starting data epoch 78 in logical epoch 78
+[2024-02-13 14:56:34] Ep. 78 : Up. 60000 : Sen. 1,698,032 : Cost 1.76901126 : Time 572.92s : 145378.14 words/s : gNorm 0.3099
+[2024-02-13 14:56:34] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 14:56:35] Saving Adam parameters
+[2024-02-13 14:56:37] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz
+[2024-02-13 14:56:40] Translating validation set...
+[2024-02-13 14:56:41] Best translation 0 : On Monday, researchers from Stanford University’s Medical Department announced the invention of a new article that can sort cells by type: a tiny printable chip production with a standard inkjet printer for potentially about one U.S. sent the piece.
+[2024-02-13 14:56:41] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tuberculosis, sensitivities, and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in the more rich countries.
+[2024-02-13 14:56:41] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC), which exploded and closed all scheduled routes at the airport.
+[2024-02-13 14:56:41] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 14:56:41] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 14:56:41] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 14:56:41] Best translation 10 : At 11:29, the protest was brought up to Whitehall, past Trafalgar Square, by Aldwych and up Kingsway in the direction of Holborn, where the Conservative Hotel had its spring conference held in the Grand Connaught Rooms hotel.
+[2024-02-13 14:56:41] Best translation 20 : Hisieh indicated that Ma may flee a country as soon as an emergency could be.
+[2024-02-13 14:56:41] Best translation 40 : John Grant, at WNED Buffalo, (home channel Reading Rainbow) said that ‘Reading Rainbow taught kids the cause of reading, ...to appreciate reading - [the show] urge the children to take a book on hand and read.”
+[2024-02-13 14:56:41] Best translation 80 : Maroochydore then defeated Cabolture at the final game.
+[2024-02-13 14:56:41] Best translation 160 : Stewart, Gordon, Kenseth and Harvick are in the top ten seats in the driver's title when there are four competitions left for the season.
+[2024-02-13 14:56:41] Best translation 320 : Since then, China’s economy has grown by 90-fold.
+[2024-02-13 14:56:42] Best translation 640 : This allows students to work at their own speed and to manage the input of information disclosure to the teaching.
+[2024-02-13 14:56:42] Total translation time: 1.77157s
+[2024-02-13 14:56:42] [valid] Ep. 78 : Up. 60000 : chrf : 52.7748 : stalled 5 times (last best: 53.3898)
+[2024-02-13 14:56:42] Translating validation set...
+[2024-02-13 14:56:43] Best translation 0 : On Monday, researchers from Stanford University’s Medical Department announced the invention of a new article that can sort cells by type: a tiny printable chip production with a standard inkjet printer for potentially about one U.S. sent the piece.
+[2024-02-13 14:56:43] Best translation 1 : Leading scientists say this can be used for early analysis of cancer, tuberculosis, sensitivities, and malaria in patients in low-income countries, where survival rates for diseases such as breast cancer can be half lower than in the more rich countries.
+[2024-02-13 14:56:43] Best translation 2 : The JAS 39C Gripen aircraft broke on an runway at 9:30 am at the local time (02:30 UTC), which exploded and closed all scheduled routes at the airport.
+[2024-02-13 14:56:43] Best translation 3 : It was confirmed that the pilot was the leader of the party, Dilokrit Patavee.
+[2024-02-13 14:56:43] Best translation 4 : According to local media selected fire extinguisher at the airport after entering the call.
+[2024-02-13 14:56:43] Best translation 5 : The 28-year-old Vidal joined Barcelona from Seville for three seasons.
+[2024-02-13 14:56:43] Best translation 10 : At 11:29, the protest was brought up to Whitehall, past Trafalgar Square, by Aldwych and up Kingsway in the direction of Holborn, where the Conservative Hotel had its spring conference held in the Grand Connaught Rooms hotel.
+[2024-02-13 14:56:43] Best translation 20 : Hisieh indicated that Ma may flee a country as soon as an emergency could be.
+[2024-02-13 14:56:43] Best translation 40 : John Grant, at WNED Buffalo, (home channel Reading Rainbow) said that ‘Reading Rainbow taught kids the cause of reading, ...to appreciate reading - [the show] urge the children to take a book on hand and read.”
+[2024-02-13 14:56:43] Best translation 80 : Maroochydore then defeated Cabolture at the final game.
+[2024-02-13 14:56:43] Best translation 160 : Stewart, Gordon, Kenseth and Harvick are in the top ten seats in the driver's title when there are four competitions left for the season.
+[2024-02-13 14:56:43] Best translation 320 : Since then, China’s economy has grown by 90-fold.
+[2024-02-13 14:56:43] Best translation 640 : This allows students to work at their own speed and to manage the input of information disclosure to the teaching.
+[2024-02-13 14:56:43] Total translation time: 1.37422s
+[2024-02-13 14:56:43] [valid] Ep. 78 : Up. 60000 : bleu : 25.9403 : stalled 5 times (last best: 26.4926)
+[2024-02-13 14:56:43] [valid] Ep. 78 : Up. 60000 : ce-mean-words : 2.53455 : stalled 6 times (last best: 2.29504)
+[2024-02-13 14:56:43] Training finished
+[2024-02-13 14:56:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz
+[2024-02-13 14:56:44] Saving Adam parameters
+[2024-02-13 14:56:46] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.is-en/output/model.npz.optimizer.npz

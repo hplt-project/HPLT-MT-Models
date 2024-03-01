@@ -1,0 +1,947 @@
+[2024-02-13 04:33:44] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 04:33:44] [marian] Running on nid007856 as process 36096 with command line:
+[2024-02-13 04:33:44] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.en-is.spm /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.en-is.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/tmp.d/6038551 --train-sets /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/tmp.d/6038551/train.en.gz /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/tmp.d/6038551/train.is.gz --valid-sets /scratch/project_465000574/data/en-is/valid/flores200.dev.en-is.en /scratch/project_465000574/data/en-is/valid/flores200.dev.en-is.is --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-13 04:33:44] [config] after: 0e
+[2024-02-13 04:33:44] [config] after-batches: 0
+[2024-02-13 04:33:44] [config] after-epochs: 0
+[2024-02-13 04:33:44] [config] all-caps-every: 0
+[2024-02-13 04:33:44] [config] allow-unk: false
+[2024-02-13 04:33:44] [config] authors: false
+[2024-02-13 04:33:44] [config] beam-size: 4
+[2024-02-13 04:33:44] [config] bert-class-symbol: "[CLS]"
+[2024-02-13 04:33:44] [config] bert-mask-symbol: "[MASK]"
+[2024-02-13 04:33:44] [config] bert-masking-fraction: 0.15
+[2024-02-13 04:33:44] [config] bert-sep-symbol: "[SEP]"
+[2024-02-13 04:33:44] [config] bert-train-type-embeddings: true
+[2024-02-13 04:33:44] [config] bert-type-vocab-size: 2
+[2024-02-13 04:33:44] [config] build-info: ""
+[2024-02-13 04:33:44] [config] char-conv-filters-num:
+[2024-02-13 04:33:44] [config]   - 200
+[2024-02-13 04:33:44] [config]   - 200
+[2024-02-13 04:33:44] [config]   - 250
+[2024-02-13 04:33:44] [config]   - 250
+[2024-02-13 04:33:44] [config]   - 300
+[2024-02-13 04:33:44] [config]   - 300
+[2024-02-13 04:33:44] [config]   - 300
+[2024-02-13 04:33:44] [config]   - 300
+[2024-02-13 04:33:44] [config] char-conv-filters-widths:
+[2024-02-13 04:33:44] [config]   - 1
+[2024-02-13 04:33:44] [config]   - 2
+[2024-02-13 04:33:44] [config]   - 3
+[2024-02-13 04:33:44] [config]   - 4
+[2024-02-13 04:33:44] [config]   - 5
+[2024-02-13 04:33:44] [config]   - 6
+[2024-02-13 04:33:44] [config]   - 7
+[2024-02-13 04:33:44] [config]   - 8
+[2024-02-13 04:33:44] [config] char-highway: 4
+[2024-02-13 04:33:44] [config] char-stride: 5
+[2024-02-13 04:33:44] [config] check-gradient-nan: true
+[2024-02-13 04:33:44] [config] check-nan: false
+[2024-02-13 04:33:44] [config] cite: false
+[2024-02-13 04:33:44] [config] clip-norm: 0
+[2024-02-13 04:33:44] [config] cost-scaling:
+[2024-02-13 04:33:44] [config]   []
+[2024-02-13 04:33:44] [config] cost-type: ce-mean-words
+[2024-02-13 04:33:44] [config] cpu-threads: 0
+[2024-02-13 04:33:44] [config] data-threads: 8
+[2024-02-13 04:33:44] [config] data-weighting: ""
+[2024-02-13 04:33:44] [config] data-weighting-type: sentence
+[2024-02-13 04:33:44] [config] dec-cell: gru
+[2024-02-13 04:33:44] [config] dec-cell-base-depth: 2
+[2024-02-13 04:33:44] [config] dec-cell-high-depth: 1
+[2024-02-13 04:33:44] [config] dec-depth: 6
+[2024-02-13 04:33:44] [config] devices:
+[2024-02-13 04:33:44] [config]   - 0
+[2024-02-13 04:33:44] [config]   - 1
+[2024-02-13 04:33:44] [config]   - 2
+[2024-02-13 04:33:44] [config]   - 3
+[2024-02-13 04:33:44] [config]   - 4
+[2024-02-13 04:33:44] [config]   - 5
+[2024-02-13 04:33:44] [config]   - 6
+[2024-02-13 04:33:44] [config]   - 7
+[2024-02-13 04:33:44] [config] dim-emb: 512
+[2024-02-13 04:33:44] [config] dim-rnn: 1024
+[2024-02-13 04:33:44] [config] dim-vocabs:
+[2024-02-13 04:33:44] [config]   - 64000
+[2024-02-13 04:33:44] [config] disp-first: 0
+[2024-02-13 04:33:44] [config] disp-freq: 1000u
+[2024-02-13 04:33:44] [config] disp-label-counts: true
+[2024-02-13 04:33:44] [config] dropout-rnn: 0
+[2024-02-13 04:33:44] [config] dropout-src: 0
+[2024-02-13 04:33:44] [config] dropout-trg: 0
+[2024-02-13 04:33:44] [config] dump-config: ""
+[2024-02-13 04:33:44] [config] dynamic-gradient-scaling:
+[2024-02-13 04:33:44] [config]   []
+[2024-02-13 04:33:44] [config] early-stopping: 5
+[2024-02-13 04:33:44] [config] early-stopping-on: first
+[2024-02-13 04:33:44] [config] embedding-fix-src: false
+[2024-02-13 04:33:44] [config] embedding-fix-trg: false
+[2024-02-13 04:33:44] [config] embedding-normalization: false
+[2024-02-13 04:33:44] [config] embedding-vectors:
+[2024-02-13 04:33:44] [config]   []
+[2024-02-13 04:33:44] [config] enc-cell: gru
+[2024-02-13 04:33:44] [config] enc-cell-depth: 1
+[2024-02-13 04:33:44] [config] enc-depth: 6
+[2024-02-13 04:33:44] [config] enc-type: bidirectional
+[2024-02-13 04:33:44] [config] english-title-case-every: 0
+[2024-02-13 04:33:44] [config] exponential-smoothing: 0.0001
+[2024-02-13 04:33:44] [config] factor-weight: 1
+[2024-02-13 04:33:44] [config] factors-combine: sum
+[2024-02-13 04:33:44] [config] factors-dim-emb: 0
+[2024-02-13 04:33:44] [config] gradient-checkpointing: false
+[2024-02-13 04:33:44] [config] gradient-norm-average-window: 100
+[2024-02-13 04:33:44] [config] guided-alignment: none
+[2024-02-13 04:33:44] [config] guided-alignment-cost: ce
+[2024-02-13 04:33:44] [config] guided-alignment-weight: 0.1
+[2024-02-13 04:33:44] [config] ignore-model-config: false
+[2024-02-13 04:33:44] [config] input-types:
+[2024-02-13 04:33:44] [config]   []
+[2024-02-13 04:33:44] [config] interpolate-env-vars: false
+[2024-02-13 04:33:44] [config] keep-best: true
+[2024-02-13 04:33:44] [config] label-smoothing: 0.1
+[2024-02-13 04:33:44] [config] layer-normalization: false
+[2024-02-13 04:33:44] [config] learn-rate: 0.0003
+[2024-02-13 04:33:44] [config] lemma-dependency: ""
+[2024-02-13 04:33:44] [config] lemma-dim-emb: 0
+[2024-02-13 04:33:44] [config] log: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/logs/model.train.log
+[2024-02-13 04:33:44] [config] log-level: info
+[2024-02-13 04:33:44] [config] log-time-zone: ""
+[2024-02-13 04:33:44] [config] logical-epoch:
+[2024-02-13 04:33:44] [config]   - 1e
+[2024-02-13 04:33:44] [config]   - 0
+[2024-02-13 04:33:44] [config] lr-decay: 0
+[2024-02-13 04:33:44] [config] lr-decay-freq: 50000
+[2024-02-13 04:33:44] [config] lr-decay-inv-sqrt:
+[2024-02-13 04:33:44] [config]   - 16000
+[2024-02-13 04:33:44] [config] lr-decay-repeat-warmup: false
+[2024-02-13 04:33:44] [config] lr-decay-reset-optimizer: false
+[2024-02-13 04:33:44] [config] lr-decay-start:
+[2024-02-13 04:33:44] [config]   - 10
+[2024-02-13 04:33:44] [config]   - 1
+[2024-02-13 04:33:44] [config] lr-decay-strategy: epoch+stalled
+[2024-02-13 04:33:44] [config] lr-report: false
+[2024-02-13 04:33:44] [config] lr-warmup: 16000
+[2024-02-13 04:33:44] [config] lr-warmup-at-reload: false
+[2024-02-13 04:33:44] [config] lr-warmup-cycle: false
+[2024-02-13 04:33:44] [config] lr-warmup-start-rate: 0
+[2024-02-13 04:33:44] [config] max-length: 250
+[2024-02-13 04:33:44] [config] max-length-crop: false
+[2024-02-13 04:33:44] [config] max-length-factor: 3
+[2024-02-13 04:33:44] [config] maxi-batch: 1000
+[2024-02-13 04:33:44] [config] maxi-batch-sort: trg
+[2024-02-13 04:33:44] [config] mini-batch: 4096
+[2024-02-13 04:33:44] [config] mini-batch-fit: true
+[2024-02-13 04:33:44] [config] mini-batch-fit-step: 10
+[2024-02-13 04:33:44] [config] mini-batch-round-up: true
+[2024-02-13 04:33:44] [config] mini-batch-track-lr: false
+[2024-02-13 04:33:44] [config] mini-batch-warmup: 0
+[2024-02-13 04:33:44] [config] mini-batch-words: 0
+[2024-02-13 04:33:44] [config] mini-batch-words-ref: 0
+[2024-02-13 04:33:44] [config] model: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 04:33:44] [config] multi-loss-type: sum
+[2024-02-13 04:33:44] [config] n-best: false
+[2024-02-13 04:33:44] [config] no-nccl: false
+[2024-02-13 04:33:44] [config] no-reload: false
+[2024-02-13 04:33:44] [config] no-restore-corpus: false
+[2024-02-13 04:33:44] [config] normalize: 1
+[2024-02-13 04:33:44] [config] normalize-gradient: false
+[2024-02-13 04:33:44] [config] num-devices: 0
+[2024-02-13 04:33:44] [config] optimizer: adam
+[2024-02-13 04:33:44] [config] optimizer-delay: 2
+[2024-02-13 04:33:44] [config] optimizer-params:
+[2024-02-13 04:33:44] [config]   - 0.9
+[2024-02-13 04:33:44] [config]   - 0.98
+[2024-02-13 04:33:44] [config]   - 1e-09
+[2024-02-13 04:33:44] [config] output-omit-bias: false
+[2024-02-13 04:33:44] [config] overwrite: true
+[2024-02-13 04:33:44] [config] precision:
+[2024-02-13 04:33:44] [config]   - float32
+[2024-02-13 04:33:44] [config]   - float32
+[2024-02-13 04:33:44] [config] pretrained-model: ""
+[2024-02-13 04:33:44] [config] quantize-biases: false
+[2024-02-13 04:33:44] [config] quantize-bits: 0
+[2024-02-13 04:33:44] [config] quantize-log-based: false
+[2024-02-13 04:33:44] [config] quantize-optimization-steps: 0
+[2024-02-13 04:33:44] [config] quiet: false
+[2024-02-13 04:33:44] [config] quiet-translation: false
+[2024-02-13 04:33:44] [config] relative-paths: false
+[2024-02-13 04:33:44] [config] right-left: false
+[2024-02-13 04:33:44] [config] save-freq: 5000u
+[2024-02-13 04:33:44] [config] seed: 42
+[2024-02-13 04:33:44] [config] sentencepiece-alphas:
+[2024-02-13 04:33:44] [config]   - 0.1
+[2024-02-13 04:33:44] [config] sentencepiece-max-lines: 2000000
+[2024-02-13 04:33:44] [config] sentencepiece-options: ""
+[2024-02-13 04:33:44] [config] sharding: global
+[2024-02-13 04:33:44] [config] shuffle: batches
+[2024-02-13 04:33:44] [config] shuffle-in-ram: false
+[2024-02-13 04:33:44] [config] sigterm: save-and-exit
+[2024-02-13 04:33:44] [config] skip: false
+[2024-02-13 04:33:44] [config] sqlite: ""
+[2024-02-13 04:33:44] [config] sqlite-drop: false
+[2024-02-13 04:33:44] [config] sync-freq: 200u
+[2024-02-13 04:33:44] [config] sync-sgd: true
+[2024-02-13 04:33:44] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/tmp.d/6038551
+[2024-02-13 04:33:44] [config] tied-embeddings: false
+[2024-02-13 04:33:44] [config] tied-embeddings-all: true
+[2024-02-13 04:33:44] [config] tied-embeddings-src: false
+[2024-02-13 04:33:44] [config] train-embedder-rank:
+[2024-02-13 04:33:44] [config]   []
+[2024-02-13 04:33:44] [config] train-sets:
+[2024-02-13 04:33:44] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/tmp.d/6038551/train.en.gz
+[2024-02-13 04:33:44] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/tmp.d/6038551/train.is.gz
+[2024-02-13 04:33:44] [config] transformer-aan-activation: swish
+[2024-02-13 04:33:44] [config] transformer-aan-depth: 2
+[2024-02-13 04:33:44] [config] transformer-aan-nogate: false
+[2024-02-13 04:33:44] [config] transformer-decoder-autoreg: self-attention
+[2024-02-13 04:33:44] [config] transformer-decoder-dim-ffn: 0
+[2024-02-13 04:33:44] [config] transformer-decoder-ffn-depth: 0
+[2024-02-13 04:33:44] [config] transformer-depth-scaling: false
+[2024-02-13 04:33:44] [config] transformer-dim-aan: 2048
+[2024-02-13 04:33:44] [config] transformer-dim-ffn: 2048
+[2024-02-13 04:33:44] [config] transformer-dropout: 0.1
+[2024-02-13 04:33:44] [config] transformer-dropout-attention: 0
+[2024-02-13 04:33:44] [config] transformer-dropout-ffn: 0
+[2024-02-13 04:33:44] [config] transformer-ffn-activation: relu
+[2024-02-13 04:33:44] [config] transformer-ffn-depth: 2
+[2024-02-13 04:33:44] [config] transformer-guided-alignment-layer: last
+[2024-02-13 04:33:44] [config] transformer-heads: 8
+[2024-02-13 04:33:44] [config] transformer-no-projection: false
+[2024-02-13 04:33:44] [config] transformer-pool: false
+[2024-02-13 04:33:44] [config] transformer-postprocess: dan
+[2024-02-13 04:33:44] [config] transformer-postprocess-emb: d
+[2024-02-13 04:33:44] [config] transformer-postprocess-top: ""
+[2024-02-13 04:33:44] [config] transformer-preprocess: ""
+[2024-02-13 04:33:44] [config] transformer-rnn-projection: false
+[2024-02-13 04:33:44] [config] transformer-tied-layers:
+[2024-02-13 04:33:44] [config]   []
+[2024-02-13 04:33:44] [config] transformer-train-position-embeddings: false
+[2024-02-13 04:33:44] [config] tsv: false
+[2024-02-13 04:33:44] [config] tsv-fields: 0
+[2024-02-13 04:33:44] [config] type: transformer
+[2024-02-13 04:33:44] [config] ulr: false
+[2024-02-13 04:33:44] [config] ulr-dim-emb: 0
+[2024-02-13 04:33:44] [config] ulr-dropout: 0
+[2024-02-13 04:33:44] [config] ulr-keys-vectors: ""
+[2024-02-13 04:33:44] [config] ulr-query-vectors: ""
+[2024-02-13 04:33:44] [config] ulr-softmax-temperature: 1
+[2024-02-13 04:33:44] [config] ulr-trainable-transformation: false
+[2024-02-13 04:33:44] [config] unlikelihood-loss: false
+[2024-02-13 04:33:44] [config] valid-freq: 5000u
+[2024-02-13 04:33:44] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/logs/model.valid.log
+[2024-02-13 04:33:44] [config] valid-max-length: 1000
+[2024-02-13 04:33:44] [config] valid-metrics:
+[2024-02-13 04:33:44] [config]   - chrf
+[2024-02-13 04:33:44] [config]   - bleu
+[2024-02-13 04:33:44] [config]   - ce-mean-words
+[2024-02-13 04:33:44] [config] valid-mini-batch: 64
+[2024-02-13 04:33:44] [config] valid-reset-stalled: true
+[2024-02-13 04:33:44] [config] valid-script-args:
+[2024-02-13 04:33:44] [config]   []
+[2024-02-13 04:33:44] [config] valid-script-path: ""
+[2024-02-13 04:33:44] [config] valid-sets:
+[2024-02-13 04:33:44] [config]   - /scratch/project_465000574/data/en-is/valid/flores200.dev.en-is.en
+[2024-02-13 04:33:44] [config]   - /scratch/project_465000574/data/en-is/valid/flores200.dev.en-is.is
+[2024-02-13 04:33:44] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/logs/model.valid.out
+[2024-02-13 04:33:44] [config] vocabs:
+[2024-02-13 04:33:44] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.en-is.spm
+[2024-02-13 04:33:44] [config]   - /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.en-is.spm
+[2024-02-13 04:33:44] [config] word-penalty: 0
+[2024-02-13 04:33:44] [config] word-scores: false
+[2024-02-13 04:33:44] [config] workspace: 20000
+[2024-02-13 04:33:44] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 04:33:44] Using synchronous SGD
+[2024-02-13 04:33:44] [comm] Compiled without MPI support. Running as a single process on nid007856
+[2024-02-13 04:33:44] Synced seed 42
+[2024-02-13 04:33:44] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.en-is.spm
+[2024-02-13 04:33:44] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-13 04:33:44] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.generate_vocab.en-is/output/model.en-is.spm
+[2024-02-13 04:33:44] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-13 04:33:44] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-13 04:33:44] Checking gradient for NaN
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 04:33:49] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 04:33:49] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 04:33:51] [comm] Using global sharding
+[2024-02-13 04:33:52] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 04:33:52] [training] Using 8 GPUs
+[2024-02-13 04:33:52] [logits] Applying loss function for 1 factor(s)
+[2024-02-13 04:33:52] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 04:33:58] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 04:34:52] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 04:34:53] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 04:34:53] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 04:34:53] [comm] Using global sharding
+[2024-02-13 04:34:53] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 04:34:53] [training] Using 8 GPUs
+[2024-02-13 04:34:53] Training started
+[2024-02-13 04:35:37] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 04:35:37] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 04:35:44] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 04:36:01] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 04:36:01] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 04:36:01] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 04:36:01] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 04:36:01] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 04:36:01] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 04:36:01] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 04:36:02] Allocating memory for general optimizer shards
+[2024-02-13 04:36:02] Parameter type float32, optimization type float32, casting types false
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu1
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu0
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu3
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu6
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu2
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu5
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu7
+[2024-02-13 04:36:02] [memory] Reserving 36 MB, device gpu4
+[2024-02-13 04:36:02] Allocating memory for Adam-specific shards
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu0
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu6
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu5
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu1
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu3
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu7
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu2
+[2024-02-13 04:36:02] [memory] Reserving 73 MB, device gpu4
+[2024-02-13 04:42:54] Seen 3,479,425 samples
+[2024-02-13 04:42:54] Starting data epoch 2 in logical epoch 2
+[2024-02-13 04:45:50] Ep. 2 : Up. 1000 : Sen. 1,061,588 : Cost 9.08643913 : Time 657.19s : 135808.73 words/s : gNorm 4.6656
+[2024-02-13 04:50:30] Seen 3,479,408 samples
+[2024-02-13 04:50:30] Starting data epoch 3 in logical epoch 3
+[2024-02-13 04:55:37] Ep. 3 : Up. 2000 : Sen. 2,242,713 : Cost 6.51190042 : Time 587.17s : 151561.74 words/s : gNorm 2.8676
+[2024-02-13 04:58:06] Seen 3,479,421 samples
+[2024-02-13 04:58:06] Starting data epoch 4 in logical epoch 4
+[2024-02-13 05:05:22] Ep. 4 : Up. 3000 : Sen. 3,286,444 : Cost 5.39108849 : Time 584.99s : 151310.84 words/s : gNorm 2.0827
+[2024-02-13 05:05:42] Seen 3,479,416 samples
+[2024-02-13 05:05:42] Starting data epoch 5 in logical epoch 5
+[2024-02-13 05:13:18] Seen 3,479,400 samples
+[2024-02-13 05:13:18] Starting data epoch 6 in logical epoch 6
+[2024-02-13 05:15:54] Ep. 6 : Up. 4000 : Sen. 958,144 : Cost 4.77956724 : Time 632.22s : 140340.98 words/s : gNorm 1.6656
+[2024-02-13 05:20:56] Seen 3,479,398 samples
+[2024-02-13 05:20:56] Starting data epoch 7 in logical epoch 7
+[2024-02-13 05:25:44] Ep. 7 : Up. 5000 : Sen. 1,993,463 : Cost 4.36821842 : Time 590.29s : 151390.87 words/s : gNorm 1.1173
+[2024-02-13 05:25:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 05:25:47] Saving Adam parameters
+[2024-02-13 05:25:49] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 05:25:52] Translating validation set...
+[2024-02-13 05:25:53] [valid] First sentence's tokens as scored:
+[2024-02-13 05:25:53] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-13 05:25:53] [valid]   Hyp: M e ð þ v í a ð f a r a m e ð þ v í a ð h a f a s a m b a n d v i ð g i s t i s t a ð i n n m e ð þ v í a ð h a f a s a m b a n d v i ð g i s t i s t a ð i n n m e ð þ v í a ð h a f a s a m b a n d v i ð o k k u r .
+[2024-02-13 05:25:53] [valid]   Ref: M a r g i r h ö f u n d a þ e i r r a h a f a e f t i r þ e t t a h a f t g r í ð a r m i k i l á h r i f á f r é t t a s k o p s t æ l i n g a r þ æ t t i J o n S t e w a r t o g S t e p h e n C o l b e r t .
+[2024-02-13 05:25:54] Best translation 0 : Með því að taka þátt í fyrsta skipti sem er hægt er að nota til þess að finna í veg fyrir að hafa samband við okkur í samræmi við okkur.
+[2024-02-13 05:25:54] Best translation 1 : Það er mikilvægt að tryggja að því að tryggja að það sé að því að tryggja að því að það er hægt er að vera í boði, en það er að vera í boði.
+[2024-02-13 05:25:54] Best translation 2 : Í boði er boðið upp á ókeypis Wi-Fi-Fi-Fi-Fi Internet og — 1 km frá miðbænum.
+[2024-02-13 05:25:54] Best translation 3 : Árið 2021 var stofnað árið 2013.
+[2024-02-13 05:25:54] Best translation 4 : Með því að vinna með því að vinna með því að vera í boði.
+[2024-02-13 05:25:54] Best translation 5 : Árið 2016 var stofnað árið 2013, sem var árið 2013.
+[2024-02-13 05:25:54] Best translation 10 : Í júlí og ágúst eru meðal annars þess sem hann var að finna á svæðinu, ásamt því að vera í 1. sæti af 1 fyrir hótel á svæðinu, ásamt því að vera í 1. sæti af 4.
+[2024-02-13 05:25:54] Best translation 20 : Ég hef verið að vera með því að hafa samband við okkur.
+[2024-02-13 05:25:54] Best translation 40 : Við vitum að þemað "M" er vinsælt á áfangastaðnum — — Gæði.
+[2024-02-13 05:25:55] Best translation 80 : Gististaðirnir greiða Booking.com mögulega örlítið meira til að vera partur af prógramminu.
+[2024-02-13 05:25:55] Best translation 160 : Til að veita þér sem besta þjónustu notar Hotel eigin fótspor og fótspor utanaðkomandi aðila á vefsíðunni sinni í tækni-, þróunar- eða markaðssetningartilgangi.
+[2024-02-13 05:25:55] Best translation 320 : Hún hefur tekið á móti gestum Booking.com síðan 1. maí 2013.
+[2024-02-13 05:25:55] Best translation 640 : Það er hægt að nota til að tryggja að tryggja að veita þér og þjónustu.
+[2024-02-13 05:25:55] Total translation time: 2.62378s
+[2024-02-13 05:25:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-chrf.npz
+[2024-02-13 05:25:56] [valid] Ep. 7 : Up. 5000 : chrf : 13.659 : new best
+[2024-02-13 05:25:56] Translating validation set...
+[2024-02-13 05:25:58] Best translation 0 : Með því að taka þátt í fyrsta skipti sem er hægt er að nota til þess að finna í veg fyrir að hafa samband við okkur í samræmi við okkur.
+[2024-02-13 05:25:58] Best translation 1 : Það er mikilvægt að tryggja að því að tryggja að það sé að því að tryggja að því að það er hægt er að vera í boði, en það er að vera í boði.
+[2024-02-13 05:25:58] Best translation 2 : Í boði er boðið upp á ókeypis Wi-Fi-Fi-Fi-Fi Internet og — 1 km frá miðbænum.
+[2024-02-13 05:25:58] Best translation 3 : Árið 2021 var stofnað árið 2013.
+[2024-02-13 05:25:58] Best translation 4 : Með því að vinna með því að vinna með því að vera í boði.
+[2024-02-13 05:25:58] Best translation 5 : Árið 2016 var stofnað árið 2013, sem var árið 2013.
+[2024-02-13 05:25:58] Best translation 10 : Í júlí og ágúst eru meðal annars þess sem hann var að finna á svæðinu, ásamt því að vera í 1. sæti af 1 fyrir hótel á svæðinu, ásamt því að vera í 1. sæti af 4.
+[2024-02-13 05:25:58] Best translation 20 : Ég hef verið að vera með því að hafa samband við okkur.
+[2024-02-13 05:25:58] Best translation 40 : Við vitum að þemað "M" er vinsælt á áfangastaðnum — — Gæði.
+[2024-02-13 05:25:59] Best translation 80 : Gististaðirnir greiða Booking.com mögulega örlítið meira til að vera partur af prógramminu.
+[2024-02-13 05:25:59] Best translation 160 : Til að veita þér sem besta þjónustu notar Hotel eigin fótspor og fótspor utanaðkomandi aðila á vefsíðunni sinni í tækni-, þróunar- eða markaðssetningartilgangi.
+[2024-02-13 05:25:59] Best translation 320 : Hún hefur tekið á móti gestum Booking.com síðan 1. maí 2013.
+[2024-02-13 05:25:59] Best translation 640 : Það er hægt að nota til að tryggja að tryggja að veita þér og þjónustu.
+[2024-02-13 05:25:59] Total translation time: 2.55541s
+[2024-02-13 05:25:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-bleu.npz
+[2024-02-13 05:26:00] [valid] Ep. 7 : Up. 5000 : bleu : 0.569907 : new best
+[2024-02-13 05:26:00] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 05:26:01] [valid] Ep. 7 : Up. 5000 : ce-mean-words : 6.23697 : new best
+[2024-02-13 05:28:53] Seen 3,479,393 samples
+[2024-02-13 05:28:53] Starting data epoch 8 in logical epoch 8
+[2024-02-13 05:35:54] Ep. 8 : Up. 6000 : Sen. 3,137,324 : Cost 4.17079878 : Time 609.97s : 146023.22 words/s : gNorm 1.2300
+[2024-02-13 05:36:34] Seen 3,479,404 samples
+[2024-02-13 05:36:34] Starting data epoch 9 in logical epoch 9
+[2024-02-13 05:44:16] Seen 3,479,407 samples
+[2024-02-13 05:44:16] Starting data epoch 10 in logical epoch 10
+[2024-02-13 05:46:38] Ep. 10 : Up. 7000 : Sen. 766,770 : Cost 3.97806644 : Time 643.77s : 137793.90 words/s : gNorm 1.0028
+[2024-02-13 05:51:59] Seen 3,479,412 samples
+[2024-02-13 05:51:59] Starting data epoch 11 in logical epoch 11
+[2024-02-13 05:56:31] Ep. 11 : Up. 8000 : Sen. 1,889,440 : Cost 3.78699017 : Time 592.95s : 149666.22 words/s : gNorm 0.9909
+[2024-02-13 05:59:43] Seen 3,479,389 samples
+[2024-02-13 05:59:43] Starting data epoch 12 in logical epoch 12
+[2024-02-13 06:06:24] Ep. 12 : Up. 9000 : Sen. 2,971,280 : Cost 3.59856987 : Time 592.50s : 149920.31 words/s : gNorm 0.9132
+[2024-02-13 06:07:25] Seen 3,479,398 samples
+[2024-02-13 06:07:25] Starting data epoch 13 in logical epoch 13
+[2024-02-13 06:15:07] Seen 3,479,405 samples
+[2024-02-13 06:15:07] Starting data epoch 14 in logical epoch 14
+[2024-02-13 06:17:07] Ep. 14 : Up. 10000 : Sen. 619,800 : Cost 3.35491920 : Time 643.54s : 138589.46 words/s : gNorm 0.8511
+[2024-02-13 06:17:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 06:17:09] Saving Adam parameters
+[2024-02-13 06:17:12] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 06:17:15] Translating validation set...
+[2024-02-13 06:17:16] Best translation 0 : Í fyrsta lagi, í fyrsta sinn, er hægt að nota til þess að geta notað mismunandi tegundir af efni sem hægt er að nota til að búa til mismunandi tegundir af efni.
+[2024-02-13 06:17:16] Best translation 1 : Að því gefnu að það er mikilvægt að geta haft áhrif á heilsu, þar á meðal annars, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum og öðrum löndum.
+[2024-02-13 06:17:16] Best translation 2 : Í fyrsta sinn var 39,3 km fjarlægð frá flugvellinum og er hægt að komast á milli fluga og flugstöðvarinnar.
+[2024-02-13 06:17:16] Best translation 3 : Stjórnin var stofnað árið 1994.
+[2024-02-13 06:17:16] Best translation 4 : Ítarlegar upplýsingar um allan heim.
+[2024-02-13 06:17:16] Best translation 5 : 28 m2 Stórt einbýlishús fyrir tvo, tvö rúm, tvö rúm, tveggja manna herbergi.
+[2024-02-13 06:17:16] Best translation 10 : Árið 192 varð hann til þess að koma í veg fyrir að hann hafi komið í veg fyrir að hann hafi komið í veg fyrir að hann hafi verið í átt að bjóða upp á útsýni yfir höfnina í Amsterdam.
+[2024-02-13 06:17:16] Best translation 20 : Hið sama er sú að þeir hafi verið í för með sér að hann hafi verið í för.
+[2024-02-13 06:17:16] Best translation 40 : John, John's, — frá Englandi, og — segir: „Við vitum að þú ert að vita meira um — — — — — — — — — — — — — — — Til að segja okkur...
+[2024-02-13 06:17:16] Best translation 80 : Eftir að hafa farið fram í Cabo Frio í Kanada.
+[2024-02-13 06:17:16] Best translation 160 : Tími, New York, Holland, Hollands, og í fyrsta sinn í fyrsta sinn í dag.
+[2024-02-13 06:17:16] Best translation 320 : Á árinu 2008 hefur Kína verið um 90 prósent.
+[2024-02-13 06:17:17] Best translation 640 : Það veitir tækifæri til að vinna með því að setja upp og stjórna upplýsingum um allan heim.
+[2024-02-13 06:17:17] Total translation time: 2.51341s
+[2024-02-13 06:17:17] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-chrf.npz
+[2024-02-13 06:17:19] [valid] Ep. 14 : Up. 10000 : chrf : 16.674 : new best
+[2024-02-13 06:17:19] Translating validation set...
+[2024-02-13 06:17:20] Best translation 0 : Í fyrsta lagi, í fyrsta sinn, er hægt að nota til þess að geta notað mismunandi tegundir af efni sem hægt er að nota til að búa til mismunandi tegundir af efni.
+[2024-02-13 06:17:20] Best translation 1 : Að því gefnu að það er mikilvægt að geta haft áhrif á heilsu, þar á meðal annars, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum, þar á meðal í öðrum löndum og öðrum löndum.
+[2024-02-13 06:17:20] Best translation 2 : Í fyrsta sinn var 39,3 km fjarlægð frá flugvellinum og er hægt að komast á milli fluga og flugstöðvarinnar.
+[2024-02-13 06:17:20] Best translation 3 : Stjórnin var stofnað árið 1994.
+[2024-02-13 06:17:20] Best translation 4 : Ítarlegar upplýsingar um allan heim.
+[2024-02-13 06:17:20] Best translation 5 : 28 m2 Stórt einbýlishús fyrir tvo, tvö rúm, tvö rúm, tveggja manna herbergi.
+[2024-02-13 06:17:20] Best translation 10 : Árið 192 varð hann til þess að koma í veg fyrir að hann hafi komið í veg fyrir að hann hafi komið í veg fyrir að hann hafi verið í átt að bjóða upp á útsýni yfir höfnina í Amsterdam.
+[2024-02-13 06:17:20] Best translation 20 : Hið sama er sú að þeir hafi verið í för með sér að hann hafi verið í för.
+[2024-02-13 06:17:20] Best translation 40 : John, John's, — frá Englandi, og — segir: „Við vitum að þú ert að vita meira um — — — — — — — — — — — — — — — Til að segja okkur...
+[2024-02-13 06:17:20] Best translation 80 : Eftir að hafa farið fram í Cabo Frio í Kanada.
+[2024-02-13 06:17:20] Best translation 160 : Tími, New York, Holland, Hollands, og í fyrsta sinn í fyrsta sinn í dag.
+[2024-02-13 06:17:20] Best translation 320 : Á árinu 2008 hefur Kína verið um 90 prósent.
+[2024-02-13 06:17:21] Best translation 640 : Það veitir tækifæri til að vinna með því að setja upp og stjórna upplýsingum um allan heim.
+[2024-02-13 06:17:21] Total translation time: 2.32894s
+[2024-02-13 06:17:21] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-bleu.npz
+[2024-02-13 06:17:22] [valid] Ep. 14 : Up. 10000 : bleu : 1.97013 : new best
+[2024-02-13 06:17:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 06:17:23] [valid] Ep. 14 : Up. 10000 : ce-mean-words : 4.96612 : new best
+[2024-02-13 06:23:05] Seen 3,479,400 samples
+[2024-02-13 06:23:05] Starting data epoch 15 in logical epoch 15
+[2024-02-13 06:27:16] Ep. 15 : Up. 11000 : Sen. 1,759,539 : Cost 3.12163687 : Time 609.03s : 146379.48 words/s : gNorm 1.0017
+[2024-02-13 06:30:47] Seen 3,479,418 samples
+[2024-02-13 06:30:47] Starting data epoch 16 in logical epoch 16
+[2024-02-13 06:37:05] Ep. 16 : Up. 12000 : Sen. 2,777,369 : Cost 2.89835238 : Time 588.97s : 149671.60 words/s : gNorm 0.7465
+[2024-02-13 06:38:28] Seen 3,479,391 samples
+[2024-02-13 06:38:28] Starting data epoch 17 in logical epoch 17
+[2024-02-13 06:46:10] Seen 3,479,407 samples
+[2024-02-13 06:46:10] Starting data epoch 18 in logical epoch 18
+[2024-02-13 06:47:48] Ep. 18 : Up. 13000 : Sen. 394,711 : Cost 2.66050291 : Time 643.36s : 138546.23 words/s : gNorm 0.5855
+[2024-02-13 06:53:51] Seen 3,479,397 samples
+[2024-02-13 06:53:51] Starting data epoch 19 in logical epoch 19
+[2024-02-13 06:57:42] Ep. 19 : Up. 14000 : Sen. 1,518,184 : Cost 2.47555876 : Time 593.28s : 150431.55 words/s : gNorm 0.4849
+[2024-02-13 07:01:32] Seen 3,479,402 samples
+[2024-02-13 07:01:32] Starting data epoch 20 in logical epoch 20
+[2024-02-13 07:07:33] Ep. 20 : Up. 15000 : Sen. 2,709,935 : Cost 2.38485479 : Time 591.51s : 150783.57 words/s : gNorm 0.4440
+[2024-02-13 07:07:33] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 07:07:36] Saving Adam parameters
+[2024-02-13 07:07:38] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 07:07:41] Translating validation set...
+[2024-02-13 07:07:42] Best translation 0 : Á mánudag, vísindamenn frá Stanford University School of Medicine, tilkynnti að hægt sé að bera saman nýjar greiningartæki sem hægt er að framleiða með því að nota sprautuprentara fyrir einn U.S. miðju.
+[2024-02-13 07:07:42] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið í veg fyrir krabbamein, smjördeigs-, HIV og malaríu til sjúklinga í lágtekjulöndum, þar sem það getur verið helmingur af krabbameinsjúklingum.
+[2024-02-13 07:07:42] Best translation 2 : JAS 39C Gripinn féll á braut um kl. 09:30 á staðbundnum tíma (230 UTC) og lokaðu flug til viðskiptaflugs.
+[2024-02-13 07:07:42] Best translation 3 : Flugmaðurinn var greindur sem framkvæmdastjóri leiðtogasviðs Dilokiteta.
+[2024-02-13 07:07:42] Best translation 4 : Staðbundin fjölmiðlaskýrslur fyrir flugskipuleggjandi á meðan á ferðinni stendur.
+[2024-02-13 07:07:42] Best translation 5 : 28 ára Vidal hafði tekið þátt í Barça þriggja manna tímabilum, frá Sevilla.
+[2024-02-13 07:07:42] Best translation 10 : Um það bil 11:29, sáttmálinn fluttist til Hvíta-Rússlands, strandtorgsins, sem liggur við Strand- og Kingsway-turninn þar sem þeir voru að taka þátt í Spring Forum Forum í Grand Connaught Rooms.
+[2024-02-13 07:07:42] Best translation 20 : Hann lýsti því yfir kosningarnar sem gætu lent í landinu á tímum kreppunnar.
+[2024-02-13 07:07:42] Best translation 40 : John Grant, frá WED Buffalo (Gangang Rainbow) sagði að „Lesa Rainbow krakkarnir viti hversu gott er að lesa,... — — — — — — — — Æ�
+[2024-02-13 07:07:42] Best translation 80 : Maroochydore hélt áfram að sigra í Ólympíuleikunum.
+[2024-02-13 07:07:42] Best translation 160 : Stewart, Gordon, Kenseth, og Harck hring hring yfir efstu stöðum fyrir ökumanna með fjóra keppnir sem eftir eru á tímabilinu.
+[2024-02-13 07:07:42] Best translation 320 : Síðan hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 07:07:43] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna uppsetningu upplýsinga.
+[2024-02-13 07:07:43] Total translation time: 1.86650s
+[2024-02-13 07:07:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-chrf.npz
+[2024-02-13 07:07:44] [valid] Ep. 20 : Up. 15000 : chrf : 40.2402 : new best
+[2024-02-13 07:07:44] Translating validation set...
+[2024-02-13 07:07:46] Best translation 0 : Á mánudag, vísindamenn frá Stanford University School of Medicine, tilkynnti að hægt sé að bera saman nýjar greiningartæki sem hægt er að framleiða með því að nota sprautuprentara fyrir einn U.S. miðju.
+[2024-02-13 07:07:46] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið í veg fyrir krabbamein, smjördeigs-, HIV og malaríu til sjúklinga í lágtekjulöndum, þar sem það getur verið helmingur af krabbameinsjúklingum.
+[2024-02-13 07:07:46] Best translation 2 : JAS 39C Gripinn féll á braut um kl. 09:30 á staðbundnum tíma (230 UTC) og lokaðu flug til viðskiptaflugs.
+[2024-02-13 07:07:46] Best translation 3 : Flugmaðurinn var greindur sem framkvæmdastjóri leiðtogasviðs Dilokiteta.
+[2024-02-13 07:07:46] Best translation 4 : Staðbundin fjölmiðlaskýrslur fyrir flugskipuleggjandi á meðan á ferðinni stendur.
+[2024-02-13 07:07:46] Best translation 5 : 28 ára Vidal hafði tekið þátt í Barça þriggja manna tímabilum, frá Sevilla.
+[2024-02-13 07:07:46] Best translation 10 : Um það bil 11:29, sáttmálinn fluttist til Hvíta-Rússlands, strandtorgsins, sem liggur við Strand- og Kingsway-turninn þar sem þeir voru að taka þátt í Spring Forum Forum í Grand Connaught Rooms.
+[2024-02-13 07:07:46] Best translation 20 : Hann lýsti því yfir kosningarnar sem gætu lent í landinu á tímum kreppunnar.
+[2024-02-13 07:07:46] Best translation 40 : John Grant, frá WED Buffalo (Gangang Rainbow) sagði að „Lesa Rainbow krakkarnir viti hversu gott er að lesa,... — — — — — — — — Æ�
+[2024-02-13 07:07:46] Best translation 80 : Maroochydore hélt áfram að sigra í Ólympíuleikunum.
+[2024-02-13 07:07:46] Best translation 160 : Stewart, Gordon, Kenseth, og Harck hring hring yfir efstu stöðum fyrir ökumanna með fjóra keppnir sem eftir eru á tímabilinu.
+[2024-02-13 07:07:46] Best translation 320 : Síðan hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 07:07:46] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna uppsetningu upplýsinga.
+[2024-02-13 07:07:46] Total translation time: 1.41012s
+[2024-02-13 07:07:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-bleu.npz
+[2024-02-13 07:07:47] [valid] Ep. 20 : Up. 15000 : bleu : 14.8141 : new best
+[2024-02-13 07:07:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 07:07:49] [valid] Ep. 20 : Up. 15000 : ce-mean-words : 3.12531 : new best
+[2024-02-13 07:09:28] Seen 3,479,422 samples
+[2024-02-13 07:09:28] Starting data epoch 21 in logical epoch 21
+[2024-02-13 07:17:09] Seen 3,479,403 samples
+[2024-02-13 07:17:09] Starting data epoch 22 in logical epoch 22
+[2024-02-13 07:18:27] Ep. 22 : Up. 16000 : Sen. 234,048 : Cost 2.31019163 : Time 653.80s : 135758.64 words/s : gNorm 0.3615
+[2024-02-13 07:24:47] Seen 3,479,364 samples
+[2024-02-13 07:24:47] Starting data epoch 23 in logical epoch 23
+[2024-02-13 07:28:15] Ep. 23 : Up. 17000 : Sen. 1,321,896 : Cost 2.23536277 : Time 588.09s : 151261.72 words/s : gNorm 0.3399
+[2024-02-13 07:32:25] Seen 3,479,389 samples
+[2024-02-13 07:32:25] Starting data epoch 24 in logical epoch 24
+[2024-02-13 07:38:00] Ep. 24 : Up. 18000 : Sen. 2,475,253 : Cost 2.17919278 : Time 585.16s : 150928.54 words/s : gNorm 0.3365
+[2024-02-13 07:40:03] Seen 3,479,407 samples
+[2024-02-13 07:40:03] Starting data epoch 25 in logical epoch 25
+[2024-02-13 07:47:39] Seen 3,479,404 samples
+[2024-02-13 07:47:39] Starting data epoch 26 in logical epoch 26
+[2024-02-13 07:48:35] Ep. 26 : Up. 19000 : Sen. 73,762 : Cost 2.13726664 : Time 634.67s : 140374.39 words/s : gNorm 0.3916
+[2024-02-13 07:55:17] Seen 3,479,400 samples
+[2024-02-13 07:55:17] Starting data epoch 27 in logical epoch 27
+[2024-02-13 07:58:26] Ep. 27 : Up. 20000 : Sen. 1,232,865 : Cost 2.08429217 : Time 590.55s : 151194.33 words/s : gNorm 0.2969
+[2024-02-13 07:58:26] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 07:58:28] Saving Adam parameters
+[2024-02-13 07:58:30] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 07:58:33] Translating validation set...
+[2024-02-13 07:58:34] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford University School of Medicine um uppfinningu nýrrar greiningartækja sem geta flokkað frumur eftir tegund: örlítið prentaður flís sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn Bandaríkjamanna.
+[2024-02-13 07:58:34] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið snemma auga á krabbamein, smjördeigshorn, HIV og malaria til sjúklinga í lágtekjulöndum, þar sem lifunartíðni fyrir sjúkdóma eins og brjóstkrabbameini getur verið helmingur af ríkum löndum.
+[2024-02-13 07:58:34] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut á um 9:30 am local time (0230 UTC) og sprakk, og lokaði flugvellinum til viðskiptaflugs.
+[2024-02-13 07:58:34] Best translation 3 : Flugmaður var skilgreindur sem Flokkur Dilokrit Patavee.
+[2024-02-13 07:58:34] Best translation 4 : Flugmiðlar gefa skýrslu um flugslys á meðan þeir svara.
+[2024-02-13 07:58:34] Best translation 5 : 28 ára Vidal hafði tekið þátt í Barça fyrir þremur árum, frá Sevilla.
+[2024-02-13 07:58:34] Best translation 10 : Um 11:29 flutti mótmælin upp Whitehall, fortíð Trafalgar Square, ásamt Aldwych og upp Kingsway í átt að Holborn þar sem Conservative Party var að halda Vorinu á Grand Connaught Rooms.
+[2024-02-13 07:58:34] Best translation 20 : Hssie var gefið út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 07:58:34] Best translation 40 : John Grant, frá WEND Buffalo (Lesa Rainbow's home station) sagði að "Lesa Rainbow kenndi börnum hvers vegna að lesa,... ást á lestur — [sýna] hvatti börnin til að taka upp bók og lesa."
+[2024-02-13 07:58:34] Best translation 80 : Maroochydore vann síðan Caboolture í Frumrauninni.
+[2024-02-13 07:58:34] Best translation 160 : Stewart, Gordon, Kenseth og Harvey hringa um efstu stöðu ökumannakeppnin með fjórum kynþáttum sem eftir eru á tímabilinu.
+[2024-02-13 07:58:34] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 07:58:35] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna hraða kennsluupplýsinga.
+[2024-02-13 07:58:35] Total translation time: 1.79506s
+[2024-02-13 07:58:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-chrf.npz
+[2024-02-13 07:58:36] [valid] Ep. 27 : Up. 20000 : chrf : 47.0934 : new best
+[2024-02-13 07:58:36] Translating validation set...
+[2024-02-13 07:58:37] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford University School of Medicine um uppfinningu nýrrar greiningartækja sem geta flokkað frumur eftir tegund: örlítið prentaður flís sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn Bandaríkjamanna.
+[2024-02-13 07:58:37] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið snemma auga á krabbamein, smjördeigshorn, HIV og malaria til sjúklinga í lágtekjulöndum, þar sem lifunartíðni fyrir sjúkdóma eins og brjóstkrabbameini getur verið helmingur af ríkum löndum.
+[2024-02-13 07:58:37] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut á um 9:30 am local time (0230 UTC) og sprakk, og lokaði flugvellinum til viðskiptaflugs.
+[2024-02-13 07:58:37] Best translation 3 : Flugmaður var skilgreindur sem Flokkur Dilokrit Patavee.
+[2024-02-13 07:58:37] Best translation 4 : Flugmiðlar gefa skýrslu um flugslys á meðan þeir svara.
+[2024-02-13 07:58:37] Best translation 5 : 28 ára Vidal hafði tekið þátt í Barça fyrir þremur árum, frá Sevilla.
+[2024-02-13 07:58:37] Best translation 10 : Um 11:29 flutti mótmælin upp Whitehall, fortíð Trafalgar Square, ásamt Aldwych og upp Kingsway í átt að Holborn þar sem Conservative Party var að halda Vorinu á Grand Connaught Rooms.
+[2024-02-13 07:58:37] Best translation 20 : Hssie var gefið út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 07:58:37] Best translation 40 : John Grant, frá WEND Buffalo (Lesa Rainbow's home station) sagði að "Lesa Rainbow kenndi börnum hvers vegna að lesa,... ást á lestur — [sýna] hvatti börnin til að taka upp bók og lesa."
+[2024-02-13 07:58:37] Best translation 80 : Maroochydore vann síðan Caboolture í Frumrauninni.
+[2024-02-13 07:58:37] Best translation 160 : Stewart, Gordon, Kenseth og Harvey hringa um efstu stöðu ökumannakeppnin með fjórum kynþáttum sem eftir eru á tímabilinu.
+[2024-02-13 07:58:37] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 07:58:38] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna hraða kennsluupplýsinga.
+[2024-02-13 07:58:38] Total translation time: 1.27561s
+[2024-02-13 07:58:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-bleu.npz
+[2024-02-13 07:58:39] [valid] Ep. 27 : Up. 20000 : bleu : 20.4536 : new best
+[2024-02-13 07:58:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 07:58:41] [valid] Ep. 27 : Up. 20000 : ce-mean-words : 2.55526 : new best
+[2024-02-13 08:03:10] Seen 3,479,399 samples
+[2024-02-13 08:03:10] Starting data epoch 28 in logical epoch 28
+[2024-02-13 08:08:26] Ep. 28 : Up. 21000 : Sen. 2,330,590 : Cost 2.06835723 : Time 600.94s : 147885.24 words/s : gNorm 0.2991
+[2024-02-13 08:10:47] Seen 3,479,394 samples
+[2024-02-13 08:10:47] Starting data epoch 29 in logical epoch 29
+[2024-02-13 08:18:12] Ep. 29 : Up. 22000 : Sen. 3,386,666 : Cost 2.03060722 : Time 586.03s : 151269.26 words/s : gNorm 0.3083
+[2024-02-13 08:18:24] Seen 3,479,412 samples
+[2024-02-13 08:18:24] Starting data epoch 30 in logical epoch 30
+[2024-02-13 08:25:59] Seen 3,479,411 samples
+[2024-02-13 08:25:59] Starting data epoch 31 in logical epoch 31
+[2024-02-13 08:28:44] Ep. 31 : Up. 23000 : Sen. 993,169 : Cost 2.00493884 : Time 631.62s : 140483.69 words/s : gNorm 0.3150
+[2024-02-13 08:33:37] Seen 3,479,373 samples
+[2024-02-13 08:33:37] Starting data epoch 32 in logical epoch 32
+[2024-02-13 08:38:32] Ep. 32 : Up. 24000 : Sen. 2,090,199 : Cost 1.99084485 : Time 588.38s : 150970.39 words/s : gNorm 0.2974
+[2024-02-13 08:41:15] Seen 3,479,431 samples
+[2024-02-13 08:41:15] Starting data epoch 33 in logical epoch 33
+[2024-02-13 08:48:22] Ep. 33 : Up. 25000 : Sen. 3,222,631 : Cost 1.96953821 : Time 589.28s : 152068.22 words/s : gNorm 0.2796
+[2024-02-13 08:48:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 08:48:24] Saving Adam parameters
+[2024-02-13 08:48:27] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 08:48:29] Translating validation set...
+[2024-02-13 08:48:31] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford University School of Medicine um uppgötvun á nýjum greiningartækjum sem geta flokkað frumur eftir tegund: örlítið prentaður flís sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn bandarískt sent hvert einasta sent.
+[2024-02-13 08:48:31] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, uberculosis, HIV og malaria til sjúklinga í lágtekjulöndum, þar sem lífstíðni sjúkdóma eins og brjóstakrabbameins getur verið helmingur þessara auðugra landa.
+[2024-02-13 08:48:31] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut á um 9:30 am local time (0230 UTC) og sprakk, nálægt flugvellinum í atvinnuskyni.
+[2024-02-13 08:48:31] Best translation 3 : Flugmaðurinn var skilgreindur sem stjórnandi Dilokrit Patave.
+[2024-02-13 08:48:31] Best translation 4 : Staðbundin fjölmiðlar tilkynna flugeldum um leið og þeir svara.
+[2024-02-13 08:48:31] Best translation 5 : 28 ára Vidal hafði tekið þátt í Barça fyrir þremur árum, frá Sevilla.
+[2024-02-13 08:48:31] Best translation 10 : Um 11:29 kom mótmælin upp Whitehall, framhjá Trafalgar Square, meðfram ströndinni, með Aldwych og upp á Kingsway til Holborn þar semhaldsflokkurinn hélt Forum á Grand Connaught Rooms hótelinu.
+[2024-02-13 08:48:31] Best translation 20 : Hssieh gefin út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 08:48:31] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenndi krakka hvers vegna á að lesa,... ást á lestri — [...] hvatti börnin til að taka upp bók og lesa."
+[2024-02-13 08:48:31] Best translation 80 : Maroochydore vann síðan Caboolture í lokakeppninni.
+[2024-02-13 08:48:31] Best translation 160 : Stewart, Gordon, Kenseth og Harck eru um tíu efstu sæti fyrir meistaramótið með fjórum kynþáttum sem eftir eru á tímabilinu.
+[2024-02-13 08:48:31] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 08:48:31] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna hraða kennsluupplýsinga.
+[2024-02-13 08:48:31] Total translation time: 1.85003s
+[2024-02-13 08:48:31] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-chrf.npz
+[2024-02-13 08:48:33] [valid] Ep. 33 : Up. 25000 : chrf : 48.9719 : new best
+[2024-02-13 08:48:33] Translating validation set...
+[2024-02-13 08:48:34] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford University School of Medicine um uppgötvun á nýjum greiningartækjum sem geta flokkað frumur eftir tegund: örlítið prentaður flís sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn bandarískt sent hvert einasta sent.
+[2024-02-13 08:48:34] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, uberculosis, HIV og malaria til sjúklinga í lágtekjulöndum, þar sem lífstíðni sjúkdóma eins og brjóstakrabbameins getur verið helmingur þessara auðugra landa.
+[2024-02-13 08:48:34] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut á um 9:30 am local time (0230 UTC) og sprakk, nálægt flugvellinum í atvinnuskyni.
+[2024-02-13 08:48:34] Best translation 3 : Flugmaðurinn var skilgreindur sem stjórnandi Dilokrit Patave.
+[2024-02-13 08:48:34] Best translation 4 : Staðbundin fjölmiðlar tilkynna flugeldum um leið og þeir svara.
+[2024-02-13 08:48:34] Best translation 5 : 28 ára Vidal hafði tekið þátt í Barça fyrir þremur árum, frá Sevilla.
+[2024-02-13 08:48:34] Best translation 10 : Um 11:29 kom mótmælin upp Whitehall, framhjá Trafalgar Square, meðfram ströndinni, með Aldwych og upp á Kingsway til Holborn þar semhaldsflokkurinn hélt Forum á Grand Connaught Rooms hótelinu.
+[2024-02-13 08:48:34] Best translation 20 : Hssieh gefin út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 08:48:34] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenndi krakka hvers vegna á að lesa,... ást á lestri — [...] hvatti börnin til að taka upp bók og lesa."
+[2024-02-13 08:48:34] Best translation 80 : Maroochydore vann síðan Caboolture í lokakeppninni.
+[2024-02-13 08:48:34] Best translation 160 : Stewart, Gordon, Kenseth og Harck eru um tíu efstu sæti fyrir meistaramótið með fjórum kynþáttum sem eftir eru á tímabilinu.
+[2024-02-13 08:48:34] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 08:48:34] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna hraða kennsluupplýsinga.
+[2024-02-13 08:48:34] Total translation time: 1.26352s
+[2024-02-13 08:48:34] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-bleu.npz
+[2024-02-13 08:48:35] [valid] Ep. 33 : Up. 25000 : bleu : 21.7433 : new best
+[2024-02-13 08:48:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 08:48:37] [valid] Ep. 33 : Up. 25000 : ce-mean-words : 2.42367 : new best
+[2024-02-13 08:49:06] Seen 3,479,405 samples
+[2024-02-13 08:49:06] Starting data epoch 34 in logical epoch 34
+[2024-02-13 08:56:42] Seen 3,479,360 samples
+[2024-02-13 08:56:42] Starting data epoch 35 in logical epoch 35
+[2024-02-13 08:59:09] Ep. 35 : Up. 26000 : Sen. 802,781 : Cost 1.94763386 : Time 647.43s : 137799.74 words/s : gNorm 0.3292
+[2024-02-13 09:04:19] Seen 3,479,420 samples
+[2024-02-13 09:04:19] Starting data epoch 36 in logical epoch 36
+[2024-02-13 09:08:55] Ep. 36 : Up. 27000 : Sen. 1,928,131 : Cost 1.94064844 : Time 585.32s : 151306.95 words/s : gNorm 0.2942
+[2024-02-13 09:11:55] Seen 3,479,416 samples
+[2024-02-13 09:11:55] Starting data epoch 37 in logical epoch 37
+[2024-02-13 09:18:42] Ep. 37 : Up. 28000 : Sen. 3,065,242 : Cost 1.92445886 : Time 587.70s : 151518.15 words/s : gNorm 0.2841
+[2024-02-13 09:19:31] Seen 3,479,412 samples
+[2024-02-13 09:19:31] Starting data epoch 38 in logical epoch 38
+[2024-02-13 09:27:08] Seen 3,479,410 samples
+[2024-02-13 09:27:08] Starting data epoch 39 in logical epoch 39
+[2024-02-13 09:29:14] Ep. 39 : Up. 29000 : Sen. 716,649 : Cost 1.90673792 : Time 631.42s : 140358.31 words/s : gNorm 0.3000
+[2024-02-13 09:34:44] Seen 3,479,389 samples
+[2024-02-13 09:34:44] Starting data epoch 40 in logical epoch 40
+[2024-02-13 09:39:02] Ep. 40 : Up. 30000 : Sen. 1,774,535 : Cost 1.90275002 : Time 588.17s : 151772.31 words/s : gNorm 0.3009
+[2024-02-13 09:39:02] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 09:39:04] Saving Adam parameters
+[2024-02-13 09:39:07] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 09:39:09] Translating validation set...
+[2024-02-13 09:39:11] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum um uppfinningu á nýjum greiningartólum sem geta flokkað frumur eftir tegund: ört prentaður flís sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn bandarískt sent hvert.
+[2024-02-13 09:39:11] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, uberculosis, HIV og malaria til sjúklinga í lágtekjulöndum, þar sem lífstíðni sjúkdóma eins og brjóstakrabbameins getur verið helmingur þeirra af ríkum löndum.
+[2024-02-13 09:39:11] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut á um klukkan 09:30 á staðartíma (0230 UTC) og sprakk, nálægt flugvellinum í atvinnuskyni.
+[2024-02-13 09:39:11] Best translation 3 : Flugmaðurinn var greindur sem stjórnandi Dilokrit Patave.
+[2024-02-13 09:39:11] Best translation 4 : Staðbundin fjölmiðlar tilkynna flugeldum um leið og þeir svara.
+[2024-02-13 09:39:11] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 09:39:11] Best translation 10 : Í kringum 11:29 vakti mótmælin Whitehall, fortíð Trafalgar Square, meðfram ströndinni, framhjá Aldwych og upp Kingsway til Holborn þar semhaldsflokkurinn hélt Forum á Grand Connaught Rooms hótelinu.
+[2024-02-13 09:39:11] Best translation 20 : Hsieh var gefið út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 09:39:11] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's heimastöð) sagði "Lesa Regnboga kenna börnum hvers vegna á að lesa,... ást á lestum — [sýna] hvatt börn til að taka upp bók og lesa."
+[2024-02-13 09:39:11] Best translation 80 : Maroochydore vann síðan Caboolture í undankeppninni.
+[2024-02-13 09:39:11] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru um tíu efstu sætin fyrir meistaramótið með fjórum kynþáttum sem eftir eru á tímabilinu.
+[2024-02-13 09:39:11] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 09:39:11] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 09:39:11] Total translation time: 1.81904s
+[2024-02-13 09:39:11] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-chrf.npz
+[2024-02-13 09:39:13] [valid] Ep. 40 : Up. 30000 : chrf : 49.3812 : new best
+[2024-02-13 09:39:13] Translating validation set...
+[2024-02-13 09:39:14] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum um uppfinningu á nýjum greiningartólum sem geta flokkað frumur eftir tegund: ört prentaður flís sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn bandarískt sent hvert.
+[2024-02-13 09:39:14] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, uberculosis, HIV og malaria til sjúklinga í lágtekjulöndum, þar sem lífstíðni sjúkdóma eins og brjóstakrabbameins getur verið helmingur þeirra af ríkum löndum.
+[2024-02-13 09:39:14] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut á um klukkan 09:30 á staðartíma (0230 UTC) og sprakk, nálægt flugvellinum í atvinnuskyni.
+[2024-02-13 09:39:14] Best translation 3 : Flugmaðurinn var greindur sem stjórnandi Dilokrit Patave.
+[2024-02-13 09:39:14] Best translation 4 : Staðbundin fjölmiðlar tilkynna flugeldum um leið og þeir svara.
+[2024-02-13 09:39:14] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 09:39:14] Best translation 10 : Í kringum 11:29 vakti mótmælin Whitehall, fortíð Trafalgar Square, meðfram ströndinni, framhjá Aldwych og upp Kingsway til Holborn þar semhaldsflokkurinn hélt Forum á Grand Connaught Rooms hótelinu.
+[2024-02-13 09:39:14] Best translation 20 : Hsieh var gefið út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 09:39:14] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's heimastöð) sagði "Lesa Regnboga kenna börnum hvers vegna á að lesa,... ást á lestum — [sýna] hvatt börn til að taka upp bók og lesa."
+[2024-02-13 09:39:14] Best translation 80 : Maroochydore vann síðan Caboolture í undankeppninni.
+[2024-02-13 09:39:14] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru um tíu efstu sætin fyrir meistaramótið með fjórum kynþáttum sem eftir eru á tímabilinu.
+[2024-02-13 09:39:14] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 09:39:14] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 09:39:14] Total translation time: 1.28790s
+[2024-02-13 09:39:14] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-bleu.npz
+[2024-02-13 09:39:15] [valid] Ep. 40 : Up. 30000 : bleu : 21.9459 : new best
+[2024-02-13 09:39:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 09:39:17] [valid] Ep. 40 : Up. 30000 : ce-mean-words : 2.41323 : new best
+[2024-02-13 09:42:36] Seen 3,479,427 samples
+[2024-02-13 09:42:36] Starting data epoch 41 in logical epoch 41
+[2024-02-13 09:49:02] Ep. 41 : Up. 31000 : Sen. 2,874,553 : Cost 1.88825786 : Time 600.38s : 147063.59 words/s : gNorm 0.2757
+[2024-02-13 09:50:13] Seen 3,479,389 samples
+[2024-02-13 09:50:13] Starting data epoch 42 in logical epoch 42
+[2024-02-13 09:57:51] Seen 3,479,396 samples
+[2024-02-13 09:57:51] Starting data epoch 43 in logical epoch 43
+[2024-02-13 09:59:38] Ep. 43 : Up. 32000 : Sen. 499,328 : Cost 1.87940288 : Time 635.71s : 140617.38 words/s : gNorm 0.2972
+[2024-02-13 10:05:27] Seen 3,479,399 samples
+[2024-02-13 10:05:27] Starting data epoch 44 in logical epoch 44
+[2024-02-13 10:09:26] Ep. 44 : Up. 33000 : Sen. 1,651,910 : Cost 1.86413801 : Time 587.71s : 152048.32 words/s : gNorm 0.2942
+[2024-02-13 10:13:04] Seen 3,479,439 samples
+[2024-02-13 10:13:04] Starting data epoch 45 in logical epoch 45
+[2024-02-13 10:19:12] Ep. 45 : Up. 34000 : Sen. 2,751,781 : Cost 1.86575985 : Time 586.23s : 151638.86 words/s : gNorm 0.2674
+[2024-02-13 10:20:40] Seen 3,479,421 samples
+[2024-02-13 10:20:40] Starting data epoch 46 in logical epoch 46
+[2024-02-13 10:28:17] Seen 3,479,408 samples
+[2024-02-13 10:28:17] Starting data epoch 47 in logical epoch 47
+[2024-02-13 10:29:47] Ep. 47 : Up. 35000 : Sen. 369,995 : Cost 1.85345185 : Time 635.07s : 140039.50 words/s : gNorm 0.2869
+[2024-02-13 10:29:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 10:29:49] Saving Adam parameters
+[2024-02-13 10:29:52] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 10:29:55] Translating validation set...
+[2024-02-13 10:29:56] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum um uppfinningu á nýjum greiningartólum sem geta flokkað frumur eftir tegund: ört prentaður flögur sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn bandarískt sent hvert.
+[2024-02-13 10:29:56] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, berklasans, HIV og malaríu til sjúklinga í lágtekjulöndum, þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 10:29:56] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprakk, og lokaði flugvellinum í atvinnuflug.
+[2024-02-13 10:29:56] Best translation 3 : Flugmaðurinn var auðkenndur sem landstjóri Squadron Leader Dilokrit Patavee.
+[2024-02-13 10:29:56] Best translation 4 : Á meðan við bregðumst við því, eins og heimabíó, segir til um.
+[2024-02-13 10:29:56] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 10:29:56] Best translation 10 : Í kringum 11:29 hröktust mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych og upp Kingsway í átt að Holborn þar sem íhaldsflokkurinn hélt vorþing sitt á Grand Connaught Rooms.
+[2024-02-13 10:29:56] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 10:29:56] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Regnboga kenna börnum hvers vegna á að lesa,... ást á lestum — [sýna] hvatt börn til að taka upp bók og lesa."
+[2024-02-13 10:29:56] Best translation 80 : Maroochydore vann síðan Caboolture í undankeppninni.
+[2024-02-13 10:29:56] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru á meðal tíu efstu staða fyrir meistaramótið með fjögur keppnislið eftir árstíð.
+[2024-02-13 10:29:56] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 10:29:56] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 10:29:56] Total translation time: 1.77889s
+[2024-02-13 10:29:56] [valid] Ep. 47 : Up. 35000 : chrf : 49.2392 : stalled 1 times (last best: 49.3812)
+[2024-02-13 10:29:56] Translating validation set...
+[2024-02-13 10:29:57] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum um uppfinningu á nýjum greiningartólum sem geta flokkað frumur eftir tegund: ört prentaður flögur sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um einn bandarískt sent hvert.
+[2024-02-13 10:29:57] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, berklasans, HIV og malaríu til sjúklinga í lágtekjulöndum, þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 10:29:57] Best translation 2 : JAS 39C Gripen hrapaði á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprakk, og lokaði flugvellinum í atvinnuflug.
+[2024-02-13 10:29:57] Best translation 3 : Flugmaðurinn var auðkenndur sem landstjóri Squadron Leader Dilokrit Patavee.
+[2024-02-13 10:29:57] Best translation 4 : Á meðan við bregðumst við því, eins og heimabíó, segir til um.
+[2024-02-13 10:29:57] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 10:29:57] Best translation 10 : Í kringum 11:29 hröktust mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych og upp Kingsway í átt að Holborn þar sem íhaldsflokkurinn hélt vorþing sitt á Grand Connaught Rooms.
+[2024-02-13 10:29:57] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 10:29:57] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Regnboga kenna börnum hvers vegna á að lesa,... ást á lestum — [sýna] hvatt börn til að taka upp bók og lesa."
+[2024-02-13 10:29:57] Best translation 80 : Maroochydore vann síðan Caboolture í undankeppninni.
+[2024-02-13 10:29:57] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru á meðal tíu efstu staða fyrir meistaramótið með fjögur keppnislið eftir árstíð.
+[2024-02-13 10:29:57] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 10:29:58] Best translation 640 : Það gerir nemendum kleift að vinna á eigin hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 10:29:58] Total translation time: 1.30817s
+[2024-02-13 10:29:58] [valid] Ep. 47 : Up. 35000 : bleu : 21.7852 : stalled 1 times (last best: 21.9459)
+[2024-02-13 10:29:58] [valid] Ep. 47 : Up. 35000 : ce-mean-words : 2.45128 : stalled 1 times (last best: 2.41323)
+[2024-02-13 10:36:06] Seen 3,479,410 samples
+[2024-02-13 10:36:06] Starting data epoch 48 in logical epoch 48
+[2024-02-13 10:39:46] Ep. 48 : Up. 36000 : Sen. 1,500,412 : Cost 1.84232759 : Time 599.52s : 149060.27 words/s : gNorm 0.3089
+[2024-02-13 10:43:43] Seen 3,479,416 samples
+[2024-02-13 10:43:43] Starting data epoch 49 in logical epoch 49
+[2024-02-13 10:49:33] Ep. 49 : Up. 37000 : Sen. 2,613,138 : Cost 1.84099209 : Time 586.56s : 151185.30 words/s : gNorm 0.3065
+[2024-02-13 10:51:20] Seen 3,479,394 samples
+[2024-02-13 10:51:20] Starting data epoch 50 in logical epoch 50
+[2024-02-13 10:58:57] Seen 3,479,391 samples
+[2024-02-13 10:58:57] Starting data epoch 51 in logical epoch 51
+[2024-02-13 11:00:05] Ep. 51 : Up. 38000 : Sen. 171,386 : Cost 1.83599913 : Time 631.91s : 140272.78 words/s : gNorm 0.3087
+[2024-02-13 11:06:33] Seen 3,479,409 samples
+[2024-02-13 11:06:33] Starting data epoch 52 in logical epoch 52
+[2024-02-13 11:09:51] Ep. 52 : Up. 39000 : Sen. 1,266,483 : Cost 1.82272947 : Time 586.09s : 151288.02 words/s : gNorm 0.2932
+[2024-02-13 11:14:10] Seen 3,479,370 samples
+[2024-02-13 11:14:10] Starting data epoch 53 in logical epoch 53
+[2024-02-13 11:19:39] Ep. 53 : Up. 40000 : Sen. 2,362,040 : Cost 1.82679951 : Time 588.10s : 152191.66 words/s : gNorm 0.3400
+[2024-02-13 11:19:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 11:19:41] Saving Adam parameters
+[2024-02-13 11:19:44] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 11:19:47] Translating validation set...
+[2024-02-13 11:19:48] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum um uppfinningu á nýjum greiningartólum sem geta flokkað frumur eftir tegund: örlitaður prentmiðill sem hægt er að framleiða með venjulegum bleksprautuprentara til að hugsanlega um einn bandarískt sent hvert.
+[2024-02-13 11:19:48] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, berklasis, HIV og malaríu til sjúklinga í lágtekjulöndum, þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 11:19:48] Best translation 2 : JAS 39C Gripen hrundið af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprungið, lokaði flugvellinum í atvinnuflug.
+[2024-02-13 11:19:48] Best translation 3 : Flugmaðurinn var auðkenndur sem flotaforingi Dilokrit Pattavee.
+[2024-02-13 11:19:48] Best translation 4 : Á meðan við bregðumst við því, eins og heimabíó, segir til um flugeldum.
+[2024-02-13 11:19:48] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 11:19:48] Best translation 10 : Í kringum 11:29 komst mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych og upp Kingsway í átt að Holborn þar sem íhaldsflokkurinn var haldið Vor Forum á Grand Connaught Rooms.
+[2024-02-13 11:19:48] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 11:19:48] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenna börn að lesa,... ást á lestum — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 11:19:48] Best translation 80 : Maroochydore sigraði síðan Caboolture í undankeppninni.
+[2024-02-13 11:19:48] Best translation 160 : Stewart, Gordon, Kenseth og Harvick fara um tíu efstu stöðuna fyrir meistaramótið þar sem fjórar keppnir eru eftir á tímabilinu.
+[2024-02-13 11:19:48] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 11:19:49] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 11:19:49] Total translation time: 1.98672s
+[2024-02-13 11:19:49] [valid] Ep. 53 : Up. 40000 : chrf : 48.9821 : stalled 2 times (last best: 49.3812)
+[2024-02-13 11:19:49] Translating validation set...
+[2024-02-13 11:19:50] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum um uppfinningu á nýjum greiningartólum sem geta flokkað frumur eftir tegund: örlitaður prentmiðill sem hægt er að framleiða með venjulegum bleksprautuprentara til að hugsanlega um einn bandarískt sent hvert.
+[2024-02-13 11:19:50] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið með fyrstu greiningu krabbameins, berklasis, HIV og malaríu til sjúklinga í lágtekjulöndum, þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 11:19:50] Best translation 2 : JAS 39C Gripen hrundið af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprungið, lokaði flugvellinum í atvinnuflug.
+[2024-02-13 11:19:50] Best translation 3 : Flugmaðurinn var auðkenndur sem flotaforingi Dilokrit Pattavee.
+[2024-02-13 11:19:50] Best translation 4 : Á meðan við bregðumst við því, eins og heimabíó, segir til um flugeldum.
+[2024-02-13 11:19:50] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 11:19:50] Best translation 10 : Í kringum 11:29 komst mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych og upp Kingsway í átt að Holborn þar sem íhaldsflokkurinn var haldið Vor Forum á Grand Connaught Rooms.
+[2024-02-13 11:19:50] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tímum kreppunnar.
+[2024-02-13 11:19:50] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenna börn að lesa,... ást á lestum — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 11:19:50] Best translation 80 : Maroochydore sigraði síðan Caboolture í undankeppninni.
+[2024-02-13 11:19:50] Best translation 160 : Stewart, Gordon, Kenseth og Harvick fara um tíu efstu stöðuna fyrir meistaramótið þar sem fjórar keppnir eru eftir á tímabilinu.
+[2024-02-13 11:19:50] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 11:19:50] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 11:19:50] Total translation time: 1.26797s
+[2024-02-13 11:19:50] [valid] Ep. 53 : Up. 40000 : bleu : 21.7814 : stalled 2 times (last best: 21.9459)
+[2024-02-13 11:19:50] [valid] Ep. 53 : Up. 40000 : ce-mean-words : 2.49363 : stalled 2 times (last best: 2.41323)
+[2024-02-13 11:21:57] Seen 3,479,422 samples
+[2024-02-13 11:21:57] Starting data epoch 54 in logical epoch 54
+[2024-02-13 11:29:34] Seen 3,479,399 samples
+[2024-02-13 11:29:34] Starting data epoch 55 in logical epoch 55
+[2024-02-13 11:30:22] Ep. 55 : Up. 41000 : Sen. 13,521 : Cost 1.81335735 : Time 643.21s : 137722.99 words/s : gNorm 0.3094
+[2024-02-13 11:37:11] Seen 3,479,437 samples
+[2024-02-13 11:37:11] Starting data epoch 56 in logical epoch 56
+[2024-02-13 11:40:09] Ep. 56 : Up. 42000 : Sen. 1,095,815 : Cost 1.80747211 : Time 586.95s : 151541.71 words/s : gNorm 0.3010
+[2024-02-13 11:44:47] Seen 3,479,414 samples
+[2024-02-13 11:44:47] Starting data epoch 57 in logical epoch 57
+[2024-02-13 11:49:58] Ep. 57 : Up. 43000 : Sen. 2,272,355 : Cost 1.80553377 : Time 588.88s : 151723.01 words/s : gNorm 0.3088
+[2024-02-13 11:52:24] Seen 3,479,421 samples
+[2024-02-13 11:52:24] Starting data epoch 58 in logical epoch 58
+[2024-02-13 11:59:44] Ep. 58 : Up. 44000 : Sen. 3,346,570 : Cost 1.79700494 : Time 586.20s : 151215.06 words/s : gNorm 0.3162
+[2024-02-13 12:00:02] Seen 3,479,404 samples
+[2024-02-13 12:00:02] Starting data epoch 59 in logical epoch 59
+[2024-02-13 12:07:43] Seen 3,479,424 samples
+[2024-02-13 12:07:43] Starting data epoch 60 in logical epoch 60
+[2024-02-13 12:10:26] Ep. 60 : Up. 45000 : Sen. 970,606 : Cost 1.79545224 : Time 641.56s : 138617.65 words/s : gNorm 0.2984
+[2024-02-13 12:10:26] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 12:10:28] Saving Adam parameters
+[2024-02-13 12:10:31] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 12:10:34] Translating validation set...
+[2024-02-13 12:10:36] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum að finna nýjar greiningartól sem geta flokkað frumur eftir tegund: ört prentaður flögur sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um eina sent frá Bandaríkjunum.
+[2024-02-13 12:10:36] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið snemma auga á krabbamein, berklasann, HIV og malaríu til sjúklinga í lágtekjulöndum þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 12:10:36] Best translation 2 : JAS 39C Gripið hrundi af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprungið, lokaði flugvellinum í atvinnuflug.
+[2024-02-13 12:10:36] Best translation 3 : Flugmaðurinn var skilgreindur sem Squadron Leader Dilokrit Pattavee.
+[2024-02-13 12:10:36] Best translation 4 : Staðbundin fjölmiðlaskýrsla um eldflutningabifreið rúllað yfir á meðan hún svarar.
+[2024-02-13 12:10:36] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 12:10:36] Best translation 10 : Í kringum 11:29 komst mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych, og upp Kingsway í átt að Holborn þar sem íhaldsflokkurinn var með Spring Forum á Grand Connaught Rooms.
+[2024-02-13 12:10:36] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tíma kreppunnar.
+[2024-02-13 12:10:36] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenna börn að lesa,... ást á lestum — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 12:10:36] Best translation 80 : Maroochydore sigraði síðan Caboolture í undankeppninni.
+[2024-02-13 12:10:36] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru í kringum tíu efstu stöðuna fyrir meistaramótið þar sem fjórar keppnir eru eftir á tímabilinu.
+[2024-02-13 12:10:36] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 12:10:36] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 12:10:36] Total translation time: 2.39959s
+[2024-02-13 12:10:36] [valid] Ep. 60 : Up. 45000 : chrf : 48.9041 : stalled 3 times (last best: 49.3812)
+[2024-02-13 12:10:36] Translating validation set...
+[2024-02-13 12:10:37] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskólaháskólanum að finna nýjar greiningartól sem geta flokkað frumur eftir tegund: ört prentaður flögur sem hægt er að framleiða með venjulegum bleksprautuprentara fyrir hugsanlega um eina sent frá Bandaríkjunum.
+[2024-02-13 12:10:37] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið snemma auga á krabbamein, berklasann, HIV og malaríu til sjúklinga í lágtekjulöndum þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 12:10:37] Best translation 2 : JAS 39C Gripið hrundi af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprungið, lokaði flugvellinum í atvinnuflug.
+[2024-02-13 12:10:37] Best translation 3 : Flugmaðurinn var skilgreindur sem Squadron Leader Dilokrit Pattavee.
+[2024-02-13 12:10:37] Best translation 4 : Staðbundin fjölmiðlaskýrsla um eldflutningabifreið rúllað yfir á meðan hún svarar.
+[2024-02-13 12:10:37] Best translation 5 : 28 ára Vidal hafði gengið til liðs við Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 12:10:37] Best translation 10 : Í kringum 11:29 komst mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych, og upp Kingsway í átt að Holborn þar sem íhaldsflokkurinn var með Spring Forum á Grand Connaught Rooms.
+[2024-02-13 12:10:37] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tíma kreppunnar.
+[2024-02-13 12:10:37] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenna börn að lesa,... ást á lestum — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 12:10:38] Best translation 80 : Maroochydore sigraði síðan Caboolture í undankeppninni.
+[2024-02-13 12:10:38] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru í kringum tíu efstu stöðuna fyrir meistaramótið þar sem fjórar keppnir eru eftir á tímabilinu.
+[2024-02-13 12:10:38] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 12:10:38] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 12:10:38] Total translation time: 1.37267s
+[2024-02-13 12:10:38] [valid] Ep. 60 : Up. 45000 : bleu : 21.5509 : stalled 3 times (last best: 21.9459)
+[2024-02-13 12:10:38] [valid] Ep. 60 : Up. 45000 : ce-mean-words : 2.53694 : stalled 3 times (last best: 2.41323)
+[2024-02-13 12:15:35] Seen 3,479,404 samples
+[2024-02-13 12:15:35] Starting data epoch 61 in logical epoch 61
+[2024-02-13 12:20:30] Ep. 61 : Up. 46000 : Sen. 2,115,136 : Cost 1.79001522 : Time 604.01s : 148000.10 words/s : gNorm 0.3137
+[2024-02-13 12:23:16] Seen 3,479,412 samples
+[2024-02-13 12:23:16] Starting data epoch 62 in logical epoch 62
+[2024-02-13 12:30:17] Ep. 62 : Up. 47000 : Sen. 3,130,433 : Cost 1.78612208 : Time 587.02s : 150087.12 words/s : gNorm 0.3404
+[2024-02-13 12:30:56] Seen 3,479,415 samples
+[2024-02-13 12:30:56] Starting data epoch 63 in logical epoch 63
+[2024-02-13 12:38:36] Seen 3,479,427 samples
+[2024-02-13 12:38:36] Starting data epoch 64 in logical epoch 64
+[2024-02-13 12:40:57] Ep. 64 : Up. 48000 : Sen. 766,386 : Cost 1.78015482 : Time 640.15s : 139402.91 words/s : gNorm 0.3082
+[2024-02-13 12:46:15] Seen 3,479,443 samples
+[2024-02-13 12:46:15] Starting data epoch 65 in logical epoch 65
+[2024-02-13 12:50:45] Ep. 65 : Up. 49000 : Sen. 1,839,523 : Cost 1.77847242 : Time 588.01s : 150226.08 words/s : gNorm 0.3028
+[2024-02-13 12:53:55] Seen 3,479,446 samples
+[2024-02-13 12:53:55] Starting data epoch 66 in logical epoch 66
+[2024-02-13 13:00:37] Ep. 66 : Up. 50000 : Sen. 2,958,403 : Cost 1.77356672 : Time 591.79s : 151091.36 words/s : gNorm 0.3235
+[2024-02-13 13:00:37] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 13:00:39] Saving Adam parameters
+[2024-02-13 13:00:42] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 13:00:45] Translating validation set...
+[2024-02-13 13:00:46] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskóla í læknisfræði að finna ný greiningartól sem geta flokkað frumur eftir tegund: örlítið prentaður flögur sem hægt er að framleiða með venjulegum bleksprautuprentara til að hugsanlega um einn sent hver um sig.
+[2024-02-13 13:00:46] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið snemma auga á krabbamein, berklasis, HIV og malaríu til sjúklinga í lágtekjulöndum þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 13:00:46] Best translation 2 : JAS 39C Gripið hrundi af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprakk, og lokaði flugvellinum í atvinnuflug.
+[2024-02-13 13:00:46] Best translation 3 : Flugmaðurinn var skilgreindur sem Fodron leiðtogi Dilokrit Pattavee.
+[2024-02-13 13:00:46] Best translation 4 : Staðbundin fjölmiðlaskýrsla um eldflutningabifreið rúllað yfir á meðan hún svarar.
+[2024-02-13 13:00:46] Best translation 5 : Vidal hafði tekið þátt í Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 13:00:46] Best translation 10 : Um það bil 11:29 færði mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych, og upp Kingsway til Holborn þar sem Spring Forum þeirra var haldið á Grand Connaught Rooms.
+[2024-02-13 13:00:46] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tíma kreppunnar.
+[2024-02-13 13:00:46] Best translation 40 : John Grant frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenndi krakka hvers vegna þeir ættu að lesa,... ást á lestum — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 13:00:46] Best translation 80 : Maroochydore vann síðan sigur á Caboolture í undankeppninni.
+[2024-02-13 13:00:46] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru í kringum tíu efstu stöðun fyrir meistaramótið þar sem fjórar keppnir eru eftir á vertíðinni.
+[2024-02-13 13:00:46] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 13:00:47] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 13:00:47] Total translation time: 1.99541s
+[2024-02-13 13:00:47] [valid] Ep. 66 : Up. 50000 : chrf : 48.8369 : stalled 4 times (last best: 49.3812)
+[2024-02-13 13:00:47] Translating validation set...
+[2024-02-13 13:00:48] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskóla í læknisfræði að finna ný greiningartól sem geta flokkað frumur eftir tegund: örlítið prentaður flögur sem hægt er að framleiða með venjulegum bleksprautuprentara til að hugsanlega um einn sent hver um sig.
+[2024-02-13 13:00:48] Best translation 1 : Leiðandi vísindamenn segja að þetta geti komið snemma auga á krabbamein, berklasis, HIV og malaríu til sjúklinga í lágtekjulöndum þar sem lifandi hlutfall sjúkdóma eins og brjóstakrabbameins sem getur verið helmingur þeirra auðugra landa.
+[2024-02-13 13:00:48] Best translation 2 : JAS 39C Gripið hrundi af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprakk, og lokaði flugvellinum í atvinnuflug.
+[2024-02-13 13:00:48] Best translation 3 : Flugmaðurinn var skilgreindur sem Fodron leiðtogi Dilokrit Pattavee.
+[2024-02-13 13:00:48] Best translation 4 : Staðbundin fjölmiðlaskýrsla um eldflutningabifreið rúllað yfir á meðan hún svarar.
+[2024-02-13 13:00:48] Best translation 5 : Vidal hafði tekið þátt í Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 13:00:48] Best translation 10 : Um það bil 11:29 færði mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych, og upp Kingsway til Holborn þar sem Spring Forum þeirra var haldið á Grand Connaught Rooms.
+[2024-02-13 13:00:48] Best translation 20 : Hsieh gaf út í kosningunum sem Ma gæti flúið landið á tíma kreppunnar.
+[2024-02-13 13:00:48] Best translation 40 : John Grant frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenndi krakka hvers vegna þeir ættu að lesa,... ást á lestum — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 13:00:48] Best translation 80 : Maroochydore vann síðan sigur á Caboolture í undankeppninni.
+[2024-02-13 13:00:48] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru í kringum tíu efstu stöðun fyrir meistaramótið þar sem fjórar keppnir eru eftir á vertíðinni.
+[2024-02-13 13:00:48] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 13:00:48] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 13:00:48] Total translation time: 1.33682s
+[2024-02-13 13:00:48] [valid] Ep. 66 : Up. 50000 : bleu : 21.4682 : stalled 4 times (last best: 21.9459)
+[2024-02-13 13:00:48] [valid] Ep. 66 : Up. 50000 : ce-mean-words : 2.58595 : stalled 4 times (last best: 2.41323)
+[2024-02-13 13:01:47] Seen 3,479,383 samples
+[2024-02-13 13:01:47] Starting data epoch 67 in logical epoch 67
+[2024-02-13 13:09:26] Seen 3,479,378 samples
+[2024-02-13 13:09:26] Starting data epoch 68 in logical epoch 68
+[2024-02-13 13:11:27] Ep. 68 : Up. 51000 : Sen. 618,182 : Cost 1.76841831 : Time 650.44s : 136532.89 words/s : gNorm 0.3012
+[2024-02-13 13:17:06] Seen 3,479,388 samples
+[2024-02-13 13:17:06] Starting data epoch 69 in logical epoch 69
+[2024-02-13 13:21:18] Ep. 69 : Up. 52000 : Sen. 1,729,405 : Cost 1.76323140 : Time 590.58s : 151598.31 words/s : gNorm 0.2872
+[2024-02-13 13:24:45] Seen 3,479,410 samples
+[2024-02-13 13:24:45] Starting data epoch 70 in logical epoch 70
+[2024-02-13 13:31:02] Ep. 70 : Up. 53000 : Sen. 2,771,893 : Cost 1.77153742 : Time 584.55s : 149914.63 words/s : gNorm 0.3148
+[2024-02-13 13:32:25] Seen 3,479,431 samples
+[2024-02-13 13:32:25] Starting data epoch 71 in logical epoch 71
+[2024-02-13 13:40:07] Seen 3,479,443 samples
+[2024-02-13 13:40:07] Starting data epoch 72 in logical epoch 72
+[2024-02-13 13:41:49] Ep. 72 : Up. 54000 : Sen. 437,564 : Cost 1.75539875 : Time 646.08s : 139370.40 words/s : gNorm 0.2884
+[2024-02-13 13:47:47] Seen 3,479,395 samples
+[2024-02-13 13:47:47] Starting data epoch 73 in logical epoch 73
+[2024-02-13 13:51:38] Ep. 73 : Up. 55000 : Sen. 1,556,366 : Cost 1.75596964 : Time 589.76s : 150634.50 words/s : gNorm 0.3006
+[2024-02-13 13:51:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 13:51:41] Saving Adam parameters
+[2024-02-13 13:51:43] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz
+[2024-02-13 13:51:46] Translating validation set...
+[2024-02-13 13:51:47] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskóla í læknisfræði að finna ný greiningartól sem geta flokkað frumur eftir tegund: ört prentað flögu sem hægt er að framleiða með því að nota venjulega bleksprautuprentara fyrir hugsanlega um eina sent í Bandaríkjunum hvert um sig.
+[2024-02-13 13:51:47] Best translation 1 : Leiðslumenn segja að þetta geti komið snemma auga á krabbamein, berklasann, HIV og malaríu til sjúklinga í lágtekjulöndum þar sem lifunartíðni fyrir sjúkdóma eins og brjóstakrabbamein getur verið helmingi ríkari landa.
+[2024-02-13 13:51:47] Best translation 2 : JAS 39C Gripen hrundi af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprungið, nálægt flugvellinum í atvinnuflug.
+[2024-02-13 13:51:47] Best translation 3 : Flugmaðurinn var skilgreindur sem Fodron leiðtogi Dilokrit Pattavee.
+[2024-02-13 13:51:47] Best translation 4 : Staðbundin fjölmiðlaskýrsla um brunabifreið rúlla yfir á meðan hún er að bregðast.
+[2024-02-13 13:51:47] Best translation 5 : Vidal hafði tekið þátt í Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 13:51:47] Best translation 10 : Um 11:29 færði mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych, og upp Kingsway til Holborn þar sem Spring Forum þeirra var haldið á Grand Connaught Rooms.
+[2024-02-13 13:51:47] Best translation 20 : Hsieh tók gildi í kosningunum sem Ma gæti flúið landið á tímakreppunnar.
+[2024-02-13 13:51:47] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenndi krakka hvers vegna þeir ættu að lesa,... ástin af því að lesa — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 13:51:47] Best translation 80 : Maroochydore vann síðan sigur á Caboolture í undankeppninni.
+[2024-02-13 13:51:47] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru í kringum tíu efstu möguleikana fyrir meistaramótið þar sem fjórar keppnir eru eftir á vertíðinni.
+[2024-02-13 13:51:47] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 13:51:48] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 13:51:48] Total translation time: 1.92193s
+[2024-02-13 13:51:48] [valid] Ep. 73 : Up. 55000 : chrf : 48.861 : stalled 5 times (last best: 49.3812)
+[2024-02-13 13:51:48] Translating validation set...
+[2024-02-13 13:51:49] Best translation 0 : Á mánudag tilkynntu vísindamenn frá Stanford háskóla í læknisfræði að finna ný greiningartól sem geta flokkað frumur eftir tegund: ört prentað flögu sem hægt er að framleiða með því að nota venjulega bleksprautuprentara fyrir hugsanlega um eina sent í Bandaríkjunum hvert um sig.
+[2024-02-13 13:51:49] Best translation 1 : Leiðslumenn segja að þetta geti komið snemma auga á krabbamein, berklasann, HIV og malaríu til sjúklinga í lágtekjulöndum þar sem lifunartíðni fyrir sjúkdóma eins og brjóstakrabbamein getur verið helmingi ríkari landa.
+[2024-02-13 13:51:49] Best translation 2 : JAS 39C Gripen hrundi af stað á flugbraut kl. 09:30 á staðartíma (0230 UTC) og sprungið, nálægt flugvellinum í atvinnuflug.
+[2024-02-13 13:51:49] Best translation 3 : Flugmaðurinn var skilgreindur sem Fodron leiðtogi Dilokrit Pattavee.
+[2024-02-13 13:51:49] Best translation 4 : Staðbundin fjölmiðlaskýrsla um brunabifreið rúlla yfir á meðan hún er að bregðast.
+[2024-02-13 13:51:49] Best translation 5 : Vidal hafði tekið þátt í Barça fyrir þremur tímabilum, frá Sevilla.
+[2024-02-13 13:51:49] Best translation 10 : Um 11:29 færði mótmælin upp Whitehall, framhjá Trafalgar Square, ásamt Aldwych, og upp Kingsway til Holborn þar sem Spring Forum þeirra var haldið á Grand Connaught Rooms.
+[2024-02-13 13:51:49] Best translation 20 : Hsieh tók gildi í kosningunum sem Ma gæti flúið landið á tímakreppunnar.
+[2024-02-13 13:51:49] Best translation 40 : John Grant, frá WNED Buffalo (Lesa Rainbow's home station) sagði "Lesa Rainbow kenndi krakka hvers vegna þeir ættu að lesa,... ástin af því að lesa — [sýndu börnin til að taka upp bók og lesa."
+[2024-02-13 13:51:49] Best translation 80 : Maroochydore vann síðan sigur á Caboolture í undankeppninni.
+[2024-02-13 13:51:49] Best translation 160 : Stewart, Gordon, Kenseth og Harwick eru í kringum tíu efstu möguleikana fyrir meistaramótið þar sem fjórar keppnir eru eftir á vertíðinni.
+[2024-02-13 13:51:49] Best translation 320 : Síðan þá hefur efnahagsstærð Kína vaxið um 90 sinnum.
+[2024-02-13 13:51:49] Best translation 640 : Það gerir nemendum kleift að vinna á sínum hraða og stjórna hraða kennslu upplýsinga.
+[2024-02-13 13:51:49] Total translation time: 1.33139s
+[2024-02-13 13:51:49] [valid] Ep. 73 : Up. 55000 : bleu : 21.5446 : stalled 5 times (last best: 21.9459)
+[2024-02-13 13:51:49] [valid] Ep. 73 : Up. 55000 : ce-mean-words : 2.62811 : stalled 5 times (last best: 2.41323)
+[2024-02-13 13:51:49] Training finished
+[2024-02-13 13:51:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz
+[2024-02-13 13:51:52] Saving Adam parameters
+[2024-02-13 13:51:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-is/simple/v0/s.train_model.en-is/output/model.npz.optimizer.npz

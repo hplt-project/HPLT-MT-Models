@@ -1,0 +1,1335 @@
+[2024-02-15 00:11:55] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-15 00:11:55] [marian] Running on nid005084 as process 12897 with command line:
+[2024-02-15 00:11:55] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6052037 --train-sets /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6052037/train.en.gz /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6052037/train.bs.gz --valid-sets /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.en /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.bs --valid-translation-output /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-15 00:11:55] [config] after: 0e
+[2024-02-15 00:11:55] [config] after-batches: 0
+[2024-02-15 00:11:55] [config] after-epochs: 0
+[2024-02-15 00:11:55] [config] all-caps-every: 0
+[2024-02-15 00:11:55] [config] allow-unk: false
+[2024-02-15 00:11:55] [config] authors: false
+[2024-02-15 00:11:55] [config] beam-size: 4
+[2024-02-15 00:11:55] [config] bert-class-symbol: "[CLS]"
+[2024-02-15 00:11:55] [config] bert-mask-symbol: "[MASK]"
+[2024-02-15 00:11:55] [config] bert-masking-fraction: 0.15
+[2024-02-15 00:11:55] [config] bert-sep-symbol: "[SEP]"
+[2024-02-15 00:11:55] [config] bert-train-type-embeddings: true
+[2024-02-15 00:11:55] [config] bert-type-vocab-size: 2
+[2024-02-15 00:11:55] [config] build-info: ""
+[2024-02-15 00:11:55] [config] char-conv-filters-num:
+[2024-02-15 00:11:55] [config]   - 200
+[2024-02-15 00:11:55] [config]   - 200
+[2024-02-15 00:11:55] [config]   - 250
+[2024-02-15 00:11:55] [config]   - 250
+[2024-02-15 00:11:55] [config]   - 300
+[2024-02-15 00:11:55] [config]   - 300
+[2024-02-15 00:11:55] [config]   - 300
+[2024-02-15 00:11:55] [config]   - 300
+[2024-02-15 00:11:55] [config] char-conv-filters-widths:
+[2024-02-15 00:11:55] [config]   - 1
+[2024-02-15 00:11:55] [config]   - 2
+[2024-02-15 00:11:55] [config]   - 3
+[2024-02-15 00:11:55] [config]   - 4
+[2024-02-15 00:11:55] [config]   - 5
+[2024-02-15 00:11:55] [config]   - 6
+[2024-02-15 00:11:55] [config]   - 7
+[2024-02-15 00:11:55] [config]   - 8
+[2024-02-15 00:11:55] [config] char-highway: 4
+[2024-02-15 00:11:55] [config] char-stride: 5
+[2024-02-15 00:11:55] [config] check-gradient-nan: true
+[2024-02-15 00:11:55] [config] check-nan: false
+[2024-02-15 00:11:55] [config] cite: false
+[2024-02-15 00:11:55] [config] clip-norm: 0
+[2024-02-15 00:11:55] [config] cost-scaling:
+[2024-02-15 00:11:55] [config]   []
+[2024-02-15 00:11:55] [config] cost-type: ce-mean-words
+[2024-02-15 00:11:55] [config] cpu-threads: 0
+[2024-02-15 00:11:55] [config] data-threads: 8
+[2024-02-15 00:11:55] [config] data-weighting: ""
+[2024-02-15 00:11:55] [config] data-weighting-type: sentence
+[2024-02-15 00:11:55] [config] dec-cell: gru
+[2024-02-15 00:11:55] [config] dec-cell-base-depth: 2
+[2024-02-15 00:11:55] [config] dec-cell-high-depth: 1
+[2024-02-15 00:11:55] [config] dec-depth: 6
+[2024-02-15 00:11:55] [config] devices:
+[2024-02-15 00:11:55] [config]   - 0
+[2024-02-15 00:11:55] [config]   - 1
+[2024-02-15 00:11:55] [config]   - 2
+[2024-02-15 00:11:55] [config]   - 3
+[2024-02-15 00:11:55] [config]   - 4
+[2024-02-15 00:11:55] [config]   - 5
+[2024-02-15 00:11:55] [config]   - 6
+[2024-02-15 00:11:55] [config]   - 7
+[2024-02-15 00:11:55] [config] dim-emb: 512
+[2024-02-15 00:11:55] [config] dim-rnn: 1024
+[2024-02-15 00:11:55] [config] dim-vocabs:
+[2024-02-15 00:11:55] [config]   - 64000
+[2024-02-15 00:11:55] [config] disp-first: 0
+[2024-02-15 00:11:55] [config] disp-freq: 1000u
+[2024-02-15 00:11:55] [config] disp-label-counts: true
+[2024-02-15 00:11:55] [config] dropout-rnn: 0
+[2024-02-15 00:11:55] [config] dropout-src: 0
+[2024-02-15 00:11:55] [config] dropout-trg: 0
+[2024-02-15 00:11:55] [config] dump-config: ""
+[2024-02-15 00:11:55] [config] dynamic-gradient-scaling:
+[2024-02-15 00:11:55] [config]   []
+[2024-02-15 00:11:55] [config] early-stopping: 5
+[2024-02-15 00:11:55] [config] early-stopping-on: first
+[2024-02-15 00:11:55] [config] embedding-fix-src: false
+[2024-02-15 00:11:55] [config] embedding-fix-trg: false
+[2024-02-15 00:11:55] [config] embedding-normalization: false
+[2024-02-15 00:11:55] [config] embedding-vectors:
+[2024-02-15 00:11:55] [config]   []
+[2024-02-15 00:11:55] [config] enc-cell: gru
+[2024-02-15 00:11:55] [config] enc-cell-depth: 1
+[2024-02-15 00:11:55] [config] enc-depth: 6
+[2024-02-15 00:11:55] [config] enc-type: bidirectional
+[2024-02-15 00:11:55] [config] english-title-case-every: 0
+[2024-02-15 00:11:55] [config] exponential-smoothing: 0.0001
+[2024-02-15 00:11:55] [config] factor-weight: 1
+[2024-02-15 00:11:55] [config] factors-combine: sum
+[2024-02-15 00:11:55] [config] factors-dim-emb: 0
+[2024-02-15 00:11:55] [config] gradient-checkpointing: false
+[2024-02-15 00:11:55] [config] gradient-norm-average-window: 100
+[2024-02-15 00:11:55] [config] guided-alignment: none
+[2024-02-15 00:11:55] [config] guided-alignment-cost: ce
+[2024-02-15 00:11:55] [config] guided-alignment-weight: 0.1
+[2024-02-15 00:11:55] [config] ignore-model-config: false
+[2024-02-15 00:11:55] [config] input-types:
+[2024-02-15 00:11:55] [config]   []
+[2024-02-15 00:11:55] [config] interpolate-env-vars: false
+[2024-02-15 00:11:55] [config] keep-best: true
+[2024-02-15 00:11:55] [config] label-smoothing: 0.1
+[2024-02-15 00:11:55] [config] layer-normalization: false
+[2024-02-15 00:11:55] [config] learn-rate: 0.0003
+[2024-02-15 00:11:55] [config] lemma-dependency: ""
+[2024-02-15 00:11:55] [config] lemma-dim-emb: 0
+[2024-02-15 00:11:55] [config] log: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.train.log
+[2024-02-15 00:11:55] [config] log-level: info
+[2024-02-15 00:11:55] [config] log-time-zone: ""
+[2024-02-15 00:11:55] [config] logical-epoch:
+[2024-02-15 00:11:55] [config]   - 1e
+[2024-02-15 00:11:55] [config]   - 0
+[2024-02-15 00:11:55] [config] lr-decay: 0
+[2024-02-15 00:11:55] [config] lr-decay-freq: 50000
+[2024-02-15 00:11:55] [config] lr-decay-inv-sqrt:
+[2024-02-15 00:11:55] [config]   - 16000
+[2024-02-15 00:11:55] [config] lr-decay-repeat-warmup: false
+[2024-02-15 00:11:55] [config] lr-decay-reset-optimizer: false
+[2024-02-15 00:11:55] [config] lr-decay-start:
+[2024-02-15 00:11:55] [config]   - 10
+[2024-02-15 00:11:55] [config]   - 1
+[2024-02-15 00:11:55] [config] lr-decay-strategy: epoch+stalled
+[2024-02-15 00:11:55] [config] lr-report: false
+[2024-02-15 00:11:55] [config] lr-warmup: 16000
+[2024-02-15 00:11:55] [config] lr-warmup-at-reload: false
+[2024-02-15 00:11:55] [config] lr-warmup-cycle: false
+[2024-02-15 00:11:55] [config] lr-warmup-start-rate: 0
+[2024-02-15 00:11:55] [config] max-length: 250
+[2024-02-15 00:11:55] [config] max-length-crop: false
+[2024-02-15 00:11:55] [config] max-length-factor: 3
+[2024-02-15 00:11:55] [config] maxi-batch: 1000
+[2024-02-15 00:11:55] [config] maxi-batch-sort: trg
+[2024-02-15 00:11:55] [config] mini-batch: 4096
+[2024-02-15 00:11:55] [config] mini-batch-fit: true
+[2024-02-15 00:11:55] [config] mini-batch-fit-step: 10
+[2024-02-15 00:11:55] [config] mini-batch-round-up: true
+[2024-02-15 00:11:55] [config] mini-batch-track-lr: false
+[2024-02-15 00:11:55] [config] mini-batch-warmup: 0
+[2024-02-15 00:11:55] [config] mini-batch-words: 0
+[2024-02-15 00:11:55] [config] mini-batch-words-ref: 0
+[2024-02-15 00:11:55] [config] model: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 00:11:55] [config] multi-loss-type: sum
+[2024-02-15 00:11:55] [config] n-best: false
+[2024-02-15 00:11:55] [config] no-nccl: false
+[2024-02-15 00:11:55] [config] no-reload: false
+[2024-02-15 00:11:55] [config] no-restore-corpus: false
+[2024-02-15 00:11:55] [config] normalize: 1
+[2024-02-15 00:11:55] [config] normalize-gradient: false
+[2024-02-15 00:11:55] [config] num-devices: 0
+[2024-02-15 00:11:55] [config] optimizer: adam
+[2024-02-15 00:11:55] [config] optimizer-delay: 2
+[2024-02-15 00:11:55] [config] optimizer-params:
+[2024-02-15 00:11:55] [config]   - 0.9
+[2024-02-15 00:11:55] [config]   - 0.98
+[2024-02-15 00:11:55] [config]   - 1e-09
+[2024-02-15 00:11:55] [config] output-omit-bias: false
+[2024-02-15 00:11:55] [config] overwrite: true
+[2024-02-15 00:11:55] [config] precision:
+[2024-02-15 00:11:55] [config]   - float32
+[2024-02-15 00:11:55] [config]   - float32
+[2024-02-15 00:11:55] [config] pretrained-model: ""
+[2024-02-15 00:11:55] [config] quantize-biases: false
+[2024-02-15 00:11:55] [config] quantize-bits: 0
+[2024-02-15 00:11:55] [config] quantize-log-based: false
+[2024-02-15 00:11:55] [config] quantize-optimization-steps: 0
+[2024-02-15 00:11:55] [config] quiet: false
+[2024-02-15 00:11:55] [config] quiet-translation: false
+[2024-02-15 00:11:55] [config] relative-paths: false
+[2024-02-15 00:11:55] [config] right-left: false
+[2024-02-15 00:11:55] [config] save-freq: 5000u
+[2024-02-15 00:11:55] [config] seed: 42
+[2024-02-15 00:11:55] [config] sentencepiece-alphas:
+[2024-02-15 00:11:55] [config]   - 0.1
+[2024-02-15 00:11:55] [config] sentencepiece-max-lines: 2000000
+[2024-02-15 00:11:55] [config] sentencepiece-options: ""
+[2024-02-15 00:11:55] [config] sharding: global
+[2024-02-15 00:11:55] [config] shuffle: batches
+[2024-02-15 00:11:55] [config] shuffle-in-ram: false
+[2024-02-15 00:11:55] [config] sigterm: save-and-exit
+[2024-02-15 00:11:55] [config] skip: false
+[2024-02-15 00:11:55] [config] sqlite: ""
+[2024-02-15 00:11:55] [config] sqlite-drop: false
+[2024-02-15 00:11:55] [config] sync-freq: 200u
+[2024-02-15 00:11:55] [config] sync-sgd: true
+[2024-02-15 00:11:55] [config] tempdir: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6052037
+[2024-02-15 00:11:55] [config] tied-embeddings: false
+[2024-02-15 00:11:55] [config] tied-embeddings-all: true
+[2024-02-15 00:11:55] [config] tied-embeddings-src: false
+[2024-02-15 00:11:55] [config] train-embedder-rank:
+[2024-02-15 00:11:55] [config]   []
+[2024-02-15 00:11:55] [config] train-sets:
+[2024-02-15 00:11:55] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6052037/train.en.gz
+[2024-02-15 00:11:55] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6052037/train.bs.gz
+[2024-02-15 00:11:55] [config] transformer-aan-activation: swish
+[2024-02-15 00:11:55] [config] transformer-aan-depth: 2
+[2024-02-15 00:11:55] [config] transformer-aan-nogate: false
+[2024-02-15 00:11:55] [config] transformer-decoder-autoreg: self-attention
+[2024-02-15 00:11:55] [config] transformer-decoder-dim-ffn: 0
+[2024-02-15 00:11:55] [config] transformer-decoder-ffn-depth: 0
+[2024-02-15 00:11:55] [config] transformer-depth-scaling: false
+[2024-02-15 00:11:55] [config] transformer-dim-aan: 2048
+[2024-02-15 00:11:55] [config] transformer-dim-ffn: 2048
+[2024-02-15 00:11:55] [config] transformer-dropout: 0.1
+[2024-02-15 00:11:55] [config] transformer-dropout-attention: 0
+[2024-02-15 00:11:55] [config] transformer-dropout-ffn: 0
+[2024-02-15 00:11:55] [config] transformer-ffn-activation: relu
+[2024-02-15 00:11:55] [config] transformer-ffn-depth: 2
+[2024-02-15 00:11:55] [config] transformer-guided-alignment-layer: last
+[2024-02-15 00:11:55] [config] transformer-heads: 8
+[2024-02-15 00:11:55] [config] transformer-no-projection: false
+[2024-02-15 00:11:55] [config] transformer-pool: false
+[2024-02-15 00:11:55] [config] transformer-postprocess: dan
+[2024-02-15 00:11:55] [config] transformer-postprocess-emb: d
+[2024-02-15 00:11:55] [config] transformer-postprocess-top: ""
+[2024-02-15 00:11:55] [config] transformer-preprocess: ""
+[2024-02-15 00:11:55] [config] transformer-rnn-projection: false
+[2024-02-15 00:11:55] [config] transformer-tied-layers:
+[2024-02-15 00:11:55] [config]   []
+[2024-02-15 00:11:55] [config] transformer-train-position-embeddings: false
+[2024-02-15 00:11:55] [config] tsv: false
+[2024-02-15 00:11:55] [config] tsv-fields: 0
+[2024-02-15 00:11:55] [config] type: transformer
+[2024-02-15 00:11:55] [config] ulr: false
+[2024-02-15 00:11:55] [config] ulr-dim-emb: 0
+[2024-02-15 00:11:55] [config] ulr-dropout: 0
+[2024-02-15 00:11:55] [config] ulr-keys-vectors: ""
+[2024-02-15 00:11:55] [config] ulr-query-vectors: ""
+[2024-02-15 00:11:55] [config] ulr-softmax-temperature: 1
+[2024-02-15 00:11:55] [config] ulr-trainable-transformation: false
+[2024-02-15 00:11:55] [config] unlikelihood-loss: false
+[2024-02-15 00:11:55] [config] valid-freq: 5000u
+[2024-02-15 00:11:55] [config] valid-log: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.log
+[2024-02-15 00:11:55] [config] valid-max-length: 1000
+[2024-02-15 00:11:55] [config] valid-metrics:
+[2024-02-15 00:11:55] [config]   - chrf
+[2024-02-15 00:11:55] [config]   - bleu
+[2024-02-15 00:11:55] [config]   - ce-mean-words
+[2024-02-15 00:11:55] [config] valid-mini-batch: 64
+[2024-02-15 00:11:55] [config] valid-reset-stalled: true
+[2024-02-15 00:11:55] [config] valid-script-args:
+[2024-02-15 00:11:55] [config]   []
+[2024-02-15 00:11:55] [config] valid-script-path: ""
+[2024-02-15 00:11:55] [config] valid-sets:
+[2024-02-15 00:11:55] [config]   - /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.en
+[2024-02-15 00:11:55] [config]   - /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.bs
+[2024-02-15 00:11:55] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.out
+[2024-02-15 00:11:55] [config] vocabs:
+[2024-02-15 00:11:55] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-15 00:11:55] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-15 00:11:55] [config] word-penalty: 0
+[2024-02-15 00:11:55] [config] word-scores: false
+[2024-02-15 00:11:55] [config] workspace: 20000
+[2024-02-15 00:11:55] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-15 00:11:55] Using synchronous SGD
+[2024-02-15 00:11:55] [comm] Compiled without MPI support. Running as a single process on nid005084
+[2024-02-15 00:11:55] Synced seed 42
+[2024-02-15 00:11:55] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-15 00:11:55] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-15 00:11:55] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-15 00:11:55] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-15 00:11:55] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-15 00:11:55] Checking gradient for NaN
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-15 00:11:57] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-15 00:11:57] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-15 00:11:59] [comm] Using global sharding
+[2024-02-15 00:12:00] [comm] NCCLCommunicators constructed successfully
+[2024-02-15 00:12:00] [training] Using 8 GPUs
+[2024-02-15 00:12:00] [logits] Applying loss function for 1 factor(s)
+[2024-02-15 00:12:00] [memory] Reserving 293 MB, device gpu0
+[2024-02-15 00:12:05] [memory] Reserving 293 MB, device gpu0
+[2024-02-15 00:13:00] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-15 00:13:00] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-15 00:13:00] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-15 00:13:00] [comm] Using global sharding
+[2024-02-15 00:13:01] [comm] NCCLCommunicators constructed successfully
+[2024-02-15 00:13:01] [training] Using 8 GPUs
+[2024-02-15 00:13:01] Training started
+[2024-02-15 00:14:08] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu3
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu0
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu7
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu5
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu1
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu4
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu6
+[2024-02-15 00:14:08] [memory] Reserving 293 MB, device gpu2
+[2024-02-15 00:14:22] [memory] Reserving 293 MB, device gpu0
+[2024-02-15 00:14:40] [memory] Reserving 293 MB, device gpu7
+[2024-02-15 00:14:40] [memory] Reserving 293 MB, device gpu1
+[2024-02-15 00:14:40] [memory] Reserving 293 MB, device gpu2
+[2024-02-15 00:14:41] [memory] Reserving 293 MB, device gpu5
+[2024-02-15 00:14:41] [memory] Reserving 293 MB, device gpu6
+[2024-02-15 00:14:41] [memory] Reserving 293 MB, device gpu3
+[2024-02-15 00:14:41] [memory] Reserving 293 MB, device gpu4
+[2024-02-15 00:14:42] Allocating memory for general optimizer shards
+[2024-02-15 00:14:42] Parameter type float32, optimization type float32, casting types false
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu4
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu5
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu6
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu0
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu7
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu2
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu3
+[2024-02-15 00:14:42] [memory] Reserving 36 MB, device gpu1
+[2024-02-15 00:14:42] Allocating memory for Adam-specific shards
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu5
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu2
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu4
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu0
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu3
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu7
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu1
+[2024-02-15 00:14:42] [memory] Reserving 73 MB, device gpu6
+[2024-02-15 00:23:41] Ep. 1 : Up. 1000 : Sen. 3,285,155 : Cost 9.26386642 : Time 640.68s : 125574.60 words/s : gNorm 1.6213
+[2024-02-15 00:32:49] Ep. 1 : Up. 2000 : Sen. 6,716,213 : Cost 7.99382734 : Time 548.45s : 148023.49 words/s : gNorm 1.5083
+[2024-02-15 00:41:54] Ep. 1 : Up. 3000 : Sen. 10,350,073 : Cost 7.45763111 : Time 545.46s : 148686.64 words/s : gNorm 1.8953
+[2024-02-15 00:50:55] Ep. 1 : Up. 4000 : Sen. 14,433,964 : Cost 6.90843105 : Time 540.55s : 149634.09 words/s : gNorm 1.5949
+[2024-02-15 00:59:51] Ep. 1 : Up. 5000 : Sen. 18,994,680 : Cost 6.50175381 : Time 536.26s : 151834.45 words/s : gNorm 1.3957
+[2024-02-15 00:59:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 00:59:53] Saving Adam parameters
+[2024-02-15 00:59:56] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 00:59:59] Translating validation set...
+[2024-02-15 00:59:59] [valid] First sentence's tokens as scored:
+[2024-02-15 00:59:59] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-15 00:59:59] [valid]   Hyp: T a k o đ e , k a o š t o s u o n i k o j i s e k o r i s t e k a o š t o s u o n i k o j i s e k o r i s t e .
+[2024-02-15 00:59:59] [valid]   Ref: K a d a s u s v i p o j e d i n a č n i p r i p a d n i c i p o p u l a c i j e i d e n t i č n i u s m i s l u o d r e đ e n e f e n o t i p s k e o s o b i n e , o n i s e n a z i v a j u m o n o m o r f n i .
+[2024-02-15 01:00:01] Best translation 0 : Na primer, koji se koristi za upotrebu u odnosu na Windows-u, može da se koristi u odnosu na to što se može koristiti na web stranici.
+[2024-02-15 01:00:01] Best translation 1 : Na primer, većina ljudi se mogu koristiti u različitim zemljama, uključujući i druge strane, kao što su i one koji se koriste u odnosu na to vreme.
+[2024-02-15 01:00:01] Best translation 2 : Prema podacima u Evropi, Kina je u martu 2016. godine, a zatim se nalazi u Evropi, a zatim se nalazi u Evropi.
+[2024-02-15 01:00:01] Best translation 3 : U pitanju je bio i kao i kao i kao i kao i kao "sssa".
+[2024-02-15 01:00:01] Best translation 4 : U periodu od 50 miliona ljudi.
+[2024-02-15 01:00:01] Best translation 5 : Nakon što je prvi put bio prvi put.
+[2024-02-15 01:00:01] Best translation 10 : Nakon što je u petak bio u Londonu, a on je bio u petak, a na kraju je bio na kraju, a na kraju je bio i na kraju, a zatim se nalazi u Francuskoj, a zatim se nalazi u Francuskoj.
+[2024-02-15 01:00:01] Best translation 20 : U ovom trenutku, kada je u pitanju, to je u pitanju.
+[2024-02-15 01:00:01] Best translation 40 : On je rekao: "Ne zna šta se dešava, a Allah je Allah, a Allah je rekao: "Ne zna da je Allah, i da je Allah Allah, i da je Allah Allah Allah.
+[2024-02-15 01:00:01] Best translation 80 : Na kraju, u ovoj zemlji se nalazi u SAD-u.
+[2024-02-15 01:00:01] Best translation 160 : Nakon nekoliko godina, dva puta je u blizini, a kasnije je bio i prvi put.
+[2024-02-15 01:00:01] Best translation 320 : U pitanju je više od 20 miliona ljudi.
+[2024-02-15 01:00:01] Best translation 640 : U skladu sa invaliditetom i uslugama, kao i druge strane.
+[2024-02-15 01:00:01] Total translation time: 2.73778s
+[2024-02-15 01:00:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-chrf.npz
+[2024-02-15 01:00:03] [valid] Ep. 1 : Up. 5000 : chrf : 12.6768 : new best
+[2024-02-15 01:00:03] Translating validation set...
+[2024-02-15 01:00:05] Best translation 0 : Na primer, koji se koristi za upotrebu u odnosu na Windows-u, može da se koristi u odnosu na to što se može koristiti na web stranici.
+[2024-02-15 01:00:05] Best translation 1 : Na primer, većina ljudi se mogu koristiti u različitim zemljama, uključujući i druge strane, kao što su i one koji se koriste u odnosu na to vreme.
+[2024-02-15 01:00:05] Best translation 2 : Prema podacima u Evropi, Kina je u martu 2016. godine, a zatim se nalazi u Evropi, a zatim se nalazi u Evropi.
+[2024-02-15 01:00:05] Best translation 3 : U pitanju je bio i kao i kao i kao i kao i kao "sssa".
+[2024-02-15 01:00:05] Best translation 4 : U periodu od 50 miliona ljudi.
+[2024-02-15 01:00:05] Best translation 5 : Nakon što je prvi put bio prvi put.
+[2024-02-15 01:00:05] Best translation 10 : Nakon što je u petak bio u Londonu, a on je bio u petak, a na kraju je bio na kraju, a na kraju je bio i na kraju, a zatim se nalazi u Francuskoj, a zatim se nalazi u Francuskoj.
+[2024-02-15 01:00:05] Best translation 20 : U ovom trenutku, kada je u pitanju, to je u pitanju.
+[2024-02-15 01:00:05] Best translation 40 : On je rekao: "Ne zna šta se dešava, a Allah je Allah, a Allah je rekao: "Ne zna da je Allah, i da je Allah Allah, i da je Allah Allah Allah.
+[2024-02-15 01:00:05] Best translation 80 : Na kraju, u ovoj zemlji se nalazi u SAD-u.
+[2024-02-15 01:00:05] Best translation 160 : Nakon nekoliko godina, dva puta je u blizini, a kasnije je bio i prvi put.
+[2024-02-15 01:00:05] Best translation 320 : U pitanju je više od 20 miliona ljudi.
+[2024-02-15 01:00:05] Best translation 640 : U skladu sa invaliditetom i uslugama, kao i druge strane.
+[2024-02-15 01:00:05] Total translation time: 2.59406s
+[2024-02-15 01:00:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-bleu.npz
+[2024-02-15 01:00:07] [valid] Ep. 1 : Up. 5000 : bleu : 0.589416 : new best
+[2024-02-15 01:00:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 01:00:07] [valid] Ep. 1 : Up. 5000 : ce-mean-words : 5.89012 : new best
+[2024-02-15 01:09:03] Ep. 1 : Up. 6000 : Sen. 23,805,903 : Cost 6.19806814 : Time 551.70s : 146935.52 words/s : gNorm 1.1424
+[2024-02-15 01:18:10] Ep. 1 : Up. 7000 : Sen. 28,982,486 : Cost 5.96040058 : Time 546.89s : 149457.45 words/s : gNorm 1.1286
+[2024-02-15 01:27:00] Ep. 1 : Up. 8000 : Sen. 34,383,762 : Cost 5.74873781 : Time 530.57s : 152854.99 words/s : gNorm 1.1479
+[2024-02-15 01:35:54] Ep. 1 : Up. 9000 : Sen. 39,907,938 : Cost 5.53497934 : Time 533.37s : 155178.85 words/s : gNorm 1.0405
+[2024-02-15 01:44:56] Ep. 1 : Up. 10000 : Sen. 45,525,167 : Cost 5.30317211 : Time 542.56s : 151495.70 words/s : gNorm 0.9539
+[2024-02-15 01:44:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 01:44:58] Saving Adam parameters
+[2024-02-15 01:45:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 01:45:03] Translating validation set...
+[2024-02-15 01:45:04] Best translation 0 : Studija Univerziteta u Londonu pokazala je da je tehnologija koja može da se koristi za sve vrste proizvoda koji mogu da se koriste za upotrebu u SAD-u.
+[2024-02-15 01:45:04] Best translation 1 : Naučnici su otkrili da virus može da poveća rizik od raka dojke, što je više od polovine stanovništva.
+[2024-02-15 01:45:04] Best translation 2 : Boeing Air Air Air Air Air Air je u subotu stigao na aerodrom u Londonu, a avion je stigao do aerodroma.
+[2024-02-15 01:45:04] Best translation 3 : Policija je saopštila da je napadač ubijen.
+[2024-02-15 01:45:04] Best translation 4 : Policija je saopštila da se avion srušio.
+[2024-02-15 01:45:04] Best translation 5 : Dvadeset i pet godina kasnije je počeo da se igra u Las Vegasu.
+[2024-02-15 01:45:04] Best translation 10 : 11. septembra, kada su se sukobili sa policijom, a zatim su se okupili u Parizu.
+[2024-02-15 01:45:05] Best translation 20 : On je istakao da će se izboriti u borbi protiv klimatskih promena.
+[2024-02-15 01:45:05] Best translation 40 : John Smith, koji je napisao: "Da li ste znali da deca treba da nauče da uče i nauče da se bave muzikom."
+[2024-02-15 01:45:05] Best translation 80 : Nakon toga je počeo da se vraća u finale.
+[2024-02-15 01:45:05] Best translation 160 : Harry Potter, Harry Potter i Harry su osvojili četiri utakmice u Ligi šampiona.
+[2024-02-15 01:45:05] Best translation 320 : Od tada, Kina je imala više od 90 odsto.
+[2024-02-15 01:45:05] Best translation 640 : Cilj je da obezbedi svoju kontrolu i kontrolu nad ličnim podacima.
+[2024-02-15 01:45:05] Total translation time: 2.42411s
+[2024-02-15 01:45:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-chrf.npz
+[2024-02-15 01:45:06] [valid] Ep. 1 : Up. 10000 : chrf : 18.5376 : new best
+[2024-02-15 01:45:06] Translating validation set...
+[2024-02-15 01:45:08] Best translation 0 : Studija Univerziteta u Londonu pokazala je da je tehnologija koja može da se koristi za sve vrste proizvoda koji mogu da se koriste za upotrebu u SAD-u.
+[2024-02-15 01:45:08] Best translation 1 : Naučnici su otkrili da virus može da poveća rizik od raka dojke, što je više od polovine stanovništva.
+[2024-02-15 01:45:08] Best translation 2 : Boeing Air Air Air Air Air Air je u subotu stigao na aerodrom u Londonu, a avion je stigao do aerodroma.
+[2024-02-15 01:45:08] Best translation 3 : Policija je saopštila da je napadač ubijen.
+[2024-02-15 01:45:08] Best translation 4 : Policija je saopštila da se avion srušio.
+[2024-02-15 01:45:08] Best translation 5 : Dvadeset i pet godina kasnije je počeo da se igra u Las Vegasu.
+[2024-02-15 01:45:08] Best translation 10 : 11. septembra, kada su se sukobili sa policijom, a zatim su se okupili u Parizu.
+[2024-02-15 01:45:08] Best translation 20 : On je istakao da će se izboriti u borbi protiv klimatskih promena.
+[2024-02-15 01:45:08] Best translation 40 : John Smith, koji je napisao: "Da li ste znali da deca treba da nauče da uče i nauče da se bave muzikom."
+[2024-02-15 01:45:08] Best translation 80 : Nakon toga je počeo da se vraća u finale.
+[2024-02-15 01:45:08] Best translation 160 : Harry Potter, Harry Potter i Harry su osvojili četiri utakmice u Ligi šampiona.
+[2024-02-15 01:45:08] Best translation 320 : Od tada, Kina je imala više od 90 odsto.
+[2024-02-15 01:45:08] Best translation 640 : Cilj je da obezbedi svoju kontrolu i kontrolu nad ličnim podacima.
+[2024-02-15 01:45:08] Total translation time: 2.15766s
+[2024-02-15 01:45:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-bleu.npz
+[2024-02-15 01:45:09] [valid] Ep. 1 : Up. 10000 : bleu : 2.4226 : new best
+[2024-02-15 01:45:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 01:45:10] [valid] Ep. 1 : Up. 10000 : ce-mean-words : 4.52778 : new best
+[2024-02-15 01:53:58] Ep. 1 : Up. 11000 : Sen. 51,128,473 : Cost 5.08974791 : Time 541.55s : 151865.91 words/s : gNorm 0.8209
+[2024-02-15 02:02:51] Ep. 1 : Up. 12000 : Sen. 57,085,332 : Cost 4.84098244 : Time 532.65s : 156547.78 words/s : gNorm 0.6944
+[2024-02-15 02:11:55] Ep. 1 : Up. 13000 : Sen. 62,871,785 : Cost 4.67342281 : Time 544.00s : 152924.63 words/s : gNorm 0.6967
+[2024-02-15 02:20:37] Ep. 1 : Up. 14000 : Sen. 68,636,267 : Cost 4.53312731 : Time 522.34s : 156606.74 words/s : gNorm 0.6347
+[2024-02-15 02:29:34] Ep. 1 : Up. 15000 : Sen. 76,982,600 : Cost 3.88307714 : Time 537.45s : 160843.56 words/s : gNorm 0.5576
+[2024-02-15 02:29:34] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 02:29:36] Saving Adam parameters
+[2024-02-15 02:29:38] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 02:29:40] Translating validation set...
+[2024-02-15 02:29:41] Best translation 0 : Naučnici sa Univerziteta Stanford objavili su danas otkriće novog dijagnostičkog alata koji može da se koristi za upotrebu standardnih štampača za jedan američki cent.
+[2024-02-15 02:29:41] Best translation 1 : Naučnici kažu da ovo može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije u zemljama sa niskim prihodima, u kojima se rizik od raka može smanjiti.
+[2024-02-15 02:29:41] Best translation 2 : Avion je sletio na brod oko 9:30 metara, a eksplodirao je u blizini aerodroma.
+[2024-02-15 02:29:42] Best translation 3 : Pilot je identifikovan kao vođa grupe "Korton".
+[2024-02-15 02:29:42] Best translation 4 : Lokalni mediji prenose da se avion srušio dok je reagovao.
+[2024-02-15 02:29:42] Best translation 5 : 28-godišnji Vidal se pridružio Barseloni pre tri sezone, od Sevilje.
+[2024-02-15 02:29:42] Best translation 10 : Oko 11:29, protest je počeo da se širi, a zatim je počeo da se kreće od strane Aldwyh, i da se kreće u London gde je vladajuća stranka bila na svom forumu u Velikoj Britaniji.
+[2024-02-15 02:29:42] Best translation 20 : Hehei je priznao da bi mogao da pobegne iz zemlje u vreme krize.
+[2024-02-15 02:29:42] Best translation 40 : John Grant, iz W.B.-a, je rekao: "Da li su deca naučena da čitaju, vole decu da čitaju knjige i čitaju."
+[2024-02-15 02:29:42] Best translation 80 : Maroko je tada porazio Kolumbu u finalu.
+[2024-02-15 02:29:42] Best translation 160 : Stewart, Gordon, Kenneth i Harvey su se takmičili u četiri trke u sezoni.
+[2024-02-15 02:29:42] Best translation 320 : Od tada, kineska ekonomija je porasla za 90 puta.
+[2024-02-15 02:29:42] Best translation 640 : To omogućava studentima da rade na sopstvenom ritmu i kontroli informacija.
+[2024-02-15 02:29:42] Total translation time: 1.79248s
+[2024-02-15 02:29:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-chrf.npz
+[2024-02-15 02:29:43] [valid] Ep. 1 : Up. 15000 : chrf : 40.2078 : new best
+[2024-02-15 02:29:43] Translating validation set...
+[2024-02-15 02:29:44] Best translation 0 : Naučnici sa Univerziteta Stanford objavili su danas otkriće novog dijagnostičkog alata koji može da se koristi za upotrebu standardnih štampača za jedan američki cent.
+[2024-02-15 02:29:44] Best translation 1 : Naučnici kažu da ovo može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije u zemljama sa niskim prihodima, u kojima se rizik od raka može smanjiti.
+[2024-02-15 02:29:44] Best translation 2 : Avion je sletio na brod oko 9:30 metara, a eksplodirao je u blizini aerodroma.
+[2024-02-15 02:29:44] Best translation 3 : Pilot je identifikovan kao vođa grupe "Korton".
+[2024-02-15 02:29:44] Best translation 4 : Lokalni mediji prenose da se avion srušio dok je reagovao.
+[2024-02-15 02:29:44] Best translation 5 : 28-godišnji Vidal se pridružio Barseloni pre tri sezone, od Sevilje.
+[2024-02-15 02:29:44] Best translation 10 : Oko 11:29, protest je počeo da se širi, a zatim je počeo da se kreće od strane Aldwyh, i da se kreće u London gde je vladajuća stranka bila na svom forumu u Velikoj Britaniji.
+[2024-02-15 02:29:44] Best translation 20 : Hehei je priznao da bi mogao da pobegne iz zemlje u vreme krize.
+[2024-02-15 02:29:44] Best translation 40 : John Grant, iz W.B.-a, je rekao: "Da li su deca naučena da čitaju, vole decu da čitaju knjige i čitaju."
+[2024-02-15 02:29:44] Best translation 80 : Maroko je tada porazio Kolumbu u finalu.
+[2024-02-15 02:29:44] Best translation 160 : Stewart, Gordon, Kenneth i Harvey su se takmičili u četiri trke u sezoni.
+[2024-02-15 02:29:44] Best translation 320 : Od tada, kineska ekonomija je porasla za 90 puta.
+[2024-02-15 02:29:44] Best translation 640 : To omogućava studentima da rade na sopstvenom ritmu i kontroli informacija.
+[2024-02-15 02:29:44] Total translation time: 1.26574s
+[2024-02-15 02:29:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-bleu.npz
+[2024-02-15 02:29:45] [valid] Ep. 1 : Up. 15000 : bleu : 13.7974 : new best
+[2024-02-15 02:29:45] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 02:29:46] [valid] Ep. 1 : Up. 15000 : ce-mean-words : 2.65847 : new best
+[2024-02-15 02:38:45] Ep. 1 : Up. 16000 : Sen. 84,603,579 : Cost 3.45903039 : Time 550.16s : 155382.61 words/s : gNorm 0.7198
+[2024-02-15 02:47:54] Ep. 1 : Up. 17000 : Sen. 93,171,579 : Cost 3.25130224 : Time 549.77s : 158602.44 words/s : gNorm 0.4818
+[2024-02-15 02:57:05] Ep. 1 : Up. 18000 : Sen. 97,321,190 : Cost 2.98112988 : Time 550.64s : 148898.18 words/s : gNorm 0.3710
+[2024-02-15 03:06:10] Ep. 1 : Up. 19000 : Sen. 100,563,457 : Cost 3.05223513 : Time 544.81s : 147466.29 words/s : gNorm 0.3904
+[2024-02-15 03:15:13] Ep. 1 : Up. 20000 : Sen. 104,158,336 : Cost 3.16548276 : Time 542.81s : 148813.22 words/s : gNorm 0.4128
+[2024-02-15 03:15:13] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 03:15:14] Saving Adam parameters
+[2024-02-15 03:15:16] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 03:15:19] Translating validation set...
+[2024-02-15 03:15:20] Best translation 0 : U ponedjeljak, naučnici sa Univerziteta Stanford objavili su izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali printabilni čip koji se može proizvesti koristeći standardne inkjet štampače za možda oko jednog američkog centa.
+[2024-02-15 03:15:20] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti kao što je rak dojke mogu biti polovina bogatijih zemalja.
+[2024-02-15 03:15:20] Best translation 2 : JAS 39C Gripen pao je na pistu oko 9:30 sati po lokalnom vremenu (0230 UTC) i eksplodirao, zatvorivši aerodrom do komercijalnih letova.
+[2024-02-15 03:15:20] Best translation 3 : Pilot je identifikovan kao vođa odreda Dilokrit Pattave.
+[2024-02-15 03:15:20] Best translation 4 : Lokalni mediji izveštavaju da je vozilo na aerodromu prevrnulo dok je odgovaralo.
+[2024-02-15 03:15:20] Best translation 5 : 28-godišnji Vidal se pridružio Barçi prije tri sezone, iz Sevilje.
+[2024-02-15 03:15:20] Best translation 10 : Oko 11:29, protest se preselio u Whitehall, pored Trga Trafalgar, koji je prolazio od Aldwyh i do Kingswaya do Holborna, gdje je Konzervativna stranka držala svoj Spring Forum u hotelu Grand Connaugh Rooms.
+[2024-02-15 03:15:21] Best translation 20 : Hesihe je tokom izbora tvrdio da bi Ma mogao da pobegne iz zemlje tokom krize.
+[2024-02-15 03:15:21] Best translation 40 : John Grant, iz WNED Buffalo (čitanje željezničke stanice) je rekao: "Čuvanje duga je naučilo decu zašto da čitaju, ... ljubav prema čitanju - [The Show] ohrabrilo je decu da izaberu knjigu i čitaju."
+[2024-02-15 03:15:21] Best translation 80 : Maroochydore je pobijedio u finalu.
+[2024-02-15 03:15:21] Best translation 160 : Stewart, Gordon, Kenseth i Harvick zaokružili su deset najboljih pozicija za prvenstvo vozača sa četiri trke u sezoni.
+[2024-02-15 03:15:21] Best translation 320 : Od tada je kineska ekonomska veličina porasla 90 puta.
+[2024-02-15 03:15:21] Best translation 640 : Omogućava studentima da rade na sopstvenom tempu i kontrolišu tempo instrukcija.
+[2024-02-15 03:15:21] Total translation time: 2.44040s
+[2024-02-15 03:15:21] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-chrf.npz
+[2024-02-15 03:15:22] [valid] Ep. 1 : Up. 20000 : chrf : 54.7118 : new best
+[2024-02-15 03:15:22] Translating validation set...
+[2024-02-15 03:15:23] Best translation 0 : U ponedjeljak, naučnici sa Univerziteta Stanford objavili su izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali printabilni čip koji se može proizvesti koristeći standardne inkjet štampače za možda oko jednog američkog centa.
+[2024-02-15 03:15:23] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti kao što je rak dojke mogu biti polovina bogatijih zemalja.
+[2024-02-15 03:15:23] Best translation 2 : JAS 39C Gripen pao je na pistu oko 9:30 sati po lokalnom vremenu (0230 UTC) i eksplodirao, zatvorivši aerodrom do komercijalnih letova.
+[2024-02-15 03:15:23] Best translation 3 : Pilot je identifikovan kao vođa odreda Dilokrit Pattave.
+[2024-02-15 03:15:23] Best translation 4 : Lokalni mediji izveštavaju da je vozilo na aerodromu prevrnulo dok je odgovaralo.
+[2024-02-15 03:15:23] Best translation 5 : 28-godišnji Vidal se pridružio Barçi prije tri sezone, iz Sevilje.
+[2024-02-15 03:15:23] Best translation 10 : Oko 11:29, protest se preselio u Whitehall, pored Trga Trafalgar, koji je prolazio od Aldwyh i do Kingswaya do Holborna, gdje je Konzervativna stranka držala svoj Spring Forum u hotelu Grand Connaugh Rooms.
+[2024-02-15 03:15:23] Best translation 20 : Hesihe je tokom izbora tvrdio da bi Ma mogao da pobegne iz zemlje tokom krize.
+[2024-02-15 03:15:23] Best translation 40 : John Grant, iz WNED Buffalo (čitanje željezničke stanice) je rekao: "Čuvanje duga je naučilo decu zašto da čitaju, ... ljubav prema čitanju - [The Show] ohrabrilo je decu da izaberu knjigu i čitaju."
+[2024-02-15 03:15:23] Best translation 80 : Maroochydore je pobijedio u finalu.
+[2024-02-15 03:15:23] Best translation 160 : Stewart, Gordon, Kenseth i Harvick zaokružili su deset najboljih pozicija za prvenstvo vozača sa četiri trke u sezoni.
+[2024-02-15 03:15:23] Best translation 320 : Od tada je kineska ekonomska veličina porasla 90 puta.
+[2024-02-15 03:15:23] Best translation 640 : Omogućava studentima da rade na sopstvenom tempu i kontrolišu tempo instrukcija.
+[2024-02-15 03:15:23] Total translation time: 1.27895s
+[2024-02-15 03:15:23] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-bleu.npz
+[2024-02-15 03:15:24] [valid] Ep. 1 : Up. 20000 : bleu : 24.4951 : new best
+[2024-02-15 03:15:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 03:15:25] [valid] Ep. 1 : Up. 20000 : ce-mean-words : 1.73698 : new best
+[2024-02-15 03:24:24] Ep. 1 : Up. 21000 : Sen. 108,221,614 : Cost 3.31266809 : Time 551.44s : 147716.92 words/s : gNorm 0.4265
+[2024-02-15 03:33:19] Ep. 1 : Up. 22000 : Sen. 112,573,902 : Cost 3.40198016 : Time 535.10s : 151434.43 words/s : gNorm 0.4137
+[2024-02-15 03:42:12] Ep. 1 : Up. 23000 : Sen. 117,431,162 : Cost 3.50922918 : Time 532.83s : 153172.71 words/s : gNorm 0.4133
+[2024-02-15 03:51:03] Ep. 1 : Up. 24000 : Sen. 122,540,580 : Cost 3.58234096 : Time 530.99s : 154015.42 words/s : gNorm 0.4358
+[2024-02-15 04:00:06] Ep. 1 : Up. 25000 : Sen. 127,784,788 : Cost 3.65145206 : Time 543.41s : 150282.55 words/s : gNorm 0.4436
+[2024-02-15 04:00:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 04:00:08] Saving Adam parameters
+[2024-02-15 04:00:10] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 04:00:12] Translating validation set...
+[2024-02-15 04:00:14] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali printabilni čip koji se može proizvesti pomoću standardnih inkdžet štampača za gotovo jedan američki cent.
+[2024-02-15 04:00:14] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti polovina bogatijih zemalja.
+[2024-02-15 04:00:14] Best translation 2 : JAS 39C Gripen srušio se na pistu oko 9:30 sati po lokalnom vremenu (0230 UTC) i eksplodirao, zatvorivši aerodrom komercijalnim letovima.
+[2024-02-15 04:00:14] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-15 04:00:14] Best translation 4 : Lokalni mediji javljaju da se požarno vozilo prevrnulo tokom reakcije.
+[2024-02-15 04:00:14] Best translation 5 : 28-godišnji Vidal se pridružio Barci pre tri sezone, iz Sevilje.
+[2024-02-15 04:00:14] Best translation 10 : Oko 11:29, protest je pomerio Vajthol, pored Trga Trafalgar, prolazeći pored Aldviča i gore Kingsway prema Holbornu, gde je Konzervativna partija držala svoj Spring Forum u hotelu Grand Connaught Rooms.
+[2024-02-15 04:00:14] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da pobegne iz zemlje tokom krize.
+[2024-02-15 04:00:14] Best translation 40 : John Grant, iz WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Reading Rainbow je naučio decu zašto da čitaju, vole da čitaju, podstiču decu da uzmu knjigu i čitaju."
+[2024-02-15 04:00:14] Best translation 80 : Maroochydor je pobijedio u finalu.
+[2024-02-15 04:00:14] Best translation 160 : Stewart, Gordon, Kenseth i Harvick zaokružili su deset najboljih pozicija za šampionat vozača, sa četiri trke koje su ostale u sezoni.
+[2024-02-15 04:00:14] Best translation 320 : Od tada je kineska ekonomija porasla 90 puta.
+[2024-02-15 04:00:14] Best translation 640 : To omogućava studentima da rade sopstvenim tempom i kontrolišu brzinu instrukcija.
+[2024-02-15 04:00:14] Total translation time: 1.74073s
+[2024-02-15 04:00:14] [valid] Ep. 1 : Up. 25000 : chrf : 54.7111 : stalled 1 times (last best: 54.7118)
+[2024-02-15 04:00:14] Translating validation set...
+[2024-02-15 04:00:15] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali printabilni čip koji se može proizvesti pomoću standardnih inkdžet štampača za gotovo jedan američki cent.
+[2024-02-15 04:00:15] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti polovina bogatijih zemalja.
+[2024-02-15 04:00:15] Best translation 2 : JAS 39C Gripen srušio se na pistu oko 9:30 sati po lokalnom vremenu (0230 UTC) i eksplodirao, zatvorivši aerodrom komercijalnim letovima.
+[2024-02-15 04:00:15] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-15 04:00:15] Best translation 4 : Lokalni mediji javljaju da se požarno vozilo prevrnulo tokom reakcije.
+[2024-02-15 04:00:15] Best translation 5 : 28-godišnji Vidal se pridružio Barci pre tri sezone, iz Sevilje.
+[2024-02-15 04:00:15] Best translation 10 : Oko 11:29, protest je pomerio Vajthol, pored Trga Trafalgar, prolazeći pored Aldviča i gore Kingsway prema Holbornu, gde je Konzervativna partija držala svoj Spring Forum u hotelu Grand Connaught Rooms.
+[2024-02-15 04:00:15] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da pobegne iz zemlje tokom krize.
+[2024-02-15 04:00:15] Best translation 40 : John Grant, iz WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Reading Rainbow je naučio decu zašto da čitaju, vole da čitaju, podstiču decu da uzmu knjigu i čitaju."
+[2024-02-15 04:00:15] Best translation 80 : Maroochydor je pobijedio u finalu.
+[2024-02-15 04:00:15] Best translation 160 : Stewart, Gordon, Kenseth i Harvick zaokružili su deset najboljih pozicija za šampionat vozača, sa četiri trke koje su ostale u sezoni.
+[2024-02-15 04:00:15] Best translation 320 : Od tada je kineska ekonomija porasla 90 puta.
+[2024-02-15 04:00:15] Best translation 640 : To omogućava studentima da rade sopstvenim tempom i kontrolišu brzinu instrukcija.
+[2024-02-15 04:00:15] Total translation time: 1.25682s
+[2024-02-15 04:00:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-bleu.npz
+[2024-02-15 04:00:16] [valid] Ep. 1 : Up. 25000 : bleu : 25.0118 : new best
+[2024-02-15 04:00:16] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 04:00:17] [valid] Ep. 1 : Up. 25000 : ce-mean-words : 1.63901 : new best
+[2024-02-15 04:09:09] Ep. 1 : Up. 26000 : Sen. 133,337,501 : Cost 3.71441793 : Time 542.41s : 152481.47 words/s : gNorm 0.4274
+[2024-02-15 04:17:55] Ep. 1 : Up. 27000 : Sen. 138,910,715 : Cost 3.75748253 : Time 526.37s : 155261.91 words/s : gNorm 0.4389
+[2024-02-15 04:26:59] Ep. 1 : Up. 28000 : Sen. 144,690,493 : Cost 3.80100107 : Time 543.52s : 152267.10 words/s : gNorm 0.4008
+[2024-02-15 04:35:46] Ep. 1 : Up. 29000 : Sen. 150,482,431 : Cost 3.84578586 : Time 527.33s : 156622.75 words/s : gNorm 0.4422
+[2024-02-15 04:44:46] Ep. 1 : Up. 30000 : Sen. 156,222,818 : Cost 3.85293579 : Time 539.87s : 152382.15 words/s : gNorm 0.3977
+[2024-02-15 04:44:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 04:44:47] Saving Adam parameters
+[2024-02-15 04:44:49] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 04:44:52] Translating validation set...
+[2024-02-15 04:44:53] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak da je izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali štampani čip koji se može proizvesti pomoću standardnih inkdžet štampača za oko jedan američki cent.
+[2024-02-15 04:44:53] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti polovina onih u bogatijim zemljama.
+[2024-02-15 04:44:53] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 sati po lokalnom vremenu i eksplodirao, zatvorivši aerodrom komercijalnim letovima.
+[2024-02-15 04:44:53] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-15 04:44:53] Best translation 4 : Lokalni mediji javljaju da se požarno vozilo prevrnulo dok je odgovaralo.
+[2024-02-15 04:44:53] Best translation 5 : 28-godišnji Vidal se pridružio Barci pre tri sezone, iz Sevilje.
+[2024-02-15 04:44:53] Best translation 10 : Oko 11:29. protest se pomerio na Whitehall, pored Trafalgar Square-a, pored puta Aldwych-a i na Kingsway-a prema Holbornu, gde je Konzervativna stranka održala svoj Spring Forum u hotelu Grand Connaught Rooms.
+[2024-02-15 04:44:53] Best translation 20 : Hsieh je tokom izbora rekao da bi Ma mogao da napusti zemlju tokom krize.
+[2024-02-15 04:44:53] Best translation 40 : John Grant, iz WNED Buffalo-a (čitajući Rainbow) rekao je: "Pročitanje Rainbow-a uči decu zašto da čitaju, ljubav prema čitanju, podstiče decu da uzmu knjigu i čitaju."
+[2024-02-15 04:44:53] Best translation 80 : Maroochidore je u finalu savladao Caboolture.
+[2024-02-15 04:44:53] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zauzeli su top 10 pozicija za titulu vozača, a četiri trke su ostale u sezoni.
+[2024-02-15 04:44:53] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-15 04:44:54] Best translation 640 : Omogućava studentima da rade sopstvenim tempom i da kontrolišu tempo nastave.
+[2024-02-15 04:44:54] Total translation time: 1.66796s
+[2024-02-15 04:44:54] [valid] Ep. 1 : Up. 30000 : chrf : 53.2315 : stalled 2 times (last best: 54.7118)
+[2024-02-15 04:44:54] Translating validation set...
+[2024-02-15 04:44:55] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak da je izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali štampani čip koji se može proizvesti pomoću standardnih inkdžet štampača za oko jedan američki cent.
+[2024-02-15 04:44:55] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti polovina onih u bogatijim zemljama.
+[2024-02-15 04:44:55] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 sati po lokalnom vremenu i eksplodirao, zatvorivši aerodrom komercijalnim letovima.
+[2024-02-15 04:44:55] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-15 04:44:55] Best translation 4 : Lokalni mediji javljaju da se požarno vozilo prevrnulo dok je odgovaralo.
+[2024-02-15 04:44:55] Best translation 5 : 28-godišnji Vidal se pridružio Barci pre tri sezone, iz Sevilje.
+[2024-02-15 04:44:55] Best translation 10 : Oko 11:29. protest se pomerio na Whitehall, pored Trafalgar Square-a, pored puta Aldwych-a i na Kingsway-a prema Holbornu, gde je Konzervativna stranka održala svoj Spring Forum u hotelu Grand Connaught Rooms.
+[2024-02-15 04:44:55] Best translation 20 : Hsieh je tokom izbora rekao da bi Ma mogao da napusti zemlju tokom krize.
+[2024-02-15 04:44:55] Best translation 40 : John Grant, iz WNED Buffalo-a (čitajući Rainbow) rekao je: "Pročitanje Rainbow-a uči decu zašto da čitaju, ljubav prema čitanju, podstiče decu da uzmu knjigu i čitaju."
+[2024-02-15 04:44:55] Best translation 80 : Maroochidore je u finalu savladao Caboolture.
+[2024-02-15 04:44:55] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zauzeli su top 10 pozicija za titulu vozača, a četiri trke su ostale u sezoni.
+[2024-02-15 04:44:55] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-15 04:44:55] Best translation 640 : Omogućava studentima da rade sopstvenim tempom i da kontrolišu tempo nastave.
+[2024-02-15 04:44:55] Total translation time: 1.28222s
+[2024-02-15 04:44:55] [valid] Ep. 1 : Up. 30000 : bleu : 23.9873 : stalled 1 times (last best: 25.0118)
+[2024-02-15 04:44:55] [valid] Ep. 1 : Up. 30000 : ce-mean-words : 1.68115 : stalled 1 times (last best: 1.63901)
+[2024-02-15 04:53:45] Ep. 1 : Up. 31000 : Sen. 162,126,755 : Cost 3.89362884 : Time 539.08s : 155861.01 words/s : gNorm 0.4121
+[2024-02-15 05:00:46] Seen 166,250,297 samples
+[2024-02-15 05:00:46] Starting data epoch 2 in logical epoch 2
+[2024-02-15 05:03:48] Ep. 2 : Up. 32000 : Sen. 563,922 : Cost 3.52641845 : Time 602.63s : 133123.35 words/s : gNorm 0.2797
+[2024-02-15 05:12:37] Ep. 2 : Up. 33000 : Sen. 3,844,269 : Cost 2.58219266 : Time 529.46s : 152256.08 words/s : gNorm 0.2647
+[2024-02-15 05:21:41] Ep. 2 : Up. 34000 : Sen. 7,206,378 : Cost 2.82590604 : Time 544.02s : 147974.80 words/s : gNorm 0.3043
+[2024-02-15 05:30:42] Ep. 2 : Up. 35000 : Sen. 11,099,486 : Cost 2.97642446 : Time 541.06s : 150458.24 words/s : gNorm 0.3473
+[2024-02-15 05:30:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 05:30:43] Saving Adam parameters
+[2024-02-15 05:30:46] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 05:30:48] Translating validation set...
+[2024-02-15 05:30:49] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali štampani čip koji se može proizvesti pomoću standardnih inkdžet štampača za oko jednog američkog centa.
+[2024-02-15 05:30:49] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti kao što je rak dojke mogu biti polovine onih u bogatijim zemljama.
+[2024-02-15 05:30:49] Best translation 2 : JAS 39C Gripen srušio se na pistu oko 9:30 sati po lokalnom vremenu (0230 UTC) i eksplodirao, zatvorivši aerodrom na komercijalne letove.
+[2024-02-15 05:30:49] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-15 05:30:49] Best translation 4 : Lokalni mediji izveštavaju da se vozilo na aerodromu prevrnulo dok je odgovaralo.
+[2024-02-15 05:30:49] Best translation 5 : 28-godišnji Vidal se pridružio Barsi pre tri sezone, iz Sevilje.
+[2024-02-15 05:30:49] Best translation 10 : Oko 11:29. protest se pomerio preko Trga Trafalgara, duž Stranda, prolazeći od Aldwych-a i do Kingsway-a do Holborn-a, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-15 05:30:49] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-15 05:30:49] Best translation 40 : John Grant, iz WNED Buffalo-a (čitanje Rainbow-ove matične stanice) rekao je: "Pročitanje Rainbow-a uči decu zašto da čitaju, ... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-15 05:30:50] Best translation 80 : Maroochidore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-15 05:30:50] Best translation 160 : Stewart, Gordon, Kenseth i Harvick zaokružili su prvih deset pozicija za Driver's Championship sa četiri trke koje su ostale u sezoni.
+[2024-02-15 05:30:50] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-15 05:30:50] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontroliјu tempo uchionih informatsiјa.
+[2024-02-15 05:30:50] Total translation time: 1.72840s
+[2024-02-15 05:30:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-chrf.npz
+[2024-02-15 05:30:51] [valid] Ep. 2 : Up. 35000 : chrf : 56.842 : new best
+[2024-02-15 05:30:51] Translating validation set...
+[2024-02-15 05:30:52] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali štampani čip koji se može proizvesti pomoću standardnih inkdžet štampača za oko jednog američkog centa.
+[2024-02-15 05:30:52] Best translation 1 : Vodeći istraživači kažu da to može dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti kao što je rak dojke mogu biti polovine onih u bogatijim zemljama.
+[2024-02-15 05:30:52] Best translation 2 : JAS 39C Gripen srušio se na pistu oko 9:30 sati po lokalnom vremenu (0230 UTC) i eksplodirao, zatvorivši aerodrom na komercijalne letove.
+[2024-02-15 05:30:52] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-15 05:30:52] Best translation 4 : Lokalni mediji izveštavaju da se vozilo na aerodromu prevrnulo dok je odgovaralo.
+[2024-02-15 05:30:52] Best translation 5 : 28-godišnji Vidal se pridružio Barsi pre tri sezone, iz Sevilje.
+[2024-02-15 05:30:52] Best translation 10 : Oko 11:29. protest se pomerio preko Trga Trafalgara, duž Stranda, prolazeći od Aldwych-a i do Kingsway-a do Holborn-a, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-15 05:30:52] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-15 05:30:52] Best translation 40 : John Grant, iz WNED Buffalo-a (čitanje Rainbow-ove matične stanice) rekao je: "Pročitanje Rainbow-a uči decu zašto da čitaju, ... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-15 05:30:52] Best translation 80 : Maroochidore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-15 05:30:52] Best translation 160 : Stewart, Gordon, Kenseth i Harvick zaokružili su prvih deset pozicija za Driver's Championship sa četiri trke koje su ostale u sezoni.
+[2024-02-15 05:30:52] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-15 05:30:52] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontroliјu tempo uchionih informatsiјa.
+[2024-02-15 05:30:52] Total translation time: 1.27762s
+[2024-02-15 05:30:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-bleu.npz
+[2024-02-15 05:30:53] [valid] Ep. 2 : Up. 35000 : bleu : 27.1177 : new best
+[2024-02-15 05:30:53] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-15 05:30:54] [valid] Ep. 2 : Up. 35000 : ce-mean-words : 1.48078 : new best
+[2024-02-15 05:39:47] Ep. 2 : Up. 36000 : Sen. 15,103,219 : Cost 3.10023880 : Time 545.26s : 147362.34 words/s : gNorm 0.3471
+[2024-02-15 05:48:43] Ep. 2 : Up. 37000 : Sen. 19,737,279 : Cost 3.22477722 : Time 535.59s : 152734.15 words/s : gNorm 0.3612
+[2024-02-15 05:57:35] Ep. 2 : Up. 38000 : Sen. 24,631,930 : Cost 3.34141278 : Time 532.50s : 152364.20 words/s : gNorm 0.3571
+[2024-02-15 06:06:37] Ep. 2 : Up. 39000 : Sen. 29,814,306 : Cost 3.44547653 : Time 541.33s : 150842.93 words/s : gNorm 0.4063
+[2024-02-15 06:15:26] Ep. 2 : Up. 40000 : Sen. 35,263,782 : Cost 3.51508331 : Time 529.07s : 155129.91 words/s : gNorm 0.3955
+[2024-02-15 06:15:26] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-15 06:15:27] Saving Adam parameters
+[2024-02-15 06:15:29] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-15 06:15:32] Translating validation set...
+[2024-02-15 06:15:33] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za oko jedan američki cent.
+[2024-02-15 06:15:33] Best translation 1 : Vodeći istraživači kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stopa preživljavanja za bolesti poput raka dojke može da bude polovina onih u bogatijim zemljama.
+[2024-02-15 06:15:33] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-15 06:15:33] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-15 06:15:33] Best translation 4 : Lokalni mediji javljaju da se vozilo za gašenje požara prevrnulo dok je reagovalo.
+[2024-02-15 06:15:33] Best translation 5 : Vidal se pridružio Barsi pre tri sezone, iz Sevilje.
+[2024-02-15 06:15:33] Best translation 10 : Oko 11:29, protest se pomerio preko Trga Trafalgar, pored Trga, prolazeći pored Aldviča i uz Kingsvej prema Holbornu, gde je Konzervativna partija održavala svoj prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-15 06:15:33] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-15 06:15:33] Best translation 40 : John Grant, sa WNED Buffalo (čitajući Rainbow stanicu) rekao je: "Čitanje Rainbowa uči decu zašto da čitaju, ... ljubav prema čitanju - emisija je ohrabrila decu da uzmu knjigu i čitaju."
+[2024-02-15 06:15:33] Best translation 80 : Maroochidore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-15 06:15:33] Best translation 160 : Stewart, Gordon, Kenseth i Harvick zaokružuju prvih deset pozicija za Drivers Championship, a četiri trke su ostale u sezoni.
+[2024-02-15 06:15:33] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-15 06:15:34] Best translation 640 : Omogućava studentima da rade sopstvenim tempom i da kontrolišu brzinu instrukcija.
+[2024-02-15 06:15:34] Total translation time: 1.76489s
+[2024-02-15 06:15:34] [valid] Ep. 2 : Up. 40000 : chrf : 56.3404 : stalled 1 times (last best: 56.842)
+[2024-02-15 06:15:34] Translating validation set...
+[2024-02-17 20:32:02] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-17 20:32:02] [marian] Running on nid005079 as process 69537 with command line:
+[2024-02-17 20:32:02] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6134641 --train-sets /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6134641/train.en.gz /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6134641/train.bs.gz --valid-sets /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.en /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.bs --valid-translation-output /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-17 20:32:03] [config] after: 0e
+[2024-02-17 20:32:03] [config] after-batches: 0
+[2024-02-17 20:32:03] [config] after-epochs: 0
+[2024-02-17 20:32:03] [config] all-caps-every: 0
+[2024-02-17 20:32:03] [config] allow-unk: false
+[2024-02-17 20:32:03] [config] authors: false
+[2024-02-17 20:32:03] [config] beam-size: 4
+[2024-02-17 20:32:03] [config] bert-class-symbol: "[CLS]"
+[2024-02-17 20:32:03] [config] bert-mask-symbol: "[MASK]"
+[2024-02-17 20:32:03] [config] bert-masking-fraction: 0.15
+[2024-02-17 20:32:03] [config] bert-sep-symbol: "[SEP]"
+[2024-02-17 20:32:03] [config] bert-train-type-embeddings: true
+[2024-02-17 20:32:03] [config] bert-type-vocab-size: 2
+[2024-02-17 20:32:03] [config] build-info: ""
+[2024-02-17 20:32:03] [config] char-conv-filters-num:
+[2024-02-17 20:32:03] [config]   - 200
+[2024-02-17 20:32:03] [config]   - 200
+[2024-02-17 20:32:03] [config]   - 250
+[2024-02-17 20:32:03] [config]   - 250
+[2024-02-17 20:32:03] [config]   - 300
+[2024-02-17 20:32:03] [config]   - 300
+[2024-02-17 20:32:03] [config]   - 300
+[2024-02-17 20:32:03] [config]   - 300
+[2024-02-17 20:32:03] [config] char-conv-filters-widths:
+[2024-02-17 20:32:03] [config]   - 1
+[2024-02-17 20:32:03] [config]   - 2
+[2024-02-17 20:32:03] [config]   - 3
+[2024-02-17 20:32:03] [config]   - 4
+[2024-02-17 20:32:03] [config]   - 5
+[2024-02-17 20:32:03] [config]   - 6
+[2024-02-17 20:32:03] [config]   - 7
+[2024-02-17 20:32:03] [config]   - 8
+[2024-02-17 20:32:03] [config] char-highway: 4
+[2024-02-17 20:32:03] [config] char-stride: 5
+[2024-02-17 20:32:03] [config] check-gradient-nan: true
+[2024-02-17 20:32:03] [config] check-nan: false
+[2024-02-17 20:32:03] [config] cite: false
+[2024-02-17 20:32:03] [config] clip-norm: 0
+[2024-02-17 20:32:03] [config] cost-scaling:
+[2024-02-17 20:32:03] [config]   []
+[2024-02-17 20:32:03] [config] cost-type: ce-mean-words
+[2024-02-17 20:32:03] [config] cpu-threads: 0
+[2024-02-17 20:32:03] [config] data-threads: 8
+[2024-02-17 20:32:03] [config] data-weighting: ""
+[2024-02-17 20:32:03] [config] data-weighting-type: sentence
+[2024-02-17 20:32:03] [config] dec-cell: gru
+[2024-02-17 20:32:03] [config] dec-cell-base-depth: 2
+[2024-02-17 20:32:03] [config] dec-cell-high-depth: 1
+[2024-02-17 20:32:03] [config] dec-depth: 6
+[2024-02-17 20:32:03] [config] devices:
+[2024-02-17 20:32:03] [config]   - 0
+[2024-02-17 20:32:03] [config]   - 1
+[2024-02-17 20:32:03] [config]   - 2
+[2024-02-17 20:32:03] [config]   - 3
+[2024-02-17 20:32:03] [config]   - 4
+[2024-02-17 20:32:03] [config]   - 5
+[2024-02-17 20:32:03] [config]   - 6
+[2024-02-17 20:32:03] [config]   - 7
+[2024-02-17 20:32:03] [config] dim-emb: 512
+[2024-02-17 20:32:03] [config] dim-rnn: 1024
+[2024-02-17 20:32:03] [config] dim-vocabs:
+[2024-02-17 20:32:03] [config]   - 64000
+[2024-02-17 20:32:03] [config]   - 64000
+[2024-02-17 20:32:03] [config] disp-first: 0
+[2024-02-17 20:32:03] [config] disp-freq: 1000u
+[2024-02-17 20:32:03] [config] disp-label-counts: true
+[2024-02-17 20:32:03] [config] dropout-rnn: 0
+[2024-02-17 20:32:03] [config] dropout-src: 0
+[2024-02-17 20:32:03] [config] dropout-trg: 0
+[2024-02-17 20:32:03] [config] dump-config: ""
+[2024-02-17 20:32:03] [config] dynamic-gradient-scaling:
+[2024-02-17 20:32:03] [config]   []
+[2024-02-17 20:32:03] [config] early-stopping: 5
+[2024-02-17 20:32:03] [config] early-stopping-on: first
+[2024-02-17 20:32:03] [config] embedding-fix-src: false
+[2024-02-17 20:32:03] [config] embedding-fix-trg: false
+[2024-02-17 20:32:03] [config] embedding-normalization: false
+[2024-02-17 20:32:03] [config] embedding-vectors:
+[2024-02-17 20:32:03] [config]   []
+[2024-02-17 20:32:03] [config] enc-cell: gru
+[2024-02-17 20:32:03] [config] enc-cell-depth: 1
+[2024-02-17 20:32:03] [config] enc-depth: 6
+[2024-02-17 20:32:03] [config] enc-type: bidirectional
+[2024-02-17 20:32:03] [config] english-title-case-every: 0
+[2024-02-17 20:32:03] [config] exponential-smoothing: 0.0001
+[2024-02-17 20:32:03] [config] factor-weight: 1
+[2024-02-17 20:32:03] [config] factors-combine: sum
+[2024-02-17 20:32:03] [config] factors-dim-emb: 0
+[2024-02-17 20:32:03] [config] gradient-checkpointing: false
+[2024-02-17 20:32:03] [config] gradient-norm-average-window: 100
+[2024-02-17 20:32:03] [config] guided-alignment: none
+[2024-02-17 20:32:03] [config] guided-alignment-cost: ce
+[2024-02-17 20:32:03] [config] guided-alignment-weight: 0.1
+[2024-02-17 20:32:03] [config] ignore-model-config: false
+[2024-02-17 20:32:03] [config] input-types:
+[2024-02-17 20:32:03] [config]   []
+[2024-02-17 20:32:03] [config] interpolate-env-vars: false
+[2024-02-17 20:32:03] [config] keep-best: true
+[2024-02-17 20:32:03] [config] label-smoothing: 0.1
+[2024-02-17 20:32:03] [config] layer-normalization: false
+[2024-02-17 20:32:03] [config] learn-rate: 0.0003
+[2024-02-17 20:32:03] [config] lemma-dependency: ""
+[2024-02-17 20:32:03] [config] lemma-dim-emb: 0
+[2024-02-17 20:32:03] [config] log: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.train.log
+[2024-02-17 20:32:03] [config] log-level: info
+[2024-02-17 20:32:03] [config] log-time-zone: ""
+[2024-02-17 20:32:03] [config] logical-epoch:
+[2024-02-17 20:32:03] [config]   - 1e
+[2024-02-17 20:32:03] [config]   - 0
+[2024-02-17 20:32:03] [config] lr-decay: 0
+[2024-02-17 20:32:03] [config] lr-decay-freq: 50000
+[2024-02-17 20:32:03] [config] lr-decay-inv-sqrt:
+[2024-02-17 20:32:03] [config]   - 16000
+[2024-02-17 20:32:03] [config] lr-decay-repeat-warmup: false
+[2024-02-17 20:32:03] [config] lr-decay-reset-optimizer: false
+[2024-02-17 20:32:03] [config] lr-decay-start:
+[2024-02-17 20:32:03] [config]   - 10
+[2024-02-17 20:32:03] [config]   - 1
+[2024-02-17 20:32:03] [config] lr-decay-strategy: epoch+stalled
+[2024-02-17 20:32:03] [config] lr-report: false
+[2024-02-17 20:32:03] [config] lr-warmup: 16000
+[2024-02-17 20:32:03] [config] lr-warmup-at-reload: false
+[2024-02-17 20:32:03] [config] lr-warmup-cycle: false
+[2024-02-17 20:32:03] [config] lr-warmup-start-rate: 0
+[2024-02-17 20:32:03] [config] max-length: 250
+[2024-02-17 20:32:03] [config] max-length-crop: false
+[2024-02-17 20:32:03] [config] max-length-factor: 3
+[2024-02-17 20:32:03] [config] maxi-batch: 1000
+[2024-02-17 20:32:03] [config] maxi-batch-sort: trg
+[2024-02-17 20:32:03] [config] mini-batch: 4096
+[2024-02-17 20:32:03] [config] mini-batch-fit: true
+[2024-02-17 20:32:03] [config] mini-batch-fit-step: 10
+[2024-02-17 20:32:03] [config] mini-batch-round-up: true
+[2024-02-17 20:32:03] [config] mini-batch-track-lr: false
+[2024-02-17 20:32:03] [config] mini-batch-warmup: 0
+[2024-02-17 20:32:03] [config] mini-batch-words: 0
+[2024-02-17 20:32:03] [config] mini-batch-words-ref: 0
+[2024-02-17 20:32:03] [config] model: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-17 20:32:03] [config] multi-loss-type: sum
+[2024-02-17 20:32:03] [config] n-best: false
+[2024-02-17 20:32:03] [config] no-nccl: false
+[2024-02-17 20:32:03] [config] no-reload: false
+[2024-02-17 20:32:03] [config] no-restore-corpus: false
+[2024-02-17 20:32:03] [config] normalize: 1
+[2024-02-17 20:32:03] [config] normalize-gradient: false
+[2024-02-17 20:32:03] [config] num-devices: 0
+[2024-02-17 20:32:03] [config] optimizer: adam
+[2024-02-17 20:32:03] [config] optimizer-delay: 2
+[2024-02-17 20:32:03] [config] optimizer-params:
+[2024-02-17 20:32:03] [config]   - 0.9
+[2024-02-17 20:32:03] [config]   - 0.98
+[2024-02-17 20:32:03] [config]   - 1e-09
+[2024-02-17 20:32:03] [config] output-omit-bias: false
+[2024-02-17 20:32:03] [config] overwrite: true
+[2024-02-17 20:32:03] [config] precision:
+[2024-02-17 20:32:03] [config]   - float32
+[2024-02-17 20:32:03] [config]   - float32
+[2024-02-17 20:32:03] [config] pretrained-model: ""
+[2024-02-17 20:32:03] [config] quantize-biases: false
+[2024-02-17 20:32:03] [config] quantize-bits: 0
+[2024-02-17 20:32:03] [config] quantize-log-based: false
+[2024-02-17 20:32:03] [config] quantize-optimization-steps: 0
+[2024-02-17 20:32:03] [config] quiet: false
+[2024-02-17 20:32:03] [config] quiet-translation: false
+[2024-02-17 20:32:03] [config] relative-paths: false
+[2024-02-17 20:32:03] [config] right-left: false
+[2024-02-17 20:32:03] [config] save-freq: 5000u
+[2024-02-17 20:32:03] [config] seed: 42
+[2024-02-17 20:32:03] [config] sentencepiece-alphas:
+[2024-02-17 20:32:03] [config]   - 0.1
+[2024-02-17 20:32:03] [config] sentencepiece-max-lines: 2000000
+[2024-02-17 20:32:03] [config] sentencepiece-options: ""
+[2024-02-17 20:32:03] [config] sharding: global
+[2024-02-17 20:32:03] [config] shuffle: batches
+[2024-02-17 20:32:03] [config] shuffle-in-ram: false
+[2024-02-17 20:32:03] [config] sigterm: save-and-exit
+[2024-02-17 20:32:03] [config] skip: false
+[2024-02-17 20:32:03] [config] sqlite: ""
+[2024-02-17 20:32:03] [config] sqlite-drop: false
+[2024-02-17 20:32:03] [config] sync-freq: 200u
+[2024-02-17 20:32:03] [config] sync-sgd: true
+[2024-02-17 20:32:03] [config] tempdir: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6134641
+[2024-02-17 20:32:03] [config] tied-embeddings: false
+[2024-02-17 20:32:03] [config] tied-embeddings-all: true
+[2024-02-17 20:32:03] [config] tied-embeddings-src: false
+[2024-02-17 20:32:03] [config] train-embedder-rank:
+[2024-02-17 20:32:03] [config]   []
+[2024-02-17 20:32:03] [config] train-sets:
+[2024-02-17 20:32:03] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6134641/train.en.gz
+[2024-02-17 20:32:03] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/tmp.d/6134641/train.bs.gz
+[2024-02-17 20:32:03] [config] transformer-aan-activation: swish
+[2024-02-17 20:32:03] [config] transformer-aan-depth: 2
+[2024-02-17 20:32:03] [config] transformer-aan-nogate: false
+[2024-02-17 20:32:03] [config] transformer-decoder-autoreg: self-attention
+[2024-02-17 20:32:03] [config] transformer-decoder-dim-ffn: 0
+[2024-02-17 20:32:03] [config] transformer-decoder-ffn-depth: 0
+[2024-02-17 20:32:03] [config] transformer-depth-scaling: false
+[2024-02-17 20:32:03] [config] transformer-dim-aan: 2048
+[2024-02-17 20:32:03] [config] transformer-dim-ffn: 2048
+[2024-02-17 20:32:03] [config] transformer-dropout: 0.1
+[2024-02-17 20:32:03] [config] transformer-dropout-attention: 0
+[2024-02-17 20:32:03] [config] transformer-dropout-ffn: 0
+[2024-02-17 20:32:03] [config] transformer-ffn-activation: relu
+[2024-02-17 20:32:03] [config] transformer-ffn-depth: 2
+[2024-02-17 20:32:03] [config] transformer-guided-alignment-layer: last
+[2024-02-17 20:32:03] [config] transformer-heads: 8
+[2024-02-17 20:32:03] [config] transformer-no-projection: false
+[2024-02-17 20:32:03] [config] transformer-pool: false
+[2024-02-17 20:32:03] [config] transformer-postprocess: dan
+[2024-02-17 20:32:03] [config] transformer-postprocess-emb: d
+[2024-02-17 20:32:03] [config] transformer-postprocess-top: ""
+[2024-02-17 20:32:03] [config] transformer-preprocess: ""
+[2024-02-17 20:32:03] [config] transformer-rnn-projection: false
+[2024-02-17 20:32:03] [config] transformer-tied-layers:
+[2024-02-17 20:32:03] [config]   []
+[2024-02-17 20:32:03] [config] transformer-train-position-embeddings: false
+[2024-02-17 20:32:03] [config] tsv: false
+[2024-02-17 20:32:03] [config] tsv-fields: 0
+[2024-02-17 20:32:03] [config] type: transformer
+[2024-02-17 20:32:03] [config] ulr: false
+[2024-02-17 20:32:03] [config] ulr-dim-emb: 0
+[2024-02-17 20:32:03] [config] ulr-dropout: 0
+[2024-02-17 20:32:03] [config] ulr-keys-vectors: ""
+[2024-02-17 20:32:03] [config] ulr-query-vectors: ""
+[2024-02-17 20:32:03] [config] ulr-softmax-temperature: 1
+[2024-02-17 20:32:03] [config] ulr-trainable-transformation: false
+[2024-02-17 20:32:03] [config] unlikelihood-loss: false
+[2024-02-17 20:32:03] [config] valid-freq: 5000u
+[2024-02-17 20:32:03] [config] valid-log: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.log
+[2024-02-17 20:32:03] [config] valid-max-length: 1000
+[2024-02-17 20:32:03] [config] valid-metrics:
+[2024-02-17 20:32:03] [config]   - chrf
+[2024-02-17 20:32:03] [config]   - bleu
+[2024-02-17 20:32:03] [config]   - ce-mean-words
+[2024-02-17 20:32:03] [config] valid-mini-batch: 64
+[2024-02-17 20:32:03] [config] valid-reset-stalled: true
+[2024-02-17 20:32:03] [config] valid-script-args:
+[2024-02-17 20:32:03] [config]   []
+[2024-02-17 20:32:03] [config] valid-script-path: ""
+[2024-02-17 20:32:03] [config] valid-sets:
+[2024-02-17 20:32:03] [config]   - /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.en
+[2024-02-17 20:32:03] [config]   - /scratch/project_465000574/data/bs-en/valid/flores200.dev.en-bs.bs
+[2024-02-17 20:32:03] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/logs/model.valid.out
+[2024-02-17 20:32:03] [config] version: v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-17 20:32:03] [config] vocabs:
+[2024-02-17 20:32:03] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-17 20:32:03] [config]   - /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-17 20:32:03] [config] word-penalty: 0
+[2024-02-17 20:32:03] [config] word-scores: false
+[2024-02-17 20:32:03] [config] workspace: 20000
+[2024-02-17 20:32:03] [config] Loaded model has been created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-17 20:32:03] Using synchronous SGD
+[2024-02-17 20:32:03] [comm] Compiled without MPI support. Running as a single process on nid005079
+[2024-02-17 20:32:03] Synced seed 42
+[2024-02-17 20:32:03] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-17 20:32:03] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-17 20:32:03] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.generate_vocab.bs-en/output/model.en-bs.spm
+[2024-02-17 20:32:03] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-17 20:32:03] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-17 20:32:03] Checking gradient for NaN
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-17 20:32:16] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-17 20:32:16] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-17 20:32:20] [comm] Using global sharding
+[2024-02-17 20:32:22] [comm] NCCLCommunicators constructed successfully
+[2024-02-17 20:32:22] [training] Using 8 GPUs
+[2024-02-17 20:32:22] [logits] Applying loss function for 1 factor(s)
+[2024-02-17 20:32:22] [memory] Reserving 293 MB, device gpu0
+[2024-02-17 20:32:29] [memory] Reserving 293 MB, device gpu0
+[2024-02-17 20:33:23] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-17 20:33:24] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-17 20:33:24] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-17 20:33:24] [comm] Using global sharding
+[2024-02-17 20:33:24] [comm] NCCLCommunicators constructed successfully
+[2024-02-17 20:33:24] [training] Using 8 GPUs
+[2024-02-17 20:33:24] Loading model from /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-17 20:33:31] Allocating memory for general optimizer shards
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu0
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu1
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu2
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu3
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu4
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu5
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu6
+[2024-02-17 20:33:31] [memory] Reserving 36 MB, device gpu7
+[2024-02-17 20:33:31] Loading Adam parameters
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu0
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu1
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu2
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu3
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu4
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu5
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu6
+[2024-02-17 20:33:32] [memory] Reserving 73 MB, device gpu7
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu0
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu1
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu2
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu3
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu4
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu5
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu6
+[2024-02-17 20:33:32] [memory] Reserving 293 MB, device gpu7
+[2024-02-17 20:33:32] [training] Master parameters and optimizers restored from training checkpoint /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-17 20:33:33] [data] Restoring the corpus state to epoch 2, batch 40000
+[2024-02-17 20:42:27] Training started
+[2024-02-17 20:42:27] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-17 20:42:43] [memory] Reserving 293 MB, device gpu0
+[2024-02-17 20:42:55] [memory] Reserving 293 MB, device gpu3
+[2024-02-17 20:42:55] [memory] Reserving 293 MB, device gpu6
+[2024-02-17 20:42:55] [memory] Reserving 293 MB, device gpu1
+[2024-02-17 20:42:55] [memory] Reserving 293 MB, device gpu2
+[2024-02-17 20:42:55] [memory] Reserving 293 MB, device gpu5
+[2024-02-17 20:42:55] [memory] Reserving 293 MB, device gpu7
+[2024-02-17 20:42:55] [memory] Reserving 293 MB, device gpu4
+[2024-02-17 20:42:56] Parameter type float32, optimization type float32, casting types false
+[2024-02-17 20:51:42] Ep. 2 : Up. 41000 : Sen. 40,779,693 : Cost 3.58333588 : Time 1098.00s : 74824.29 words/s : gNorm 0.3946
+[2024-02-17 21:00:37] Ep. 2 : Up. 42000 : Sen. 46,510,947 : Cost 3.64694571 : Time 535.61s : 153719.59 words/s : gNorm 0.3981
+[2024-02-17 21:09:21] Ep. 2 : Up. 43000 : Sen. 52,158,774 : Cost 3.69518161 : Time 523.94s : 157088.83 words/s : gNorm 0.4346
+[2024-02-17 21:18:17] Ep. 2 : Up. 44000 : Sen. 57,949,488 : Cost 3.73319006 : Time 535.70s : 154471.57 words/s : gNorm 0.4026
+[2024-02-17 21:27:02] Ep. 2 : Up. 45000 : Sen. 63,808,672 : Cost 3.77393293 : Time 525.51s : 158315.70 words/s : gNorm 0.3815
+[2024-02-17 21:27:02] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-17 21:27:05] Saving Adam parameters
+[2024-02-17 21:27:07] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-17 21:27:10] Translating validation set...
+[2024-02-17 21:27:11] [valid] First sentence's tokens as scored:
+[2024-02-17 21:27:11] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-17 21:27:11] [valid]   Hyp: O n i t o č i n e t a k o š t o e m i t u j u m a l u č e s t i c u s v e t l o s t i k o j a s e z o v e f o t o n .
+[2024-02-17 21:27:11] [valid]   Ref: T o r a d e e m i t i r a n j e m s i ć u š n e č e s t i c e s v j e t l o s t i k o j a s e n a z i v a „ f o t o n “ .
+[2024-02-17 21:27:12] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za oko jedan američki cent.
+[2024-02-17 21:27:12] Best translation 1 : Naučnici kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde bi stopa preživljavanja za bolesti poput raka dojke mogla da bude polovina onih u bogatijim zemljama.
+[2024-02-17 21:27:12] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 21:27:12] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-17 21:27:12] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu, dok je odgovor bio na njega.
+[2024-02-17 21:27:12] Best translation 5 : Vidal je u Barsu stigao pre tri sezone iz Sevilje.
+[2024-02-17 21:27:12] Best translation 10 : Oko 11:29 protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 21:27:12] Best translation 20 : Hsieh je tokom izbora sugerisao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-17 21:27:12] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) rekao je da je čitanje Rainbow-a naučilo decu zašto da čitaju, da vole da čitaju, da podstiču decu da uzmu knjigu i čitaju.
+[2024-02-17 21:27:12] Best translation 80 : Maroochidore je u finalu savladao Caboolture.
+[2024-02-17 21:27:12] Best translation 160 : Stjuart, Gordon, Kenset i Harvik zauzeli su prvih deset pozicija za šampionat vozača, a četiri trke su ostale u sezoni.
+[2024-02-17 21:27:12] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-17 21:27:12] Best translation 640 : Omogućava studentima da rade sopstvenim tempom i da kontrolišu brzinu instrukcija.
+[2024-02-17 21:27:12] Total translation time: 1.81184s
+[2024-02-17 21:27:12] [valid] Ep. 2 : Up. 45000 : chrf : 54.4895 : stalled 1 times (last best: 56.842)
+[2024-02-17 21:27:12] Translating validation set...
+[2024-02-17 21:27:13] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za oko jedan američki cent.
+[2024-02-17 21:27:13] Best translation 1 : Naučnici kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde bi stopa preživljavanja za bolesti poput raka dojke mogla da bude polovina onih u bogatijim zemljama.
+[2024-02-17 21:27:13] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 21:27:13] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-17 21:27:13] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu, dok je odgovor bio na njega.
+[2024-02-17 21:27:13] Best translation 5 : Vidal je u Barsu stigao pre tri sezone iz Sevilje.
+[2024-02-17 21:27:13] Best translation 10 : Oko 11:29 protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 21:27:13] Best translation 20 : Hsieh je tokom izbora sugerisao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-17 21:27:13] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) rekao je da je čitanje Rainbow-a naučilo decu zašto da čitaju, da vole da čitaju, da podstiču decu da uzmu knjigu i čitaju.
+[2024-02-17 21:27:13] Best translation 80 : Maroochidore je u finalu savladao Caboolture.
+[2024-02-17 21:27:13] Best translation 160 : Stjuart, Gordon, Kenset i Harvik zauzeli su prvih deset pozicija za šampionat vozača, a četiri trke su ostale u sezoni.
+[2024-02-17 21:27:13] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-17 21:27:14] Best translation 640 : Omogućava studentima da rade sopstvenim tempom i da kontrolišu brzinu instrukcija.
+[2024-02-17 21:27:14] Total translation time: 1.46996s
+[2024-02-17 21:27:14] [valid] Ep. 2 : Up. 45000 : bleu : 25.0475 : stalled 1 times (last best: 27.1177)
+[2024-02-17 21:27:14] [valid] Ep. 2 : Up. 45000 : ce-mean-words : 1.55018 : stalled 1 times (last best: 1.48077)
+[2024-02-17 21:36:02] Ep. 2 : Up. 46000 : Sen. 69,729,833 : Cost 3.80303669 : Time 539.31s : 154182.87 words/s : gNorm 0.5050
+[2024-02-17 21:45:02] Ep. 2 : Up. 47000 : Sen. 78,617,922 : Cost 3.18052912 : Time 540.57s : 160359.40 words/s : gNorm 0.4850
+[2024-02-17 21:53:45] Ep. 2 : Up. 48000 : Sen. 85,633,462 : Cost 2.96538997 : Time 523.06s : 161714.16 words/s : gNorm 0.4306
+[2024-02-17 22:03:08] Ep. 2 : Up. 49000 : Sen. 94,367,003 : Cost 2.86772013 : Time 562.11s : 155530.00 words/s : gNorm 0.3340
+[2024-02-17 22:12:03] Ep. 2 : Up. 50000 : Sen. 97,877,659 : Cost 2.54295158 : Time 535.02s : 152287.76 words/s : gNorm 0.2676
+[2024-02-17 22:12:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-17 22:12:05] Saving Adam parameters
+[2024-02-17 22:12:07] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-17 22:12:10] Translating validation set...
+[2024-02-17 22:12:12] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkjet štampača za oko jedan američki cent.
+[2024-02-17 22:12:12] Best translation 1 : Vodeći istraživači kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti polovina onih u bogatijim zemljama.
+[2024-02-17 22:12:12] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 22:12:12] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilorit Pattavee.
+[2024-02-17 22:12:12] Best translation 4 : Lokalni mediji javljaju da se vozilo sa požarom prevrnulo dok je odgovaralo.
+[2024-02-17 22:12:12] Best translation 5 : 28-godišnji Vidal se pridružio Barci prije tri sezone, iz Sevilje.
+[2024-02-17 22:12:12] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održavala svoj proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 22:12:12] Best translation 20 : Hsieh je tokom izbora implicirao da bi mama mogla da napusti zemlju tokom kriznog perioda.
+[2024-02-17 22:12:12] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje duge uči decu zašto da čitaju, ljubav prema čitanju, ohrabrivanje dece da uzmu knjigu i čitaju."
+[2024-02-17 22:12:12] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-17 22:12:12] Best translation 160 : Stewart, Gordon, Kenset i Harvey zaokružili su prvih deset pozicija za Driver's Championship sa četiri utrke koje su ostale u sezoni.
+[2024-02-17 22:12:12] Best translation 320 : Od tada, kineska ekonomska veličina je porasla 90 puta.
+[2024-02-17 22:12:12] Best translation 640 : To omogućava studentima da rade sopstvenim tempom i kontrolišu brzinu instrukcija.
+[2024-02-17 22:12:12] Total translation time: 1.83538s
+[2024-02-17 22:12:12] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-chrf.npz
+[2024-02-17 22:12:14] [valid] Ep. 2 : Up. 50000 : chrf : 58.1228 : new best
+[2024-02-17 22:12:14] Translating validation set...
+[2024-02-17 22:12:15] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkjet štampača za oko jedan američki cent.
+[2024-02-17 22:12:15] Best translation 1 : Vodeći istraživači kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti polovina onih u bogatijim zemljama.
+[2024-02-17 22:12:15] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 22:12:15] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilorit Pattavee.
+[2024-02-17 22:12:15] Best translation 4 : Lokalni mediji javljaju da se vozilo sa požarom prevrnulo dok je odgovaralo.
+[2024-02-17 22:12:15] Best translation 5 : 28-godišnji Vidal se pridružio Barci prije tri sezone, iz Sevilje.
+[2024-02-17 22:12:15] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održavala svoj proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 22:12:15] Best translation 20 : Hsieh je tokom izbora implicirao da bi mama mogla da napusti zemlju tokom kriznog perioda.
+[2024-02-17 22:12:15] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje duge uči decu zašto da čitaju, ljubav prema čitanju, ohrabrivanje dece da uzmu knjigu i čitaju."
+[2024-02-17 22:12:15] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-17 22:12:15] Best translation 160 : Stewart, Gordon, Kenset i Harvey zaokružili su prvih deset pozicija za Driver's Championship sa četiri utrke koje su ostale u sezoni.
+[2024-02-17 22:12:15] Best translation 320 : Od tada, kineska ekonomska veličina je porasla 90 puta.
+[2024-02-17 22:12:15] Best translation 640 : To omogućava studentima da rade sopstvenim tempom i kontrolišu brzinu instrukcija.
+[2024-02-17 22:12:15] Total translation time: 1.27506s
+[2024-02-17 22:12:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-bleu.npz
+[2024-02-17 22:12:16] [valid] Ep. 2 : Up. 50000 : bleu : 28.9912 : new best
+[2024-02-17 22:12:17] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-17 22:12:18] [valid] Ep. 2 : Up. 50000 : ce-mean-words : 1.36433 : new best
+[2024-02-17 22:21:19] Ep. 2 : Up. 51000 : Sen. 101,209,437 : Cost 2.72768259 : Time 556.78s : 144217.45 words/s : gNorm 0.2911
+[2024-02-17 22:30:18] Ep. 2 : Up. 52000 : Sen. 104,831,827 : Cost 2.86272097 : Time 538.57s : 150464.48 words/s : gNorm 0.3099
+[2024-02-17 22:39:12] Ep. 2 : Up. 53000 : Sen. 108,996,717 : Cost 3.00715542 : Time 533.67s : 151324.06 words/s : gNorm 0.3298
+[2024-02-17 22:48:03] Ep. 2 : Up. 54000 : Sen. 113,392,802 : Cost 3.12584305 : Time 531.70s : 152777.00 words/s : gNorm 0.3686
+[2024-02-17 22:56:52] Ep. 2 : Up. 55000 : Sen. 118,288,129 : Cost 3.25037718 : Time 529.18s : 154270.02 words/s : gNorm 0.4048
+[2024-02-17 22:56:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-17 22:56:55] Saving Adam parameters
+[2024-02-17 22:56:57] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-17 22:57:00] Translating validation set...
+[2024-02-17 22:57:02] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-17 22:57:02] Best translation 1 : Vodeći istraživači kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti upola manja od one u bogatijim zemljama.
+[2024-02-17 22:57:02] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 22:57:02] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-17 22:57:02] Best translation 4 : Lokalni mediji javljaju da se vozilo sa požarom prevrnulo dok je odgovaralo.
+[2024-02-17 22:57:02] Best translation 5 : 28-godišnji Vidal se pridružio Barci prije tri sezone, iz Sevilje.
+[2024-02-17 22:57:02] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održavala svoj proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 22:57:02] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-17 22:57:02] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju, ljubav prema čitanju, ohrabrivanje dece da uzmu knjigu i čitaju."
+[2024-02-17 22:57:02] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-17 22:57:02] Best translation 160 : Stewart, Gordon, Kenseth i Harvey zaokružili su prvih deset pozicija za Driver's Championship sa četiri utrke koje su ostale u sezoni.
+[2024-02-17 22:57:02] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-17 22:57:02] Best translation 640 : Omogućava studentima da rade sopstvenim tempom i kontrolišu brzinu instrukcija.
+[2024-02-17 22:57:02] Total translation time: 1.77443s
+[2024-02-17 22:57:02] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-chrf.npz
+[2024-02-17 22:57:04] [valid] Ep. 2 : Up. 55000 : chrf : 58.1946 : new best
+[2024-02-17 22:57:04] Translating validation set...
+[2024-02-17 22:57:05] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-17 22:57:05] Best translation 1 : Vodeći istraživači kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može biti upola manja od one u bogatijim zemljama.
+[2024-02-17 22:57:05] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 22:57:05] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-17 22:57:05] Best translation 4 : Lokalni mediji javljaju da se vozilo sa požarom prevrnulo dok je odgovaralo.
+[2024-02-17 22:57:05] Best translation 5 : 28-godišnji Vidal se pridružio Barci prije tri sezone, iz Sevilje.
+[2024-02-17 22:57:05] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održavala svoj proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 22:57:05] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-17 22:57:05] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju, ljubav prema čitanju, ohrabrivanje dece da uzmu knjigu i čitaju."
+[2024-02-17 22:57:05] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-17 22:57:05] Best translation 160 : Stewart, Gordon, Kenseth i Harvey zaokružili su prvih deset pozicija za Driver's Championship sa četiri utrke koje su ostale u sezoni.
+[2024-02-17 22:57:05] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-17 22:57:05] Best translation 640 : Omogućava studentima da rade sopstvenim tempom i kontrolišu brzinu instrukcija.
+[2024-02-17 22:57:05] Total translation time: 1.33230s
+[2024-02-17 22:57:05] [valid] Ep. 2 : Up. 55000 : bleu : 28.6032 : stalled 1 times (last best: 28.9912)
+[2024-02-17 22:57:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.best-ce-mean-words.npz
+[2024-02-17 22:57:07] [valid] Ep. 2 : Up. 55000 : ce-mean-words : 1.35038 : new best
+[2024-02-17 23:06:09] Ep. 2 : Up. 56000 : Sen. 123,420,048 : Cost 3.35348630 : Time 556.13s : 147742.65 words/s : gNorm 0.3875
+[2024-02-17 23:14:56] Ep. 2 : Up. 57000 : Sen. 128,841,089 : Cost 3.44150949 : Time 527.05s : 155976.19 words/s : gNorm 0.4011
+[2024-02-17 23:23:40] Ep. 2 : Up. 58000 : Sen. 134,296,323 : Cost 3.51198792 : Time 524.72s : 155842.25 words/s : gNorm 0.3979
+[2024-02-17 23:32:38] Ep. 2 : Up. 59000 : Sen. 139,926,453 : Cost 3.56303668 : Time 537.89s : 152745.29 words/s : gNorm 0.4077
+[2024-02-17 23:41:28] Ep. 2 : Up. 60000 : Sen. 145,685,688 : Cost 3.63930368 : Time 529.99s : 157697.39 words/s : gNorm 0.4095
+[2024-02-17 23:41:28] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-17 23:41:30] Saving Adam parameters
+[2024-02-17 23:41:33] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-17 23:41:36] Translating validation set...
+[2024-02-17 23:41:38] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-17 23:41:38] Best translation 1 : Vodeći istraživači kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može da bude upola manja od one u bogatijim zemljama.
+[2024-02-17 23:41:38] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 23:41:38] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-17 23:41:38] Best translation 4 : Lokalni mediji javljaju da je došlo do pucanja na aerodrom dok je odgovarao.
+[2024-02-17 23:41:38] Best translation 5 : Vidal je u Barsu stigao pre tri sezone iz Sevilje.
+[2024-02-17 23:41:38] Best translation 10 : Oko 11:29, protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holborn-u, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 23:41:38] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-17 23:41:38] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju, ljubav prema čitanju, ohrabrivanje dece da uzmu knjigu i čitaju."
+[2024-02-17 23:41:38] Best translation 80 : Maroochydore je pobijedio Caboolture u finalu.
+[2024-02-17 23:41:38] Best translation 160 : Stjuart, Gordon, Kenset i Harvik su zaokružili prvih deset pozicija u šampionatu vozača, sa četiri trke koje su ostale u sezoni.
+[2024-02-17 23:41:38] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-17 23:41:38] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo nastavnih informatsiјa.
+[2024-02-17 23:41:38] Total translation time: 1.77828s
+[2024-02-17 23:41:38] [valid] Ep. 2 : Up. 60000 : chrf : 56.7215 : stalled 1 times (last best: 58.1946)
+[2024-02-17 23:41:38] Translating validation set...
+[2024-02-17 23:41:39] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-17 23:41:39] Best translation 1 : Vodeći istraživači kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stopa preživljavanja za bolesti kao što je rak dojke može da bude upola manja od one u bogatijim zemljama.
+[2024-02-17 23:41:39] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-17 23:41:39] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-17 23:41:39] Best translation 4 : Lokalni mediji javljaju da je došlo do pucanja na aerodrom dok je odgovarao.
+[2024-02-17 23:41:39] Best translation 5 : Vidal je u Barsu stigao pre tri sezone iz Sevilje.
+[2024-02-17 23:41:39] Best translation 10 : Oko 11:29, protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holborn-u, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-17 23:41:39] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-17 23:41:39] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju, ljubav prema čitanju, ohrabrivanje dece da uzmu knjigu i čitaju."
+[2024-02-17 23:41:39] Best translation 80 : Maroochydore je pobijedio Caboolture u finalu.
+[2024-02-17 23:41:39] Best translation 160 : Stjuart, Gordon, Kenset i Harvik su zaokružili prvih deset pozicija u šampionatu vozača, sa četiri trke koje su ostale u sezoni.
+[2024-02-17 23:41:39] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-17 23:41:39] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo nastavnih informatsiјa.
+[2024-02-17 23:41:39] Total translation time: 1.28247s
+[2024-02-17 23:41:39] [valid] Ep. 2 : Up. 60000 : bleu : 27.3224 : stalled 2 times (last best: 28.9912)
+[2024-02-17 23:41:40] [valid] Ep. 2 : Up. 60000 : ce-mean-words : 1.40659 : stalled 1 times (last best: 1.35038)
+[2024-02-17 23:50:22] Ep. 2 : Up. 61000 : Sen. 151,444,547 : Cost 3.66889906 : Time 533.37s : 153546.09 words/s : gNorm 0.4720
+[2024-02-17 23:59:21] Ep. 2 : Up. 62000 : Sen. 157,269,339 : Cost 3.72293568 : Time 539.49s : 154073.95 words/s : gNorm 0.3942
+[2024-02-18 00:08:08] Ep. 2 : Up. 63000 : Sen. 163,178,376 : Cost 3.74764323 : Time 527.26s : 158587.85 words/s : gNorm 0.4272
+[2024-02-18 00:13:36] Seen 166,247,928 samples
+[2024-02-18 00:13:36] Starting data epoch 3 in logical epoch 3
+[2024-02-18 00:18:10] Ep. 3 : Up. 64000 : Sen. 1,088,370 : Cost 3.16383266 : Time 601.64s : 130717.75 words/s : gNorm 0.2699
+[2024-02-18 00:27:15] Ep. 3 : Up. 65000 : Sen. 4,434,323 : Cost 2.50175786 : Time 545.15s : 148745.68 words/s : gNorm 0.3212
+[2024-02-18 00:27:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-18 00:27:17] Saving Adam parameters
+[2024-02-18 00:27:20] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-18 00:27:23] Translating validation set...
+[2024-02-18 00:27:25] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-18 00:27:25] Best translation 1 : Vodeći istraživači kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti poput raka dojke mogu biti upola manje od onih u bogatijim zemljama.
+[2024-02-18 00:27:25] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 00:27:25] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-18 00:27:25] Best translation 4 : Lokalni mediji javljaju da se vozilo za gašenje požara prevrnulo dok je odgovaralo.
+[2024-02-18 00:27:25] Best translation 5 : 28-godišnji Vidal se pridružio Barsi pre tri sezone iz Sevilje.
+[2024-02-18 00:27:25] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održala svoj Proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 00:27:25] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 00:27:25] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju, ... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-18 00:27:25] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 00:27:25] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zaokružuju prvih deset pozicija u poretku vozača, a četiri utrke ostale su u sezoni.
+[2024-02-18 00:27:25] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 00:27:25] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 00:27:25] Total translation time: 1.88574s
+[2024-02-18 00:27:25] [valid] Ep. 3 : Up. 65000 : chrf : 57.2211 : stalled 2 times (last best: 58.1946)
+[2024-02-18 00:27:25] Translating validation set...
+[2024-02-18 00:27:26] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-18 00:27:26] Best translation 1 : Vodeći istraživači kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti poput raka dojke mogu biti upola manje od onih u bogatijim zemljama.
+[2024-02-18 00:27:26] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 00:27:26] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-18 00:27:26] Best translation 4 : Lokalni mediji javljaju da se vozilo za gašenje požara prevrnulo dok je odgovaralo.
+[2024-02-18 00:27:26] Best translation 5 : 28-godišnji Vidal se pridružio Barsi pre tri sezone iz Sevilje.
+[2024-02-18 00:27:26] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održala svoj Proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 00:27:26] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 00:27:26] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju, ... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-18 00:27:26] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 00:27:26] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zaokružuju prvih deset pozicija u poretku vozača, a četiri utrke ostale su u sezoni.
+[2024-02-18 00:27:26] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 00:27:26] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 00:27:26] Total translation time: 1.35270s
+[2024-02-18 00:27:26] [valid] Ep. 3 : Up. 65000 : bleu : 27.8045 : stalled 3 times (last best: 28.9912)
+[2024-02-18 00:27:27] [valid] Ep. 3 : Up. 65000 : ce-mean-words : 1.39095 : stalled 2 times (last best: 1.35038)
+[2024-02-18 00:36:10] Ep. 3 : Up. 66000 : Sen. 7,778,769 : Cost 2.72804499 : Time 535.27s : 150562.61 words/s : gNorm 0.2871
+[2024-02-18 00:45:09] Ep. 3 : Up. 67000 : Sen. 11,596,934 : Cost 2.87848020 : Time 538.11s : 151110.75 words/s : gNorm 0.3303
+[2024-02-18 00:54:02] Ep. 3 : Up. 68000 : Sen. 15,858,202 : Cost 3.01168656 : Time 533.08s : 152261.77 words/s : gNorm 0.3636
+[2024-02-18 01:02:57] Ep. 3 : Up. 69000 : Sen. 20,536,049 : Cost 3.13634396 : Time 535.22s : 152045.77 words/s : gNorm 0.3644
+[2024-02-18 01:11:53] Ep. 3 : Up. 70000 : Sen. 25,494,713 : Cost 3.25260210 : Time 536.30s : 151270.39 words/s : gNorm 0.4009
+[2024-02-18 01:11:53] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-18 01:11:55] Saving Adam parameters
+[2024-02-18 01:11:58] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-18 01:12:01] Translating validation set...
+[2024-02-18 01:12:02] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-18 01:12:02] Best translation 1 : Vodeći istraživači kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde bi stope preživljavanja za bolesti poput raka dojke mogle da budu upola manje od onih u bogatijim zemljama.
+[2024-02-18 01:12:02] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 01:12:02] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-18 01:12:02] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu dok je odgovarao.
+[2024-02-18 01:12:02] Best translation 5 : Vidal (28) se pridružio Barsi pre tri sezone iz Sevilje.
+[2024-02-18 01:12:02] Best translation 10 : Oko 11:29, protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holborn-u, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 01:12:02] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 01:12:02] Best translation 40 : John Grant, iz WNED Buffalo-a (Reading Rainbow's Home Station) rekao je: "Čitanje Rainbow-a uči decu zašto da čitaju,... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-18 01:12:02] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 01:12:02] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zaokružuju prvih deset pozicija za Drivers' Championship sa četiri utrke koje su ostale u sezoni.
+[2024-02-18 01:12:02] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 01:12:03] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 01:12:03] Total translation time: 1.90164s
+[2024-02-18 01:12:03] [valid] Ep. 3 : Up. 70000 : chrf : 57.5514 : stalled 3 times (last best: 58.1946)
+[2024-02-18 01:12:03] Translating validation set...
+[2024-02-18 01:12:04] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-18 01:12:04] Best translation 1 : Vodeći istraživači kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde bi stope preživljavanja za bolesti poput raka dojke mogle da budu upola manje od onih u bogatijim zemljama.
+[2024-02-18 01:12:04] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 01:12:04] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-18 01:12:04] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu dok je odgovarao.
+[2024-02-18 01:12:04] Best translation 5 : Vidal (28) se pridružio Barsi pre tri sezone iz Sevilje.
+[2024-02-18 01:12:04] Best translation 10 : Oko 11:29, protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holborn-u, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 01:12:04] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 01:12:04] Best translation 40 : John Grant, iz WNED Buffalo-a (Reading Rainbow's Home Station) rekao je: "Čitanje Rainbow-a uči decu zašto da čitaju,... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-18 01:12:04] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 01:12:04] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zaokružuju prvih deset pozicija za Drivers' Championship sa četiri utrke koje su ostale u sezoni.
+[2024-02-18 01:12:04] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 01:12:04] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 01:12:04] Total translation time: 1.28694s
+[2024-02-18 01:12:04] [valid] Ep. 3 : Up. 70000 : bleu : 28.0076 : stalled 4 times (last best: 28.9912)
+[2024-02-18 01:12:04] [valid] Ep. 3 : Up. 70000 : ce-mean-words : 1.37862 : stalled 3 times (last best: 1.35038)
+[2024-02-18 01:20:49] Ep. 3 : Up. 71000 : Sen. 30,770,800 : Cost 3.35869479 : Time 536.28s : 152584.44 words/s : gNorm 0.3875
+[2024-02-18 01:29:36] Ep. 3 : Up. 72000 : Sen. 36,100,507 : Cost 3.41453695 : Time 526.06s : 155272.83 words/s : gNorm 0.3959
+[2024-02-18 01:38:35] Ep. 3 : Up. 73000 : Sen. 41,747,683 : Cost 3.50211644 : Time 539.75s : 152436.61 words/s : gNorm 0.3925
+[2024-02-18 01:47:21] Ep. 3 : Up. 74000 : Sen. 47,431,870 : Cost 3.55959177 : Time 525.50s : 156794.82 words/s : gNorm 0.4108
+[2024-02-18 01:56:08] Ep. 3 : Up. 75000 : Sen. 53,177,787 : Cost 3.61697674 : Time 527.18s : 156848.13 words/s : gNorm 0.4231
+[2024-02-18 01:56:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-18 01:56:10] Saving Adam parameters
+[2024-02-18 01:56:13] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-18 01:56:16] Translating validation set...
+[2024-02-18 01:56:17] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak otkriće novog dijagnostičkog alata koji može sortirati ćelije po vrsti: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-18 01:56:17] Best translation 1 : Naučnici kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde je stopa preživljavanja za bolesti kao što je rak dojke upola manja od one u bogatijim zemljama.
+[2024-02-18 01:56:17] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 01:56:17] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Pattavee.
+[2024-02-18 01:56:17] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu dok je odgovarao.
+[2024-02-18 01:56:17] Best translation 5 : Vidal je prije tri sezone bio u Barsi iz Sevilje.
+[2024-02-18 01:56:17] Best translation 10 : Oko 11:29, protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holborn-u, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 01:56:17] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 01:56:17] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju,... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-18 01:56:17] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 01:56:17] Best translation 160 : Stewart, Gordon, Kenset i Harveyck zaokružuju prvih deset pozicija u poretku vozača, a četiri utrke ostaju u sezoni.
+[2024-02-18 01:56:17] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 01:56:18] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 01:56:18] Total translation time: 1.77933s
+[2024-02-18 01:56:18] [valid] Ep. 3 : Up. 75000 : chrf : 56.6213 : stalled 4 times (last best: 58.1946)
+[2024-02-18 01:56:18] Translating validation set...
+[2024-02-18 01:56:18] Best translation 0 : Naučnici sa Medicinskog fakulteta Univerziteta Stanford objavili su u ponedjeljak otkriće novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može proizvesti pomoću standardnih inkdžet štampača za po jedan američki cent.
+[2024-02-18 01:56:18] Best translation 1 : Naučnici kažu da bi to moglo da dovede do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde bi stope preživljavanja za bolesti poput raka dojke mogle da budu upola manje od onih u bogatijim zemljama.
+[2024-02-18 01:56:18] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 01:56:18] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Pattavee.
+[2024-02-18 01:56:18] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu dok je odgovarao.
+[2024-02-18 01:56:18] Best translation 5 : Vidal je prije tri sezone bio u Barsi iz Sevilje.
+[2024-02-18 01:56:18] Best translation 10 : Oko 11:29, protest se pomerio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holborn-u, gde je Konzervativna partija održala svoj Prolećni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 01:56:18] Best translation 20 : Hsieh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 01:56:18] Best translation 40 : John Grant, sa WNED Buffalo (Reading Rainbow's Home Station) je rekao: "Čitanje Rainbowa uči decu zašto da čitaju,... ljubav prema čitanju - emisija je ohrabrila decu da preuzmu knjigu i čitaju."
+[2024-02-18 01:56:18] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 01:56:19] Best translation 160 : Stewart, Gordon, Kenset i Harveyck zaokružuju prvih deset pozicija u poretku vozača, a četiri utrke ostaju u sezoni.
+[2024-02-18 01:56:19] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 01:56:19] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 01:56:19] Total translation time: 1.29817s
+[2024-02-18 01:56:19] [valid] Ep. 3 : Up. 75000 : bleu : 27.314 : stalled 5 times (last best: 28.9912)
+[2024-02-18 01:56:19] [valid] Ep. 3 : Up. 75000 : ce-mean-words : 1.41976 : stalled 4 times (last best: 1.35038)
+[2024-02-18 02:05:17] Ep. 3 : Up. 76000 : Sen. 59,036,936 : Cost 3.66581941 : Time 548.81s : 150702.31 words/s : gNorm 0.4197
+[2024-02-18 02:14:04] Ep. 3 : Up. 77000 : Sen. 64,829,124 : Cost 3.69706059 : Time 527.37s : 157533.89 words/s : gNorm 0.4066
+[2024-02-18 02:22:57] Ep. 3 : Up. 78000 : Sen. 71,168,531 : Cost 3.66886210 : Time 533.14s : 158040.79 words/s : gNorm 0.5475
+[2024-02-18 02:31:53] Ep. 3 : Up. 79000 : Sen. 80,259,545 : Cost 3.02336979 : Time 535.84s : 162177.91 words/s : gNorm 0.4600
+[2024-02-18 02:40:43] Ep. 3 : Up. 80000 : Sen. 87,036,938 : Cost 2.92117190 : Time 530.03s : 159284.03 words/s : gNorm 0.4721
+[2024-02-18 02:40:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-18 02:40:45] Saving Adam parameters
+[2024-02-18 02:40:48] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz
+[2024-02-18 02:40:51] Translating validation set...
+[2024-02-18 02:40:52] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može štampati koristeći standardne inkdžet štampače za po jedan američki cent.
+[2024-02-18 02:40:52] Best translation 1 : Glavni istraživači kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti poput raka dojke mogu biti upola manje od onih u bogatijim zemljama.
+[2024-02-18 02:40:52] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 02:40:52] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-18 02:40:52] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu dok je odgovarao.
+[2024-02-18 02:40:52] Best translation 5 : Vidal je prije tri sezone bio u Barsi iz Sevilje.
+[2024-02-18 02:40:52] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održala svoj Proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 02:40:52] Best translation 20 : Hsijeh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 02:40:52] Best translation 40 : John Grant, iz WNED Buffalo-a je rekao: "Čitanje Rainbow-a uči decu zašto da čitaju, da vole da čitaju, da podstiču decu da preuzmu knjigu i čitaju."
+[2024-02-18 02:40:52] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 02:40:52] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zaokružuju prvih deset mjesta u poretku vozača, a četiri utrke ostaju u sezoni.
+[2024-02-18 02:40:52] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 02:40:53] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 02:40:53] Total translation time: 1.92048s
+[2024-02-18 02:40:53] [valid] Ep. 3 : Up. 80000 : chrf : 57.6615 : stalled 5 times (last best: 58.1946)
+[2024-02-18 02:40:53] Translating validation set...
+[2024-02-18 02:40:54] Best translation 0 : U ponedjeljak su naučnici sa Medicinskog fakulteta Stanford objavili izum novog dijagnostičkog alata koji može sortirati ćelije po tipu: mali čip koji se može štampati koristeći standardne inkdžet štampače za po jedan američki cent.
+[2024-02-18 02:40:54] Best translation 1 : Glavni istraživači kažu da bi to moglo dovesti do ranog otkrivanja raka, tuberkuloze, HIV-a i malarije kod pacijenata u zemljama sa niskim prihodima, gde stope preživljavanja za bolesti poput raka dojke mogu biti upola manje od onih u bogatijim zemljama.
+[2024-02-18 02:40:54] Best translation 2 : JAS 39C Gripen srušio se na pistu u 9:30 po lokalnom vremenu i eksplodirao, zatvorivši aerodrom za komercijalne letove.
+[2024-02-18 02:40:54] Best translation 3 : Pilot je identifikovan kao vođa eskadrile Dilokrit Patave.
+[2024-02-18 02:40:54] Best translation 4 : Lokalni mediji javljaju da je došlo do požara na aerodromu dok je odgovarao.
+[2024-02-18 02:40:54] Best translation 5 : Vidal je prije tri sezone bio u Barsi iz Sevilje.
+[2024-02-18 02:40:54] Best translation 10 : Oko 11:29, protest se proširio na Whitehall, pored Trafalgar Squarea, duž Stranda, prolazeći pored Aldwych-a i do Kingsway-a prema Holbornu, gdje je Konzervativna stranka održala svoj Proljetni forum u hotelu Grand Connaught Rooms.
+[2024-02-18 02:40:54] Best translation 20 : Hsijeh je tokom izbora implicirao da bi Ma mogao da napusti zemlju tokom kriznog perioda.
+[2024-02-18 02:40:54] Best translation 40 : John Grant, iz WNED Buffalo-a je rekao: "Čitanje Rainbow-a uči decu zašto da čitaju, da vole da čitaju, da podstiču decu da preuzmu knjigu i čitaju."
+[2024-02-18 02:40:54] Best translation 80 : Maroochydore je pobijedio Caboolture u preliminarnom finalu.
+[2024-02-18 02:40:54] Best translation 160 : Stewart, Gordon, Kenseth i Harveyck zaokružuju prvih deset mjesta u poretku vozača, a četiri utrke ostaju u sezoni.
+[2024-02-18 02:40:54] Best translation 320 : Od tada, kineska ekonomija je porasla 90 puta.
+[2024-02-18 02:40:54] Best translation 640 : To omoguћava studentima da rade sopstvenim tempom i da kontrolishu tempo uchionichkih informatsiјa.
+[2024-02-18 02:40:54] Total translation time: 1.32509s
+[2024-02-18 02:40:54] [valid] Ep. 3 : Up. 80000 : bleu : 28.404 : stalled 6 times (last best: 28.9912)
+[2024-02-18 02:40:54] [valid] Ep. 3 : Up. 80000 : ce-mean-words : 1.35618 : stalled 5 times (last best: 1.35038)
+[2024-02-18 02:40:54] Training finished
+[2024-02-18 02:40:54] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz
+[2024-02-18 02:40:57] Saving Adam parameters
+[2024-02-18 02:41:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz and /scratch/project_465000574/malikbha/experiments/bs-en/simple/v2/s.train_model.en-bs/output/model.npz.optimizer.npz

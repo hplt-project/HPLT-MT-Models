@@ -1,0 +1,38 @@
+[2024-02-14 19:14:29] [valid] First sentence's tokens as scored:
+[2024-02-14 19:14:29] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-14 19:14:29] [valid]   Hyp: A t t h e a g e o f , t h e f i r s t t i m e , t h e f i r s t t i m e o f t h e f i r s t t i m e i n t h e w o r l d .
+[2024-02-14 19:14:29] [valid]   Ref: A h o s t e l c o l l a p s e d i n M e c c a , t h e h o l y c i t y o f I s l a m a t a b o u t 1 0 o ' c l o c k t h i s m o r n i n g l o c a l t i m e .
+[2024-02-14 19:14:33] [valid] Ep. 10 : Up. 5000 : chrf : 15.6392 : new best
+[2024-02-14 19:14:38] [valid] Ep. 10 : Up. 5000 : bleu : 1.20795 : new best
+[2024-02-14 19:14:40] [valid] Ep. 10 : Up. 5000 : ce-mean-words : 5.66066 : new best
+[2024-02-14 20:00:19] [valid] Ep. 20 : Up. 10000 : chrf : 26.2487 : new best
+[2024-02-14 20:00:23] [valid] Ep. 20 : Up. 10000 : bleu : 6.20478 : new best
+[2024-02-14 20:00:25] [valid] Ep. 20 : Up. 10000 : ce-mean-words : 4.30408 : new best
+[2024-02-14 20:45:56] [valid] Ep. 30 : Up. 15000 : chrf : 53.1551 : new best
+[2024-02-14 20:45:59] [valid] Ep. 30 : Up. 15000 : bleu : 25.9468 : new best
+[2024-02-14 20:46:01] [valid] Ep. 30 : Up. 15000 : ce-mean-words : 2.4638 : new best
+[2024-02-14 21:31:38] [valid] Ep. 40 : Up. 20000 : chrf : 58.2505 : new best
+[2024-02-14 21:31:41] [valid] Ep. 40 : Up. 20000 : bleu : 30.9042 : new best
+[2024-02-14 21:31:43] [valid] Ep. 40 : Up. 20000 : ce-mean-words : 2.08311 : new best
+[2024-02-17 13:22:58] [valid] First sentence's tokens as scored:
+[2024-02-17 13:22:58] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-17 13:22:58] [valid]   Hyp: T h e r e a r e m a n y t y p e s o f e y e s , i n t e r m s o f c o n s t r u c t i o n , a n d t h e i r c o m p l e x i t y d e p e n d s o n t h e n e e d s o f t h e o r g a n i s m .
+[2024-02-17 13:22:58] [valid]   Ref: T h e r e a r e m a n y d i f f e r e n t c o n s t r u c t i o n s o f e y e s , r a n g i n g i n c o m p l e x i t y d e p e n d i n g o n t h e r e q u i r e m e n t s o f t h e o r g a n i s m .
+[2024-02-17 13:23:01] [valid] Ep. 60 : Up. 30000 : chrf : 59.3802 : new best
+[2024-02-17 13:23:03] [valid] Ep. 60 : Up. 30000 : bleu : 32.0352 : new best
+[2024-02-17 13:23:03] [valid] Ep. 60 : Up. 30000 : ce-mean-words : 2.13343 : stalled 1 times (last best: 2.08311)
+[2024-02-17 14:09:22] [valid] Ep. 70 : Up. 35000 : chrf : 59.2148 : stalled 1 times (last best: 59.3802)
+[2024-02-17 14:09:23] [valid] Ep. 70 : Up. 35000 : bleu : 31.6197 : stalled 1 times (last best: 32.0352)
+[2024-02-17 14:09:23] [valid] Ep. 70 : Up. 35000 : ce-mean-words : 2.2126 : stalled 2 times (last best: 2.08311)
+[2024-02-17 14:55:42] [valid] Ep. 80 : Up. 40000 : chrf : 58.9602 : stalled 2 times (last best: 59.3802)
+[2024-02-17 14:55:44] [valid] Ep. 80 : Up. 40000 : bleu : 31.2412 : stalled 2 times (last best: 32.0352)
+[2024-02-17 14:55:44] [valid] Ep. 80 : Up. 40000 : ce-mean-words : 2.28657 : stalled 3 times (last best: 2.08311)
+[2024-02-17 15:42:22] [valid] Ep. 90 : Up. 45000 : chrf : 58.9168 : stalled 3 times (last best: 59.3802)
+[2024-02-17 15:42:24] [valid] Ep. 90 : Up. 45000 : bleu : 31.3558 : stalled 3 times (last best: 32.0352)
+[2024-02-17 15:42:24] [valid] Ep. 90 : Up. 45000 : ce-mean-words : 2.35568 : stalled 4 times (last best: 2.08311)
+[2024-02-17 16:29:01] [valid] Ep. 100 : Up. 50000 : chrf : 58.7409 : stalled 4 times (last best: 59.3802)
+[2024-02-17 16:29:03] [valid] Ep. 100 : Up. 50000 : bleu : 31.055 : stalled 4 times (last best: 32.0352)
+[2024-02-17 16:29:03] [valid] Ep. 100 : Up. 50000 : ce-mean-words : 2.41657 : stalled 5 times (last best: 2.08311)
+[2024-02-17 17:15:10] [valid] Ep. 109 : Up. 55000 : chrf : 58.8204 : stalled 5 times (last best: 59.3802)
+[2024-02-17 17:15:11] [valid] Ep. 109 : Up. 55000 : bleu : 30.77 : stalled 5 times (last best: 32.0352)
+[2024-02-17 17:15:12] [valid] Ep. 109 : Up. 55000 : ce-mean-words : 2.46746 : stalled 6 times (last best: 2.08311)

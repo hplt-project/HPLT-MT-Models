@@ -1,0 +1,994 @@
+[2024-02-13 12:29:57] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 12:29:57] [marian] Running on nid007906 as process 65393 with command line:
+[2024-02-13 12:29:57] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.generate_vocab.en-eu/output/model.en-eu.spm /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.generate_vocab.en-eu/output/model.en-eu.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/tmp.d/6038736 --train-sets /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/tmp.d/6038736/train.en.gz /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/tmp.d/6038736/train.eu.gz --valid-sets /scratch/project_465000574/data/en-eu/valid/flores200.dev.en-eu.en /scratch/project_465000574/data/en-eu/valid/flores200.dev.en-eu.eu --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-13 12:29:57] [config] after: 0e
+[2024-02-13 12:29:57] [config] after-batches: 0
+[2024-02-13 12:29:57] [config] after-epochs: 0
+[2024-02-13 12:29:57] [config] all-caps-every: 0
+[2024-02-13 12:29:57] [config] allow-unk: false
+[2024-02-13 12:29:57] [config] authors: false
+[2024-02-13 12:29:57] [config] beam-size: 4
+[2024-02-13 12:29:57] [config] bert-class-symbol: "[CLS]"
+[2024-02-13 12:29:57] [config] bert-mask-symbol: "[MASK]"
+[2024-02-13 12:29:57] [config] bert-masking-fraction: 0.15
+[2024-02-13 12:29:57] [config] bert-sep-symbol: "[SEP]"
+[2024-02-13 12:29:57] [config] bert-train-type-embeddings: true
+[2024-02-13 12:29:57] [config] bert-type-vocab-size: 2
+[2024-02-13 12:29:57] [config] build-info: ""
+[2024-02-13 12:29:57] [config] char-conv-filters-num:
+[2024-02-13 12:29:57] [config]   - 200
+[2024-02-13 12:29:57] [config]   - 200
+[2024-02-13 12:29:57] [config]   - 250
+[2024-02-13 12:29:57] [config]   - 250
+[2024-02-13 12:29:57] [config]   - 300
+[2024-02-13 12:29:57] [config]   - 300
+[2024-02-13 12:29:57] [config]   - 300
+[2024-02-13 12:29:57] [config]   - 300
+[2024-02-13 12:29:57] [config] char-conv-filters-widths:
+[2024-02-13 12:29:57] [config]   - 1
+[2024-02-13 12:29:57] [config]   - 2
+[2024-02-13 12:29:57] [config]   - 3
+[2024-02-13 12:29:57] [config]   - 4
+[2024-02-13 12:29:57] [config]   - 5
+[2024-02-13 12:29:57] [config]   - 6
+[2024-02-13 12:29:57] [config]   - 7
+[2024-02-13 12:29:57] [config]   - 8
+[2024-02-13 12:29:57] [config] char-highway: 4
+[2024-02-13 12:29:57] [config] char-stride: 5
+[2024-02-13 12:29:57] [config] check-gradient-nan: true
+[2024-02-13 12:29:57] [config] check-nan: false
+[2024-02-13 12:29:57] [config] cite: false
+[2024-02-13 12:29:57] [config] clip-norm: 0
+[2024-02-13 12:29:57] [config] cost-scaling:
+[2024-02-13 12:29:57] [config]   []
+[2024-02-13 12:29:57] [config] cost-type: ce-mean-words
+[2024-02-13 12:29:57] [config] cpu-threads: 0
+[2024-02-13 12:29:57] [config] data-threads: 8
+[2024-02-13 12:29:57] [config] data-weighting: ""
+[2024-02-13 12:29:57] [config] data-weighting-type: sentence
+[2024-02-13 12:29:57] [config] dec-cell: gru
+[2024-02-13 12:29:57] [config] dec-cell-base-depth: 2
+[2024-02-13 12:29:57] [config] dec-cell-high-depth: 1
+[2024-02-13 12:29:57] [config] dec-depth: 6
+[2024-02-13 12:29:57] [config] devices:
+[2024-02-13 12:29:57] [config]   - 0
+[2024-02-13 12:29:57] [config]   - 1
+[2024-02-13 12:29:57] [config]   - 2
+[2024-02-13 12:29:57] [config]   - 3
+[2024-02-13 12:29:57] [config]   - 4
+[2024-02-13 12:29:57] [config]   - 5
+[2024-02-13 12:29:57] [config]   - 6
+[2024-02-13 12:29:57] [config]   - 7
+[2024-02-13 12:29:57] [config] dim-emb: 512
+[2024-02-13 12:29:57] [config] dim-rnn: 1024
+[2024-02-13 12:29:57] [config] dim-vocabs:
+[2024-02-13 12:29:57] [config]   - 64000
+[2024-02-13 12:29:57] [config] disp-first: 0
+[2024-02-13 12:29:57] [config] disp-freq: 1000u
+[2024-02-13 12:29:57] [config] disp-label-counts: true
+[2024-02-13 12:29:57] [config] dropout-rnn: 0
+[2024-02-13 12:29:57] [config] dropout-src: 0
+[2024-02-13 12:29:57] [config] dropout-trg: 0
+[2024-02-13 12:29:57] [config] dump-config: ""
+[2024-02-13 12:29:57] [config] dynamic-gradient-scaling:
+[2024-02-13 12:29:57] [config]   []
+[2024-02-13 12:29:57] [config] early-stopping: 5
+[2024-02-13 12:29:57] [config] early-stopping-on: first
+[2024-02-13 12:29:57] [config] embedding-fix-src: false
+[2024-02-13 12:29:57] [config] embedding-fix-trg: false
+[2024-02-13 12:29:57] [config] embedding-normalization: false
+[2024-02-13 12:29:57] [config] embedding-vectors:
+[2024-02-13 12:29:57] [config]   []
+[2024-02-13 12:29:57] [config] enc-cell: gru
+[2024-02-13 12:29:57] [config] enc-cell-depth: 1
+[2024-02-13 12:29:57] [config] enc-depth: 6
+[2024-02-13 12:29:57] [config] enc-type: bidirectional
+[2024-02-13 12:29:57] [config] english-title-case-every: 0
+[2024-02-13 12:29:57] [config] exponential-smoothing: 0.0001
+[2024-02-13 12:29:57] [config] factor-weight: 1
+[2024-02-13 12:29:57] [config] factors-combine: sum
+[2024-02-13 12:29:57] [config] factors-dim-emb: 0
+[2024-02-13 12:29:57] [config] gradient-checkpointing: false
+[2024-02-13 12:29:57] [config] gradient-norm-average-window: 100
+[2024-02-13 12:29:57] [config] guided-alignment: none
+[2024-02-13 12:29:57] [config] guided-alignment-cost: ce
+[2024-02-13 12:29:57] [config] guided-alignment-weight: 0.1
+[2024-02-13 12:29:57] [config] ignore-model-config: false
+[2024-02-13 12:29:57] [config] input-types:
+[2024-02-13 12:29:57] [config]   []
+[2024-02-13 12:29:57] [config] interpolate-env-vars: false
+[2024-02-13 12:29:57] [config] keep-best: true
+[2024-02-13 12:29:57] [config] label-smoothing: 0.1
+[2024-02-13 12:29:57] [config] layer-normalization: false
+[2024-02-13 12:29:57] [config] learn-rate: 0.0003
+[2024-02-13 12:29:57] [config] lemma-dependency: ""
+[2024-02-13 12:29:57] [config] lemma-dim-emb: 0
+[2024-02-13 12:29:57] [config] log: /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/logs/model.train.log
+[2024-02-13 12:29:57] [config] log-level: info
+[2024-02-13 12:29:57] [config] log-time-zone: ""
+[2024-02-13 12:29:57] [config] logical-epoch:
+[2024-02-13 12:29:57] [config]   - 1e
+[2024-02-13 12:29:57] [config]   - 0
+[2024-02-13 12:29:57] [config] lr-decay: 0
+[2024-02-13 12:29:57] [config] lr-decay-freq: 50000
+[2024-02-13 12:29:57] [config] lr-decay-inv-sqrt:
+[2024-02-13 12:29:57] [config]   - 16000
+[2024-02-13 12:29:57] [config] lr-decay-repeat-warmup: false
+[2024-02-13 12:29:57] [config] lr-decay-reset-optimizer: false
+[2024-02-13 12:29:57] [config] lr-decay-start:
+[2024-02-13 12:29:57] [config]   - 10
+[2024-02-13 12:29:57] [config]   - 1
+[2024-02-13 12:29:57] [config] lr-decay-strategy: epoch+stalled
+[2024-02-13 12:29:57] [config] lr-report: false
+[2024-02-13 12:29:57] [config] lr-warmup: 16000
+[2024-02-13 12:29:57] [config] lr-warmup-at-reload: false
+[2024-02-13 12:29:57] [config] lr-warmup-cycle: false
+[2024-02-13 12:29:57] [config] lr-warmup-start-rate: 0
+[2024-02-13 12:29:57] [config] max-length: 250
+[2024-02-13 12:29:57] [config] max-length-crop: false
+[2024-02-13 12:29:57] [config] max-length-factor: 3
+[2024-02-13 12:29:57] [config] maxi-batch: 1000
+[2024-02-13 12:29:57] [config] maxi-batch-sort: trg
+[2024-02-13 12:29:57] [config] mini-batch: 4096
+[2024-02-13 12:29:57] [config] mini-batch-fit: true
+[2024-02-13 12:29:57] [config] mini-batch-fit-step: 10
+[2024-02-13 12:29:57] [config] mini-batch-round-up: true
+[2024-02-13 12:29:57] [config] mini-batch-track-lr: false
+[2024-02-13 12:29:57] [config] mini-batch-warmup: 0
+[2024-02-13 12:29:57] [config] mini-batch-words: 0
+[2024-02-13 12:29:57] [config] mini-batch-words-ref: 0
+[2024-02-13 12:29:57] [config] model: /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 12:29:57] [config] multi-loss-type: sum
+[2024-02-13 12:29:57] [config] n-best: false
+[2024-02-13 12:29:57] [config] no-nccl: false
+[2024-02-13 12:29:57] [config] no-reload: false
+[2024-02-13 12:29:57] [config] no-restore-corpus: false
+[2024-02-13 12:29:57] [config] normalize: 1
+[2024-02-13 12:29:57] [config] normalize-gradient: false
+[2024-02-13 12:29:57] [config] num-devices: 0
+[2024-02-13 12:29:57] [config] optimizer: adam
+[2024-02-13 12:29:57] [config] optimizer-delay: 2
+[2024-02-13 12:29:57] [config] optimizer-params:
+[2024-02-13 12:29:57] [config]   - 0.9
+[2024-02-13 12:29:57] [config]   - 0.98
+[2024-02-13 12:29:57] [config]   - 1e-09
+[2024-02-13 12:29:57] [config] output-omit-bias: false
+[2024-02-13 12:29:57] [config] overwrite: true
+[2024-02-13 12:29:57] [config] precision:
+[2024-02-13 12:29:57] [config]   - float32
+[2024-02-13 12:29:57] [config]   - float32
+[2024-02-13 12:29:57] [config] pretrained-model: ""
+[2024-02-13 12:29:57] [config] quantize-biases: false
+[2024-02-13 12:29:57] [config] quantize-bits: 0
+[2024-02-13 12:29:57] [config] quantize-log-based: false
+[2024-02-13 12:29:57] [config] quantize-optimization-steps: 0
+[2024-02-13 12:29:57] [config] quiet: false
+[2024-02-13 12:29:57] [config] quiet-translation: false
+[2024-02-13 12:29:57] [config] relative-paths: false
+[2024-02-13 12:29:57] [config] right-left: false
+[2024-02-13 12:29:57] [config] save-freq: 5000u
+[2024-02-13 12:29:57] [config] seed: 42
+[2024-02-13 12:29:57] [config] sentencepiece-alphas:
+[2024-02-13 12:29:57] [config]   - 0.1
+[2024-02-13 12:29:57] [config] sentencepiece-max-lines: 2000000
+[2024-02-13 12:29:57] [config] sentencepiece-options: ""
+[2024-02-13 12:29:57] [config] sharding: global
+[2024-02-13 12:29:57] [config] shuffle: batches
+[2024-02-13 12:29:57] [config] shuffle-in-ram: false
+[2024-02-13 12:29:57] [config] sigterm: save-and-exit
+[2024-02-13 12:29:57] [config] skip: false
+[2024-02-13 12:29:57] [config] sqlite: ""
+[2024-02-13 12:29:57] [config] sqlite-drop: false
+[2024-02-13 12:29:57] [config] sync-freq: 200u
+[2024-02-13 12:29:57] [config] sync-sgd: true
+[2024-02-13 12:29:57] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/tmp.d/6038736
+[2024-02-13 12:29:57] [config] tied-embeddings: false
+[2024-02-13 12:29:57] [config] tied-embeddings-all: true
+[2024-02-13 12:29:57] [config] tied-embeddings-src: false
+[2024-02-13 12:29:57] [config] train-embedder-rank:
+[2024-02-13 12:29:57] [config]   []
+[2024-02-13 12:29:57] [config] train-sets:
+[2024-02-13 12:29:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/tmp.d/6038736/train.en.gz
+[2024-02-13 12:29:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/tmp.d/6038736/train.eu.gz
+[2024-02-13 12:29:57] [config] transformer-aan-activation: swish
+[2024-02-13 12:29:57] [config] transformer-aan-depth: 2
+[2024-02-13 12:29:57] [config] transformer-aan-nogate: false
+[2024-02-13 12:29:57] [config] transformer-decoder-autoreg: self-attention
+[2024-02-13 12:29:57] [config] transformer-decoder-dim-ffn: 0
+[2024-02-13 12:29:57] [config] transformer-decoder-ffn-depth: 0
+[2024-02-13 12:29:57] [config] transformer-depth-scaling: false
+[2024-02-13 12:29:57] [config] transformer-dim-aan: 2048
+[2024-02-13 12:29:57] [config] transformer-dim-ffn: 2048
+[2024-02-13 12:29:57] [config] transformer-dropout: 0.1
+[2024-02-13 12:29:57] [config] transformer-dropout-attention: 0
+[2024-02-13 12:29:57] [config] transformer-dropout-ffn: 0
+[2024-02-13 12:29:57] [config] transformer-ffn-activation: relu
+[2024-02-13 12:29:57] [config] transformer-ffn-depth: 2
+[2024-02-13 12:29:57] [config] transformer-guided-alignment-layer: last
+[2024-02-13 12:29:57] [config] transformer-heads: 8
+[2024-02-13 12:29:57] [config] transformer-no-projection: false
+[2024-02-13 12:29:57] [config] transformer-pool: false
+[2024-02-13 12:29:57] [config] transformer-postprocess: dan
+[2024-02-13 12:29:57] [config] transformer-postprocess-emb: d
+[2024-02-13 12:29:57] [config] transformer-postprocess-top: ""
+[2024-02-13 12:29:57] [config] transformer-preprocess: ""
+[2024-02-13 12:29:57] [config] transformer-rnn-projection: false
+[2024-02-13 12:29:57] [config] transformer-tied-layers:
+[2024-02-13 12:29:57] [config]   []
+[2024-02-13 12:29:57] [config] transformer-train-position-embeddings: false
+[2024-02-13 12:29:57] [config] tsv: false
+[2024-02-13 12:29:57] [config] tsv-fields: 0
+[2024-02-13 12:29:57] [config] type: transformer
+[2024-02-13 12:29:57] [config] ulr: false
+[2024-02-13 12:29:57] [config] ulr-dim-emb: 0
+[2024-02-13 12:29:57] [config] ulr-dropout: 0
+[2024-02-13 12:29:57] [config] ulr-keys-vectors: ""
+[2024-02-13 12:29:57] [config] ulr-query-vectors: ""
+[2024-02-13 12:29:57] [config] ulr-softmax-temperature: 1
+[2024-02-13 12:29:57] [config] ulr-trainable-transformation: false
+[2024-02-13 12:29:57] [config] unlikelihood-loss: false
+[2024-02-13 12:29:57] [config] valid-freq: 5000u
+[2024-02-13 12:29:57] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/logs/model.valid.log
+[2024-02-13 12:29:57] [config] valid-max-length: 1000
+[2024-02-13 12:29:57] [config] valid-metrics:
+[2024-02-13 12:29:57] [config]   - chrf
+[2024-02-13 12:29:57] [config]   - bleu
+[2024-02-13 12:29:57] [config]   - ce-mean-words
+[2024-02-13 12:29:57] [config] valid-mini-batch: 64
+[2024-02-13 12:29:57] [config] valid-reset-stalled: true
+[2024-02-13 12:29:57] [config] valid-script-args:
+[2024-02-13 12:29:57] [config]   []
+[2024-02-13 12:29:57] [config] valid-script-path: ""
+[2024-02-13 12:29:57] [config] valid-sets:
+[2024-02-13 12:29:57] [config]   - /scratch/project_465000574/data/en-eu/valid/flores200.dev.en-eu.en
+[2024-02-13 12:29:57] [config]   - /scratch/project_465000574/data/en-eu/valid/flores200.dev.en-eu.eu
+[2024-02-13 12:29:57] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/logs/model.valid.out
+[2024-02-13 12:29:57] [config] vocabs:
+[2024-02-13 12:29:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.generate_vocab.en-eu/output/model.en-eu.spm
+[2024-02-13 12:29:57] [config]   - /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.generate_vocab.en-eu/output/model.en-eu.spm
+[2024-02-13 12:29:57] [config] word-penalty: 0
+[2024-02-13 12:29:57] [config] word-scores: false
+[2024-02-13 12:29:57] [config] workspace: 20000
+[2024-02-13 12:29:57] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 12:29:57] Using synchronous SGD
+[2024-02-13 12:29:57] [comm] Compiled without MPI support. Running as a single process on nid007906
+[2024-02-13 12:29:57] Synced seed 42
+[2024-02-13 12:29:57] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.generate_vocab.en-eu/output/model.en-eu.spm
+[2024-02-13 12:29:57] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-13 12:29:57] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.generate_vocab.en-eu/output/model.en-eu.spm
+[2024-02-13 12:29:57] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-13 12:29:57] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-13 12:29:57] Checking gradient for NaN
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 12:29:59] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 12:29:59] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 12:30:01] [comm] Using global sharding
+[2024-02-13 12:30:02] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 12:30:02] [training] Using 8 GPUs
+[2024-02-13 12:30:02] [logits] Applying loss function for 1 factor(s)
+[2024-02-13 12:30:02] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 12:30:07] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 12:31:02] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 12:31:02] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 12:31:02] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 12:31:02] [comm] Using global sharding
+[2024-02-13 12:31:03] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 12:31:03] [training] Using 8 GPUs
+[2024-02-13 12:31:03] Training started
+[2024-02-13 12:31:47] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 12:31:47] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 12:31:56] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 12:32:15] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 12:32:15] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 12:32:16] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 12:32:16] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 12:32:16] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 12:32:16] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 12:32:16] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 12:32:17] Allocating memory for general optimizer shards
+[2024-02-13 12:32:17] Parameter type float32, optimization type float32, casting types false
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu5
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu2
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu7
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu6
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu3
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu4
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu1
+[2024-02-13 12:32:17] [memory] Reserving 36 MB, device gpu0
+[2024-02-13 12:32:17] Allocating memory for Adam-specific shards
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu5
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu4
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu3
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu2
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu7
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu0
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu6
+[2024-02-13 12:32:17] [memory] Reserving 73 MB, device gpu1
+[2024-02-13 12:40:30] Ep. 1 : Up. 1000 : Sen. 5,208,347 : Cost 9.19963360 : Time 568.26s : 132004.78 words/s : gNorm 2.4287
+[2024-02-13 12:42:45] Seen 6,682,199 samples
+[2024-02-13 12:42:45] Starting data epoch 2 in logical epoch 2
+[2024-02-13 12:49:38] Ep. 2 : Up. 2000 : Sen. 3,653,545 : Cost 7.92703438 : Time 547.72s : 137607.57 words/s : gNorm 2.0891
+[2024-02-13 12:54:02] Seen 6,682,153 samples
+[2024-02-13 12:54:02] Starting data epoch 3 in logical epoch 3
+[2024-02-13 12:58:40] Ep. 3 : Up. 3000 : Sen. 2,370,420 : Cost 7.37397718 : Time 541.76s : 136654.62 words/s : gNorm 1.8996
+[2024-02-13 13:05:23] Seen 6,682,254 samples
+[2024-02-13 13:05:23] Starting data epoch 4 in logical epoch 4
+[2024-02-13 13:07:40] Ep. 4 : Up. 4000 : Sen. 824,141 : Cost 6.90385199 : Time 539.94s : 135678.06 words/s : gNorm 1.7634
+[2024-02-13 13:15:55] Ep. 4 : Up. 5000 : Sen. 6,165,944 : Cost 6.54185390 : Time 495.34s : 151930.38 words/s : gNorm 1.7155
+[2024-02-13 13:15:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 13:15:57] Saving Adam parameters
+[2024-02-13 13:16:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 13:16:02] Translating validation set...
+[2024-02-13 13:16:04] [valid] First sentence's tokens as scored:
+[2024-02-13 13:16:04] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-13 13:16:04] [valid]   Hyp: G a u r e g u n , b e r e h e l b u r u a d a .
+[2024-02-13 13:16:04] [valid]   Ref: F e n o m e n o h o r r e n a r r a z o i n a g u s i a d a a m e t s a r g i e k h e d a t u e g i t e n d u t e l a R E M e g o e r e n a r t e k o d e n b o r a - t a r t e a .
+[2024-02-13 13:16:06] Best translation 0 : • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • �
+[2024-02-13 13:16:06] Best translation 1 : Hala ere, hainbat pertsona dira, eta, baita ere, eta, eta, beste batzuk ere, beste batzuk ere.
+[2024-02-13 13:16:06] Best translation 2 : 2016ko urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilan (h.
+[2024-02-13 13:16:06] Best translation 3 : Gaur egun, Estatu Batuetakoa izan zen.
+[2024-02-13 13:16:06] Best translation 4 : • • • • • • • • • • • • • • • • • • • •�� • • • �
+[2024-02-13 13:16:06] Best translation 5 : Bi urte geroago, hiru urte izan zen.
+[2024-02-13 13:16:06] Best translation 10 : 17. urtean, 16. urtean, 16. urtean, 16. urtean, bere burua, eta bere burua, eta, eta, bere burua, eta, eta, bere burua, eta bere burua, eta, eta, eta, eta bere burua ere.
+[2024-02-13 13:16:06] Best translation 20 : Gaur egun, lehen urte baino gehiago izan zen.
+[2024-02-13 13:16:06] Best translation 40 : (I) «Ez al da nire seme-alabarik gabe, eta, "Ez da inoiz esan nahi.
+[2024-02-13 13:16:06] Best translation 80 : Ondoren, lehen aldiz, lehen aldiz, lehen aldiz, lehen aldiz.
+[2024-02-13 13:16:06] Best translation 160 : Gaur egun, hiru urte baino gehiago egin dira, eta, eta, hiru egun, hiru egun.
+[2024-02-13 13:16:06] Best translation 320 : Gaur egun, bi urte ditu.
+[2024-02-13 13:16:06] Best translation 640 : Informazio gehiago, eta gure zerbitzuak eskaintzen ditugu.
+[2024-02-13 13:16:07] Total translation time: 4.20033s
+[2024-02-13 13:16:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 13:16:08] [valid] Ep. 4 : Up. 5000 : chrf : 11.2482 : new best
+[2024-02-13 13:16:08] Translating validation set...
+[2024-02-13 13:16:12] Best translation 0 : • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • �
+[2024-02-13 13:16:12] Best translation 1 : Hala ere, hainbat pertsona dira, eta, baita ere, eta, eta, beste batzuk ere, beste batzuk ere.
+[2024-02-13 13:16:12] Best translation 2 : 2016ko urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilaren urtarrilan (h.
+[2024-02-13 13:16:12] Best translation 3 : Gaur egun, Estatu Batuetakoa izan zen.
+[2024-02-13 13:16:12] Best translation 4 : • • • • • • • • • • • • • • • • • • • •�� • • • �
+[2024-02-13 13:16:12] Best translation 5 : Bi urte geroago, hiru urte izan zen.
+[2024-02-13 13:16:12] Best translation 10 : 17. urtean, 16. urtean, 16. urtean, 16. urtean, bere burua, eta bere burua, eta, eta, bere burua, eta, eta, bere burua, eta bere burua, eta, eta, eta, eta bere burua ere.
+[2024-02-13 13:16:12] Best translation 20 : Gaur egun, lehen urte baino gehiago izan zen.
+[2024-02-13 13:16:12] Best translation 40 : (I) «Ez al da nire seme-alabarik gabe, eta, "Ez da inoiz esan nahi.
+[2024-02-13 13:16:12] Best translation 80 : Ondoren, lehen aldiz, lehen aldiz, lehen aldiz, lehen aldiz.
+[2024-02-13 13:16:12] Best translation 160 : Gaur egun, hiru urte baino gehiago egin dira, eta, eta, hiru egun, hiru egun.
+[2024-02-13 13:16:12] Best translation 320 : Gaur egun, bi urte ditu.
+[2024-02-13 13:16:12] Best translation 640 : Informazio gehiago, eta gure zerbitzuak eskaintzen ditugu.
+[2024-02-13 13:16:12] Total translation time: 3.96058s
+[2024-02-13 13:16:12] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 13:16:13] [valid] Ep. 4 : Up. 5000 : bleu : 0.508171 : new best
+[2024-02-13 13:16:13] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 13:16:15] [valid] Ep. 4 : Up. 5000 : ce-mean-words : 6.05557 : new best
+[2024-02-13 13:17:04] Seen 6,682,325 samples
+[2024-02-13 13:17:04] Starting data epoch 5 in logical epoch 5
+[2024-02-13 13:25:28] Ep. 5 : Up. 6000 : Sen. 4,529,073 : Cost 6.31946564 : Time 572.72s : 130507.32 words/s : gNorm 1.5419
+[2024-02-13 13:28:30] Seen 6,682,284 samples
+[2024-02-13 13:28:30] Starting data epoch 6 in logical epoch 6
+[2024-02-13 13:34:34] Ep. 6 : Up. 7000 : Sen. 3,096,036 : Cost 6.05015850 : Time 545.83s : 136081.83 words/s : gNorm 1.3982
+[2024-02-13 13:39:52] Seen 6,682,263 samples
+[2024-02-13 13:39:52] Starting data epoch 7 in logical epoch 7
+[2024-02-13 13:43:43] Ep. 7 : Up. 8000 : Sen. 1,839,318 : Cost 5.83480692 : Time 549.04s : 136490.15 words/s : gNorm 1.1479
+[2024-02-13 13:51:16] Seen 6,682,245 samples
+[2024-02-13 13:51:16] Starting data epoch 8 in logical epoch 8
+[2024-02-13 13:52:43] Ep. 8 : Up. 9000 : Sen. 384,446 : Cost 5.66944218 : Time 540.00s : 135868.96 words/s : gNorm 1.1140
+[2024-02-13 14:00:56] Ep. 8 : Up. 10000 : Sen. 5,513,590 : Cost 5.47488880 : Time 492.91s : 152116.68 words/s : gNorm 1.1634
+[2024-02-13 14:00:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 14:00:58] Saving Adam parameters
+[2024-02-13 14:01:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 14:01:03] Translating validation set...
+[2024-02-13 14:01:06] Best translation 0 : 1980ko hamarkadaren hasieran, New York-eko Unibertsitateko ikerketa-proiektu bat sortu zen.
+[2024-02-13 14:01:06] Best translation 1 : Zenbait kasutan, sexu-harremanak izan daitezke, hala nola, sexu-harremanak, sexu-harremanak eta sexu-harremanak izan daitezke.
+[2024-02-13 14:01:06] Best translation 2 : Uztailaren 9an, 30ean, autobus-geltokira joan zen, eta, ondoren, trenbide-geltokira joan zen.
+[2024-02-13 14:01:06] Best translation 3 : The Guardian-ek diseinatu zuen.
+[2024-02-13 14:01:06] Best translation 4 : Banku-transferentziak banku-transferentzia bat egin du.
+[2024-02-13 14:01:06] Best translation 5 : 28 urte zituela, berriz, hiru urte geroago, hiru urte zituela.
+[2024-02-13 14:01:06] Best translation 10 : 11:9 Eta, beraz,, San Frantziskoko errege-erreginak, eta, ondoren, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, eta, ondoren, San Petersburgon.
+[2024-02-13 14:01:06] Best translation 20 : Hala ere, gaur egun Estatu Batuetara joatea erabaki zuen.
+[2024-02-13 14:01:06] Best translation 40 : John Johnsonek esan zuen: "Zergatik ikasi behar izan zuen, eta zergatik ikasi behar izan zuen?" (Barreak) (Barreak)
+[2024-02-13 14:01:06] Best translation 80 : Azkenik, Frantziako Iraultzak independentzia lortu zuen.
+[2024-02-13 14:01:06] Best translation 160 : Martxoaren 19an, Athletic Clubek lau domina irabazi zituen, eta, ondoren, lau gol irabazi zituen.
+[2024-02-13 14:01:06] Best translation 320 : Gaur egun, 600.000 biztanle baino gehiago ditu.
+[2024-02-13 14:01:06] Best translation 640 : Ikasleek beren lana eta lan egiteko aukera ematen dute.
+[2024-02-13 14:01:07] Total translation time: 3.65179s
+[2024-02-13 14:01:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 14:01:08] [valid] Ep. 8 : Up. 10000 : chrf : 16.833 : new best
+[2024-02-13 14:01:08] Translating validation set...
+[2024-02-13 14:01:11] Best translation 0 : 1980ko hamarkadaren hasieran, New York-eko Unibertsitateko ikerketa-proiektu bat sortu zen.
+[2024-02-13 14:01:11] Best translation 1 : Zenbait kasutan, sexu-harremanak izan daitezke, hala nola, sexu-harremanak, sexu-harremanak eta sexu-harremanak izan daitezke.
+[2024-02-13 14:01:11] Best translation 2 : Uztailaren 9an, 30ean, autobus-geltokira joan zen, eta, ondoren, trenbide-geltokira joan zen.
+[2024-02-13 14:01:11] Best translation 3 : The Guardian-ek diseinatu zuen.
+[2024-02-13 14:01:11] Best translation 4 : Banku-transferentziak banku-transferentzia bat egin du.
+[2024-02-13 14:01:11] Best translation 5 : 28 urte zituela, berriz, hiru urte geroago, hiru urte zituela.
+[2024-02-13 14:01:11] Best translation 10 : 11:9 Eta, beraz,, San Frantziskoko errege-erreginak, eta, ondoren, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, San Petersburgon, eta, ondoren, San Petersburgon.
+[2024-02-13 14:01:11] Best translation 20 : Hala ere, gaur egun Estatu Batuetara joatea erabaki zuen.
+[2024-02-13 14:01:11] Best translation 40 : John Johnsonek esan zuen: "Zergatik ikasi behar izan zuen, eta zergatik ikasi behar izan zuen?" (Barreak) (Barreak)
+[2024-02-13 14:01:11] Best translation 80 : Azkenik, Frantziako Iraultzak independentzia lortu zuen.
+[2024-02-13 14:01:11] Best translation 160 : Martxoaren 19an, Athletic Clubek lau domina irabazi zituen, eta, ondoren, lau gol irabazi zituen.
+[2024-02-13 14:01:11] Best translation 320 : Gaur egun, 600.000 biztanle baino gehiago ditu.
+[2024-02-13 14:01:11] Best translation 640 : Ikasleek beren lana eta lan egiteko aukera ematen dute.
+[2024-02-13 14:01:11] Total translation time: 2.90874s
+[2024-02-13 14:01:11] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 14:01:12] [valid] Ep. 8 : Up. 10000 : bleu : 1.33509 : new best
+[2024-02-13 14:01:12] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 14:01:13] [valid] Ep. 8 : Up. 10000 : ce-mean-words : 4.86381 : new best
+[2024-02-13 14:02:52] Seen 6,682,254 samples
+[2024-02-13 14:02:52] Starting data epoch 9 in logical epoch 9
+[2024-02-13 14:10:23] Ep. 9 : Up. 11000 : Sen. 3,999,786 : Cost 5.23163271 : Time 567.03s : 132635.58 words/s : gNorm 1.1595
+[2024-02-13 14:14:13] Seen 6,682,227 samples
+[2024-02-13 14:14:13] Starting data epoch 10 in logical epoch 10
+[2024-02-13 14:19:21] Ep. 10 : Up. 12000 : Sen. 2,585,624 : Cost 4.95274019 : Time 538.25s : 137352.71 words/s : gNorm 1.0517
+[2024-02-13 14:25:29] Seen 6,682,239 samples
+[2024-02-13 14:25:29] Starting data epoch 11 in logical epoch 11
+[2024-02-13 14:28:23] Ep. 11 : Up. 13000 : Sen. 1,167,881 : Cost 4.62407780 : Time 541.87s : 135574.60 words/s : gNorm 0.9117
+[2024-02-13 14:36:33] Ep. 11 : Up. 14000 : Sen. 6,483,674 : Cost 4.33320284 : Time 489.78s : 151504.22 words/s : gNorm 0.9491
+[2024-02-13 14:36:51] Seen 6,682,248 samples
+[2024-02-13 14:36:51] Starting data epoch 12 in logical epoch 12
+[2024-02-13 14:45:42] Ep. 12 : Up. 15000 : Sen. 4,945,843 : Cost 4.07449389 : Time 549.16s : 138431.81 words/s : gNorm 0.8700
+[2024-02-13 14:45:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 14:45:44] Saving Adam parameters
+[2024-02-13 14:45:46] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 14:45:49] Translating validation set...
+[2024-02-13 14:45:51] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko zientzialariek diagnostiko-tresna berri bat iragarri zuten mota horretako gelaxkek mota jakin batean erabili ahal izan dezaketena: ordenagailu eramangarri eramangarri txiki bat erabili ahal izango da, batez ere Estatu Batuetan.
+[2024-02-13 14:45:51] Best translation 1 : Ikertzaileek diote minbizia, tuberkulosia, GIBa eta malaria gaixotasun baxuko herrialdeetan detektatu daitezkeela, non minbizi-tasak herrialde aberatsenen erdia izan daitezkeen.
+[2024-02-13 14:45:51] Best translation 2 : JAS 39C torlojua trenbidean sartu zen, 90.30. urtean zehar, eta eztanda egin zuen, aireportuetako hegaldiak itxiz.
+[2024-02-13 14:45:51] Best translation 3 : Pilotua Diktrit Patave bezala identifikatu zuten.
+[2024-02-13 14:45:51] Best translation 4 : Tokiko hedabideek aireportuko hegazkin bat osatzen dute, erantzun bitartean.
+[2024-02-13 14:45:51] Best translation 5 : 28 urte zituela, Valladolidek Bartzelonara joan zen duela hiru denboraldi, Sevillatik.
+[2024-02-13 14:45:51] Best translation 10 : 11:29 Ondoren, protestek Whitehallera joan zen, Pearl Square-ra, Aldwick-era, eta Kings-era joan zen, non Alderdi Kontserbadorearen Foroan parte hartu zuten.
+[2024-02-13 14:45:51] Best translation 20 : Hala eta guztiz ere, gerra garaian, beharbada, beharbada, gerra garaian ihes egin ahal izan zuen.
+[2024-02-13 14:45:51] Best translation 40 : John Grantek, WNBAko Buffaloko (Reading Rainbow-en etxea) esan zuen: "Irakurtzeko haurrei irakatsi zien zergatik irakurtzen duten, irakurtzen, irakurtzen, irakurtzen [...]
+[2024-02-13 14:45:51] Best translation 80 : Martxoaren 1ean, Cabo Verde garaitu zuten finalean.
+[2024-02-13 14:45:51] Best translation 160 : Stewart, Gordon, Kenth, eta Harkock-ek lau lasterketa egin zituen denboraldi horretan.
+[2024-02-13 14:45:51] Best translation 320 : Ordutik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 14:45:51] Best translation 640 : Ikasleek beren erritmo propioan lan egiteko eta informazioaren erritmoa kontrolatzeko gaitasuna ematen dute.
+[2024-02-13 14:45:51] Total translation time: 2.05640s
+[2024-02-13 14:45:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 14:45:53] [valid] Ep. 12 : Up. 15000 : chrf : 41.6125 : new best
+[2024-02-13 14:45:53] Translating validation set...
+[2024-02-13 14:45:55] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko zientzialariek diagnostiko-tresna berri bat iragarri zuten mota horretako gelaxkek mota jakin batean erabili ahal izan dezaketena: ordenagailu eramangarri eramangarri txiki bat erabili ahal izango da, batez ere Estatu Batuetan.
+[2024-02-13 14:45:55] Best translation 1 : Ikertzaileek diote minbizia, tuberkulosia, GIBa eta malaria gaixotasun baxuko herrialdeetan detektatu daitezkeela, non minbizi-tasak herrialde aberatsenen erdia izan daitezkeen.
+[2024-02-13 14:45:55] Best translation 2 : JAS 39C torlojua trenbidean sartu zen, 90.30. urtean zehar, eta eztanda egin zuen, aireportuetako hegaldiak itxiz.
+[2024-02-13 14:45:55] Best translation 3 : Pilotua Diktrit Patave bezala identifikatu zuten.
+[2024-02-13 14:45:55] Best translation 4 : Tokiko hedabideek aireportuko hegazkin bat osatzen dute, erantzun bitartean.
+[2024-02-13 14:45:55] Best translation 5 : 28 urte zituela, Valladolidek Bartzelonara joan zen duela hiru denboraldi, Sevillatik.
+[2024-02-13 14:45:55] Best translation 10 : 11:29 Ondoren, protestek Whitehallera joan zen, Pearl Square-ra, Aldwick-era, eta Kings-era joan zen, non Alderdi Kontserbadorearen Foroan parte hartu zuten.
+[2024-02-13 14:45:55] Best translation 20 : Hala eta guztiz ere, gerra garaian, beharbada, beharbada, gerra garaian ihes egin ahal izan zuen.
+[2024-02-13 14:45:55] Best translation 40 : John Grantek, WNBAko Buffaloko (Reading Rainbow-en etxea) esan zuen: "Irakurtzeko haurrei irakatsi zien zergatik irakurtzen duten, irakurtzen, irakurtzen, irakurtzen [...]
+[2024-02-13 14:45:55] Best translation 80 : Martxoaren 1ean, Cabo Verde garaitu zuten finalean.
+[2024-02-13 14:45:55] Best translation 160 : Stewart, Gordon, Kenth, eta Harkock-ek lau lasterketa egin zituen denboraldi horretan.
+[2024-02-13 14:45:55] Best translation 320 : Ordutik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 14:45:55] Best translation 640 : Ikasleek beren erritmo propioan lan egiteko eta informazioaren erritmoa kontrolatzeko gaitasuna ematen dute.
+[2024-02-13 14:45:55] Total translation time: 1.80453s
+[2024-02-13 14:45:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 14:45:56] [valid] Ep. 12 : Up. 15000 : bleu : 9.12406 : new best
+[2024-02-13 14:45:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 14:45:57] [valid] Ep. 12 : Up. 15000 : ce-mean-words : 2.94113 : new best
+[2024-02-13 14:48:24] Seen 6,682,239 samples
+[2024-02-13 14:48:24] Starting data epoch 13 in logical epoch 13
+[2024-02-13 14:55:00] Ep. 13 : Up. 16000 : Sen. 3,448,753 : Cost 3.92115307 : Time 558.72s : 132338.70 words/s : gNorm 0.7381
+[2024-02-13 14:59:44] Seen 6,682,252 samples
+[2024-02-13 14:59:44] Starting data epoch 14 in logical epoch 14
+[2024-02-13 15:04:07] Ep. 14 : Up. 17000 : Sen. 2,135,615 : Cost 3.83052754 : Time 546.62s : 135700.90 words/s : gNorm 0.7243
+[2024-02-13 15:11:08] Seen 6,682,299 samples
+[2024-02-13 15:11:08] Starting data epoch 15 in logical epoch 15
+[2024-02-13 15:13:09] Ep. 15 : Up. 18000 : Sen. 674,782 : Cost 3.73629332 : Time 541.58s : 136772.05 words/s : gNorm 0.6247
+[2024-02-13 15:21:19] Ep. 15 : Up. 19000 : Sen. 5,867,416 : Cost 3.63327718 : Time 489.83s : 151794.36 words/s : gNorm 0.6374
+[2024-02-13 15:22:27] Seen 6,682,237 samples
+[2024-02-13 15:22:27] Starting data epoch 16 in logical epoch 16
+[2024-02-13 15:30:29] Ep. 16 : Up. 20000 : Sen. 4,353,571 : Cost 3.52176118 : Time 550.97s : 136942.13 words/s : gNorm 0.7160
+[2024-02-13 15:30:30] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 15:30:32] Saving Adam parameters
+[2024-02-13 15:30:34] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 15:30:37] Translating validation set...
+[2024-02-13 15:30:38] Best translation 0 : Astelehenean, Stanfordeko Medikuntza Eskolako zientzialariek adierazi zuten diagnostiko-tresna berri bat asmatu zutela, eta mota horretako zelulak ordenatu ditzake: txip txiki bat, ziurrenik, Estatu Batuetako ehuneko bateko tinta-aztarna estandarrak erabiliz fabrikatu daitekeena.
+[2024-02-13 15:30:38] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ahal izango dituzte errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdiak izan daitezkeen.
+[2024-02-13 15:30:38] Best translation 2 : JAS 39C Gripen-ek ibilbide bat egin zuen 9:30 inguruan, tokiko ordua (0230 UTC) eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 15:30:38] Best translation 3 : Pilotua Dilokrit Patateve buru izendatu zuten.
+[2024-02-13 15:30:38] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat bildu dute erantzun bitartean.
+[2024-02-13 15:30:38] Best translation 5 : Orain dela 28 urte, Vidalek hiru denboraldi egin zituen Barçan, Sevillatik.
+[2024-02-13 15:30:38] Best translation 10 : 11:29 inguruan, protestek Whitehall, iraganeko Trafalgar Square, errepidean zehar, Aldwych eta Kingsway igaro ziren Holbornera, non Alderdi kontserbadorea Udaberriko Foroa ospatzen ari ziren Grand Connaught Room hotelean.
+[2024-02-13 15:30:38] Best translation 20 : Hessek adierazi zuen herrialdearen alde egin zezakeela krisi garaian.
+[2024-02-13 15:30:38] Best translation 40 : John Grant-ek, WNBAko Buffalo-tik (Reading Rainbow's home Station) esan zuen: "Irakurtzeko, irakurtzeko, irakurtzeko, ... [show] haurrentzako maitasuna bultzatu zuen liburu bat jasotzeko eta irakurtzeko".
+[2024-02-13 15:30:38] Best translation 80 : Marochydorek, ondoren, Cabooltura garaitu zuen Lehen Mailan.
+[2024-02-13 15:30:38] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick gidarien txapelketarako postu gorenak gainditu zituzten lau lasterketarekin denboraldi horretan.
+[2024-02-13 15:30:38] Best translation 320 : Ordutik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 15:30:39] Best translation 640 : Ikasleek beren erritmoan lan egiteko eta informazio estatistikoaren erritmoa kontrolatzeko gaitasuna ematen dute.
+[2024-02-13 15:30:39] Total translation time: 1.78059s
+[2024-02-13 15:30:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 15:30:40] [valid] Ep. 16 : Up. 20000 : chrf : 51.5813 : new best
+[2024-02-13 15:30:40] Translating validation set...
+[2024-02-13 15:30:41] Best translation 0 : Astelehenean, Stanfordeko Medikuntza Eskolako zientzialariek adierazi zuten diagnostiko-tresna berri bat asmatu zutela, eta mota horretako zelulak ordenatu ditzake: txip txiki bat, ziurrenik, Estatu Batuetako ehuneko bateko tinta-aztarna estandarrak erabiliz fabrikatu daitekeena.
+[2024-02-13 15:30:41] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ahal izango dituzte errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdiak izan daitezkeen.
+[2024-02-13 15:30:41] Best translation 2 : JAS 39C Gripen-ek ibilbide bat egin zuen 9:30 inguruan, tokiko ordua (0230 UTC) eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 15:30:41] Best translation 3 : Pilotua Dilokrit Patateve buru izendatu zuten.
+[2024-02-13 15:30:41] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat bildu dute erantzun bitartean.
+[2024-02-13 15:30:41] Best translation 5 : Orain dela 28 urte, Vidalek hiru denboraldi egin zituen Barçan, Sevillatik.
+[2024-02-13 15:30:41] Best translation 10 : 11:29 inguruan, protestek Whitehall, iraganeko Trafalgar Square, errepidean zehar, Aldwych eta Kingsway igaro ziren Holbornera, non Alderdi kontserbadorea Udaberriko Foroa ospatzen ari ziren Grand Connaught Room hotelean.
+[2024-02-13 15:30:41] Best translation 20 : Hessek adierazi zuen herrialdearen alde egin zezakeela krisi garaian.
+[2024-02-13 15:30:41] Best translation 40 : John Grant-ek, WNBAko Buffalo-tik (Reading Rainbow's home Station) esan zuen: "Irakurtzeko, irakurtzeko, irakurtzeko, ... [show] haurrentzako maitasuna bultzatu zuen liburu bat jasotzeko eta irakurtzeko".
+[2024-02-13 15:30:41] Best translation 80 : Marochydorek, ondoren, Cabooltura garaitu zuen Lehen Mailan.
+[2024-02-13 15:30:41] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick gidarien txapelketarako postu gorenak gainditu zituzten lau lasterketarekin denboraldi horretan.
+[2024-02-13 15:30:41] Best translation 320 : Ordutik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 15:30:41] Best translation 640 : Ikasleek beren erritmoan lan egiteko eta informazio estatistikoaren erritmoa kontrolatzeko gaitasuna ematen dute.
+[2024-02-13 15:30:41] Total translation time: 1.29129s
+[2024-02-13 15:30:41] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 15:30:43] [valid] Ep. 16 : Up. 20000 : bleu : 14.7187 : new best
+[2024-02-13 15:30:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 15:30:44] [valid] Ep. 16 : Up. 20000 : ce-mean-words : 2.21098 : new best
+[2024-02-13 15:34:03] Seen 6,682,242 samples
+[2024-02-13 15:34:03] Starting data epoch 17 in logical epoch 17
+[2024-02-13 15:39:46] Ep. 17 : Up. 21000 : Sen. 2,974,008 : Cost 3.52062392 : Time 556.57s : 132801.31 words/s : gNorm 0.6080
+[2024-02-13 15:45:23] Seen 6,682,262 samples
+[2024-02-13 15:45:23] Starting data epoch 18 in logical epoch 18
+[2024-02-13 15:48:47] Ep. 18 : Up. 22000 : Sen. 1,450,112 : Cost 3.49862361 : Time 541.01s : 135999.45 words/s : gNorm 0.5992
+[2024-02-13 15:56:42] Seen 6,682,228 samples
+[2024-02-13 15:56:42] Starting data epoch 19 in logical epoch 19
+[2024-02-13 15:57:47] Ep. 19 : Up. 23000 : Sen. 139,216 : Cost 3.43755865 : Time 539.89s : 137215.99 words/s : gNorm 0.5876
+[2024-02-13 16:06:03] Ep. 19 : Up. 24000 : Sen. 5,275,392 : Cost 3.35649991 : Time 496.36s : 151706.51 words/s : gNorm 0.5610
+[2024-02-13 16:08:01] Seen 6,682,232 samples
+[2024-02-13 16:08:01] Starting data epoch 20 in logical epoch 20
+[2024-02-13 16:15:10] Ep. 20 : Up. 25000 : Sen. 3,779,564 : Cost 3.33741188 : Time 546.47s : 137386.46 words/s : gNorm 0.6127
+[2024-02-13 16:15:10] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 16:15:12] Saving Adam parameters
+[2024-02-13 16:15:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 16:15:17] Translating validation set...
+[2024-02-13 16:15:18] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntza Eskolako zientzialariek iragarri zuten diagnostiko-tresna berri bat asmatu zutela, eta mota horretako zelulak ordenatu ditzakete: txip inprimagarri txiki bat, ziurrenik tinta-injektu estandarren inprimagailuak erabiliz fabrikatu daitekeena, ehuneko bat dolar bakoitzeko.
+[2024-02-13 16:15:18] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ditzakete errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdiak izan daitezkeen.
+[2024-02-13 16:15:18] Best translation 2 : JAS 39C Gripen-ek 09:30etan tokiko ordua (02030 UTC) jo zuen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 16:15:18] Best translation 3 : Pilotua Dikrit Pattave eskuadroi-buru gisa identifikatu zen.
+[2024-02-13 16:15:18] Best translation 4 : Tokiko hedabideek jakinarazi dute aireportuko suhiltzaileen ibilgailu bat inguratu dela erantzun bitartean.
+[2024-02-13 16:15:18] Best translation 5 : Orain dela 28 urte, Vidalek hiru denboraldi egin zituen Barçan, Sevillan.
+[2024-02-13 16:15:18] Best translation 10 : 11:29 inguruan, protestek Whitehall, iragan Trafalgar Square, errepidean zehar, Aldwych eta Kingsway gurutzatuz Holborn aldera, non Alderdi Kontserbadorea udaberriko Foroa eusten ari ziren Grand Connaught Room hotelean.
+[2024-02-13 16:15:18] Best translation 20 : Hessieh-ek adierazi zuen Ma-k herrialdetik ihes egin zezakeela krisi garaian.
+[2024-02-13 16:15:18] Best translation 40 : John Grant-ek, WNED Buffalo-tik (Reading Rainbow's home Station) esan zuen "Reading Rainbow-ek umeak irakurtzen irakatsi zuen, ... irakurketaren maitasuna — [show] umeek liburu bat jaso eta irakurtzeko animatu zituzten".
+[2024-02-13 16:15:18] Best translation 80 : Marochydorek Caboolture garaitu zuen Lehen Mailan.
+[2024-02-13 16:15:18] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketaren lehen hamar postuak gainditu zituzten lau lasterketarekin denboraldi horretan.
+[2024-02-13 16:15:18] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 16:15:19] Best translation 640 : Ikasleak bere erritmoan lan egiteko eta informazio teknikoaren erritmoa kontrolatzeko gaitasuna ematen du.
+[2024-02-13 16:15:19] Total translation time: 1.82022s
+[2024-02-13 16:15:19] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 16:15:20] [valid] Ep. 20 : Up. 25000 : chrf : 54.0977 : new best
+[2024-02-13 16:15:20] Translating validation set...
+[2024-02-13 16:15:21] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntza Eskolako zientzialariek iragarri zuten diagnostiko-tresna berri bat asmatu zutela, eta mota horretako zelulak ordenatu ditzakete: txip inprimagarri txiki bat, ziurrenik tinta-injektu estandarren inprimagailuak erabiliz fabrikatu daitekeena, ehuneko bat dolar bakoitzeko.
+[2024-02-13 16:15:21] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ditzakete errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdiak izan daitezkeen.
+[2024-02-13 16:15:21] Best translation 2 : JAS 39C Gripen-ek 09:30etan tokiko ordua (02030 UTC) jo zuen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 16:15:21] Best translation 3 : Pilotua Dikrit Pattave eskuadroi-buru gisa identifikatu zen.
+[2024-02-13 16:15:21] Best translation 4 : Tokiko hedabideek jakinarazi dute aireportuko suhiltzaileen ibilgailu bat inguratu dela erantzun bitartean.
+[2024-02-13 16:15:21] Best translation 5 : Orain dela 28 urte, Vidalek hiru denboraldi egin zituen Barçan, Sevillan.
+[2024-02-13 16:15:21] Best translation 10 : 11:29 inguruan, protestek Whitehall, iragan Trafalgar Square, errepidean zehar, Aldwych eta Kingsway gurutzatuz Holborn aldera, non Alderdi Kontserbadorea udaberriko Foroa eusten ari ziren Grand Connaught Room hotelean.
+[2024-02-13 16:15:21] Best translation 20 : Hessieh-ek adierazi zuen Ma-k herrialdetik ihes egin zezakeela krisi garaian.
+[2024-02-13 16:15:21] Best translation 40 : John Grant-ek, WNED Buffalo-tik (Reading Rainbow's home Station) esan zuen "Reading Rainbow-ek umeak irakurtzen irakatsi zuen, ... irakurketaren maitasuna — [show] umeek liburu bat jaso eta irakurtzeko animatu zituzten".
+[2024-02-13 16:15:21] Best translation 80 : Marochydorek Caboolture garaitu zuen Lehen Mailan.
+[2024-02-13 16:15:21] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketaren lehen hamar postuak gainditu zituzten lau lasterketarekin denboraldi horretan.
+[2024-02-13 16:15:21] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 16:15:22] Best translation 640 : Ikasleak bere erritmoan lan egiteko eta informazio teknikoaren erritmoa kontrolatzeko gaitasuna ematen du.
+[2024-02-13 16:15:22] Total translation time: 1.19138s
+[2024-02-13 16:15:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 16:15:23] [valid] Ep. 20 : Up. 25000 : bleu : 16.5817 : new best
+[2024-02-13 16:15:23] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 16:15:25] [valid] Ep. 20 : Up. 25000 : ce-mean-words : 2.04342 : new best
+[2024-02-13 16:19:35] Seen 6,682,192 samples
+[2024-02-13 16:19:35] Starting data epoch 21 in logical epoch 21
+[2024-02-13 16:24:28] Ep. 21 : Up. 26000 : Sen. 2,413,669 : Cost 3.35063386 : Time 558.11s : 132579.02 words/s : gNorm 0.5794
+[2024-02-13 16:30:56] Seen 6,682,280 samples
+[2024-02-13 16:30:56] Starting data epoch 22 in logical epoch 22
+[2024-02-13 16:33:28] Ep. 22 : Up. 27000 : Sen. 968,748 : Cost 3.33390260 : Time 540.14s : 136156.18 words/s : gNorm 0.5599
+[2024-02-13 16:41:38] Ep. 22 : Up. 28000 : Sen. 6,286,045 : Cost 3.28810334 : Time 489.46s : 152505.39 words/s : gNorm 0.6215
+[2024-02-13 16:42:14] Seen 6,682,247 samples
+[2024-02-13 16:42:14] Starting data epoch 23 in logical epoch 23
+[2024-02-13 16:50:51] Ep. 23 : Up. 29000 : Sen. 4,807,216 : Cost 3.22302842 : Time 553.19s : 136319.74 words/s : gNorm 0.7359
+[2024-02-13 16:53:37] Seen 6,682,266 samples
+[2024-02-13 16:53:37] Starting data epoch 24 in logical epoch 24
+[2024-02-13 16:59:56] Ep. 24 : Up. 30000 : Sen. 3,208,577 : Cost 3.24216461 : Time 545.38s : 136877.28 words/s : gNorm 0.4870
+[2024-02-13 16:59:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 16:59:58] Saving Adam parameters
+[2024-02-13 17:00:01] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 17:00:03] Translating validation set...
+[2024-02-13 17:00:05] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko-tresna berri baten asmakuntza iragarri zuten, eta mota horretako zelulak ordenatu ditzakete: txip inprimagarri txiki bat, ziurrenik AEBetako zentimo bateko tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeena.
+[2024-02-13 17:00:05] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ditzakete errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdia izan daitezkeen.
+[2024-02-13 17:00:05] Best translation 2 : JAS 39C Gripen trenbidea 9:30 am inguruko pista batean erori zen (0230 UTC), eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 17:00:05] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko burua bezala identifikatu zuten.
+[2024-02-13 17:00:05] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen auto bat inguratu dute erantzun bitartean.
+[2024-02-13 17:00:05] Best translation 5 : 28 urteko Vidalek hiru denboraldi zituen Barçan, Sevillan.
+[2024-02-13 17:00:05] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik igaroz, eta Aldwych-ek eta Kingsway-k Holborn-era iritsi ziren, non Alderdi Kontserbadorearen Udaberriko Foroa ospatzen ari ziren Grand Connaught Room hotelean.
+[2024-02-13 17:00:05] Best translation 20 : Hsieh-k adierazi zuen Ma-k herrialdetik ihes egin zezakeela krisi garaian.
+[2024-02-13 17:00:05] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's home station) esan zuen "Reading Rainbow-ek umeak irakurtzen irakatsi zuen, ... irakurketaren maitasuna - [show] umeek liburu bat jaso eta irakurtzeko animatu zituzten".
+[2024-02-13 17:00:05] Best translation 80 : Marochydorek Caboolture garaitu zuen Lehen Mailan.
+[2024-02-13 17:00:05] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako hamar postu onenen artean sailkatu ziren lau denboralditan.
+[2024-02-13 17:00:05] Best translation 320 : Ordutik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 17:00:05] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio teknikoaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 17:00:05] Total translation time: 1.80146s
+[2024-02-13 17:00:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 17:00:07] [valid] Ep. 24 : Up. 30000 : chrf : 54.5172 : new best
+[2024-02-13 17:00:07] Translating validation set...
+[2024-02-13 17:00:08] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko-tresna berri baten asmakuntza iragarri zuten, eta mota horretako zelulak ordenatu ditzakete: txip inprimagarri txiki bat, ziurrenik AEBetako zentimo bateko tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeena.
+[2024-02-13 17:00:08] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ditzakete errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdia izan daitezkeen.
+[2024-02-13 17:00:08] Best translation 2 : JAS 39C Gripen trenbidea 9:30 am inguruko pista batean erori zen (0230 UTC), eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 17:00:08] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko burua bezala identifikatu zuten.
+[2024-02-13 17:00:08] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen auto bat inguratu dute erantzun bitartean.
+[2024-02-13 17:00:08] Best translation 5 : 28 urteko Vidalek hiru denboraldi zituen Barçan, Sevillan.
+[2024-02-13 17:00:08] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik igaroz, eta Aldwych-ek eta Kingsway-k Holborn-era iritsi ziren, non Alderdi Kontserbadorearen Udaberriko Foroa ospatzen ari ziren Grand Connaught Room hotelean.
+[2024-02-13 17:00:08] Best translation 20 : Hsieh-k adierazi zuen Ma-k herrialdetik ihes egin zezakeela krisi garaian.
+[2024-02-13 17:00:08] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's home station) esan zuen "Reading Rainbow-ek umeak irakurtzen irakatsi zuen, ... irakurketaren maitasuna - [show] umeek liburu bat jaso eta irakurtzeko animatu zituzten".
+[2024-02-13 17:00:08] Best translation 80 : Marochydorek Caboolture garaitu zuen Lehen Mailan.
+[2024-02-13 17:00:08] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako hamar postu onenen artean sailkatu ziren lau denboralditan.
+[2024-02-13 17:00:08] Best translation 320 : Ordutik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 17:00:08] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio teknikoaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 17:00:08] Total translation time: 1.36036s
+[2024-02-13 17:00:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 17:00:09] [valid] Ep. 24 : Up. 30000 : bleu : 16.7323 : new best
+[2024-02-13 17:00:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 17:00:11] [valid] Ep. 24 : Up. 30000 : ce-mean-words : 1.98152 : new best
+[2024-02-13 17:05:12] Seen 6,682,200 samples
+[2024-02-13 17:05:12] Starting data epoch 25 in logical epoch 25
+[2024-02-13 17:09:10] Ep. 25 : Up. 31000 : Sen. 1,843,743 : Cost 3.25089955 : Time 553.56s : 132946.54 words/s : gNorm 0.4695
+[2024-02-13 17:16:30] Seen 6,682,284 samples
+[2024-02-13 17:16:30] Starting data epoch 26 in logical epoch 26
+[2024-02-13 17:18:12] Ep. 26 : Up. 32000 : Sen. 444,843 : Cost 3.23891425 : Time 542.40s : 136429.04 words/s : gNorm 0.5307
+[2024-02-13 17:26:24] Ep. 26 : Up. 33000 : Sen. 5,655,290 : Cost 3.17680216 : Time 491.96s : 151819.16 words/s : gNorm 0.7274
+[2024-02-13 17:27:50] Seen 6,682,235 samples
+[2024-02-13 17:27:50] Starting data epoch 27 in logical epoch 27
+[2024-02-13 17:35:35] Ep. 27 : Up. 34000 : Sen. 4,148,916 : Cost 3.14822197 : Time 551.16s : 137414.26 words/s : gNorm 0.5906
+[2024-02-13 17:39:10] Seen 6,682,242 samples
+[2024-02-13 17:39:10] Starting data epoch 28 in logical epoch 28
+[2024-02-13 17:44:38] Ep. 28 : Up. 35000 : Sen. 2,782,228 : Cost 3.18774867 : Time 542.41s : 136872.00 words/s : gNorm 0.4691
+[2024-02-13 17:44:38] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 17:44:40] Saving Adam parameters
+[2024-02-13 17:44:42] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 17:44:45] Translating validation set...
+[2024-02-13 17:44:46] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko tresna berri bat asmatu zuten, zelulak motaren arabera ordenatu ahal izateko: txip inprimagarri txiki bat, ziurrenik AEBetako ehuneko bat inguruko tintazko inprimagailu estandarrak erabiliz fabrikatu daitekeena.
+[2024-02-13 17:44:46] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ditzakete diru-sarrera txikiko herrialdeetan, eta bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdia izan daitezke.
+[2024-02-13 17:44:46] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 17:44:46] Best translation 3 : Pilotua Dikrit Pattavee eskuadroi-buru gisa identifikatu zuten.
+[2024-02-13 17:44:46] Best translation 4 : Tokiko hedabideek aireportuko suhiltzaileen ibilgailu bat inguratu dute erantzun bitartean.
+[2024-02-13 17:44:46] Best translation 5 : 28 urteko Vidal hiru denboraldi lehenago sartu zen Barçara, Sevillatik.
+[2024-02-13 17:44:46] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik igaroz, Strand-etik pasatuz, Aldwych-etik eta Kingsway-tik Holborn-era, non Alderdi Kontserbadorea Grand Connaught Room hotelean ospatu zen.
+[2024-02-13 17:44:46] Best translation 20 : Hsieh-k adierazi zuen Ma-k herrialdetik ihes egin dezakeela krisi garaian.
+[2024-02-13 17:44:46] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's home station) esan zuen "Reading Rainbow-ek umeak irakurtzen irakatsi zuen, irakurtzen ikasi zuen maitasuna — [ikuskizunak] umeek liburu bat hartu eta irakurtzeko animatu zituen".
+[2024-02-13 17:44:46] Best translation 80 : Marochydorek, ondoren, Caboolture garaitu zuen aurreko finalean.
+[2024-02-13 17:44:46] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako hamar postu onenen artean sailkatu ziren, lau lasterketa geratzen zirelarik denboraldian.
+[2024-02-13 17:44:46] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 17:44:47] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio teknikoaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 17:44:47] Total translation time: 1.82226s
+[2024-02-13 17:44:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 17:44:48] [valid] Ep. 28 : Up. 35000 : chrf : 54.8699 : new best
+[2024-02-13 17:44:48] Translating validation set...
+[2024-02-13 17:44:49] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko tresna berri bat asmatu zuten, zelulak motaren arabera ordenatu ahal izateko: txip inprimagarri txiki bat, ziurrenik AEBetako ehuneko bat inguruko tintazko inprimagailu estandarrak erabiliz fabrikatu daitekeena.
+[2024-02-13 17:44:49] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria detektatu ditzakete diru-sarrera txikiko herrialdeetan, eta bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdia izan daitezke.
+[2024-02-13 17:44:49] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 17:44:49] Best translation 3 : Pilotua Dikrit Pattavee eskuadroi-buru gisa identifikatu zuten.
+[2024-02-13 17:44:49] Best translation 4 : Tokiko hedabideek aireportuko suhiltzaileen ibilgailu bat inguratu dute erantzun bitartean.
+[2024-02-13 17:44:49] Best translation 5 : 28 urteko Vidal hiru denboraldi lehenago sartu zen Barçara, Sevillatik.
+[2024-02-13 17:44:49] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik igaroz, Strand-etik pasatuz, Aldwych-etik eta Kingsway-tik Holborn-era, non Alderdi Kontserbadorea Grand Connaught Room hotelean ospatu zen.
+[2024-02-13 17:44:49] Best translation 20 : Hsieh-k adierazi zuen Ma-k herrialdetik ihes egin dezakeela krisi garaian.
+[2024-02-13 17:44:49] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's home station) esan zuen "Reading Rainbow-ek umeak irakurtzen irakatsi zuen, irakurtzen ikasi zuen maitasuna — [ikuskizunak] umeek liburu bat hartu eta irakurtzeko animatu zituen".
+[2024-02-13 17:44:49] Best translation 80 : Marochydorek, ondoren, Caboolture garaitu zuen aurreko finalean.
+[2024-02-13 17:44:49] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako hamar postu onenen artean sailkatu ziren, lau lasterketa geratzen zirelarik denboraldian.
+[2024-02-13 17:44:49] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 17:44:49] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio teknikoaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 17:44:49] Total translation time: 1.16352s
+[2024-02-13 17:44:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 17:44:51] [valid] Ep. 28 : Up. 35000 : bleu : 17.1928 : new best
+[2024-02-13 17:44:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 17:44:52] [valid] Ep. 28 : Up. 35000 : ce-mean-words : 1.96009 : new best
+[2024-02-13 17:50:45] Seen 6,682,288 samples
+[2024-02-13 17:50:45] Starting data epoch 29 in logical epoch 29
+[2024-02-13 17:53:59] Ep. 29 : Up. 36000 : Sen. 1,246,854 : Cost 3.17772889 : Time 561.57s : 132472.21 words/s : gNorm 0.5842
+[2024-02-13 18:02:02] Ep. 29 : Up. 37000 : Sen. 6,612,207 : Cost 3.16922688 : Time 483.14s : 150536.80 words/s : gNorm 0.6131
+[2024-02-13 18:02:08] Seen 6,682,226 samples
+[2024-02-13 18:02:08] Starting data epoch 30 in logical epoch 30
+[2024-02-13 18:11:12] Ep. 30 : Up. 38000 : Sen. 5,005,123 : Cost 3.09627914 : Time 549.31s : 137082.43 words/s : gNorm 0.5968
+[2024-02-13 18:13:28] Seen 6,682,234 samples
+[2024-02-13 18:13:28] Starting data epoch 31 in logical epoch 31
+[2024-02-13 18:20:20] Ep. 31 : Up. 39000 : Sen. 3,564,456 : Cost 3.10857821 : Time 548.58s : 137328.98 words/s : gNorm 0.5379
+[2024-02-13 18:24:48] Seen 6,682,272 samples
+[2024-02-13 18:24:48] Starting data epoch 32 in logical epoch 32
+[2024-02-13 18:29:23] Ep. 32 : Up. 40000 : Sen. 2,239,976 : Cost 3.12769079 : Time 542.97s : 136066.89 words/s : gNorm 0.6268
+[2024-02-13 18:29:23] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 18:29:25] Saving Adam parameters
+[2024-02-13 18:29:28] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 18:29:30] Translating validation set...
+[2024-02-13 18:29:32] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntzako zientzialariek zelulen arabera ordenatu daitekeen diagnostiko-tresna berri baten asmakuntza iragarri zuten: ehuneko bat, agian, AEBko tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip inprimagarri txiki bat.
+[2024-02-13 18:29:32] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria modu goiztiarrean detektatu ahal izango zaizkie pazienteei errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdia izan daitezke.
+[2024-02-13 18:29:32] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 18:29:32] Best translation 3 : Pilotua Dikrit Pattavee eskuadroi-buru gisa identifikatu zuten.
+[2024-02-13 18:29:32] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 18:29:32] Best translation 5 : 28 urteko Vidal hiru denboraldi lehenago sartu zen Barçan, Sevillatik.
+[2024-02-13 18:29:32] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-ren aurretik, Strand-etik pasatuz, Aldwych-en eta Holborn-era bidean, non Grand Connaught Room-eko Udaberriko Foro Kontserbadorea ospatzen ari ziren.
+[2024-02-13 18:29:32] Best translation 20 : Hsieh-k adierazi zuen Ma-k herrialdetik ihes egin dezakeela krisi garaian.
+[2024-02-13 18:29:32] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's Home Station) esan zuen "Reading Rainbow-eko haurrek zergatik irakurtzen duten irakatsi dute, irakurtzen duten maitasuna — [ikuskizunak] umeak liburu bat hartzera eta irakurtzera animatu ditu".
+[2024-02-13 18:29:32] Best translation 80 : Marochyodorok, ondoren, Caboolture garaitu zuen aurre-aurreko finalean.
+[2024-02-13 18:29:32] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketaren lehen hamar postuen inguruan lau lasterketa geratzen ziren denboraldian.
+[2024-02-13 18:29:32] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 18:29:32] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio praktikoaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 18:29:32] Total translation time: 1.79799s
+[2024-02-13 18:29:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-chrf.npz
+[2024-02-13 18:29:34] [valid] Ep. 32 : Up. 40000 : chrf : 55.3364 : new best
+[2024-02-13 18:29:34] Translating validation set...
+[2024-02-13 18:29:34] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntzako zientzialariek zelulen arabera ordenatu daitekeen diagnostiko-tresna berri baten asmakuntza iragarri zuten: ehuneko bat, agian, AEBko tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip inprimagarri txiki bat.
+[2024-02-13 18:29:34] Best translation 1 : Ikertzaile nagusiek diotenez, minbizia, tuberkulosia, GIBa eta malaria modu goiztiarrean detektatu ahal izango zaizkie pazienteei errenta baxuko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdia izan daitezke.
+[2024-02-13 18:29:34] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 18:29:34] Best translation 3 : Pilotua Dikrit Pattavee eskuadroi-buru gisa identifikatu zuten.
+[2024-02-13 18:29:34] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 18:29:34] Best translation 5 : 28 urteko Vidal hiru denboraldi lehenago sartu zen Barçan, Sevillatik.
+[2024-02-13 18:29:34] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-ren aurretik, Strand-etik pasatuz, Aldwych-en eta Holborn-era bidean, non Grand Connaught Room-eko Udaberriko Foro Kontserbadorea ospatzen ari ziren.
+[2024-02-13 18:29:34] Best translation 20 : Hsieh-k adierazi zuen Ma-k herrialdetik ihes egin dezakeela krisi garaian.
+[2024-02-13 18:29:34] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's Home Station) esan zuen "Reading Rainbow-eko haurrek zergatik irakurtzen duten irakatsi dute, irakurtzen duten maitasuna — [ikuskizunak] umeak liburu bat hartzera eta irakurtzera animatu ditu".
+[2024-02-13 18:29:34] Best translation 80 : Marochyodorok, ondoren, Caboolture garaitu zuen aurre-aurreko finalean.
+[2024-02-13 18:29:34] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketaren lehen hamar postuen inguruan lau lasterketa geratzen ziren denboraldian.
+[2024-02-13 18:29:34] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 18:29:35] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio praktikoaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 18:29:35] Total translation time: 1.20232s
+[2024-02-13 18:29:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 18:29:36] [valid] Ep. 32 : Up. 40000 : bleu : 17.5949 : new best
+[2024-02-13 18:29:36] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 18:29:38] [valid] Ep. 32 : Up. 40000 : ce-mean-words : 1.95285 : new best
+[2024-02-13 18:36:22] Seen 6,682,240 samples
+[2024-02-13 18:36:22] Starting data epoch 33 in logical epoch 33
+[2024-02-13 18:38:42] Ep. 33 : Up. 41000 : Sen. 854,764 : Cost 3.13465476 : Time 559.33s : 132836.01 words/s : gNorm 0.6288
+[2024-02-13 18:46:52] Ep. 33 : Up. 42000 : Sen. 6,091,834 : Cost 3.09637856 : Time 489.98s : 151831.40 words/s : gNorm 0.6931
+[2024-02-13 18:47:44] Seen 6,682,274 samples
+[2024-02-13 18:47:44] Starting data epoch 34 in logical epoch 34
+[2024-02-13 18:56:01] Ep. 34 : Up. 43000 : Sen. 4,452,794 : Cost 3.04707527 : Time 548.33s : 136562.84 words/s : gNorm 0.5868
+[2024-02-13 18:59:05] Seen 6,682,303 samples
+[2024-02-13 18:59:05] Starting data epoch 35 in logical epoch 35
+[2024-02-13 19:05:04] Ep. 35 : Up. 44000 : Sen. 2,988,403 : Cost 3.08419800 : Time 542.97s : 137033.72 words/s : gNorm 0.5032
+[2024-02-13 19:10:23] Seen 6,682,151 samples
+[2024-02-13 19:10:23] Starting data epoch 36 in logical epoch 36
+[2024-02-13 19:14:08] Ep. 36 : Up. 45000 : Sen. 1,770,738 : Cost 3.09036899 : Time 544.01s : 135907.87 words/s : gNorm 0.4885
+[2024-02-13 19:14:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 19:14:10] Saving Adam parameters
+[2024-02-13 19:14:12] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 19:14:15] Translating validation set...
+[2024-02-13 19:14:16] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntzako zientzialariek zelulen arabera ordenatu daitekeen diagnostiko-tresna berri baten asmakuntza iragarri zuten: tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip ehuneko bat.
+[2024-02-13 19:14:16] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz detekta ditzake diru-sarrera txikiko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsagoak izan daitezke.
+[2024-02-13 19:14:16] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 19:14:16] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko buruzagi gisa identifikatu zen.
+[2024-02-13 19:14:16] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 19:14:16] Best translation 5 : 28 urteko Vidalek hiru denboraldi egin zituen Sevillatik Barçara.
+[2024-02-13 19:14:16] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik, Strand-en, Aldwych-en eta pasatuz eta Holbornerantz, non Alderdi Kontserbadorea Grand Connaught Room-en baitzeuzkaten.
+[2024-02-13 19:14:16] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdetik ihes egin dezakeela krisi garai batean.
+[2024-02-13 19:14:16] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's Home Station) esan zuen: "Irakurtzen ari diren haurrek zergatik zergatik irakurtzen duten irakatsi dute, irakurtzen duten maitasuna - [ikuskizunak] umeek liburu bat hartu eta irakurtzeko animatu dituzte".
+[2024-02-13 19:14:16] Best translation 80 : Marochydorrek, ondoren, Caboolture garaitu zuen aurre-aurreko finalean.
+[2024-02-13 19:14:16] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketaren lehen hamar postuen inguruan lau lasterketa geratzen dira denboraldian.
+[2024-02-13 19:14:16] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 19:14:17] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio intsigniatuaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 19:14:17] Total translation time: 1.80926s
+[2024-02-13 19:14:17] [valid] Ep. 36 : Up. 45000 : chrf : 55.3042 : stalled 1 times (last best: 55.3364)
+[2024-02-13 19:14:17] Translating validation set...
+[2024-02-13 19:14:18] Best translation 0 : Astelehenean, Stanfordeko Unibertsitateko Medikuntzako zientzialariek zelulen arabera ordenatu daitekeen diagnostiko-tresna berri bat asmatu zuten: tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip inprimagarri txiki bat, ehuneko bat dolar bakoitzeko.
+[2024-02-13 19:14:18] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz detekta ditzake diru-sarrera txikiko herrialdeetan, non bularreko minbizia bezalako gaixotasunen biziraupen-tasak herrialde aberatsenen erdia izan daitezke.
+[2024-02-13 19:14:18] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 19:14:18] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko buruzagi gisa identifikatu zen.
+[2024-02-13 19:14:18] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 19:14:18] Best translation 5 : 28 urteko Vidalek hiru denboraldi egin zituen Sevillatik Barçara.
+[2024-02-13 19:14:18] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik, Strand-en, Aldwych-en eta Holborn-era bidean, non Alderdi Kontserbadorea Grand Connaught Room-en baitzeuzkaten.
+[2024-02-13 19:14:18] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdetik ihes egin dezakeela krisi garai batean.
+[2024-02-13 19:14:18] Best translation 40 : John Grant-ek, WNED Buffalo-k (Reading Rainbow's Home Station) esan zuen: "Irakurtzen ari diren haurrek zergatik irakurtzen duten irakatsi dute, irakurtzen duten maitasuna — [ikuskizunak] umeak liburu bat hartzera eta irakurtzera animatu ditu".
+[2024-02-13 19:14:18] Best translation 80 : Marochydorrek, ondoren, Caboolture garaitu zuen aurre-aurreko finalean.
+[2024-02-13 19:14:18] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketaren lehen hamar postuen inguruan lau lasterketa geratzen dira denboraldian.
+[2024-02-13 19:14:18] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 19:14:18] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio intsigniatuaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 19:14:18] Total translation time: 1.23595s
+[2024-02-13 19:14:18] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 19:14:20] [valid] Ep. 36 : Up. 45000 : bleu : 17.6554 : new best
+[2024-02-13 19:14:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 19:14:21] [valid] Ep. 36 : Up. 45000 : ce-mean-words : 1.95164 : new best
+[2024-02-13 19:21:58] Seen 6,682,272 samples
+[2024-02-13 19:21:58] Starting data epoch 37 in logical epoch 37
+[2024-02-13 19:23:25] Ep. 37 : Up. 46000 : Sen. 285,066 : Cost 3.09556723 : Time 557.52s : 132576.31 words/s : gNorm 0.5662
+[2024-02-13 19:31:38] Ep. 37 : Up. 47000 : Sen. 5,368,848 : Cost 3.03516483 : Time 493.01s : 152171.59 words/s : gNorm 0.6825
+[2024-02-13 19:33:22] Seen 6,682,214 samples
+[2024-02-13 19:33:22] Starting data epoch 38 in logical epoch 38
+[2024-02-13 19:40:47] Ep. 38 : Up. 48000 : Sen. 3,905,444 : Cost 3.01707458 : Time 548.42s : 136829.15 words/s : gNorm 0.6594
+[2024-02-13 19:44:42] Seen 6,682,209 samples
+[2024-02-13 19:44:42] Starting data epoch 39 in logical epoch 39
+[2024-02-13 19:49:50] Ep. 39 : Up. 49000 : Sen. 2,552,883 : Cost 3.06633210 : Time 543.05s : 136575.98 words/s : gNorm 0.5128
+[2024-02-13 19:56:02] Seen 6,682,243 samples
+[2024-02-13 19:56:02] Starting data epoch 40 in logical epoch 40
+[2024-02-13 19:58:49] Ep. 40 : Up. 50000 : Sen. 1,230,828 : Cost 3.05632472 : Time 539.50s : 137760.18 words/s : gNorm 0.5347
+[2024-02-13 19:58:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 19:58:51] Saving Adam parameters
+[2024-02-13 19:58:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 19:58:57] Translating validation set...
+[2024-02-13 19:58:58] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko-tresna berri bat asmatu zuten, zelulak motaren arabera ordenatu ahal izateko: tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip inprimagarri txiki bat, agian AEBetako ehuneko bat inguru.
+[2024-02-13 19:58:58] Best translation 1 : Ikertzaile nagusiek diote horrek minbizia, tuberkulosia, GIBa eta malaria goiz ekar diezaiekeela diru-sarrera txikiko herrialdeetan gaixoei, non bularreko minbizia bezalako bizi-tasa herrialde aberatsenen erdia izan daitekeen.
+[2024-02-13 19:58:58] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 19:58:58] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko buruzagi gisa identifikatu zen.
+[2024-02-13 19:58:58] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 19:58:58] Best translation 5 : 28 urteko Vidalek hiru denboraldi egin zituen Sevillatik, Barçarekin bat eginda.
+[2024-02-13 19:58:58] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik igaro zen, Aldwych eta Kingsway-tik Holborn-era pasatuz, non Alderdi Kontserbatzaileak beren Udaberriko Foroa egiten ari ziren Grand Connaught Rooms hotelean.
+[2024-02-13 19:58:58] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdetik ihes egin zezakeela krisi garai batean.
+[2024-02-13 19:58:58] Best translation 40 : John Grantek, WNED Buffalokoak (Reading Rainbow's Home Station) esan zuen: "Irakurtzen ari diren haurrek zergatik irakurtzen duten irakatsi dute, irakurtzen duten maitasuna - [ikuskizuna] umeek liburu bat hartzera eta irakurtzera animatu dituzte".
+[2024-02-13 19:58:58] Best translation 80 : Marochydorrek, ondoren, Caboolture garaitu zuen aurre-aurreko finalean.
+[2024-02-13 19:58:58] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako lehen hamar postuak jokatu zituzten lau lasterketetan, denboraldian geratzen zirenak.
+[2024-02-13 19:58:58] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 19:58:58] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio instrukzionalaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 19:58:58] Total translation time: 1.80156s
+[2024-02-13 19:58:58] [valid] Ep. 40 : Up. 50000 : chrf : 55.1611 : stalled 2 times (last best: 55.3364)
+[2024-02-13 19:58:58] Translating validation set...
+[2024-02-13 19:58:59] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko-tresna berri bat asmatu zuten, zelulak motaren arabera ordenatu ahal izateko: tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip inprimagarri txiki bat, agian AEBetako ehuneko bat inguru.
+[2024-02-13 19:58:59] Best translation 1 : Ikertzaile nagusiek diote horrek minbizia, tuberkulosia, GIBa eta malaria goiz ekar diezaiekeela diru-sarrera txikiko herrialdeetan gaixoei, non bularreko minbizia bezalako bizi-tasa herrialde aberatsenen erdia izan daitekeen.
+[2024-02-13 19:58:59] Best translation 2 : JAS 39C Gripen hegaldia 9:30 inguruan gertatu zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 19:58:59] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko buruzagi gisa identifikatu zen.
+[2024-02-13 19:58:59] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 19:58:59] Best translation 5 : 28 urteko Vidalek hiru denboraldi egin zituen Sevillatik, Barçarekin bat eginda.
+[2024-02-13 19:58:59] Best translation 10 : 11:29 inguruan, protestek Whitehall-en gora egin zuten, Trafalgar Square-tik igaro zen, Aldwych eta Kingsway-tik Holborn-era pasatuz, non Alderdi Kontserbatzaileak beren Udaberriko Foroa egiten ari ziren Grand Connaught Rooms hotelean.
+[2024-02-13 19:58:59] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdetik ihes egin zezakeela krisi garai batean.
+[2024-02-13 19:58:59] Best translation 40 : John Grantek, WNED Buffalokoak (Reading Rainbow's Home Station) esan zuen: "Irakurtzen ari diren haurrek zergatik irakurtzen duten irakatsi dute, irakurtzen duten maitasuna - [ikuskizuna] umeek liburu bat hartzera eta irakurtzera animatu dituzte".
+[2024-02-13 19:58:59] Best translation 80 : Marochydorrek, ondoren, Caboolture garaitu zuen aurre-aurreko finalean.
+[2024-02-13 19:58:59] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako lehen hamar postuak jokatu zituzten lau lasterketetan, denboraldian geratzen zirenak.
+[2024-02-13 19:58:59] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 19:58:59] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta informazio instrukzionalaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 19:59:00] Total translation time: 1.20075s
+[2024-02-13 19:59:00] [valid] Ep. 40 : Up. 50000 : bleu : 17.5493 : stalled 1 times (last best: 17.6554)
+[2024-02-13 19:59:00] [valid] Ep. 40 : Up. 50000 : ce-mean-words : 1.95456 : stalled 1 times (last best: 1.95164)
+[2024-02-13 20:07:05] Ep. 40 : Up. 51000 : Sen. 6,431,565 : Cost 3.05141902 : Time 495.99s : 147879.22 words/s : gNorm 0.6845
+[2024-02-13 20:07:28] Seen 6,682,187 samples
+[2024-02-13 20:07:28] Starting data epoch 41 in logical epoch 41
+[2024-02-13 20:16:13] Ep. 41 : Up. 52000 : Sen. 4,925,343 : Cost 2.98770404 : Time 548.17s : 137325.92 words/s : gNorm 0.7597
+[2024-02-13 20:18:47] Seen 6,682,305 samples
+[2024-02-13 20:18:47] Starting data epoch 42 in logical epoch 42
+[2024-02-13 20:25:18] Ep. 42 : Up. 53000 : Sen. 3,382,942 : Cost 3.01490617 : Time 544.79s : 137260.44 words/s : gNorm 0.5606
+[2024-02-13 20:30:06] Seen 6,682,260 samples
+[2024-02-13 20:30:06] Starting data epoch 43 in logical epoch 43
+[2024-02-13 20:34:18] Ep. 43 : Up. 54000 : Sen. 2,037,889 : Cost 3.03835368 : Time 540.03s : 136221.21 words/s : gNorm 0.5683
+[2024-02-13 20:41:26] Seen 6,682,268 samples
+[2024-02-13 20:41:26] Starting data epoch 44 in logical epoch 44
+[2024-02-13 20:43:22] Ep. 44 : Up. 55000 : Sen. 665,521 : Cost 3.03443885 : Time 543.73s : 136644.45 words/s : gNorm 0.5421
+[2024-02-13 20:43:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 20:43:24] Saving Adam parameters
+[2024-02-13 20:43:27] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 20:43:29] Translating validation set...
+[2024-02-13 20:43:31] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko-tresna berri bat asmatu zuten, zelulak motaren arabera ordenatu ahal izateko: tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip inprimagarri txiki bat, agian AEBetako ehuneko bat inguru.
+[2024-02-13 20:43:31] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz detektatzeko ekar diezaieke diru-sarrera txikiko herrialdeetan pazienteei, non bularreko minbizia bezalako bizi-tasak herrialde aberatsagoak izan daitezke.
+[2024-02-13 20:43:31] Best translation 2 : JAS 39C Gripen-a 09:30 AM inguruko pista batean erori zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 20:43:31] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko buruzagi gisa identifikatu zuten.
+[2024-02-13 20:43:31] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 20:43:31] Best translation 5 : 28 urteko Vidalek hiru denboraldi egin zituen Sevillatik, Barçarekin bat eginda.
+[2024-02-13 20:43:31] Best translation 10 : 11:29 inguruan, protestak Whitehall-era igo ziren, Trafalgar Square-tik, Strand-etik pasatuz, Aldwych eta Kingsway-tik Holborn-era, non Alderdi Kontserbatzaileak beren Udaberriko Foroa egiten ari ziren Grand Connaught Room hotelean.
+[2024-02-13 20:43:31] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdetik ihes egin zezakeela krisi garai batean.
+[2024-02-13 20:43:31] Best translation 40 : John Grant-ek, WNED Buffalo-ko (Reading Rainbow's Home Station) esan zuen "Irakurtzen ari diren haurrek zergatik irakurtzen irakatsi zuten, ... irakurtzen duten maitasuna — [ikuskizunak] umeek liburu bat hartzera eta irakurtzera animatu zituzten".
+[2024-02-13 20:43:31] Best translation 80 : Marochydorrek, ondoren, Kabokultura garaitu zuen aurre-aurreko finalean.
+[2024-02-13 20:43:31] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako lehen hamar postuak jokatu zituzten lau lasterketekin denboraldi honetan.
+[2024-02-13 20:43:31] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 20:43:31] Best translation 640 : Ikasleei aukera ematen die beren erritmoan lan egiteko eta hezkuntza-informazioaren erritmoa kontrolatzeko.
+[2024-02-13 20:43:31] Total translation time: 1.76752s
+[2024-02-13 20:43:31] [valid] Ep. 44 : Up. 55000 : chrf : 55.1573 : stalled 3 times (last best: 55.3364)
+[2024-02-13 20:43:31] Translating validation set...
+[2024-02-13 20:43:32] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko-tresna berri bat asmatu zuten, zelulak motaren arabera ordenatu ahal izateko: tinta-inprimagailu estandarrak erabiliz fabrikatu daitekeen txip inprimagarri txiki bat, agian AEBetako ehuneko bat inguru.
+[2024-02-13 20:43:32] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz detektatzeko ekar diezaieke diru-sarrera txikiko herrialdeetan pazienteei, non bularreko minbizia bezalako bizi-tasak herrialde aberatsagoak izan daitezke.
+[2024-02-13 20:43:32] Best translation 2 : JAS 39C Gripen-a 09:30 AM inguruko pista batean erori zen eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 20:43:32] Best translation 3 : Pilotua Dikrit Pattavee eskuadroiko buruzagi gisa identifikatu zuten.
+[2024-02-13 20:43:32] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 20:43:32] Best translation 5 : 28 urteko Vidalek hiru denboraldi egin zituen Sevillatik, Barçarekin bat eginda.
+[2024-02-13 20:43:32] Best translation 10 : 11:29 inguruan, protestak Whitehall-era igo ziren, Trafalgar Square-tik, Strand-etik pasatuz, Aldwych eta Kingsway-tik Holborn-era, non Alderdi Kontserbatzaileak beren Udaberriko Foroa egiten ari ziren Grand Connaught Room hotelean.
+[2024-02-13 20:43:32] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdetik ihes egin zezakeela krisi garai batean.
+[2024-02-13 20:43:32] Best translation 40 : John Grant-ek, WNED Buffalo-ko (Reading Rainbow's Home Station) esan zuen "Irakurtzen ari diren haurrek zergatik irakurtzen irakatsi zuten, ... irakurtzen duten maitasuna — [ikuskizunak] umeek liburu bat hartzera eta irakurtzera animatu zituzten".
+[2024-02-13 20:43:32] Best translation 80 : Marochydorrek, ondoren, Kabokultura garaitu zuen aurre-aurreko finalean.
+[2024-02-13 20:43:32] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako lehen hamar postuak jokatu zituzten lau lasterketekin denboraldi honetan.
+[2024-02-13 20:43:32] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 20:43:32] Best translation 640 : Ikasleei aukera ematen die beren erritmoan lan egiteko eta hezkuntza-informazioaren erritmoa kontrolatzeko.
+[2024-02-13 20:43:32] Total translation time: 1.23988s
+[2024-02-13 20:43:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.best-bleu.npz
+[2024-02-13 20:43:34] [valid] Ep. 44 : Up. 55000 : bleu : 17.6854 : new best
+[2024-02-13 20:43:34] [valid] Ep. 44 : Up. 55000 : ce-mean-words : 1.96122 : stalled 2 times (last best: 1.95164)
+[2024-02-13 20:51:45] Ep. 44 : Up. 56000 : Sen. 5,856,710 : Cost 2.99836302 : Time 502.70s : 148853.63 words/s : gNorm 0.6484
+[2024-02-13 20:52:56] Seen 6,682,225 samples
+[2024-02-13 20:52:56] Starting data epoch 45 in logical epoch 45
+[2024-02-13 21:00:57] Ep. 45 : Up. 57000 : Sen. 4,283,738 : Cost 2.96341848 : Time 551.82s : 137096.61 words/s : gNorm 0.5945
+[2024-02-13 21:04:17] Seen 6,682,229 samples
+[2024-02-13 21:04:17] Starting data epoch 46 in logical epoch 46
+[2024-02-13 21:09:54] Ep. 46 : Up. 58000 : Sen. 2,930,252 : Cost 3.00512314 : Time 537.86s : 137349.85 words/s : gNorm 0.5648
+[2024-02-13 21:15:32] Seen 6,682,219 samples
+[2024-02-13 21:15:32] Starting data epoch 47 in logical epoch 47
+[2024-02-13 21:19:00] Ep. 47 : Up. 59000 : Sen. 1,610,591 : Cost 3.01579642 : Time 545.47s : 136200.72 words/s : gNorm 0.5957
+[2024-02-13 21:26:54] Seen 6,682,269 samples
+[2024-02-13 21:26:54] Starting data epoch 48 in logical epoch 48
+[2024-02-13 21:27:59] Ep. 48 : Up. 60000 : Sen. 138,752 : Cost 3.01215076 : Time 538.91s : 136531.92 words/s : gNorm 0.6751
+[2024-02-13 21:27:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 21:28:01] Saving Adam parameters
+[2024-02-13 21:28:04] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 21:28:07] Translating validation set...
+[2024-02-13 21:28:08] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko tresna berri baten asmakuntza iragarri zuten, eta horrek zelulak mota ordenatu ditzake: txip txiki inprimagarri bat, ziurrenik tinta-inprimagailu estandarrak erabiliz fabrikatu daiteke AEBetako ehuneko bat inguru.
+[2024-02-13 21:28:09] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz ekar diezazkiekete diru-sarrera txikiko herrialdeetan gaixoei, non bularreko minbizia bezalako biziraupen-tasak herrialde aberatsagoak izan daitezkeen.
+[2024-02-13 21:28:09] Best translation 2 : JAS 39C Gripen-a 9:30 am inguruko pista batean erori zen (0230 UTC), eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 21:28:09] Best translation 3 : Pilotua Dikrit Pattavee eskuadroi buruzagi gisa identifikatu zuten.
+[2024-02-13 21:28:09] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 21:28:09] Best translation 5 : 28 urte zituen Vidalek, Sevillatik, duela hiru denboraldira, Barçarekin bat egin zuen.
+[2024-02-13 21:28:09] Best translation 10 : 11:29 inguruan, protesta Whitehall-en gora joan zen, Trafalgar Square-tik, Strand-etik pasatuz, Aldwych-etik eta Kingsway-tik Holborn-era, non Alderdi Kontserbadorea Grand Connaught Room-en zegoen.
+[2024-02-13 21:28:09] Best translation 20 : Hsieh-k esan nahi zuen Ma-k herrialdetik ihes egin dezakeela krisi garai batean.
+[2024-02-13 21:28:09] Best translation 40 : John Grant-ek, WNED Buffalo-ko (Reading Rainbow-en etxeko geltokia) esan zuen: "Irakurtzen ikasten duten haurrek zergatik irakurtzen duten, ... irakurtzen duten maitasuna - [show] animatu haurrek liburu bat jaso eta irakurtzeko".
+[2024-02-13 21:28:09] Best translation 80 : Marochydorrek, ondoren, Kabokultura garaitu zuen aurre-aurreko finalean.
+[2024-02-13 21:28:09] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick lehen hamar postuak egin zituzten gidarien txapelketarako, lau lasterketekin denboraldi horretan.
+[2024-02-13 21:28:09] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 21:28:09] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta hezkuntza-informazioaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 21:28:09] Total translation time: 1.92629s
+[2024-02-13 21:28:09] [valid] Ep. 48 : Up. 60000 : chrf : 55.0674 : stalled 4 times (last best: 55.3364)
+[2024-02-13 21:28:09] Translating validation set...
+[2024-02-13 21:28:10] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko tresna berri baten asmakuntza iragarri zuten, eta horrek zelulak mota ordenatu ditzake: txip txiki inprimagarri bat, ziurrenik tinta-inprimagailu estandarrak erabiliz fabrikatu daiteke AEBetako ehuneko bat inguru.
+[2024-02-13 21:28:10] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz ekar diezazkiekete diru-sarrera txikiko herrialdeetan gaixoei, non bularreko minbizia bezalako biziraupen-tasak herrialde aberatsagoak izan daitezkeen.
+[2024-02-13 21:28:10] Best translation 2 : JAS 39C Gripen-a 9:30 am inguruko pista batean erori zen (0230 UTC), eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 21:28:10] Best translation 3 : Pilotua Dikrit Pattavee eskuadroi buruzagi gisa identifikatu zuten.
+[2024-02-13 21:28:10] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 21:28:10] Best translation 5 : 28 urte zituen Vidalek, Sevillatik, duela hiru denboraldira, Barçarekin bat egin zuen.
+[2024-02-13 21:28:10] Best translation 10 : 11:29 inguruan, protesta Whitehall-en gora joan zen, Trafalgar Square-tik, Strand-etik pasatuz, Aldwych-etik eta Kingsway-tik Holborn-era, non Alderdi Kontserbadorea Grand Connaught Room-en zegoen.
+[2024-02-13 21:28:10] Best translation 20 : Hsieh-k esan nahi zuen Ma-k herrialdetik ihes egin dezakeela krisi garai batean.
+[2024-02-13 21:28:10] Best translation 40 : John Grant-ek, WNED Buffalo-ko (Reading Rainbow-en etxeko geltokia) esan zuen: "Irakurtzen ikasten duten haurrek zergatik irakurtzen duten, ... irakurtzen duten maitasuna - [show] animatu haurrek liburu bat jaso eta irakurtzeko".
+[2024-02-13 21:28:10] Best translation 80 : Marochydorrek, ondoren, Kabokultura garaitu zuen aurre-aurreko finalean.
+[2024-02-13 21:28:10] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick lehen hamar postuak egin zituzten gidarien txapelketarako, lau lasterketekin denboraldi horretan.
+[2024-02-13 21:28:10] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 21:28:10] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta hezkuntza-informazioaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 21:28:10] Total translation time: 1.25657s
+[2024-02-13 21:28:10] [valid] Ep. 48 : Up. 60000 : bleu : 17.3922 : stalled 1 times (last best: 17.6854)
+[2024-02-13 21:28:10] [valid] Ep. 48 : Up. 60000 : ce-mean-words : 1.96753 : stalled 3 times (last best: 1.95164)
+[2024-02-13 21:36:26] Ep. 48 : Up. 61000 : Sen. 5,280,257 : Cost 2.94892311 : Time 507.42s : 148713.06 words/s : gNorm 0.7427
+[2024-02-13 21:38:25] Seen 6,682,243 samples
+[2024-02-13 21:38:25] Starting data epoch 49 in logical epoch 49
+[2024-02-13 21:45:29] Ep. 49 : Up. 62000 : Sen. 3,735,759 : Cost 2.95380878 : Time 543.01s : 137909.25 words/s : gNorm 0.5647
+[2024-02-13 21:49:41] Seen 6,682,254 samples
+[2024-02-13 21:49:41] Starting data epoch 50 in logical epoch 50
+[2024-02-13 21:54:28] Ep. 50 : Up. 63000 : Sen. 2,341,162 : Cost 3.00275326 : Time 538.64s : 136496.94 words/s : gNorm 0.5235
+[2024-02-13 22:01:00] Seen 6,682,242 samples
+[2024-02-13 22:01:00] Starting data epoch 51 in logical epoch 51
+[2024-02-13 22:03:31] Ep. 51 : Up. 64000 : Sen. 1,059,625 : Cost 2.99019289 : Time 543.24s : 136689.08 words/s : gNorm 0.5361
+[2024-02-13 22:11:39] Ep. 51 : Up. 65000 : Sen. 6,229,318 : Cost 2.97134042 : Time 487.83s : 151278.05 words/s : gNorm 0.6648
+[2024-02-13 22:11:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 22:11:41] Saving Adam parameters
+[2024-02-13 22:11:43] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz
+[2024-02-13 22:11:46] Translating validation set...
+[2024-02-13 22:11:48] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko tresna berri baten asmakuntza iragarri zuten, eta horrek zelulak mota ordenatu ditzake: txip txiki inprimagarri bat, ziurrenik tinta-inprimagailu estandarrak erabiliz fabrikatu daiteke ehuneko bat US.
+[2024-02-13 22:11:48] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz ekar diezazkiekete diru-sarrera txikiko herrialdeetan gaixoei, non bularreko minbizia bezalako bizirauteko tasak herrialde aberatsenen erdia izan daitezke.
+[2024-02-13 22:11:48] Best translation 2 : JAS 39C Gripen-ek pista batean talka egin zuen 9:30 am inguruko lokaletan (0230 UTC), eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 22:11:48] Best translation 3 : Pilotua "Dilokrit Pattavee" eskuadroiko buruzagi gisa identifikatu zuten.
+[2024-02-13 22:11:48] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 22:11:48] Best translation 5 : 28 urte zituen Vidalek, Sevillatik, duela hiru denboraldira, Barçarekin bat egin zuen.
+[2024-02-13 22:11:48] Best translation 10 : 11:29 inguruan, protesta Whitehall-en gora joan zen, Trafalgar Square-tik, Strand-etik igaroz, Aldwych-etik eta Kingsway-tik Holborn-era, non Alderdi Kontserbadorea Grand Connaught Room-en zegoen.
+[2024-02-13 22:11:48] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdeko ihes egin zezakeela krisi garai batean.
+[2024-02-13 22:11:48] Best translation 40 : John Grant-ek, WNED Buffalo-ko (Reading Rainbow-en etxeko geltokia) esan zuen: "Irakurtzen ikasten duten haurrek zergatik irakurtzen duten, ... irakurtzen duten maitasuna - [show] animatu haurrek liburu bat jaso eta irakurtzeko".
+[2024-02-13 22:11:48] Best translation 80 : Marochydorrek, ondoren, Cabooltura garaitu zuen Lehen Finalean.
+[2024-02-13 22:11:48] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako lehen hamar postuak jokatu zituzten lau lasterketekin denboraldi honetan.
+[2024-02-13 22:11:48] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 22:11:48] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta hezkuntza-informazioaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 22:11:48] Total translation time: 1.75507s
+[2024-02-13 22:11:48] [valid] Ep. 51 : Up. 65000 : chrf : 54.9364 : stalled 5 times (last best: 55.3364)
+[2024-02-13 22:11:48] Translating validation set...
+[2024-02-13 22:11:49] Best translation 0 : Astelehenean, Stanford Unibertsitateko Medikuntza Eskolako zientzialariek diagnostiko tresna berri baten asmakuntza iragarri zuten, eta horrek zelulak mota ordenatu ditzake: txip txiki inprimagarri bat, ziurrenik tinta-inprimagailu estandarrak erabiliz fabrikatu daiteke ehuneko bat US.
+[2024-02-13 22:11:49] Best translation 1 : Ikertzaile nagusiek diotenez, horrek minbizia, tuberkulosia, GIBa eta malaria goiz ekar diezazkiekete diru-sarrera txikiko herrialdeetan gaixoei, non bularreko minbizia bezalako bizirauteko tasak herrialde aberatsenen erdia izan daitezke.
+[2024-02-13 22:11:49] Best translation 2 : JAS 39C Gripen-ek pista batean talka egin zuen 9:30 am inguruko lokaletan (0230 UTC), eta eztanda egin zuen, aireportua hegaldi komertzialetara itxiz.
+[2024-02-13 22:11:49] Best translation 3 : Pilotua "Dilokrit Pattavee" eskuadroiko buruzagi gisa identifikatu zuten.
+[2024-02-13 22:11:49] Best translation 4 : Tokiko komunikabideek aireportuko suhiltzaileen ibilgailu bat irauli dela jakinarazi dute erantzun bitartean.
+[2024-02-13 22:11:49] Best translation 5 : 28 urte zituen Vidalek, Sevillatik, duela hiru denboraldira, Barçarekin bat egin zuen.
+[2024-02-13 22:11:49] Best translation 10 : 11:29 inguruan, protesta Whitehall-en gora joan zen, Trafalgar Square-tik, Strand-etik igaroz, Aldwych-etik eta Kingsway-tik Holborn-era, non Alderdi Kontserbadorea Grand Connaught Room-en zegoen.
+[2024-02-13 22:11:49] Best translation 20 : Hsieh-k esan zuen Ma-k herrialdeko ihes egin zezakeela krisi garai batean.
+[2024-02-13 22:11:49] Best translation 40 : John Grant-ek, WNED Buffalo-ko (Reading Rainbow-en etxeko geltokia) esan zuen: "Irakurtzen ikasten duten haurrek zergatik irakurtzen duten, ... irakurtzen duten maitasuna - [show] animatu haurrek liburu bat jaso eta irakurtzeko".
+[2024-02-13 22:11:49] Best translation 80 : Marochydorrek, ondoren, Cabooltura garaitu zuen Lehen Finalean.
+[2024-02-13 22:11:49] Best translation 160 : Stewart, Gordon, Kenseth eta Harvick txirrindularien txapelketarako lehen hamar postuak jokatu zituzten lau lasterketekin denboraldi honetan.
+[2024-02-13 22:11:49] Best translation 320 : Geroztik, Txinaren tamaina ekonomikoa 90 aldiz hazi da.
+[2024-02-13 22:11:49] Best translation 640 : Ikasleei beren erritmoan lan egiteko eta hezkuntza-informazioaren erritmoa kontrolatzeko aukera ematen die.
+[2024-02-13 22:11:49] Total translation time: 1.25591s
+[2024-02-13 22:11:49] [valid] Ep. 51 : Up. 65000 : bleu : 17.1733 : stalled 2 times (last best: 17.6854)
+[2024-02-13 22:11:49] [valid] Ep. 51 : Up. 65000 : ce-mean-words : 1.97442 : stalled 4 times (last best: 1.95164)
+[2024-02-13 22:11:49] Training finished
+[2024-02-13 22:11:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz
+[2024-02-13 22:11:51] Saving Adam parameters
+[2024-02-13 22:11:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-eu/simple/v2/s.train_model.en-eu/output/model.npz.optimizer.npz

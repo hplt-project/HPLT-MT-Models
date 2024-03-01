@@ -1,0 +1,1475 @@
+[2024-02-12 18:07:23] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-12 18:07:23] [marian] Running on nid007939 as process 24479 with command line:
+[2024-02-12 18:07:23] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.generate_vocab.en-hi/output/model.en-hi.spm /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.generate_vocab.en-hi/output/model.en-hi.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/tmp.d/6031054 --train-sets /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/tmp.d/6031054/train.en.gz /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/tmp.d/6031054/train.hi.gz --valid-sets /scratch/project_465000574/data/en-hi/valid/flores200.dev.en-hi.en /scratch/project_465000574/data/en-hi/valid/flores200.dev.en-hi.hi --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-12 18:07:23] [config] after: 0e
+[2024-02-12 18:07:23] [config] after-batches: 0
+[2024-02-12 18:07:23] [config] after-epochs: 0
+[2024-02-12 18:07:23] [config] all-caps-every: 0
+[2024-02-12 18:07:23] [config] allow-unk: false
+[2024-02-12 18:07:23] [config] authors: false
+[2024-02-12 18:07:23] [config] beam-size: 4
+[2024-02-12 18:07:23] [config] bert-class-symbol: "[CLS]"
+[2024-02-12 18:07:23] [config] bert-mask-symbol: "[MASK]"
+[2024-02-12 18:07:23] [config] bert-masking-fraction: 0.15
+[2024-02-12 18:07:23] [config] bert-sep-symbol: "[SEP]"
+[2024-02-12 18:07:23] [config] bert-train-type-embeddings: true
+[2024-02-12 18:07:23] [config] bert-type-vocab-size: 2
+[2024-02-12 18:07:23] [config] build-info: ""
+[2024-02-12 18:07:23] [config] char-conv-filters-num:
+[2024-02-12 18:07:23] [config]   - 200
+[2024-02-12 18:07:23] [config]   - 200
+[2024-02-12 18:07:23] [config]   - 250
+[2024-02-12 18:07:23] [config]   - 250
+[2024-02-12 18:07:23] [config]   - 300
+[2024-02-12 18:07:23] [config]   - 300
+[2024-02-12 18:07:23] [config]   - 300
+[2024-02-12 18:07:23] [config]   - 300
+[2024-02-12 18:07:23] [config] char-conv-filters-widths:
+[2024-02-12 18:07:23] [config]   - 1
+[2024-02-12 18:07:23] [config]   - 2
+[2024-02-12 18:07:23] [config]   - 3
+[2024-02-12 18:07:23] [config]   - 4
+[2024-02-12 18:07:23] [config]   - 5
+[2024-02-12 18:07:23] [config]   - 6
+[2024-02-12 18:07:23] [config]   - 7
+[2024-02-12 18:07:23] [config]   - 8
+[2024-02-12 18:07:23] [config] char-highway: 4
+[2024-02-12 18:07:23] [config] char-stride: 5
+[2024-02-12 18:07:23] [config] check-gradient-nan: true
+[2024-02-12 18:07:23] [config] check-nan: false
+[2024-02-12 18:07:23] [config] cite: false
+[2024-02-12 18:07:23] [config] clip-norm: 0
+[2024-02-12 18:07:23] [config] cost-scaling:
+[2024-02-12 18:07:23] [config]   []
+[2024-02-12 18:07:23] [config] cost-type: ce-mean-words
+[2024-02-12 18:07:23] [config] cpu-threads: 0
+[2024-02-12 18:07:23] [config] data-threads: 8
+[2024-02-12 18:07:23] [config] data-weighting: ""
+[2024-02-12 18:07:23] [config] data-weighting-type: sentence
+[2024-02-12 18:07:23] [config] dec-cell: gru
+[2024-02-12 18:07:23] [config] dec-cell-base-depth: 2
+[2024-02-12 18:07:23] [config] dec-cell-high-depth: 1
+[2024-02-12 18:07:23] [config] dec-depth: 6
+[2024-02-12 18:07:23] [config] devices:
+[2024-02-12 18:07:23] [config]   - 0
+[2024-02-12 18:07:23] [config]   - 1
+[2024-02-12 18:07:23] [config]   - 2
+[2024-02-12 18:07:23] [config]   - 3
+[2024-02-12 18:07:23] [config]   - 4
+[2024-02-12 18:07:23] [config]   - 5
+[2024-02-12 18:07:23] [config]   - 6
+[2024-02-12 18:07:23] [config]   - 7
+[2024-02-12 18:07:23] [config] dim-emb: 512
+[2024-02-12 18:07:23] [config] dim-rnn: 1024
+[2024-02-12 18:07:23] [config] dim-vocabs:
+[2024-02-12 18:07:23] [config]   - 64000
+[2024-02-12 18:07:23] [config] disp-first: 0
+[2024-02-12 18:07:23] [config] disp-freq: 1000u
+[2024-02-12 18:07:23] [config] disp-label-counts: true
+[2024-02-12 18:07:23] [config] dropout-rnn: 0
+[2024-02-12 18:07:23] [config] dropout-src: 0
+[2024-02-12 18:07:23] [config] dropout-trg: 0
+[2024-02-12 18:07:23] [config] dump-config: ""
+[2024-02-12 18:07:23] [config] dynamic-gradient-scaling:
+[2024-02-12 18:07:23] [config]   []
+[2024-02-12 18:07:23] [config] early-stopping: 5
+[2024-02-12 18:07:23] [config] early-stopping-on: first
+[2024-02-12 18:07:23] [config] embedding-fix-src: false
+[2024-02-12 18:07:23] [config] embedding-fix-trg: false
+[2024-02-12 18:07:23] [config] embedding-normalization: false
+[2024-02-12 18:07:23] [config] embedding-vectors:
+[2024-02-12 18:07:23] [config]   []
+[2024-02-12 18:07:23] [config] enc-cell: gru
+[2024-02-12 18:07:23] [config] enc-cell-depth: 1
+[2024-02-12 18:07:23] [config] enc-depth: 6
+[2024-02-12 18:07:23] [config] enc-type: bidirectional
+[2024-02-12 18:07:23] [config] english-title-case-every: 0
+[2024-02-12 18:07:23] [config] exponential-smoothing: 0.0001
+[2024-02-12 18:07:23] [config] factor-weight: 1
+[2024-02-12 18:07:23] [config] factors-combine: sum
+[2024-02-12 18:07:23] [config] factors-dim-emb: 0
+[2024-02-12 18:07:23] [config] gradient-checkpointing: false
+[2024-02-12 18:07:23] [config] gradient-norm-average-window: 100
+[2024-02-12 18:07:23] [config] guided-alignment: none
+[2024-02-12 18:07:23] [config] guided-alignment-cost: ce
+[2024-02-12 18:07:23] [config] guided-alignment-weight: 0.1
+[2024-02-12 18:07:23] [config] ignore-model-config: false
+[2024-02-12 18:07:23] [config] input-types:
+[2024-02-12 18:07:23] [config]   []
+[2024-02-12 18:07:23] [config] interpolate-env-vars: false
+[2024-02-12 18:07:23] [config] keep-best: true
+[2024-02-12 18:07:23] [config] label-smoothing: 0.1
+[2024-02-12 18:07:23] [config] layer-normalization: false
+[2024-02-12 18:07:23] [config] learn-rate: 0.0003
+[2024-02-12 18:07:23] [config] lemma-dependency: ""
+[2024-02-12 18:07:23] [config] lemma-dim-emb: 0
+[2024-02-12 18:07:23] [config] log: /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/logs/model.train.log
+[2024-02-12 18:07:23] [config] log-level: info
+[2024-02-12 18:07:23] [config] log-time-zone: ""
+[2024-02-12 18:07:23] [config] logical-epoch:
+[2024-02-12 18:07:23] [config]   - 1e
+[2024-02-12 18:07:23] [config]   - 0
+[2024-02-12 18:07:23] [config] lr-decay: 0
+[2024-02-12 18:07:23] [config] lr-decay-freq: 50000
+[2024-02-12 18:07:23] [config] lr-decay-inv-sqrt:
+[2024-02-12 18:07:23] [config]   - 16000
+[2024-02-12 18:07:23] [config] lr-decay-repeat-warmup: false
+[2024-02-12 18:07:23] [config] lr-decay-reset-optimizer: false
+[2024-02-12 18:07:23] [config] lr-decay-start:
+[2024-02-12 18:07:23] [config]   - 10
+[2024-02-12 18:07:23] [config]   - 1
+[2024-02-12 18:07:23] [config] lr-decay-strategy: epoch+stalled
+[2024-02-12 18:07:23] [config] lr-report: false
+[2024-02-12 18:07:23] [config] lr-warmup: 16000
+[2024-02-12 18:07:23] [config] lr-warmup-at-reload: false
+[2024-02-12 18:07:23] [config] lr-warmup-cycle: false
+[2024-02-12 18:07:23] [config] lr-warmup-start-rate: 0
+[2024-02-12 18:07:23] [config] max-length: 250
+[2024-02-12 18:07:23] [config] max-length-crop: false
+[2024-02-12 18:07:23] [config] max-length-factor: 3
+[2024-02-12 18:07:23] [config] maxi-batch: 1000
+[2024-02-12 18:07:23] [config] maxi-batch-sort: trg
+[2024-02-12 18:07:23] [config] mini-batch: 4096
+[2024-02-12 18:07:23] [config] mini-batch-fit: true
+[2024-02-12 18:07:23] [config] mini-batch-fit-step: 10
+[2024-02-12 18:07:23] [config] mini-batch-round-up: true
+[2024-02-12 18:07:23] [config] mini-batch-track-lr: false
+[2024-02-12 18:07:23] [config] mini-batch-warmup: 0
+[2024-02-12 18:07:23] [config] mini-batch-words: 0
+[2024-02-12 18:07:23] [config] mini-batch-words-ref: 0
+[2024-02-12 18:07:23] [config] model: /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 18:07:23] [config] multi-loss-type: sum
+[2024-02-12 18:07:23] [config] n-best: false
+[2024-02-12 18:07:23] [config] no-nccl: false
+[2024-02-12 18:07:23] [config] no-reload: false
+[2024-02-12 18:07:23] [config] no-restore-corpus: false
+[2024-02-12 18:07:23] [config] normalize: 1
+[2024-02-12 18:07:23] [config] normalize-gradient: false
+[2024-02-12 18:07:23] [config] num-devices: 0
+[2024-02-12 18:07:23] [config] optimizer: adam
+[2024-02-12 18:07:23] [config] optimizer-delay: 2
+[2024-02-12 18:07:23] [config] optimizer-params:
+[2024-02-12 18:07:23] [config]   - 0.9
+[2024-02-12 18:07:23] [config]   - 0.98
+[2024-02-12 18:07:23] [config]   - 1e-09
+[2024-02-12 18:07:23] [config] output-omit-bias: false
+[2024-02-12 18:07:23] [config] overwrite: true
+[2024-02-12 18:07:23] [config] precision:
+[2024-02-12 18:07:23] [config]   - float32
+[2024-02-12 18:07:23] [config]   - float32
+[2024-02-12 18:07:23] [config] pretrained-model: ""
+[2024-02-12 18:07:23] [config] quantize-biases: false
+[2024-02-12 18:07:23] [config] quantize-bits: 0
+[2024-02-12 18:07:23] [config] quantize-log-based: false
+[2024-02-12 18:07:23] [config] quantize-optimization-steps: 0
+[2024-02-12 18:07:23] [config] quiet: false
+[2024-02-12 18:07:23] [config] quiet-translation: false
+[2024-02-12 18:07:23] [config] relative-paths: false
+[2024-02-12 18:07:23] [config] right-left: false
+[2024-02-12 18:07:23] [config] save-freq: 5000u
+[2024-02-12 18:07:23] [config] seed: 42
+[2024-02-12 18:07:23] [config] sentencepiece-alphas:
+[2024-02-12 18:07:23] [config]   - 0.1
+[2024-02-12 18:07:23] [config] sentencepiece-max-lines: 2000000
+[2024-02-12 18:07:23] [config] sentencepiece-options: ""
+[2024-02-12 18:07:23] [config] sharding: global
+[2024-02-12 18:07:23] [config] shuffle: batches
+[2024-02-12 18:07:23] [config] shuffle-in-ram: false
+[2024-02-12 18:07:23] [config] sigterm: save-and-exit
+[2024-02-12 18:07:23] [config] skip: false
+[2024-02-12 18:07:23] [config] sqlite: ""
+[2024-02-12 18:07:23] [config] sqlite-drop: false
+[2024-02-12 18:07:23] [config] sync-freq: 200u
+[2024-02-12 18:07:23] [config] sync-sgd: true
+[2024-02-12 18:07:23] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/tmp.d/6031054
+[2024-02-12 18:07:23] [config] tied-embeddings: false
+[2024-02-12 18:07:23] [config] tied-embeddings-all: true
+[2024-02-12 18:07:23] [config] tied-embeddings-src: false
+[2024-02-12 18:07:23] [config] train-embedder-rank:
+[2024-02-12 18:07:23] [config]   []
+[2024-02-12 18:07:23] [config] train-sets:
+[2024-02-12 18:07:23] [config]   - /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/tmp.d/6031054/train.en.gz
+[2024-02-12 18:07:23] [config]   - /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/tmp.d/6031054/train.hi.gz
+[2024-02-12 18:07:23] [config] transformer-aan-activation: swish
+[2024-02-12 18:07:23] [config] transformer-aan-depth: 2
+[2024-02-12 18:07:23] [config] transformer-aan-nogate: false
+[2024-02-12 18:07:23] [config] transformer-decoder-autoreg: self-attention
+[2024-02-12 18:07:23] [config] transformer-decoder-dim-ffn: 0
+[2024-02-12 18:07:23] [config] transformer-decoder-ffn-depth: 0
+[2024-02-12 18:07:23] [config] transformer-depth-scaling: false
+[2024-02-12 18:07:23] [config] transformer-dim-aan: 2048
+[2024-02-12 18:07:23] [config] transformer-dim-ffn: 2048
+[2024-02-12 18:07:23] [config] transformer-dropout: 0.1
+[2024-02-12 18:07:23] [config] transformer-dropout-attention: 0
+[2024-02-12 18:07:23] [config] transformer-dropout-ffn: 0
+[2024-02-12 18:07:23] [config] transformer-ffn-activation: relu
+[2024-02-12 18:07:23] [config] transformer-ffn-depth: 2
+[2024-02-12 18:07:23] [config] transformer-guided-alignment-layer: last
+[2024-02-12 18:07:23] [config] transformer-heads: 8
+[2024-02-12 18:07:23] [config] transformer-no-projection: false
+[2024-02-12 18:07:23] [config] transformer-pool: false
+[2024-02-12 18:07:23] [config] transformer-postprocess: dan
+[2024-02-12 18:07:23] [config] transformer-postprocess-emb: d
+[2024-02-12 18:07:23] [config] transformer-postprocess-top: ""
+[2024-02-12 18:07:23] [config] transformer-preprocess: ""
+[2024-02-12 18:07:23] [config] transformer-rnn-projection: false
+[2024-02-12 18:07:23] [config] transformer-tied-layers:
+[2024-02-12 18:07:23] [config]   []
+[2024-02-12 18:07:23] [config] transformer-train-position-embeddings: false
+[2024-02-12 18:07:23] [config] tsv: false
+[2024-02-12 18:07:23] [config] tsv-fields: 0
+[2024-02-12 18:07:23] [config] type: transformer
+[2024-02-12 18:07:23] [config] ulr: false
+[2024-02-12 18:07:23] [config] ulr-dim-emb: 0
+[2024-02-12 18:07:23] [config] ulr-dropout: 0
+[2024-02-12 18:07:23] [config] ulr-keys-vectors: ""
+[2024-02-12 18:07:23] [config] ulr-query-vectors: ""
+[2024-02-12 18:07:23] [config] ulr-softmax-temperature: 1
+[2024-02-12 18:07:23] [config] ulr-trainable-transformation: false
+[2024-02-12 18:07:23] [config] unlikelihood-loss: false
+[2024-02-12 18:07:23] [config] valid-freq: 5000u
+[2024-02-12 18:07:23] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/logs/model.valid.log
+[2024-02-12 18:07:23] [config] valid-max-length: 1000
+[2024-02-12 18:07:23] [config] valid-metrics:
+[2024-02-12 18:07:23] [config]   - chrf
+[2024-02-12 18:07:23] [config]   - bleu
+[2024-02-12 18:07:23] [config]   - ce-mean-words
+[2024-02-12 18:07:23] [config] valid-mini-batch: 64
+[2024-02-12 18:07:23] [config] valid-reset-stalled: true
+[2024-02-12 18:07:23] [config] valid-script-args:
+[2024-02-12 18:07:23] [config]   []
+[2024-02-12 18:07:23] [config] valid-script-path: ""
+[2024-02-12 18:07:23] [config] valid-sets:
+[2024-02-12 18:07:23] [config]   - /scratch/project_465000574/data/en-hi/valid/flores200.dev.en-hi.en
+[2024-02-12 18:07:23] [config]   - /scratch/project_465000574/data/en-hi/valid/flores200.dev.en-hi.hi
+[2024-02-12 18:07:23] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/logs/model.valid.out
+[2024-02-12 18:07:23] [config] vocabs:
+[2024-02-12 18:07:23] [config]   - /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.generate_vocab.en-hi/output/model.en-hi.spm
+[2024-02-12 18:07:23] [config]   - /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.generate_vocab.en-hi/output/model.en-hi.spm
+[2024-02-12 18:07:23] [config] word-penalty: 0
+[2024-02-12 18:07:23] [config] word-scores: false
+[2024-02-12 18:07:23] [config] workspace: 20000
+[2024-02-12 18:07:23] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-12 18:07:23] Using synchronous SGD
+[2024-02-12 18:07:23] [comm] Compiled without MPI support. Running as a single process on nid007939
+[2024-02-12 18:07:23] Synced seed 42
+[2024-02-12 18:07:23] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.generate_vocab.en-hi/output/model.en-hi.spm
+[2024-02-12 18:07:23] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-12 18:07:23] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.generate_vocab.en-hi/output/model.en-hi.spm
+[2024-02-12 18:07:23] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-12 18:07:23] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-12 18:07:23] Checking gradient for NaN
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-12 18:07:28] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-12 18:07:28] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-12 18:07:31] [comm] Using global sharding
+[2024-02-12 18:07:32] [comm] NCCLCommunicators constructed successfully
+[2024-02-12 18:07:32] [training] Using 8 GPUs
+[2024-02-12 18:07:32] [logits] Applying loss function for 1 factor(s)
+[2024-02-12 18:07:32] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 18:07:38] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 18:08:34] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-12 18:08:34] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-12 18:08:34] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-12 18:08:34] [comm] Using global sharding
+[2024-02-12 18:08:35] [comm] NCCLCommunicators constructed successfully
+[2024-02-12 18:08:35] [training] Using 8 GPUs
+[2024-02-12 18:08:35] Training started
+[2024-02-12 18:09:32] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu3
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu5
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu4
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu2
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu7
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu6
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu1
+[2024-02-12 18:09:32] [memory] Reserving 293 MB, device gpu0
+[2024-02-12 18:10:01] [memory] Reserving 293 MB, device gpu5
+[2024-02-12 18:10:01] [memory] Reserving 293 MB, device gpu6
+[2024-02-12 18:10:01] [memory] Reserving 293 MB, device gpu3
+[2024-02-12 18:10:01] [memory] Reserving 293 MB, device gpu7
+[2024-02-12 18:10:01] [memory] Reserving 293 MB, device gpu4
+[2024-02-12 18:10:01] [memory] Reserving 293 MB, device gpu1
+[2024-02-12 18:10:01] [memory] Reserving 293 MB, device gpu2
+[2024-02-12 18:10:02] Allocating memory for general optimizer shards
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu2
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu0
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu6
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu7
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu4
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu3
+[2024-02-12 18:10:02] Parameter type float32, optimization type float32, casting types false
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu5
+[2024-02-12 18:10:02] [memory] Reserving 36 MB, device gpu1
+[2024-02-12 18:10:02] Allocating memory for Adam-specific shards
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu1
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu2
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu5
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu4
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu6
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu0
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu3
+[2024-02-12 18:10:02] [memory] Reserving 73 MB, device gpu7
+[2024-02-12 18:19:49] Ep. 1 : Up. 1000 : Sen. 4,588,610 : Cost 9.07044697 : Time 675.14s : 139401.83 words/s : gNorm 2.6502
+[2024-02-12 18:29:30] Ep. 1 : Up. 2000 : Sen. 9,150,834 : Cost 7.19438457 : Time 581.29s : 161236.67 words/s : gNorm 2.3424
+[2024-02-12 18:39:12] Ep. 1 : Up. 3000 : Sen. 13,732,166 : Cost 6.39879370 : Time 581.81s : 162832.13 words/s : gNorm 1.8837
+[2024-02-12 18:48:34] Ep. 1 : Up. 4000 : Sen. 18,264,920 : Cost 5.89996243 : Time 561.50s : 164854.27 words/s : gNorm 1.7765
+[2024-02-12 18:50:44] Seen 19,297,150 samples
+[2024-02-12 18:50:44] Starting data epoch 2 in logical epoch 2
+[2024-02-12 18:59:09] Ep. 2 : Up. 5000 : Sen. 3,487,831 : Cost 5.50720882 : Time 635.35s : 146747.97 words/s : gNorm 1.4433
+[2024-02-12 18:59:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 18:59:11] Saving Adam parameters
+[2024-02-12 18:59:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-12 18:59:17] Translating validation set...
+[2024-02-12 18:59:18] [valid] First sentence's tokens as scored:
+[2024-02-12 18:59:18] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-12 18:59:18] [valid]   Hyp: · A क े व ॉ ल प े क ो ई प ो स ् ट ् स न ह ी क ि ए ग य े
+[2024-02-12 18:59:18] [valid]   Ref: अ प न ी ट ि प ् प ण ि य ो ं क े ब ा व ज ू द उ स न े क ह ा क ि व ह ल ं द न म े ं आ य ो ज ि त 2 0 1 2 ओ ल ि म ् प ि क ् स म े ं ब ् र ि ट ि श प ् र त ि स ् प र ् ध ि य ो ं क ा स म र ् थ न क र े ग ा .
+[2024-02-12 18:59:19] Best translation 0 : इसके अलावा, इस प्रकार की एक श्रृंखला के रूप में, एक प्रकार के रूप में इस प्रकार के रूप में इस प्रकार का उपयोग कर सकते हैं जो एक प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में किया गया है।
+[2024-02-12 18:59:20] Best translation 1 : इसके अलावा, इस तरह के कारण, यह भी कई देशों के लिए महत्वपूर्ण है, जो कई देशों के रूप में कई देशों के रूप में कई देशों के रूप में कई देशों के रूप में जाना जाता है।
+[2024-02-12 18:59:20] Best translation 2 : 3 डी डी डी डी डी डी डी डी डी डी डी डी डी, और 3 डी डी डी डी डी डी के रूप में 3 डी डी डी डी डी डी डी डी डी डी डी डी डी और अन्य समय के लिए एक समय है।
+[2024-02-12 18:59:20] Best translation 3 : भारत सरकार ने कहा था कि भारत सरकार ने कहा था।
+[2024-02-12 18:59:20] Best translation 4 : संयुक्त राज्य अमेरिका में एक समूह है।
+[2024-02-12 18:59:20] Best translation 5 : ♥ 1 साल पहले साल से अधिक पुराना
+[2024-02-12 18:59:20] Best translation 10 : उन्होंने कहा, “मैं अपने पिता के साथ, वह अपने परिवार के बीच में भाग लेने के लिए, और उसके बाद, वह अपने परिवार के रूप में अपने परिवार के लिए एक दूसरे स्थान पर हमला किया गया था।
+[2024-02-12 18:59:20] Best translation 20 : उन्होंने कहा कि भारत के देश के बाद, भारत के देश के रूप में काम किया था।
+[2024-02-12 18:59:20] Best translation 40 : — “यदि आप जानते हैं, तो वह अपने दोस्तों को देखने के लिए और उसके लिए एक नई दिल्ली में मदद करता है।
+[2024-02-12 18:59:20] Best translation 80 : ऋण में ऋण के बारे में जानें।
+[2024-02-12 18:59:20] Best translation 160 : उदाहरण के लिए, इस तरह के लिए, इस खेल में, और एक साथ ही समय में, इस तरह के लिए, इस खेल के लिए, और खेल के साथ-साथ इस तरह के लिए तैयार किया गया है।
+[2024-02-12 18:59:20] Best translation 320 : चीन से, चीन से 30 से अधिक वर्षों का अनुभव है।
+[2024-02-12 18:59:20] Best translation 640 : इस तरह के विकास और विकास के माध्यम से काम करने की अनुमति देता है।
+[2024-02-12 18:59:20] Total translation time: 2.85806s
+[2024-02-12 18:59:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-12 18:59:21] [valid] Ep. 2 : Up. 5000 : chrf : 13.99 : new best
+[2024-02-12 18:59:21] Translating validation set...
+[2024-02-12 18:59:24] Best translation 0 : इसके अलावा, इस प्रकार की एक श्रृंखला के रूप में, एक प्रकार के रूप में इस प्रकार के रूप में इस प्रकार का उपयोग कर सकते हैं जो एक प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में इस प्रकार के रूप में किया गया है।
+[2024-02-12 18:59:24] Best translation 1 : इसके अलावा, इस तरह के कारण, यह भी कई देशों के लिए महत्वपूर्ण है, जो कई देशों के रूप में कई देशों के रूप में कई देशों के रूप में कई देशों के रूप में जाना जाता है।
+[2024-02-12 18:59:24] Best translation 2 : 3 डी डी डी डी डी डी डी डी डी डी डी डी डी, और 3 डी डी डी डी डी डी के रूप में 3 डी डी डी डी डी डी डी डी डी डी डी डी डी और अन्य समय के लिए एक समय है।
+[2024-02-12 18:59:24] Best translation 3 : भारत सरकार ने कहा था कि भारत सरकार ने कहा था।
+[2024-02-12 18:59:24] Best translation 4 : संयुक्त राज्य अमेरिका में एक समूह है।
+[2024-02-12 18:59:24] Best translation 5 : ♥ 1 साल पहले साल से अधिक पुराना
+[2024-02-12 18:59:24] Best translation 10 : उन्होंने कहा, “मैं अपने पिता के साथ, वह अपने परिवार के बीच में भाग लेने के लिए, और उसके बाद, वह अपने परिवार के रूप में अपने परिवार के लिए एक दूसरे स्थान पर हमला किया गया था।
+[2024-02-12 18:59:24] Best translation 20 : उन्होंने कहा कि भारत के देश के बाद, भारत के देश के रूप में काम किया था।
+[2024-02-12 18:59:24] Best translation 40 : — “यदि आप जानते हैं, तो वह अपने दोस्तों को देखने के लिए और उसके लिए एक नई दिल्ली में मदद करता है।
+[2024-02-12 18:59:24] Best translation 80 : ऋण में ऋण के बारे में जानें।
+[2024-02-12 18:59:24] Best translation 160 : उदाहरण के लिए, इस तरह के लिए, इस खेल में, और एक साथ ही समय में, इस तरह के लिए, इस खेल के लिए, और खेल के साथ-साथ इस तरह के लिए तैयार किया गया है।
+[2024-02-12 18:59:24] Best translation 320 : चीन से, चीन से 30 से अधिक वर्षों का अनुभव है।
+[2024-02-12 18:59:24] Best translation 640 : इस तरह के विकास और विकास के माध्यम से काम करने की अनुमति देता है।
+[2024-02-12 18:59:24] Total translation time: 2.82519s
+[2024-02-12 18:59:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-12 18:59:25] [valid] Ep. 2 : Up. 5000 : bleu : 1.7159 : new best
+[2024-02-12 18:59:25] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 18:59:27] [valid] Ep. 2 : Up. 5000 : ce-mean-words : 5.1811 : new best
+[2024-02-12 19:09:09] Ep. 2 : Up. 6000 : Sen. 8,059,386 : Cost 5.23431253 : Time 599.64s : 157003.84 words/s : gNorm 1.2893
+[2024-02-12 19:19:01] Ep. 2 : Up. 7000 : Sen. 12,697,271 : Cost 4.98038054 : Time 592.57s : 158795.96 words/s : gNorm 1.5894
+[2024-02-12 19:28:27] Ep. 2 : Up. 8000 : Sen. 17,222,727 : Cost 4.71305847 : Time 566.01s : 165195.41 words/s : gNorm 1.3128
+[2024-02-12 19:32:49] Seen 19,297,150 samples
+[2024-02-12 19:32:49] Starting data epoch 3 in logical epoch 3
+[2024-02-12 19:39:03] Ep. 3 : Up. 9000 : Sen. 2,382,363 : Cost 4.32664204 : Time 635.68s : 146474.93 words/s : gNorm 1.2100
+[2024-02-12 19:48:46] Ep. 3 : Up. 10000 : Sen. 7,018,303 : Cost 3.76975250 : Time 583.23s : 161714.62 words/s : gNorm 1.0189
+[2024-02-12 19:48:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 19:48:49] Saving Adam parameters
+[2024-02-12 19:48:51] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-12 19:48:54] Translating validation set...
+[2024-02-12 19:48:56] Best translation 0 : सोमवार को, संयुक्त राष्ट्र विश्वविद्यालय ने एक नई नैदानिक उपकरण की घोषणा की है जो एक छोटे से कंप्यूटर के लिए बनाया जा सकता है जो एक ही इकाई के रूप में इस्तेमाल किया जा सकता है।
+[2024-02-12 19:48:56] Best translation 1 : नेता ने कहा कि कैंसर के कैंसर, एचआईवी, एचआईवी, एचआईवी और एचआईवी के कैंसर की कमी को प्रभावित कर सकता है, जो कैंसर के कैंसर के लिए कैंसर के कैंसर के कैंसर को कम करने में मदद कर सकता है।
+[2024-02-12 19:48:56] Best translation 2 : संयुक्त राज्य अमेरिका ने लगभग 30:30 से अधिक स्थानीय हवाई अड्डे पर हमला किया, और हवाई अड्डे के लिए उड़ान भरने के लिए बंद हो गया।
+[2024-02-12 19:48:56] Best translation 3 : पायलट के रूप में पुरस्कार पुरस्कार पुरस्कार के रूप में नामित किया गया था।
+[2024-02-12 19:48:56] Best translation 4 : स्थानीय हवाई अड्डे के माध्यम से हवाई अड्डे की मरम्मत हो रही है।
+[2024-02-12 19:48:56] Best translation 5 : 28 वर्षीय वीडियो अप्रैल को तीन सीजन में शामिल किया गया था।
+[2024-02-12 19:48:56] Best translation 10 : 11 तब मूसा ने कहा, “इस बात से कहा, ‘खड़ों के साथ संघर्ष कर रहा था, और राजा ने अपने भाई-बहनों को वापस ले लिया था।
+[2024-02-12 19:48:56] Best translation 20 : चुनाव के दौरान चुनाव के दौरान, उस समय देश के दौरान देश का जन्म हो सकता है।
+[2024-02-12 19:48:56] Best translation 40 : जॉन जॉन, जॉन (बाएं) ने कहा, “अब तक, “क्या बच्चों को पढ़ने के लिए सीखने के लिए सीखने के लिए तैयार है?— [और पढ़ें] बच्चों को एक किताब बनाने के लिए और पढ़ने के लिए तैयार रहें।
+[2024-02-12 19:48:56] Best translation 80 : मारियो ने अंतिम अंतिम परीक्षा में लड़ाई शुरू कर दिया।
+[2024-02-12 19:48:56] Best translation 160 : स्टीवन, जॉर्ज, स्टीव्स, और उसके पीछे के शीर्ष पर चार-स्टार के साथ दौड़ के लिए शीर्ष रैंकिंग के लिए बाहर चला गया है।
+[2024-02-12 19:48:56] Best translation 320 : चूंकि, चीन के आर्थिक आकार 90 बार है।
+[2024-02-12 19:48:56] Best translation 640 : यह अपने स्वयं के गति और नियंत्रण जानकारी की गति को बढ़ाने के लिए अनुमति देता है।
+[2024-02-12 19:48:56] Total translation time: 2.31987s
+[2024-02-12 19:48:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-12 19:48:58] [valid] Ep. 3 : Up. 10000 : chrf : 30.4443 : new best
+[2024-02-12 19:48:58] Translating validation set...
+[2024-02-12 19:49:00] Best translation 0 : सोमवार को, संयुक्त राष्ट्र विश्वविद्यालय ने एक नई नैदानिक उपकरण की घोषणा की है जो एक छोटे से कंप्यूटर के लिए बनाया जा सकता है जो एक ही इकाई के रूप में इस्तेमाल किया जा सकता है।
+[2024-02-12 19:49:00] Best translation 1 : नेता ने कहा कि कैंसर के कैंसर, एचआईवी, एचआईवी, एचआईवी और एचआईवी के कैंसर की कमी को प्रभावित कर सकता है, जो कैंसर के कैंसर के लिए कैंसर के कैंसर के कैंसर को कम करने में मदद कर सकता है।
+[2024-02-12 19:49:00] Best translation 2 : संयुक्त राज्य अमेरिका ने लगभग 30:30 से अधिक स्थानीय हवाई अड्डे पर हमला किया, और हवाई अड्डे के लिए उड़ान भरने के लिए बंद हो गया।
+[2024-02-12 19:49:00] Best translation 3 : पायलट के रूप में पुरस्कार पुरस्कार पुरस्कार के रूप में नामित किया गया था।
+[2024-02-12 19:49:00] Best translation 4 : स्थानीय हवाई अड्डे के माध्यम से हवाई अड्डे की मरम्मत हो रही है।
+[2024-02-12 19:49:00] Best translation 5 : 28 वर्षीय वीडियो अप्रैल को तीन सीजन में शामिल किया गया था।
+[2024-02-12 19:49:00] Best translation 10 : 11 तब मूसा ने कहा, “इस बात से कहा, ‘खड़ों के साथ संघर्ष कर रहा था, और राजा ने अपने भाई-बहनों को वापस ले लिया था।
+[2024-02-12 19:49:00] Best translation 20 : चुनाव के दौरान चुनाव के दौरान, उस समय देश के दौरान देश का जन्म हो सकता है।
+[2024-02-12 19:49:00] Best translation 40 : जॉन जॉन, जॉन (बाएं) ने कहा, “अब तक, “क्या बच्चों को पढ़ने के लिए सीखने के लिए सीखने के लिए तैयार है?— [और पढ़ें] बच्चों को एक किताब बनाने के लिए और पढ़ने के लिए तैयार रहें।
+[2024-02-12 19:49:00] Best translation 80 : मारियो ने अंतिम अंतिम परीक्षा में लड़ाई शुरू कर दिया।
+[2024-02-12 19:49:00] Best translation 160 : स्टीवन, जॉर्ज, स्टीव्स, और उसके पीछे के शीर्ष पर चार-स्टार के साथ दौड़ के लिए शीर्ष रैंकिंग के लिए बाहर चला गया है।
+[2024-02-12 19:49:00] Best translation 320 : चूंकि, चीन के आर्थिक आकार 90 बार है।
+[2024-02-12 19:49:00] Best translation 640 : यह अपने स्वयं के गति और नियंत्रण जानकारी की गति को बढ़ाने के लिए अनुमति देता है।
+[2024-02-12 19:49:00] Total translation time: 2.03297s
+[2024-02-12 19:49:00] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-12 19:49:01] [valid] Ep. 3 : Up. 10000 : bleu : 9.76634 : new best
+[2024-02-12 19:49:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 19:49:02] [valid] Ep. 3 : Up. 10000 : ce-mean-words : 3.55388 : new best
+[2024-02-12 19:58:44] Ep. 3 : Up. 11000 : Sen. 11,606,456 : Cost 3.27309871 : Time 598.05s : 158137.21 words/s : gNorm 0.9082
+[2024-02-12 20:08:20] Ep. 3 : Up. 12000 : Sen. 16,193,327 : Cost 2.99745536 : Time 575.17s : 163132.82 words/s : gNorm 0.5896
+[2024-02-12 20:14:48] Seen 19,297,103 samples
+[2024-02-12 20:14:48] Starting data epoch 4 in logical epoch 4
+[2024-02-12 20:18:49] Ep. 4 : Up. 13000 : Sen. 1,344,316 : Cost 2.83658028 : Time 629.91s : 146824.71 words/s : gNorm 0.5290
+[2024-02-12 20:28:29] Ep. 4 : Up. 14000 : Sen. 5,922,672 : Cost 2.71831417 : Time 579.06s : 162227.43 words/s : gNorm 0.4546
+[2024-02-12 20:38:09] Ep. 4 : Up. 15000 : Sen. 10,610,498 : Cost 2.62277293 : Time 580.45s : 162584.41 words/s : gNorm 0.4072
+[2024-02-12 20:38:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 20:38:11] Saving Adam parameters
+[2024-02-12 20:38:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-12 20:38:17] Translating validation set...
+[2024-02-12 20:38:18] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकता है: एक छोटे से मुद्रण योग्य चिप जो संभवतः एक अमेरिकी केंद्र के बारे में मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 20:38:18] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का शुरुआती पता लगा सकता है, जहां स्तन कैंसर के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-12 20:38:18] Best translation 2 : JAS 39C ग्रिपन ने 9:30 am स्थानीय समय (230 UTC) के आसपास एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद कर दिया।
+[2024-02-12 20:38:18] Best translation 3 : पायलट को स्क्वाड्रन लीडर डिलोकिट पैटेवे के रूप में पहचाना गया था।
+[2024-02-12 20:38:18] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-12 20:38:18] Best translation 5 : 28 वर्षीय विराट ने सेविला से तीन सीज़न पहले बारा में शामिल हुए थे।
+[2024-02-12 20:38:18] Best translation 10 : 11:29 के आसपास, विरोध ने व्हाइटहॉल, पिछले ट्राफागर स्क्वायर को स्थानांतरित कर दिया, साथ ही एल्डविच द्वारा पारित होकर और किंग्सवे की ओर से होनॉर्बियन की ओर से गुजरती थी, जहां रूढ़िवादी पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रहे थे।
+[2024-02-12 20:38:18] Best translation 20 : इस चुनाव के दौरान उन्होंने बताया कि मा संकट के समय देश को छोड़ सकता है।
+[2024-02-12 20:38:18] Best translation 40 : जॉन ग्रांट, वेन्ड भैंस (रेडिंग इंद्रधनुष के घर स्टेशन) ने कहा कि इंद्रधनुष को पढ़ने के लिए क्यों सिखाया जाता है,... पढ़ने का प्यार — [शो] बच्चों को एक किताब लेने के लिए प्रोत्साहित किया और पढ़ने के लिए।"
+[2024-02-12 20:38:18] Best translation 80 : Maroochydore तो प्रारंभिक अंतिम में कोबोलोचर को हराया।
+[2024-02-12 20:38:18] Best translation 160 : स्टीवर्ट, गॉर्डन, केश और हारविक ने सीजन में चार दौड़ के साथ ड्राइवर चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 20:38:18] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 20:38:19] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 20:38:19] Total translation time: 1.98514s
+[2024-02-12 20:38:19] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-12 20:38:20] [valid] Ep. 4 : Up. 15000 : chrf : 51.5717 : new best
+[2024-02-12 20:38:20] Translating validation set...
+[2024-02-12 20:38:21] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकता है: एक छोटे से मुद्रण योग्य चिप जो संभवतः एक अमेरिकी केंद्र के बारे में मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 20:38:21] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का शुरुआती पता लगा सकता है, जहां स्तन कैंसर के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-12 20:38:21] Best translation 2 : JAS 39C ग्रिपन ने 9:30 am स्थानीय समय (230 UTC) के आसपास एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद कर दिया।
+[2024-02-12 20:38:21] Best translation 3 : पायलट को स्क्वाड्रन लीडर डिलोकिट पैटेवे के रूप में पहचाना गया था।
+[2024-02-12 20:38:21] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-12 20:38:21] Best translation 5 : 28 वर्षीय विराट ने सेविला से तीन सीज़न पहले बारा में शामिल हुए थे।
+[2024-02-12 20:38:21] Best translation 10 : 11:29 के आसपास, विरोध ने व्हाइटहॉल, पिछले ट्राफागर स्क्वायर को स्थानांतरित कर दिया, साथ ही एल्डविच द्वारा पारित होकर और किंग्सवे की ओर से होनॉर्बियन की ओर से गुजरती थी, जहां रूढ़िवादी पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रहे थे।
+[2024-02-12 20:38:21] Best translation 20 : इस चुनाव के दौरान उन्होंने बताया कि मा संकट के समय देश को छोड़ सकता है।
+[2024-02-12 20:38:21] Best translation 40 : जॉन ग्रांट, वेन्ड भैंस (रेडिंग इंद्रधनुष के घर स्टेशन) ने कहा कि इंद्रधनुष को पढ़ने के लिए क्यों सिखाया जाता है,... पढ़ने का प्यार — [शो] बच्चों को एक किताब लेने के लिए प्रोत्साहित किया और पढ़ने के लिए।"
+[2024-02-12 20:38:21] Best translation 80 : Maroochydore तो प्रारंभिक अंतिम में कोबोलोचर को हराया।
+[2024-02-12 20:38:21] Best translation 160 : स्टीवर्ट, गॉर्डन, केश और हारविक ने सीजन में चार दौड़ के साथ ड्राइवर चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 20:38:21] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 20:38:21] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 20:38:22] Total translation time: 1.43495s
+[2024-02-12 20:38:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-12 20:38:23] [valid] Ep. 4 : Up. 15000 : bleu : 25.4236 : new best
+[2024-02-12 20:38:23] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 20:38:25] [valid] Ep. 4 : Up. 15000 : ce-mean-words : 2.11218 : new best
+[2024-02-12 20:47:58] Ep. 4 : Up. 16000 : Sen. 15,129,478 : Cost 2.56674886 : Time 589.37s : 159461.58 words/s : gNorm 0.4593
+[2024-02-12 20:56:38] Seen 19,297,165 samples
+[2024-02-12 20:56:38] Starting data epoch 5 in logical epoch 5
+[2024-02-12 20:58:16] Ep. 5 : Up. 17000 : Sen. 294,753 : Cost 2.51380777 : Time 617.20s : 148929.26 words/s : gNorm 0.3829
+[2024-02-12 21:07:59] Ep. 5 : Up. 18000 : Sen. 4,835,313 : Cost 2.46815228 : Time 583.64s : 161591.93 words/s : gNorm 0.3445
+[2024-02-12 21:17:38] Ep. 5 : Up. 19000 : Sen. 9,481,278 : Cost 2.43128967 : Time 579.32s : 162647.10 words/s : gNorm 0.3473
+[2024-02-12 21:27:12] Ep. 5 : Up. 20000 : Sen. 14,061,860 : Cost 2.39268541 : Time 573.43s : 163170.66 words/s : gNorm 0.3316
+[2024-02-12 21:27:12] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 21:27:14] Saving Adam parameters
+[2024-02-12 21:27:17] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-12 21:27:20] Translating validation set...
+[2024-02-12 21:27:21] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार से कोशिकाओं को सॉर्ट कर सकता है: एक छोटे से मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी सेंट प्रत्येक के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 21:27:21] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का शीघ्र पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दरें अमीर देशों के आधे हो सकती हैं।
+[2024-02-12 21:27:21] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 UTC) और विस्फोट, बंद करने के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-12 21:27:21] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकित पटवी के रूप में की गई थी।
+[2024-02-12 21:27:21] Best translation 4 : स्थानीय मीडिया ने जवाब देते हुए हवाई अड्डे के फायर व्हीकल को रोल किया।
+[2024-02-12 21:27:21] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बारा में शामिल हो गए थे।
+[2024-02-12 21:27:21] Best translation 10 : लगभग 11:29, विरोध व्हाइटहॉल, पिछले ट्रैफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डिविच और किंग्सवे द्वारा होल्बोर्न की ओर जाता है जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 21:27:21] Best translation 20 : इस चुनाव के दौरान हसीह ने आरोप लगाया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-12 21:27:21] Best translation 40 : जॉन ग्रांट, WNED Buffalo (रेडिंग रेनबो के घर स्टेशन) से कहा "पढ़ने इंद्रधनुष बच्चों को क्यों पढ़ने के लिए सिखाया,... पढ़ने के प्यार - [शो] बच्चों को एक किताब लेने के लिए और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 21:27:21] Best translation 80 : इसके बाद मैरोचीडोर ने प्रारंभिक फाइनल में काबोहोल्चर को हराया।
+[2024-02-12 21:27:21] Best translation 160 : स्टीवर्ट, गॉर्डन, केनेश और हारविक ने सीजन में शेष चार दौड़ के साथ ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 21:27:21] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 21:27:21] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 21:27:22] Total translation time: 1.90295s
+[2024-02-12 21:27:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-12 21:27:23] [valid] Ep. 5 : Up. 20000 : chrf : 55.1506 : new best
+[2024-02-12 21:27:23] Translating validation set...
+[2024-02-12 21:27:24] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार से कोशिकाओं को सॉर्ट कर सकता है: एक छोटे से मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी सेंट प्रत्येक के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 21:27:24] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का शीघ्र पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दरें अमीर देशों के आधे हो सकती हैं।
+[2024-02-12 21:27:24] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 UTC) और विस्फोट, बंद करने के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-12 21:27:24] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकित पटवी के रूप में की गई थी।
+[2024-02-12 21:27:24] Best translation 4 : स्थानीय मीडिया ने जवाब देते हुए हवाई अड्डे के फायर व्हीकल को रोल किया।
+[2024-02-12 21:27:24] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बारा में शामिल हो गए थे।
+[2024-02-12 21:27:24] Best translation 10 : लगभग 11:29, विरोध व्हाइटहॉल, पिछले ट्रैफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डिविच और किंग्सवे द्वारा होल्बोर्न की ओर जाता है जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 21:27:24] Best translation 20 : इस चुनाव के दौरान हसीह ने आरोप लगाया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-12 21:27:24] Best translation 40 : जॉन ग्रांट, WNED Buffalo (रेडिंग रेनबो के घर स्टेशन) से कहा "पढ़ने इंद्रधनुष बच्चों को क्यों पढ़ने के लिए सिखाया,... पढ़ने के प्यार - [शो] बच्चों को एक किताब लेने के लिए और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 21:27:24] Best translation 80 : इसके बाद मैरोचीडोर ने प्रारंभिक फाइनल में काबोहोल्चर को हराया।
+[2024-02-12 21:27:24] Best translation 160 : स्टीवर्ट, गॉर्डन, केनेश और हारविक ने सीजन में शेष चार दौड़ के साथ ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 21:27:24] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 21:27:24] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 21:27:25] Total translation time: 1.51627s
+[2024-02-12 21:27:25] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-12 21:27:26] [valid] Ep. 5 : Up. 20000 : bleu : 29.6118 : new best
+[2024-02-12 21:27:26] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 21:27:27] [valid] Ep. 5 : Up. 20000 : ce-mean-words : 1.80985 : new best
+[2024-02-12 21:36:46] Ep. 5 : Up. 21000 : Sen. 18,518,590 : Cost 2.38082027 : Time 574.45s : 162565.54 words/s : gNorm 0.3157
+[2024-02-12 21:38:21] Seen 19,297,119 samples
+[2024-02-12 21:38:21] Starting data epoch 6 in logical epoch 6
+[2024-02-12 21:47:25] Ep. 6 : Up. 22000 : Sen. 3,815,224 : Cost 2.35469604 : Time 638.47s : 146181.05 words/s : gNorm 0.3156
+[2024-02-12 21:57:11] Ep. 6 : Up. 23000 : Sen. 8,376,786 : Cost 2.33544803 : Time 586.62s : 160283.28 words/s : gNorm 0.3295
+[2024-02-12 22:06:52] Ep. 6 : Up. 24000 : Sen. 12,957,797 : Cost 2.31968617 : Time 580.63s : 161848.78 words/s : gNorm 0.2976
+[2024-02-12 22:16:15] Ep. 6 : Up. 25000 : Sen. 17,477,890 : Cost 2.30308962 : Time 562.80s : 166483.15 words/s : gNorm 0.2735
+[2024-02-12 22:16:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 22:16:17] Saving Adam parameters
+[2024-02-12 22:16:20] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-12 22:16:23] Translating validation set...
+[2024-02-12 22:16:24] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकते हैं: एक छोटे से मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी सेंट के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 22:16:24] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया के रोगियों का शीघ्र पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित दरें अमीर देशों के आधे हो सकती हैं।
+[2024-02-12 22:16:24] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 UTC) और विस्फोट, बंद करने के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-12 22:16:24] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकित पटटवी के रूप में की गई थी।
+[2024-02-12 22:16:24] Best translation 4 : स्थानीय मीडिया ने जवाब देते समय हवाई अड्डे के फायर व्हीकल को रोल किया।
+[2024-02-12 22:16:24] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-12 22:16:24] Best translation 10 : लगभग 11:29, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे को होल्बॉर्न की ओर ले गया था जहां कंविजर्वेटिव पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 22:16:24] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-12 22:16:24] Best translation 40 : जॉन ग्रांट ने WNED Buffalo (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को क्यों पढ़ना सिखाया,... पढ़ने के प्यार - [शो] ने बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 22:16:24] Best translation 80 : इसके बाद मैरोचीडोर ने प्रारंभिक फाइनल में काबोलाइटर को हराया।
+[2024-02-12 22:16:24] Best translation 160 : स्टीवर्ट, गॉर्डन, केनेथ और हारविक ने सीजन में शेष चार दौड़ के साथ ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 22:16:24] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 22:16:25] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 22:16:25] Total translation time: 2.00905s
+[2024-02-12 22:16:25] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-12 22:16:26] [valid] Ep. 6 : Up. 25000 : chrf : 56.4625 : new best
+[2024-02-12 22:16:26] Translating validation set...
+[2024-02-12 22:16:27] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकते हैं: एक छोटे से मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी सेंट के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 22:16:27] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया के रोगियों का शीघ्र पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित दरें अमीर देशों के आधे हो सकती हैं।
+[2024-02-12 22:16:27] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 UTC) और विस्फोट, बंद करने के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-12 22:16:27] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकित पटटवी के रूप में की गई थी।
+[2024-02-12 22:16:27] Best translation 4 : स्थानीय मीडिया ने जवाब देते समय हवाई अड्डे के फायर व्हीकल को रोल किया।
+[2024-02-12 22:16:27] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-12 22:16:27] Best translation 10 : लगभग 11:29, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे को होल्बॉर्न की ओर ले गया था जहां कंविजर्वेटिव पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 22:16:27] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-12 22:16:27] Best translation 40 : जॉन ग्रांट ने WNED Buffalo (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को क्यों पढ़ना सिखाया,... पढ़ने के प्यार - [शो] ने बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 22:16:27] Best translation 80 : इसके बाद मैरोचीडोर ने प्रारंभिक फाइनल में काबोलाइटर को हराया।
+[2024-02-12 22:16:27] Best translation 160 : स्टीवर्ट, गॉर्डन, केनेथ और हारविक ने सीजन में शेष चार दौड़ के साथ ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 22:16:27] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 22:16:27] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 22:16:28] Total translation time: 1.45252s
+[2024-02-12 22:16:28] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-12 22:16:29] [valid] Ep. 6 : Up. 25000 : bleu : 30.9379 : new best
+[2024-02-12 22:16:29] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 22:16:31] [valid] Ep. 6 : Up. 25000 : ce-mean-words : 1.69151 : new best
+[2024-02-12 22:20:14] Seen 19,297,094 samples
+[2024-02-12 22:20:14] Starting data epoch 7 in logical epoch 7
+[2024-02-12 22:27:01] Ep. 7 : Up. 26000 : Sen. 2,732,678 : Cost 2.29616857 : Time 646.23s : 143774.94 words/s : gNorm 0.3285
+[2024-02-12 22:36:40] Ep. 7 : Up. 27000 : Sen. 7,286,983 : Cost 2.28568625 : Time 578.54s : 163309.97 words/s : gNorm 0.2990
+[2024-02-12 22:46:18] Ep. 7 : Up. 28000 : Sen. 11,891,580 : Cost 2.26951432 : Time 578.58s : 162387.13 words/s : gNorm 0.2946
+[2024-02-12 22:55:55] Ep. 7 : Up. 29000 : Sen. 16,458,539 : Cost 2.26250482 : Time 576.36s : 163534.72 words/s : gNorm 0.2840
+[2024-02-12 23:01:46] Seen 19,297,221 samples
+[2024-02-12 23:01:46] Starting data epoch 8 in logical epoch 8
+[2024-02-12 23:06:22] Ep. 8 : Up. 30000 : Sen. 1,641,811 : Cost 2.25252342 : Time 627.25s : 147634.97 words/s : gNorm 0.3166
+[2024-02-12 23:06:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 23:06:24] Saving Adam parameters
+[2024-02-12 23:06:27] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-12 23:06:30] Translating validation set...
+[2024-02-12 23:06:31] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकता है: एक छोटे से मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 23:06:31] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए उत्तरजीविता दर अमीर देशों के आधे हो सकती है।
+[2024-02-12 23:06:31] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 UTC) और विस्फोट, समापन हवाई अड्डे के लिए वाणिज्यिक उड़ानों.
+[2024-02-12 23:06:31] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकरित पटटवी के रूप में की गई थी।
+[2024-02-12 23:06:31] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-12 23:06:31] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-12 23:06:31] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर में चला गया, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे को होल्बोर्न की ओर बढ़ा दिया गया था, जहां रूढ़िवादी पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 23:06:31] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-12 23:06:31] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी भैंस (पढ़ने इंद्रधनुष के घर स्टेशन) से कहा "पढ़ने इंद्रधनुष सिखाया बच्चों क्यों पढ़ने के लिए,... पढ़ने के प्यार - [शो] बच्चों को एक किताब लेने के लिए और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 23:06:31] Best translation 80 : इसके बाद मैरोचीडोर ने प्रारंभिक फाइनल में काबोलाइटर को हराया।
+[2024-02-12 23:06:31] Best translation 160 : स्टीवर्ट, गॉर्डन, केनेथ और हारविक ने सीजन में शेष चार दौड़ के साथ ड्राइवरों की चैंपियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 23:06:31] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 23:06:32] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 23:06:32] Total translation time: 2.05844s
+[2024-02-12 23:06:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-12 23:06:33] [valid] Ep. 8 : Up. 30000 : chrf : 57.0929 : new best
+[2024-02-12 23:06:33] Translating validation set...
+[2024-02-12 23:06:34] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकता है: एक छोटे से मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 23:06:34] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए उत्तरजीविता दर अमीर देशों के आधे हो सकती है।
+[2024-02-12 23:06:34] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 UTC) और विस्फोट, समापन हवाई अड्डे के लिए वाणिज्यिक उड़ानों.
+[2024-02-12 23:06:34] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकरित पटटवी के रूप में की गई थी।
+[2024-02-12 23:06:34] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-12 23:06:34] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-12 23:06:34] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर में चला गया, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे को होल्बोर्न की ओर बढ़ा दिया गया था, जहां रूढ़िवादी पार्टी ग्रैंड कनॉट रूम होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 23:06:34] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-12 23:06:34] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी भैंस (पढ़ने इंद्रधनुष के घर स्टेशन) से कहा "पढ़ने इंद्रधनुष सिखाया बच्चों क्यों पढ़ने के लिए,... पढ़ने के प्यार - [शो] बच्चों को एक किताब लेने के लिए और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 23:06:34] Best translation 80 : इसके बाद मैरोचीडोर ने प्रारंभिक फाइनल में काबोलाइटर को हराया।
+[2024-02-12 23:06:34] Best translation 160 : स्टीवर्ट, गॉर्डन, केनेथ और हारविक ने सीजन में शेष चार दौड़ के साथ ड्राइवरों की चैंपियनशिप के लिए शीर्ष दस पदों को गोल किया।
+[2024-02-12 23:06:34] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 23:06:35] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 23:06:35] Total translation time: 1.47990s
+[2024-02-12 23:06:35] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-12 23:06:36] [valid] Ep. 8 : Up. 30000 : bleu : 31.9101 : new best
+[2024-02-12 23:06:36] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 23:06:38] [valid] Ep. 8 : Up. 30000 : ce-mean-words : 1.63544 : new best
+[2024-02-12 23:16:17] Ep. 8 : Up. 31000 : Sen. 6,282,107 : Cost 2.24318004 : Time 595.09s : 158629.26 words/s : gNorm 0.2681
+[2024-02-12 23:25:51] Ep. 8 : Up. 32000 : Sen. 10,811,117 : Cost 2.24164510 : Time 574.39s : 162215.49 words/s : gNorm 0.2921
+[2024-02-12 23:35:25] Ep. 8 : Up. 33000 : Sen. 15,346,625 : Cost 2.23711395 : Time 573.90s : 164055.35 words/s : gNorm 0.3015
+[2024-02-12 23:43:31] Seen 19,297,181 samples
+[2024-02-12 23:43:31] Starting data epoch 9 in logical epoch 9
+[2024-02-12 23:45:54] Ep. 9 : Up. 34000 : Sen. 584,482 : Cost 2.22483301 : Time 628.57s : 146911.17 words/s : gNorm 0.2947
+[2024-02-12 23:55:33] Ep. 9 : Up. 35000 : Sen. 5,209,129 : Cost 2.21643090 : Time 579.40s : 162718.27 words/s : gNorm 0.2748
+[2024-02-12 23:55:33] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-12 23:55:35] Saving Adam parameters
+[2024-02-12 23:55:38] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-12 23:55:41] Translating validation set...
+[2024-02-12 23:55:42] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकता है: एक छोटा मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 23:55:42] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित दरें अमीर देशों के आधे हो सकती हैं।
+[2024-02-12 23:55:42] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 UTC) और विस्फोट, समापन हवाई अड्डे के लिए वाणिज्यिक उड़ानों.
+[2024-02-12 23:55:42] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकरित पटटवी के रूप में की गई थी।
+[2024-02-12 23:55:42] Best translation 4 : स्थानीय मीडिया ने जवाब देते समय एयरपोर्ट फायर व्हीकल को रोल किया।
+[2024-02-12 23:55:42] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-12 23:55:42] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 23:55:42] Best translation 20 : महामहिम ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-12 23:55:42] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी भैंस (पढ़ने इंद्रधनुष के घर स्टेशन) से कहा "पढ़ने इंद्रधनुष सिखाया बच्चों क्यों पढ़ने के लिए,... पढ़ने के प्यार - [शो] बच्चों को एक किताब लेने के लिए और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 23:55:42] Best translation 80 : इसके बाद मेरूचीडोर ने प्रारंभिक फाइनल में कैबोलचर को हराया।
+[2024-02-12 23:55:42] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैंपियनशिप के लिए शीर्ष दस पदों को गोल कर दिया, जिसमें चार दौड़ मौसम में शेष हैं।
+[2024-02-12 23:55:42] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 23:55:43] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 23:55:43] Total translation time: 2.04506s
+[2024-02-12 23:55:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-12 23:55:44] [valid] Ep. 9 : Up. 35000 : chrf : 57.354 : new best
+[2024-02-12 23:55:44] Translating validation set...
+[2024-02-12 23:55:46] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो प्रकार द्वारा कोशिकाओं को सॉर्ट कर सकता है: एक छोटा मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-12 23:55:46] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित दरें अमीर देशों के आधे हो सकती हैं।
+[2024-02-12 23:55:46] Best translation 2 : JAS 39C Gripen दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 यूटीसी) और विस्फोट, समापन हवाई अड्डे के लिए वाणिज्यिक उड़ानों.
+[2024-02-12 23:55:46] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकरित पटटवी के रूप में की गई थी।
+[2024-02-12 23:55:46] Best translation 4 : स्थानीय मीडिया ने जवाब देते समय एयरपोर्ट फायर व्हीकल को रोल किया।
+[2024-02-12 23:55:46] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-12 23:55:46] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-12 23:55:46] Best translation 20 : महामहिम ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-12 23:55:46] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी भैंस (पढ़ने इंद्रधनुष के घर स्टेशन) से कहा "पढ़ने इंद्रधनुष सिखाया बच्चों क्यों पढ़ने के लिए,... पढ़ने के प्यार - [शो] बच्चों को एक किताब लेने के लिए और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-12 23:55:46] Best translation 80 : इसके बाद मेरूचीडोर ने प्रारंभिक फाइनल में कैबोलचर को हराया।
+[2024-02-12 23:55:46] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैंपियनशिप के लिए शीर्ष दस पदों को गोल कर दिया, जिसमें चार दौड़ मौसम में शेष हैं।
+[2024-02-12 23:55:46] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-12 23:55:46] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-12 23:55:46] Total translation time: 1.52571s
+[2024-02-12 23:55:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-12 23:55:47] [valid] Ep. 9 : Up. 35000 : bleu : 32.2836 : new best
+[2024-02-12 23:55:48] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-12 23:55:49] [valid] Ep. 9 : Up. 35000 : ce-mean-words : 1.60087 : new best
+[2024-02-13 00:05:29] Ep. 9 : Up. 36000 : Sen. 9,695,631 : Cost 2.22005630 : Time 596.16s : 158202.46 words/s : gNorm 0.2610
+[2024-02-13 00:15:03] Ep. 9 : Up. 37000 : Sen. 14,305,057 : Cost 2.20949650 : Time 573.26s : 163859.06 words/s : gNorm 0.2707
+[2024-02-13 00:24:21] Ep. 9 : Up. 38000 : Sen. 18,795,200 : Cost 2.20886755 : Time 558.18s : 166479.44 words/s : gNorm 0.2941
+[2024-02-13 00:25:19] Seen 19,297,187 samples
+[2024-02-13 00:25:19] Starting data epoch 10 in logical epoch 10
+[2024-02-13 00:34:55] Ep. 10 : Up. 39000 : Sen. 4,098,753 : Cost 2.19939876 : Time 633.75s : 148034.31 words/s : gNorm 0.2884
+[2024-02-13 00:44:49] Ep. 10 : Up. 40000 : Sen. 8,707,333 : Cost 2.19485426 : Time 594.55s : 158832.61 words/s : gNorm 0.3016
+[2024-02-13 00:44:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 00:44:51] Saving Adam parameters
+[2024-02-13 00:44:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 00:44:57] Translating validation set...
+[2024-02-13 00:44:58] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 00:44:58] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों के लिए कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 00:44:58] Best translation 2 : JAS 39C ग्रिपन दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 यूटीसी) और विस्फोट, बंद करने के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-13 00:44:58] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकरी पटाटवी के रूप में की गई थी।
+[2024-02-13 00:44:58] Best translation 4 : स्थानीय मीडिया ने जवाब देते समय हवाई अड्डे के फायर वाहन की रिपोर्ट की।
+[2024-02-13 00:44:58] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 00:44:58] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 00:44:58] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-13 00:44:58] Best translation 40 : जॉन ग्रांट ने WNED बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 00:44:58] Best translation 80 : तब मैरूचीडोर ने प्रारंभिक फाइनल में कैबॉल्चर को हराया।
+[2024-02-13 00:44:58] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें चार दौड़ मौसम में शेष हैं।
+[2024-02-13 00:44:58] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 00:44:59] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 00:44:59] Total translation time: 1.98523s
+[2024-02-13 00:44:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 00:45:00] [valid] Ep. 10 : Up. 40000 : chrf : 57.8193 : new best
+[2024-02-13 00:45:00] Translating validation set...
+[2024-02-13 00:45:01] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा मुद्रण योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 00:45:01] Best translation 1 : नेतृत्व शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों के लिए कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 00:45:01] Best translation 2 : JAS 39C ग्रिपन दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 यूटीसी) और विस्फोट, बंद करने के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-13 00:45:01] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोकरी पटाटवी के रूप में की गई थी।
+[2024-02-13 00:45:01] Best translation 4 : स्थानीय मीडिया ने जवाब देते समय हवाई अड्डे के फायर वाहन की रिपोर्ट की।
+[2024-02-13 00:45:01] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 00:45:01] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 00:45:01] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि संकट के समय मा देश से भाग सकता है।
+[2024-02-13 00:45:01] Best translation 40 : जॉन ग्रांट ने WNED बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 00:45:01] Best translation 80 : तब मैरूचीडोर ने प्रारंभिक फाइनल में कैबॉल्चर को हराया।
+[2024-02-13 00:45:01] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें चार दौड़ मौसम में शेष हैं।
+[2024-02-13 00:45:01] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 00:45:02] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 00:45:02] Total translation time: 1.47597s
+[2024-02-13 00:45:02] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 00:45:03] [valid] Ep. 10 : Up. 40000 : bleu : 32.7501 : new best
+[2024-02-13 00:45:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 00:45:05] [valid] Ep. 10 : Up. 40000 : ce-mean-words : 1.5797 : new best
+[2024-02-13 00:54:39] Ep. 10 : Up. 41000 : Sen. 13,244,013 : Cost 2.19639540 : Time 589.89s : 159668.13 words/s : gNorm 0.2757
+[2024-02-13 01:03:58] Ep. 10 : Up. 42000 : Sen. 17,843,168 : Cost 2.18505478 : Time 559.45s : 166754.85 words/s : gNorm 0.3005
+[2024-02-13 01:07:04] Seen 19,297,155 samples
+[2024-02-13 01:07:04] Starting data epoch 11 in logical epoch 11
+[2024-02-13 01:14:27] Ep. 11 : Up. 43000 : Sen. 3,043,975 : Cost 2.18771100 : Time 628.53s : 147188.19 words/s : gNorm 0.2846
+[2024-02-13 01:24:07] Ep. 11 : Up. 44000 : Sen. 7,622,866 : Cost 2.18075037 : Time 579.68s : 162998.33 words/s : gNorm 0.2867
+[2024-02-13 01:33:44] Ep. 11 : Up. 45000 : Sen. 12,186,412 : Cost 2.17992210 : Time 577.18s : 163318.84 words/s : gNorm 0.2917
+[2024-02-13 01:33:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 01:33:46] Saving Adam parameters
+[2024-02-13 01:33:49] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 01:33:52] Translating validation set...
+[2024-02-13 01:33:53] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 01:33:53] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 01:33:53] Best translation 2 : JAS 39C ग्रिपन के दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 यूटीसी) और विस्फोट, समापन के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-13 01:33:53] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर दिलकृत पटाटवी के रूप में की गई थी।
+[2024-02-13 01:33:53] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे के आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-13 01:33:53] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 01:33:53] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के अतीत में, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 01:33:53] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 01:33:53] Best translation 40 : जॉन ग्रांट ने WNED बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 01:33:53] Best translation 80 : मेरूचीडोर ने प्रारंभिक फाइनल में कैबॉल्चर को हराया।
+[2024-02-13 01:33:53] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 01:33:53] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 01:33:54] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 01:33:54] Total translation time: 2.08743s
+[2024-02-13 01:33:54] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 01:33:55] [valid] Ep. 11 : Up. 45000 : chrf : 57.9558 : new best
+[2024-02-13 01:33:55] Translating validation set...
+[2024-02-13 01:33:56] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 01:33:56] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 01:33:56] Best translation 2 : JAS 39C ग्रिपन के दुर्घटनाग्रस्त हो गया पर एक रनवे पर लगभग 9:30 am स्थानीय समय (0230 यूटीसी) और विस्फोट, समापन के लिए हवाई अड्डे वाणिज्यिक उड़ानों.
+[2024-02-13 01:33:56] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर दिलकृत पटाटवी के रूप में की गई थी।
+[2024-02-13 01:33:56] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे के आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-13 01:33:56] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 01:33:56] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के अतीत में, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 01:33:56] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 01:33:56] Best translation 40 : जॉन ग्रांट ने WNED बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 01:33:56] Best translation 80 : मेरूचीडोर ने प्रारंभिक फाइनल में कैबॉल्चर को हराया।
+[2024-02-13 01:33:56] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 01:33:56] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 01:33:57] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 01:33:57] Total translation time: 1.52311s
+[2024-02-13 01:33:57] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 01:33:58] [valid] Ep. 11 : Up. 45000 : bleu : 33.1174 : new best
+[2024-02-13 01:33:58] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 01:34:00] [valid] Ep. 11 : Up. 45000 : ce-mean-words : 1.56394 : new best
+[2024-02-13 01:43:32] Ep. 11 : Up. 46000 : Sen. 16,740,502 : Cost 2.17397976 : Time 587.87s : 159773.25 words/s : gNorm 0.2697
+[2024-02-13 01:48:47] Seen 19,297,138 samples
+[2024-02-13 01:48:47] Starting data epoch 12 in logical epoch 12
+[2024-02-13 01:53:57] Ep. 12 : Up. 47000 : Sen. 1,918,165 : Cost 2.17549968 : Time 625.12s : 148083.04 words/s : gNorm 0.3005
+[2024-02-13 02:03:34] Ep. 12 : Up. 48000 : Sen. 6,600,189 : Cost 2.16659904 : Time 577.22s : 162294.12 words/s : gNorm 0.2873
+[2024-02-13 02:13:14] Ep. 12 : Up. 49000 : Sen. 11,142,400 : Cost 2.16490746 : Time 579.91s : 163394.19 words/s : gNorm 0.2817
+[2024-02-13 02:22:46] Ep. 12 : Up. 50000 : Sen. 15,680,682 : Cost 2.16648293 : Time 571.88s : 164212.65 words/s : gNorm 0.2925
+[2024-02-13 02:22:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 02:22:48] Saving Adam parameters
+[2024-02-13 02:22:51] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 02:22:54] Translating validation set...
+[2024-02-13 02:22:56] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 02:22:56] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 02:22:56] Best translation 2 : JS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 02:22:56] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 02:22:56] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे के आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-13 02:22:56] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 02:22:56] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के अतीत में, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 02:22:56] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 02:22:56] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) से जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 02:22:56] Best translation 80 : मैरूकीडोर ने प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 02:22:56] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 02:22:56] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 02:22:56] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 02:22:56] Total translation time: 2.56250s
+[2024-02-13 02:22:56] [valid] Ep. 12 : Up. 50000 : chrf : 57.9516 : stalled 1 times (last best: 57.9558)
+[2024-02-13 02:22:56] Translating validation set...
+[2024-02-13 02:22:57] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 02:22:57] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 02:22:57] Best translation 2 : JS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 02:22:57] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 02:22:57] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे के आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-13 02:22:57] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 02:22:57] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के अतीत में, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 02:22:57] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 02:22:57] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) से जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 02:22:57] Best translation 80 : मैरूकीडोर ने प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 02:22:57] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 02:22:57] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 02:22:58] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 02:22:58] Total translation time: 1.56317s
+[2024-02-13 02:22:58] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 02:22:59] [valid] Ep. 12 : Up. 50000 : bleu : 33.197 : new best
+[2024-02-13 02:23:00] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 02:23:01] [valid] Ep. 12 : Up. 50000 : ce-mean-words : 1.55305 : new best
+[2024-02-13 02:30:27] Seen 19,297,142 samples
+[2024-02-13 02:30:27] Starting data epoch 13 in logical epoch 13
+[2024-02-13 02:33:28] Ep. 13 : Up. 51000 : Sen. 882,760 : Cost 2.16152930 : Time 642.39s : 143408.83 words/s : gNorm 0.2885
+[2024-02-13 02:43:04] Ep. 13 : Up. 52000 : Sen. 5,398,412 : Cost 2.16277742 : Time 576.00s : 162728.21 words/s : gNorm 0.2851
+[2024-02-13 02:52:42] Ep. 13 : Up. 53000 : Sen. 10,018,545 : Cost 2.15605617 : Time 578.24s : 163548.30 words/s : gNorm 0.2735
+[2024-02-13 03:02:16] Ep. 13 : Up. 54000 : Sen. 14,650,833 : Cost 2.14812422 : Time 573.91s : 163545.87 words/s : gNorm 0.2956
+[2024-02-13 03:11:31] Ep. 13 : Up. 55000 : Sen. 19,096,646 : Cost 2.15492797 : Time 554.94s : 166393.14 words/s : gNorm 0.3012
+[2024-02-13 03:11:31] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 03:11:34] Saving Adam parameters
+[2024-02-13 03:11:36] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 03:11:39] Translating validation set...
+[2024-02-13 03:11:41] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटी प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 03:11:41] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 03:11:41] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 03:11:41] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 03:11:41] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 03:11:41] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 03:11:41] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के अतीत में, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 03:11:41] Best translation 20 : Hsieh ने चुनाव के दौरान निहित है कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 03:11:41] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 03:11:41] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 03:11:41] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 03:11:41] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 03:11:41] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 03:11:41] Total translation time: 2.11651s
+[2024-02-13 03:11:41] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 03:11:43] [valid] Ep. 13 : Up. 55000 : chrf : 58.2797 : new best
+[2024-02-13 03:11:43] Translating validation set...
+[2024-02-13 03:11:44] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटी प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 03:11:44] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 03:11:44] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 03:11:44] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 03:11:44] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 03:11:44] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 03:11:44] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के अतीत में, स्ट्रैंड के साथ, एल्डविच और किंग्सवे द्वारा होल्बोर्न की ओर से गुजर रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 03:11:44] Best translation 20 : Hsieh ने चुनाव के दौरान निहित है कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 03:11:44] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 03:11:44] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 03:11:44] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 03:11:44] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 03:11:44] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 03:11:44] Total translation time: 1.47357s
+[2024-02-13 03:11:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 03:11:46] [valid] Ep. 13 : Up. 55000 : bleu : 33.6092 : new best
+[2024-02-13 03:11:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 03:11:47] [valid] Ep. 13 : Up. 55000 : ce-mean-words : 1.54347 : new best
+[2024-02-13 03:12:11] Seen 19,297,120 samples
+[2024-02-13 03:12:11] Starting data epoch 14 in logical epoch 14
+[2024-02-13 03:22:32] Ep. 14 : Up. 56000 : Sen. 4,380,981 : Cost 2.15123534 : Time 660.32s : 143010.27 words/s : gNorm 0.2868
+[2024-02-13 03:32:08] Ep. 14 : Up. 57000 : Sen. 8,942,954 : Cost 2.14668179 : Time 576.22s : 162417.29 words/s : gNorm 0.2719
+[2024-02-13 03:41:43] Ep. 14 : Up. 58000 : Sen. 13,535,389 : Cost 2.14382696 : Time 574.72s : 164464.91 words/s : gNorm 0.2586
+[2024-02-13 03:51:02] Ep. 14 : Up. 59000 : Sen. 18,040,832 : Cost 2.14885902 : Time 559.09s : 166255.18 words/s : gNorm 0.3000
+[2024-02-13 03:53:35] Seen 19,297,201 samples
+[2024-02-13 03:53:35] Starting data epoch 15 in logical epoch 15
+[2024-02-13 04:01:30] Ep. 15 : Up. 60000 : Sen. 3,283,873 : Cost 2.13927388 : Time 628.04s : 148597.84 words/s : gNorm 0.2769
+[2024-02-13 04:01:30] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 04:01:32] Saving Adam parameters
+[2024-02-13 04:01:35] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 04:01:37] Translating validation set...
+[2024-02-13 04:01:39] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटी प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 04:01:39] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का शीघ्र पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 04:01:39] Best translation 2 : JS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 04:01:39] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 04:01:39] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 04:01:39] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 04:01:39] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ चला गया, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बोर्न जहां कंजर्वेटिव कंफर्ट पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 04:01:39] Best translation 20 : Hsieh ने चुनाव के दौरान निहित है कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 04:01:39] Best translation 40 : डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा, पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 04:01:39] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 04:01:39] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 04:01:39] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 04:01:39] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 04:01:39] Total translation time: 1.98207s
+[2024-02-13 04:01:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 04:01:41] [valid] Ep. 15 : Up. 60000 : chrf : 58.5828 : new best
+[2024-02-13 04:01:41] Translating validation set...
+[2024-02-13 04:01:42] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटी प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 04:01:42] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 04:01:42] Best translation 2 : JS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 04:01:42] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 04:01:42] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 04:01:42] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 04:01:42] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ चला गया, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बोर्न जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 04:01:42] Best translation 20 : Hsieh ने चुनाव के दौरान निहित है कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 04:01:42] Best translation 40 : डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा क्यों,... पढ़ना पसंद है - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 04:01:42] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 04:01:42] Best translation 160 : स्टीवर्ट, गॉर्डन, केंसेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 04:01:42] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 04:01:42] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 04:01:42] Total translation time: 1.56497s
+[2024-02-13 04:01:42] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 04:01:44] [valid] Ep. 15 : Up. 60000 : bleu : 33.7321 : new best
+[2024-02-13 04:01:44] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 04:01:45] [valid] Ep. 15 : Up. 60000 : ce-mean-words : 1.53574 : new best
+[2024-02-13 04:11:23] Ep. 15 : Up. 61000 : Sen. 7,895,980 : Cost 2.14030504 : Time 593.73s : 158185.37 words/s : gNorm 0.3042
+[2024-02-13 04:21:12] Ep. 15 : Up. 62000 : Sen. 12,468,869 : Cost 2.13952374 : Time 588.49s : 160215.94 words/s : gNorm 0.2857
+[2024-02-13 04:30:35] Ep. 15 : Up. 63000 : Sen. 17,023,462 : Cost 2.13581967 : Time 563.29s : 165958.50 words/s : gNorm 0.3104
+[2024-02-13 04:35:18] Seen 19,297,095 samples
+[2024-02-13 04:35:18] Starting data epoch 16 in logical epoch 16
+[2024-02-13 04:41:04] Ep. 16 : Up. 64000 : Sen. 2,136,504 : Cost 2.13698387 : Time 629.01s : 147350.73 words/s : gNorm 0.2899
+[2024-02-13 04:50:43] Ep. 16 : Up. 65000 : Sen. 6,893,053 : Cost 2.12737393 : Time 578.72s : 163252.30 words/s : gNorm 0.3068
+[2024-02-13 04:50:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 04:50:45] Saving Adam parameters
+[2024-02-13 04:50:48] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 04:50:51] Translating validation set...
+[2024-02-13 04:50:52] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 04:50:52] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 04:50:52] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 04:50:52] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 04:50:52] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-13 04:50:52] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 04:50:52] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ चला गया, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बोर्न जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 04:50:52] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 04:50:52] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 04:50:52] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 04:50:52] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 04:50:52] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 04:50:53] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 04:50:53] Total translation time: 2.04020s
+[2024-02-13 04:50:53] [valid] Ep. 16 : Up. 65000 : chrf : 58.5181 : stalled 1 times (last best: 58.5828)
+[2024-02-13 04:50:53] Translating validation set...
+[2024-02-13 04:50:54] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 04:50:54] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 04:50:54] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 04:50:54] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर Dilokrit Pattavee के रूप में की गई थी।
+[2024-02-13 04:50:54] Best translation 4 : स्थानीय मीडिया एक हवाई अड्डे आग वाहन जवाब देते समय पर लुढ़का रिपोर्ट करता है।
+[2024-02-13 04:50:54] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 04:50:54] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ चला गया, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बोर्न जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 04:50:54] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 04:50:54] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 04:50:54] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 04:50:54] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष हैं।
+[2024-02-13 04:50:54] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 04:50:54] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 04:50:54] Total translation time: 1.51572s
+[2024-02-13 04:50:54] [valid] Ep. 16 : Up. 65000 : bleu : 33.5752 : stalled 1 times (last best: 33.7321)
+[2024-02-13 04:50:54] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 04:50:56] [valid] Ep. 16 : Up. 65000 : ce-mean-words : 1.52941 : new best
+[2024-02-13 05:00:34] Ep. 16 : Up. 66000 : Sen. 11,351,088 : Cost 2.13703394 : Time 591.04s : 159120.55 words/s : gNorm 0.2741
+[2024-02-13 05:10:07] Ep. 16 : Up. 67000 : Sen. 15,934,008 : Cost 2.13138294 : Time 573.52s : 163967.87 words/s : gNorm 0.3094
+[2024-02-13 05:17:00] Seen 19,297,113 samples
+[2024-02-13 05:17:00] Starting data epoch 17 in logical epoch 17
+[2024-02-13 05:20:32] Ep. 17 : Up. 68000 : Sen. 1,152,024 : Cost 2.12603688 : Time 624.06s : 148080.58 words/s : gNorm 0.2864
+[2024-02-13 05:30:05] Ep. 17 : Up. 69000 : Sen. 5,687,375 : Cost 2.12817335 : Time 573.38s : 162777.34 words/s : gNorm 0.2737
+[2024-02-13 05:39:47] Ep. 17 : Up. 70000 : Sen. 10,294,829 : Cost 2.12738872 : Time 582.40s : 163555.19 words/s : gNorm 0.2640
+[2024-02-13 05:39:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 05:39:50] Saving Adam parameters
+[2024-02-13 05:39:52] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 05:39:55] Translating validation set...
+[2024-02-13 05:39:56] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 05:39:57] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 05:39:57] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 05:39:57] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पट्टावी के रूप में की गई थी।
+[2024-02-13 05:39:57] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 05:39:57] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 05:39:57] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बोर्न जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 05:39:57] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 05:39:57] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) से जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा क्यों,... पढ़ना पसंद है - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 05:39:57] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 05:39:57] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 05:39:57] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 05:39:57] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 05:39:57] Total translation time: 1.97637s
+[2024-02-13 05:39:57] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 05:39:59] [valid] Ep. 17 : Up. 70000 : chrf : 58.6175 : new best
+[2024-02-13 05:39:59] Translating validation set...
+[2024-02-13 05:40:00] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 05:40:00] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 05:40:00] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 05:40:00] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पट्टावी के रूप में की गई थी।
+[2024-02-13 05:40:00] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 05:40:00] Best translation 5 : 28 वर्षीय विडाल सेविला से तीन सीज़न पहले बार्का में शामिल हो गए थे।
+[2024-02-13 05:40:00] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बोर्न जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 05:40:00] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 05:40:00] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) से जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ा क्यों,... पढ़ना पसंद है - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 05:40:00] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 05:40:00] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 05:40:00] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 05:40:00] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 05:40:00] Total translation time: 1.50323s
+[2024-02-13 05:40:00] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 05:40:01] [valid] Ep. 17 : Up. 70000 : bleu : 33.7801 : new best
+[2024-02-13 05:40:02] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 05:40:03] [valid] Ep. 17 : Up. 70000 : ce-mean-words : 1.52488 : new best
+[2024-02-13 05:49:32] Ep. 17 : Up. 71000 : Sen. 14,889,055 : Cost 2.12375450 : Time 584.34s : 159830.81 words/s : gNorm 0.2777
+[2024-02-13 05:58:37] Seen 19,297,187 samples
+[2024-02-13 05:58:37] Starting data epoch 18 in logical epoch 18
+[2024-02-13 05:59:56] Ep. 18 : Up. 72000 : Sen. 86,483 : Cost 2.12348318 : Time 624.62s : 148777.43 words/s : gNorm 0.3046
+[2024-02-13 06:09:43] Ep. 18 : Up. 73000 : Sen. 4,672,383 : Cost 2.12243652 : Time 586.59s : 159862.50 words/s : gNorm 0.2965
+[2024-02-13 06:19:19] Ep. 18 : Up. 74000 : Sen. 9,205,269 : Cost 2.12038350 : Time 576.46s : 162702.81 words/s : gNorm 0.2807
+[2024-02-13 06:28:55] Ep. 18 : Up. 75000 : Sen. 13,907,781 : Cost 2.11767745 : Time 575.40s : 165308.22 words/s : gNorm 0.3021
+[2024-02-13 06:28:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 06:28:57] Saving Adam parameters
+[2024-02-13 06:29:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 06:29:03] Translating validation set...
+[2024-02-13 06:29:04] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 06:29:04] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 06:29:04] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 06:29:04] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पट्टावी के रूप में की गई थी।
+[2024-02-13 06:29:04] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 06:29:04] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 06:29:04] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बॉर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 06:29:04] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 06:29:04] Best translation 40 : डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 06:29:04] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 06:29:04] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 06:29:04] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 06:29:05] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 06:29:05] Total translation time: 1.97725s
+[2024-02-13 06:29:05] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 06:29:06] [valid] Ep. 18 : Up. 75000 : chrf : 58.6359 : new best
+[2024-02-13 06:29:06] Translating validation set...
+[2024-02-13 06:29:07] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 06:29:07] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 06:29:07] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 06:29:07] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पट्टावी के रूप में की गई थी।
+[2024-02-13 06:29:07] Best translation 4 : स्थानीय मीडिया जवाब देते समय हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 06:29:07] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 06:29:07] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच से गुजर रहा था और किंग्सवे की ओर होल्बॉर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 06:29:07] Best translation 20 : Hsieh ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 06:29:07] Best translation 40 : डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 06:29:07] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 06:29:07] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 06:29:07] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 06:29:07] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता की अनुमति देता है।
+[2024-02-13 06:29:07] Total translation time: 1.48965s
+[2024-02-13 06:29:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 06:29:09] [valid] Ep. 18 : Up. 75000 : bleu : 33.7908 : new best
+[2024-02-13 06:29:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 06:29:11] [valid] Ep. 18 : Up. 75000 : ce-mean-words : 1.5218 : new best
+[2024-02-13 06:38:28] Ep. 18 : Up. 76000 : Sen. 18,385,803 : Cost 2.11820340 : Time 573.01s : 161737.03 words/s : gNorm 0.2828
+[2024-02-13 06:40:25] Seen 19,297,156 samples
+[2024-02-13 06:40:25] Starting data epoch 19 in logical epoch 19
+[2024-02-13 06:49:00] Ep. 19 : Up. 77000 : Sen. 3,613,494 : Cost 2.11838913 : Time 632.33s : 147205.29 words/s : gNorm 0.2895
+[2024-02-13 06:58:39] Ep. 19 : Up. 78000 : Sen. 8,171,126 : Cost 2.11658716 : Time 578.78s : 162778.88 words/s : gNorm 0.2923
+[2024-02-13 07:08:26] Ep. 19 : Up. 79000 : Sen. 12,786,649 : Cost 2.11264896 : Time 587.47s : 160543.58 words/s : gNorm 0.2835
+[2024-02-13 07:17:45] Ep. 19 : Up. 80000 : Sen. 17,261,426 : Cost 2.11560941 : Time 558.47s : 166441.26 words/s : gNorm 0.3070
+[2024-02-13 07:17:45] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 07:17:47] Saving Adam parameters
+[2024-02-13 07:17:50] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 07:17:53] Translating validation set...
+[2024-02-13 07:17:54] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 07:17:54] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 07:17:54] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 07:17:54] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पट्टावी के रूप में की गई थी।
+[2024-02-13 07:17:54] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 07:17:54] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 07:17:54] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 07:17:54] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 07:17:54] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 07:17:54] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 07:17:54] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 07:17:54] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 07:17:54] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 07:17:54] Total translation time: 1.95649s
+[2024-02-13 07:17:54] [valid] Ep. 19 : Up. 80000 : chrf : 58.5482 : stalled 1 times (last best: 58.6359)
+[2024-02-13 07:17:54] Translating validation set...
+[2024-02-13 07:17:55] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 07:17:56] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों के आधे हो सकती है।
+[2024-02-13 07:17:56] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 07:17:56] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पट्टावी के रूप में की गई थी।
+[2024-02-13 07:17:56] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 07:17:56] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 07:17:56] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 07:17:56] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 07:17:56] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 07:17:56] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 07:17:56] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 07:17:56] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 07:17:56] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 07:17:56] Total translation time: 1.45910s
+[2024-02-13 07:17:56] [valid] Ep. 19 : Up. 80000 : bleu : 33.6959 : stalled 1 times (last best: 33.7908)
+[2024-02-13 07:17:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 07:17:58] [valid] Ep. 19 : Up. 80000 : ce-mean-words : 1.51812 : new best
+[2024-02-13 07:22:06] Seen 19,297,160 samples
+[2024-02-13 07:22:06] Starting data epoch 20 in logical epoch 20
+[2024-02-13 07:28:26] Ep. 20 : Up. 81000 : Sen. 2,549,757 : Cost 2.11240721 : Time 641.53s : 144564.28 words/s : gNorm 0.2796
+[2024-02-13 07:38:09] Ep. 20 : Up. 82000 : Sen. 7,113,942 : Cost 2.11080337 : Time 582.20s : 163209.12 words/s : gNorm 0.3081
+[2024-02-13 07:47:43] Ep. 20 : Up. 83000 : Sen. 11,727,924 : Cost 2.10640955 : Time 574.85s : 162135.42 words/s : gNorm 0.2867
+[2024-02-13 07:57:17] Ep. 20 : Up. 84000 : Sen. 16,251,203 : Cost 2.11302161 : Time 573.09s : 164386.68 words/s : gNorm 0.2847
+[2024-02-13 08:03:36] Seen 19,297,026 samples
+[2024-02-13 08:03:36] Starting data epoch 21 in logical epoch 21
+[2024-02-13 08:07:43] Ep. 21 : Up. 85000 : Sen. 1,503,035 : Cost 2.10467386 : Time 626.61s : 148331.21 words/s : gNorm 0.2937
+[2024-02-13 08:07:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 08:07:45] Saving Adam parameters
+[2024-02-13 08:07:48] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 08:07:51] Translating validation set...
+[2024-02-13 08:07:52] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 08:07:52] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 08:07:52] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 08:07:52] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 08:07:52] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 08:07:52] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 08:07:52] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 08:07:52] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 08:07:52] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 08:07:52] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 08:07:52] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 08:07:52] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 08:07:53] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 08:07:53] Total translation time: 2.05229s
+[2024-02-13 08:07:53] [valid] Ep. 21 : Up. 85000 : chrf : 58.5705 : stalled 2 times (last best: 58.6359)
+[2024-02-13 08:07:53] Translating validation set...
+[2024-02-13 08:07:54] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 08:07:54] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में रोगियों को कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्दी पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 08:07:54] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 08:07:54] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 08:07:54] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 08:07:54] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 08:07:54] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 08:07:54] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 08:07:54] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 08:07:54] Best translation 80 : मैरूकीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 08:07:54] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 08:07:54] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 08:07:54] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 08:07:54] Total translation time: 1.52803s
+[2024-02-13 08:07:54] [valid] Ep. 21 : Up. 85000 : bleu : 33.7008 : stalled 2 times (last best: 33.7908)
+[2024-02-13 08:07:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 08:07:56] [valid] Ep. 21 : Up. 85000 : ce-mean-words : 1.51637 : new best
+[2024-02-13 08:17:33] Ep. 21 : Up. 86000 : Sen. 5,879,331 : Cost 2.11743164 : Time 589.73s : 159316.48 words/s : gNorm 0.2998
+[2024-02-13 08:27:10] Ep. 21 : Up. 87000 : Sen. 10,600,504 : Cost 2.09999585 : Time 577.63s : 162714.85 words/s : gNorm 0.2767
+[2024-02-13 08:36:45] Ep. 21 : Up. 88000 : Sen. 15,145,495 : Cost 2.10529900 : Time 574.31s : 163776.34 words/s : gNorm 0.2822
+[2024-02-13 08:45:15] Seen 19,297,157 samples
+[2024-02-13 08:45:15] Starting data epoch 22 in logical epoch 22
+[2024-02-13 08:47:10] Ep. 22 : Up. 89000 : Sen. 390,173 : Cost 2.10467911 : Time 625.53s : 147237.42 words/s : gNorm 0.2981
+[2024-02-13 08:56:50] Ep. 22 : Up. 90000 : Sen. 4,915,631 : Cost 2.10570669 : Time 579.66s : 163082.32 words/s : gNorm 0.2871
+[2024-02-13 08:56:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 08:56:52] Saving Adam parameters
+[2024-02-13 08:56:55] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 08:56:58] Translating validation set...
+[2024-02-13 08:56:59] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 08:56:59] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 08:56:59] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 08:56:59] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 08:56:59] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 08:56:59] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 08:56:59] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 08:56:59] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 08:56:59] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 08:56:59] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 08:56:59] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 08:56:59] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 08:57:00] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 08:57:00] Total translation time: 2.07430s
+[2024-02-13 08:57:00] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 08:57:01] [valid] Ep. 22 : Up. 90000 : chrf : 58.6544 : new best
+[2024-02-13 08:57:01] Translating validation set...
+[2024-02-13 08:57:02] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 08:57:02] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 08:57:02] Best translation 2 : JAS 39C ग्रिपन लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 08:57:02] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 08:57:02] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के फायर वाहन की रिपोर्ट करता है।
+[2024-02-13 08:57:02] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 08:57:02] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 08:57:02] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 08:57:02] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 08:57:02] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 08:57:02] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 08:57:02] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 08:57:03] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 08:57:03] Total translation time: 1.56389s
+[2024-02-13 08:57:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 08:57:04] [valid] Ep. 22 : Up. 90000 : bleu : 33.7924 : new best
+[2024-02-13 08:57:04] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 08:57:06] [valid] Ep. 22 : Up. 90000 : ce-mean-words : 1.5152 : new best
+[2024-02-13 09:06:45] Ep. 22 : Up. 91000 : Sen. 9,524,540 : Cost 2.10001564 : Time 594.70s : 158898.42 words/s : gNorm 0.3008
+[2024-02-13 09:16:18] Ep. 22 : Up. 92000 : Sen. 14,108,749 : Cost 2.10251498 : Time 573.29s : 163552.88 words/s : gNorm 0.2940
+[2024-02-13 09:25:33] Ep. 22 : Up. 93000 : Sen. 18,635,058 : Cost 2.10036230 : Time 555.37s : 166956.04 words/s : gNorm 0.2978
+[2024-02-13 09:26:58] Seen 19,297,181 samples
+[2024-02-13 09:26:58] Starting data epoch 23 in logical epoch 23
+[2024-02-13 09:36:05] Ep. 23 : Up. 94000 : Sen. 3,885,679 : Cost 2.10059285 : Time 631.33s : 148283.53 words/s : gNorm 0.2975
+[2024-02-13 09:45:52] Ep. 23 : Up. 95000 : Sen. 8,479,742 : Cost 2.09880209 : Time 587.18s : 159700.28 words/s : gNorm 0.3070
+[2024-02-13 09:45:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 09:45:54] Saving Adam parameters
+[2024-02-13 09:45:57] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 09:46:00] Translating validation set...
+[2024-02-13 09:46:02] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 09:46:02] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 09:46:02] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 09:46:02] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 09:46:02] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 09:46:02] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 09:46:02] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 09:46:02] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 09:46:02] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 09:46:02] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 09:46:02] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 09:46:02] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 09:46:03] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 09:46:03] Total translation time: 3.01572s
+[2024-02-13 09:46:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 09:46:04] [valid] Ep. 23 : Up. 95000 : chrf : 58.8033 : new best
+[2024-02-13 09:46:04] Translating validation set...
+[2024-02-13 09:46:05] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 09:46:05] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 09:46:05] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 09:46:05] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 09:46:05] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 09:46:05] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 09:46:05] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 09:46:05] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकता है।
+[2024-02-13 09:46:05] Best translation 40 : डब्ल्यूएनईडी भैंस (रीडिंग रेनबो के होम स्टेशन) के जॉन ग्रांट ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 09:46:05] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 09:46:05] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 09:46:06] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 09:46:06] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 09:46:06] Total translation time: 1.49155s
+[2024-02-13 09:46:06] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 09:46:07] [valid] Ep. 23 : Up. 95000 : bleu : 33.9191 : new best
+[2024-02-13 09:46:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 09:46:09] [valid] Ep. 23 : Up. 95000 : ce-mean-words : 1.51318 : new best
+[2024-02-13 09:55:43] Ep. 23 : Up. 96000 : Sen. 13,021,028 : Cost 2.09989095 : Time 591.14s : 159457.89 words/s : gNorm 0.2900
+[2024-02-13 10:05:04] Ep. 23 : Up. 97000 : Sen. 17,574,855 : Cost 2.09725308 : Time 560.65s : 166935.25 words/s : gNorm 0.3004
+[2024-02-13 10:08:37] Seen 19,297,160 samples
+[2024-02-13 10:08:37] Starting data epoch 24 in logical epoch 24
+[2024-02-13 10:15:32] Ep. 24 : Up. 98000 : Sen. 2,791,162 : Cost 2.09466505 : Time 628.25s : 147586.49 words/s : gNorm 0.2937
+[2024-02-13 10:25:11] Ep. 24 : Up. 99000 : Sen. 7,428,585 : Cost 2.09713054 : Time 578.69s : 163050.16 words/s : gNorm 0.3025
+[2024-02-13 10:34:49] Ep. 24 : Up. 100000 : Sen. 11,902,798 : Cost 2.09988737 : Time 578.26s : 162714.68 words/s : gNorm 0.3006
+[2024-02-13 10:34:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 10:34:51] Saving Adam parameters
+[2024-02-13 10:34:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 10:34:57] Translating validation set...
+[2024-02-13 10:34:58] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 10:34:58] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 10:34:58] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 10:34:58] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 10:34:58] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 10:34:58] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 10:34:58] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजरते हुए और किंग्सवे की ओर होल्बोर्न की ओर बढ़ गया, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 10:34:58] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 10:34:58] Best translation 40 : जॉन ग्रांट ने डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] ने बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 10:34:58] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 10:34:58] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 10:34:58] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 10:34:59] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 10:34:59] Total translation time: 1.99749s
+[2024-02-13 10:34:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-chrf.npz
+[2024-02-13 10:35:00] [valid] Ep. 24 : Up. 100000 : chrf : 58.871 : new best
+[2024-02-13 10:35:00] Translating validation set...
+[2024-02-13 10:35:01] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 10:35:01] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों का आधा हो सकती है।
+[2024-02-13 10:35:01] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 10:35:01] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 10:35:01] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 10:35:01] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 10:35:01] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजरते हुए और किंग्सवे की ओर होल्बोर्न की ओर बढ़ गया, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 10:35:01] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 10:35:01] Best translation 40 : जॉन ग्रांट ने डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] ने बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 10:35:01] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 10:35:01] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 10:35:01] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 10:35:01] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 10:35:02] Total translation time: 1.46324s
+[2024-02-13 10:35:02] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-bleu.npz
+[2024-02-13 10:35:03] [valid] Ep. 24 : Up. 100000 : bleu : 34.0518 : new best
+[2024-02-13 10:35:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 10:35:05] [valid] Ep. 24 : Up. 100000 : ce-mean-words : 1.51133 : new best
+[2024-02-13 10:44:38] Ep. 24 : Up. 101000 : Sen. 16,529,152 : Cost 2.09135199 : Time 589.24s : 159655.53 words/s : gNorm 0.3058
+[2024-02-13 10:50:20] Seen 19,297,192 samples
+[2024-02-13 10:50:20] Starting data epoch 25 in logical epoch 25
+[2024-02-13 10:55:09] Ep. 25 : Up. 102000 : Sen. 1,746,358 : Cost 2.09089422 : Time 630.59s : 146449.84 words/s : gNorm 0.2882
+[2024-02-13 11:04:46] Ep. 25 : Up. 103000 : Sen. 6,297,966 : Cost 2.09602189 : Time 577.26s : 163278.46 words/s : gNorm 0.3067
+[2024-02-13 11:14:25] Ep. 25 : Up. 104000 : Sen. 10,895,875 : Cost 2.09063935 : Time 578.61s : 162761.40 words/s : gNorm 0.2957
+[2024-02-13 11:23:57] Ep. 25 : Up. 105000 : Sen. 15,486,516 : Cost 2.09270310 : Time 572.69s : 164148.92 words/s : gNorm 0.3048
+[2024-02-13 11:23:57] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 11:24:00] Saving Adam parameters
+[2024-02-13 11:24:02] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 11:24:05] Translating validation set...
+[2024-02-13 11:24:07] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 11:24:07] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 11:24:07] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 11:24:07] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 11:24:07] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 11:24:07] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 11:24:07] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 11:24:07] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 11:24:07] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 11:24:07] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 11:24:07] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 11:24:07] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 11:24:07] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता प्रदान करता है।
+[2024-02-13 11:24:07] Total translation time: 2.05698s
+[2024-02-13 11:24:07] [valid] Ep. 25 : Up. 105000 : chrf : 58.7373 : stalled 1 times (last best: 58.871)
+[2024-02-13 11:24:07] Translating validation set...
+[2024-02-13 11:24:08] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 11:24:08] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 11:24:08] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 11:24:08] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीत पटाटवी के रूप में की गई थी।
+[2024-02-13 11:24:08] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 11:24:08] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 11:24:08] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 11:24:08] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 11:24:08] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 11:24:08] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबोल्चर को हराया।
+[2024-02-13 11:24:08] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को गोल किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 11:24:08] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 11:24:09] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता प्रदान करता है।
+[2024-02-13 11:24:09] Total translation time: 1.45849s
+[2024-02-13 11:24:09] [valid] Ep. 25 : Up. 105000 : bleu : 33.8671 : stalled 1 times (last best: 34.0518)
+[2024-02-13 11:24:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 11:24:10] [valid] Ep. 25 : Up. 105000 : ce-mean-words : 1.51008 : new best
+[2024-02-13 11:32:03] Seen 19,297,055 samples
+[2024-02-13 11:32:03] Starting data epoch 26 in logical epoch 26
+[2024-02-13 11:34:40] Ep. 26 : Up. 106000 : Sen. 730,534 : Cost 2.09028912 : Time 642.86s : 144902.17 words/s : gNorm 0.2807
+[2024-02-13 11:44:16] Ep. 26 : Up. 107000 : Sen. 5,205,282 : Cost 2.09200048 : Time 575.66s : 162050.51 words/s : gNorm 0.3094
+[2024-02-13 11:53:56] Ep. 26 : Up. 108000 : Sen. 9,808,280 : Cost 2.08988667 : Time 579.99s : 163178.99 words/s : gNorm 0.2881
+[2024-02-13 12:03:29] Ep. 26 : Up. 109000 : Sen. 14,267,540 : Cost 2.09324789 : Time 572.86s : 163344.38 words/s : gNorm 0.2869
+[2024-02-13 12:12:47] Ep. 26 : Up. 110000 : Sen. 18,916,540 : Cost 2.08237648 : Time 558.37s : 166559.42 words/s : gNorm 0.3104
+[2024-02-13 12:12:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 12:12:49] Saving Adam parameters
+[2024-02-13 12:12:52] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 12:12:55] Translating validation set...
+[2024-02-13 12:12:56] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 12:12:56] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 12:12:56] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 12:12:56] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटाटवी के रूप में की गई थी।
+[2024-02-13 12:12:56] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 12:12:56] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 12:12:56] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 12:12:56] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 12:12:56] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा "रीडिंग रेनबो ने बच्चों को पढ़ना सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 12:12:56] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 12:12:56] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 12:12:56] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 12:12:57] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 12:12:57] Total translation time: 2.05719s
+[2024-02-13 12:12:57] [valid] Ep. 26 : Up. 110000 : chrf : 58.7278 : stalled 2 times (last best: 58.871)
+[2024-02-13 12:12:57] Translating validation set...
+[2024-02-13 12:12:58] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 12:12:58] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 12:12:58] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 12:12:58] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटाटवी के रूप में की गई थी।
+[2024-02-13 12:12:58] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 12:12:58] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 12:12:58] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था, जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 12:12:58] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 12:12:58] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा "रीडिंग रेनबो ने बच्चों को पढ़ना सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 12:12:58] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 12:12:58] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 12:12:58] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 12:12:58] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 12:12:58] Total translation time: 1.55290s
+[2024-02-13 12:12:58] [valid] Ep. 26 : Up. 110000 : bleu : 33.7613 : stalled 2 times (last best: 34.0518)
+[2024-02-13 12:12:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 12:13:00] [valid] Ep. 26 : Up. 110000 : ce-mean-words : 1.50912 : new best
+[2024-02-13 12:13:47] Seen 19,297,107 samples
+[2024-02-13 12:13:47] Starting data epoch 27 in logical epoch 27
+[2024-02-13 12:23:35] Ep. 27 : Up. 111000 : Sen. 4,186,291 : Cost 2.08948255 : Time 648.16s : 144839.07 words/s : gNorm 0.3011
+[2024-02-13 12:33:22] Ep. 27 : Up. 112000 : Sen. 8,736,253 : Cost 2.08709311 : Time 586.61s : 159871.06 words/s : gNorm 0.2914
+[2024-02-13 12:42:56] Ep. 27 : Up. 113000 : Sen. 13,375,353 : Cost 2.08278942 : Time 573.90s : 164411.94 words/s : gNorm 0.3101
+[2024-02-13 12:52:15] Ep. 27 : Up. 114000 : Sen. 17,856,238 : Cost 2.08768892 : Time 559.18s : 166353.86 words/s : gNorm 0.3066
+[2024-02-13 12:55:12] Seen 19,297,178 samples
+[2024-02-13 12:55:12] Starting data epoch 28 in logical epoch 28
+[2024-02-13 13:02:43] Ep. 28 : Up. 115000 : Sen. 3,172,724 : Cost 2.08362699 : Time 628.07s : 148956.99 words/s : gNorm 0.3015
+[2024-02-13 13:02:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 13:02:45] Saving Adam parameters
+[2024-02-13 13:02:48] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 13:02:51] Translating validation set...
+[2024-02-13 13:02:52] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 13:02:52] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 13:02:52] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 13:02:52] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटाटवी के रूप में की गई थी।
+[2024-02-13 13:02:52] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 13:02:52] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 13:02:52] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 13:02:52] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 13:02:52] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा "रीडिंग रेनबो ने बच्चों को पढ़ना सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 13:02:52] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 13:02:52] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 13:02:52] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 13:02:53] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 13:02:53] Total translation time: 2.05601s
+[2024-02-13 13:02:53] [valid] Ep. 28 : Up. 115000 : chrf : 58.7489 : stalled 3 times (last best: 58.871)
+[2024-02-13 13:02:53] Translating validation set...
+[2024-02-13 13:02:54] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 13:02:54] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 13:02:54] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 13:02:54] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटाटवी के रूप में की गई थी।
+[2024-02-13 13:02:54] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 13:02:54] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 13:02:54] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 13:02:54] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 13:02:54] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) से कहा "रीडिंग रेनबो ने बच्चों को पढ़ना सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 13:02:54] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 13:02:54] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 13:02:54] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 13:02:54] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 13:02:54] Total translation time: 1.51995s
+[2024-02-13 13:02:54] [valid] Ep. 28 : Up. 115000 : bleu : 33.8063 : stalled 3 times (last best: 34.0518)
+[2024-02-13 13:02:54] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 13:02:56] [valid] Ep. 28 : Up. 115000 : ce-mean-words : 1.50778 : new best
+[2024-02-13 13:12:36] Ep. 28 : Up. 116000 : Sen. 7,668,715 : Cost 2.08758354 : Time 593.29s : 159239.63 words/s : gNorm 0.3031
+[2024-02-13 13:22:12] Ep. 28 : Up. 117000 : Sen. 12,265,776 : Cost 2.08403325 : Time 576.16s : 162626.04 words/s : gNorm 0.3203
+[2024-02-13 13:31:44] Ep. 28 : Up. 118000 : Sen. 16,825,552 : Cost 2.08448529 : Time 571.49s : 163952.95 words/s : gNorm 0.3098
+[2024-02-13 13:36:50] Seen 19,297,084 samples
+[2024-02-13 13:36:50] Starting data epoch 29 in logical epoch 29
+[2024-02-13 13:42:13] Ep. 29 : Up. 119000 : Sen. 2,104,175 : Cost 2.07892346 : Time 629.42s : 147770.73 words/s : gNorm 0.2871
+[2024-02-13 13:51:51] Ep. 29 : Up. 120000 : Sen. 6,627,266 : Cost 2.08318830 : Time 577.87s : 161621.99 words/s : gNorm 0.3383
+[2024-02-13 13:51:51] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 13:51:54] Saving Adam parameters
+[2024-02-13 13:51:56] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 13:51:59] Translating validation set...
+[2024-02-13 13:52:01] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 13:52:01] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 13:52:01] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 13:52:01] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटाटवी के रूप में की गई थी।
+[2024-02-13 13:52:01] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 13:52:01] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले, सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 13:52:01] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 13:52:01] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 13:52:01] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 13:52:01] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 13:52:01] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 13:52:01] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 13:52:01] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 13:52:01] Total translation time: 2.07878s
+[2024-02-13 13:52:01] [valid] Ep. 29 : Up. 120000 : chrf : 58.6515 : stalled 4 times (last best: 58.871)
+[2024-02-13 13:52:01] Translating validation set...
+[2024-02-13 13:52:02] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 13:52:02] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि यह कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लगा सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 13:52:02] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 13:52:02] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटाटवी के रूप में की गई थी।
+[2024-02-13 13:52:02] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 13:52:02] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले, सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 13:52:02] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, पिछले ट्राफलगर स्क्वायर, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 13:52:02] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 13:52:02] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 13:52:02] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 13:52:02] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष रही।
+[2024-02-13 13:52:02] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 13:52:03] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 13:52:03] Total translation time: 1.47210s
+[2024-02-13 13:52:03] [valid] Ep. 29 : Up. 120000 : bleu : 33.7594 : stalled 4 times (last best: 34.0518)
+[2024-02-13 13:52:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 13:52:04] [valid] Ep. 29 : Up. 120000 : ce-mean-words : 1.50618 : new best
+[2024-02-13 14:01:42] Ep. 29 : Up. 121000 : Sen. 11,207,876 : Cost 2.08156824 : Time 591.30s : 158966.32 words/s : gNorm 0.3156
+[2024-02-13 14:11:19] Ep. 29 : Up. 122000 : Sen. 15,732,295 : Cost 2.08504963 : Time 576.74s : 164485.60 words/s : gNorm 0.3021
+[2024-02-13 14:18:35] Seen 19,297,117 samples
+[2024-02-13 14:18:35] Starting data epoch 30 in logical epoch 30
+[2024-02-13 14:21:45] Ep. 30 : Up. 123000 : Sen. 994,848 : Cost 2.07781935 : Time 625.66s : 147429.12 words/s : gNorm 0.3100
+[2024-02-13 14:31:20] Ep. 30 : Up. 124000 : Sen. 5,506,730 : Cost 2.08166337 : Time 575.53s : 163756.14 words/s : gNorm 0.3130
+[2024-02-13 14:40:59] Ep. 30 : Up. 125000 : Sen. 10,120,844 : Cost 2.07978749 : Time 578.15s : 163048.49 words/s : gNorm 0.2999
+[2024-02-13 14:40:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 14:41:01] Saving Adam parameters
+[2024-02-13 14:41:04] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz
+[2024-02-13 14:41:06] Translating validation set...
+[2024-02-13 14:41:08] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 14:41:08] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि इससे कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लग सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 14:41:08] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 14:41:08] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटतवी के रूप में की गई थी।
+[2024-02-13 14:41:08] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 14:41:08] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले, सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 14:41:08] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 14:41:08] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 14:41:08] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 14:41:08] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 14:41:08] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष थी।
+[2024-02-13 14:41:08] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 14:41:08] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 14:41:08] Total translation time: 2.03180s
+[2024-02-13 14:41:08] [valid] Ep. 30 : Up. 125000 : chrf : 58.72 : stalled 5 times (last best: 58.871)
+[2024-02-13 14:41:08] Translating validation set...
+[2024-02-13 14:41:10] Best translation 0 : सोमवार को, स्टैनफोर्ड यूनिवर्सिटी स्कूल ऑफ मेडिसिन के वैज्ञानिकों ने एक नए नैदानिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को प्रकार से सॉर्ट कर सकता है: एक छोटा प्रिंट करने योग्य चिप जिसे संभवतः एक अमेरिकी प्रतिशत के लिए मानक इंकजेट प्रिंटर का उपयोग करके निर्मित किया जा सकता है।
+[2024-02-13 14:41:10] Best translation 1 : प्रमुख शोधकर्ताओं का कहना है कि इससे कम आय वाले देशों में कैंसर, तपेदिक, एचआईवी और मलेरिया का जल्द पता लग सकता है, जहां स्तन कैंसर जैसी बीमारियों के लिए जीवित रहने की दर अमीर देशों की आधी हो सकती है।
+[2024-02-13 14:41:10] Best translation 2 : JAS 39C Gripen लगभग 9:30 बजे स्थानीय समय (0230 UTC) पर एक रनवे पर दुर्घटनाग्रस्त हो गया और वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद करते हुए विस्फोट हो गया।
+[2024-02-13 14:41:10] Best translation 3 : पायलट की पहचान स्क्वाड्रन लीडर डिलोक्रीट पटतवी के रूप में की गई थी।
+[2024-02-13 14:41:10] Best translation 4 : स्थानीय मीडिया जवाब देते समय एक हवाई अड्डे के आग वाहन की रिपोर्ट करता है।
+[2024-02-13 14:41:10] Best translation 5 : 28 वर्षीय विडाल तीन सीज़न पहले, सेविला से बार्का में शामिल हो गए थे।
+[2024-02-13 14:41:10] Best translation 10 : 11:29 के आसपास, विरोध व्हाइटहॉल, ट्राफलगर स्क्वायर के पास, स्ट्रैंड के साथ, एल्डविच द्वारा गुजर रहा था और किंग्सवे की ओर होल्बोर्न की ओर बढ़ रहा था जहां कंजर्वेटिव पार्टी ग्रैंड कनॉट रूम्स होटल में अपना स्प्रिंग फोरम आयोजित कर रही थी।
+[2024-02-13 14:41:10] Best translation 20 : हसीह ने चुनाव के दौरान निहित किया कि मा संकट के समय देश से भाग सकते हैं।
+[2024-02-13 14:41:10] Best translation 40 : जॉन ग्रांट, डब्ल्यूएनईडी बफेलो (रीडिंग रेनबो के होम स्टेशन) ने कहा, "रीडिंग रेनबो ने बच्चों को पढ़ने के लिए क्यों सिखाया,... पढ़ने का प्यार - [शो] बच्चों को एक किताब लेने और पढ़ने के लिए प्रोत्साहित किया।"
+[2024-02-13 14:41:10] Best translation 80 : मैरूचीडोर ने तब प्रारंभिक फाइनल में कैबूलचर को हराया।
+[2024-02-13 14:41:10] Best translation 160 : स्टीवर्ट, गॉर्डन, केन्सेथ, और हारविक ने ड्राइवरों की चैम्पियनशिप के लिए शीर्ष दस पदों को राउंड आउट किया, जिसमें सीजन में चार दौड़ शेष थी।
+[2024-02-13 14:41:10] Best translation 320 : तब से, चीन का आर्थिक आकार 90 गुना बढ़ गया है।
+[2024-02-13 14:41:10] Best translation 640 : यह छात्रों को अपनी गति से काम करने और निर्देशात्मक जानकारी की गति को नियंत्रित करने की क्षमता देता है।
+[2024-02-13 14:41:10] Total translation time: 1.54174s
+[2024-02-13 14:41:10] [valid] Ep. 30 : Up. 125000 : bleu : 33.8859 : stalled 5 times (last best: 34.0518)
+[2024-02-13 14:41:10] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 14:41:12] [valid] Ep. 30 : Up. 125000 : ce-mean-words : 1.50503 : new best
+[2024-02-13 14:41:12] Training finished
+[2024-02-13 14:41:12] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz
+[2024-02-13 14:41:14] Saving Adam parameters
+[2024-02-13 14:41:17] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-hi/simple/v0/s.train_model.en-hi/output/model.npz.optimizer.npz

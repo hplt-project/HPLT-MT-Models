@@ -1,0 +1,1324 @@
+[2024-02-13 08:59:09] [marian] Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 08:59:09] [marian] Running on nid005093 as process 21136 with command line:
+[2024-02-13 08:59:09] [marian] /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/marian/bin/marian -c /pfs/lustrep3/scratch/project_465000574/malikbha/OpusPocus/config/marian.train.teacher.base.yml --seed 42 --data-threads 8 --model /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz --vocabs /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.generate_vocab.en-zh_hant/output/model.en-zh_hant.spm /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.generate_vocab.en-zh_hant/output/model.en-zh_hant.spm --dim-vocabs 64000 --tempdir /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/tmp.d/6038660 --train-sets /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/tmp.d/6038660/train.en.gz /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/tmp.d/6038660/train.zh_hant.gz --valid-sets /scratch/project_465000574/data/en-zh_hant/valid/flores200.dev.en-zh_hant.en /scratch/project_465000574/data/en-zh_hant/valid/flores200.dev.en-zh_hant.zh_hant --valid-translation-output /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/logs/model.valid.out --log-level info --log /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/logs/model.train.log --valid-log /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/logs/model.valid.log --devices 0 1 2 3 4 5 6 7
+[2024-02-13 08:59:09] [config] after: 0e
+[2024-02-13 08:59:09] [config] after-batches: 0
+[2024-02-13 08:59:09] [config] after-epochs: 0
+[2024-02-13 08:59:09] [config] all-caps-every: 0
+[2024-02-13 08:59:09] [config] allow-unk: false
+[2024-02-13 08:59:09] [config] authors: false
+[2024-02-13 08:59:09] [config] beam-size: 4
+[2024-02-13 08:59:09] [config] bert-class-symbol: "[CLS]"
+[2024-02-13 08:59:09] [config] bert-mask-symbol: "[MASK]"
+[2024-02-13 08:59:09] [config] bert-masking-fraction: 0.15
+[2024-02-13 08:59:09] [config] bert-sep-symbol: "[SEP]"
+[2024-02-13 08:59:09] [config] bert-train-type-embeddings: true
+[2024-02-13 08:59:09] [config] bert-type-vocab-size: 2
+[2024-02-13 08:59:09] [config] build-info: ""
+[2024-02-13 08:59:09] [config] char-conv-filters-num:
+[2024-02-13 08:59:09] [config]   - 200
+[2024-02-13 08:59:09] [config]   - 200
+[2024-02-13 08:59:09] [config]   - 250
+[2024-02-13 08:59:09] [config]   - 250
+[2024-02-13 08:59:09] [config]   - 300
+[2024-02-13 08:59:09] [config]   - 300
+[2024-02-13 08:59:09] [config]   - 300
+[2024-02-13 08:59:09] [config]   - 300
+[2024-02-13 08:59:09] [config] char-conv-filters-widths:
+[2024-02-13 08:59:09] [config]   - 1
+[2024-02-13 08:59:09] [config]   - 2
+[2024-02-13 08:59:09] [config]   - 3
+[2024-02-13 08:59:09] [config]   - 4
+[2024-02-13 08:59:09] [config]   - 5
+[2024-02-13 08:59:09] [config]   - 6
+[2024-02-13 08:59:09] [config]   - 7
+[2024-02-13 08:59:09] [config]   - 8
+[2024-02-13 08:59:09] [config] char-highway: 4
+[2024-02-13 08:59:09] [config] char-stride: 5
+[2024-02-13 08:59:09] [config] check-gradient-nan: true
+[2024-02-13 08:59:09] [config] check-nan: false
+[2024-02-13 08:59:09] [config] cite: false
+[2024-02-13 08:59:09] [config] clip-norm: 0
+[2024-02-13 08:59:09] [config] cost-scaling:
+[2024-02-13 08:59:09] [config]   []
+[2024-02-13 08:59:09] [config] cost-type: ce-mean-words
+[2024-02-13 08:59:09] [config] cpu-threads: 0
+[2024-02-13 08:59:09] [config] data-threads: 8
+[2024-02-13 08:59:09] [config] data-weighting: ""
+[2024-02-13 08:59:09] [config] data-weighting-type: sentence
+[2024-02-13 08:59:09] [config] dec-cell: gru
+[2024-02-13 08:59:09] [config] dec-cell-base-depth: 2
+[2024-02-13 08:59:09] [config] dec-cell-high-depth: 1
+[2024-02-13 08:59:09] [config] dec-depth: 6
+[2024-02-13 08:59:09] [config] devices:
+[2024-02-13 08:59:09] [config]   - 0
+[2024-02-13 08:59:09] [config]   - 1
+[2024-02-13 08:59:09] [config]   - 2
+[2024-02-13 08:59:09] [config]   - 3
+[2024-02-13 08:59:09] [config]   - 4
+[2024-02-13 08:59:09] [config]   - 5
+[2024-02-13 08:59:09] [config]   - 6
+[2024-02-13 08:59:09] [config]   - 7
+[2024-02-13 08:59:09] [config] dim-emb: 512
+[2024-02-13 08:59:09] [config] dim-rnn: 1024
+[2024-02-13 08:59:09] [config] dim-vocabs:
+[2024-02-13 08:59:09] [config]   - 64000
+[2024-02-13 08:59:09] [config] disp-first: 0
+[2024-02-13 08:59:09] [config] disp-freq: 1000u
+[2024-02-13 08:59:09] [config] disp-label-counts: true
+[2024-02-13 08:59:09] [config] dropout-rnn: 0
+[2024-02-13 08:59:09] [config] dropout-src: 0
+[2024-02-13 08:59:09] [config] dropout-trg: 0
+[2024-02-13 08:59:09] [config] dump-config: ""
+[2024-02-13 08:59:09] [config] dynamic-gradient-scaling:
+[2024-02-13 08:59:09] [config]   []
+[2024-02-13 08:59:09] [config] early-stopping: 5
+[2024-02-13 08:59:09] [config] early-stopping-on: first
+[2024-02-13 08:59:09] [config] embedding-fix-src: false
+[2024-02-13 08:59:09] [config] embedding-fix-trg: false
+[2024-02-13 08:59:09] [config] embedding-normalization: false
+[2024-02-13 08:59:09] [config] embedding-vectors:
+[2024-02-13 08:59:09] [config]   []
+[2024-02-13 08:59:09] [config] enc-cell: gru
+[2024-02-13 08:59:09] [config] enc-cell-depth: 1
+[2024-02-13 08:59:09] [config] enc-depth: 6
+[2024-02-13 08:59:09] [config] enc-type: bidirectional
+[2024-02-13 08:59:09] [config] english-title-case-every: 0
+[2024-02-13 08:59:09] [config] exponential-smoothing: 0.0001
+[2024-02-13 08:59:09] [config] factor-weight: 1
+[2024-02-13 08:59:09] [config] factors-combine: sum
+[2024-02-13 08:59:09] [config] factors-dim-emb: 0
+[2024-02-13 08:59:09] [config] gradient-checkpointing: false
+[2024-02-13 08:59:09] [config] gradient-norm-average-window: 100
+[2024-02-13 08:59:09] [config] guided-alignment: none
+[2024-02-13 08:59:09] [config] guided-alignment-cost: ce
+[2024-02-13 08:59:09] [config] guided-alignment-weight: 0.1
+[2024-02-13 08:59:09] [config] ignore-model-config: false
+[2024-02-13 08:59:09] [config] input-types:
+[2024-02-13 08:59:09] [config]   []
+[2024-02-13 08:59:09] [config] interpolate-env-vars: false
+[2024-02-13 08:59:09] [config] keep-best: true
+[2024-02-13 08:59:09] [config] label-smoothing: 0.1
+[2024-02-13 08:59:09] [config] layer-normalization: false
+[2024-02-13 08:59:09] [config] learn-rate: 0.0003
+[2024-02-13 08:59:09] [config] lemma-dependency: ""
+[2024-02-13 08:59:09] [config] lemma-dim-emb: 0
+[2024-02-13 08:59:09] [config] log: /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/logs/model.train.log
+[2024-02-13 08:59:09] [config] log-level: info
+[2024-02-13 08:59:09] [config] log-time-zone: ""
+[2024-02-13 08:59:09] [config] logical-epoch:
+[2024-02-13 08:59:09] [config]   - 1e
+[2024-02-13 08:59:09] [config]   - 0
+[2024-02-13 08:59:09] [config] lr-decay: 0
+[2024-02-13 08:59:09] [config] lr-decay-freq: 50000
+[2024-02-13 08:59:09] [config] lr-decay-inv-sqrt:
+[2024-02-13 08:59:09] [config]   - 16000
+[2024-02-13 08:59:09] [config] lr-decay-repeat-warmup: false
+[2024-02-13 08:59:09] [config] lr-decay-reset-optimizer: false
+[2024-02-13 08:59:09] [config] lr-decay-start:
+[2024-02-13 08:59:09] [config]   - 10
+[2024-02-13 08:59:09] [config]   - 1
+[2024-02-13 08:59:09] [config] lr-decay-strategy: epoch+stalled
+[2024-02-13 08:59:09] [config] lr-report: false
+[2024-02-13 08:59:09] [config] lr-warmup: 16000
+[2024-02-13 08:59:09] [config] lr-warmup-at-reload: false
+[2024-02-13 08:59:09] [config] lr-warmup-cycle: false
+[2024-02-13 08:59:09] [config] lr-warmup-start-rate: 0
+[2024-02-13 08:59:09] [config] max-length: 250
+[2024-02-13 08:59:09] [config] max-length-crop: false
+[2024-02-13 08:59:09] [config] max-length-factor: 3
+[2024-02-13 08:59:09] [config] maxi-batch: 1000
+[2024-02-13 08:59:09] [config] maxi-batch-sort: trg
+[2024-02-13 08:59:09] [config] mini-batch: 4096
+[2024-02-13 08:59:09] [config] mini-batch-fit: true
+[2024-02-13 08:59:09] [config] mini-batch-fit-step: 10
+[2024-02-13 08:59:09] [config] mini-batch-round-up: true
+[2024-02-13 08:59:09] [config] mini-batch-track-lr: false
+[2024-02-13 08:59:09] [config] mini-batch-warmup: 0
+[2024-02-13 08:59:09] [config] mini-batch-words: 0
+[2024-02-13 08:59:09] [config] mini-batch-words-ref: 0
+[2024-02-13 08:59:09] [config] model: /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 08:59:09] [config] multi-loss-type: sum
+[2024-02-13 08:59:09] [config] n-best: false
+[2024-02-13 08:59:09] [config] no-nccl: false
+[2024-02-13 08:59:09] [config] no-reload: false
+[2024-02-13 08:59:09] [config] no-restore-corpus: false
+[2024-02-13 08:59:09] [config] normalize: 1
+[2024-02-13 08:59:09] [config] normalize-gradient: false
+[2024-02-13 08:59:09] [config] num-devices: 0
+[2024-02-13 08:59:09] [config] optimizer: adam
+[2024-02-13 08:59:09] [config] optimizer-delay: 2
+[2024-02-13 08:59:09] [config] optimizer-params:
+[2024-02-13 08:59:09] [config]   - 0.9
+[2024-02-13 08:59:09] [config]   - 0.98
+[2024-02-13 08:59:09] [config]   - 1e-09
+[2024-02-13 08:59:09] [config] output-omit-bias: false
+[2024-02-13 08:59:09] [config] overwrite: true
+[2024-02-13 08:59:09] [config] precision:
+[2024-02-13 08:59:09] [config]   - float32
+[2024-02-13 08:59:09] [config]   - float32
+[2024-02-13 08:59:09] [config] pretrained-model: ""
+[2024-02-13 08:59:09] [config] quantize-biases: false
+[2024-02-13 08:59:09] [config] quantize-bits: 0
+[2024-02-13 08:59:09] [config] quantize-log-based: false
+[2024-02-13 08:59:09] [config] quantize-optimization-steps: 0
+[2024-02-13 08:59:09] [config] quiet: false
+[2024-02-13 08:59:09] [config] quiet-translation: false
+[2024-02-13 08:59:09] [config] relative-paths: false
+[2024-02-13 08:59:09] [config] right-left: false
+[2024-02-13 08:59:09] [config] save-freq: 5000u
+[2024-02-13 08:59:09] [config] seed: 42
+[2024-02-13 08:59:09] [config] sentencepiece-alphas:
+[2024-02-13 08:59:09] [config]   - 0.1
+[2024-02-13 08:59:09] [config] sentencepiece-max-lines: 2000000
+[2024-02-13 08:59:09] [config] sentencepiece-options: ""
+[2024-02-13 08:59:09] [config] sharding: global
+[2024-02-13 08:59:09] [config] shuffle: batches
+[2024-02-13 08:59:09] [config] shuffle-in-ram: false
+[2024-02-13 08:59:09] [config] sigterm: save-and-exit
+[2024-02-13 08:59:09] [config] skip: false
+[2024-02-13 08:59:09] [config] sqlite: ""
+[2024-02-13 08:59:09] [config] sqlite-drop: false
+[2024-02-13 08:59:09] [config] sync-freq: 200u
+[2024-02-13 08:59:09] [config] sync-sgd: true
+[2024-02-13 08:59:09] [config] tempdir: /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/tmp.d/6038660
+[2024-02-13 08:59:09] [config] tied-embeddings: false
+[2024-02-13 08:59:09] [config] tied-embeddings-all: true
+[2024-02-13 08:59:09] [config] tied-embeddings-src: false
+[2024-02-13 08:59:09] [config] train-embedder-rank:
+[2024-02-13 08:59:09] [config]   []
+[2024-02-13 08:59:09] [config] train-sets:
+[2024-02-13 08:59:09] [config]   - /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/tmp.d/6038660/train.en.gz
+[2024-02-13 08:59:09] [config]   - /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/tmp.d/6038660/train.zh_hant.gz
+[2024-02-13 08:59:09] [config] transformer-aan-activation: swish
+[2024-02-13 08:59:09] [config] transformer-aan-depth: 2
+[2024-02-13 08:59:09] [config] transformer-aan-nogate: false
+[2024-02-13 08:59:09] [config] transformer-decoder-autoreg: self-attention
+[2024-02-13 08:59:09] [config] transformer-decoder-dim-ffn: 0
+[2024-02-13 08:59:09] [config] transformer-decoder-ffn-depth: 0
+[2024-02-13 08:59:09] [config] transformer-depth-scaling: false
+[2024-02-13 08:59:09] [config] transformer-dim-aan: 2048
+[2024-02-13 08:59:09] [config] transformer-dim-ffn: 2048
+[2024-02-13 08:59:09] [config] transformer-dropout: 0.1
+[2024-02-13 08:59:09] [config] transformer-dropout-attention: 0
+[2024-02-13 08:59:09] [config] transformer-dropout-ffn: 0
+[2024-02-13 08:59:09] [config] transformer-ffn-activation: relu
+[2024-02-13 08:59:09] [config] transformer-ffn-depth: 2
+[2024-02-13 08:59:09] [config] transformer-guided-alignment-layer: last
+[2024-02-13 08:59:09] [config] transformer-heads: 8
+[2024-02-13 08:59:09] [config] transformer-no-projection: false
+[2024-02-13 08:59:09] [config] transformer-pool: false
+[2024-02-13 08:59:09] [config] transformer-postprocess: dan
+[2024-02-13 08:59:09] [config] transformer-postprocess-emb: d
+[2024-02-13 08:59:09] [config] transformer-postprocess-top: ""
+[2024-02-13 08:59:09] [config] transformer-preprocess: ""
+[2024-02-13 08:59:09] [config] transformer-rnn-projection: false
+[2024-02-13 08:59:09] [config] transformer-tied-layers:
+[2024-02-13 08:59:09] [config]   []
+[2024-02-13 08:59:09] [config] transformer-train-position-embeddings: false
+[2024-02-13 08:59:09] [config] tsv: false
+[2024-02-13 08:59:09] [config] tsv-fields: 0
+[2024-02-13 08:59:09] [config] type: transformer
+[2024-02-13 08:59:09] [config] ulr: false
+[2024-02-13 08:59:09] [config] ulr-dim-emb: 0
+[2024-02-13 08:59:09] [config] ulr-dropout: 0
+[2024-02-13 08:59:09] [config] ulr-keys-vectors: ""
+[2024-02-13 08:59:09] [config] ulr-query-vectors: ""
+[2024-02-13 08:59:09] [config] ulr-softmax-temperature: 1
+[2024-02-13 08:59:09] [config] ulr-trainable-transformation: false
+[2024-02-13 08:59:09] [config] unlikelihood-loss: false
+[2024-02-13 08:59:09] [config] valid-freq: 5000u
+[2024-02-13 08:59:09] [config] valid-log: /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/logs/model.valid.log
+[2024-02-13 08:59:09] [config] valid-max-length: 1000
+[2024-02-13 08:59:09] [config] valid-metrics:
+[2024-02-13 08:59:09] [config]   - chrf
+[2024-02-13 08:59:09] [config]   - bleu
+[2024-02-13 08:59:09] [config]   - ce-mean-words
+[2024-02-13 08:59:09] [config] valid-mini-batch: 64
+[2024-02-13 08:59:09] [config] valid-reset-stalled: true
+[2024-02-13 08:59:09] [config] valid-script-args:
+[2024-02-13 08:59:09] [config]   []
+[2024-02-13 08:59:09] [config] valid-script-path: ""
+[2024-02-13 08:59:09] [config] valid-sets:
+[2024-02-13 08:59:09] [config]   - /scratch/project_465000574/data/en-zh_hant/valid/flores200.dev.en-zh_hant.en
+[2024-02-13 08:59:09] [config]   - /scratch/project_465000574/data/en-zh_hant/valid/flores200.dev.en-zh_hant.zh_hant
+[2024-02-13 08:59:09] [config] valid-translation-output: /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/logs/model.valid.out
+[2024-02-13 08:59:09] [config] vocabs:
+[2024-02-13 08:59:09] [config]   - /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.generate_vocab.en-zh_hant/output/model.en-zh_hant.spm
+[2024-02-13 08:59:09] [config]   - /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.generate_vocab.en-zh_hant/output/model.en-zh_hant.spm
+[2024-02-13 08:59:09] [config] word-penalty: 0
+[2024-02-13 08:59:09] [config] word-scores: false
+[2024-02-13 08:59:09] [config] workspace: 20000
+[2024-02-13 08:59:09] [config] Model is being created with Marian v1.11.13 320dd390 2022-12-08 15:07:59 +0200
+[2024-02-13 08:59:09] Using synchronous SGD
+[2024-02-13 08:59:09] [comm] Compiled without MPI support. Running as a single process on nid005093
+[2024-02-13 08:59:09] Synced seed 42
+[2024-02-13 08:59:09] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.generate_vocab.en-zh_hant/output/model.en-zh_hant.spm
+[2024-02-13 08:59:09] [data] Setting vocabulary size for input 0 to 64,000
+[2024-02-13 08:59:09] [data] Loading SentencePiece vocabulary from file /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.generate_vocab.en-zh_hant/output/model.en-zh_hant.spm
+[2024-02-13 08:59:09] [data] Setting vocabulary size for input 1 to 64,000
+[2024-02-13 08:59:09] [batching] Collecting statistics for batch fitting with step size 10
+[2024-02-13 08:59:09] Checking gradient for NaN
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 08:59:11] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 08:59:11] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 08:59:13] [comm] Using global sharding
+[2024-02-13 08:59:14] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 08:59:14] [training] Using 8 GPUs
+[2024-02-13 08:59:14] [logits] Applying loss function for 1 factor(s)
+[2024-02-13 08:59:14] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 08:59:19] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 09:00:14] [batching] Done. Typical MB size is 215,155 target words
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu0)
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu1)
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu2)
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu3)
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu4)
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu5)
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu6)
+[2024-02-13 09:00:14] [memory] Extending reserved space to 20096 MB (device gpu7)
+[2024-02-13 09:00:14] [comm] Using NCCL 3.2.12 for GPU communication
+[2024-02-13 09:00:15] [comm] Using global sharding
+[2024-02-13 09:00:15] [comm] NCCLCommunicators constructed successfully
+[2024-02-13 09:00:15] [training] Using 8 GPUs
+[2024-02-13 09:00:15] Training started
+[2024-02-13 09:00:58] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 09:00:58] [memory] Reserving 293 MB, device gpu0
+[2024-02-13 09:01:28] [memory] Reserving 293 MB, device gpu2
+[2024-02-13 09:01:28] [memory] Reserving 293 MB, device gpu4
+[2024-02-13 09:01:28] [memory] Reserving 293 MB, device gpu5
+[2024-02-13 09:01:28] [memory] Reserving 293 MB, device gpu1
+[2024-02-13 09:01:28] [memory] Reserving 293 MB, device gpu3
+[2024-02-13 09:01:28] [memory] Reserving 293 MB, device gpu6
+[2024-02-13 09:01:28] [memory] Reserving 293 MB, device gpu7
+[2024-02-13 09:01:29] Allocating memory for general optimizer shards
+[2024-02-13 09:01:29] Parameter type float32, optimization type float32, casting types false
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu4
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu6
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu5
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu1
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu3
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu7
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu2
+[2024-02-13 09:01:29] [memory] Reserving 36 MB, device gpu0
+[2024-02-13 09:01:29] Allocating memory for Adam-specific shards
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu7
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu3
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu1
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu2
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu6
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu4
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu5
+[2024-02-13 09:01:29] [memory] Reserving 73 MB, device gpu0
+[2024-02-13 09:10:10] Ep. 1 : Up. 1000 : Sen. 5,124,176 : Cost 9.68940926 : Time 596.10s : 135143.23 words/s : gNorm 2.5462
+[2024-02-13 09:18:40] Ep. 1 : Up. 2000 : Sen. 11,752,662 : Cost 8.29574203 : Time 509.20s : 147047.54 words/s : gNorm 1.7008
+[2024-02-13 09:27:23] Ep. 1 : Up. 3000 : Sen. 16,585,538 : Cost 8.17914772 : Time 523.56s : 137795.26 words/s : gNorm 2.2209
+[2024-02-13 09:35:52] Ep. 1 : Up. 4000 : Sen. 20,344,618 : Cost 7.17964268 : Time 508.71s : 143247.78 words/s : gNorm 1.9827
+[2024-02-13 09:44:27] Ep. 1 : Up. 5000 : Sen. 24,478,360 : Cost 6.68247604 : Time 515.34s : 142591.10 words/s : gNorm 1.7863
+[2024-02-13 09:44:27] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 09:44:29] Saving Adam parameters
+[2024-02-13 09:44:32] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 09:44:35] Translating validation set...
+[2024-02-13 09:44:36] [valid] First sentence's tokens as scored:
+[2024-02-13 09:44:36] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2024-02-13 09:44:36] [valid]   Hyp: 重 新 啟 動 。
+[2024-02-13 09:44:36] [valid]   Ref: 這 麼 做 是 為 了 確 保 圖 像 能 蓋 滿 整 個 螢 幕 , 這 個 動 作 稱 為 「 過 掃 描 」 。
+[2024-02-13 09:44:39] Best translation 0 : * 計算: 計算, 計算, 計算, 計算, : 計算, : 及 及產品, , 及 及 , 及 , 及 及 及 , , : 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 : : 及 及 及 : 及 及 及 及 及 及 及 : : : 及 及 : : : 及 及 及 : 及 及 : : : : : : 及 及 及 及 及
+[2024-02-13 09:44:39] Best translation 1 : 聯合國,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,他們,並在在在在在在在在在在在在在在在在在在在在在在在在在在在香港,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們在
+[2024-02-13 09:44:39] Best translation 2 : 在您成功安裝您的 次運作.cab 相關程式(如 加利福尼亞州)之後,根據 說明重新安裝該程式。
+[2024-02-13 09:44:39] Best translation 3 : 商店網頁 .com.com
+[2024-02-13 09:44:39] Best translation 4 : 商店網頁 將電子郵件寄到 及其共享的快速解答。
+[2024-02-13 09:44:39] Best translation 5 : 1 免費 奧斯陸, 距市中心 公里 。 的旅客入住。
+[2024-02-13 09:44:39] Best translation 10 : 1 免費 巴塞隆納,在新加坡的倫敦,在新加坡和中國,在新加坡和中國,在新加坡和中國,在新加坡和中國,在新加坡,在新加坡和中國,在新加坡和中國,在新加坡,在新加坡,在新加坡和中國,在新加坡,在新加坡,在新加坡和中國,在新加坡,在新加坡和中國,在新加坡,在新加坡和中國和中國,在新加坡和中國,在新加坡,在中國,在中國,在新加坡和中國,在新加坡,在新加坡和中國,在新加坡和中國和中國和中國,在中國,在新加坡和中國,在中國,在中國,在中國,在中國,在中國和國際,在中國,在中國和國際,在中國,在中國,在中國和國際,在中國,在中國和國際,在國際,在中國,在中國,在中國和國際,在國際,在國際,在國際,在國際,在中國和國際,在中國和國際,在國際,在中國,在中國和國際,在中國,在中國,在中國,在國際,在
+[2024-02-13 09:44:39] Best translation 20 : (b.) 申請人在「「「」中」」中。
+[2024-02-13 09:44:39] Best translation 40 : "我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我。」
+[2024-02-13 09:44:39] Best translation 80 : 1 免費 舒適。
+[2024-02-13 09:44:39] Best translation 160 : , 未知的語言, New the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the of the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the,,,, the the the the the the the the the the the the the the the the the the the the the
+[2024-02-13 09:44:39] Best translation 320 : 2月1日,於1月1日。
+[2024-02-13 09:44:39] Best translation 640 : 致力於與員工和員工。
+[2024-02-13 09:44:39] Total translation time: 4.24585s
+[2024-02-13 09:44:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 09:44:40] [valid] Ep. 1 : Up. 5000 : chrf : 1.50565 : new best
+[2024-02-13 09:44:40] Translating validation set...
+[2024-02-13 09:44:45] Best translation 0 : * 計算: 計算, 計算, 計算, 計算, : 計算, : 及 及產品, , 及 及 , 及 , 及 及 及 , , : 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 及 : : 及 及 及 : 及 及 及 及 及 及 及 : : : 及 及 : : : 及 及 及 : 及 及 : : : : : : 及 及 及 及 及
+[2024-02-13 09:44:45] Best translation 1 : 聯合國,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,他們,並在在在在在在在在在在在在在在在在在在在在在在在在在在在香港,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們,我們在
+[2024-02-13 09:44:45] Best translation 2 : 在您成功安裝您的 次運作.cab 相關程式(如 加利福尼亞州)之後,根據 說明重新安裝該程式。
+[2024-02-13 09:44:45] Best translation 3 : 商店網頁 .com.com
+[2024-02-13 09:44:45] Best translation 4 : 商店網頁 將電子郵件寄到 及其共享的快速解答。
+[2024-02-13 09:44:45] Best translation 5 : 1 免費 奧斯陸, 距市中心 公里 。 的旅客入住。
+[2024-02-13 09:44:45] Best translation 10 : 1 免費 巴塞隆納,在新加坡的倫敦,在新加坡和中國,在新加坡和中國,在新加坡和中國,在新加坡和中國,在新加坡,在新加坡和中國,在新加坡和中國,在新加坡,在新加坡,在新加坡和中國,在新加坡,在新加坡,在新加坡和中國,在新加坡,在新加坡和中國,在新加坡,在新加坡和中國和中國,在新加坡和中國,在新加坡,在中國,在中國,在新加坡和中國,在新加坡,在新加坡和中國,在新加坡和中國和中國和中國,在中國,在新加坡和中國,在中國,在中國,在中國,在中國,在中國和國際,在中國,在中國和國際,在中國,在中國,在中國和國際,在中國,在中國和國際,在國際,在中國,在中國,在中國和國際,在國際,在國際,在國際,在國際,在中國和國際,在中國和國際,在國際,在中國,在中國和國際,在中國,在中國,在中國,在國際,在
+[2024-02-13 09:44:45] Best translation 20 : (b.) 申請人在「「「」中」」中。
+[2024-02-13 09:44:45] Best translation 40 : "我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我,我。」
+[2024-02-13 09:44:45] Best translation 80 : 1 免費 舒適。
+[2024-02-13 09:44:45] Best translation 160 : , 未知的語言, New the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the of the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the,,,, the the the the the the the the the the the the the the the the the the the the the
+[2024-02-13 09:44:45] Best translation 320 : 2月1日,於1月1日。
+[2024-02-13 09:44:45] Best translation 640 : 致力於與員工和員工。
+[2024-02-13 09:44:45] Total translation time: 4.16776s
+[2024-02-13 09:44:45] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 09:44:46] [valid] Ep. 1 : Up. 5000 : bleu : 0.215373 : new best
+[2024-02-13 09:44:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 09:44:47] [valid] Ep. 1 : Up. 5000 : ce-mean-words : 7.17156 : new best
+[2024-02-13 09:53:34] Ep. 1 : Up. 6000 : Sen. 29,813,354 : Cost 7.23830938 : Time 547.29s : 145714.17 words/s : gNorm 1.6184
+[2024-02-13 10:01:54] Ep. 1 : Up. 7000 : Sen. 36,522,978 : Cost 7.08783388 : Time 499.71s : 149828.32 words/s : gNorm 1.1433
+[2024-02-13 10:03:20] Seen 37,599,567 samples
+[2024-02-13 10:03:20] Starting data epoch 2 in logical epoch 2
+[2024-02-13 10:11:09] Ep. 2 : Up. 8000 : Sen. 3,911,026 : Cost 6.70323563 : Time 554.42s : 141353.94 words/s : gNorm 1.7135
+[2024-02-13 10:19:49] Ep. 2 : Up. 9000 : Sen. 10,490,971 : Cost 6.71989870 : Time 520.02s : 143142.23 words/s : gNorm 1.0991
+[2024-02-13 10:28:20] Ep. 2 : Up. 10000 : Sen. 15,778,458 : Cost 6.40801001 : Time 511.78s : 142757.89 words/s : gNorm 1.0814
+[2024-02-13 10:28:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 10:28:23] Saving Adam parameters
+[2024-02-13 10:28:26] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 10:28:28] Translating validation set...
+[2024-02-13 10:28:33] Best translation 0 : 此分類下一篇: 新型工業工業工業技術 ,在工業行業中 , , , 太陽能 , 太陽能 , , 太陽能 , , 太陽能 , , 太陽能 , , , 太陽能 , , 太陽能 , 太陽能 , , , , , , 太陽能 , , , 太陽能 , , 太陽能 , , 太陽能 , , , 太陽能 , , 太陽能 , , 太陽能 , , , , , , 太陽能 , , , , , 太陽能 太陽能 , , , 太陽能 太陽能 太陽能 太陽能 , , , 太陽能 太陽能 , , , , , , , , , 太陽能 太陽能 , , , 太陽能 太陽能 , , , , , , 太陽能 , 太陽能 太陽能 太陽能 , , , 太陽能
+[2024-02-13 10:28:33] Best translation 1 : 癌症治療治療: 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 疾病, , 癌症, 疾病, , 癌症, , 疾病, , 疾病, , 疾病, 癌症, , , 疾病, , , , , 疾病, , , , 癌症, , , , , 疾病, , , , , , 疾病, , , , , , , 疾病, , , 疾病, , , , , , , 疾病, , , , , , 疾病, 疾病, , , , , , , 疾病, , , , , , , , , , , , , , , , , , 疾病, , , , , 
+[2024-02-13 10:28:33] Best translation 2 : 飛行時間: 步行 30 分鐘。
+[2024-02-13 10:28:33] Best translation 3 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:33] Best translation 4 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:33] Best translation 5 : 2月28日 , 颢颢颱颸颸颸颸颓颓颓颓颓颓颢�颢���颓颓颓颢�颓颢������
+[2024-02-13 10:28:33] Best translation 10 : 2月29日 , 城城 , 城 , 城 , , 城 , 城 , 城 , , 城 , , 城 , 城 , , 城 , , 城 , , 城 , 城 , , , 城 , , , 城 , , 城 , , , 城 , , , , 城 , , , 城 , , 城 , , , 城 , , , 城 , , 城 , , , 城 , 城 , , , , 城 , , , , 城 , , 城 , , , , , , 城 城 城 城 , , , , 城 城 , , 城 城 , , , ,
+[2024-02-13 10:28:33] Best translation 20 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:33] Best translation 40 : 首頁 > 列表 > 列表 > 列表 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手
+[2024-02-13 10:28:33] Best translation 80 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:33] Best translation 160 : 4月4日 , 颢颢颅 , 颅 , 颓�� , 颓 , 颓 , 颓 , 在 , 颢� , , 颅 , , 颢� , 颢� , , , 颅 , 颅 , , , , , 颅 , , 颅 , , , 颢� , , 颓 , 颢� �� 
+[2024-02-13 10:28:33] Best translation 320 : 將近 50 年,
+[2024-02-13 10:28:33] Best translation 640 : - 掌握自己的工作和工作。
+[2024-02-13 10:28:33] Total translation time: 4.37003s
+[2024-02-13 10:28:33] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 10:28:34] [valid] Ep. 2 : Up. 10000 : chrf : 1.92409 : new best
+[2024-02-13 10:28:34] Translating validation set...
+[2024-02-13 10:28:39] Best translation 0 : 此分類下一篇: 新型工業工業工業技術 ,在工業行業中 , , , 太陽能 , 太陽能 , , 太陽能 , , 太陽能 , , 太陽能 , , , 太陽能 , , 太陽能 , 太陽能 , , , , , , 太陽能 , , , 太陽能 , , 太陽能 , , 太陽能 , , , 太陽能 , , 太陽能 , , 太陽能 , , , , , , 太陽能 , , , , , 太陽能 太陽能 , , , 太陽能 太陽能 太陽能 太陽能 , , , 太陽能 太陽能 , , , , , , , , , 太陽能 太陽能 , , , 太陽能 太陽能 , , , , , , 太陽能 , 太陽能 太陽能 太陽能 , , , 太陽能
+[2024-02-13 10:28:39] Best translation 1 : 癌症治療治療: 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 癌症, 疾病, , 癌症, 疾病, , 癌症, , 疾病, , 疾病, , 疾病, 癌症, , , 疾病, , , , , 疾病, , , , 癌症, , , , , 疾病, , , , , , 疾病, , , , , , , 疾病, , , 疾病, , , , , , , 疾病, , , , , , 疾病, 疾病, , , , , , , 疾病, , , , , , , , , , , , , , , , , , 疾病, , , , , 
+[2024-02-13 10:28:39] Best translation 2 : 飛行時間: 步行 30 分鐘。
+[2024-02-13 10:28:39] Best translation 3 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:39] Best translation 4 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:39] Best translation 5 : 2月28日 , 颢颢颱颸颸颸颸颓颓颓颓颓颓颢�颢���颓颓颓颢�颓颢������
+[2024-02-13 10:28:39] Best translation 10 : 2月29日 , 城城 , 城 , 城 , , 城 , 城 , 城 , , 城 , , 城 , 城 , , 城 , , 城 , , 城 , 城 , , , 城 , , , 城 , , 城 , , , 城 , , , , 城 , , , 城 , , 城 , , , 城 , , , 城 , , 城 , , , 城 , 城 , , , , 城 , , , , 城 , , 城 , , , , , , 城 城 城 城 , , , , 城 城 , , 城 城 , , , ,
+[2024-02-13 10:28:39] Best translation 20 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:39] Best translation 40 : 首頁 > 列表 > 列表 > 列表 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手 > 歌手
+[2024-02-13 10:28:39] Best translation 80 : 在 行為下,選擇一個選項。
+[2024-02-13 10:28:39] Best translation 160 : 4月4日 , 颢颢颅 , 颅 , 颓�� , 颓 , 颓 , 颓 , 在 , 颢� , , 颅 , , 颢� , 颢� , , , 颅 , 颅 , , , , , 颅 , , 颅 , , , 颢� , , 颓 , 颢� �� 
+[2024-02-13 10:28:39] Best translation 320 : 將近 50 年,
+[2024-02-13 10:28:39] Best translation 640 : - 掌握自己的工作和工作。
+[2024-02-13 10:28:39] Total translation time: 4.46790s
+[2024-02-13 10:28:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 10:28:40] [valid] Ep. 2 : Up. 10000 : bleu : 0.674023 : new best
+[2024-02-13 10:28:40] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 10:28:42] [valid] Ep. 2 : Up. 10000 : ce-mean-words : 6.2332 : new best
+[2024-02-13 10:37:18] Ep. 2 : Up. 11000 : Sen. 19,563,381 : Cost 5.59087038 : Time 537.63s : 134283.14 words/s : gNorm 0.9334
+[2024-02-13 10:45:53] Ep. 2 : Up. 12000 : Sen. 23,609,580 : Cost 5.38967371 : Time 514.53s : 143105.09 words/s : gNorm 1.0104
+[2024-02-13 10:54:24] Ep. 2 : Up. 13000 : Sen. 28,503,116 : Cost 6.06974602 : Time 511.92s : 153644.35 words/s : gNorm 2.0167
+[2024-02-13 11:02:53] Ep. 2 : Up. 14000 : Sen. 35,194,932 : Cost 6.21907377 : Time 508.87s : 148287.84 words/s : gNorm 0.9163
+[2024-02-13 11:05:56] Seen 37,599,369 samples
+[2024-02-13 11:05:56] Starting data epoch 3 in logical epoch 3
+[2024-02-13 11:12:03] Ep. 3 : Up. 15000 : Sen. 2,942,989 : Cost 5.98572302 : Time 549.58s : 140773.68 words/s : gNorm 1.2138
+[2024-02-13 11:12:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 11:12:05] Saving Adam parameters
+[2024-02-13 11:12:08] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 11:12:11] Translating validation set...
+[2024-02-13 11:12:15] Best translation 0 : 近年來,美國醫學醫學協會將推出新的醫學技術,包括: 醫學醫學醫學研究、醫學醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學等等。
+[2024-02-13 11:12:15] Best translation 1 : 癌症是癌症的癌症之一,在癌症中,癌症是癌症的癌症之一。 癌症是癌症的癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症
+[2024-02-13 11:12:15] Best translation 2 : 搭乘火車前往機場,搭乘火車前往機場,前往機場,前往機場。
+[2024-02-13 11:12:15] Best translation 3 : 警方表示, 警警官被逮捕。
+[2024-02-13 11:12:15] Best translation 4 : 航空航空航空 航空 航空航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 
+[2024-02-13 11:12:15] Best translation 5 : 3月28日,來自韓國,韓國,韓國,韓國,韓國,韓國,韓國,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南
+[2024-02-13 11:12:15] Best translation 10 : 11月29日, 西藏政府宣布, 西藏政府宣布, 西藏政府宣布, 西藏政府宣布,
+[2024-02-13 11:12:15] Best translation 20 : 特朗普表示,美國政府將面臨重大挑戰。
+[2024-02-13 11:12:15] Best translation 40 : 【呂】 門徒說:「你們怎麼認識耶穌呢?」
+[2024-02-13 11:12:15] Best translation 80 : 在戰鬥中,在戰鬥中獲得勝利。
+[2024-02-13 11:12:15] Best translation 160 : 4月4日,美國總統大選將再次結束。
+[2024-02-13 11:12:15] Best translation 320 : 近年來,全球人口超過 90%。
+[2024-02-13 11:12:15] Best translation 640 : 鼓勵學生與學生學習,並鼓勵學生學習學習。
+[2024-02-13 11:12:15] Total translation time: 3.91106s
+[2024-02-13 11:12:15] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 11:12:16] [valid] Ep. 3 : Up. 15000 : chrf : 2.78161 : new best
+[2024-02-13 11:12:16] Translating validation set...
+[2024-02-13 11:12:20] Best translation 0 : 近年來,美國醫學醫學協會將推出新的醫學技術,包括: 醫學醫學醫學研究、醫學醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學、醫學等等。
+[2024-02-13 11:12:20] Best translation 1 : 癌症是癌症的癌症之一,在癌症中,癌症是癌症的癌症之一。 癌症是癌症的癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症,癌症
+[2024-02-13 11:12:20] Best translation 2 : 搭乘火車前往機場,搭乘火車前往機場,前往機場,前往機場。
+[2024-02-13 11:12:20] Best translation 3 : 警方表示, 警警官被逮捕。
+[2024-02-13 11:12:20] Best translation 4 : 航空航空航空 航空 航空航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 航空 
+[2024-02-13 11:12:20] Best translation 5 : 3月28日,來自韓國,韓國,韓國,韓國,韓國,韓國,韓國,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南,越南
+[2024-02-13 11:12:20] Best translation 10 : 11月29日, 西藏政府宣布, 西藏政府宣布, 西藏政府宣布, 西藏政府宣布,
+[2024-02-13 11:12:20] Best translation 20 : 特朗普表示,美國政府將面臨重大挑戰。
+[2024-02-13 11:12:20] Best translation 40 : 【呂】 門徒說:「你們怎麼認識耶穌呢?」
+[2024-02-13 11:12:20] Best translation 80 : 在戰鬥中,在戰鬥中獲得勝利。
+[2024-02-13 11:12:20] Best translation 160 : 4月4日,美國總統大選將再次結束。
+[2024-02-13 11:12:20] Best translation 320 : 近年來,全球人口超過 90%。
+[2024-02-13 11:12:20] Best translation 640 : 鼓勵學生與學生學習,並鼓勵學生學習學習。
+[2024-02-13 11:12:20] Total translation time: 3.86029s
+[2024-02-13 11:12:20] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 11:12:21] [valid] Ep. 3 : Up. 15000 : bleu : 0.83379 : new best
+[2024-02-13 11:12:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 11:12:23] [valid] Ep. 3 : Up. 15000 : ce-mean-words : 5.54535 : new best
+[2024-02-13 11:21:03] Ep. 3 : Up. 16000 : Sen. 9,107,940 : Cost 5.83210516 : Time 540.14s : 139747.44 words/s : gNorm 0.9036
+[2024-02-13 11:29:35] Ep. 3 : Up. 17000 : Sen. 14,846,142 : Cost 5.67139435 : Time 512.24s : 143836.14 words/s : gNorm 0.8769
+[2024-02-13 11:38:10] Ep. 3 : Up. 18000 : Sen. 18,916,148 : Cost 4.88611841 : Time 514.82s : 140249.12 words/s : gNorm 0.9098
+[2024-02-13 11:46:42] Ep. 3 : Up. 19000 : Sen. 22,813,694 : Cost 4.31757641 : Time 511.98s : 143683.04 words/s : gNorm 0.9479
+[2024-02-13 11:55:13] Ep. 3 : Up. 20000 : Sen. 27,560,757 : Cost 4.88831568 : Time 510.83s : 151466.45 words/s : gNorm 1.4146
+[2024-02-13 11:55:13] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 11:55:15] Saving Adam parameters
+[2024-02-13 11:55:18] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 11:55:21] Translating validation set...
+[2024-02-13 11:55:24] Best translation 0 : 近年來,哈佛大學的醫學研究表明,美國醫學大學的醫學研究表明,美國醫學醫學系的醫學醫學系已經使用一種新型的藥物,以使美國癌症患者能夠從中受益。
+[2024-02-13 11:55:24] Best translation 1 : 癌症研究研究表明,癌症研究表明,癌症患者可能患有癌症,如癌症、癌症、癌症等疾病。
+[2024-02-13 11:55:24] Best translation 2 : 1919年9月30日(UTC)在機場停車時停止停車,並停止停車。
+[2024-02-13 11:55:24] Best translation 3 : 科學家被證實了《魔獸爭霸爭霸》的《魔獸爭霸》。
+[2024-02-13 11:55:24] Best translation 4 : 緊急救援服務 緊急救援服務 緊急救援服務
+[2024-02-13 11:55:24] Best translation 5 : 28歲,來自西班牙,3歲,3歲,來自西班牙。
+[2024-02-13 11:55:24] Best translation 10 : 11月29日, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, , 隨後, 隨後, 隨後, 隨後, 隨後, , 隨後, 隨後, , 隨後, 隨後, 隨後, 隨後, , , , 國王在大臣居於大臣會堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂
+[2024-02-13 11:55:24] Best translation 20 : 調查期間,可能會在緊急情況下發生緊急事件。
+[2024-02-13 11:55:24] Best translation 40 : 約翰·甘迺迪(Dr. John),來自英國,從英國到英國,從英國(英語:Edward's Way),《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,閱讀聖經》,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀,閱讀聖經,閱讀,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀,閱讀聖經,閱讀聖經,閱讀
+[2024-02-13 11:55:24] Best translation 80 : 民主黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨
+[2024-02-13 11:55:24] Best translation 160 : 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 在第四回合的比賽中, 在第四場比賽中贏得冠軍。
+[2024-02-13 11:55:24] Best translation 320 : 近年來,中國經濟的增長率為 90 億美元。
+[2024-02-13 11:55:24] Best translation 640 : 讓學生可以有效地控制自己的進度,並控制自己的進度。
+[2024-02-13 11:55:24] Total translation time: 3.41817s
+[2024-02-13 11:55:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 11:55:26] [valid] Ep. 3 : Up. 20000 : chrf : 6.90871 : new best
+[2024-02-13 11:55:26] Translating validation set...
+[2024-02-13 11:55:29] Best translation 0 : 近年來,哈佛大學的醫學研究表明,美國醫學大學的醫學研究表明,美國醫學醫學系的醫學醫學系已經使用一種新型的藥物,以使美國癌症患者能夠從中受益。
+[2024-02-13 11:55:29] Best translation 1 : 癌症研究研究表明,癌症研究表明,癌症患者可能患有癌症,如癌症、癌症、癌症等疾病。
+[2024-02-13 11:55:29] Best translation 2 : 1919年9月30日(UTC)在機場停車時停止停車,並停止停車。
+[2024-02-13 11:55:29] Best translation 3 : 科學家被證實了《魔獸爭霸爭霸》的《魔獸爭霸》。
+[2024-02-13 11:55:29] Best translation 4 : 緊急救援服務 緊急救援服務 緊急救援服務
+[2024-02-13 11:55:29] Best translation 5 : 28歲,來自西班牙,3歲,3歲,來自西班牙。
+[2024-02-13 11:55:29] Best translation 10 : 11月29日, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, 隨後, , 隨後, 隨後, 隨後, 隨後, 隨後, , 隨後, 隨後, , 隨後, 隨後, 隨後, 隨後, , , , 國王在大臣居於大臣會堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂
+[2024-02-13 11:55:29] Best translation 20 : 調查期間,可能會在緊急情況下發生緊急事件。
+[2024-02-13 11:55:29] Best translation 40 : 約翰·甘迺迪(Dr. John),來自英國,從英國到英國,從英國(英語:Edward's Way),《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,《閱讀聖經》,閱讀聖經》,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀,閱讀聖經,閱讀,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀聖經,閱讀,閱讀聖經,閱讀聖經,閱讀
+[2024-02-13 11:55:29] Best translation 80 : 民主黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨黨
+[2024-02-13 11:55:29] Best translation 160 : 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 國王, 在第四回合的比賽中, 在第四場比賽中贏得冠軍。
+[2024-02-13 11:55:29] Best translation 320 : 近年來,中國經濟的增長率為 90 億美元。
+[2024-02-13 11:55:29] Best translation 640 : 讓學生可以有效地控制自己的進度,並控制自己的進度。
+[2024-02-13 11:55:29] Total translation time: 3.49006s
+[2024-02-13 11:55:29] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 11:55:31] [valid] Ep. 3 : Up. 20000 : bleu : 4.51695 : new best
+[2024-02-13 11:55:31] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 11:55:32] [valid] Ep. 3 : Up. 20000 : ce-mean-words : 4.69538 : new best
+[2024-02-13 12:04:05] Ep. 3 : Up. 21000 : Sen. 33,940,314 : Cost 5.42727280 : Time 531.86s : 144573.40 words/s : gNorm 0.7513
+[2024-02-13 12:08:40] Seen 37,599,428 samples
+[2024-02-13 12:08:40] Starting data epoch 4 in logical epoch 4
+[2024-02-13 12:13:12] Ep. 4 : Up. 22000 : Sen. 2,021,091 : Cost 5.21455669 : Time 547.35s : 137598.35 words/s : gNorm 1.0832
+[2024-02-13 12:21:42] Ep. 4 : Up. 23000 : Sen. 7,878,017 : Cost 4.98452806 : Time 509.40s : 151849.71 words/s : gNorm 0.8135
+[2024-02-13 12:30:30] Ep. 4 : Up. 24000 : Sen. 13,974,915 : Cost 4.96440554 : Time 528.06s : 140594.76 words/s : gNorm 0.7788
+[2024-02-13 12:39:04] Ep. 4 : Up. 25000 : Sen. 18,108,902 : Cost 3.76120186 : Time 514.05s : 140757.30 words/s : gNorm 0.6195
+[2024-02-13 12:39:04] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 12:39:06] Saving Adam parameters
+[2024-02-13 12:39:09] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 12:39:12] Translating validation set...
+[2024-02-13 12:39:14] Best translation 0 : 在星期一,史丹佛大學的科學家宣布,一個新型的診斷工具可以作為類型:一個小型的晶片,可以用於使用標準儀器。
+[2024-02-13 12:39:14] Best translation 1 : 研究人員表示,這可能導致早期癌症、腫瘤、愛滋病和愛滋病患者在低收入國家中出現癌症,例如癌症。
+[2024-02-13 12:39:14] Best translation 2 : JS 39C 引擎在上午 9:30 到達當地時間 (230 UTC) ,然後關閉機場到商業航班。
+[2024-02-13 12:39:14] Best translation 3 : 科學家被認定為《魔獸爭霸》。
+[2024-02-13 12:39:14] Best translation 4 : 當地媒體報道,在響應時發生火災。
+[2024-02-13 12:39:14] Best translation 5 : 28歲的維多曾加入巴薩三季,來自塞維利亞。
+[2024-02-13 12:39:14] Best translation 10 : 在1129年11月11日, 抗議了白宮廣場, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行
+[2024-02-13 12:39:14] Best translation 20 : Hsieh 在選舉期間,可能會在危機期間逃離該國。
+[2024-02-13 12:39:14] Best translation 40 : John Grant,來自華盛頓 (Reading Rainbow's Home Station) 的學生說:「閱讀彩虹之旅,閱讀彩虹之旅,讀讀讀讀讀,讀讀讀書,讀讀讀書,讀讀讀讀。」
+[2024-02-13 12:39:14] Best translation 80 : 馬克·馬賽德(Marochydore),然後在帝國決賽中擊敗巴洛克。
+[2024-02-13 12:39:14] Best translation 160 : 史蒂夫·史蒂夫,肯德基和哈夫夫夫夫在賽季中贏得冠軍的十大冠軍。
+[2024-02-13 12:39:14] Best translation 320 : 因此,中國經濟規模成長了 90 倍。
+[2024-02-13 12:39:14] Best translation 640 : 它允許學生在自己的速度和控制方向上工作的能力。
+[2024-02-13 12:39:14] Total translation time: 2.22100s
+[2024-02-13 12:39:14] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 12:39:15] [valid] Ep. 4 : Up. 25000 : chrf : 15.6274 : new best
+[2024-02-13 12:39:15] Translating validation set...
+[2024-02-13 12:39:17] Best translation 0 : 在星期一,史丹佛大學的科學家宣布,一個新型的診斷工具可以作為類型:一個小型的晶片,可以用於使用標準儀器。
+[2024-02-13 12:39:17] Best translation 1 : 研究人員表示,這可能導致早期癌症、腫瘤、愛滋病和愛滋病患者在低收入國家中出現癌症,例如癌症。
+[2024-02-13 12:39:17] Best translation 2 : JS 39C 引擎在上午 9:30 到達當地時間 (230 UTC) ,然後關閉機場到商業航班。
+[2024-02-13 12:39:17] Best translation 3 : 科學家被認定為《魔獸爭霸》。
+[2024-02-13 12:39:17] Best translation 4 : 當地媒體報道,在響應時發生火災。
+[2024-02-13 12:39:17] Best translation 5 : 28歲的維多曾加入巴薩三季,來自塞維利亞。
+[2024-02-13 12:39:17] Best translation 10 : 在1129年11月11日, 抗議了白宮廣場, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行, 遊行
+[2024-02-13 12:39:17] Best translation 20 : Hsieh 在選舉期間,可能會在危機期間逃離該國。
+[2024-02-13 12:39:17] Best translation 40 : John Grant,來自華盛頓 (Reading Rainbow's Home Station) 的學生說:「閱讀彩虹之旅,閱讀彩虹之旅,讀讀讀讀讀,讀讀讀書,讀讀讀書,讀讀讀讀。」
+[2024-02-13 12:39:18] Best translation 80 : 馬克·馬賽德(Marochydore),然後在帝國決賽中擊敗巴洛克。
+[2024-02-13 12:39:18] Best translation 160 : 史蒂夫·史蒂夫,肯德基和哈夫夫夫夫在賽季中贏得冠軍的十大冠軍。
+[2024-02-13 12:39:18] Best translation 320 : 因此,中國經濟規模成長了 90 倍。
+[2024-02-13 12:39:18] Best translation 640 : 它允許學生在自己的速度和控制方向上工作的能力。
+[2024-02-13 12:39:18] Total translation time: 2.16251s
+[2024-02-13 12:39:18] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 12:39:19] [valid] Ep. 4 : Up. 25000 : bleu : 14.773 : new best
+[2024-02-13 12:39:19] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 12:39:21] [valid] Ep. 4 : Up. 25000 : ce-mean-words : 3.7222 : new best
+[2024-02-13 12:47:53] Ep. 4 : Up. 26000 : Sen. 22,036,750 : Cost 3.23921299 : Time 529.43s : 137779.36 words/s : gNorm 0.8464
+[2024-02-13 12:56:24] Ep. 4 : Up. 27000 : Sen. 26,574,732 : Cost 3.96090055 : Time 510.71s : 148300.45 words/s : gNorm 0.8621
+[2024-02-13 13:04:52] Ep. 4 : Up. 28000 : Sen. 32,568,769 : Cost 4.93088722 : Time 508.51s : 152306.66 words/s : gNorm 0.7704
+[2024-02-13 13:11:09] Seen 37,599,444 samples
+[2024-02-13 13:11:09] Starting data epoch 5 in logical epoch 5
+[2024-02-13 13:13:55] Ep. 5 : Up. 29000 : Sen. 1,163,505 : Cost 5.02661610 : Time 542.97s : 136246.97 words/s : gNorm 1.3709
+[2024-02-13 13:22:29] Ep. 5 : Up. 30000 : Sen. 6,595,906 : Cost 4.57463264 : Time 513.84s : 153847.34 words/s : gNorm 0.7490
+[2024-02-13 13:22:29] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 13:22:31] Saving Adam parameters
+[2024-02-13 13:22:34] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 13:22:37] Translating validation set...
+[2024-02-13 13:22:39] Best translation 0 : 在星期一,史丹福大學的科學家宣布,新診斷工具的發明可以排序細胞類型:一種小型的印刷芯片,可以生產使用標準的噴墨打印機,可能大約是1個美國中部。
+[2024-02-13 13:22:39] Best translation 1 : 研究人員表示,這可能導致早期癌症、腫瘤、愛滋病和哺乳類患者進入低收入國家,例如癌症的存活率可能是一半的。
+[2024-02-13 13:22:39] Best translation 2 : JAS 39C 吊車在當地時間9:30 AM (230 UTC) 起飛,並爆炸,關閉機場到商業航班。
+[2024-02-13 13:22:39] Best translation 3 : 飛行員被認定為隊長Dilrit Patvee。
+[2024-02-13 13:22:39] Best translation 4 : 當地媒體報道,機場消防車輛在響應時發生故障。
+[2024-02-13 13:22:39] Best translation 5 : 28歲的維多加入巴薩的三個季節,來自塞維利亞。
+[2024-02-13 13:22:39] Best translation 10 : 約11:29 抗議在白宮、前特拉法加廣場、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸
+[2024-02-13 13:22:39] Best translation 20 : Hsieh 在選舉期間表示,可能會在危機期間逃離該國。
+[2024-02-13 13:22:39] Best translation 40 : 約翰·格蘭特(英語:John Grant)說,「閱讀彩虹學校(英語:Reading Rainbow's home station)」說,「閱讀彩虹學校(英語:Reading Rainbow)」為孩子們提供閱讀、閱讀、閱讀、閱讀、閱讀、閱讀。
+[2024-02-13 13:22:39] Best translation 80 : 馬洛基德後來在決賽中擊敗科洛特。
+[2024-02-13 13:22:39] Best translation 160 : 史蒂夫, 戈登, 肯辛, 和哈維克為車手的冠軍, 在賽季中保留了四場冠軍。
+[2024-02-13 13:22:39] Best translation 320 : 從那時起,中國的經濟規模已經成長了 90 倍。
+[2024-02-13 13:22:39] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 13:22:39] Total translation time: 2.61803s
+[2024-02-13 13:22:39] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 13:22:41] [valid] Ep. 5 : Up. 30000 : chrf : 20.5167 : new best
+[2024-02-13 13:22:41] Translating validation set...
+[2024-02-13 13:22:43] Best translation 0 : 在星期一,史丹福大學的科學家宣布,新診斷工具的發明可以排序細胞類型:一種小型的印刷芯片,可以生產使用標準的噴墨打印機,可能大約是1個美國中部。
+[2024-02-13 13:22:43] Best translation 1 : 研究人員表示,這可能導致早期癌症、腫瘤、愛滋病和哺乳類患者進入低收入國家,例如癌症的存活率可能是一半的。
+[2024-02-13 13:22:43] Best translation 2 : JAS 39C 吊車在當地時間9:30 AM (230 UTC) 起飛,並爆炸,關閉機場到商業航班。
+[2024-02-13 13:22:43] Best translation 3 : 飛行員被認定為隊長Dilrit Patvee。
+[2024-02-13 13:22:43] Best translation 4 : 當地媒體報道,機場消防車輛在響應時發生故障。
+[2024-02-13 13:22:43] Best translation 5 : 28歲的維多加入巴薩的三個季節,來自塞維利亞。
+[2024-02-13 13:22:43] Best translation 10 : 約11:29 抗議在白宮、前特拉法加廣場、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、東岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸、南岸
+[2024-02-13 13:22:43] Best translation 20 : Hsieh 在選舉期間表示,可能會在危機期間逃離該國。
+[2024-02-13 13:22:43] Best translation 40 : 約翰·格蘭特(英語:John Grant)說,「閱讀彩虹學校(英語:Reading Rainbow's home station)」說,「閱讀彩虹學校(英語:Reading Rainbow)」為孩子們提供閱讀、閱讀、閱讀、閱讀、閱讀、閱讀。
+[2024-02-13 13:22:43] Best translation 80 : 馬洛基德後來在決賽中擊敗科洛特。
+[2024-02-13 13:22:43] Best translation 160 : 史蒂夫, 戈登, 肯辛, 和哈維克為車手的冠軍, 在賽季中保留了四場冠軍。
+[2024-02-13 13:22:43] Best translation 320 : 從那時起,中國的經濟規模已經成長了 90 倍。
+[2024-02-13 13:22:43] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 13:22:43] Total translation time: 2.08594s
+[2024-02-13 13:22:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 13:22:45] [valid] Ep. 5 : Up. 30000 : bleu : 20.869 : new best
+[2024-02-13 13:22:45] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 13:22:46] [valid] Ep. 5 : Up. 30000 : ce-mean-words : 3.19963 : new best
+[2024-02-13 13:31:32] Ep. 5 : Up. 31000 : Sen. 12,998,068 : Cost 4.83441067 : Time 543.23s : 137345.27 words/s : gNorm 0.8453
+[2024-02-13 13:40:01] Ep. 5 : Up. 32000 : Sen. 17,475,730 : Cost 3.67650819 : Time 509.12s : 141082.37 words/s : gNorm 0.6014
+[2024-02-13 13:48:38] Ep. 5 : Up. 33000 : Sen. 21,261,840 : Cost 2.99777126 : Time 516.07s : 142503.19 words/s : gNorm 0.5892
+[2024-02-13 13:57:07] Ep. 5 : Up. 34000 : Sen. 25,458,123 : Cost 3.46734500 : Time 509.57s : 146837.92 words/s : gNorm 0.9178
+[2024-02-13 14:05:40] Ep. 5 : Up. 35000 : Sen. 31,307,645 : Cost 4.69389486 : Time 512.65s : 152556.51 words/s : gNorm 0.7412
+[2024-02-13 14:05:40] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 14:05:42] Saving Adam parameters
+[2024-02-13 14:05:45] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 14:05:48] Translating validation set...
+[2024-02-13 14:05:49] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布,一種新型診斷工具,可以按類型排序細胞:使用標準噴墨打印機生產的小型打印芯片,可能每分一個美國中心。
+[2024-02-13 14:05:49] Best translation 1 : 研究人員表示,這可能導致早期癌症、肺病、愛滋病和哺乳期對低收入國家患者進行檢測,這些疾病的存活率可能是乳腺癌的一半。
+[2024-02-13 14:05:49] Best translation 2 : JAS 39C 蓋恩在當地時間(0230 UTC)上午9時30分左右的跑道上崩潰,並爆炸,關閉機場到商業航班。
+[2024-02-13 14:05:49] Best translation 3 : 飛行員被認定為 守護者 Dilkrit Patvee。
+[2024-02-13 14:05:49] Best translation 4 : 當地媒體報告機場消防車在回應時發生故障。
+[2024-02-13 14:05:49] Best translation 5 : 28 歲的 Vidal 加入了 Barça 3 賽季,來自塞維利亞。
+[2024-02-13 14:05:49] Best translation 10 : 大約11:29日,抗議活動在白宮,前特拉法加廣場,沿著斯特蘭德,通過 Aldwych 和國王大道,向霍爾本 (Holborn) 舉辦了他們的春假客房 飯店。
+[2024-02-13 14:05:49] Best translation 20 : Hsieh 在選舉期間暗示,馬可可能在危機期間逃離該國。
+[2024-02-13 14:05:49] Best translation 40 : 約翰·格蘭特(John Grant)從WND Buffalo(閱讀彩虹的主頁)說:「閱讀彩虹教孩子們閱讀,閱讀閱讀彩虹,閱讀閱讀閱讀,愛閱讀,鼓勵孩子拿起一本書和閱讀。」
+[2024-02-13 14:05:49] Best translation 80 : 馬洛奇多後來在決賽中擊敗卡波洛特。
+[2024-02-13 14:05:49] Best translation 160 : 斯特德、戈登、肯辛特和哈維克為車手的冠軍,在賽季中保留了四個賽事的前十名位置。
+[2024-02-13 14:05:49] Best translation 320 : 從那時起,中國經濟規模已經成長了 90 倍。
+[2024-02-13 14:05:49] Best translation 640 : 讓學生能夠按照自己的步調工作,並控制教學資訊的速度。
+[2024-02-13 14:05:49] Total translation time: 1.35690s
+[2024-02-13 14:05:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 14:05:51] [valid] Ep. 5 : Up. 35000 : chrf : 23.1813 : new best
+[2024-02-13 14:05:51] Translating validation set...
+[2024-02-13 14:05:51] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布,一種新型診斷工具,可以按類型排序細胞:使用標準噴墨打印機生產的小型打印芯片,可能每分一個美國中心。
+[2024-02-13 14:05:51] Best translation 1 : 研究人員表示,這可能導致早期癌症、肺病、愛滋病和哺乳期對低收入國家患者進行檢測,這些疾病的存活率可能是乳腺癌的一半。
+[2024-02-13 14:05:51] Best translation 2 : JAS 39C 蓋恩在當地時間(0230 UTC)上午9時30分左右的跑道上崩潰,並爆炸,關閉機場到商業航班。
+[2024-02-13 14:05:51] Best translation 3 : 飛行員被認定為 守護者 Dilkrit Patvee。
+[2024-02-13 14:05:51] Best translation 4 : 當地媒體報告機場消防車在回應時發生故障。
+[2024-02-13 14:05:51] Best translation 5 : 28 歲的 Vidal 加入了 Barça 3 賽季,來自塞維利亞。
+[2024-02-13 14:05:51] Best translation 10 : 大約11:29日,抗議活動在白宮,前特拉法加廣場,沿著斯特蘭德,通過 Aldwych 和國王大道,向霍爾本 (Holborn) 舉辦了他們的春假客房酒店。
+[2024-02-13 14:05:51] Best translation 20 : Hsieh 在選舉期間暗示,馬可可能在危機期間逃離該國。
+[2024-02-13 14:05:51] Best translation 40 : 約翰·格蘭特(John Grant)從WND Buffalo(閱讀彩虹的主頁)說:「閱讀彩虹教孩子們閱讀,閱讀閱讀彩虹,閱讀閱讀閱讀,愛閱讀,鼓勵孩子拿起一本書和閱讀。」
+[2024-02-13 14:05:51] Best translation 80 : 馬洛奇多後來在決賽中擊敗卡波洛特。
+[2024-02-13 14:05:51] Best translation 160 : 斯特德、戈登、肯辛特和哈維克為車手的冠軍,在賽季中保留了四個賽事的前十名位置。
+[2024-02-13 14:05:51] Best translation 320 : 從那時起,中國經濟規模已經成長了 90 倍。
+[2024-02-13 14:05:52] Best translation 640 : 讓學生能夠按照自己的步調工作,並控制教學資訊的速度。
+[2024-02-13 14:05:52] Total translation time: 1.24082s
+[2024-02-13 14:05:52] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 14:05:53] [valid] Ep. 5 : Up. 35000 : bleu : 24.1217 : new best
+[2024-02-13 14:05:53] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 14:05:55] [valid] Ep. 5 : Up. 35000 : ce-mean-words : 2.94382 : new best
+[2024-02-13 14:13:47] Seen 37,599,504 samples
+[2024-02-13 14:13:47] Starting data epoch 6 in logical epoch 6
+[2024-02-13 14:14:56] Ep. 6 : Up. 36000 : Sen. 218,705 : Cost 4.95571852 : Time 555.87s : 131539.69 words/s : gNorm 1.5718
+[2024-02-13 14:23:37] Ep. 6 : Up. 37000 : Sen. 5,303,877 : Cost 4.39976931 : Time 520.93s : 154055.74 words/s : gNorm 0.8741
+[2024-02-13 14:32:04] Ep. 6 : Up. 38000 : Sen. 11,972,893 : Cost 4.77033281 : Time 507.73s : 147318.57 words/s : gNorm 0.7629
+[2024-02-13 14:40:51] Ep. 6 : Up. 39000 : Sen. 16,728,711 : Cost 3.81877255 : Time 526.54s : 137594.73 words/s : gNorm 0.5064
+[2024-02-13 14:49:16] Ep. 6 : Up. 40000 : Sen. 20,489,784 : Cost 2.86938238 : Time 504.77s : 144229.64 words/s : gNorm 0.4193
+[2024-02-13 14:49:16] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 14:49:18] Saving Adam parameters
+[2024-02-13 14:49:21] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 14:49:24] Translating validation set...
+[2024-02-13 14:49:25] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新型診斷工具,可以按類型排序細胞:使用標準噴墨打印機生產的小型打印芯片可能每分1美元左右。
+[2024-02-13 14:49:25] Best translation 1 : 研究人員表示,這可能會為低收入國家患者及早發現癌症、肺病、愛滋病和哺乳期,這些疾病的存活率可能是乳腺癌的一半。
+[2024-02-13 14:49:25] Best translation 2 : JAS 39C 握把在當地時間(0230 UTC)的跑道上,並爆炸,關閉機場至商業航班。
+[2024-02-13 14:49:25] Best translation 3 : 飛行員被認定為軍艦長Dilokrit Patvee。
+[2024-02-13 14:49:25] Best translation 4 : 當地媒體報告機場消防車在回應時發生故障。
+[2024-02-13 14:49:25] Best translation 5 : 28歲 Vidal 加入了 Barça 3 賽季,來自塞維利亞。
+[2024-02-13 14:49:25] Best translation 10 : 在11:29左右,抗議移動白宮,過去特拉法加廣場,沿著斯特蘭德,通過 Aldwych 和國王大道向 Holborn 傳遞,這是保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 14:49:25] Best translation 20 : Hsieh 在選舉期間暗示,馬會可能在危機期間逃離該國。
+[2024-02-13 14:49:26] Best translation 40 : 約翰·格蘭特(John Grant)從WND Buffalo(閱讀彩虹的主頁)說, "閱讀彩虹教孩子們閱讀,閱讀閱讀彩虹的原因,...閱讀愛閱讀,鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 14:49:26] Best translation 80 : 馬洛奇多爾在初步決賽中擊敗卡波洛圖。
+[2024-02-13 14:49:26] Best translation 160 : 斯特德、戈登、肯色和哈維克在賽季中保留了四場比賽的頂級位置。
+[2024-02-13 14:49:26] Best translation 320 : 從那時起,中國的經濟規模已經成長了90次。
+[2024-02-13 14:49:26] Best translation 640 : 它使學生能夠按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 14:49:26] Total translation time: 2.29426s
+[2024-02-13 14:49:26] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 14:49:27] [valid] Ep. 6 : Up. 40000 : chrf : 23.9632 : new best
+[2024-02-13 14:49:27] Translating validation set...
+[2024-02-13 14:49:29] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新型診斷工具,可以按類型排序細胞:使用標準噴墨打印機生產的小型打印芯片可能每分1美元左右。
+[2024-02-13 14:49:29] Best translation 1 : 研究人員表示,這可能會為低收入國家患者及早發現癌症、肺病、愛滋病和哺乳期,這些疾病的存活率可能是乳腺癌的一半。
+[2024-02-13 14:49:29] Best translation 2 : JAS 39C 握把在當地時間(0230 UTC)的跑道上,並爆炸,關閉機場至商業航班。
+[2024-02-13 14:49:29] Best translation 3 : 飛行員被認定為軍艦長Dilokrit Patvee。
+[2024-02-13 14:49:29] Best translation 4 : 當地媒體報告機場消防車在回應時發生故障。
+[2024-02-13 14:49:29] Best translation 5 : 28歲 Vidal 加入了 Barça 3 賽季,來自塞維利亞。
+[2024-02-13 14:49:29] Best translation 10 : 在11:29左右,抗議移動白宮,過去特拉法加廣場,沿著斯特蘭德,通過 Aldwych 和國王大道向 Holborn 傳遞,這是保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 14:49:29] Best translation 20 : Hsieh 在選舉期間暗示,馬會可能在危機期間逃離該國。
+[2024-02-13 14:49:30] Best translation 40 : 約翰·格蘭特(John Grant)從WND Buffalo(閱讀彩虹的主頁)說, "閱讀彩虹教孩子們閱讀,閱讀閱讀彩虹的原因,...閱讀愛閱讀,鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 14:49:30] Best translation 80 : 馬洛奇多爾在初步決賽中擊敗卡波洛圖。
+[2024-02-13 14:49:30] Best translation 160 : 斯特德、戈登、肯色和哈維克在賽季中保留了四場比賽的頂級位置。
+[2024-02-13 14:49:30] Best translation 320 : 從那時起,中國的經濟規模已經成長了90次。
+[2024-02-13 14:49:30] Best translation 640 : 它使學生能夠按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 14:49:30] Total translation time: 2.32021s
+[2024-02-13 14:49:30] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 14:49:32] [valid] Ep. 6 : Up. 40000 : bleu : 25.1259 : new best
+[2024-02-13 14:49:32] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 14:49:33] [valid] Ep. 6 : Up. 40000 : ce-mean-words : 2.87624 : new best
+[2024-02-13 14:58:02] Ep. 6 : Up. 41000 : Sen. 24,591,285 : Cost 3.05624247 : Time 526.28s : 139997.33 words/s : gNorm 0.7000
+[2024-02-13 15:06:37] Ep. 6 : Up. 42000 : Sen. 29,930,080 : Cost 4.55869436 : Time 515.26s : 152708.67 words/s : gNorm 0.8394
+[2024-02-13 15:14:57] Ep. 6 : Up. 43000 : Sen. 36,730,169 : Cost 4.85289574 : Time 499.37s : 151374.02 words/s : gNorm 0.6905
+[2024-02-13 15:16:05] Seen 37,599,387 samples
+[2024-02-13 15:16:05] Starting data epoch 7 in logical epoch 7
+[2024-02-13 15:24:13] Ep. 7 : Up. 44000 : Sen. 4,132,848 : Cost 4.31162739 : Time 556.54s : 141515.10 words/s : gNorm 0.8606
+[2024-02-13 15:32:49] Ep. 7 : Up. 45000 : Sen. 10,740,734 : Cost 4.66520357 : Time 516.37s : 144008.60 words/s : gNorm 0.7179
+[2024-02-13 15:32:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 15:32:52] Saving Adam parameters
+[2024-02-13 15:32:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 15:32:57] Translating validation set...
+[2024-02-13 15:32:59] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新型診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以用標準噴墨打印機製造,可能每分1美元左右。
+[2024-02-13 15:32:59] Best translation 1 : 研究人員表示,這可能為低收入國家患者帶來早期癌症、肺病、艾滋病病毒和瘟疫,其中乳癌的存活率可能是貧血國家的一半。
+[2024-02-13 15:32:59] Best translation 2 : JS 39C 格里芬在當地時間(0230 UTC)上午9時30分到跑道上,並爆炸,關閉機場至商用航班。
+[2024-02-13 15:32:59] Best translation 3 : 飛行員被認定為隊長 杜克利特帕蒂特。
+[2024-02-13 15:32:59] Best translation 4 : 當地媒體報道,機場消防車在回應時發生事故。
+[2024-02-13 15:32:59] Best translation 5 : 28歲的維多爾加入了巴薩三季,來自塞維利亞。
+[2024-02-13 15:32:59] Best translation 10 : 在11:29左右,抗議活動移動白宮,過去特拉法加廣場,沿著斯特蘭德,通過Aldwych和國王大道向霍爾本,在那裡保守黨在大干諾客房酒店舉行了他們的春季論壇。
+[2024-02-13 15:32:59] Best translation 20 : Hsieh 在選舉期間暗示,Ma 可能會在危機期間逃離該國。
+[2024-02-13 15:32:59] Best translation 40 : 約翰·格蘭特(John Grant)說:「閱讀彩虹教育孩子閱讀,閱讀彩虹教育孩子為什麼閱讀,......讀愛書,鼓勵孩子拿起一本書讀。」
+[2024-02-13 15:32:59] Best translation 80 : 馬洛基多爾在初步決賽中擊敗卡波洛圖。
+[2024-02-13 15:32:59] Best translation 160 : 史蒂夫、戈登、肯色州和哈維克在賽季中保留了四場比賽的頂級位置。
+[2024-02-13 15:32:59] Best translation 320 : 從那時起,中國的經濟規模已經成長了 90 倍。
+[2024-02-13 15:32:59] Best translation 640 : 讓學生能夠按照自己的步調工作,並控制教學資訊的速度。
+[2024-02-13 15:32:59] Total translation time: 2.12981s
+[2024-02-13 15:32:59] [valid] Ep. 7 : Up. 45000 : chrf : 23.7633 : stalled 1 times (last best: 23.9632)
+[2024-02-13 15:32:59] Translating validation set...
+[2024-02-13 15:33:01] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新型診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以用標準噴墨打印機製造,可能每分1美元左右。
+[2024-02-13 15:33:01] Best translation 1 : 研究人員表示,這可能為低收入國家患者帶來早期癌症、肺病、艾滋病病毒和瘟疫,其中乳癌的存活率可能是貧血國家的一半。
+[2024-02-13 15:33:01] Best translation 2 : JS 39C 格里芬在當地時間(0230 UTC)上午9時30分到跑道上,並爆炸,關閉機場至商用航班。
+[2024-02-13 15:33:01] Best translation 3 : 飛行員被認定為隊長 杜克利特帕蒂特。
+[2024-02-13 15:33:01] Best translation 4 : 當地媒體報道,機場消防車在回應時發生事故。
+[2024-02-13 15:33:01] Best translation 5 : 28歲的維多爾加入了巴薩三季,來自塞維利亞。
+[2024-02-13 15:33:01] Best translation 10 : 在11:29左右,抗議活動移動白宮,過去特拉法加廣場,沿著斯特蘭德,通過Aldwych和國王大道向霍爾本,在那裡保守黨在大干諾客房酒店舉行了他們的春季論壇。
+[2024-02-13 15:33:01] Best translation 20 : Hsieh 在選舉期間暗示,Ma 可能會在危機期間逃離該國。
+[2024-02-13 15:33:01] Best translation 40 : 約翰·格蘭特(John Grant)說:「閱讀彩虹教育孩子閱讀,閱讀彩虹教育孩子為什麼閱讀,......讀愛書,鼓勵孩子拿起一本書讀。」
+[2024-02-13 15:33:01] Best translation 80 : 馬洛基多爾在初步決賽中擊敗卡波洛圖。
+[2024-02-13 15:33:01] Best translation 160 : 史蒂夫、戈登、肯色州和哈維克在賽季中保留了四場比賽的頂級位置。
+[2024-02-13 15:33:01] Best translation 320 : 從那時起,中國的經濟規模已經成長了 90 倍。
+[2024-02-13 15:33:01] Best translation 640 : 讓學生能夠按照自己的步調工作,並控制教學資訊的速度。
+[2024-02-13 15:33:01] Total translation time: 1.92989s
+[2024-02-13 15:33:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 15:33:03] [valid] Ep. 7 : Up. 45000 : bleu : 25.2009 : new best
+[2024-02-13 15:33:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 15:33:04] [valid] Ep. 7 : Up. 45000 : ce-mean-words : 2.81483 : new best
+[2024-02-13 15:41:35] Ep. 7 : Up. 46000 : Sen. 15,933,567 : Cost 4.03215837 : Time 525.66s : 139253.74 words/s : gNorm 0.5515
+[2024-02-13 15:50:14] Ep. 7 : Up. 47000 : Sen. 19,852,263 : Cost 2.90067577 : Time 518.59s : 141252.36 words/s : gNorm 0.8414
+[2024-02-13 15:58:45] Ep. 7 : Up. 48000 : Sen. 23,878,965 : Cost 2.93869209 : Time 511.22s : 141882.95 words/s : gNorm 0.4860
+[2024-02-13 16:07:24] Ep. 7 : Up. 49000 : Sen. 28,763,712 : Cost 4.19262171 : Time 519.31s : 153243.82 words/s : gNorm 0.9915
+[2024-02-13 16:15:47] Ep. 7 : Up. 50000 : Sen. 35,449,851 : Cost 4.79763699 : Time 503.00s : 148799.93 words/s : gNorm 0.7619
+[2024-02-13 16:15:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 16:15:49] Saving Adam parameters
+[2024-02-13 16:15:52] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 16:15:55] Translating validation set...
+[2024-02-13 16:15:56] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新型診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以用標準噴墨打印機製造,可能每分一個美國百分。
+[2024-02-13 16:15:56] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘟疫,其中乳癌的存活率可能是富裕國家的一半。
+[2024-02-13 16:15:56] Best translation 2 : JS 39C 格里根在當地時間(0230 UTC)上午9時30分左右的跑道上墜毀,並爆炸,將機場關閉至商用航班。
+[2024-02-13 16:15:56] Best translation 3 : 飛行員被認定為隊長 Dilokrit Patvee。
+[2024-02-13 16:15:56] Best translation 4 : 當地媒體報道,機場消防車在回應時起動。
+[2024-02-13 16:15:56] Best translation 5 : 28歲的維達加入了巴薩三季,來自塞維利亞。
+[2024-02-13 16:15:56] Best translation 10 : 在11:29左右,抗議活動移動了白宮,過去特拉法加廣場,沿著斯特蘭德,通過Aldwych和國王大道向霍爾本,保守黨在那裡舉行他們的春季會議在大干諾客房酒店。
+[2024-02-13 16:15:56] Best translation 20 : Hsieh 在選舉期間暗示,Ma 可能在危機期間逃離該國。
+[2024-02-13 16:15:56] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教導孩子閱讀,閱讀愛閱讀,鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 16:15:56] Best translation 80 : 馬可孛羅基多後,在初步決賽中擊敗卡波洛圖。
+[2024-02-13 16:15:56] Best translation 160 : 史蒂夫、戈登、肯斯和哈維克在賽季中保留了四場比賽的頂級位置。
+[2024-02-13 16:15:56] Best translation 320 : 從那時起,中國的經濟規模已經成長了 90 倍。
+[2024-02-13 16:15:56] Best translation 640 : 它使學生能夠按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 16:15:56] Total translation time: 1.39325s
+[2024-02-13 16:15:56] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 16:15:58] [valid] Ep. 7 : Up. 50000 : chrf : 24.7751 : new best
+[2024-02-13 16:15:58] Translating validation set...
+[2024-02-13 16:15:59] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新型診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以用標準噴墨打印機製造,可能每分一個美國百分。
+[2024-02-13 16:15:59] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘟疫,其中乳癌的存活率可能是富裕國家的一半。
+[2024-02-13 16:15:59] Best translation 2 : JS 39C 格里根在當地時間(0230 UTC)上午9時30分左右的跑道上墜毀,並爆炸,將機場關閉至商用航班。
+[2024-02-13 16:15:59] Best translation 3 : 飛行員被認定為隊長 Dilokrit Patvee。
+[2024-02-13 16:15:59] Best translation 4 : 當地媒體報道,機場消防車在回應時起動。
+[2024-02-13 16:15:59] Best translation 5 : 28歲的維達加入了巴薩三季,來自塞維利亞。
+[2024-02-13 16:15:59] Best translation 10 : 在11:29左右,抗議活動移動了白宮,過去特拉法加廣場,沿著斯特蘭德,通過Aldwych和國王大道向霍爾本,保守黨在那裡舉行他們的春季會議在大干諾客房酒店。
+[2024-02-13 16:15:59] Best translation 20 : Hsieh 在選舉期間暗示,Ma 可能在危機期間逃離該國。
+[2024-02-13 16:15:59] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教導孩子閱讀,閱讀愛閱讀,鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 16:15:59] Best translation 80 : 馬可孛羅基多後,在初步決賽中擊敗卡波洛圖。
+[2024-02-13 16:15:59] Best translation 160 : 史蒂夫、戈登、肯斯和哈維克在賽季中保留了四場比賽的頂級位置。
+[2024-02-13 16:15:59] Best translation 320 : 從那時起,中國的經濟規模已經成長了 90 倍。
+[2024-02-13 16:15:59] Best translation 640 : 它使學生能夠按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 16:15:59] Total translation time: 1.29983s
+[2024-02-13 16:15:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 16:16:01] [valid] Ep. 7 : Up. 50000 : bleu : 26.162 : new best
+[2024-02-13 16:16:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 16:16:02] [valid] Ep. 7 : Up. 50000 : ce-mean-words : 2.73119 : new best
+[2024-02-13 16:18:43] Seen 37,599,529 samples
+[2024-02-13 16:18:43] Starting data epoch 8 in logical epoch 8
+[2024-02-13 16:25:14] Ep. 8 : Up. 51000 : Sen. 3,227,901 : Cost 4.37214756 : Time 566.42s : 137344.43 words/s : gNorm 0.8765
+[2024-02-13 16:33:52] Ep. 8 : Up. 52000 : Sen. 9,424,918 : Cost 4.49011612 : Time 518.63s : 145289.63 words/s : gNorm 0.7081
+[2024-02-13 16:42:22] Ep. 8 : Up. 53000 : Sen. 15,050,884 : Cost 4.18698025 : Time 509.91s : 142797.02 words/s : gNorm 0.5955
+[2024-02-13 16:50:59] Ep. 8 : Up. 54000 : Sen. 19,031,301 : Cost 3.02827191 : Time 517.12s : 141062.60 words/s : gNorm 0.4489
+[2024-02-13 16:59:31] Ep. 8 : Up. 55000 : Sen. 23,051,669 : Cost 2.88568211 : Time 511.75s : 142462.19 words/s : gNorm 0.5236
+[2024-02-13 16:59:31] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 16:59:33] Saving Adam parameters
+[2024-02-13 16:59:36] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 16:59:39] Translating validation set...
+[2024-02-13 16:59:40] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以生產使用標準噴墨打印機,可能大約1美元。
+[2024-02-13 16:59:40] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期的癌症、結核、艾滋病毒和瘟疫,其中乳癌的存活率可能是富裕國家的一半。
+[2024-02-13 16:59:40] Best translation 2 : JS 39C 格里芬在當地時間(0230 UTC)上午9時30分左右墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 16:59:40] Best translation 3 : 飛行員被認定為司軍領袖Diokrit Patvee。
+[2024-02-13 16:59:40] Best translation 4 : 當地媒體報道,機場消防車在回應時起動。
+[2024-02-13 16:59:40] Best translation 5 : 28歲的維達曾加入巴薩三季,來自塞維利亞。
+[2024-02-13 16:59:40] Best translation 10 : 約11:29左右,抗議活動由白宮、特拉法加廣場(Trafalgar Square)和斯特蘭德(Strand)發起,由阿爾德威(Aldwych)通過國王大道(Kingway)前往霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 16:59:40] Best translation 20 : Hsieh在選舉期間暗示,馬可能會在危機時期逃離該國。
+[2024-02-13 16:59:40] Best translation 40 : 約翰·格蘭特(John Grant)從WEND Buffalo (Reading Rainbow's home station)的《閱讀彩虹》教導孩子為什麼閱讀,...讀愛書 — 鼓勵孩子拿起一本書讀。
+[2024-02-13 16:59:40] Best translation 80 : 然後,Maroochydore在初步決賽中擊敗了Caboolture。
+[2024-02-13 16:59:40] Best translation 160 : 史蒂夫、加德滿都、肯斯和哈維克在賽季剩餘的四場比賽中,為車手的錦標賽提供前十名的位置。
+[2024-02-13 16:59:40] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 16:59:40] Best translation 640 : 它使學生能夠按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 16:59:40] Total translation time: 1.45092s
+[2024-02-13 16:59:40] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 16:59:42] [valid] Ep. 8 : Up. 55000 : chrf : 25.1293 : new best
+[2024-02-13 16:59:42] Translating validation set...
+[2024-02-13 16:59:43] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以生產使用標準噴墨打印機,可能大約1美元。
+[2024-02-13 16:59:43] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期的癌症、結核、艾滋病毒和瘟疫,其中乳癌的存活率可能是富裕國家的一半。
+[2024-02-13 16:59:43] Best translation 2 : JS 39C 格里芬在當地時間(0230 UTC)上午9時30分左右墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 16:59:43] Best translation 3 : 飛行員被認定為司軍領袖Diokrit Patvee。
+[2024-02-13 16:59:43] Best translation 4 : 當地媒體報道,機場消防車在回應時起動。
+[2024-02-13 16:59:43] Best translation 5 : 28歲的維達曾加入巴薩三季,來自塞維利亞。
+[2024-02-13 16:59:43] Best translation 10 : 約11:29左右,抗議活動由白宮、特拉法加廣場(Trafalgar Square)和斯特蘭德(Strand)發起,由阿爾德威(Aldwych)通過國王大道(Kingway)前往霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 16:59:43] Best translation 20 : Hsieh在選舉期間暗示,馬可能會在危機時期逃離該國。
+[2024-02-13 16:59:43] Best translation 40 : 約翰·格蘭特(John Grant)從WEND Buffalo (Reading Rainbow's home station)的《閱讀彩虹》教導孩子為什麼閱讀,...讀愛書 — 鼓勵孩子拿起一本書讀。
+[2024-02-13 16:59:43] Best translation 80 : 然後,Maroochydore在初步決賽中擊敗了Caboolture。
+[2024-02-13 16:59:43] Best translation 160 : 史蒂夫、加德滿都、肯斯和哈維克在賽季剩餘的四場比賽中,為車手的錦標賽提供前十名的位置。
+[2024-02-13 16:59:43] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 16:59:43] Best translation 640 : 它使學生能夠按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 16:59:43] Total translation time: 1.27158s
+[2024-02-13 16:59:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 16:59:44] [valid] Ep. 8 : Up. 55000 : bleu : 26.6959 : new best
+[2024-02-13 16:59:45] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 16:59:46] [valid] Ep. 8 : Up. 55000 : ce-mean-words : 2.6907 : new best
+[2024-02-13 17:08:19] Ep. 8 : Up. 56000 : Sen. 27,760,170 : Cost 3.86818910 : Time 527.56s : 147794.41 words/s : gNorm 0.8978
+[2024-02-13 17:16:46] Ep. 8 : Up. 57000 : Sen. 34,134,453 : Cost 4.64326954 : Time 507.17s : 149571.85 words/s : gNorm 0.8781
+[2024-02-13 17:21:05] Seen 37,599,549 samples
+[2024-02-13 17:21:05] Starting data epoch 9 in logical epoch 9
+[2024-02-13 17:25:53] Ep. 9 : Up. 58000 : Sen. 2,381,153 : Cost 4.49462795 : Time 546.92s : 139318.22 words/s : gNorm 0.9377
+[2024-02-13 17:34:23] Ep. 9 : Up. 59000 : Sen. 8,170,750 : Cost 4.30702209 : Time 510.20s : 152021.12 words/s : gNorm 0.8139
+[2024-02-13 17:43:09] Ep. 9 : Up. 60000 : Sen. 14,191,470 : Cost 4.35360956 : Time 526.52s : 140282.73 words/s : gNorm 0.6574
+[2024-02-13 17:43:09] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 17:43:12] Saving Adam parameters
+[2024-02-13 17:43:14] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 17:43:17] Translating validation set...
+[2024-02-13 17:43:18] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以生產使用標準噴墨打印機,可能大約1美元。
+[2024-02-13 17:43:18] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期癌症、結核、艾滋病毒和瘟疫,其中乳癌的存活率可能是富裕國家的一半。
+[2024-02-13 17:43:18] Best translation 2 : JAS 39C 格里根在當地時間(0230 UTC)上午9時30分左右的跑道上墜毀,並爆炸,將機場關閉至商用航班。
+[2024-02-13 17:43:18] Best translation 3 : 飛行員被認定為司軍隊長Diokrit Patvee。
+[2024-02-13 17:43:18] Best translation 4 : 當地媒體報道,機場消防車在回應時起動。
+[2024-02-13 17:43:18] Best translation 5 : 28歲的Vidal加入了Barca 3個賽季,來自塞維利亞。
+[2024-02-13 17:43:18] Best translation 10 : 大約11:29左右,抗議活動由白霍爾、特拉法加廣場、沿著斯特蘭德,穿過阿爾德威奇,向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 17:43:18] Best translation 20 : Hsieh 在選舉期間暗示,Ma 可能在危機期間逃離該國。
+[2024-02-13 17:43:18] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀愛閱讀 — 鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 17:43:18] Best translation 80 : 然後,Maroochydore在決賽中擊敗了駕駛艙。
+[2024-02-13 17:43:18] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽的頂級10個位置。
+[2024-02-13 17:43:18] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 17:43:18] Best translation 640 : 它允許學生按照自己的節奏工作,控制教學信息的步伐。
+[2024-02-13 17:43:19] Total translation time: 1.43723s
+[2024-02-13 17:43:19] [valid] Ep. 9 : Up. 60000 : chrf : 24.6263 : stalled 1 times (last best: 25.1293)
+[2024-02-13 17:43:19] Translating validation set...
+[2024-02-13 17:43:20] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以生產使用標準噴墨打印機,可能大約1美元。
+[2024-02-13 17:43:20] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期癌症、結核、艾滋病毒和瘟疫,其中乳癌的存活率可能是富裕國家的一半。
+[2024-02-13 17:43:20] Best translation 2 : JAS 39C 格里根在當地時間(0230 UTC)上午9時30分左右的跑道上墜毀,並爆炸,將機場關閉至商用航班。
+[2024-02-13 17:43:20] Best translation 3 : 飛行員被認定為司軍隊長Diokrit Patvee。
+[2024-02-13 17:43:20] Best translation 4 : 當地媒體報道,機場消防車在回應時起動。
+[2024-02-13 17:43:20] Best translation 5 : 28歲的Vidal加入了Barca 3個賽季,來自塞維利亞。
+[2024-02-13 17:43:20] Best translation 10 : 大約11:29左右,抗議活動由白霍爾、特拉法加廣場、沿著斯特蘭德,穿過阿爾德威奇,向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 17:43:20] Best translation 20 : Hsieh 在選舉期間暗示,Ma 可能在危機期間逃離該國。
+[2024-02-13 17:43:20] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀愛閱讀 — 鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 17:43:20] Best translation 80 : 然後,Maroochydore在決賽中擊敗了駕駛艙。
+[2024-02-13 17:43:20] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽的頂級10個位置。
+[2024-02-13 17:43:20] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 17:43:20] Best translation 640 : 它允許學生按照自己的節奏工作,控制教學信息的步伐。
+[2024-02-13 17:43:20] Total translation time: 1.47434s
+[2024-02-13 17:43:20] [valid] Ep. 9 : Up. 60000 : bleu : 26.2295 : stalled 1 times (last best: 26.6959)
+[2024-02-13 17:43:20] [valid] Ep. 9 : Up. 60000 : ce-mean-words : 2.69868 : stalled 1 times (last best: 2.6907)
+[2024-02-13 17:51:53] Ep. 9 : Up. 61000 : Sen. 18,393,523 : Cost 3.14841390 : Time 524.02s : 138346.81 words/s : gNorm 0.4932
+[2024-02-13 18:00:26] Ep. 9 : Up. 62000 : Sen. 22,189,539 : Cost 2.82409525 : Time 513.00s : 143029.71 words/s : gNorm 0.4949
+[2024-02-13 18:08:56] Ep. 9 : Up. 63000 : Sen. 26,741,562 : Cost 3.57581496 : Time 509.51s : 149258.09 words/s : gNorm 0.8271
+[2024-02-13 18:17:28] Ep. 9 : Up. 64000 : Sen. 32,879,749 : Cost 4.52237177 : Time 512.02s : 150495.41 words/s : gNorm 0.8672
+[2024-02-13 18:23:20] Seen 37,599,332 samples
+[2024-02-13 18:23:20] Starting data epoch 10 in logical epoch 10
+[2024-02-13 18:26:34] Ep. 10 : Up. 65000 : Sen. 1,345,060 : Cost 4.61341906 : Time 546.17s : 136975.45 words/s : gNorm 1.0243
+[2024-02-13 18:26:34] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 18:26:36] Saving Adam parameters
+[2024-02-13 18:26:39] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 18:26:42] Translating validation set...
+[2024-02-13 18:26:43] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每分大約1美元。
+[2024-02-13 18:26:43] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 18:26:43] Best translation 2 : JS 39C 格里根在當地時間 (0230 UTC) 接近 9:30 的時候墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 18:26:43] Best translation 3 : 飛行員被認定為軍艦隊長Diokrit Patvee。
+[2024-02-13 18:26:43] Best translation 4 : 當地媒體報道,機場消防車在響應時進行了巡邏。
+[2024-02-13 18:26:43] Best translation 5 : 28歲的Vidal加入了Barca 3個賽季,來自塞維利亞。
+[2024-02-13 18:26:43] Best translation 10 : 大約11:29左右,抗議活動由白霍爾、特拉法加廣場、沿著斯特蘭德,穿過Aldwych和國王大道,前往霍爾本,保守黨在那裡舉行他們的春天論壇在大干諾客房酒店。
+[2024-02-13 18:26:43] Best translation 20 : Hsieh在選舉期間暗示,馬可能會在危機期間逃離該國。
+[2024-02-13 18:26:43] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀的愛 - 鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 18:26:43] Best translation 80 : 然後,Maroochydore在決賽中擊敗Caboolture。
+[2024-02-13 18:26:43] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽,為車手的冠軍提供前十名的位置。
+[2024-02-13 18:26:43] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 18:26:43] Best translation 640 : 它允許學生按照自己的節奏工作和控制教學信息 的速度。
+[2024-02-13 18:26:43] Total translation time: 1.43721s
+[2024-02-13 18:26:43] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 18:26:45] [valid] Ep. 10 : Up. 65000 : chrf : 25.335 : new best
+[2024-02-13 18:26:45] Translating validation set...
+[2024-02-13 18:26:46] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每分大約1美元。
+[2024-02-13 18:26:46] Best translation 1 : 首席研究人員表示,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 18:26:46] Best translation 2 : JS 39C 格里根在當地時間 (0230 UTC) 接近 9:30 的時候墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 18:26:46] Best translation 3 : 飛行員被認定為軍艦隊長Diokrit Patvee。
+[2024-02-13 18:26:46] Best translation 4 : 當地媒體報道,機場消防車在響應時進行了巡邏。
+[2024-02-13 18:26:46] Best translation 5 : 28歲的Vidal加入了Barca 3個賽季,來自塞維利亞。
+[2024-02-13 18:26:46] Best translation 10 : 大約11:29左右,抗議活動由白霍爾、特拉法加廣場、沿著斯特蘭德,穿過Aldwych和國王大道,前往霍爾本,保守黨在那裡舉行他們的春天論壇在大干諾客房酒店。
+[2024-02-13 18:26:46] Best translation 20 : Hsieh在選舉期間暗示,馬可能會在危機期間逃離該國。
+[2024-02-13 18:26:46] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀的愛 - 鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 18:26:46] Best translation 80 : 然後,Maroochydore在決賽中擊敗Caboolture。
+[2024-02-13 18:26:46] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽,為車手的冠軍提供前十名的位置。
+[2024-02-13 18:26:46] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 18:26:46] Best translation 640 : 它允許學生按照自己的節奏工作和控制教學信息的速度。
+[2024-02-13 18:26:46] Total translation time: 1.35190s
+[2024-02-13 18:26:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 18:26:47] [valid] Ep. 10 : Up. 65000 : bleu : 26.9372 : new best
+[2024-02-13 18:26:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 18:26:49] [valid] Ep. 10 : Up. 65000 : ce-mean-words : 2.64759 : new best
+[2024-02-13 18:35:20] Ep. 10 : Up. 66000 : Sen. 6,854,949 : Cost 4.18889523 : Time 526.21s : 149221.24 words/s : gNorm 0.8064
+[2024-02-13 18:44:09] Ep. 10 : Up. 67000 : Sen. 13,208,302 : Cost 4.45472097 : Time 528.42s : 142349.17 words/s : gNorm 0.7238
+[2024-02-13 18:52:37] Ep. 10 : Up. 68000 : Sen. 17,599,299 : Cost 3.30182767 : Time 508.63s : 140403.54 words/s : gNorm 0.4353
+[2024-02-13 19:01:09] Ep. 10 : Up. 69000 : Sen. 21,450,710 : Cost 2.76244807 : Time 511.64s : 141495.24 words/s : gNorm 0.5222
+[2024-02-13 19:09:41] Ep. 10 : Up. 70000 : Sen. 25,797,196 : Cost 3.28957129 : Time 512.07s : 148024.95 words/s : gNorm 0.8392
+[2024-02-13 19:09:41] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 19:09:43] Saving Adam parameters
+[2024-02-13 19:09:46] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 19:09:49] Translating validation set...
+[2024-02-13 19:09:50] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一個微小的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 19:09:50] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 19:09:50] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨大約 9:30 的時候墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 19:09:50] Best translation 3 : 飛行員被認定為軍艦隊長Dilokrit Pattae。
+[2024-02-13 19:09:50] Best translation 4 : 當地媒體報告了機場消防車在響應時經過。
+[2024-02-13 19:09:50] Best translation 5 : 28 歲的 Vidal 加入了 Barca 3 賽季,來自塞維利亞。
+[2024-02-13 19:09:50] Best translation 10 : 大約11:29左右,抗議活動由白宮、特拉法加廣場、沿著斯特蘭德,穿過Aldwych和國王大道,前往霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 19:09:50] Best translation 20 : Hsieh在一場危機中暗示了馬可能逃離該國的選舉。
+[2024-02-13 19:09:50] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 19:09:50] Best translation 80 : 馬可孛羅奇多之後,在決賽中擊敗卡波拉圖。
+[2024-02-13 19:09:50] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽,為車手的冠軍提供前十名的位置。
+[2024-02-13 19:09:50] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 19:09:50] Best translation 640 : 它使學生能夠按照自己的節奏工作和控制教學信息的步伐。
+[2024-02-13 19:09:50] Total translation time: 1.33575s
+[2024-02-13 19:09:50] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 19:09:52] [valid] Ep. 10 : Up. 70000 : chrf : 25.6597 : new best
+[2024-02-13 19:09:52] Translating validation set...
+[2024-02-13 19:09:53] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一個微小的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 19:09:53] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 19:09:53] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨大約 9:30 的時候墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 19:09:53] Best translation 3 : 飛行員被認定為軍艦隊長Dilokrit Pattae。
+[2024-02-13 19:09:53] Best translation 4 : 當地媒體報告了機場消防車在響應時經過。
+[2024-02-13 19:09:53] Best translation 5 : 28 歲的 Vidal 加入了 Barca 3 賽季,來自塞維利亞。
+[2024-02-13 19:09:53] Best translation 10 : 大約11:29左右,抗議活動由白宮、特拉法加廣場、沿著斯特蘭德,穿過Aldwych和國王大道,前往霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 19:09:53] Best translation 20 : Hsieh在一場危機中暗示了馬可能逃離該國的選舉。
+[2024-02-13 19:09:53] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 19:09:53] Best translation 80 : 馬可孛羅奇多之後,在決賽中擊敗卡波拉圖。
+[2024-02-13 19:09:53] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽,為車手的冠軍提供前十名的位置。
+[2024-02-13 19:09:53] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 19:09:53] Best translation 640 : 它使學生能夠按照自己的節奏工作和控制教學信息的步伐。
+[2024-02-13 19:09:53] Total translation time: 1.17061s
+[2024-02-13 19:09:53] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 19:09:54] [valid] Ep. 10 : Up. 70000 : bleu : 27.6507 : new best
+[2024-02-13 19:09:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 19:09:56] [valid] Ep. 10 : Up. 70000 : ce-mean-words : 2.61115 : new best
+[2024-02-13 19:18:26] Ep. 10 : Up. 71000 : Sen. 31,586,516 : Cost 4.41430616 : Time 525.28s : 148804.93 words/s : gNorm 0.8416
+[2024-02-13 19:25:55] Seen 37,599,381 samples
+[2024-02-13 19:25:55] Starting data epoch 11 in logical epoch 11
+[2024-02-13 19:27:30] Ep. 11 : Up. 72000 : Sen. 434,039 : Cost 4.67387438 : Time 543.74s : 134132.62 words/s : gNorm 1.4451
+[2024-02-13 19:36:07] Ep. 11 : Up. 73000 : Sen. 5,687,273 : Cost 4.12517309 : Time 516.60s : 154897.22 words/s : gNorm 0.8549
+[2024-02-13 19:44:35] Ep. 11 : Up. 74000 : Sen. 12,284,603 : Cost 4.54301643 : Time 507.95s : 147339.37 words/s : gNorm 0.7610
+[2024-02-13 19:53:23] Ep. 11 : Up. 75000 : Sen. 16,877,208 : Cost 3.50600338 : Time 528.06s : 136853.02 words/s : gNorm 0.4266
+[2024-02-13 19:53:23] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 19:53:25] Saving Adam parameters
+[2024-02-13 19:53:28] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 19:53:31] Translating validation set...
+[2024-02-13 19:53:31] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每分大約1美元。
+[2024-02-13 19:53:31] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 19:53:31] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨大約 9 點左右墜入跑道,並爆炸,關閉機場至商業航班。
+[2024-02-13 19:53:31] Best translation 3 : 這名飛行員被認定為《暗黑破壞神》的首席指揮官。
+[2024-02-13 19:53:31] Best translation 4 : 當地媒體報道,機場消防車在響應時運行。
+[2024-02-13 19:53:31] Best translation 5 : 28 歲的 Vidal 加入了 Barca 3 賽季,來自塞維利亞。
+[2024-02-13 19:53:31] Best translation 10 : 約11:29左右,抗議活動由白宮、特拉法加廣場、沿著斯特蘭德,穿過Aldwych,向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 19:53:31] Best translation 20 : Hsieh 在競選期間暗示了馬來人可能在危機期間逃離該國。
+[2024-02-13 19:53:31] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀的愛 - [節目]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 19:53:32] Best translation 80 : 馬羅基多爾在決賽中擊敗卡波拉圖。
+[2024-02-13 19:53:32] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽的十大冠軍。
+[2024-02-13 19:53:32] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 19:53:32] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 19:53:32] Total translation time: 1.29554s
+[2024-02-13 19:53:32] [valid] Ep. 11 : Up. 75000 : chrf : 25.2243 : stalled 1 times (last best: 25.6597)
+[2024-02-13 19:53:32] Translating validation set...
+[2024-02-13 19:53:33] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每分大約1美元。
+[2024-02-13 19:53:33] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 19:53:33] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨大約 9 點左右墜入跑道,並爆炸,關閉機場至商業航班。
+[2024-02-13 19:53:33] Best translation 3 : 這名飛行員被認定為《暗黑破壞神》的首席指揮官。
+[2024-02-13 19:53:33] Best translation 4 : 當地媒體報道,機場消防車在響應時運行。
+[2024-02-13 19:53:33] Best translation 5 : 28 歲的 Vidal 加入了 Barca 3 賽季,來自塞維利亞。
+[2024-02-13 19:53:33] Best translation 10 : 約11:29左右,抗議活動由白宮、特拉法加廣場、沿著斯特蘭德,穿過Aldwych,向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 19:53:33] Best translation 20 : Hsieh 在競選期間暗示了馬來人可能在危機期間逃離該國。
+[2024-02-13 19:53:33] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,......閱讀的愛 - [節目]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 19:53:33] Best translation 80 : 馬羅基多爾在決賽中擊敗卡波拉圖。
+[2024-02-13 19:53:33] Best translation 160 : 史蒂夫、高登、肯斯和哈維克在賽季中保留了四場比賽的十大冠軍。
+[2024-02-13 19:53:33] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 19:53:33] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 19:53:33] Total translation time: 1.19312s
+[2024-02-13 19:53:33] [valid] Ep. 11 : Up. 75000 : bleu : 27.1671 : stalled 1 times (last best: 27.6507)
+[2024-02-13 19:53:33] [valid] Ep. 11 : Up. 75000 : ce-mean-words : 2.62928 : stalled 1 times (last best: 2.61115)
+[2024-02-13 20:02:05] Ep. 11 : Up. 76000 : Sen. 20,615,896 : Cost 2.72123766 : Time 522.12s : 138899.17 words/s : gNorm 0.5147
+[2024-02-13 20:10:35] Ep. 11 : Up. 77000 : Sen. 24,857,824 : Cost 2.97530770 : Time 509.94s : 145098.77 words/s : gNorm 0.8829
+[2024-02-13 20:19:10] Ep. 11 : Up. 78000 : Sen. 30,347,903 : Cost 4.34203243 : Time 514.84s : 154848.08 words/s : gNorm 0.9376
+[2024-02-13 20:27:23] Ep. 11 : Up. 79000 : Sen. 36,967,486 : Cost 4.66136980 : Time 493.53s : 149876.58 words/s : gNorm 1.7271
+[2024-02-13 20:28:14] Seen 37,599,407 samples
+[2024-02-13 20:28:14] Starting data epoch 12 in logical epoch 12
+[2024-02-13 20:36:49] Ep. 12 : Up. 80000 : Sen. 4,389,890 : Cost 4.12087727 : Time 566.25s : 139619.66 words/s : gNorm 0.9515
+[2024-02-13 20:36:49] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 20:36:52] Saving Adam parameters
+[2024-02-13 20:36:54] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 20:36:57] Translating validation set...
+[2024-02-13 20:36:58] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 20:36:58] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 20:36:58] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨大約 9 點左右墜入跑道,並爆炸,關閉機場至商業航班。
+[2024-02-13 20:36:58] Best translation 3 : 飛行員被認定為軍艦隊長Dilikrit Pattagee。
+[2024-02-13 20:36:58] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 20:36:58] Best translation 5 : 28歲的Vidal加入了Barca 3個賽季,來自塞維利亞。
+[2024-02-13 20:36:58] Best translation 10 : 大約11:29左右,抗議活動由白宮、特拉法加廣場(Trafalgar Square)沿著斯特蘭德(Strand),穿過阿爾德威(Aldwych),向霍爾本(Holborn),在那裡保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 20:36:58] Best translation 20 : Hsieh在競選期間暗示了馬來人可能在危機期間逃離該國。
+[2024-02-13 20:36:58] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,...閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 20:36:58] Best translation 80 : Maroochydore 然後在 決賽中擊敗卡波拉圖。
+[2024-02-13 20:36:58] Best translation 160 : 史蒂夫、加德滿都、肯斯和哈維克在賽季中保留了四場比賽,為車手的錦標賽冠冕前十名。
+[2024-02-13 20:36:58] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 20:36:59] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的速度。
+[2024-02-13 20:36:59] Total translation time: 1.47485s
+[2024-02-13 20:36:59] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 20:37:00] [valid] Ep. 12 : Up. 80000 : chrf : 25.9142 : new best
+[2024-02-13 20:37:00] Translating validation set...
+[2024-02-13 20:37:01] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 20:37:01] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 20:37:01] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨大約 9 點左右墜入跑道,並爆炸,關閉機場至商業航班。
+[2024-02-13 20:37:01] Best translation 3 : 飛行員被認定為軍艦隊長Dilikrit Pattagee。
+[2024-02-13 20:37:01] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 20:37:01] Best translation 5 : 28歲的Vidal加入了Barca 3個賽季,來自塞維利亞。
+[2024-02-13 20:37:01] Best translation 10 : 大約11:29左右,抗議活動由白宮、特拉法加廣場(Trafalgar Square)沿著斯特蘭德(Strand),穿過阿爾德威(Aldwych),向霍爾本(Holborn),在那裡保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 20:37:01] Best translation 20 : Hsieh在競選期間暗示了馬來人可能在危機期間逃離該國。
+[2024-02-13 20:37:01] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教育孩子為什麼閱讀,...閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 20:37:01] Best translation 80 : Maroochydore 然後在 決賽中擊敗卡波拉圖。
+[2024-02-13 20:37:01] Best translation 160 : 史蒂夫、加德滿都、肯斯和哈維克在賽季中保留了四場比賽,為車手的錦標賽冠冕前十名。
+[2024-02-13 20:37:01] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 20:37:01] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的速度。
+[2024-02-13 20:37:01] Total translation time: 1.22211s
+[2024-02-13 20:37:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 20:37:03] [valid] Ep. 12 : Up. 80000 : bleu : 27.8662 : new best
+[2024-02-13 20:37:03] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 20:37:04] [valid] Ep. 12 : Up. 80000 : ce-mean-words : 2.59147 : new best
+[2024-02-13 20:45:31] Ep. 12 : Up. 81000 : Sen. 10,940,239 : Cost 4.48245096 : Time 521.06s : 142125.54 words/s : gNorm 0.7862
+[2024-02-13 20:54:02] Ep. 12 : Up. 82000 : Sen. 16,129,372 : Cost 3.81405854 : Time 511.15s : 142762.74 words/s : gNorm 0.6300
+[2024-02-13 21:02:40] Ep. 12 : Up. 83000 : Sen. 19,875,636 : Cost 2.74791527 : Time 518.01s : 140417.81 words/s : gNorm 0.4662
+[2024-02-13 21:11:13] Ep. 12 : Up. 84000 : Sen. 24,028,308 : Cost 2.84432077 : Time 513.11s : 143951.96 words/s : gNorm 0.5739
+[2024-02-13 21:19:55] Ep. 12 : Up. 85000 : Sen. 29,044,995 : Cost 4.08915329 : Time 522.23s : 151916.80 words/s : gNorm 1.0033
+[2024-02-13 21:19:55] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 21:19:57] Saving Adam parameters
+[2024-02-13 21:20:00] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 21:20:03] Translating validation set...
+[2024-02-13 21:20:04] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每份大約1美元。
+[2024-02-13 21:20:04] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 21:20:04] Best translation 2 : JAS 39C Gripen 在當地時間(0230 UTC)上午 9:30 衝撞跑道,並爆炸,關閉機場至商業航班。
+[2024-02-13 21:20:04] Best translation 3 : 飛行員被認定為隊長Dilikrit Pattae。
+[2024-02-13 21:20:04] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 21:20:04] Best translation 5 : 28 歲的 Vidal 在 3 年前加入 Barca,來自塞維利亞。
+[2024-02-13 21:20:04] Best translation 10 : 大約11:29左右,抗議活動搬上白大廳,過去的特拉法加廣場(Trafalgar Square)沿著斯特蘭德(Strand),穿過阿爾德威(Aldwych)和國王大道(Kingway),前往霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 21:20:04] Best translation 20 : Hsieh 暗示了在一場危機期間,瑪瑪可能逃離該國的選舉。
+[2024-02-13 21:20:04] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教導孩子為什麼閱讀,...閱讀的愛 — [表演] 鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 21:20:04] Best translation 80 : Maroochydore 然後在 決賽 中擊敗卡波拉圖。
+[2024-02-13 21:20:04] Best translation 160 : 史蒂夫、高登、肯塞特和哈維克在賽季中保留了四場比賽的車手錦標賽前十名。
+[2024-02-13 21:20:04] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 21:20:04] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的速度。
+[2024-02-13 21:20:04] Total translation time: 1.36609s
+[2024-02-13 21:20:04] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-chrf.npz
+[2024-02-13 21:20:06] [valid] Ep. 12 : Up. 85000 : chrf : 26.0585 : new best
+[2024-02-13 21:20:06] Translating validation set...
+[2024-02-13 21:20:07] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一種新的診斷工具,可以按類型分類細胞:一種微小的印刷芯片,可以使用標準噴墨打印機製造,可能每份大約1美元。
+[2024-02-13 21:20:07] Best translation 1 : 首席研究員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 21:20:07] Best translation 2 : JAS 39C Gripen 在當地時間(0230 UTC)上午 9:30 衝撞跑道,並爆炸,關閉機場至商業航班。
+[2024-02-13 21:20:07] Best translation 3 : 飛行員被認定為隊長Dilikrit Pattae。
+[2024-02-13 21:20:07] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 21:20:07] Best translation 5 : 28 歲的 Vidal 在 3 年前加入 Barca,來自塞維利亞。
+[2024-02-13 21:20:07] Best translation 10 : 大約11:29左右,抗議活動搬上白大廳,過去的特拉法加廣場(Trafalgar Square)沿著斯特蘭德(Strand),穿過阿爾德威(Aldwych)和國王大道(Kingway),前往霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 21:20:07] Best translation 20 : Hsieh 暗示了在一場危機期間,瑪瑪可能逃離該國的選舉。
+[2024-02-13 21:20:07] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教導孩子為什麼閱讀,...閱讀的愛 — [表演] 鼓勵孩子拿起一本書和閱讀。"
+[2024-02-13 21:20:07] Best translation 80 : Maroochydore 然後在 決賽 中擊敗卡波拉圖。
+[2024-02-13 21:20:07] Best translation 160 : 史蒂夫、高登、肯塞特和哈維克在賽季中保留了四場比賽的車手錦標賽前十名。
+[2024-02-13 21:20:07] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 21:20:07] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的速度。
+[2024-02-13 21:20:07] Total translation time: 1.22390s
+[2024-02-13 21:20:07] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-bleu.npz
+[2024-02-13 21:20:08] [valid] Ep. 12 : Up. 85000 : bleu : 28.0859 : new best
+[2024-02-13 21:20:08] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 21:20:10] [valid] Ep. 12 : Up. 85000 : ce-mean-words : 2.5685 : new best
+[2024-02-13 21:28:26] Ep. 12 : Up. 86000 : Sen. 35,742,391 : Cost 4.63500690 : Time 511.27s : 145716.12 words/s : gNorm 0.8851
+[2024-02-13 21:30:49] Seen 37,599,332 samples
+[2024-02-13 21:30:49] Starting data epoch 13 in logical epoch 13
+[2024-02-13 21:37:37] Ep. 13 : Up. 87000 : Sen. 3,367,538 : Cost 4.22009277 : Time 550.58s : 142048.14 words/s : gNorm 0.8371
+[2024-02-13 21:46:14] Ep. 13 : Up. 88000 : Sen. 9,643,127 : Cost 4.36131763 : Time 517.43s : 144770.63 words/s : gNorm 0.8350
+[2024-02-13 21:54:47] Ep. 13 : Up. 89000 : Sen. 15,168,843 : Cost 4.00439548 : Time 512.82s : 143503.35 words/s : gNorm 0.7322
+[2024-02-13 22:03:22] Ep. 13 : Up. 90000 : Sen. 19,159,335 : Cost 2.89357185 : Time 514.76s : 139953.70 words/s : gNorm 0.4975
+[2024-02-13 22:03:22] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 22:03:24] Saving Adam parameters
+[2024-02-13 22:03:27] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 22:03:30] Translating validation set...
+[2024-02-13 22:03:31] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,每片大約1美元。
+[2024-02-13 22:03:31] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、愛滋病和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 22:03:31] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨 9 點左右墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 22:03:31] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattapee。
+[2024-02-13 22:03:31] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 22:03:31] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-13 22:03:31] Best translation 10 : 大約11:29左右,抗議活動由白大廳、過去的特拉法加廣場、沿著斯特蘭德,穿過阿爾德威奇(Aldwych),向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 22:03:31] Best translation 20 : Hsieh 暗示了在一場危機期間,馬伊夫可能逃離該國的選舉。
+[2024-02-13 22:03:31] Best translation 40 : 約翰·格蘭特(John Grant)從WNED Buffalo(閱讀彩虹之家站)說:"閱讀彩虹教導孩子們為什麼閱讀,...閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 22:03:31] Best translation 80 : Maroochydore 隨後在決賽中擊敗卡波拉圖。
+[2024-02-13 22:03:31] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中保留了四場比賽的車手錦標賽前十名。
+[2024-02-13 22:03:31] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 22:03:31] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 22:03:31] Total translation time: 1.61933s
+[2024-02-13 22:03:31] [valid] Ep. 13 : Up. 90000 : chrf : 25.7443 : stalled 1 times (last best: 26.0585)
+[2024-02-13 22:03:31] Translating validation set...
+[2024-02-13 22:03:32] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,每片大約1美元。
+[2024-02-13 22:03:32] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、愛滋病和瘧疾檢測,其中乳癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 22:03:32] Best translation 2 : JAS 39C Gripen 在當地時間 (0230 UTC) 凌晨 9 點左右墜入跑道,並爆炸,將機場關閉至商用航班。
+[2024-02-13 22:03:32] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattapee。
+[2024-02-13 22:03:32] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 22:03:32] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-13 22:03:32] Best translation 10 : 大約11:29左右,抗議活動由白大廳、過去的特拉法加廣場、沿著斯特蘭德,穿過阿爾德威奇(Aldwych),向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 22:03:32] Best translation 20 : Hsieh 暗示了在一場危機期間,馬伊夫可能逃離該國的選舉。
+[2024-02-13 22:03:32] Best translation 40 : 約翰·格蘭特(John Grant)從WNED Buffalo(閱讀彩虹之家站)說:"閱讀彩虹教導孩子們為什麼閱讀,...閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 22:03:32] Best translation 80 : Maroochydore 隨後在決賽中擊敗卡波拉圖。
+[2024-02-13 22:03:32] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中保留了四場比賽的車手錦標賽前十名。
+[2024-02-13 22:03:32] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 22:03:32] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 22:03:33] Total translation time: 1.24135s
+[2024-02-13 22:03:33] [valid] Ep. 13 : Up. 90000 : bleu : 27.6921 : stalled 1 times (last best: 28.0859)
+[2024-02-13 22:03:33] [valid] Ep. 13 : Up. 90000 : ce-mean-words : 2.58149 : stalled 1 times (last best: 2.5685)
+[2024-02-13 22:12:04] Ep. 13 : Up. 91000 : Sen. 23,192,981 : Cost 2.80171132 : Time 522.44s : 139306.42 words/s : gNorm 0.5009
+[2024-02-13 22:20:36] Ep. 13 : Up. 92000 : Sen. 27,909,655 : Cost 3.81024504 : Time 511.88s : 152599.51 words/s : gNorm 0.9608
+[2024-02-13 22:29:07] Ep. 13 : Up. 93000 : Sen. 34,411,710 : Cost 4.50706959 : Time 510.40s : 149757.46 words/s : gNorm 0.8631
+[2024-02-13 22:33:06] Seen 37,599,245 samples
+[2024-02-13 22:33:06] Starting data epoch 14 in logical epoch 14
+[2024-02-13 22:38:12] Ep. 14 : Up. 94000 : Sen. 2,385,340 : Cost 4.35565710 : Time 545.22s : 138782.41 words/s : gNorm 0.8946
+[2024-02-13 22:46:46] Ep. 14 : Up. 95000 : Sen. 8,332,387 : Cost 4.20107174 : Time 513.69s : 149656.18 words/s : gNorm 0.9143
+[2024-02-13 22:46:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 22:46:48] Saving Adam parameters
+[2024-02-13 22:46:51] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 22:46:53] Translating validation set...
+[2024-02-13 22:46:55] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 22:46:55] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 22:46:55] Best translation 2 : JAS 39C 抓地機在當地時間(0230 UTC)上午大約9:30在跑道上墜毀,並爆炸,關閉機場至商業航班。
+[2024-02-13 22:46:55] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattae。
+[2024-02-13 22:46:55] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 22:46:55] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-13 22:46:55] Best translation 10 : 約11:29 抗議活動由白宮、特拉法加廣場、沿著斯特蘭德(Strand),穿過阿爾德威奇(Aldwych),向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 22:46:55] Best translation 20 : Hsieh在競選期間暗示,馬什可能在危機期間逃離該國。
+[2024-02-13 22:46:55] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 22:46:55] Best translation 80 : Maroochydore 隨後在初步決賽中擊敗卡波拉圖。
+[2024-02-13 22:46:55] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克以四場比賽為冠軍,在賽季中保留了四場比賽的前十名。
+[2024-02-13 22:46:55] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 22:46:56] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 22:46:56] Total translation time: 2.33471s
+[2024-02-13 22:46:56] [valid] Ep. 14 : Up. 95000 : chrf : 25.7455 : stalled 2 times (last best: 26.0585)
+[2024-02-13 22:46:56] Translating validation set...
+[2024-02-13 22:46:57] Best translation 0 : 在星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 22:46:57] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 22:46:57] Best translation 2 : JAS 39C 抓地機在當地時間(0230 UTC)上午大約9:30在跑道上墜毀,並爆炸,關閉機場至商業航班。
+[2024-02-13 22:46:57] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattae。
+[2024-02-13 22:46:57] Best translation 4 : 當地媒體報道,機場消防車在響應時移動。
+[2024-02-13 22:46:57] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-13 22:46:57] Best translation 10 : 約11:29 抗議活動由白宮、特拉法加廣場、沿著斯特蘭德(Strand),穿過阿爾德威奇(Aldwych),向霍爾本(Holborn),保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-13 22:46:57] Best translation 20 : Hsieh在競選期間暗示,馬什可能在危機期間逃離該國。
+[2024-02-13 22:46:57] Best translation 40 : 約翰·格蘭特(John Grant)說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 - [表演]鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 22:46:58] Best translation 80 : Maroochydore 隨後在初步決賽中擊敗卡波拉圖。
+[2024-02-13 22:46:58] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克以四場比賽為冠軍,在賽季中保留了四場比賽的前十名。
+[2024-02-13 22:46:58] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 22:46:58] Best translation 640 : 它允許學生按照自己的節奏工作,並控制指導信息的步伐。
+[2024-02-13 22:46:58] Total translation time: 2.08507s
+[2024-02-13 22:46:58] [valid] Ep. 14 : Up. 95000 : bleu : 27.8053 : stalled 2 times (last best: 28.0859)
+[2024-02-13 22:46:58] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 22:47:00] [valid] Ep. 14 : Up. 95000 : ce-mean-words : 2.56832 : new best
+[2024-02-13 22:55:38] Ep. 14 : Up. 96000 : Sen. 14,281,471 : Cost 4.19892502 : Time 532.75s : 139329.52 words/s : gNorm 0.7601
+[2024-02-13 23:04:12] Ep. 14 : Up. 97000 : Sen. 18,403,685 : Cost 3.06577086 : Time 513.49s : 140942.98 words/s : gNorm 0.4931
+[2024-02-13 23:12:42] Ep. 14 : Up. 98000 : Sen. 22,380,180 : Cost 2.74464488 : Time 510.53s : 141915.08 words/s : gNorm 0.6405
+[2024-02-13 23:21:15] Ep. 14 : Up. 99000 : Sen. 27,016,084 : Cost 3.52459574 : Time 512.36s : 150408.32 words/s : gNorm 1.3313
+[2024-02-13 23:29:46] Ep. 14 : Up. 100000 : Sen. 33,074,973 : Cost 4.42709732 : Time 511.19s : 150906.48 words/s : gNorm 0.8541
+[2024-02-13 23:29:46] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-13 23:29:48] Saving Adam parameters
+[2024-02-13 23:29:51] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-13 23:29:54] Translating validation set...
+[2024-02-13 23:29:55] Best translation 0 : 星期一,史丹福大學醫學院的科學家宣布了一種新型的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 23:29:55] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、愛滋病和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 23:29:55] Best translation 2 : JS 39C 抓地機在當地時間(0230 UTC)上午大約9:30在跑道上墜毀,並爆炸,關閉機場至商業航班。
+[2024-02-13 23:29:55] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattae。
+[2024-02-13 23:29:55] Best translation 4 : 當地媒體報道了機場消防車在響應時起作用。
+[2024-02-13 23:29:55] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-13 23:29:55] Best translation 10 : 大約11:29左右,抗議活動搬上白大廳,過去的特拉法加廣場(Trafalgar Square),沿著斯特蘭德(Strand),穿過阿爾德威(Aldwych),向霍爾本(Holborn),保守黨在那裡舉行春季論壇。
+[2024-02-13 23:29:55] Best translation 20 : Hsieh暗示了在競選期間,馬麻可能在危機期間逃離該國。
+[2024-02-13 23:29:55] Best translation 40 : 約翰·格蘭特 (John Grant) 在 WNED 水牛城 (Reading Rainbow's home station) 說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 — [表演] 鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 23:29:55] Best translation 80 : Maroochydore 然後在 初步 決賽 中擊敗 卡波拉圖。
+[2024-02-13 23:29:55] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中將車手錦標賽的前十名位置四場賽事 4 場賽事淘汰。
+[2024-02-13 23:29:55] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 23:29:55] Best translation 640 : 它允許學生按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 23:29:55] Total translation time: 1.52371s
+[2024-02-13 23:29:55] [valid] Ep. 14 : Up. 100000 : chrf : 25.6976 : stalled 3 times (last best: 26.0585)
+[2024-02-13 23:29:55] Translating validation set...
+[2024-02-13 23:29:56] Best translation 0 : 星期一,史丹福大學醫學院的科學家宣布了一種新型的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-13 23:29:56] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、愛滋病和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-13 23:29:56] Best translation 2 : JS 39C 抓地機在當地時間(0230 UTC)上午大約9:30在跑道上墜毀,並爆炸,關閉機場至商業航班。
+[2024-02-13 23:29:56] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattae。
+[2024-02-13 23:29:56] Best translation 4 : 當地媒體報道了機場消防車在響應時起作用。
+[2024-02-13 23:29:56] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-13 23:29:56] Best translation 10 : 大約11:29左右,抗議活動搬上白大廳,過去的特拉法加廣場(Trafalgar Square),沿著斯特蘭德(Strand),穿過阿爾德威(Aldwych),向霍爾本(Holborn),保守黨在那裡舉行春季論壇。
+[2024-02-13 23:29:56] Best translation 20 : Hsieh暗示了在競選期間,馬麻可能在危機期間逃離該國。
+[2024-02-13 23:29:56] Best translation 40 : 約翰·格蘭特 (John Grant) 在 WNED 水牛城 (Reading Rainbow's home station) 說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 — [表演] 鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-13 23:29:56] Best translation 80 : Maroochydore 然後在 初步 決賽 中擊敗 卡波拉圖。
+[2024-02-13 23:29:56] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中將車手錦標賽的前十名位置四場賽事淘汰。
+[2024-02-13 23:29:56] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-13 23:29:56] Best translation 640 : 它允許學生按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-13 23:29:56] Total translation time: 1.25430s
+[2024-02-13 23:29:56] [valid] Ep. 14 : Up. 100000 : bleu : 27.8005 : stalled 3 times (last best: 28.0859)
+[2024-02-13 23:29:57] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.best-ce-mean-words.npz
+[2024-02-13 23:29:58] [valid] Ep. 14 : Up. 100000 : ce-mean-words : 2.54836 : new best
+[2024-02-13 23:35:35] Seen 37,599,402 samples
+[2024-02-13 23:35:35] Starting data epoch 15 in logical epoch 15
+[2024-02-13 23:39:01] Ep. 15 : Up. 101000 : Sen. 1,444,317 : Cost 4.46756268 : Time 554.88s : 135467.68 words/s : gNorm 1.0384
+[2024-02-13 23:47:32] Ep. 15 : Up. 102000 : Sen. 7,077,057 : Cost 4.12142563 : Time 510.92s : 151889.70 words/s : gNorm 0.8026
+[2024-02-13 23:56:16] Ep. 15 : Up. 103000 : Sen. 13,303,723 : Cost 4.35520887 : Time 524.56s : 141059.82 words/s : gNorm 0.9978
+[2024-02-14 00:04:49] Ep. 15 : Up. 104000 : Sen. 17,801,882 : Cost 3.21655536 : Time 512.48s : 142295.45 words/s : gNorm 0.4837
+[2024-02-14 00:13:24] Ep. 15 : Up. 105000 : Sen. 21,602,040 : Cost 2.72774625 : Time 515.26s : 142229.46 words/s : gNorm 0.5258
+[2024-02-14 00:13:24] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-14 00:13:26] Saving Adam parameters
+[2024-02-14 00:13:29] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-14 00:13:32] Translating validation set...
+[2024-02-14 00:13:33] Best translation 0 : 星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具的發明,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-14 00:13:33] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、愛滋病和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-14 00:13:33] Best translation 2 : JS 39C Gripen 在當地時間 (0230 UTC) 凌晨 9 點左右墜入跑道,並爆炸,關閉機場至商業航班。
+[2024-02-14 00:13:33] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattae。
+[2024-02-14 00:13:33] Best translation 4 : 當地媒體報道了機場消防車在響應時起作用。
+[2024-02-14 00:13:33] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-14 00:13:33] Best translation 10 : 大約11:29左右,抗議活動在特拉法加廣場(Trafalgar Square)上移動,穿過阿爾德威奇(Aldwych),前往霍爾本(Holborn),保守黨在那裡舉行春季論壇。
+[2024-02-14 00:13:33] Best translation 20 : Hsieh暗示了在競選期間,馬麻可能在危機期間逃離該國。
+[2024-02-14 00:13:33] Best translation 40 : 約翰·格蘭特 (John Grant) 在 WNED 水牛城 (Reading Rainbow's home station) 說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 — [節目] 鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-14 00:13:33] Best translation 80 : Maroochydore 然後在 初步 決賽 中擊敗 卡波拉圖。
+[2024-02-14 00:13:33] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中將車手錦標賽的前十名位置四場賽事淘汰。
+[2024-02-14 00:13:33] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-14 00:13:33] Best translation 640 : 它允許學生按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-14 00:13:33] Total translation time: 1.58160s
+[2024-02-14 00:13:33] [valid] Ep. 15 : Up. 105000 : chrf : 25.6619 : stalled 4 times (last best: 26.0585)
+[2024-02-14 00:13:34] Translating validation set...
+[2024-02-14 00:13:34] Best translation 0 : 星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具的發明,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-14 00:13:34] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、愛滋病和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-14 00:13:34] Best translation 2 : JS 39C Gripen 在當地時間 (0230 UTC) 凌晨 9 點左右墜入跑道,並爆炸,關閉機場至商業航班。
+[2024-02-14 00:13:34] Best translation 3 : 飛行員被認定為小隊隊長 Dilikrit Pattae。
+[2024-02-14 00:13:34] Best translation 4 : 當地媒體報道了機場消防車在響應時起作用。
+[2024-02-14 00:13:34] Best translation 5 : 28歲的Vidal加入了Barca三季,來自塞維利亞。
+[2024-02-14 00:13:34] Best translation 10 : 大約11:29左右,抗議活動在特拉法加廣場(Trafalgar Square)上移動,穿過阿爾德威奇(Aldwych),前往霍爾本(Holborn),保守黨在那裡舉行春季論壇。
+[2024-02-14 00:13:34] Best translation 20 : Hsieh暗示了在競選期間,馬麻可能在危機期間逃離該國。
+[2024-02-14 00:13:34] Best translation 40 : 約翰·格蘭特 (John Grant) 在 WNED 水牛城 (Reading Rainbow's home station) 說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 — [節目] 鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-14 00:13:34] Best translation 80 : Maroochydore 然後在 初步 決賽 中擊敗 卡波拉圖。
+[2024-02-14 00:13:34] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中將車手錦標賽的前十名位置四場賽事淘汰。
+[2024-02-14 00:13:34] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-14 00:13:35] Best translation 640 : 它允許學生按照自己的節奏工作,並控制教學信息的步伐。
+[2024-02-14 00:13:35] Total translation time: 1.23474s
+[2024-02-14 00:13:35] [valid] Ep. 15 : Up. 105000 : bleu : 27.7363 : stalled 4 times (last best: 28.0859)
+[2024-02-14 00:13:35] [valid] Ep. 15 : Up. 105000 : ce-mean-words : 2.54951 : stalled 1 times (last best: 2.54836)
+[2024-02-14 00:22:06] Ep. 15 : Up. 106000 : Sen. 26,102,015 : Cost 3.26595235 : Time 522.14s : 145159.27 words/s : gNorm 1.2114
+[2024-02-14 00:30:34] Ep. 15 : Up. 107000 : Sen. 31,798,347 : Cost 4.32531118 : Time 508.15s : 151956.95 words/s : gNorm 0.9091
+[2024-02-14 00:37:51] Seen 37,599,300 samples
+[2024-02-14 00:37:51] Starting data epoch 16 in logical epoch 16
+[2024-02-14 00:39:40] Ep. 16 : Up. 108000 : Sen. 548,676 : Cost 4.59486485 : Time 545.32s : 135557.90 words/s : gNorm 1.2953
+[2024-02-14 00:48:12] Ep. 16 : Up. 109000 : Sen. 5,817,671 : Cost 4.04462671 : Time 512.22s : 154247.28 words/s : gNorm 0.9767
+[2024-02-14 00:56:47] Ep. 16 : Up. 110000 : Sen. 12,392,099 : Cost 4.44903994 : Time 515.27s : 145161.75 words/s : gNorm 1.0138
+[2024-02-14 00:56:47] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-14 00:56:50] Saving Adam parameters
+[2024-02-14 00:56:53] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-14 00:56:57] Translating validation set...
+[2024-02-14 00:56:58] Best translation 0 : 星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-14 00:56:58] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-14 00:56:58] Best translation 2 : JAS 39C 抓地機在當地時間 (0230 UTC) 約 9:30 時墜毀,並爆炸,關閉機場至商業航班。
+[2024-02-14 00:56:58] Best translation 3 : 飛行員被認定為隊長Dilikrit Pattie。
+[2024-02-14 00:56:58] Best translation 4 : 當地媒體報道了機場消防車在響應時起作用。
+[2024-02-14 00:56:58] Best translation 5 : 28歲的維達(Vidal)曾加入Barca三季,來自塞維利亞。
+[2024-02-14 00:56:58] Best translation 10 : 約11:29 抗議活動由白宮、特拉法加廣場 (Trafalgar Square) 沿著斯特蘭德 (Strand) 穿過阿爾德韋奇 (Aldwych) ,前往霍爾本 (Holborn) 的保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-14 00:56:58] Best translation 20 : Hsieh在競選期間暗示,馬可能逃離該國在危機期間。
+[2024-02-14 00:56:58] Best translation 40 : 約翰·格蘭特 (John Grant) 在 WNED 水牛城 (Reading Rainbow's home station) 說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 — [節目] 鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-14 00:56:58] Best translation 80 : Maroochydore 然後在 決賽中擊敗卡波拉圖。
+[2024-02-14 00:56:58] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中將車手錦標賽的前十名排名淘汰。
+[2024-02-14 00:56:58] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-14 00:56:59] Best translation 640 : 讓學生能夠按照自己的節奏工作,並控制教學資訊的步伐。
+[2024-02-14 00:56:59] Total translation time: 2.28470s
+[2024-02-14 00:56:59] [valid] Ep. 16 : Up. 110000 : chrf : 25.3154 : stalled 5 times (last best: 26.0585)
+[2024-02-14 00:56:59] Translating validation set...
+[2024-02-14 00:57:00] Best translation 0 : 星期一,史丹福大學醫學院的科學家宣布了一項新的診斷工具,可以按類型分類細胞:一種小型的印刷芯片,可以使用標準噴墨打印機製造,可能每個大約1美元。
+[2024-02-14 00:57:00] Best translation 1 : 首席研究人員說,這可能為低收入國家的患者帶來早期癌症、肺病、艾滋病毒和瘧疾檢測,其中乳腺癌等疾病的存活率可能是富裕國家的一半。
+[2024-02-14 00:57:00] Best translation 2 : JAS 39C 抓地機在當地時間 (0230 UTC) 約 9:30 時墜毀,並爆炸,關閉機場至商業航班。
+[2024-02-14 00:57:00] Best translation 3 : 飛行員被認定為隊長Dilikrit Pattie。
+[2024-02-14 00:57:01] Best translation 4 : 當地媒體報道了機場消防車在響應時起作用。
+[2024-02-14 00:57:01] Best translation 5 : 28歲的維達(Vidal)曾加入Barca三季,來自塞維利亞。
+[2024-02-14 00:57:01] Best translation 10 : 約11:29 抗議活動由白宮、特拉法加廣場 (Trafalgar Square) 沿著斯特蘭德 (Strand) 穿過阿爾德韋奇 (Aldwych) ,前往霍爾本 (Holborn) 的保守黨在大干諾客房酒店舉行春季論壇。
+[2024-02-14 00:57:01] Best translation 20 : Hsieh在競選期間暗示,馬可能逃離該國在危機期間。
+[2024-02-14 00:57:01] Best translation 40 : 約翰·格蘭特 (John Grant) 在 WNED 水牛城 (Reading Rainbow's home station) 說:"閱讀彩虹教孩子們為什麼閱讀,...閱讀的愛 — [節目] 鼓勵孩子們拿起一本書和閱讀。"
+[2024-02-14 00:57:01] Best translation 80 : Maroochydore 然後在 決賽中擊敗卡波拉圖。
+[2024-02-14 00:57:01] Best translation 160 : 史蒂夫、戈登、肯塞特和哈維克在賽季中將車手錦標賽的前十名排名淘汰。
+[2024-02-14 00:57:01] Best translation 320 : 從那時起,中國的經濟規模已經增長了 90 倍。
+[2024-02-14 00:57:01] Best translation 640 : 讓學生能夠按照自己的節奏工作,並控制教學資訊的步伐。
+[2024-02-14 00:57:01] Total translation time: 2.20149s
+[2024-02-14 00:57:01] [valid] Ep. 16 : Up. 110000 : bleu : 27.4521 : stalled 5 times (last best: 28.0859)
+[2024-02-14 00:57:01] [valid] Ep. 16 : Up. 110000 : ce-mean-words : 2.55497 : stalled 2 times (last best: 2.54836)
+[2024-02-14 00:57:01] Training finished
+[2024-02-14 00:57:01] Saving model weights and runtime parameters to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz
+[2024-02-14 00:57:04] Saving Adam parameters
+[2024-02-14 00:57:06] [training] Saving training checkpoint to /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz and /scratch/project_465000574/malikbha/experiments/en-zh_hant/simple/v2/s.train_model.en-zh_hant/output/model.npz.optimizer.npz
+[2024-02-14 00:57:10] Error: Segmentation fault
+[2024-02-14 00:57:10] Error: Aborted from auto setErrorHandlers()::(anonymous class)::operator()(int, siginfo_t *, void *) const in /users/gnail/project_462000067/users/gnail/marian/src/src/common/logging.cpp:137
+
+[CALL STACK]
+[0x16036d7]                                                           
+[0x14ba27936910]                                                       + 0x16910
+[0x14ba2e53a83b]                                                       + 0x5b7c83b
+[0x14ba2e536064]                                                       + 0x5b78064
+[0x14ba2e551bd6]                                                       + 0x5b93bd6
+[0x14ba2792a6ea]                                                       + 0xa6ea
+[0x14ba2783f49f]    clone                                              + 0x41
+
