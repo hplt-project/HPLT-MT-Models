@@ -1,6 +1,7 @@
 from huggingface_hub import HfApi
 import os
 import pandas as pd
+from time import sleep
 
 # work on OPUS and HPLT separately
 # add the readme template with placeholders
@@ -9,23 +10,23 @@ import pandas as pd
 # once readme is created, save it and then upload the models by going to that path
 
 code_map = {
-    "ar" : "Arabic",
-    "bs" : "Bosnian",
-    "ca" : "Catalan",
-    "en" : "English",
-    "et" : "Estonian",
-    "eu" : "Basque",
-    "fi" : "Finnish",
-    "ga" : "Irish",
-    "gl" : "Galician",
-    "hi" : "Hindi",
-    "hr" : "Croatian",
-    "is" : "Icelandic",
-    "mt" : "Maltese",
-    "nn" : "Norwegian",
-    "sq" : "Albanian",
-    "sw" : "Swahili",
-    "zh_hant" : "Traditional Chinese",
+    "ar": "Arabic",
+    "bs": "Bosnian",
+    "ca": "Catalan",
+    "en": "English",
+    "et": "Estonian",
+    "eu": "Basque",
+    "fi": "Finnish",
+    "ga": "Irish",
+    "gl": "Galician",
+    "hi": "Hindi",
+    "hr": "Croatian",
+    "is": "Icelandic",
+    "mt": "Maltese",
+    "nn": "Norwegian",
+    "sq": "Albanian",
+    "sw": "Swahili",
+    "zh_hant": "Traditional Chinese",
 }
 
 readme_template = """---
@@ -110,35 +111,37 @@ for pair in results["pair"].unique().tolist():
     
     final_readme = readme_template.format(src=src, trg=trg, flores=flores, ntrex=ntrex, langpair=langpair, placeholder=placeholder, src_lang=src_lang, trg_lang=trg_lang, src_name=code_map[src], trg_name=code_map[trg])
 
-    with open("temp_readme_model.md", "w") as f:
+    with open("temp_readme_model_opus_hplt.md", "w") as f:
         f.write(final_readme)
 
     api = HfApi()
 
-    api.create_repo(
-        repo_id=f"HPLT/translate-{src}-{trg}-v1.0-hplt_opus",
-        repo_type="model",
-        exist_ok=True
-    )
+    # api.create_repo(
+    #     repo_id=f"HPLT/translate-{src}-{trg}-v1.0-hplt_opus",
+    #     repo_type="model",
+    #     exist_ok=True
+    # )
+
+    # api.upload_file(
+    #     path_or_fileobj=f"/path/to/tokenizer/{langpair}/simple/v2/s.generate_vocab.{langpair}/output/model.{langpair}.spm",
+    #     path_in_repo=f"model.{src}-{trg}.spm",
+    #     repo_id=f"HPLT/translate-{src}-{trg}-v1.0-hplt_opus",
+    #     repo_type="model",
+    # )
+
+    # api.upload_file(
+    #     path_or_fileobj=f"/path/to/model/{langpair}/simple/v2/s.train_model.{src}-{trg}/output/model.npz.best-chrf.npz",
+    #     path_in_repo="model.npz.best-chrf.npz",
+    #     repo_id=f"HPLT/translate-{src}-{trg}-v1.0-hplt_opus",
+    #     repo_type="model",
+    # )
 
     api.upload_file(
-        path_or_fileobj="temp_readme_model.md",
+        path_or_fileobj="temp_readme_model_opus_hplt.md",
         path_in_repo="README.md",
         repo_id=f"HPLT/translate-{src}-{trg}-v1.0-hplt_opus",
         repo_type="model",
         commit_message="update README"
     )
-
-    api.upload_file(
-        path_or_fileobj=f"/path/to/tokenizer/{langpair}/simple/v2/s.generate_vocab.{langpair}/output/model.{langpair}.spm",
-        path_in_repo=f"model.{src}-{trg}.spm",
-        repo_id=f"HPLT/translate-{src}-{trg}-v1.0-hplt_opus",
-        repo_type="model",
-    )
-
-    api.upload_file(
-        path_or_fileobj=f"/path/to/model/{langpair}/simple/v2/s.train_model.{src}-{trg}/output/model.npz.best-chrf.npz",
-        path_in_repo="model.npz.best-chrf.npz",
-        repo_id=f"HPLT/translate-{src}-{trg}-v1.0-hplt_opus",
-        repo_type="model",
-    )
+    
+    sleep(1)
