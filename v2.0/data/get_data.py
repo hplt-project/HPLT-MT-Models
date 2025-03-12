@@ -78,10 +78,6 @@ LANG_MAP = {
 }
 
 
-#TATOEBA_EXCLUDE = ["bs", "hr", "nb", "ne", "nn"]
-TATOEBA_EXCLUDE = []
-
-
 #FIXME: Error checking
 def get_cache_dir():
     cache_dir = Path.home() / ".hplt_model_data_cache"
@@ -174,10 +170,6 @@ def get_train_data(data_dir, pair):
             out_fh.writelines(in_fh)
         infile.unlink()
     v0_data_download_dest.unlink()
-
-    # if the Tatoeba dataset is not available, we skip the rest
-    if any(lang in TATOEBA_EXCLUDE for lang in pair.split("-")):
-        return
 
     # v1 (Tatoeba only)
     pair3 = "-".join([LANG_MAP[lang][0].split("_")[0] if lang in LANG_MAP else "eng" for lang in pair.split("-")])
