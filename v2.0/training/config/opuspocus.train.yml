@@ -1,0 +1,101 @@
+global:
+  seed: 42
+  data_ver: null
+
+  src_lang: null
+  tgt_lang: en
+
+  preprocess_pipeline_dir: training/${.src_lang}-${.tgt_lang}/preprocess.${.data_ver}
+
+  # We set the "raw" data dir to the output of the preprocess pipeline
+  raw_data_dir: ${.preprocess_pipeline_dir}/gather.${.src_lang}-${.tgt_lang}/output
+
+  valid_data_dir: ${.preprocess_pipeline_dir}/valid.${.src_lang}-${.tgt_lang}/output
+  test_data_dir: ${.preprocess_pipeline_dir}/test.${.src_lang}-${.tgt_lang}/output
+
+  valid_dataset: flores200.dev.${.src_lang}-${.tgt_lang}
+
+  marian_dir: null
+  marian_config: training/config/marian.train.teacher.base.yml
+
+  max_epochs: null
+  vocab_size: 64000
+
+pipeline:
+  pipeline_dir: training/${global.src_lang}-${global.tgt_lang}/train.${global.data_ver}.base
+  steps:
+    # Load Datasets
+    - step: raw
+      step_label: gather.${global.src_lang}-${global.tgt_lang}
+      src_lang: ${global.src_lang}
+      tgt_lang: ${global.tgt_lang}
+      raw_data_dir: ${global.raw_data_dir}
+    - step: raw
+      step_label: valid.${global.src_lang}-${global.tgt_lang}
+      src_lang: ${global.src_lang}
+      tgt_lang: ${global.tgt_lang}
+      raw_data_dir: ${global.valid_data_dir}
+    - step: raw
+      step_label: test.${global.src_lang}-${global.tgt_lang}
+      src_lang: ${global.src_lang}
+      tgt_lang: ${global.tgt_lang}
+      raw_data_dir: ${global.test_data_dir}
+
+    # Train
+    - step: generate_vocab
+      step_label: generate_vocab.${global.src_lang}-${global.tgt_lang}
+      marian_dir: ${global.marian_dir}
+      corpus_step: gather.${global.src_lang}-${global.tgt_lang}
+      vocab_size: ${global.vocab_size}
+    - step: train_model
+      step_label: train_model.${global.src_lang}-${global.tgt_lang}
+      marian_config: ${global.marian_config}
+      opustrainer_config: null
+      max_epochs: ${global.max_epochs}
+      vocab_step: generate_vocab.${global.src_lang}-${global.tgt_lang}
+      train_corpus_step: gather.${global.src_lang}-${global.tgt_lang}
+      valid_corpus_step: valid.${global.src_lang}-${global.tgt_lang}
+      valid_dataset: ${global.valid_dataset}
+      train_categories:
+        - "clean"
+      train_category_ratios:
+        - 1.0
+    - step: train_model
+      step_label: train_model.${global.tgt_lang}-${global.src_lang}
+      src_lang: ${global.tgt_lang}
+      tgt_lang: ${global.src_lang}
+      marian_config: ${global.marian_config}
+      opustrainer_config: null
+      max_epochs: ${global.max_epochs}
+      vocab_step: generate_vocab.${global.src_lang}-${global.tgt_lang}
+      train_corpus_step: gather.${global.src_lang}-${global.tgt_lang}
+      valid_corpus_step: valid.${global.src_lang}-${global.tgt_lang}
+      valid_dataset: ${global.valid_dataset}
+      train_categories:
+        - "clean"
+      train_category_ratios:
+        - 1.0
+
+    # Eval
+    - step: translate
+      step_label: translate_test.${global.src_lang}-${global.tgt_lang}
+      prev_corpus_step: test.${global.src_lang}-${global.tgt_lang}
+      model_step: train_model.${global.src_lang}-${global.tgt_lang}
+    - step: evaluate
+      step_label: evaluate_test.${global.src_lang}-${global.tgt_lang}
+      translated_corpus_step: translate_test.${global.src_lang}-${global.tgt_lang}
+      reference_corpus_step: test.${global.src_lang}-${global.tgt_lang}
+    - step: translate
+      step_label: translate_test.${global.tgt_lang}-${global.src_lang}
+      src_lang: ${global.tgt_lang}
+      tgt_lang: ${global.src_lang}
+      prev_corpus_step: test.${global.src_lang}-${global.tgt_lang}
+      model_step: train_model.${global.tgt_lang}-${global.src_lang}
+    - step: evaluate
+      step_label: evaluate_test.${global.tgt_lang}-${global.src_lang}
+      translated_corpus_step: translate_test.${global.tgt_lang}-${global.src_lang}
+      reference_corpus_step: test.${global.src_lang}-${global.tgt_lang}
+
+  targets:
+    - evaluate_test.${global.src_lang}-${global.tgt_lang}
+    - evaluate_test.${global.tgt_lang}-${global.src_lang}
