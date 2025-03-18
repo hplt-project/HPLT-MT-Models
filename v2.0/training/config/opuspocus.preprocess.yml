@@ -1,0 +1,52 @@
+global:
+  seed: 42
+  data_ver: null
+
+  src_lang: null
+  tgt_lang: en
+
+  data_root_dir: data/${.src_lang}-${.tgt_lang}
+  raw_para_dir: ${.data_root_dir}/raw/${.data_ver}
+
+  valid_data_dir: ${.data_root_dir}/valid
+  test_data_dir: ${.data_root_dir}/test
+
+  decontaminate_min_length: 25
+
+pipeline:
+  pipeline_dir: training/${global.src_lang}-${global.tgt_lang}/preprocess.${global.data_ver}
+  steps:
+    # Load Datasets
+    - step: raw
+      step_label: raw.${global.src_lang}-${global.tgt_lang}
+      src_lang: ${global.src_lang}
+      tgt_lang: ${global.tgt_lang}
+      raw_data_dir: ${global.raw_para_dir}
+    - step: raw
+      step_label: valid.${global.src_lang}-${global.tgt_lang}
+      src_lang: ${global.src_lang}
+      tgt_lang: ${global.tgt_lang}
+      raw_data_dir: ${global.valid_data_dir}
+      compressed: false
+    - step: raw
+      step_label: test.${global.src_lang}-${global.tgt_lang}
+      src_lang: ${global.src_lang}
+      tgt_lang: ${global.tgt_lang}
+      raw_data_dir: ${global.test_data_dir}
+      compressed: false
+
+    # Preprocessing
+    - step: decontaminate
+      step_label: decontaminate.${global.src_lang}-${global.tgt_lang}
+      prev_corpus_step: raw.${global.src_lang}-${global.tgt_lang}
+      valid_data_step: valid.${global.src_lang}-${global.tgt_lang}
+      test_data_step: test.${global.src_lang}-${global.tgt_lang}
+      min_length: ${global.decontaminate_min_length}
+    - step: gather
+      step_label: gather.${global.src_lang}-${global.tgt_lang}
+      prev_corpus_step: decontaminate.${global.src_lang}-${global.tgt_lang}
+
+  targets:
+    - gather.${global.src_lang}-${global.tgt_lang}
+    - valid.${global.src_lang}-${global.tgt_lang}
+    - test.${global.src_lang}-${global.tgt_lang}
