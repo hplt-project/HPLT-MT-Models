@@ -1,6 +1,6 @@
-## First release of HPLT models
+## The second release of HPLT models (and the training pipeline!)
 
-This directory contains scripts, configuration and logs for model inference and training.  
+This directory contains scripts, configurations, and logs for model inference and training.  
 
 
 ### Using the Models: Inference/Decoding/Translation
