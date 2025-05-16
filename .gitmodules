@@ -1,3 +1,6 @@
 [submodule "v2.0/training/OpusPocus"]
 	path = v2.0/training/OpusPocus
 	url = git@github.com:hplt-project/OpusPocus.git
+[submodule "v2.0_multihplt/training/OpusPocus"]
+	path = v2.0_multihplt/training/OpusPocus
+	url = git@github.com:hplt-project/OpusPocus.git
