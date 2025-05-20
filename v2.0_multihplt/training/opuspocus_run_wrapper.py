@@ -14,6 +14,7 @@ from omegaconf import OmegaConf
 
 import opuspocus.pipeline_steps as pipeline_steps
 import opuspocus.runners as runners
+from opuspocus.config import PipelineConfig
 from opuspocus.pipelines import OpusPocusPipeline, PipelineState, load_pipeline
 from opuspocus.runners import build_runner
 
@@ -30,21 +31,25 @@ def check_parameters(args):
         setattr(args, "train_only", False)
 
 
-def load_preprocess_config(pair):
+def load_preprocess_config(pair, runner_kwargs):
     config = OmegaConf.load(PREPROCESS_CONFIG_TEMPLATE)
 
-    setattr(config["global"], "src_lang", pair[0])
-    setattr(config["global"], "tgt_lang", pair[1])
-    return config
+    setattr(config.pipeline, "src_lang", pair[0])
+    setattr(config.pipeline, "tgt_lang", pair[1])
+    setattr(config, "runner", runner_kwargs)
+
+    return PipelineConfig.create(config)
 
 
-def load_train_config(pair, marian_dir):
+def load_train_config(pair, runner_kwargs, marian_dir):
     config = OmegaConf.load(TRAIN_CONFIG_TEMPLATE)
 
-    setattr(config["global"], "src_lang", pair[0])
-    setattr(config["global"], "tgt_lang", pair[1])
-    setattr(config["global"], "marian_dir", marian_dir)
-    return config
+    setattr(config.pipeline, "src_lang", pair[0])
+    setattr(config.pipeline, "tgt_lang", pair[1])
+    setattr(config.pipeline, "marian_dir", marian_dir)
+    setattr(config, "runner", runner_kwargs)
+
+    return PipelineConfig.create(config)
 
 
 def parse_args():
@@ -71,14 +76,15 @@ def main(args):
     check_parameters(args)
     pair = sorted(args.langpair.split("-"))
 
-    # Check training data + Run/Skip preprocess
-    preprocess_config = load_preprocess_config(pair)
-    preprocess_pipeline_dir = Path(preprocess_config["pipeline"]["pipeline_dir"])
-
-    runner_kwargs = argparse.Namespace(**{
+    runner_kwargs = {
         arg.split("=")[0]: "=".join(arg.split("=")[1:])
         for arg in args.runner_args
-    })
+    }
+    runner_kwargs["runner"] = args.runner
+
+    # Check training data + Run/Skip preprocess
+    preprocess_config = load_preprocess_config(pair, runner_kwargs)
+    preprocess_pipeline_dir = Path(preprocess_config.pipeline.pipeline_dir)
 
     if args.train_only:
         preprocess_pipeline = OpusPocusPipeline.load_pipeline(preprocess_pipeline_dir)
@@ -89,7 +95,7 @@ def main(args):
         )
         preprocess_pipeline.init()
 
-        preprocess_runner = build_runner(args.runner, preprocess_pipeline_dir, runner_kwargs)
+        preprocess_runner = build_runner(preprocess_config)
         preprocess_runner.run_pipeline(preprocess_pipeline)
         while preprocess_pipeline.state == PipelineState.INITED:
             LOG.debug("Waiting for pipeline submission...")
@@ -105,8 +111,8 @@ def main(args):
         time.sleep(300)
 
     # Run/Skip train
-    train_config = load_train_config(pair, args.marian_dir)
-    train_pipeline_dir = Path(train_config["pipeline"]["pipeline_dir"])
+    train_config = load_train_config(pair, runner_kwargs, args.marian_dir)
+    train_pipeline_dir = Path(train_config.pipeline.pipeline_dir)
 
     pipeline_steps.STEP_INSTANCE_REGISTRY = {}  # reset the registries to be able to create a new pipeline
     train_pipeline = OpusPocusPipeline(
@@ -115,7 +121,7 @@ def main(args):
     )
     train_pipeline.init()
 
-    train_runner = build_runner(args.runner, train_pipeline_dir, runner_kwargs)
+    train_runner = build_runner(train_config)
     train_runner.run_pipeline(train_pipeline)
 
 
