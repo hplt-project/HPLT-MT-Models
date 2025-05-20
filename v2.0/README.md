@@ -1,4 +1,4 @@
-## First release of HPLT models
+## Second release of HPLT models
 
 This directory contains scripts, configuration and logs for model inference and training.  
 
