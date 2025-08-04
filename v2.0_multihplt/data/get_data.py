@@ -89,18 +89,18 @@ def get_test_data(data_dir, pair):
     LOG.debug(f"Downloading dev/test data in {data_dir}")
     pair3_arr = [LANG_MAP.get(l) for l in pair.split("-")]
     assert all(l != None for l in pair3_arr)
-  
+
     test_dir = data_dir / "test"
     test_dir.mkdir(exist_ok=True)
     get_flores_data(pair, "devtest", test_dir)
     if all(lang3[1] is not None for lang3 in pair3_arr):
         get_ntrex_data(pair, "devtest", test_dir)
-  
+
     dev_dir = data_dir / "valid"
     dev_dir.mkdir(exist_ok=True)
     get_flores_data(pair, "dev", dev_dir)
 
-  
+
 def add_reverse_link(path):
     name = path.name
     components = name.split(".")
@@ -113,7 +113,7 @@ def add_reverse_link(path):
         print(rev_path)
         rev_path.symlink_to(path)
 
-  
+
 def get_flores_data(pair2, segment, dest_dir):
     pair3_arr = [LANG_MAP.get(lang)[0] for lang in pair2.split("-")]
 
@@ -132,8 +132,8 @@ def get_flores_data(pair2, segment, dest_dir):
                 for line in flores_tar.extractfile(flores_path):
                     print(line.decode('utf-8'), file=ofh, end="")
             add_reverse_link(my_path)
-    
-      
+
+
 def get_ntrex_data(pair2, segment, dest_dir):
     pair3_arr = [LANG_MAP.get(lang)[1] for lang in pair2.split("-")]
 
@@ -148,10 +148,10 @@ def get_ntrex_data(pair2, segment, dest_dir):
         shutil.copy(ntrex_path / f"newstest2019-ref.{lang3}.txt", my_path)
         add_reverse_link(my_path)
 
-  
+
 def get_train_data(data_dir, pair):
     LOG.debug(f"Downloading training data in {data_dir}")
-    
+
     if not data_dir.is_dir():
         data_dir.mkdir(parents=True)
     data_download_dest = data_dir / Path(f"MultiHPLT_v2.0.{pair}.txt.zip")
@@ -197,16 +197,16 @@ def main(args):
             print(lang)
         sys.exit()
     LOG.info(f"Downloading data for selected language pairs: {args.langpairs}")
- 
+
     data_dir = Path(__file__).parent.resolve()
     if args.data_dir is not None:
         data_dir = Path(args.data_dir)
-    
+
     unk_langs = [l for lp in args.langpairs for l in lp.split("-") if not l in LANG_MAP]
     if unk_langs != []:
         raise RuntimeError(f"The following languages are unknown: {unk_langs}")
     langpairs = args.langpairs
-    
+
     for pair in langpairs:
         # sort the languages in the language pair
         pair = "-".join(sorted(pair.split("-")))
